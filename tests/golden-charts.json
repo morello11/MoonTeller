@@ -1,0 +1,82 @@
+[
+  {
+    "name": "A (uydurma: 1988-11-05 23:40 Ankara)",
+    "date": "1988-11-05",
+    "time": "23:40",
+    "tz": "Europe/Istanbul",
+    "lat": 39.9333,
+    "lon": 32.8667,
+    "houseSystem": "P",
+    "source": "astro.com Extended Chart Selection, Placidus, true node, 2026-09-02",
+    "expected": {
+      "sun": 223.69722,
+      "moon": 182.2775,
+      "mercury": 208.87806,
+      "venus": 188.38139,
+      "mars": 0.365,
+      "jupiter": 63.31333,
+      "saturn": 269.37111,
+      "uranus": 268.58167,
+      "neptune": 278.04194,
+      "pluto": 222.55806,
+      "trueNode": 342.38694,
+      "chiron": 96.87583,
+      "asc": 142.81861,
+      "mc": 45.66472,
+      "cusps": [
+        142.81861,
+        165.28222,
+        192.8075,
+        225.66472,
+        260.98056,
+        294.01611,
+        322.81861,
+        345.28222,
+        12.8075,
+        45.66472,
+        80.98056,
+        114.01611
+      ]
+    }
+  },
+  {
+    "name": "B (uydurma: 2003-07-20 06:05 Antalya)",
+    "date": "2003-07-20",
+    "time": "06:05",
+    "tz": "Europe/Istanbul",
+    "lat": 36.8833,
+    "lon": 30.7,
+    "houseSystem": "P",
+    "source": "astro.com Extended Chart Selection, Placidus, true node, 2026-09-02",
+    "expected": {
+      "sun": 117.0175,
+      "moon": 14.17278,
+      "mercury": 132.67139,
+      "venus": 108.86472,
+      "mars": 339.57389,
+      "jupiter": 141.76889,
+      "saturn": 95.92028,
+      "uranus": 332.13111,
+      "neptune": 312.20167,
+      "pluto": 257.63639,
+      "trueNode": 57.55472,
+      "chiron": 284.465,
+      "asc": 118.56722,
+      "mc": 15.6775,
+      "cusps": [
+        118.56722,
+        139.7075,
+        164.74306,
+        195.6775,
+        231.61472,
+        267.32083,
+        298.56722,
+        319.7075,
+        344.74306,
+        15.6775,
+        51.61472,
+        87.32083
+      ]
+    }
+  }
+]

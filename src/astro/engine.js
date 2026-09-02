@@ -1,6 +1,6 @@
 // Swiss Ephemeris sarmalayıcısı. Saf mantık: DOM yok, window yok.
 // `swe.` çağrıları yalnızca bu dosyada yaşar. Motor tembel yüklenir, tek örnektir; önce `await loadEngine()`.
-import { EPHEMERIS_FLAGS, HOUSE_SYSTEM, BODIES } from '../config.js';
+import { EPHEMERIS_FLAGS, HOUSE_SYSTEM, BODIES, NON_RETROGRADE_BODIES } from '../config.js';
 
 const BODY_CONSTANTS = {
   sun: 'SE_SUN', moon: 'SE_MOON', mercury: 'SE_MERCURY', venus: 'SE_VENUS', mars: 'SE_MARS',
@@ -46,7 +46,8 @@ function computePosition(swe, jdUT, body) {
   const constant = BODY_CONSTANTS[body];
   if (!constant) throw new Error(`Bilinmeyen gök cismi: ${body}`);
   const [lon, lat, dist, speed] = swe.calc_ut(jdUT, swe[constant], ephemerisFlags(swe));
-  return { body, lon, lat, dist, speed, retrograde: speed < 0 };
+  const retrograde = !NON_RETROGRADE_BODIES.includes(body) && speed < 0;
+  return { body, lon, lat, dist, speed, retrograde };
 }
 
 // Dönüş: [{ body, lon, lat, dist, speed, retrograde }]
@@ -55,9 +56,9 @@ export function computePositions(jdUT, bodies = BODIES) {
   return bodies.map((body) => computePosition(swe, jdUT, body));
 }
 
-// Dönüş: { cusps: 12 elemanlı dizi (1. ev index 0), asc, mc } — derece.
-export function computeHouses(jdUT, latitude, longitude) {
-  const { cusps, ascmc } = requireEngine().houses(jdUT, latitude, longitude, HOUSE_SYSTEM);
+// system: Swiss Ephemeris ev sistemi harfi. Dönüş: { cusps: 12 elemanlı dizi (1. ev index 0), asc, mc } — derece.
+export function computeHouses(jdUT, latitude, longitude, system = HOUSE_SYSTEM) {
+  const { cusps, ascmc } = requireEngine().houses(jdUT, latitude, longitude, system);
   return {
     cusps: Array.from(cusps.subarray(1, HOUSE_COUNT + 1)),
     asc: ascmc[ASC_INDEX],

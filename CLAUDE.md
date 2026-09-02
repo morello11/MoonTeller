@@ -107,7 +107,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 0 bitti; bitti şartı Mehmet'te (GitHub Pages linki telefonda açılıyor)
+## Şu an: Adım 2 bitti (headless: onboarding → çark → yenileme → saatsiz mod); kapı Mehmet'te: dalı main'e birleştirip telefonda kendi haritasına bakacak
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 
