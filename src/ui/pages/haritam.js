@@ -5,6 +5,8 @@ import { renderWheel } from '../wheel.js';
 import { card, stamp, serhBox, esc } from '../components.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, formatDeg } from '../glyphs.js';
 import { placementsTable, aspectGrid, aspectList } from './haritam-tables.js';
+import { composeNatal } from '../../text/compose.js';
+import { selectedReading, archetypeCard, bigThreeReadings, placementReadings, aspectReadings } from './haritam-text.js';
 
 const SIGN_SPAN = 30;
 const HOURS_IN_DAY = 24;
@@ -56,30 +58,35 @@ function serhRows(profile, chart, engineVersion) {
   return rows;
 }
 
-function selectedInfo(chart, body) {
-  if (!body) return '<p class="muted">Çarkta bir gezegene dokun.</p>';
-  const p = bodyOf(chart, body);
-  const house = chart.houses ? `${p.house}. ev` : 'ev için saat gerekli';
-  return `<p><span class="glyph">${BODY_GLYPHS[body]}</span> <strong>${esc(BODY_NAMES_TR[body])}</strong> ${esc(SIGNS_TR[p.sign])} ${formatDeg(p.deg)}, ${house}`
-    + `${p.retrograde ? ', retro' : ''}. <span class="muted">Yorum metinleri Adım 3'te.</span></p>`;
+function selectedInfo(state, body) {
+  const item = body ? state.reading.placements.find((p) => p.body === body) : null;
+  return selectedReading(item, state.bank);
 }
 
 export function render(state) {
-  const { profile, chart, settings } = state;
+  const { profile, chart, settings, bank } = state;
+  state.reading = composeNatal(chart, bank);
+  const r = state.reading;
   const sun = bodyOf(chart, 'sun');
   const moon = bodyOf(chart, 'moon');
   const head = `<section class="page-head"><h1>${esc(profile.name)}</h1><p class="muted">${BODY_GLYPHS.sun} ${esc(SIGNS_TR[sun.sign])} · ${BODY_GLYPHS.moon} ${esc(SIGNS_TR[moon.sign])}`
     + `${chart.houses ? ` · ${BODY_GLYPHS.asc} ${esc(SIGNS_TR[signIndex(chart.houses.asc)])}` : ''} ${chart.timeKnown ? '' : stamp('saat bilinmiyor')}</p></section>`;
   const wheelClass = state.wheelAnimated ? 'wheel-wrap' : 'wheel-wrap settling';
-  return head
+  const serhClass = settings.showSerh ? 'haritam serh-on' : 'haritam';
+  return `<div class="${serhClass}" id="haritam">` + head
     + `<div class="${wheelClass}" id="wheel-wrap">${renderWheel(chart)}</div>`
-    + `<div class="selected" id="selected">${selectedInfo(chart, null)}</div>`
+    + `<div class="selected" id="selected">${selectedInfo(state, null)}</div>`
     + moonWarning(chart)
     + card('Büyük Üçlü', bigThree(chart))
+    + archetypeCard(r.archetype, bank)
+    + bigThreeReadings(r.bigThree, bank)
+    + placementReadings(r.placements, bank)
+    + aspectReadings(r.aspects, bank)
     + card('Yerleşimler', placementsTable(chart))
     + card('Aspektler', aspectGrid(chart) + aspectList(chart))
-    + serhBox(serhRows(profile, chart, state.engineVersion), settings.showSerh)
-    + `<p class="actions"><a class="button secondary" href="#/onboarding">Profili düzenle</a></p>`;
+    + serhBox(serhRows(profile, chart, state.engineVersion), settings.showSerh, bank.copy('serh_summary'), bank.copy('serh_hint'))
+    + `<p class="muted small">${esc(bank.copy('disclaimer'))}</p>`
+    + `<p class="actions"><a class="button secondary" href="#/onboarding">${esc(bank.copy('edit_profile'))}</a></p></div>`;
 }
 
 function onPlanetActivate(root, state) {
@@ -90,7 +97,8 @@ function onPlanetActivate(root, state) {
     event.preventDefault();
     root.querySelectorAll('.wheel-planet.active').forEach((el) => el.classList.remove('active'));
     planet.classList.add('active');
-    root.querySelector('#selected').innerHTML = selectedInfo(state.chart, planet.dataset.body);
+    root.querySelector('#selected').innerHTML = selectedInfo(state, planet.dataset.body);
+    root.querySelector('#selected').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   };
 }
 
@@ -103,7 +111,10 @@ export function mount(root, state, actions) {
   const handler = onPlanetActivate(root, state);
   root.addEventListener('click', handler);
   root.addEventListener('keydown', handler);
-  root.querySelector('.serh')?.addEventListener('toggle', (e) => actions.setSerh(e.target.open));
+  root.querySelector('.serh')?.addEventListener('toggle', (e) => {
+    actions.setSerh(e.target.open);
+    root.querySelector('#haritam').classList.toggle('serh-on', e.target.open);
+  });
   return () => { root.removeEventListener('click', handler); root.removeEventListener('keydown', handler); };
 }
 

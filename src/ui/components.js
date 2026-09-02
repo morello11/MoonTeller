@@ -5,7 +5,7 @@ export function esc(value) {
 }
 
 const TABS = [
-  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ofis', 'Ofis'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
+  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ofis', 'Ekip'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
 ];
 
 export function tabBar(active) {
@@ -25,9 +25,10 @@ export function card(title, body, className = '') {
 }
 
 // Şüpheci Şerhi: kapalıyken tek satır, açılınca ham veri.
-export function serhBox(rows, open = false) {
+export function serhBox(rows, open = false, summary = 'Şüpheci Şerhi — gökyüzünde aslında ne var', hint = '') {
   const items = rows.map(([k, v]) => `<div class="serh-row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
-  return `<details class="serh"${open ? ' open' : ''}><summary>Şüpheci Şerhi — gökyüzünde aslında ne var</summary><dl>${items}</dl></details>`;
+  const hintHtml = hint ? `<p class="muted small">${esc(hint)}</p>` : '';
+  return `<details class="serh"${open ? ' open' : ''}><summary><span class="info-mark" aria-hidden="true">i</span> ${esc(summary)}</summary>${hintHtml}<dl>${items}</dl></details>`;
 }
 
 export function emptyState(title, text, actionHtml = '') {

@@ -1,0 +1,1094 @@
+{
+  "sun_aries": {
+    "title": "Koç Güneşi",
+    "hook": "Bir şeye karar verdiğin an başlamış sayarsın; gerisi ayrıntı.",
+    "body": "Güneş, haritada kim olduğunu ve neyle parladığını anlatır. Koç zodyağın ilk burcu, ateş elementinden ve öncü nitelikte: başlatmak, öne çıkmak, beklememek. Güneş burada yücelmede sayılır (gelenekte gücünü en rahat gösterdiği yerlerden biri). Sabrın kısa ama cesaretin uzun; yarım kalan iş senin değil, arkandan gelenin derdi.",
+    "scene": "Tatil planı grupta üç gün konuşulur, sen ikinci gün bileti almış olursun.",
+    "barnum": 0.35
+  },
+  "moon_scorpio": {
+    "title": "Akrep Ayı",
+    "hook": "Duyguların yüzeyde değil, derinde; ama orada hepsi kayıtlı.",
+    "body": "Ay, iç dünyanı ve kendini nerede güvende hissettiğini anlatır. Akrep su elementinin en yoğun burcu, sabit nitelikte: yarım his tanımaz, ya hep ya hiç. Gelenekte Ay burada düşüşte sayılır (en zor çalıştığı yer); bu kötü değil, yoğun demek. Güvenmen zaman alır, güvenince de kolay bırakmazsın.",
+    "scene": "Arkadaş masasında kimin kime kırgın olduğunu ilk sen fark edersin ve kimseye söylemezsin.",
+    "barnum": 0.4
+  },
+  "venus_virgo": {
+    "title": "Başak Venüsü",
+    "hook": "Sevgini iltifatla değil, tamir ettiğin şeyle gösterirsin.",
+    "body": "Venüs neyi güzel bulduğunu ve insanlara nasıl yaklaştığını anlatır. Başak toprak elementinden, değişken nitelikte ve ayrıntının burcu: işe yarayan şey güzeldir. Venüs burada düşüşte sayılır (gelenekte en zor çalıştığı yer); büyük jest yerine küçük ve doğru dokunuş. Kusuru görürsün, ama yardım etmek için.",
+    "scene": "Doğum günü pastasını sen almazsın; sofrayı sen kurar, ilacı saatinde sen hatırlatırsın.",
+    "barnum": 0.3
+  },
+  "asc_leo": {
+    "title": "Aslan Yükselen",
+    "hook": "Odaya girince fark edilirsin; istemesen de.",
+    "body": "Yükselen, dışarıdan görünen yüzünü ve ilk izlenimi anlatır: insanların seni tanımadan önce gördüğü kapı. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcak, kararlı, sahneye alışkın. Bu burç vitrinin olunca güven verirsin; bazen kendine güvendiğinden fazla.",
+    "scene": "Fotoğraf çekilirken ortaya kimin geçeceği tartışılmaz.",
+    "barnum": 0.45
+  },
+  "sun_taurus": {
+    "title": "Boğa Güneşi",
+    "hook": "Acele etmezsin; vardığın yerde de uzun süre kalırsın.",
+    "body": "Güneş kimliğini ve neyle canlandığını anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç: somut, sakin, kalıcı olanı sever. Beş duyu senin için soyut fikirden daha inandırıcıdır. Gücün istikrar; gölgesi, değişmesi gereken şeyi de tutmaya devam etmek.",
+    "scene": "Yıllardır aynı kahvaltıcıya gidersin ve menüye bakmadan sipariş verirsin.",
+    "barnum": 0.4
+  },
+  "sun_gemini": {
+    "title": "İkizler Güneşi",
+    "hook": "Bir konuyu bitirmeden ikincisini açarsın; ikisini de takip edebilirsin.",
+    "body": "Güneş kim olduğunu anlatır; İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: merak, dil, hareket. Bilgi senin için oksijendir, sohbet nefes almaktır. Gücün çabuk kavramak ve anlatmak; gölgesi, derine inmeden bir sonraki ilginç şeye geçmek.",
+    "scene": "Tek bir soru için aradığın arkadaşla kırk dakika konuşup asıl soruyu kapatırken hatırlarsın.",
+    "barnum": 0.45
+  },
+  "sun_cancer": {
+    "title": "Yengeç Güneşi",
+    "hook": "Yakınlarını korumak senin için karakter değil, refleks.",
+    "body": "Güneş kimliğini anlatır; Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç: duygu, bellek, ait olma. Sevdiklerinin çevresine görünmez bir duvar örersin ve içerisini sıcak tutarsın. Gücün sadakat ve sezgi; gölgesi, incinince kabuğa çekilip haber vermemek.",
+    "scene": "Eve gelen misafir iki saat sonra elinde bir kap yemekle çıkar, sen ısrar ettin diye.",
+    "barnum": 0.5
+  },
+  "sun_leo": {
+    "title": "Aslan Güneşi",
+    "hook": "Işık senden yana düşünce şaşırmazsın; zaten oradaydın.",
+    "body": "Güneş kimliğini anlatır ve Aslan onun kendi evi: burada en rahat, en parlak halindedir. Ateş elementi, sabit nitelik: sıcak, cömert, kararlı. Görülmek istersin ama karşılığında da verirsin; övgü sana yakıt, ilgisizlik ceza gibi gelir. Gücün cesaret ve cömertlik; gölgesi, sahneyi paylaşmakta zorlanmak.",
+    "scene": "Grup fotoğrafında herkes yerini arar, sen zaten ortadasındır.",
+    "barnum": 0.4
+  },
+  "sun_virgo": {
+    "title": "Başak Güneşi",
+    "hook": "Kusuru görürsün, çünkü doğrusunu biliyorsun.",
+    "body": "Güneş kimliğini anlatır; Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: çözümleme, düzen, hizmet. İşe yarayan şey senin için güzeldir, iyi yapılmış iş de bir tür sevgi dilidir. Gücün titizlik ve fayda; gölgesi, kendine de aynı sertlikle bakıp hiç yeterli bulmamak.",
+    "scene": "Valizi sen toplarsın ve dönüşte kimsenin bir şeyi eksik çıkmaz.",
+    "barnum": 0.4
+  },
+  "sun_libra": {
+    "title": "Terazi Güneşi",
+    "hook": "Karşındakinin fikrini o söylemeden önce sen hesaba katmışsındır.",
+    "body": "Güneş kimliğini anlatır; Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: denge, adalet, ilişki. Gelenekte Güneş burada düşüşte sayılır (en zor parladığı yer): kendini başkasının aynasında görmeye eğilimlisin. Gücün diplomasi ve zevk; gölgesi, herkesi memnun ederken kendi tarafını unutmak.",
+    "scene": "Restoranda menüyü herkes seçsin diye bekler, en son sen karar verirsin.",
+    "barnum": 0.5
+  },
+  "sun_scorpio": {
+    "title": "Akrep Güneşi",
+    "hook": "Yüzeyle yetinmezsin; bir şeyin altında ne var, onu merak edersin.",
+    "body": "Güneş kimliğini anlatır; Akrep su elementinden, sabit nitelikte, geleneksel yöneticisi Mars, modern yöneticisi Plüton: yoğunluk, sır, dönüşüm. Yarım bağ kurmazsın; ya tamamen içindesindir ya da hiç. Gücün dayanıklılık ve sezgi; gölgesi, kontrolü bırakmakta ve affetmekte zorlanmak.",
+    "scene": "Bir arkadaşın telefonunu kapatıp iki gün ortadan kaybolursa sebebini sen tahmin edersin.",
+    "barnum": 0.4
+  },
+  "sun_sagittarius": {
+    "title": "Yay Güneşi",
+    "hook": "Ufuk senin için manzara değil, gidilecek yer.",
+    "body": "Güneş kimliğini anlatır; Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: anlam, uzaklar, iyimserlik. Bir soru sana bir yol demektir; yolda öğrenmek en sevdiğin öğrenme biçimidir. Gücün cesaret ve geniş bakış; gölgesi, ayrıntıyı ve verdiğin sözü küçümsemek.",
+    "scene": "Hafta sonu için plan yoktu; pazartesi başka bir şehirden mesaj atarsın.",
+    "barnum": 0.4
+  },
+  "sun_capricorn": {
+    "title": "Oğlak Güneşi",
+    "hook": "Uzun yolu seçersin, çünkü kısa yolun nereye çıktığını biliyorsun.",
+    "body": "Güneş kimliğini anlatır; Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç: hedef, disiplin, zaman. Küçük yaşta büyük gibi, ilerleyen yaşta hafifleyen bir yapın var. Gücün sabır ve sorumluluk; gölgesi, dinlenmeyi hak edilmesi gereken bir ödül sanmak.",
+    "scene": "Yılbaşı gecesi herkes dilek tutarken sen on iki aylık plan yaparsın.",
+    "barnum": 0.45
+  },
+  "sun_aquarius": {
+    "title": "Kova Güneşi",
+    "hook": "Kalabalığın içinde ayrı durursun; dışarıda değil, bir adım yanda.",
+    "body": "Güneş kimliğini anlatır; Kova hava elementinden, sabit nitelikte, geleneksel yöneticisi Satürn, modern yöneticisi Uranüs: fikir, topluluk, bağımsızlık. Gelenekte Güneş burada zararda sayılır (rahat çalışmadığı yer): kendini kişisel ışıkla değil, ortak bir amaçla tanımlarsın. Gücün özgünlük; gölgesi, yakınlığı fikirle yönetmeye çalışmak.",
+    "scene": "Herkesin izlediği diziyi üç yıl sonra izlersin ve o zaman bile kendi yorumunla.",
+    "barnum": 0.45
+  },
+  "sun_pisces": {
+    "title": "Balık Güneşi",
+    "hook": "Sınırlar senin için duvar değil, sis: geçilir, ama nerede olduğu belli olmaz.",
+    "body": "Güneş kimliğini anlatır; Balık su elementinden, değişken nitelikte, geleneksel yöneticisi Jüpiter, modern yöneticisi Neptün: hayal, şefkat, çözülme. Başkasının halini kendi halin gibi hissedersin. Gücün empati ve yaratıcılık; gölgesi, sınır koymadığın için başkasının yükünü taşırken kendininkini unutmak.",
+    "scene": "Filmde ağlayan sen değilsin, ama yanındaki ağlarken senin gözün doluyor.",
+    "barnum": 0.55
+  },
+  "moon_aries": {
+    "title": "Koç Ayı",
+    "hook": "Duygun geldiği gibi çıkar; on dakika sonra da geçmiştir.",
+    "body": "Ay iç dünyanı ve nasıl rahatladığını anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç: hızlı, dolaysız, sabırsız. Sinirlenince söylersin, söyleyince biter; kin tutacak kadar bekleyemezsin. Gücün dürüstlük ve toparlanma hızı; gölgesi, ilk tepkinin bazen fazla sert gelmesi.",
+    "scene": "Kavga ettiğin kişiye yarım saat sonra 'akşam ne yiyoruz' diye yazabilirsin.",
+    "barnum": 0.4
+  },
+  "moon_taurus": {
+    "title": "Boğa Ayı",
+    "hook": "Huzur senin için bir fikir değil, bir koltuk, bir yemek, bir alışkanlık.",
+    "body": "Ay iç dünyanı ve nasıl güvende hissettiğini anlatır. Boğa toprak elementinden, sabit nitelikte; Ay burada yücelmede sayılır (gelenekte en rahat çalıştığı yer). Duyguların yavaş değişir ve bu sana istikrar verir. Gücün sükûnet ve sadakat; gölgesi, rahatını bozan her değişikliğe önce hayır demek.",
+    "scene": "Yeni açılan yeri herkes denerken sen bildiğin yerdeki bildiğin masaya oturursun.",
+    "barnum": 0.45
+  },
+  "moon_gemini": {
+    "title": "İkizler Ayı",
+    "hook": "Ne hissettiğini anlamak için önce birine anlatman gerekir.",
+    "body": "Ay iç dünyanı anlatır; İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: duygu senin için konuşulan, adlandırılan bir şeydir. Ruh halin gün içinde birkaç kez değişir ve bunu sorun etmezsin. Gücün esneklik ve mizah; gölgesi, ağır bir duyguyu espriyle geçiştirmek.",
+    "scene": "Canın sıkılınca kimseyi aramazsın, üç kişiye aynı anda yazarsın.",
+    "barnum": 0.45
+  },
+  "moon_cancer": {
+    "title": "Yengeç Ayı",
+    "hook": "Bir ortama girince önce oranın havasını, sonra kim aç kim yorgun, onu okursun.",
+    "body": "Ay iç dünyanı anlatır ve Yengeç onun kendi evi: duyguları en doğal haliyle yaşadığı yer. Su elementi, öncü nitelik: bakmak, korumak, hatırlamak. Belleğin duygularla çalışır; bir koku on yıl öncesini geri getirir. Gücün şefkat ve sezgi; gölgesi, incinince geri çekilip bunu belli etmemek.",
+    "scene": "Evine gelen herkes 'aç değilim' der, yine de tabak önüne gelir.",
+    "barnum": 0.5
+  },
+  "moon_leo": {
+    "title": "Aslan Ayı",
+    "hook": "Sevildiğini hissetmen için söylenmesi yetmez, gösterilmesi gerekir.",
+    "body": "Ay iç dünyanı anlatır; Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcaklık, gurur, cömertlik. Duyguların büyük ve görünür; sevincin de kırgınlığın da odayı doldurur. Gücün yürek ve sadakat; gölgesi, takdir gelmeyince onu istemek yerine küsmek.",
+    "scene": "Doğum gününü unutan arkadaşı affedersin, ama bir yıl sonra hâlâ hatırlatırsın.",
+    "barnum": 0.45
+  },
+  "moon_virgo": {
+    "title": "Başak Ayı",
+    "hook": "Kaygını ortadan kaldırmanın yolu bir liste yapmaktır.",
+    "body": "Ay iç dünyanı anlatır; Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: düzen, fayda, çözümleme. Sevdiğin insana 'seni seviyorum' demek yerine işini kolaylaştırırsın. Gücün ilgi ve pratiklik; gölgesi, huzursuzken herkesin küçük hatasını görmeye başlamak.",
+    "scene": "Mutfağı toplamadan uyuyamazsın; toplayınca gün bitmiş sayılır.",
+    "barnum": 0.45
+  },
+  "moon_libra": {
+    "title": "Terazi Ayı",
+    "hook": "Ortam gerginse sen rahat edemezsin; huzur senin için havadaki denge demektir.",
+    "body": "Ay iç dünyanı anlatır; Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: uyum, estetik, karşılıklılık. Duygularını başkasıyla paylaşarak anlarsın; yalnızlık sana dinlenme değil eksiklik gibi gelir. Gücün nezaket ve adalet; gölgesi, kavga çıkmasın diye kendi rahatsızlığını yutmak.",
+    "scene": "İki arkadaşın tartışırken sen ikisine de hak verirsin ve ikisi de sana kızar.",
+    "barnum": 0.5
+  },
+  "moon_sagittarius": {
+    "title": "Yay Ayı",
+    "hook": "Daralınca çözümün her zaman aynıdır: dışarı çık, uzağa bak.",
+    "body": "Ay iç dünyanı anlatır; Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: iyimserlik, hareket, anlam arayışı. Duyguların büyük ve neşeli; kötü günü bile bir hikâyeye çevirirsin. Gücün umut ve içtenlik; gölgesi, zor duyguyla oturmak yerine başka bir plana kaçmak.",
+    "scene": "Moralin bozukken telefondan uçak bileti bakarsın; almasan bile iyi gelir.",
+    "barnum": 0.45
+  },
+  "moon_capricorn": {
+    "title": "Oğlak Ayı",
+    "hook": "Duyguların var; onları göstermeyi ise gereksiz bir masraf gibi görürsün.",
+    "body": "Ay iç dünyanı anlatır; Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç. Gelenekte Ay burada zararda sayılır (rahat çalışmadığı yer): ihtiyaç duymayı zayıflık gibi yaşarsın. Sevgini sorumluluk alarak, iş görerek gösterirsin. Gücün dayanıklılık ve güvenilirlik; gölgesi, yardım istemeyi en son çare saymak.",
+    "scene": "Hasta olunca kimseye söylemezsin; ortaya çıkınca 'önemli değil' dersin.",
+    "barnum": 0.4
+  },
+  "moon_aquarius": {
+    "title": "Kova Ayı",
+    "hook": "Bir duyguyu hissetmeden önce ona biraz uzaktan bakmayı seversin.",
+    "body": "Ay iç dünyanı anlatır; Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: mesafe, özgürlük, topluluk. Duyguyu düşünceye çevirince rahatlarsın; 'neden böyle hissettim' sorusu sana iyi gelir. Gücün soğukkanlılık ve dostluk; gölgesi, yakınlık isteyen birine analiz sunmak.",
+    "scene": "Arkadaşın dertleşmek için arar, sen ona üç madde halinde çözüm yazarsın.",
+    "barnum": 0.45
+  },
+  "moon_pisces": {
+    "title": "Balık Ayı",
+    "hook": "Odadaki herkesin duygusunu taşırsın; hangisi senin, sonra ayırırsın.",
+    "body": "Ay iç dünyanı anlatır; Balık su elementinden, değişken nitelikte, yöneticileri Jüpiter ve Neptün: şefkat, hayal, geçirgenlik. Duyguların sınırsız ve bulaşıcı; müzik, film, bir bakış seni bir anda başka yere götürür. Gücün merhamet ve sezgi; gölgesi, kendi ihtiyacını herkesinkinden sonraya bırakmak.",
+    "scene": "Sokakta bir kediye bakmak için beş dakika geç kalırsın ve pişman olmazsın.",
+    "barnum": 0.55
+  },
+  "mercury_aries": {
+    "title": "Koç Merkürü",
+    "hook": "Düşünmekle söylemek arasında boşluk bırakmazsın.",
+    "body": "Merkür nasıl düşündüğünü ve konuştuğunu anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç: hızlı, keskin, dolaysız. Fikrin oluşurken cümle çoktan çıkmıştır; tartışma sana kavga değil spor gibi gelir. Gücün açıklık ve karar hızı; gölgesi, dinlemeyi söz sırası beklemek sanmak.",
+    "scene": "Grup sohbetinde soru sorulur sorulmaz cevabı sen yazmışsındır, bazen soruyu tam okumadan.",
+    "barnum": 0.4
+  },
+  "mercury_taurus": {
+    "title": "Boğa Merkürü",
+    "hook": "Az konuşursun; söylediğin şeyi de geri almazsın.",
+    "body": "Merkür düşünme ve anlatma biçimini anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç: somut, ağır, güvenilir. Bir fikri kabul etmen zaman alır; kabul edince de sağlam durursun. Gücün sağduyu ve kalıcı bilgi; gölgesi, yeni bir fikri yalnızca yeni olduğu için reddetmek.",
+    "scene": "Telefon almadan önce iki hafta karşılaştırma yaparsın; aldığını beş yıl kullanırsın.",
+    "barnum": 0.45
+  },
+  "mercury_gemini": {
+    "title": "İkizler Merkürü",
+    "hook": "Kelimeler senin için oyuncak: hem oynarsın hem kazanırsın.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır ve İkizler onun kendi evi: zihin burada en hızlı, en akıcı halindedir. Hava elementi, değişken nitelik: merak, çeviklik, çok yönlülük. Her şeyden biraz bilirsin ve bunu güzel anlatırsın. Gücün zekâ ve esprili dil; gölgesi, dikkatin bir konuda durmakta zorlanması.",
+    "scene": "Bir konuyu anlatırken araya üç parantez açarsın ve üçünü de kapatırsın.",
+    "barnum": 0.45
+  },
+  "mercury_cancer": {
+    "title": "Yengeç Merkürü",
+    "hook": "Bilgiyi değil, o bilginin nasıl hissettirdiğini hatırlarsın.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç: bellek, sezgi, koruma. Mantığın duyguyla iç içe çalışır; bir cümlenin tonunu içeriğinden önce duyarsın. Gücün güçlü hafıza ve dinleme; gölgesi, eleştiriyi kişisel saldırı gibi işitmek.",
+    "scene": "On yıl önce birinin sana söylediği bir cümleyi kelimesi kelimesine hatırlarsın.",
+    "barnum": 0.45
+  },
+  "mercury_leo": {
+    "title": "Aslan Merkürü",
+    "hook": "Anlattığın hikâye gerçekten daha iyidir ve bunu herkes bilir.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcak, gösterişli, kendinden emin. Konuşurken sahne kurarsın; fikrin değil, anlatışın ikna eder. Gücün etkileyici ifade ve netlik; gölgesi, haksız olduğunu kabul etmenin gururuna dokunması.",
+    "scene": "Aynı anıyı üçüncü kez anlatırsın ve masadakiler yine güler.",
+    "barnum": 0.4
+  },
+  "mercury_virgo": {
+    "title": "Başak Merkürü",
+    "hook": "Bir metindeki yazım hatasını okumaya başlamadan görürsün.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır; Başak hem onun evi hem yücelme yeri (gelenekte en keskin çalıştığı burç). Toprak elementi, değişken nitelik: çözümleme, sınıflama, düzeltme. Karmaşık şeyi parçalara ayırıp adım adım çözersin. Gücün doğruluk ve fayda; gölgesi, ayrıntıda kaybolup bütünü görmemek.",
+    "scene": "Tarifi harfiyen uygularsın ve sonuç çıkmazsa tarifi düzeltirsin.",
+    "barnum": 0.4
+  },
+  "mercury_libra": {
+    "title": "Terazi Merkürü",
+    "hook": "Bir fikri savunmadan önce karşıtını da bir kere düşünürsün.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: denge, nezaket, ölçü. Düşüncen tartarak ilerler; keskin cümleyi yumuşatmadan söylemezsin. Gücün adil bakış ve zarif dil; gölgesi, iki tarafı da görmekten karar verememek.",
+    "scene": "'Sen ne istersen' cümlesini günde en az bir kere kurarsın ve gerçekten öyle demek istersin.",
+    "barnum": 0.5
+  },
+  "mercury_scorpio": {
+    "title": "Akrep Merkürü",
+    "hook": "Söylenenden çok söylenmeyeni duyarsın.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Akrep su elementinden, sabit nitelikte, yöneticileri Mars ve Plüton: derinlik, şüphe, araştırma. Bir konuyu anlamak için altını kazarsın; yüzeysel cevap seni durdurmaz. Gücün nüfuz eden zekâ ve sır tutma; gölgesi, herkeste bir gizli niyet aramak.",
+    "scene": "Yeni tanıştığın birinin ismini akşam olmadan üç ayrı yerde aramışsındır.",
+    "barnum": 0.4
+  },
+  "mercury_sagittarius": {
+    "title": "Yay Merkürü",
+    "hook": "Ayrıntı sana sıkıcı gelir; büyük resmi ise herkesten önce görürsün.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç; gelenekte Merkür burada zararda sayılır (rahat çalışmadığı yer): ince ayar yerine geniş fırça. Fikirlerin büyük, dilin açık ve bazen fazla dürüsttür. Gücün vizyon ve içtenlik; gölgesi, doğruyu söylerken zamanlamayı unutmak.",
+    "scene": "Yol tarifi verirken sokak adı söylemezsin, 'şu tarafa doğru' dersin ve gerçekten oradadır.",
+    "barnum": 0.45
+  },
+  "mercury_capricorn": {
+    "title": "Oğlak Merkürü",
+    "hook": "Konuşmadan önce düşünürsün; düşündüğün şey de genellikle işe yarar.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç: yapı, ciddiyet, uzun vade. Lafı dolandırmazsın; bir plan sunarken adımları sıralamak sana zevk verir. Gücün netlik ve güvenilir yargı; gölgesi, kuru bulunan bir ton ve şakayı geç almak.",
+    "scene": "Tatil planını tarih, saat ve yedek seçeneklerle tek mesajda atarsın.",
+    "barnum": 0.4
+  },
+  "mercury_aquarius": {
+    "title": "Kova Merkürü",
+    "hook": "Herkesin baktığı yere sen başka açıdan bakarsın ve orada bir şey görürsün.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: sistem, özgünlük, mesafe. Fikirlerin insanlardan çok ilkelere bağlıdır; kalıp cümleler seni sıkar. Gücün yaratıcı zekâ ve tarafsızlık; gölgesi, haklı olmayı anlaşılmaktan önemli tutmak.",
+    "scene": "Bir tartışmada herkesin es geçtiği varsayımı sorgular, sohbeti baştan başlatırsın.",
+    "barnum": 0.45
+  },
+  "mercury_pisces": {
+    "title": "Balık Merkürü",
+    "hook": "Düşüncelerin sırayla değil, resim gibi gelir.",
+    "body": "Merkür düşünme ve konuşma biçimini anlatır. Balık su elementinden, değişken nitelikte, yöneticileri Jüpiter ve Neptün; gelenekte Merkür burada düşüşte sayılır (en zor çalıştığı yer): mantık yerine sezgi, çizgi yerine akış. Söylenmeyeni hissedersin ama söyleneni bazen kaçırırsın. Gücün hayal gücü ve empati; gölgesi, dağınık dikkat ve unutkanlık.",
+    "scene": "Randevu saatini karıştırırsın ama karşındakinin o gün üzgün olduğunu ilk sen anlarsın.",
+    "barnum": 0.5
+  },
+  "venus_aries": {
+    "title": "Koç Venüsü",
+    "hook": "Hoşlandığın şeyi beklemezsin; gider alırsın, gider söylersin.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç; gelenekte Venüs burada zararda sayılır (rahat çalışmadığı yer): incelik yerine hız, nazlanma yerine ilk adım. İlgin bir anda parlar; sürdürmek ayrı bir çaba ister. Gücün cesur içtenlik; gölgesi, heyecan bitince ilginin de bitmesi.",
+    "scene": "Vitrinde gördüğün şeyi 'bir düşüneyim' demeden alırsın; bazen kapıdan çıkarken düşünürsün.",
+    "barnum": 0.4
+  },
+  "venus_taurus": {
+    "title": "Boğa Venüsü",
+    "hook": "İyi bir yemek, iyi bir koku, iyi bir kumaş: senin için sevgi böyle ölçülür.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır; Boğa onun kendi evi, en rahat çalıştığı yerlerden biri. Toprak elementi, sabit nitelik: dokunulabilir, kalıcı, sakin. Bağ kurduğun şeyi bırakmazsın; sadakat senin için doğal haldir. Gücün sıcaklık ve zevk; gölgesi, sahiplenmenin bazen tutmaya dönmesi.",
+    "scene": "Sevdiğin insan için özel bir şey yapmak istersen mutfağa girersin, kart yazmazsın.",
+    "barnum": 0.45
+  },
+  "venus_gemini": {
+    "title": "İkizler Venüsü",
+    "hook": "Seni güldüren insanı, güzel olandan daha çekici bulursun.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: sohbet, merak, hafiflik. Yakınlık senin için konuşarak kurulur; sessizlik değil, monotonluk seni uzaklaştırır. Gücün neşeli ilgi ve esneklik; gölgesi, derinleşmesi gereken yerde yeni bir konuya geçmek.",
+    "scene": "Bir mesajlaşmanın iyi gidip gitmediğini ilk beş dakikadaki espri sayısından anlarsın.",
+    "barnum": 0.5
+  },
+  "venus_cancer": {
+    "title": "Yengeç Venüsü",
+    "hook": "Sevmek senin için bakmaktır: yemek, battaniye, 'eve vardın mı' mesajı.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç: koruma, ev, bellek. Yakınlık yavaş kurulur ama kurulunca aile gibi olur. Gücün sıcaklık ve sadakat; gölgesi, sevgini karşılık görmediğinde kırgınlığı içine atmak.",
+    "scene": "Arkadaşının hasta olduğunu duyunca akşam kapısında çorba ile belirirsin.",
+    "barnum": 0.5
+  },
+  "venus_leo": {
+    "title": "Aslan Venüsü",
+    "hook": "Sevgi senin için sessiz olmaz; görülmeli, kutlanmalı, biraz da abartılmalı.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: cömertlik, gurur, sıcaklık. Sevdiğini baş tacı edersin ve aynı ilgiyi beklersin. Gücün büyük yürek ve sadakat; gölgesi, ilgi azalınca bunu sevginin azalması sanmak.",
+    "scene": "Doğum günü sürprizini sen planlarsın ve sürprizin sürpriz kalmasına dayanamazsın.",
+    "barnum": 0.45
+  },
+  "venus_libra": {
+    "title": "Terazi Venüsü",
+    "hook": "Güzellik senin için lüks değil, hava gibi bir ihtiyaç.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır; Terazi onun kendi evi, en zarif çalıştığı yer. Hava elementi, öncü nitelik: uyum, karşılıklılık, incelik. İlişkide nezaket senin için sevginin kendisidir; kabalık en büyük soğutucudur. Gücün zarafet ve adalet; gölgesi, huzur bozulmasın diye kendi isteğini geriye atmak.",
+    "scene": "Evde dekorasyonun bir santim kayması seni o gün gerçekten rahatsız eder.",
+    "barnum": 0.5
+  },
+  "venus_scorpio": {
+    "title": "Akrep Venüsü",
+    "hook": "Yarım sevmeyi bilmezsin; ya tamamen ya hiç.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Akrep su elementinden, sabit nitelikte, yöneticileri Mars ve Plüton; gelenekte Venüs burada zararda sayılır (rahat çalışmadığı yer): hafiflik yerine yoğunluk. Bağ kurunca derin kurarsın; güven senin için her şeyin önündedir. Gücün sadakat ve tutku; gölgesi, kıskançlığı ilginin ölçüsü sanmak.",
+    "scene": "Bir arkadaşlığı bitirirsen sessizce bitirirsin; geri dönüş yolu bırakmazsın.",
+    "barnum": 0.4
+  },
+  "venus_sagittarius": {
+    "title": "Yay Venüsü",
+    "hook": "Seninle güzel bir sohbet, güzel bir yemekten daha çok yol alır.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: özgürlük, keşif, neşe. Bağ senin için ortak bir yolculuktur; seni kısıtlayan ilgi ne kadar sıcak olursa olsun bunaltır. Gücün cömert neşe ve dürüstlük; gölgesi, sıkılınca uzaklaşıp bunu açıklamamak.",
+    "scene": "İlk buluşma için kafe değil, hiç gitmediğiniz bir yer önerirsin.",
+    "barnum": 0.45
+  },
+  "venus_capricorn": {
+    "title": "Oğlak Venüsü",
+    "hook": "Sevgini büyük sözle değil, yıllar sonra hâlâ orada olarak gösterirsin.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç: ciddiyet, süreklilik, güven. Yakınlık senin için zaman ister ve zamanla değerlenir. Gücün sadakat ve dayanıklılık; gölgesi, sıcaklığı göstermeyi ciddiyete aykırı sanmak.",
+    "scene": "Yıldönümünü hediyeyle değil, o gün için aylar önce alınmış izinle hatırlarsın.",
+    "barnum": 0.45
+  },
+  "venus_aquarius": {
+    "title": "Kova Venüsü",
+    "hook": "Yakınlık senin için önce arkadaşlık, sonra gerisi.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır. Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: özgürlük, fikir, eşitlik. Sıradan olanı sevmezsin; seni farklı düşünen insan çeker. Gücün sadık dostluk ve açık fikir; gölgesi, duygusal yakınlığı mesafeyle idare etmeye çalışmak.",
+    "scene": "Sevgiline en çok, saatlerce süren bir fikir tartışmasından sonra yakın hissedersin.",
+    "barnum": 0.45
+  },
+  "venus_pisces": {
+    "title": "Balık Venüsü",
+    "hook": "Sevdiğin insanın hüznünü kendi hüznün gibi taşırsın.",
+    "body": "Venüs neyi güzel bulduğunu ve nasıl yakınlaştığını anlatır; Balık onun yücelme yeri (gelenekte en cömert çalıştığı burç). Su elementi, değişken nitelik, yöneticileri Jüpiter ve Neptün: şefkat, hayal, kendini verme. Sevginde hesap yoktur ve bu güzel; sınır da yoktur ve bu yorucu. Gücün merhamet ve romantizm; gölgesi, ideal bir görüntüyü gerçek insana yeğlemek.",
+    "scene": "Bir şarkı bir insanı hatırlatırsa o şarkıyı yıllarca bir daha dinleyemezsin.",
+    "barnum": 0.55
+  },
+  "mars_aries": {
+    "title": "Koç Marsı",
+    "hook": "Kızgınlığın çabuk gelir, çabuk gider ve o arada kimse yanına yaklaşmaz.",
+    "body": "Mars nasıl harekete geçtiğini ve nasıl kızdığını anlatır; Koç onun kendi evi, en doğrudan çalıştığı yer. Ateş elementi, öncü nitelik: hız, cesaret, rekabet. Beklemek sana işkence, başlamak nefes gibidir. Gücün cesaret ve girişkenlik; gölgesi, sabırsızlığın başkasının hızına saygısızlık gibi görünmesi.",
+    "scene": "Trafikte önündeki araç yeşilde bir saniye geç kalkarsa kornaya elin gider.",
+    "barnum": 0.4
+  },
+  "mars_taurus": {
+    "title": "Boğa Marsı",
+    "hook": "Geç kızarsın, ama kızınca odadan çıkmak isteyen sen olmazsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç; gelenekte Mars burada zararda sayılır (rahat çalışmadığı yer): patlama yerine birikme. Yavaş başlarsın ama başladığın işi bitirirsin; sabrın uzun, inadın daha uzundur. Gücün dayanıklılık; gölgesi, öfkeyi biriktirip sonra taş gibi bırakmak.",
+    "scene": "Bozuk musluğu tamir etmek üç hafta aklında durur, sonra bir cumartesi bitirirsin.",
+    "barnum": 0.45
+  },
+  "mars_gemini": {
+    "title": "İkizler Marsı",
+    "hook": "Kavgayı yumrukla değil, kelimelerle yaparsın ve genellikle kazanırsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: çeviklik, dil, çok görev. Enerjin zihinden gelir; aynı anda birkaç iş seni yormaz, canlandırır. Gücün hızlı zekâ ve uyum; gölgesi, dağılan dikkatle hiçbirini bitirememek.",
+    "scene": "Bir tartışmada karşı tarafın az önce söylediği cümleyi ona karşı kullanırsın.",
+    "barnum": 0.45
+  },
+  "mars_cancer": {
+    "title": "Yengeç Marsı",
+    "hook": "Kendin için savaşmazsın; sevdiklerin için savaşırsın, hem de sert.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç; gelenekte Mars burada düşüşte sayılır (en zor çalıştığı yer): öfke doğrudan değil dolaylı çıkar. Enerjin duyguyla yükselir ve alçalır; korurken en güçlü halindesin. Gücün koruyucu sadakat; gölgesi, kırgınlığı söylemek yerine somurtmak.",
+    "scene": "Sana yapılan haksızlığı yutarsın, ama arkadaşına yapılanı yerinde cevaplarsın.",
+    "barnum": 0.45
+  },
+  "mars_leo": {
+    "title": "Aslan Marsı",
+    "hook": "Bir işi yapmak yetmez, o işi güzel yaparken görülmek de istersin.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: gurur, cesaret, sahne. Enerjin sıcak ve sürekli; bir amaca bağlanınca kolay vazgeçmezsin. Gücün liderlik ve cömert çaba; gölgesi, eleştiriyi gururuna saldırı gibi almak.",
+    "scene": "Mangalı sen yakarsın ve herkes yaklaştığında maşayı elden bırakmazsın.",
+    "barnum": 0.45
+  },
+  "mars_virgo": {
+    "title": "Başak Marsı",
+    "hook": "Gücünü plana dönüştürmeden harcamazsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: yöntem, hizmet, ustalık. Çalışırken ayrıntı seni yormaz, aksine sakinleştirir; dağınık işten fiziksel olarak rahatsız olursun. Gücün verimlilik ve özen; gölgesi, öfkeni eleştiri diline çevirmek.",
+    "scene": "Taşınma günü kutuları etiketleyen tek kişi sensin ve o gün herkes sana sorar.",
+    "barnum": 0.4
+  },
+  "mars_libra": {
+    "title": "Terazi Marsı",
+    "hook": "Kavgayı sevmezsin; ama haksızlığı gördüğünde sessiz kalamazsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç; gelenekte Mars burada zararda sayılır (rahat çalışmadığı yer): saldırı yerine müzakere. Enerjin başkalarıyla birlikte yükselir; yalnız kalınca motivasyon düşer. Gücün adil mücadele ve diplomasi; gölgesi, karar anında iki tarafı da tartıp donmak.",
+    "scene": "Sırada biri önüne geçince önce ona, sonra herkese nazik bir uyarı yaparsın.",
+    "barnum": 0.5
+  },
+  "mars_scorpio": {
+    "title": "Akrep Marsı",
+    "hook": "Sessizce hedef alırsın; vardığında kimse nasıl vardığını anlamaz.",
+    "body": "Mars nasıl harekete geçtiğini anlatır; Akrep onun geleneksel evi, en derin çalıştığı yer. Su elementi, sabit nitelik: irade, yoğunluk, strateji. Enerjin dışarıdan sakin, içeriden kesintisizdir; bir şeyi istersen uzun süre bekleyebilirsin. Gücün kararlılık ve dayanıklılık; gölgesi, öfkeyi unutmamak.",
+    "scene": "Kaybettiğin bir oyunun rövanşını altı ay sonra istersin ve o gün için çalışmışsındır.",
+    "barnum": 0.4
+  },
+  "mars_sagittarius": {
+    "title": "Yay Marsı",
+    "hook": "Bir hedefin peşinden koşarken yol seni hedeften daha çok ilgilendirir.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: macera, inanç, hareket. Enerjin geniş ve iyimser; sıkıcı bir işi ancak arkasında bir anlam görürsen yaparsın. Gücün coşku ve dürüstlük; gölgesi, başlanan çok işten çoğunun yolda kalması.",
+    "scene": "Spor salonuna kaydolmazsın; dağa çıkarsın, bisiklete binersin, yoruluncaya kadar.",
+    "barnum": 0.45
+  },
+  "mars_capricorn": {
+    "title": "Oğlak Marsı",
+    "hook": "Zirveye koşarak değil, hiç durmayarak çıkarsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır; Oğlak onun yücelme yeri (gelenekte en verimli çalıştığı burç). Toprak elementi, öncü nitelik, Satürn'ün yönettiği burç: disiplin, hedef, dayanıklılık. Enerjin planlı ve ölçülüdür; bir hedefe kilitlenince engeller sana zaman kaybı değil basamak gibi gelir. Gücün azim ve öz denetim; gölgesi, dinlenmeyi tembellik sanmak.",
+    "scene": "Yeni yıl kararlarını mart ayında hâlâ uyguluyor olan tek kişi sensin.",
+    "barnum": 0.4
+  },
+  "mars_aquarius": {
+    "title": "Kova Marsı",
+    "hook": "Kuralı bozmazsın; daha iyi bir kural yazarsın.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: özgünlük, ilke, topluluk. Enerjin bir davaya bağlanınca en yüksek noktasına çıkar; sırf emir diye yapılan iş seni söndürür. Gücün yaratıcı direnç ve bağımsızlık; gölgesi, inatçılığı ilkeliliğe karıştırmak.",
+    "scene": "Site yönetimiyle tartışmayı başlatan sensin ve haklısındır.",
+    "barnum": 0.45
+  },
+  "mars_pisces": {
+    "title": "Balık Marsı",
+    "hook": "Enerjin dalga gibi: bazen kıyıya vurur, bazen geri çekilir.",
+    "body": "Mars nasıl harekete geçtiğini anlatır. Balık su elementinden, değişken nitelikte, yöneticileri Jüpiter ve Neptün: sezgi, esneklik, ilham. Doğrudan çatışmadan kaçarsın; yolunu bulmak için dolanırsın ve genellikle bulursun. Gücün uyum ve yaratıcı hareket; gölgesi, öfkeni bastırıp sonra nedensiz bir yorgunluk hissetmek.",
+    "scene": "Bir işi ertelediğin gün aslında başka bir şeyi, farkında olmadan bitirmişsindir.",
+    "barnum": 0.5
+  },
+  "jupiter_aries": {
+    "title": "Koç Jüpiteri",
+    "hook": "Şansın kapıyı çaldığında sen zaten dışarıdasındır.",
+    "body": "Jüpiter nerede büyüdüğünü, neye güvendiğini ve nasıl şanslı olduğunu anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç: cesaret, ilk adım, kendine güven. Fırsatı beklemez, yaratırsın; risk sana tehlike değil davet gibi gelir. Gücün girişim ve iyimserlik; gölgesi, büyük başlayıp küçük bitirmek.",
+    "scene": "Bir kursa kaydolduğun gün ikinci kursu da araştırmaya başlarsın.",
+    "barnum": 0.45
+  },
+  "jupiter_taurus": {
+    "title": "Boğa Jüpiteri",
+    "hook": "Bolluk senin için soyut bir fikir değil: dolu bir sofra, sağlam bir ev, iyi bir uyku.",
+    "body": "Jüpiter nerede büyüdüğünü ve neye güvendiğini anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç: kalıcılık, zevk, somut değer. Yavaş biriktirir, sağlam kurarsın; iyi yaşamak senin için bir hak, aynı zamanda bir sanattır. Gücün cömert istikrar; gölgesi, konforun fazlasının ağırlığa dönmesi.",
+    "scene": "Misafirlikte tabağa 'biraz daha' koyan ev sahibi her zaman sensin.",
+    "barnum": 0.5
+  },
+  "jupiter_gemini": {
+    "title": "İkizler Jüpiteri",
+    "hook": "Bilmek istediğin şeylerin listesi hayattan uzun.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç; gelenekte Jüpiter burada zararda sayılır (rahat çalışmadığı yer): derinlik yerine genişlik. Her konuda bir kapı açarsın, bazen hepsini aynı anda. Gücün çok yönlü merak ve dil; gölgesi, dağılıp hiçbirinde ustalaşmamak.",
+    "scene": "Tarayıcında elli sekme açıktır ve hepsinin nedenini bilirsin.",
+    "barnum": 0.5
+  },
+  "jupiter_cancer": {
+    "title": "Yengeç Jüpiteri",
+    "hook": "Bereketin yeri belli: evin, sofran, sana sığınan insan.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır; Yengeç onun yücelme yeri (gelenekte en cömert çalıştığı burç). Su elementi, öncü nitelik, Ay'ın yönettiği burç: koruma, aidiyet, bakım. Büyümen başkalarını büyüterek olur; insanlar yanında güvende hisseder. Gücün sıcak cömertlik ve sezgi; gölgesi, herkesi kollarken kendi payını unutmak.",
+    "scene": "Yeni taşınan komşuya ilk giden tabak senin mutfağından çıkar.",
+    "barnum": 0.5
+  },
+  "jupiter_leo": {
+    "title": "Aslan Jüpiteri",
+    "hook": "Büyük düşünürsün, büyük söylersin ve genellikle büyük yaparsın.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: cömertlik, gösteri, güven. Sahnede genişlersin; kendine inanınca çevrendekiler de inanır. Gücün ilham verici cesaret; gölgesi, abartının bazen gerçeği gölgelemesi.",
+    "scene": "Hediye alırken bütçeyi aşarsın ve karşı tarafın yüzünü görünce pişman olmazsın.",
+    "barnum": 0.45
+  },
+  "jupiter_virgo": {
+    "title": "Başak Jüpiteri",
+    "hook": "Büyük hedefi küçük adımlara bölmek senin için bilgelik, başkası için sıkıcılık.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç; gelenekte Jüpiter burada zararda sayılır (rahat çalışmadığı yer): ufuk yerine ayrıntı. Şansın yöntemden gelir; hazırlıklı olan sen olduğun için fırsat sana düşer. Gücün faydalı ustalık; gölgesi, mükemmel olmayan her şeyi eksik saymak.",
+    "scene": "Tatile giderken hazırladığın liste, döndüğünde de işe yarar.",
+    "barnum": 0.45
+  },
+  "jupiter_libra": {
+    "title": "Terazi Jüpiteri",
+    "hook": "Kapılar sana insanlar aracılığıyla açılır; iyi ki insanlar seni sever.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: ilişki, adalet, zarafet. Büyümen ortaklıklarla olur; doğru insanla bir araya gelince ikiniz de büyürsünüz. Gücün adil cömertlik ve sosyal zekâ; gölgesi, herkesi hoşnut etmek için fazla söz vermek.",
+    "scene": "Tanımadığın bir şehirde yarım saat içinde biriyle sohbet etmiş olursun.",
+    "barnum": 0.55
+  },
+  "jupiter_scorpio": {
+    "title": "Akrep Jüpiteri",
+    "hook": "Yüzeydeki iyimserlik seni ilgilendirmez; büyük gerçekler derinde durur.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Akrep su elementinden, sabit nitelikte, yöneticileri Mars ve Plüton: derinlik, güç, dönüşüm. Krizden büyüyerek çıkarsın; başkasının korktuğu konuyu sen merak edersin. Gücün dayanıklı inanç ve sezgi; gölgesi, her şeyin altında bir gizli katman aramak.",
+    "scene": "Bir konuyu araştırmaya gece başlarsın ve sabaha kadar okumuş olursun.",
+    "barnum": 0.4
+  },
+  "jupiter_sagittarius": {
+    "title": "Yay Jüpiteri",
+    "hook": "Dünya senin için büyük bir soru; cevabı yolda bulmayı umuyorsun.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır ve Yay onun kendi evi: en geniş, en iyimser çalıştığı yer. Ateş elementi, değişken nitelik: anlam, uzaklar, inanç. Şansın hareketle gelir; oturduğun yerde değil, gittiğin yerde büyürsün. Gücün bulaşıcı iyimserlik ve öğretme sevgisi; gölgesi, ayrıntıya ve sınıra tahammülsüzlük.",
+    "scene": "Yabancı bir dilde üç kelime bilirsin ve o üç kelimeyle bir sohbet kurarsın.",
+    "barnum": 0.45
+  },
+  "jupiter_capricorn": {
+    "title": "Oğlak Jüpiteri",
+    "hook": "Şansa inanmazsın; hazırlığa inanırsın ve ona şans dersin.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç; gelenekte Jüpiter burada düşüşte sayılır (en zor çalıştığı yer): genişleme yerine ölçü. Büyümen yavaş ama kalıcıdır; yükseldiğin yerden düşmezsin. Gücün sağlam yargı ve sabır; gölgesi, iyimserliği ciddiyetsizlik sanmak.",
+    "scene": "Piyango bileti almazsın; ama yıllar sonra bakınca en çok biriktiren sen çıkarsın.",
+    "barnum": 0.45
+  },
+  "jupiter_aquarius": {
+    "title": "Kova Jüpiteri",
+    "hook": "Bir fikir seni büyütüyorsa onu herkesle paylaşmadan rahat edemezsin.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır. Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: topluluk, gelecek, ilke. Şansın gruplardan ve beklenmedik bağlantılardan gelir; herkesin ortak olduğu şey seni bireysel kazançtan daha çok heyecanlandırır. Gücün geniş ufuk ve dostluk; gölgesi, insanı ilkeden sonraya koymak.",
+    "scene": "Mahalle için başlatılan bir girişimin ilk gönüllüsü sensin.",
+    "barnum": 0.5
+  },
+  "jupiter_pisces": {
+    "title": "Balık Jüpiteri",
+    "hook": "Güvenin kanıta değil, sezgiye dayanır ve sezgin genellikle haklı çıkar.",
+    "body": "Jüpiter nerede büyüdüğünü anlatır ve Balık onun geleneksel evi: en şefkatli çalıştığı yer. Su elementi, değişken nitelik, yöneticileri Jüpiter ve Neptün: inanç, merhamet, hayal. Büyümen vererek olur; iyilik sana döner, bazen beklemediğin yerden. Gücün cömert inanç ve yaratıcılık; gölgesi, iyi niyetini kötüye kullanana fark etmeden izin vermek.",
+    "scene": "Sokak müzisyeninin kutusuna para bırakıp bir şarkı dinlemek için beş dakika durursun.",
+    "barnum": 0.55
+  },
+  "saturn_aries": {
+    "title": "Koç Satürnü",
+    "hook": "Kendi başına başlamak senin için hem ders hem sınav.",
+    "body": "Satürn nerede sınandığını, nerede disiplin kurduğunu anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç; gelenekte Satürn burada düşüşte sayılır (en zor çalıştığı yer): hız ile sabır çatışır. Kendini ortaya koymak sana ilk başta ağır gelir; zamanla en kararlı adımı sen atarsın. Gücün ölçülü cesaret; gölgesi, kendini erken frenlemek.",
+    "scene": "Yıllarca 'bir gün başlayacağım' dediğin şeyi bir sabah kimseye söylemeden başlatırsın.",
+    "barnum": 0.45
+  },
+  "saturn_taurus": {
+    "title": "Boğa Satürnü",
+    "hook": "Güvenceyi sevmek değil, güvence inşa etmek senin işin.",
+    "body": "Satürn nerede sınandığını ve disiplin kurduğunu anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç: kalıcılık, sabır, madde. Sağlam olan sana güzel gelir; acele ürünü küçümsersin. Gücün dayanıklı emek ve sadakat; gölgesi, tutumluluğu kendini ödüllendirmemeye vardırmak.",
+    "scene": "Yirmi yıllık bir eşyayı hâlâ kullanırsın ve 'sağlam' diye övünürsün.",
+    "barnum": 0.5
+  },
+  "saturn_gemini": {
+    "title": "İkizler Satürnü",
+    "hook": "Söylediğin her cümlenin arkasında durmak zorunda hissedersin.",
+    "body": "Satürn nerede sınandığını anlatır. İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: dil, öğrenme, bağlantı. Konuşmak sana ciddi bir iş gibi gelir; boş laf seni yorar, iyi kurulmuş bir cümle dinlendirir. Gücün derin ve düzenli düşünce; gölgesi, ifade ederken fazla temkinli olup geç kalmak.",
+    "scene": "Grup sohbetinde herkes yazar, sen bir mesaj yazıp üç kez düzeltirsin.",
+    "barnum": 0.5
+  },
+  "saturn_cancer": {
+    "title": "Yengeç Satürnü",
+    "hook": "Duygusal güvenliği sen kurmalısın; hazır bulmak sana kolay gelmez.",
+    "body": "Satürn nerede sınandığını anlatır. Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç; gelenekte Satürn burada zararda sayılır (rahat çalışmadığı yer): sıcaklık ile mesafe çatışır. Yakınlığı sorumlulukla gösterirsin; sarılmak yerine sorun çözersin. Gücün güvenilir koruma; gölgesi, ihtiyaçlarını söylemeyi zayıflık saymak.",
+    "scene": "Yeni bir eve yerleşince ilk aylar orası ev gibi gelmez; sen ev yapana kadar.",
+    "barnum": 0.5
+  },
+  "saturn_leo": {
+    "title": "Aslan Satürnü",
+    "hook": "Görünmek istersin, ama hak etmeden görünmek sana ağır gelir.",
+    "body": "Satürn nerede sınandığını anlatır. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç; gelenekte Satürn burada zararda sayılır (rahat çalışmadığı yer): parlamak ile ölçülü olmak çatışır. Sahne sana hem çekici hem korkutucudur; oraya çalışarak çıkarsın. Gücün ağırbaşlı otorite; gölgesi, övgüyü hak etmediğini düşünüp geri çevirmek.",
+    "scene": "Doğum gününde kutlama istemezsin, kutlanınca da için ısınır.",
+    "barnum": 0.5
+  },
+  "saturn_virgo": {
+    "title": "Başak Satürnü",
+    "hook": "Ayrıntı senin için lüks değil, sorumluluk.",
+    "body": "Satürn nerede sınandığını anlatır. Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: yöntem, hizmet, düzeltme. İyi yapılmayan iş sana huzursuzluk verir; sen yapmadıysan bile. Gücün ustalık ve güvenilirlik; gölgesi, kendine karşı acımasız bir denetçi olmak.",
+    "scene": "Evdeki faturaları hangi gün, hangi sırayla ödediğini yıllardır değiştirmemişsindir.",
+    "barnum": 0.45
+  },
+  "saturn_libra": {
+    "title": "Terazi Satürnü",
+    "hook": "Adalet senin için duygu değil, kural.",
+    "body": "Satürn nerede sınandığını anlatır; Terazi onun yücelme yeri (gelenekte en olgun çalıştığı burç). Hava elementi, öncü nitelik, Venüs'ün yönettiği burç: denge, ilişki, anlaşma. Söz verirken düşünürsün, verince tutarsın; ilişkilerin yavaş kurulur ve uzun sürer. Gücün adil ve kalıcı bağlar; gölgesi, sıcaklığı bile kurala bağlamak.",
+    "scene": "Hesabı bölüşürken kuruşuna kadar eşitlersin; kimse bunu istememişken.",
+    "barnum": 0.5
+  },
+  "saturn_scorpio": {
+    "title": "Akrep Satürnü",
+    "hook": "Kontrolü bırakmak senin için en zor ders, en büyük ödül.",
+    "body": "Satürn nerede sınandığını anlatır. Akrep su elementinden, sabit nitelikte, yöneticileri Mars ve Plüton: güven, güç, derinlik. Sırrını kolay vermezsin; güven senin için yıllarla ölçülür. Gücün sarsılmaz irade ve sadakat; gölgesi, incinmemek için herkesi belli bir mesafede tutmak.",
+    "scene": "Şifrelerin hepsi farklıdır ve hiçbirini kimseye söylemezsin.",
+    "barnum": 0.45
+  },
+  "saturn_sagittarius": {
+    "title": "Yay Satürnü",
+    "hook": "İnanmak istersin, ama önce kanıt istersin.",
+    "body": "Satürn nerede sınandığını anlatır. Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: anlam, inanç, uzaklar. Kolay iyimserlik sana yüzeysel gelir; kendi felsefeni sınayarak kurarsın. Gücün sağlam dünya görüşü; gölgesi, umut etmeyi saflık sanmak.",
+    "scene": "Bir kitabın kapağındaki övgülere değil, kaynakçasına bakarsın.",
+    "barnum": 0.5
+  },
+  "saturn_capricorn": {
+    "title": "Oğlak Satürnü",
+    "hook": "Sorumluluk senin için yük değil, ayakta durma biçimi.",
+    "body": "Satürn nerede sınandığını anlatır ve Oğlak onun kendi evi: en sağlam çalıştığı yer. Toprak elementi, öncü nitelik: hedef, zaman, yapı. Uzun yolu seçmekten korkmazsın; başkası bırakınca sen devam edersin. Gücün dayanıklı disiplin ve olgunluk; gölgesi, hiç dinlenmeyen bir iç ses.",
+    "scene": "Sabah alarmı kurmana gerek yoktur; ondan önce uyanmışsındır.",
+    "barnum": 0.45
+  },
+  "saturn_aquarius": {
+    "title": "Kova Satürnü",
+    "hook": "Kuralları sevmezsin, ama iyi bir sistemi herkesten iyi kurarsın.",
+    "body": "Satürn nerede sınandığını anlatır ve Kova onun geleneksel evi: en yapıcı çalıştığı yerlerden biri. Hava elementi, sabit nitelik, yöneticileri Satürn ve Uranüs: ilke, topluluk, uzun vade. Özgürlük senin için düzenin karşıtı değil, iyi bir düzenin sonucudur. Gücün ilkeli tutarlılık; gölgesi, insanlara mesafeli görünmek.",
+    "scene": "Arkadaş grubunda ortak harcamaları tabloya döken ve kimseye kızmadan takip eden sensin.",
+    "barnum": 0.45
+  },
+  "saturn_pisces": {
+    "title": "Balık Satürnü",
+    "hook": "Hayal kurmak kolay, sınır koymak zor; ikisini birlikte öğreniyorsun.",
+    "body": "Satürn nerede sınandığını anlatır. Balık su elementinden, değişken nitelikte, yöneticileri Jüpiter ve Neptün: şefkat, sezgi, çözülme. Sorumluluğun başkasının derdine karışınca ağırlaşır; nerede duracağını öğrenmek senin uzun dersin. Gücün sabırlı merhamet ve sanat disiplini; gölgesi, sınır koyunca suçluluk hissetmek.",
+    "scene": "Herkesin derdini dinlersin; kendi derdini ancak yazarak anlatırsın.",
+    "barnum": 0.55
+  },
+  "asc_aries": {
+    "title": "Koç Yükselen",
+    "hook": "Kapıdan girişin, konuşmandan önce gelir.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi burcun yöneticisi Mars'tır. Koç ateş elementinden, öncü nitelikte: hızlı, doğrudan, girişken. İnsanlar seni ilk gördüklerinde enerjik ve kararlı bulur; sabırsızlığını da hemen fark ederler. Gücün canlılık ve cesaret; gölgesi, dinlemeden harekete geçmiş görünmek.",
+    "scene": "Yürürken herkesten bir adım öndesindir, adres bilmesen bile.",
+    "barnum": 0.45
+  },
+  "asc_taurus": {
+    "title": "Boğa Yükselen",
+    "hook": "Sakin durursun; sakinliğin güven verir.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Venüs'tür. Boğa toprak elementinden, sabit nitelikte: ağır, rahat, dokunulabilir. İnsanlar seni sağlam ve huzurlu bulur; acele ettiremezler. Gücün sükûnet ve estetik; gölgesi, değişime karşı ilk anda kapalı görünmek.",
+    "scene": "Bir mekâna girince önce oturacak yeri değil, rahat koltuğu seçersin.",
+    "barnum": 0.5
+  },
+  "asc_gemini": {
+    "title": "İkizler Yükselen",
+    "hook": "Tanışmanın ilk dakikasında sohbet çoktan başlamıştır.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Merkür'dür. İkizler hava elementinden, değişken nitelikte: hareketli, meraklı, genç. İnsanlar seni zeki ve kolay ulaşılır bulur; yerinde duramadığını da görürler. Gücün uyum ve iletişim; gölgesi, yüzeysel görünmek.",
+    "scene": "Taksiciyle inene kadar hayat hikâyesini konuşmuş olursun.",
+    "barnum": 0.5
+  },
+  "asc_cancer": {
+    "title": "Yengeç Yükselen",
+    "hook": "İlk bakışta yumuşak görünürsün; kabuk sonra fark edilir.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Ay'dır. Yengeç su elementinden, öncü nitelikte: koruyucu, duyarlı, ev gibi. İnsanlar yanında rahat hisseder ve sana kolayca açılır; senin açılman ise zaman alır. Gücün sıcak güven; gölgesi, tanışmadan alınganlaşmak.",
+    "scene": "Yeni tanıştığın insanlar bir hafta sonra sana dertlerini anlatıyor olur.",
+    "barnum": 0.5
+  },
+  "asc_virgo": {
+    "title": "Başak Yükselen",
+    "hook": "Derli toplu görünürsün; içeride ne olursa olsun.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Merkür'dür. Başak toprak elementinden, değişken nitelikte: dikkatli, ölçülü, işe yarar. İnsanlar seni güvenilir ve düzenli bulur; ilk anda mesafeli gelebilirsin. Gücün sessiz yetkinlik; gölgesi, kendini fazla eleştirir görünmek.",
+    "scene": "Bir ortama girince ilk fark ettiğin şey masadaki hafif çarpık örtüdür.",
+    "barnum": 0.5
+  },
+  "asc_libra": {
+    "title": "Terazi Yükselen",
+    "hook": "Nazik girersin, nazik çıkarsın; arada herkes seni sever.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Venüs'tür. Terazi hava elementinden, öncü nitelikte: zarif, dengeli, uyumlu. İnsanlar seni hoş ve adil bulur; ne düşündüğünü hemen anlamazlar, çünkü önce onları dinlersin. Gücün çekicilik ve diplomasi; gölgesi, kararsız görünmek.",
+    "scene": "Herkesin kavga ettiği grupta sen hâlâ iki tarafla da konuşabilen kişisindir.",
+    "barnum": 0.55
+  },
+  "asc_scorpio": {
+    "title": "Akrep Yükselen",
+    "hook": "Az konuşursun; bakışın senin yerine konuşur.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Mars ve Plüton'dur. Akrep su elementinden, sabit nitelikte: yoğun, gizemli, dikkatli. İnsanlar seni ilk anda etkileyici ve biraz ürkütücü bulur; içeri girmek zaman alır. Gücün karizma ve sezgi; gölgesi, mesafeli görünmek.",
+    "scene": "Bir odaya girince kim kiminle, kim neden gergin; iki dakikada haritasını çıkarırsın.",
+    "barnum": 0.45
+  },
+  "asc_sagittarius": {
+    "title": "Yay Yükselen",
+    "hook": "Gülüşün seni herkesten önce tanıtır.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Jüpiter'dir. Yay ateş elementinden, değişken nitelikte: açık, iyimser, hareketli. İnsanlar seni samimi ve eğlenceli bulur; fazla dürüst bulduklarında bile gülerler. Gücün bulaşıcı neşe; gölgesi, ciddiye alınmamak.",
+    "scene": "Tatilde tanıştığın insanlarla yıllar sonra hâlâ yazışıyor olursun.",
+    "barnum": 0.5
+  },
+  "asc_capricorn": {
+    "title": "Oğlak Yükselen",
+    "hook": "Yaşından büyük görünürsün; sonra yaşından genç kalırsın.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Satürn'dür. Oğlak toprak elementinden, öncü nitelikte: ciddi, ölçülü, güvenilir. İnsanlar sana ilk anda saygı duyar, sonra ne kadar esprili olduğunu keşfeder. Gücün ağırbaşlılık; gölgesi, soğuk görünmek.",
+    "scene": "Yeni bir grupta ilk hafta 'ciddi biri' sanılırsın; ikinci hafta en iyi espriyi sen yaparsın.",
+    "barnum": 0.5
+  },
+  "asc_aquarius": {
+    "title": "Kova Yükselen",
+    "hook": "Kalabalıkta ayırt edilirsin; farklı olmaya çalışmadan.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Satürn ve Uranüs'tür. Kova hava elementinden, sabit nitelikte: özgün, dostane, mesafeli. İnsanlar seni ilginç ve arkadaş canlısı bulur; yakınlaşmak isteyince bir cam olduğunu fark ederler. Gücün özgünlük ve tarafsızlık; gölgesi, ulaşılmaz görünmek.",
+    "scene": "Giydiğin şeyin moda olup olmadığını bilmezsin; iki yıl sonra moda olur.",
+    "barnum": 0.5
+  },
+  "asc_pisces": {
+    "title": "Balık Yükselen",
+    "hook": "Ortama göre şekil alırsın; herkes seni biraz kendine benzetir.",
+    "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Jüpiter ve Neptün'dür. Balık su elementinden, değişken nitelikte: yumuşak, duyarlı, akışkan. İnsanlar seni sevecen ve anlayışlı bulur; ne istediğini kolay okuyamazlar. Gücün şefkatli uyum; gölgesi, silik görünmek.",
+    "scene": "Herkes seni kendi dünyasından sanır: sanatçıya sanatçı, sporcuya sporcu gelirsin.",
+    "barnum": 0.55
+  },
+  "uranus_aries": {
+    "title": "Koç Uranüsü",
+    "hook": "Yeniyi beklemezsin; yeniyi sen başlatırsın, bazen bir gecede.",
+    "body": "Uranüs nerede kalıpları kırdığını ve neyle özgürleştiğini anlatır; bir burçta yedi yıl kalır, aynı yaş grubunun ortak tonudur. Koç ateş elementinden, öncü nitelikte: cesur, ani, öncü. Kuşağınla birlikte yeni yolları ilk deneyen sensin; eski usule sabrın azdır. Gücün girişimci yenilik; gölgesi, sabırsız kopuşlar.",
+    "scene": "Yeni bir uygulama çıktığı gün kurmuş, ertesi gün herkese anlatıyor olursun.",
+    "barnum": 0.6
+  },
+  "uranus_taurus": {
+    "title": "Boğa Uranüsü",
+    "hook": "Değerin ne olduğunu yeniden tanımlayan kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Boğa toprak elementinden, sabit nitelikte: madde, güvence, doğa. Kuşağınla birlikte para, yeme içme ve toprakla ilişkiyi baştan kuruyorsun; eski güvenceler sana yetmiyor. Gücün pratik yenilik; gölgesi, sarsıntıya direnmek.",
+    "scene": "Ev yapımı, elde tamir, ikinci el: bunlar senin için nostalji değil, yeni normal.",
+    "barnum": 0.65
+  },
+  "uranus_gemini": {
+    "title": "İkizler Uranüsü",
+    "hook": "Bilgiye ulaşmanın yolunu değiştiren kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. İkizler hava elementinden, değişken nitelikte: dil, iletişim, hız. Kuşağınla birlikte konuşma, öğrenme ve haberleşme biçimini yeniliyorsun. Gücün çevik ve özgün zihin; gölgesi, dağınık dikkat.",
+    "scene": "Bir konuyu öğrenmek için kitap değil, üç farklı kaynağı aynı anda açarsın.",
+    "barnum": 0.65
+  },
+  "uranus_cancer": {
+    "title": "Yengeç Uranüsü",
+    "hook": "Ev ve aidiyet kavramını kuşağınla birlikte yeniden yazdın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Yengeç su elementinden, öncü nitelikte: ev, kök, bakım. Kuşağın için 'ev' eski tanımına sığmadı; yakınlığı kendi kurallarınla kurarsın. Gücün duygusal özgürlük; gölgesi, köke bağlanmakta huzursuzluk.",
+    "scene": "Evin neresi olduğunu sorunca bir adres değil, bir insan ya da bir şehir söylersin.",
+    "barnum": 0.65
+  },
+  "uranus_leo": {
+    "title": "Aslan Uranüsü",
+    "hook": "Kendini ifade etmenin özgür olması gerektiğine kuşak olarak inanırsın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Aslan ateş elementinden, sabit nitelikte: yaratıcılık, sahne, birey. Kuşağınla birlikte kendini gösterme biçimlerini yeniledin; kalıp kimlik sana dar gelir. Gücün özgün yaratıcılık; gölgesi, dikkat çekmeyi amaç yapmak.",
+    "scene": "Bir hobiyi kimse anlamasa da sürdürürsün; on yıl sonra herkes o hobiyi edinir.",
+    "barnum": 0.65
+  },
+  "uranus_virgo": {
+    "title": "Başak Uranüsü",
+    "hook": "Çalışma ve düzen anlayışını yenileyen kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Başak toprak elementinden, değişken nitelikte: yöntem, hizmet, beden. Kuşağınla birlikte işin nasıl yapıldığını, günlük düzeni ve bedenle ilişkiyi yeniden kurdun. Gücün pratik icat; gölgesi, huzursuz bir titizlik.",
+    "scene": "Günlük düzenini üç ayda bir baştan kurar, hepsinde bir şey öğrenirsin.",
+    "barnum": 0.65
+  },
+  "uranus_libra": {
+    "title": "Terazi Uranüsü",
+    "hook": "İlişki kurallarını sorgulayan kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Terazi hava elementinden, öncü nitelikte: ilişki, eşitlik, estetik. Kuşağınla birlikte ortaklık ve adalet fikrini yeniledin; kalıp roller sana uymaz. Gücün eşitlikçi bakış; gölgesi, bağlanmayı kısıtlanma sanmak.",
+    "scene": "Arkadaşlıkta kuralı sen koymazsın, ama kural koyana ilk itiraz eden sensin.",
+    "barnum": 0.65
+  },
+  "uranus_scorpio": {
+    "title": "Akrep Uranüsü",
+    "hook": "Tabu senin için konuşulmayacak şey değil, konuşulması gereken şey.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Akrep su elementinden, sabit nitelikte: derinlik, güç, dönüşüm. Kuşağınla birlikte gizli olanı açığa çıkarma cesareti taşırsın; yüzeysel yenilik seni tatmin etmez. Gücün köklü dönüşüm; gölgesi, sarsmayı amaç haline getirmek.",
+    "scene": "Sofrada kimsenin açmadığı konuyu sen açarsın ve masa sessizleşir.",
+    "barnum": 0.6
+  },
+  "uranus_sagittarius": {
+    "title": "Yay Uranüsü",
+    "hook": "İnanç ve sınır fikrini kuşağınla birlikte esnettin.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Yay ateş elementinden, değişken nitelikte: uzaklar, felsefe, özgürlük. Kuşağın için dünya küçüldü, fikirler çoğaldı; tek bir doğruya bağlı kalmak sana yabancıdır. Gücün geniş ve özgür bakış; gölgesi, hiçbir yere kök salamamak.",
+    "scene": "Farklı ülkelerden arkadaşların olur ve her birinden bir alışkanlık kaparsın.",
+    "barnum": 0.65
+  },
+  "uranus_capricorn": {
+    "title": "Oğlak Uranüsü",
+    "hook": "Kurumları içeriden değiştiren kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, otorite, hedef. Kuşağınla birlikte otoriteyi sorgular ama sistemi yıkmak yerine yeniden kurarsın. Gücün yapıcı yenilik; gölgesi, eski ile yeni arasında sıkışmak.",
+    "scene": "Kuralı beğenmezsin ama çiğnemezsin; daha iyisini yazıp önerirsin.",
+    "barnum": 0.65
+  },
+  "uranus_aquarius": {
+    "title": "Kova Uranüsü",
+    "hook": "Bağlantı ve topluluk fikrini yeniden tanımlayan kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır ve Kova onun modern evi: en özgün çalıştığı yer. Bir burçta yedi yıl kalır, kuşağın ortak tonudur. Hava elementi, sabit nitelik: ağ, teknoloji, eşitlik. Kuşağınla birlikte insanların nasıl bağlandığını değiştirdin. Gücün ileri görüş ve dayanışma; gölgesi, mesafeli bir idealizm.",
+    "scene": "Yüz yüze görüşmediğin ama her gün konuştuğun arkadaşların vardır.",
+    "barnum": 0.65
+  },
+  "uranus_pisces": {
+    "title": "Balık Uranüsü",
+    "hook": "Hayal gücünün de bir teknoloji olabileceğini gösteren kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Balık su elementinden, değişken nitelikte: hayal, şefkat, çözülme. Kuşağınla birlikte sanat, inanç ve iç dünya konularına yeni bir dil getirdin. Gücün sezgisel yenilik; gölgesi, dağınık bir idealizm.",
+    "scene": "Bir sanat işini herkesten önce beğenirsin ve nedenini anlatamazsın.",
+    "barnum": 0.7
+  },
+  "neptune_aries": {
+    "title": "Koç Neptünü",
+    "hook": "Kahramanlık hayali senin kuşağının ortak rüyası.",
+    "body": "Neptün nerede hayal kurduğunu ve neyi idealleştirdiğini anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Koç ateş elementinden, öncü nitelikte: cesaret, birey, başlangıç. Kuşağınla birlikte bireysel cesaretin bir ideal olduğuna inanırsın. Gücün ilhamlı cesaret; gölgesi, gerçekçi olmayan kahramanlık beklentisi.",
+    "scene": "Bir filmde tek başına herkese karşı duran karakter senin karakterindir.",
+    "barnum": 0.7
+  },
+  "neptune_taurus": {
+    "title": "Boğa Neptünü",
+    "hook": "Doğayla ve toprakla ilişki senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Boğa toprak elementinden, sabit nitelikte: madde, doğa, değer. Kuşağınla birlikte sade yaşamı ve doğayı idealleştirirsin. Gücün huzur arayışı; gölgesi, güvenceyi hayal ile karıştırmak.",
+    "scene": "Şehirden kaçıp bahçeli bir eve yerleşme hayalini en az bir kez ciddiye almışsındır.",
+    "barnum": 0.7
+  },
+  "neptune_gemini": {
+    "title": "İkizler Neptünü",
+    "hook": "Kelimelerin büyüsü senin kuşağının ortak inancı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. İkizler hava elementinden, değişken nitelikte: dil, hikâye, bağlantı. Kuşağınla birlikte anlatının gücüne inanırsın; iyi bir hikâye seni gerçekten daha çok etkiler. Gücün hayal gücü ve dil; gölgesi, söz ile gerçeği karıştırmak.",
+    "scene": "Bir hikâyeyi anlatırken her seferinde küçük bir şey eklersin ve fark etmezsin.",
+    "barnum": 0.7
+  },
+  "neptune_cancer": {
+    "title": "Yengeç Neptünü",
+    "hook": "Ev ve geçmiş, senin kuşağının kutsal alanı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Yengeç su elementinden, öncü nitelikte: kök, bellek, koruma. Kuşağınla birlikte geçmişi ve aidiyeti idealleştirirsin. Gücün derin şefkat; gölgesi, geçmişi olduğundan güzel hatırlamak.",
+    "scene": "Çocukluğunun tadını hâlâ ararsın; bulduğunda da 'o değil' dersin.",
+    "barnum": 0.7
+  },
+  "neptune_leo": {
+    "title": "Aslan Neptünü",
+    "hook": "Yıldız olmak senin kuşağının ortak rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Aslan ateş elementinden, sabit nitelikte: sahne, ihtişam, yaratıcılık. Kuşağınla birlikte parlamayı ve büyük yaşamayı idealleştirirsin. Gücün ilham verici hayal; gölgesi, gösterişi anlamın önüne koymak.",
+    "scene": "Bir konser ya da sahne anısı senin için hayatın en gerçek parçalarından biridir.",
+    "barnum": 0.7
+  },
+  "neptune_virgo": {
+    "title": "Başak Neptünü",
+    "hook": "Hizmetin kutsal olabileceğine inanan kuşaktansın.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Başak toprak elementinden, değişken nitelikte: iş, düzen, fayda. Kuşağınla birlikte çalışmayı ve mükemmelliği idealleştirirsin. Gücün adanmış özen; gölgesi, ulaşılmaz bir kusursuzluk beklentisi.",
+    "scene": "Bir işi bitirince mutlu olursun; ama daha iyi olabilirdi düşüncesi gece uyandırır.",
+    "barnum": 0.7
+  },
+  "neptune_libra": {
+    "title": "Terazi Neptünü",
+    "hook": "İdeal aşk ve adil dünya senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Terazi hava elementinden, öncü nitelikte: ilişki, güzellik, denge. Kuşağınla birlikte ilişkiyi ve barışı idealleştirirsin. Gücün uyum hayali; gölgesi, gerçek insanı hayaldeki ile kıyaslamak.",
+    "scene": "Bir ilişkinin başında karşı tarafı olduğundan biraz güzel görürsün; herkes gibi ama daha çok.",
+    "barnum": 0.75
+  },
+  "neptune_scorpio": {
+    "title": "Akrep Neptünü",
+    "hook": "Derinliğin kendisi senin kuşağı için bir inanç biçimi.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Akrep su elementinden, sabit nitelikte: sır, dönüşüm, yoğunluk. Kuşağınla birlikte gizli olanı ve yoğun duyguyu idealleştirirsin. Gücün sezgisel derinlik; gölgesi, dramı derinlik sanmak.",
+    "scene": "Hafif bir şarkıyı sevmen zordur; seni sarsan şarkıyı yıllarca dinlersin.",
+    "barnum": 0.7
+  },
+  "neptune_sagittarius": {
+    "title": "Yay Neptünü",
+    "hook": "Uzak diyarlar ve büyük anlamlar senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Yay ateş elementinden, değişken nitelikte: yolculuk, inanç, felsefe. Kuşağınla birlikte özgürlüğü ve anlam arayışını idealleştirirsin. Gücün geniş bir umut; gölgesi, gerçek yolu hayal edilen yola feda etmek.",
+    "scene": "Gitmediğin bir ülkeyi özleyebilirsin ve bunu tuhaf bulmazsın.",
+    "barnum": 0.7
+  },
+  "neptune_capricorn": {
+    "title": "Oğlak Neptünü",
+    "hook": "Başarı hayalini gerçekçi kurabilen kuşaktansın.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, başarı, zaman. Kuşağınla birlikte sistemleri idealleştirdin ve onlardan hayal kırıklığına uğradın; sağlam olanı yeniden hayal ediyorsun. Gücün pratik idealizm; gölgesi, güvenceyi mutlak sanmak.",
+    "scene": "Bir planı yaparken en iyi senaryoya inanırsın, yedek planı da hazırlamış olursun.",
+    "barnum": 0.7
+  },
+  "neptune_aquarius": {
+    "title": "Kova Neptünü",
+    "hook": "Herkesin bağlı olduğu bir dünya senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Kova hava elementinden, sabit nitelikte: topluluk, teknoloji, ideal. Kuşağınla birlikte ağları ve ortak amacı idealleştirirsin. Gücün kolektif hayal; gölgesi, ekrandaki dünyayı gerçek dünyayla karıştırmak.",
+    "scene": "Hiç görmediğin insanlarla bir amaç için bir araya gelmek sana doğal gelir.",
+    "barnum": 0.7
+  },
+  "neptune_pisces": {
+    "title": "Balık Neptünü",
+    "hook": "Sınırların eridiği bir dünya senin kuşağının rüyası ve sınavı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır ve Balık onun modern evi: en güçlü çalıştığı yer. Bir burçta on dört yıl kalır, kuşak tonudur. Su elementi, değişken nitelik: şefkat, sanat, çözülme. Kuşağınla birlikte empatiyi ve hayali idealleştirirsin. Gücün derin merhamet; gölgesi, gerçekle bağın gevşemesi.",
+    "scene": "Sanal ve gerçek arasındaki çizgi senin için başkalarına göre daha incedir.",
+    "barnum": 0.75
+  },
+  "pluto_aries": {
+    "title": "Koç Plütonu",
+    "hook": "Bireysel iradenin gücünü sınayan kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü ve gücü nasıl kullandığını anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Koç ateş elementinden, öncü nitelikte: irade, başlangıç, cesaret. Kuşağınla birlikte kişisel cesaretin sınırlarını yeniden çizersin. Gücün köklü girişim; gölgesi, güç için çatışmaya çekilmek.",
+    "scene": "Yeni bir şeye başlamak sana büyüme gibi gelir; bitirmek başkasının işi olsa da.",
+    "barnum": 0.7
+  },
+  "pluto_taurus": {
+    "title": "Boğa Plütonu",
+    "hook": "Değer ve sahiplik fikrini kökten dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Boğa toprak elementinden, sabit nitelikte: madde, güvence, kaynak. Kuşağınla birlikte neyin gerçekten değerli olduğunu yeniden sorarsın. Gücün dayanıklı dönüşüm; gölgesi, sahip olmaya tutunmak.",
+    "scene": "Bir şeyi atmak ya da vermek sana küçük bir dönüşüm gibi gelir ve sonra hafiflersin.",
+    "barnum": 0.7
+  },
+  "pluto_gemini": {
+    "title": "İkizler Plütonu",
+    "hook": "Bilginin gücünü yeniden keşfeden kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. İkizler hava elementinden, değişken nitelikte: dil, bilgi, bağlantı. Kuşağınla birlikte bilginin nasıl yayıldığını ve gücünü dönüştürürsün. Gücün nüfuz eden zekâ; gölgesi, bilgiyi silah gibi kullanmak.",
+    "scene": "Bir konuyu öğrenince onu anlatmadan duramazsın; öğrenmek seni değiştirir.",
+    "barnum": 0.7
+  },
+  "pluto_cancer": {
+    "title": "Yengeç Plütonu",
+    "hook": "Aile ve vatan fikrini derinden dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Yengeç su elementinden, öncü nitelikte: kök, koruma, aidiyet. Kuşağınla birlikte ev ve aidiyet kavramlarını krizlerden geçirip yeniden kurdun. Gücün koruyucu dayanıklılık; gölgesi, geçmişe tutunmak.",
+    "scene": "Ev senin için bir bina değil, bir kale; içeri kimin gireceğine sen karar verirsin.",
+    "barnum": 0.7
+  },
+  "pluto_leo": {
+    "title": "Aslan Plütonu",
+    "hook": "Bireyin gücüne inanan, sahneyi dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Aslan ateş elementinden, sabit nitelikte: kimlik, yaratıcılık, güç. Kuşağınla birlikte kendini ifade etmeyi bir güç meselesine çevirdin. Gücün yaratıcı irade; gölgesi, sahneyi bırakamamak.",
+    "scene": "Kendi hikâyeni anlatmak senin için bir hak, biraz da bir görev.",
+    "barnum": 0.7
+  },
+  "pluto_virgo": {
+    "title": "Başak Plütonu",
+    "hook": "İşi, sağlığı ve düzeni kökten dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Başak toprak elementinden, değişken nitelikte: iş, yöntem, hizmet. Kuşağınla birlikte çalışma biçimini ve günlük düzeni derinden değiştirdin. Gücün ısrarlı iyileştirme; gölgesi, kusuru affetmemek.",
+    "scene": "Bir düzeni bozuk görünce onu tamir etmeden yanından geçemezsin.",
+    "barnum": 0.7
+  },
+  "pluto_libra": {
+    "title": "Terazi Plütonu",
+    "hook": "İlişki ve adalet kavramlarını dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Terazi hava elementinden, öncü nitelikte: ortaklık, denge, adalet. Kuşağınla birlikte ilişkilerdeki güç dengesini yeniden kurdun. Gücün derin adalet duygusu; gölgesi, ilişkide kontrol arayışı.",
+    "scene": "Bir arkadaşlıkta eşitlik bozulunca bunu ilk sen hissedersin ve konuşursun.",
+    "barnum": 0.7
+  },
+  "pluto_scorpio": {
+    "title": "Akrep Plütonu",
+    "hook": "Gerçeği örtbas etmeyen, derine bakmaktan korkmayan kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır ve Akrep onun modern evi: en yoğun çalıştığı yer. Bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Su elementi, sabit nitelik: sır, güç, yeniden doğuş. Kuşağınla birlikte tabuları açtın, kırılganlığı güce çevirdin. Gücün dönüşüm kapasitesi; gölgesi, her şeyi kriz gibi yaşamak.",
+    "scene": "Sıradan bir sohbet seninle beş dakikada derin bir konuya döner.",
+    "barnum": 0.65
+  },
+  "pluto_sagittarius": {
+    "title": "Yay Plütonu",
+    "hook": "İnancı ve sınırları sorgulayan, dünyayı küçülten kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Yay ateş elementinden, değişken nitelikte: inanç, uzaklar, gerçek arayışı. Kuşağınla birlikte doğru bildiklerin sarsıldı ve kendi hakikatini kurmayı öğrendin. Gücün cesur sorgulama; gölgesi, her otoriteye şüpheyle bakmak.",
+    "scene": "Sana 'böyle yapılır' denince önce 'neden' diye sorarsın, sonra kendin denersin.",
+    "barnum": 0.7
+  },
+  "pluto_capricorn": {
+    "title": "Oğlak Plütonu",
+    "hook": "Kurumların sarsıldığı bir dönemde büyüyen kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, otorite, sistem. Kuşağınla birlikte eski yapıların çöküşünü ve yenisinin kuruluşunu izliyorsun. Gücün dayanıklı yeniden kurma; gölgesi, güvence arayışını kaygıya çevirmek.",
+    "scene": "Büyük planlara temkinli yaklaşırsın; yıkılanı görmüş bir kuşağın refleksi.",
+    "barnum": 0.7
+  },
+  "pluto_aquarius": {
+    "title": "Kova Plütonu",
+    "hook": "Teknolojinin ve topluluğun gücünü dönüştürecek kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Kova hava elementinden, sabit nitelikte: ağ, eşitlik, gelecek. Kuşağınla birlikte bilginin ve gücün kimde toplandığını yeniden tartışacaksın. Gücün kolektif dönüşüm; gölgesi, insanı sisteme feda etmek.",
+    "scene": "Bir topluluğun kuralını değiştirmek sana imkânsız gelmez, yalnızca zaman alır.",
+    "barnum": 0.7
+  },
+  "pluto_pisces": {
+    "title": "Balık Plütonu",
+    "hook": "İnanç ve hayal gücünün yeniden doğduğu bir çağın kuşağı.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Balık su elementinden, değişken nitelikte: inanç, sanat, şefkat. Kuşağınla birlikte görünmeyenin gücünü yeniden keşfedeceksin. Gücün derin şefkat ve sezgi; gölgesi, gerçeği hayale bırakmak.",
+    "scene": "Bir hikâyeye, bir müziğe inanmak sana bir dünya görüşü kadar gerçek gelir.",
+    "barnum": 0.75
+  },
+  "trueNode_aries": {
+    "title": "Koç Kuzey Düğümü",
+    "hook": "Büyüme yönün: başkasını beklemeden kendi adımını atmak.",
+    "body": "Kuzey Düğüm haritada gelişme yönünü gösterir; karşısındaki Güney Düğüm (burada Terazi) ise alışık olduğun, kolay gelen tarafı. Koç ateş elementinden, öncü nitelikte: bağımsızlık, cesaret, kendi isteğini bilmek. Uyum sağlamak sana kolay, kendi tarafını tutmak zor; ders tam orada. Gücün ilişki zekâsı; hedefin, kendi adına karar vermek.",
+    "scene": "Herkes 'sen seç' dediğinde bir kez olsun gerçekten seçmek.",
+    "barnum": 0.5
+  },
+  "trueNode_taurus": {
+    "title": "Boğa Kuzey Düğümü",
+    "hook": "Büyüme yönün: sakinleşmek, basitleştirmek, kalıcı olanı kurmak.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Akrep) alışık olduğun tarafı. Boğa toprak elementinden, sabit nitelikte: sükûnet, somut değer, sabır. Yoğunluk ve kriz sana tanıdık gelir; huzur ise öğrenilmesi gereken bir beceri. Gücün derinlik; hedefin, sıradan günü sevmek.",
+    "scene": "Hiçbir şey olmayan bir pazar gününü sıkıcı değil, iyi bulmak.",
+    "barnum": 0.5
+  },
+  "trueNode_gemini": {
+    "title": "İkizler Kuzey Düğümü",
+    "hook": "Büyüme yönün: merak etmek, sormak, bilmediğini kabul etmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Yay) alışık olduğun tarafı. İkizler hava elementinden, değişken nitelikte: dinleme, çeşitlilik, yakın çevre. Büyük doğrular sana kolay, küçük sorular zor; ders, cevabı bilmeden konuşmayı bırakıp dinlemek. Gücün geniş bakış; hedefin, karşındakini merak etmek.",
+    "scene": "Bir sohbette 'bence' demeden önce 'sence' diye sormak.",
+    "barnum": 0.5
+  },
+  "trueNode_cancer": {
+    "title": "Yengeç Kuzey Düğümü",
+    "hook": "Büyüme yönün: ihtiyaç duymayı, bakmayı ve bakılmayı öğrenmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Oğlak) alışık olduğun tarafı. Yengeç su elementinden, öncü nitelikte: duygu, ev, yakınlık. Sorumluluk ve başarı sana tanıdık; hissetmek ve kırılgan olabilmek ise yeni. Gücün dayanıklılık; hedefin, güçlü görünmeden sevilebileceğini görmek.",
+    "scene": "Yorgun olduğunu söylemek ve o gün gerçekten dinlenmek.",
+    "barnum": 0.5
+  },
+  "trueNode_leo": {
+    "title": "Aslan Kuzey Düğümü",
+    "hook": "Büyüme yönün: kalabalığın içinden çıkıp kendi sesinle görünmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Kova) alışık olduğun tarafı. Aslan ateş elementinden, sabit nitelikte: yaratıcılık, yürek, sahne. Gruba karışmak, mesafeli kalmak sana kolay; kendini ortaya koymak zor. Gücün tarafsızlık; hedefin, alkışı hak ettiğini kabul etmek.",
+    "scene": "Bir kutlamada köşede durmak yerine ortaya çıkıp bir şey söylemek.",
+    "barnum": 0.5
+  },
+  "trueNode_virgo": {
+    "title": "Başak Kuzey Düğümü",
+    "hook": "Büyüme yönün: hayali plana, niyeti adıma çevirmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Balık) alışık olduğun tarafı. Başak toprak elementinden, değişken nitelikte: düzen, yöntem, somut yarar. Akışa bırakmak sana kolay, sınır ve düzen kurmak zor; ders, küçük adımların da kutsal olabileceği. Gücün sezgi; hedefin, bugün bir şeyi tamamlamak.",
+    "scene": "Büyük hayalin ilk adımını takvime yazmak.",
+    "barnum": 0.5
+  },
+  "trueNode_libra": {
+    "title": "Terazi Kuzey Düğümü",
+    "hook": "Büyüme yönün: 'ben' cümlesine 'biz' cümlesini eklemek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Koç) alışık olduğun tarafı. Terazi hava elementinden, öncü nitelikte: ortaklık, denge, karşıdakini görmek. Tek başına hareket etmek sana kolay; birlikte karar vermek zor. Gücün cesaret; hedefin, işbirliğinin seni küçültmediğini görmek.",
+    "scene": "Bir planı yapmadan önce arkadaşına 'sen ne dersin' diye sormak ve cevabı beklemek.",
+    "barnum": 0.5
+  },
+  "trueNode_scorpio": {
+    "title": "Akrep Kuzey Düğümü",
+    "hook": "Büyüme yönün: bırakmak, dönüşmek, güvenceden derinliğe geçmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Boğa) alışık olduğun tarafı. Akrep su elementinden, sabit nitelikte: paylaşım, dönüşüm, yoğunluk. Tutmak ve korumak sana kolay; bırakmak zor. Ders, kaybetme korkusunun ötesinde daha derin bir bağ olduğu. Gücün istikrar; hedefin, değişimi tehdit değil yenilenme saymak.",
+    "scene": "Yıllardır sakladığın bir eşyayı vermek ve hafiflediğini fark etmek.",
+    "barnum": 0.5
+  },
+  "trueNode_sagittarius": {
+    "title": "Yay Kuzey Düğümü",
+    "hook": "Büyüme yönün: ayrıntıdan başını kaldırıp bütüne bakmak.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (İkizler) alışık olduğun tarafı. Yay ateş elementinden, değişken nitelikte: anlam, inanç, uzaklar. Bilgi toplamak ve konuşmak sana kolay; bir şeye inanıp o yolda yürümek zor. Gücün çok yönlülük; hedefin, kendi doğrunu seçip savunmak.",
+    "scene": "Yüz seçenek arasından birini seçip diğerlerine bakmayı bırakmak.",
+    "barnum": 0.5
+  },
+  "trueNode_capricorn": {
+    "title": "Oğlak Kuzey Düğümü",
+    "hook": "Büyüme yönün: sorumluluk almak ve kendi ayakları üzerinde durmak.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Yengeç) alışık olduğun tarafı. Oğlak toprak elementinden, öncü nitelikte: hedef, yapı, olgunluk. Bakmak ve bakılmak sana tanıdık; kendi yolunu çizmek yeni. Ders, sevgi ile sorumluluğun birlikte olabileceği. Gücün şefkat; hedefin, kendine güvenmek.",
+    "scene": "Bir kararı ailene sormadan almak ve arkasında durmak.",
+    "barnum": 0.5
+  },
+  "trueNode_aquarius": {
+    "title": "Kova Kuzey Düğümü",
+    "hook": "Büyüme yönün: sahneden inip birlikte bir şey kurmak.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Aslan) alışık olduğun tarafı. Kova hava elementinden, sabit nitelikte: topluluk, eşitlik, ortak amaç. Parlamak ve takdir görmek sana tanıdık; alkışsız katkı yeni. Gücün yaratıcı yürek; hedefin, adın geçmeden de anlamlı olabileceğini görmek.",
+    "scene": "Bir grup işinde fikri vermek ve kimin fikri olduğunu söylememek.",
+    "barnum": 0.5
+  },
+  "trueNode_pisces": {
+    "title": "Balık Kuzey Düğümü",
+    "hook": "Büyüme yönün: kontrolü bırakıp akışa ve sezgiye güvenmek.",
+    "body": "Kuzey Düğüm gelişme yönünü gösterir; Güney Düğüm (Başak) alışık olduğun tarafı. Balık su elementinden, değişken nitelikte: şefkat, hayal, kabul. Düzeltmek ve planlamak sana kolay; belirsizliğe dayanmak zor. Ders, her şeyin kusursuz olmadan da iyi olabileceği. Gücün özen; hedefin, kendine ve dünyaya biraz merhamet.",
+    "scene": "Listeyi bir kenara bırakıp planlanmamış bir öğleden sonrayı yaşamak.",
+    "barnum": 0.5
+  },
+  "chiron_aries": {
+    "title": "Koç Chironu",
+    "hook": "Yaran: var olmaya hakkın olup olmadığı sorusu. Ustalığın: başkasına cesaret vermek.",
+    "body": "Chiron, mitolojideki yaralı şifacı; haritada nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Koç ateş elementinden, öncü nitelikte: kimlik, irade, ilk adım. Kendi isteğini ortaya koymak sana çocukken zor gelmiş olabilir; şimdi başkasının cesaretini görmekte ustasın. Yara bir kere iyileşince güce dönüşür.",
+    "scene": "Arkadaşını yeni bir şeye başlamaya ikna edersin; aynı şeyi kendin için ertelersin.",
+    "barnum": 0.55
+  },
+  "chiron_taurus": {
+    "title": "Boğa Chironu",
+    "hook": "Yaran: yeterli olup olmadığın sorusu. Ustalığın: başkasına güvence vermek.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Boğa toprak elementinden, sabit nitelikte: değer, beden, güvence. Sahip olduklarının ve kendi değerinin yeterliliği sende eski bir soru; başkasına 'yetersin' demekte ise şaşırtıcı bir yeteneğin var. Yara iyileşince sağlam bir sükûnete dönüşür.",
+    "scene": "Herkese 'sen halledersin' dersin; kendine aynı cümleyi kurmak zordur.",
+    "barnum": 0.55
+  },
+  "chiron_gemini": {
+    "title": "İkizler Chironu",
+    "hook": "Yaran: anlaşılıp anlaşılmadığın sorusu. Ustalığın: başkasının derdini kelimeye dökmek.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. İkizler hava elementinden, değişken nitelikte: dil, öğrenme, anlaşılma. Söylediklerinin yanlış anlaşılması ya da sesinin duyulmaması eski bir yara; başkasının anlatamadığını anlatmak ise ustalığın. Yara iyileşince berrak bir dile dönüşür.",
+    "scene": "Arkadaşının derdini ondan iyi anlatırsın; kendi derdini anlatmaya sıra gelmez.",
+    "barnum": 0.55
+  },
+  "chiron_cancer": {
+    "title": "Yengeç Chironu",
+    "hook": "Yaran: ait olma sorusu. Ustalığın: başkasına yuva olmak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Yengeç su elementinden, öncü nitelikte: kök, bakım, aidiyet. Bir yere tam ait hissetmemek eski bir yara olabilir; herkesin kendini evinde hissettiği kişi olmak ise ustalığın. Yara iyileşince derin bir şefkate dönüşür.",
+    "scene": "Evine gelen herkes rahat eder; sen kendi evinde bazen misafir gibi hissedersin.",
+    "barnum": 0.55
+  },
+  "chiron_leo": {
+    "title": "Aslan Chironu",
+    "hook": "Yaran: görülüp görülmediğin sorusu. Ustalığın: başkasını parlatmak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Aslan ateş elementinden, sabit nitelikte: kimlik, yaratıcılık, takdir. Yeterince görülmediğin duygusu eski bir yara; başkasının yeteneğini fark edip öne çıkarmak ise ustalığın. Yara iyileşince sahneyi paylaşabilen bir cömertliğe dönüşür.",
+    "scene": "Arkadaşının yeteneğini herkese anlatırsın; kendi yeteneğin sorulunca konuyu değiştirirsin.",
+    "barnum": 0.55
+  },
+  "chiron_virgo": {
+    "title": "Başak Chironu",
+    "hook": "Yaran: kusursuz olmadığın duygusu. Ustalığın: bozuk olanı onarmak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Başak toprak elementinden, değişken nitelikte: düzen, hizmet, beden. Hiçbir zaman yeterince iyi yapmadığın hissi eski bir yara; başkasının hatasını yargılamadan düzeltmek ise ustalığın. Yara iyileşince şefkatli bir titizliğe dönüşür.",
+    "scene": "Herkesin işini toparlarsın; kendi işini bitirince 'daha iyi olabilirdi' dersin.",
+    "barnum": 0.55
+  },
+  "chiron_libra": {
+    "title": "Terazi Chironu",
+    "hook": "Yaran: ilişkide eşit olup olmadığın sorusu. Ustalığın: başkalarını barıştırmak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Terazi hava elementinden, öncü nitelikte: ortaklık, adalet, denge. İlişkilerde kendini geri planda bırakmak eski bir yara; iki tarafı da anlayıp uzlaştırmak ise ustalığın. Yara iyileşince kendi payını isteyebilen bir adalete dönüşür.",
+    "scene": "İki arkadaşını barıştırırsın; kendi kırgınlığını söylemeye sıra gelmez.",
+    "barnum": 0.55
+  },
+  "chiron_scorpio": {
+    "title": "Akrep Chironu",
+    "hook": "Yaran: güvenmek. Ustalığın: krizdeki insana eşlik etmek.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Akrep su elementinden, sabit nitelikte: güven, kayıp, dönüşüm. Bir ihanet ya da kayıp eski bir yara olabilir; başkasının en karanlık anında yanında durabilmek ise ustalığın. Yara iyileşince korkusuz bir derinliğe dönüşür.",
+    "scene": "Herkes zor günde seni arar; kendi zor gününde kimseyi aramazsın.",
+    "barnum": 0.55
+  },
+  "chiron_sagittarius": {
+    "title": "Yay Chironu",
+    "hook": "Yaran: neye inanacağın sorusu. Ustalığın: başkasına anlam bulmasında yardım etmek.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Yay ateş elementinden, değişken nitelikte: inanç, anlam, uzaklar. Bir inancın ya da öğretmenin hayal kırıklığı eski bir yara; başkasının kendi yolunu bulmasına eşlik etmek ise ustalığın. Yara iyileşince kendi felsefene dönüşür.",
+    "scene": "Arkadaşına hayatın anlamı üzerine saatlerce konuşursun; kendi cevabın hâlâ açık.",
+    "barnum": 0.55
+  },
+  "chiron_capricorn": {
+    "title": "Oğlak Chironu",
+    "hook": "Yaran: tanınıp tanınmadığın sorusu. Ustalığın: başkasının başarısını kurmak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Oğlak toprak elementinden, öncü nitelikte: başarı, otorite, saygınlık. Emeğinin karşılığını görememek eski bir yara olabilir; başkasının yolunu planlamak ise ustalığın. Yara iyileşince kendi otoriteni sahiplenmeye dönüşür.",
+    "scene": "Herkesin kariyer planını yaparsın; kendininkini 'sonra' dersin.",
+    "barnum": 0.55
+  },
+  "chiron_aquarius": {
+    "title": "Kova Chironu",
+    "hook": "Yaran: dışarıda kalmak. Ustalığın: dışarıda kalanı içeri almak.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Kova hava elementinden, sabit nitelikte: topluluk, farklılık, aidiyet. Gruba uymadığın duygusu eski bir yara; farklı olanı fark edip kapıyı açmak ise ustalığın. Yara iyileşince farklılığı bir armağan olarak taşımaya dönüşür.",
+    "scene": "Yeni gelen, köşede duran kişiye ilk konuşan sensin; sen yeni gelince köşede durursun.",
+    "barnum": 0.55
+  },
+  "chiron_pisces": {
+    "title": "Balık Chironu",
+    "hook": "Yaran: dünyanın acısını taşımak. Ustalığın: sessiz şefkat.",
+    "body": "Chiron nerede incindiğini ve o yaradan nasıl bir ustalık çıkardığını gösterir. Balık su elementinden, değişken nitelikte: merhamet, hayal, sınır. Başkasının acısını kendi acın gibi taşımak eski bir yara; kimsenin fark etmediği acıyı görmek ise ustalığın. Yara iyileşince sınırı olan bir merhamete dönüşür.",
+    "scene": "Yolda ağlayan birini görünce günün geri kalanı senin için değişir.",
+    "barnum": 0.6
+  }
+}

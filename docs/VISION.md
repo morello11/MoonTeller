@@ -39,3 +39,7 @@ Yapmadıklarımız: hesap/üyelik, sunucu veritabanı, bildirim altyapısı, öd
 ### v2 park yeri (şimdi yapılmaz)
 Doğum günü gökyüzü posteri, Uyum Düellosu (kazanan ilanı), transit zaman çizelgesi, Vedik/sidereal anahtarı,
 ilçe seçimi, İngilizce, gündüz teması, özel alan adı, servis worker ile tam çevrimdışı.
+
+---
+**Karar (Adım 3):** "Ofis" çerçevesi orta yola çekildi. Ürün dili "Ekip"; metinlerde iş sahneleri azınlık, gündelik hayat çoğunluk.
+Ayrıntı `docs/TEXTBANK.md` sonunda.

@@ -1,0 +1,866 @@
+{
+  "sun_h1": {
+    "hook": "Kim olduğun kapıdan girer girmez belli olur.",
+    "body": "Güneş 1. evde: kimliğin dış görünüşünle iç içe (1. ev benlik ve görünüş). Kendini saklamazsın, saklayamazsın; varlığın odaya sığar ve odayı doldurur. Gücün canlı bir kendine güven; gölgesi, kendi bakış açına fazla bağlı kalmak.",
+    "scene": "Bir odaya girince kimsenin seni tanıtmasına gerek kalmaz.",
+    "barnum": 0.45
+  },
+  "sun_h2": {
+    "hook": "Kendini yaptığın işle ve sahip olduğunla tanımlarsın.",
+    "body": "Güneş 2. evde: kimliğin değer verdiğin şeylerle iç içe (2. ev kaynaklar ve değerler). Somut olan sana güven verir; emeğinin karşılığını görmek kimliğinin parçasıdır. Gücün sağlam bir öz değer; gölgesi, kendini sahip olduklarıyla ölçmek.",
+    "scene": "Kendi paranla aldığın ilk şeyi hâlâ hatırlarsın.",
+    "barnum": 0.5
+  },
+  "sun_h3": {
+    "hook": "Konuşarak, yazarak, sorarak var olursun.",
+    "body": "Güneş 3. evde: kimliğin iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Merakın canlı, dilin akıcı; kardeşler, komşular, mahalle senin sahnendir. Gücün zeki ve ulaşılabilir bir varlık; gölgesi, derinleşmeden konu değiştirmek.",
+    "scene": "Mahalledeki herkesle tanışırsın, bakkal adını bilir.",
+    "barnum": 0.5
+  },
+  "sun_h4": {
+    "hook": "Kendini en çok evde, en çok köklerinde bulursun.",
+    "body": "Güneş 4. evde: kimliğin kök ve iç dünyayla iç içe (4. ev ev, kök, iç dünya). Dışarıda sessiz, içeride parlak; ev senin için sığınak değil, sahne. Gücün derin bir aidiyet; gölgesi, dışarıya açılmakta çekingenlik.",
+    "scene": "Ev arkadaşların ya da ailen seni dışarıdaki insanlardan başka biri olarak tanır: daha canlı.",
+    "barnum": 0.5
+  },
+  "sun_h5": {
+    "hook": "Yaratmak, oynamak, sahnede olmak: kimliğin buradan parlar.",
+    "body": "Güneş 5. evde: Güneş'in doğal evi (5. ev yaratıcılık, oyun, sahne). Ürettiğin şeyle var olursun; hobi, sanat, çocukluk neşesi kimliğinin merkezinde. Gücün cömert bir yaratıcılık; gölgesi, ilgi görmeyince sönmek.",
+    "scene": "Bir masada oyun çıkarsa oyunu sen yönetirsin.",
+    "barnum": 0.45
+  },
+  "sun_h6": {
+    "hook": "Kendini yararlı olduğunda tam hissedersin.",
+    "body": "Güneş 6. evde: kimliğin günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Rutin sana sıkıcılık değil, kimlik verir; iyi yapılmış iş senin imzandır. Gücün güvenilir bir ustalık; gölgesi, kendini yalnızca faydasıyla ölçmek.",
+    "scene": "Tatilde bile sabah rutinini bozmazsın ve bundan mutlu olursun.",
+    "barnum": 0.5
+  },
+  "sun_h7": {
+    "hook": "Kendini en iyi bir başkasının karşısında tanırsın.",
+    "body": "Güneş 7. evde: kimliğin ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Tek başına eksik hissedebilirsin; ortaklık, arkadaşlık, karşılıklılık seni parlatır. Gücün diplomasi ve bağ kurma; gölgesi, kendini başkasının aynasında kaybetmek.",
+    "scene": "Bir plan yaparken 'biz' demen 'ben' demenden kolaydır.",
+    "barnum": 0.5
+  },
+  "sun_h8": {
+    "hook": "Yüzeyde yaşamazsın; kimliğin derinde kurulur.",
+    "body": "Güneş 8. evde: kimliğin dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Krizlerden büyüyerek çıkarsın; başkasının kaçtığı konuları sen açarsın. Gücün dayanıklılık ve sezgi; gölgesi, yoğunluğu hayatın normali sanmak.",
+    "scene": "Hafif sohbetler seni yorar, bir gece yarısı itirafı canlandırır.",
+    "barnum": 0.45
+  },
+  "sun_h9": {
+    "hook": "Kimliğin uzaklarda, sorularda, yolda kurulur.",
+    "body": "Güneş 9. evde: kimliğin anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Yolculuk, felsefe, öğrenmek seni parlatır; tek bir yerde durmak kimliğine dar gelir. Gücün geniş ufuk; gölgesi, ayrıntıyı ve yakın olanı küçümsemek.",
+    "scene": "Bir yeri görmeden onun hakkında bir kitap okumuşsundur.",
+    "barnum": 0.5
+  },
+  "sun_h10": {
+    "hook": "Görünür bir yerde durmak sana kimlik verir.",
+    "body": "Güneş 10. evde: kimliğin kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Ne yaptığınla tanınmak istersin; sorumluluk sana yük değil, sahne. Gücün doğal bir otorite; gölgesi, özel hayatı rolün gerisinde bırakmak.",
+    "scene": "Tanışmalarda 'ne iş yapıyorsun' sorusu senin için en kolay sorudur.",
+    "barnum": 0.5
+  },
+  "sun_h11": {
+    "hook": "Kimliğin bir grubun içinde, ortak bir amaçta parlar.",
+    "body": "Güneş 11. evde: kimliğin topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Tek başına değil, bir ekibin parçası olarak parlarsın; ortak hayal seni canlandırır. Gücün geniş bir dostluk ağı; gölgesi, yakın ilişkiyi kalabalığa yeğlemek.",
+    "scene": "Arkadaş grubunun kurucusu ya da toparlayıcısı sensin.",
+    "barnum": 0.5
+  },
+  "sun_h12": {
+    "hook": "Kimliğin görünmeyen yerde, sessizlikte kurulur.",
+    "body": "Güneş 12. evde: kimliğin geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Öne çıkmak yerine perde arkasında parlarsın; yalnızlık sana eksiklik değil, şarj. Gücün derin bir sezgi ve şefkat; gölgesi, kendini fazla geri çekmek.",
+    "scene": "Kalabalık bir gün sonra tek başına bir saat sana en iyi gelen şeydir.",
+    "barnum": 0.5
+  },
+  "moon_h1": {
+    "hook": "Ne hissettiğin yüzünden okunur.",
+    "body": "Ay 1. evde: duyguların dış görünüşünle iç içe (1. ev benlik ve görünüş). Ruh halin gizlenmez; insanlar seni duyarlı ve yaklaşılabilir bulur. Gücün doğal bir sıcaklık; gölgesi, her ruh halinin dışarıya yansıması.",
+    "scene": "Yüz ifadenden o gün nasıl olduğunu herkes anlar, sen söylemeden.",
+    "barnum": 0.5
+  },
+  "moon_h2": {
+    "hook": "Güvende hissetmek için somut bir şeye ihtiyaç duyarsın.",
+    "body": "Ay 2. evde: duyguların güvence ve değerle iç içe (2. ev kaynaklar, değerler). Dolu bir dolap, sağlam bir birikim seni sakinleştirir; belirsizlik huzursuz eder. Gücün istikrarlı bir iç dünya; gölgesi, güveni yalnızca maddede aramak.",
+    "scene": "Evde yedek erzak bulunması sana huzur verir.",
+    "barnum": 0.5
+  },
+  "moon_h3": {
+    "hook": "Duygularını konuşarak, yazarak, anlatarak yaşarsın.",
+    "body": "Ay 3. evde: duyguların iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Ruh halin sohbetle değişir; kardeşler ve yakın çevre duygusal evindir. Gücün duygusal zekâ; gölgesi, hissi düşünceye çevirip hissetmemek.",
+    "scene": "Bir derdi anlatmadan geçirdiğin gün tamamlanmamış gibi gelir.",
+    "barnum": 0.5
+  },
+  "moon_h4": {
+    "hook": "Ev senin için bir adres değil, bir duygu.",
+    "body": "Ay 4. evde: Ay'ın doğal evi (4. ev ev, kök, iç dünya). Ev, aile, geçmiş duygularının merkezi; güvende hissetmek için kendi köşene ihtiyacın var. Gücün derin bir aidiyet ve bakım; gölgesi, geçmişe fazla bağlı kalmak.",
+    "scene": "Taşınmak senin için eşya değil, duygu taşımaktır.",
+    "barnum": 0.5
+  },
+  "moon_h5": {
+    "hook": "Duygularını yaratarak ve oynayarak ifade edersin.",
+    "body": "Ay 5. evde: duyguların yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Mutlu olduğunda üretirsin; çocuklar ve çocuksu neşe seni rahatlatır. Gücün sıcak bir yaratıcılık; gölgesi, ilgi görmeyince kırılmak.",
+    "scene": "Moralin bozukken mutfakta ya da elinde bir hobiyle düzelirsin.",
+    "barnum": 0.5
+  },
+  "moon_h6": {
+    "hook": "Düzen senin için huzurun ta kendisi.",
+    "body": "Ay 6. evde: duyguların günlük düzenle iç içe (6. ev günlük iş, düzen, hizmet). Rutin sana güven verir; işler yolunda gidince ruh halin de yolunda gider. Gücün özenli bir bakım; gölgesi, huzursuzken düzeni takıntıya çevirmek.",
+    "scene": "Kaygılı bir gün, evi temizleyince biter.",
+    "barnum": 0.5
+  },
+  "moon_h7": {
+    "hook": "Güvende hissetmek için bir 'diğeri'ne ihtiyaç duyarsın.",
+    "body": "Ay 7. evde: duyguların ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Ruh halin yakınındaki insana göre değişir; yalnızlık sana dinlenme değil eksiklik gibi gelir. Gücün şefkatli bir ortaklık; gölgesi, kendi ihtiyacını ilişkiye feda etmek.",
+    "scene": "Tek başına yemek yemek sana yemek gibi gelmez.",
+    "barnum": 0.5
+  },
+  "moon_h8": {
+    "hook": "Duyguların derinde, yoğun ve gizli akar.",
+    "body": "Ay 8. evde: duyguların dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Yarım his tanımazsın; güven senin için her şeyin önündedir. Gücün derin bir sezgi ve sadakat; gölgesi, yoğunluğu ve şüpheyi normal sanmak.",
+    "scene": "Bir arkadaşlığa güvenmen yıllar alır; güvenince kimse yerinden edemez.",
+    "barnum": 0.45
+  },
+  "moon_h9": {
+    "hook": "İçin uzaklarda dinlenir.",
+    "body": "Ay 9. evde: duyguların anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Yolculuk, farklı kültürler, büyük sorular seni rahatlatır; dar bir çevre seni bunaltır. Gücün geniş bir iç dünya; gölgesi, huzuru hep başka yerde aramak.",
+    "scene": "Kötü bir gün, bir harita ya da bir belgeselle düzelir.",
+    "barnum": 0.5
+  },
+  "moon_h10": {
+    "hook": "Duyguların herkesin gördüğü bir yerde yaşanır.",
+    "body": "Ay 10. evde: duyguların kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Başarı ve takdir seni duygusal olarak besler; ruh halin dışarıdan fark edilir. Gücün insanları hisseden bir liderlik; gölgesi, özel duyguyu rolün gerisine atmak.",
+    "scene": "Yaptığın işin beğenilmesi o günü kurtarır, beğenilmemesi o günü bozar.",
+    "barnum": 0.5
+  },
+  "moon_h11": {
+    "hook": "Arkadaşların senin duygusal ailen.",
+    "body": "Ay 11. evde: duyguların topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Bir grubun parçası olmak seni rahatlatır; ortak hayal seni besler. Gücün geniş ve sıcak bir dostluk; gölgesi, yakın bağdan çok kalabalığa sığınmak.",
+    "scene": "Zor günde ilk aradığın aile değil, grup sohbetidir.",
+    "barnum": 0.5
+  },
+  "moon_h12": {
+    "hook": "Duyguların görünmeyen bir odada saklanır.",
+    "body": "Ay 12. evde: duyguların geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Ne hissettiğini kendine bile geç fark edersin; yalnızlık sana şifa gibi gelir. Gücün derin bir empati; gölgesi, ihtiyacını kimseye söylememek.",
+    "scene": "Ağlamak için yalnız kalmayı beklersin.",
+    "barnum": 0.5
+  },
+  "mercury_h1": {
+    "hook": "Ağzını açtığın an kim olduğun belli olur.",
+    "body": "Merkür 1. evde: düşüncen dış görünüşünle iç içe (1. ev benlik ve görünüş). Konuşkan, meraklı, hareketli görünürsün; zekân ilk fark edilen özelliğindir. Gücün canlı bir iletişim; gölgesi, sessizliğe tahammülsüzlük.",
+    "scene": "Tanıştığın kişiye beş dakikada on soru sormuşsundur.",
+    "barnum": 0.5
+  },
+  "mercury_h2": {
+    "hook": "Düşüncelerin somut ve işe yarar olmalı.",
+    "body": "Merkür 2. evde: düşüncen değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Pratik zekâ, hesaplı kararlar, konuşarak değer üretmek. Gücün sağlam bir yargı; gölgesi, soyut fikri küçümsemek.",
+    "scene": "Bir şey almadan önce yorumları okumuş, karşılaştırmış olursun.",
+    "barnum": 0.5
+  },
+  "mercury_h3": {
+    "hook": "Konuşmak, öğrenmek, bağlantı kurmak: tam yerindesin.",
+    "body": "Merkür 3. evde: Merkür'ün doğal evi (3. ev iletişim, öğrenme, yakın çevre). Dil, yazı, kısa yolculuklar, kardeşler ve komşular senin dünyandır; öğrenmek nefes almak gibidir. Gücün akıcı bir zekâ; gölgesi, dağınık dikkat.",
+    "scene": "Her yeni uygulamayı, her yeni kelimeyi ilk sen öğrenirsin.",
+    "barnum": 0.5
+  },
+  "mercury_h4": {
+    "hook": "Zihnin evde ve geçmişte çalışır.",
+    "body": "Merkür 4. evde: düşüncen kök ve iç dünyayla iç içe (4. ev ev, kök, iç dünya). Aile hikâyeleri, ev düzeni, anılar zihnini meşgul eder; en iyi evde düşünürsün. Gücün derin bir bellek; gölgesi, geçmişi fazla kurcalamak.",
+    "scene": "Aile albümünü en iyi sen anlatırsın.",
+    "barnum": 0.5
+  },
+  "mercury_h5": {
+    "hook": "Zekân oyun oynamayı sever.",
+    "body": "Merkür 5. evde: düşüncen yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Kelime oyunları, hikâye anlatmak, çocuklarla konuşmak sana doğal gelir. Gücün eğlenceli bir zekâ; gölgesi, ciddi konuyu şakaya vurmak.",
+    "scene": "Masadaki en iyi kelime oyununu sen yaparsın.",
+    "barnum": 0.5
+  },
+  "mercury_h6": {
+    "hook": "Zihnin düzen kurmak için çalışır.",
+    "body": "Merkür 6. evde: düşüncen günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Listeler, yöntemler, ayrıntılar; zihnin sistem kurmayı sever. Gücün çözümleyici bir zekâ; gölgesi, ayrıntıda kaybolmak.",
+    "scene": "Telefonunda not uygulaması en çok kullandığın uygulamadır.",
+    "barnum": 0.5
+  },
+  "mercury_h7": {
+    "hook": "En iyi bir başkasıyla konuşurken düşünürsün.",
+    "body": "Merkür 7. evde: düşüncen ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Karar vermek için birine anlatman gerekir; tartışma senin için düşünme biçimidir. Gücün diplomatik bir zekâ; gölgesi, kendi fikrini karşındakine göre ayarlamak.",
+    "scene": "Bir karar için arkadaşını ararsın; konuşurken karar zaten verilmiş olur.",
+    "barnum": 0.5
+  },
+  "mercury_h8": {
+    "hook": "Zihnin yüzeyle yetinmez.",
+    "body": "Merkür 8. evde: düşüncen derinlik ve dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Araştırmacı, şüpheci, sır tutan bir zekâ; konuşulmayanı merak edersin. Gücün nüfuz eden bir zihin; gölgesi, her şeyin altında bir gizli katman aramak.",
+    "scene": "Bir konuyu araştırırken kaynağın kaynağına kadar inersin.",
+    "barnum": 0.45
+  },
+  "mercury_h9": {
+    "hook": "Zihnin uzakları ve büyük soruları sever.",
+    "body": "Merkür 9. evde: düşüncen anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Felsefe, yabancı diller, yolculuk; fikirlerin büyük, dilin açık. Gücün geniş bir bakış; gölgesi, ayrıntıyı önemsizleştirmek.",
+    "scene": "Bir sohbet on dakika içinde hayatın anlamına gelir; sen getirirsin.",
+    "barnum": 0.5
+  },
+  "mercury_h10": {
+    "hook": "Konuşman ve fikirlerin senin vitrinin.",
+    "body": "Merkür 10. evde: düşüncen kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Ne söylediğinle tanınırsın; iletişim, yazı, öğretmek sana yol açar. Gücün etkili bir ifade; gölgesi, her sözün değerlendirildiği hissi.",
+    "scene": "Bir grupta sözcü seçilecekse seçilen sensin.",
+    "barnum": 0.5
+  },
+  "mercury_h11": {
+    "hook": "Fikirlerin bir grupta çoğalır.",
+    "body": "Merkür 11. evde: düşüncen topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Tartışma grupları, ortak projeler, geniş bir ağ; fikirlerin geleceğe bakar. Gücün özgün ve toplumsal bir zekâ; gölgesi, birebir sohbeti grup sohbetine yeğlemek.",
+    "scene": "Grup sohbetinde en çok mesajı sen atarsın ve çoğu fikirdir.",
+    "barnum": 0.5
+  },
+  "mercury_h12": {
+    "hook": "Zihnin sessizlikte ve sezgide çalışır.",
+    "body": "Merkür 12. evde: düşüncen geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Düşüncelerini kolay söylemezsin; en iyi fikirlerin yalnızken gelir. Gücün sezgisel bir zekâ; gölgesi, aklındakini içinde tutmak.",
+    "scene": "En iyi cümlen konuşma bittikten sonra aklına gelir.",
+    "barnum": 0.55
+  },
+  "venus_h1": {
+    "hook": "Sevimliliğin ilk görülen şeydir.",
+    "body": "Venüs 1. evde: çekiciliğin dış görünüşünle iç içe (1. ev benlik ve görünüş). İnsanlar seni hoş, zarif, yaklaşılabilir bulur; ilk izlenimde kazanırsın. Gücün doğal bir cazibe; gölgesi, beğenilmeyi fazla önemsemek.",
+    "scene": "Yeni tanıştığın insanlar seni daha ilk günden sever.",
+    "barnum": 0.5
+  },
+  "venus_h2": {
+    "hook": "Güzel şeylere sahip olmak seni mutlu eder.",
+    "body": "Venüs 2. evde: Venüs'ün doğal evlerinden biri (2. ev kaynaklar, değerler). Zevkli, rahat, güzel eşyalardan ve iyi yemekten keyif alan bir yapı; değer verdiğin şeyi korursun. Gücün sağlam bir zevk; gölgesi, konforu ihtiyaçla karıştırmak.",
+    "scene": "Evindeki her eşyanın bir hikâyesi ve bir zevki vardır.",
+    "barnum": 0.5
+  },
+  "venus_h3": {
+    "hook": "Sevgini kelimelerle, mesajlarla, küçük notlarla gösterirsin.",
+    "body": "Venüs 3. evde: sevgin iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Tatlı dil, güzel yazı, kardeşler ve komşularla sıcak bağlar. Gücün zarif bir iletişim; gölgesi, sert gerçeği hep yumuşatmak.",
+    "scene": "Sabah 'günaydın' mesajı senden gelir, hem de emojili.",
+    "barnum": 0.5
+  },
+  "venus_h4": {
+    "hook": "Ev senin için güzelliğin yaşandığı yer.",
+    "body": "Venüs 4. evde: sevgin ev ve kökle iç içe (4. ev ev, kök, iç dünya). Evini güzelleştirmek, aileyle sıcak bağlar, huzurlu bir iç dünya. Gücün sıcak bir yuva kurma yeteneği; gölgesi, dışarı çıkmaya üşenmek.",
+    "scene": "Evine gelen herkes 'ne kadar rahat' der ve kalkmak istemez.",
+    "barnum": 0.5
+  },
+  "venus_h5": {
+    "hook": "Sevmek senin için oyun, sanat ve neşe.",
+    "body": "Venüs 5. evde: sevgin yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Romantik, eğlenceli, yaratıcı; hobiler ve sanat seni besler. Gücün cömert bir neşe; gölgesi, heyecan bitince ilginin bitmesi.",
+    "scene": "Bir hediyeyi kendin yaparsın; satın almak sana yetmez.",
+    "barnum": 0.5
+  },
+  "venus_h6": {
+    "hook": "Sevgini işe yarayarak gösterirsin.",
+    "body": "Venüs 6. evde: sevgin günlük iş ve hizmetle iç içe (6. ev günlük iş, düzen, hizmet). Küçük iyilikler, düzenli bakım, işte uyum; sevgi senin için ilgilenmektir. Gücün özenli bir şefkat; gölgesi, sevgiyi hizmetle ölçmek.",
+    "scene": "Sevdiğin insanın bitkisini sulamayı unutmazsın; o unutur, sen hatırlarsın.",
+    "barnum": 0.5
+  },
+  "venus_h7": {
+    "hook": "İlişki senin için doğal ortam.",
+    "body": "Venüs 7. evde: Venüs'ün doğal evlerinden biri (7. ev bire bir ilişki, ortaklık). Ortaklık, uyum, karşılıklılık sana doğal gelir; iyi bir eş, iyi bir arkadaşsın. Gücün zarif bir bağ kurma yeteneği; gölgesi, huzur bozulmasın diye kendini geri çekmek.",
+    "scene": "İki kişilik planlar sana tek kişilik planlardan daha çekici gelir.",
+    "barnum": 0.5
+  },
+  "venus_h8": {
+    "hook": "Sevgin yoğun, derin ve bütünüyle verilir.",
+    "body": "Venüs 8. evde: sevgin dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Yüzeysel bağ seni tatmin etmez; güven ve yoğunluk ararsın. Gücün tutkulu bir sadakat; gölgesi, kıskançlığı sevginin ölçüsü sanmak.",
+    "scene": "Bir arkadaşlık senin için ya çok derindir ya hiç yoktur.",
+    "barnum": 0.45
+  },
+  "venus_h9": {
+    "hook": "Sevgin uzaklarda, farklı olanda parlar.",
+    "body": "Venüs 9. evde: sevgin anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Farklı kültürler, yolculuk, ortak felsefe seni çeker; sevmek senin için birlikte keşfetmektir. Gücün geniş bir sevgi; gölgesi, yakında olanı küçümsemek.",
+    "scene": "En iyi arkadaşlarından biri başka bir ülkeden.",
+    "barnum": 0.5
+  },
+  "venus_h10": {
+    "hook": "Zarafetin herkesin gördüğü yerde.",
+    "body": "Venüs 10. evde: sevgin kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Sevilen, zevkli, uyumlu bir imaj; ilişkiler yolunu açar. Gücün diplomatik bir görünürlük; gölgesi, imajı gerçek ilişkinin önüne koymak.",
+    "scene": "Herkesin sevdiği insan olmak senin için doğal bir hedeftir.",
+    "barnum": 0.5
+  },
+  "venus_h11": {
+    "hook": "Arkadaşlık senin için sevginin en güzel biçimi.",
+    "body": "Venüs 11. evde: sevgin topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Geniş, sıcak bir çevre; grup içinde sevilirsin ve seversin. Gücün cömert bir dostluk; gölgesi, yakınlığı arkadaşlık seviyesinde tutmak.",
+    "scene": "Arkadaş grubunun 'ortak sevgilisi' sensin: herkes seni sever.",
+    "barnum": 0.55
+  },
+  "venus_h12": {
+    "hook": "Sevgin sessiz, gizli ve derin.",
+    "body": "Venüs 12. evde: sevgin geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Gizli hayranlıklar, sessiz fedakârlıklar, yalnızken güzel olan şeyler. Gücün koşulsuz bir şefkat; gölgesi, sevgini söylemeden beklemek.",
+    "scene": "Birine iyilik yaparsın ve kimin yaptığını söylemezsin.",
+    "barnum": 0.55
+  },
+  "mars_h1": {
+    "hook": "Enerjin kapıdan önce girer.",
+    "body": "Mars 1. evde: eylemin dış görünüşünle iç içe (1. ev benlik ve görünüş). Hızlı, cesur, doğrudan görünürsün; beklemek sana fiziksel olarak zor gelir. Gücün girişken bir canlılık; gölgesi, sabırsızlığın kabalık gibi görünmesi.",
+    "scene": "Kapıyı sen açarsın, sırayı sen başlatırsın, yürüyüşte öndesindir.",
+    "barnum": 0.45
+  },
+  "mars_h2": {
+    "hook": "Kazanmak için çalışırsın, çalışmak için de.",
+    "body": "Mars 2. evde: eylemin değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Emeğinle kazanmak seni canlandırır; sahip olduğunu korumakta serttsin. Gücün üretken bir çaba; gölgesi, aceleci harcama ve sahiplenme.",
+    "scene": "Bir şeyi istediğin an onun için ek iş almışsındır.",
+    "barnum": 0.5
+  },
+  "mars_h3": {
+    "hook": "Kelimelerin keskin, cevabın hızlı.",
+    "body": "Mars 3. evde: eylemin iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Tartışmada hızlı, mesajlaşmada sert, öğrenmede sabırsız. Gücün zihinsel cesaret; gölgesi, sözün gücünü ölçememek.",
+    "scene": "Bir mesaja cevap vermeden önce düşünmen gerektiğini sonradan anlarsın.",
+    "barnum": 0.45
+  },
+  "mars_h4": {
+    "hook": "Ev senin için hem sığınak hem savaş alanı.",
+    "body": "Mars 4. evde: eylemin ev ve kökle iç içe (4. ev ev, kök, iç dünya). Evde çalışmak, evi yenilemek, sevdiklerini korumak; öfke de en çok evde çıkar. Gücün koruyucu bir enerji; gölgesi, gerginliği evde yaşamak.",
+    "scene": "Hafta sonu bir duvarı boyamaya karar verirsin ve o gün bitirirsin.",
+    "barnum": 0.5
+  },
+  "mars_h5": {
+    "hook": "Enerjin oyunda, sporda, sahnede parlar.",
+    "body": "Mars 5. evde: eylemin yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Rekabet senin için eğlence; spor, hobi ve romantizmde cesursun. Gücün canlı bir yaratıcılık; gölgesi, oyunu fazla ciddiye almak.",
+    "scene": "Masa oyununda kaybetmek seni bir hafta meşgul eder.",
+    "barnum": 0.5
+  },
+  "mars_h6": {
+    "hook": "Çalışırken en iyi halindesin.",
+    "body": "Mars 6. evde: eylemin günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Verimli, hızlı, işini bilen bir enerji; boş durmak seni huzursuz eder. Gücün üretken bir disiplin; gölgesi, öfkeni işe ya da eleştiriye çevirmek.",
+    "scene": "Tatilde üçüncü gün yapacak bir iş ararsın.",
+    "barnum": 0.5
+  },
+  "mars_h7": {
+    "hook": "En iyi bir karşıtla karşılaşınca canlanırsın.",
+    "body": "Mars 7. evde: eylemin ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Tutkulu, tartışmacı, ortaklıkta hareketli; seni kışkırtan insanlar çeker. Gücün canlı bir bağ; gölgesi, çatışmayı ilişkide sahnelemek.",
+    "scene": "En yakın arkadaşınla en çok tartışırsın ve bu sizi ayırmaz.",
+    "barnum": 0.45
+  },
+  "mars_h8": {
+    "hook": "Enerjin derinde, sessiz ve kararlı.",
+    "body": "Mars 8. evde: eylemin dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Krizde güçlenir, gizli hedeflere sabırla yürürsün. Gücün stratejik bir irade; gölgesi, öfkeyi içeride biriktirmek.",
+    "scene": "Bir şeyi istediğinde kimseye söylemez, altı ay sonra almış olursun.",
+    "barnum": 0.45
+  },
+  "mars_h9": {
+    "hook": "Enerjin yolda, uzakta, bir davada parlar.",
+    "body": "Mars 9. evde: eylemin anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). İnancın için mücadele eder, yolculukta canlanır, tartışmayı felsefeye çevirirsin. Gücün coşkulu bir cesaret; gölgesi, fikrini dayatmak.",
+    "scene": "Bir konuda haklı olduğuna inanırsan saatlerce vazgeçmezsin.",
+    "barnum": 0.5
+  },
+  "mars_h10": {
+    "hook": "Hedefe koşarken görünmek seni yavaşlatmaz.",
+    "body": "Mars 10. evde: eylemin kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Hırslı, girişken, sorumluluk alan bir enerji; başarı senin için mücadele demektir. Gücün doğal bir liderlik; gölgesi, rekabeti her yere taşımak.",
+    "scene": "Bir görev dağıtılıyorsa en zoru sen istersin.",
+    "barnum": 0.5
+  },
+  "mars_h11": {
+    "hook": "Bir grubu harekete geçiren sensin.",
+    "body": "Mars 11. evde: eylemin topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Ortak amaç için çalışmak seni canlandırır; arkadaşlıklarda da hareketlisin. Gücün toplumsal bir enerji; gölgesi, grupta çatışma çıkarmak.",
+    "scene": "Arkadaş grubunun gezi planını yapan ve herkesi toplayan sensin.",
+    "barnum": 0.5
+  },
+  "mars_h12": {
+    "hook": "Enerjin görünmez, ama vardır.",
+    "body": "Mars 12. evde: eylemin geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Öfkeni saklar, perde arkasında çalışır, kendi kendinle mücadele edersin. Gücün sessiz bir dayanıklılık; gölgesi, bastırılan öfkenin yorgunluğa dönmesi.",
+    "scene": "Kızdığını kimse anlamaz; sen de üç gün sonra anlarsın.",
+    "barnum": 0.5
+  },
+  "jupiter_h1": {
+    "hook": "İyimserlik senin görünüşünün parçası.",
+    "body": "Jüpiter 1. evde: büyüme dış görünüşünle iç içe (1. ev benlik ve görünüş). Sıcak, cömert, güven veren bir varlık; insanlar sana kolay açılır. Gücün bulaşıcı bir neşe; gölgesi, ölçüyü kaçırmak.",
+    "scene": "Bir odaya girince ortam bir ton ısınır.",
+    "barnum": 0.5
+  },
+  "jupiter_h2": {
+    "hook": "Bolluk senin için doğal bir hal.",
+    "body": "Jüpiter 2. evde: büyüme değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Cömert, şanslı, rahat bir ilişki; değer verdiğin şey çoğalır. Gücün bereketli bir güven; gölgesi, tutumsuzluk.",
+    "scene": "Hesap gelince kartı ilk sen uzatırsın.",
+    "barnum": 0.5
+  },
+  "jupiter_h3": {
+    "hook": "Öğrenmek ve anlatmak seni büyütür.",
+    "body": "Jüpiter 3. evde: büyüme iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Meraklı, konuşkan, öğretmeyi seven; yakın çevrende sevilen bir anlatıcı. Gücün geniş bir merak; gölgesi, çok konuşup az dinlemek.",
+    "scene": "Bir konuyu öğrendiğinde iki gün içinde birine anlatmışsındır.",
+    "barnum": 0.5
+  },
+  "jupiter_h4": {
+    "hook": "Bereketin yeri evin ve sofran.",
+    "body": "Jüpiter 4. evde: büyüme ev ve kökle iç içe (4. ev ev, kök, iç dünya). Geniş bir aile duygusu, misafirperver bir ev, güvenli bir iç dünya. Gücün sıcak bir cömertlik; gölgesi, evden çıkmaya üşenmek.",
+    "scene": "Evinde her zaman fazladan bir tabak ve bir yatak vardır.",
+    "barnum": 0.5
+  },
+  "jupiter_h5": {
+    "hook": "Yaratırken ve oynarken büyürsün.",
+    "body": "Jüpiter 5. evde: büyüme yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Cömert bir neşe, büyük hobiler, çocuklarla iyi anlaşmak. Gücün bulaşıcı bir yaratıcılık; gölgesi, eğlencede ölçüyü kaçırmak.",
+    "scene": "Bir hobiye başlarsan ekipmanın en iyisini alırsın.",
+    "barnum": 0.5
+  },
+  "jupiter_h6": {
+    "hook": "İyi yapılmış iş seni büyütür.",
+    "body": "Jüpiter 6. evde: büyüme günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Çalışmayı seven, iş yerinde sevilen, hizmet ederken genişleyen bir yapı. Gücün cömert bir çalışkanlık; gölgesi, fazla iş almak.",
+    "scene": "Yardım istenince 'hayır' demek aklına bile gelmez.",
+    "barnum": 0.5
+  },
+  "jupiter_h7": {
+    "hook": "İlişkiler seni büyütür ve şanslı kılar.",
+    "body": "Jüpiter 7. evde: büyüme ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Cömert ortaklıklar, iyi arkadaşlar, ilişkiden öğrenmek. Gücün geniş yürekli bir bağ kurma; gölgesi, ortağı idealize etmek.",
+    "scene": "Hayatındaki büyük fırsatların çoğu bir tanışmayla başlamıştır.",
+    "barnum": 0.55
+  },
+  "jupiter_h8": {
+    "hook": "Krizden büyüyerek çıkarsın.",
+    "body": "Jüpiter 8. evde: büyüme dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Derin konularda rahat, kayıptan sonra toparlanan, başkasının kaynaklarıyla iyi çalışan bir yapı. Gücün dayanıklı bir iyimserlik; gölgesi, riski hafife almak.",
+    "scene": "En zor dönemlerinden en iyi hikâyelerle çıkmışsındır.",
+    "barnum": 0.5
+  },
+  "jupiter_h9": {
+    "hook": "Ufuk genişledikçe sen de genişlersin.",
+    "body": "Jüpiter 9. evde: Jüpiter'in doğal evi (9. ev uzaklar, anlam, yüksek öğrenme). Yolculuk, felsefe, yabancı kültürler, öğrenmek; anlam arayışı senin doğal halin. Gücün geniş ve iyimser bir bakış; gölgesi, ayrıntıyı ve verdiğin sözü küçümsemek.",
+    "scene": "Pasaportun her zaman hazırdır, bir sonraki yer her zaman bellidir.",
+    "barnum": 0.5
+  },
+  "jupiter_h10": {
+    "hook": "Kapılar sana genellikle açılır.",
+    "body": "Jüpiter 10. evde: büyüme kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Şanslı bir kariyer hattı, saygı gören bir imaj, büyük hedefler. Gücün geniş bir vizyon; gölgesi, gösterişi başarı sanmak.",
+    "scene": "Bir odada 'kim yönetsin' sorusu sorulunca gözler sana döner.",
+    "barnum": 0.5
+  },
+  "jupiter_h11": {
+    "hook": "Arkadaşların senin şansın.",
+    "body": "Jüpiter 11. evde: büyüme topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Geniş bir çevre, cömert dostluklar, ortak hayallerde büyümek. Gücün toplumsal bir bereket; gölgesi, herkese söz verip yetişememek.",
+    "scene": "Telefon rehberinde 'yardım isteyebileceğin' insan sayısı şaşırtır.",
+    "barnum": 0.55
+  },
+  "jupiter_h12": {
+    "hook": "Görünmeyen bir koruman var gibidir.",
+    "body": "Jüpiter 12. evde: büyüme geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Sessiz bir iyimserlik, derin bir inanç, son anda gelen yardım. Gücün içsel bir güven; gölgesi, işleri şansa bırakmak.",
+    "scene": "Tam 'bitti' dediğin anda bir çıkış belirmiştir, hem de birkaç kez.",
+    "barnum": 0.55
+  },
+  "saturn_h1": {
+    "hook": "Ciddiyet senin ilk izlenimin.",
+    "body": "Satürn 1. evde: sınırlar dış görünüşünle iç içe (1. ev benlik ve görünüş). Ağırbaşlı, ölçülü, yaşından olgun görünürsün; güven verirsin, kolay yaklaşılmazsın. Gücün sağlam bir duruş; gölgesi, kendini fazla frenlemek.",
+    "scene": "Yeni tanıştığın insanlar seni 'ciddi' sanır, sonra şaşırır.",
+    "barnum": 0.5
+  },
+  "saturn_h2": {
+    "hook": "Güvenceyi sen kurarsın, hazır bulmazsın.",
+    "body": "Satürn 2. evde: sınırlar değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Tutumlu, sabırlı, sağlam kuran bir yapı; kendi değerini emekle kanıtlamak istersin. Gücün dayanıklı bir birikim; gölgesi, kendini yeterli hissetmemek.",
+    "scene": "Bir şey almadan önce üç kez düşünür, aldığını on yıl kullanırsın.",
+    "barnum": 0.5
+  },
+  "saturn_h3": {
+    "hook": "Söylediğin her sözün arkasında durursun.",
+    "body": "Satürn 3. evde: sınırlar iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Az konuşur, ölçülü yazar, derin öğrenirsin; boş sohbet seni yorar. Gücün güvenilir bir dil; gölgesi, sesini duyurmakta çekingenlik.",
+    "scene": "Grup sohbetinde herkes yazar, sen okursun; yazdığında herkes okur.",
+    "barnum": 0.5
+  },
+  "saturn_h4": {
+    "hook": "Ev senin için kurulan, korunan, sorumluluk alınan yer.",
+    "body": "Satürn 4. evde: sınırlar ev ve kökle iç içe (4. ev ev, kök, iç dünya). Aileye karşı erken sorumluluk, evi sağlam kurma isteği, duyguyu içeride tutmak. Gücün güvenilir bir temel; gölgesi, evde rahatlayamamak.",
+    "scene": "Evdeki bozuk şeyi tamir eden, faturayı takip eden hep sensin.",
+    "barnum": 0.5
+  },
+  "saturn_h5": {
+    "hook": "Yaratıcılığın disiplinle çalışır.",
+    "body": "Satürn 5. evde: sınırlar yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Eğlenmek için izin vermen gerekir; hobilerin ciddi, sanatın emekli. Gücün olgun bir yaratıcılık; gölgesi, oyunu hak edilmesi gereken bir ödül sanmak.",
+    "scene": "Bir hobiye başlarsan kurs alır, program yapar, ustalaşırsın.",
+    "barnum": 0.5
+  },
+  "saturn_h6": {
+    "hook": "Düzen senin doğal halin.",
+    "body": "Satürn 6. evde: sınırlar günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Disiplinli, güvenilir, işini eksiksiz yapan bir yapı; iş senin için ciddi bir mesele. Gücün sağlam bir ustalık; gölgesi, dinlenmeyi ihmal etmek.",
+    "scene": "Yapılacaklar listen bittiğinde yenisini yazmadan uyumazsın.",
+    "barnum": 0.5
+  },
+  "saturn_h7": {
+    "hook": "Bağların geç kurulur, uzun sürer.",
+    "body": "Satürn 7. evde: sınırlar ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Ciddi ortaklıklar, sorumlu bağlar, kolay güvenmemek; sevgiyi sadakatle ölçersin. Gücün kalıcı ilişkiler; gölgesi, yakınlığa mesafe koymak.",
+    "scene": "Yakın arkadaş sayın az, ama hepsi on yılı geçmiştir.",
+    "barnum": 0.5
+  },
+  "saturn_h8": {
+    "hook": "Kontrolü bırakmak senin uzun dersin.",
+    "body": "Satürn 8. evde: sınırlar dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Derin konularda temkinli, kayıp karşısında dayanıklı, başkasının kaynağına güvenmekte ölçülü. Gücün sarsılmaz bir dayanıklılık; gölgesi, güvenmeyi ertelemek.",
+    "scene": "Bir sırrı yalnızca yıllar sonra ve tek kişiye anlatırsın.",
+    "barnum": 0.5
+  },
+  "saturn_h9": {
+    "hook": "İnanmak için kanıt istersin.",
+    "body": "Satürn 9. evde: sınırlar anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Kendi felsefeni sınayarak kurar, kolay inanmaz, derin öğrenirsin. Gücün sağlam bir dünya görüşü; gölgesi, umudu saflık sanmak.",
+    "scene": "Bir kitabı önce kaynakçasından, bir yeri önce tarihinden tanırsın.",
+    "barnum": 0.5
+  },
+  "saturn_h10": {
+    "hook": "Zirveye yavaş çıkarsın, ama çıkarsın.",
+    "body": "Satürn 10. evde: Satürn'ün doğal evi (10. ev kariyer, toplumsal rol). Hırslı, sabırlı, sorumlu; başarı senin için uzun bir inşaat. Gücün dayanıklı bir otorite; gölgesi, hiç yeterince başarmamış hissi.",
+    "scene": "Yirmi yaşında yaptığın planın hâlâ üstünde yürüyorsun.",
+    "barnum": 0.5
+  },
+  "saturn_h11": {
+    "hook": "Arkadaşların az ama sağlam.",
+    "body": "Satürn 11. evde: sınırlar topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Seçici bir çevre, uzun ömürlü dostluklar, gruplarda sorumluluk almak. Gücün güvenilir bir dostluk; gölgesi, kalabalıkta yalnız hissetmek.",
+    "scene": "Grubun ortak işini takip eden, kimse bakmazken sürdüren sensin.",
+    "barnum": 0.5
+  },
+  "saturn_h12": {
+    "hook": "En büyük sınavın kendi içinde.",
+    "body": "Satürn 12. evde: sınırlar geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Sessiz bir sorumluluk, gizli kaygılar, yalnızken kurulan disiplin. Gücün derin bir dayanıklılık; gölgesi, kendine karşı görünmez bir sertlik.",
+    "scene": "Kimsenin bilmediği bir yükü yıllardır taşıyorsundur.",
+    "barnum": 0.55
+  },
+  "uranus_h1": {
+    "hook": "Farklı olduğun ilk bakışta belli.",
+    "body": "Uranüs 1. evde: özgünlük dış görünüşünle iç içe (1. ev benlik ve görünüş). Sıra dışı, bağımsız, öngörülemez görünürsün; kalıba sığmazsın. Gücün özgün bir varlık; gölgesi, farklılığı amaç yapmak.",
+    "scene": "Ne giyeceğin, ne söyleyeceğin hiç tahmin edilemez.",
+    "barnum": 0.5
+  },
+  "uranus_h2": {
+    "hook": "Değer anlayışın herkesinkine benzemez.",
+    "body": "Uranüs 2. evde: özgünlük değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Sıra dışı gelir kaynakları, ani iniş çıkışlar, paraya bağlanmamak. Gücün yaratıcı bir bağımsızlık; gölgesi, istikrarsızlık.",
+    "scene": "Herkesin biriktirdiği şeyi sen biriktirmezsin; başka bir şey biriktirirsin.",
+    "barnum": 0.5
+  },
+  "uranus_h3": {
+    "hook": "Zihnin herkesten farklı bir yerden bağlanır.",
+    "body": "Uranüs 3. evde: özgünlük iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Özgün fikirler, ani sezgiler, sıra dışı bir öğrenme biçimi. Gücün parlak bir zekâ; gölgesi, dağınık dikkat.",
+    "scene": "Bir sohbette söylediğin şey herkesin aklında bir hafta kalır.",
+    "barnum": 0.5
+  },
+  "uranus_h4": {
+    "hook": "Ev senin için değişen bir yer.",
+    "body": "Uranüs 4. evde: özgünlük ev ve kökle iç içe (4. ev ev, kök, iç dünya). Sıra dışı bir aile, sık taşınmalar, alışılmadık bir ev düzeni. Gücün özgür bir iç dünya; gölgesi, köke bağlanamamak.",
+    "scene": "Evin bir düzeni vardır ama kimseninkine benzemez.",
+    "barnum": 0.5
+  },
+  "uranus_h5": {
+    "hook": "Yaratıcılığın kuralsız.",
+    "body": "Uranüs 5. evde: özgünlük yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Sıra dışı hobiler, ani romantik başlangıçlar, özgün bir sanat dili. Gücün yenilikçi bir yaratıcılık; gölgesi, heyecan bitince bırakmak.",
+    "scene": "Hobin başkasına anlatınca 'o ne' diye sorulan bir şeydir.",
+    "barnum": 0.5
+  },
+  "uranus_h6": {
+    "hook": "Rutin sana yakışmaz, kendi düzenini icat edersin.",
+    "body": "Uranüs 6. evde: özgünlük günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Sıra dışı çalışma saatleri, teknolojiyle iyi anlaşmak, sık iş değiştirmek. Gücün yenilikçi bir verimlilik; gölgesi, düzensizlik.",
+    "scene": "Çalışma düzenin haftadan haftaya değişir ve yine de iş biter.",
+    "barnum": 0.5
+  },
+  "uranus_h7": {
+    "hook": "İlişkilerinde özgürlük pazarlık konusu değil.",
+    "body": "Uranüs 7. evde: özgünlük ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Sıra dışı ortaklar, ani başlangıç ve bitişler, ilişkide alan ihtiyacı. Gücün özgür bir bağ; gölgesi, yakınlığı kaçarak korumak.",
+    "scene": "En yakın arkadaşın herkesin 'nasıl tanıştınız' dediği biridir.",
+    "barnum": 0.5
+  },
+  "uranus_h8": {
+    "hook": "Dönüşümlerin ani gelir.",
+    "body": "Uranüs 8. evde: özgünlük dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Beklenmedik krizler ve beklenmedik çıkışlar; derin konulara sıra dışı bir bakış. Gücün hızlı toparlanma; gölgesi, sarsıntıyı normal sanmak.",
+    "scene": "Hayatının en büyük değişimleri bir gecede olmuştur.",
+    "barnum": 0.5
+  },
+  "uranus_h9": {
+    "hook": "İnançların kendine ait, kimseden alınmamış.",
+    "body": "Uranüs 9. evde: özgünlük anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Sıra dışı bir dünya görüşü, alışılmadık yolculuklar, öğretilerden bağımsız düşünmek. Gücün özgür bir felsefe; gölgesi, her otoriteye karşı çıkmak.",
+    "scene": "Kimsenin gitmediği bir yere gitmişsindir, hem de planlamadan.",
+    "barnum": 0.5
+  },
+  "uranus_h10": {
+    "hook": "Kariyerin kimsenin izlemediği bir yoldan gider.",
+    "body": "Uranüs 10. evde: özgünlük kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Sıra dışı bir meslek, ani kariyer değişimleri, özgün bir imaj. Gücün yenilikçi bir görünürlük; gölgesi, istikrarsız bir yol.",
+    "scene": "Ne iş yaptığını anlatmak beş dakika sürer.",
+    "barnum": 0.5
+  },
+  "uranus_h11": {
+    "hook": "Arkadaşların herkesten farklı, sen de onlar için.",
+    "body": "Uranüs 11. evde: Uranüs'ün doğal evi (11. ev gruplar, arkadaşlar, ağlar). Sıra dışı bir çevre, ortak idealler, teknolojiyle kurulan bağlar. Gücün özgün bir dostluk ağı; gölgesi, yakınlığı mesafeyle idare etmek.",
+    "scene": "Arkadaş grubun birbirine hiç benzemeyen insanlardan oluşur.",
+    "barnum": 0.5
+  },
+  "uranus_h12": {
+    "hook": "İçindeki isyan sessiz ama gerçek.",
+    "body": "Uranüs 12. evde: özgünlük geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Gizli bir özgürlük isteği, ani sezgiler, yalnızken gelen fikirler. Gücün sezgisel bir yaratıcılık; gölgesi, özgürlüğü hep ertelemek.",
+    "scene": "Herkes seni uyumlu sanır; içeride bir gün her şeyi değiştirme planı vardır.",
+    "barnum": 0.55
+  },
+  "neptune_h1": {
+    "hook": "Sınırların bulanık, cazibesi net.",
+    "body": "Neptün 1. evde: hayal dış görünüşünle iç içe (1. ev benlik ve görünüş). Yumuşak, gizemli, herkesin biraz kendine benzettiği bir görünüş; ortama göre şekil alırsın. Gücün şefkatli bir cazibe; gölgesi, silik görünmek.",
+    "scene": "İnsanlar seni tanıdığını sanır; her biri farklı birini anlatır.",
+    "barnum": 0.55
+  },
+  "neptune_h2": {
+    "hook": "Değer senin için ölçülmez, hissedilir.",
+    "body": "Neptün 2. evde: hayal değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Maddeyle gevşek bir ilişki, cömertlik, bazen hesapsızlık; sanat ve şefkat senin gerçek kaynağın. Gücün koşulsuz bir cömertlik; gölgesi, belirsizlik.",
+    "scene": "Cüzdanında ne kadar olduğunu tam bilmezsin; başkası ihtiyaç duyunca bilirsin.",
+    "barnum": 0.55
+  },
+  "neptune_h3": {
+    "hook": "Kelimelerin şiir gibi, bazen sis gibi.",
+    "body": "Neptün 3. evde: hayal iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Sezgisel bir dil, hikâye anlatma yeteneği, dağınık dikkat. Gücün şiirsel bir ifade; gölgesi, ne dediğinin anlaşılmaması.",
+    "scene": "Bir adresi tarif ederken sokak adı yerine hislerden bahsedersin.",
+    "barnum": 0.55
+  },
+  "neptune_h4": {
+    "hook": "Ev senin için bir rüya, bazen bir sis.",
+    "body": "Neptün 4. evde: hayal ev ve kökle iç içe (4. ev ev, kök, iç dünya). Geçmişi güzel hatırlamak, evde sanat ve sessizlik, aile içinde bir gizem. Gücün derin bir iç huzur arayışı; gölgesi, gerçek evi hayal edilen evle kıyaslamak.",
+    "scene": "Çocukluk evinin kokusunu hâlâ ararsın.",
+    "barnum": 0.55
+  },
+  "neptune_h5": {
+    "hook": "Yaratıcılığın ilhamla, sevgin hayalle çalışır.",
+    "body": "Neptün 5. evde: hayal yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Sanat, müzik, romantik idealler; oyun senin için bir rüya. Gücün ilhamlı bir yaratıcılık; gölgesi, sevdiğini idealize etmek.",
+    "scene": "Bir şarkı bir insanı, bir insan bir şarkıyı hatırlatır; ikisi de gerçekten büyüktür.",
+    "barnum": 0.55
+  },
+  "neptune_h6": {
+    "hook": "Hizmetin sessiz ve şefkatli.",
+    "body": "Neptün 6. evde: hayal günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Yardım etmeyi seven, düzenle zor anlaşan, işte sezgiyle çalışan bir yapı. Gücün şefkatli bir hizmet; gölgesi, dağınıklık ve tükenme.",
+    "scene": "Yapılacaklar listen kaybolur; yapılması gerekenler yine de yapılır.",
+    "barnum": 0.55
+  },
+  "neptune_h7": {
+    "hook": "İlişkide ideali ararsın, bazen bulursun.",
+    "body": "Neptün 7. evde: hayal ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Romantik idealler, ortağı idealize etmek, kurtarma isteği; sonra derin bir şefkat. Gücün koşulsuz bir bağ; gölgesi, gerçek insanı görmemek.",
+    "scene": "Yeni tanıştığın birini ilk hafta olduğundan güzel görürsün.",
+    "barnum": 0.55
+  },
+  "neptune_h8": {
+    "hook": "Derinlik senin için görünmeyen bir deniz.",
+    "body": "Neptün 8. evde: hayal dönüşümle iç içe (8. ev derinlik, dönüşüm, ortak kaynaklar). Sezgisel bir derinlik, gizemli konulara ilgi, ortak kaynaklarda bulanıklık. Gücün derin bir sezgi; gölgesi, güveni sisin içinde vermek.",
+    "scene": "Bir odaya girince kimin ne sakladığını hissedersin, nedenini bilmeden.",
+    "barnum": 0.55
+  },
+  "neptune_h9": {
+    "hook": "İnancın sözle değil, hisle kurulur.",
+    "body": "Neptün 9. evde: hayal anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Ruhani bir arayış, uzak diyar hayalleri, sezgisel bir felsefe. Gücün geniş bir merhamet; gölgesi, gerçek yolu hayal edilen yola feda etmek.",
+    "scene": "Bir yeri gitmeden özleyebilirsin.",
+    "barnum": 0.55
+  },
+  "neptune_h10": {
+    "hook": "Kariyerin bir rüya ya da bir sis olabilir; sen seçersin.",
+    "body": "Neptün 10. evde: hayal kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Sanat, yardım, ilhamla ilgili işler; imajın bulanık ama çekici. Gücün ilham veren bir görünürlük; gölgesi, yön belirsizliği.",
+    "scene": "Ne iş yaptığını sorunca cevap her yıl biraz değişir.",
+    "barnum": 0.55
+  },
+  "neptune_h11": {
+    "hook": "Arkadaşlarınla ortak bir hayaliniz var.",
+    "body": "Neptün 11. evde: hayal topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). İdealist topluluklar, sanatçı arkadaşlar, ortak rüyalar. Gücün şefkatli bir dostluk; gölgesi, arkadaşı idealize etmek.",
+    "scene": "Arkadaş grubunda 'bir gün hep birlikte' diye başlayan bir hayal vardır ve senindir.",
+    "barnum": 0.55
+  },
+  "neptune_h12": {
+    "hook": "Sezgin en derin yerde, en doğru.",
+    "body": "Neptün 12. evde: Neptün'ün doğal evi (12. ev geri çekilme, görünmeyen, dinlenme). Derin bir şefkat, güçlü sezgi, yalnızlıkta şifa; dünya sana bazen fazla gelir. Gücün koşulsuz bir merhamet; gölgesi, kaçış.",
+    "scene": "Kalabalıktan sonra bir saat sessizlik senin için ilaç gibidir.",
+    "barnum": 0.55
+  },
+  "pluto_h1": {
+    "hook": "Varlığın yoğun; insanlar ya çekilir ya çekinir.",
+    "body": "Plüton 1. evde: dönüşüm dış görünüşünle iç içe (1. ev benlik ve görünüş). Güçlü, gizemli, etkileyici bir görünüş; hayatın boyunca birkaç kez baştan doğarsın. Gücün karizma ve dayanıklılık; gölgesi, kontrol.",
+    "scene": "Bir odaya girince fark edilirsin; ne yapacağın merak edilir.",
+    "barnum": 0.5
+  },
+  "pluto_h2": {
+    "hook": "Değerin kaybedip yeniden kurduğun şeyde.",
+    "body": "Plüton 2. evde: dönüşüm değer ve kaynakla iç içe (2. ev kaynaklar, değerler). Kaynaklarda büyük iniş çıkışlar, sahiplenme gücü, kaybettikten sonra yeniden kurmak. Gücün dayanıklı bir yeniden yapılanma; gölgesi, sahip olmaya tutunmak.",
+    "scene": "Bir şeyi kaybedince iki katını kurmuşsundur.",
+    "barnum": 0.5
+  },
+  "pluto_h3": {
+    "hook": "Kelimelerin nüfuz eder.",
+    "body": "Plüton 3. evde: dönüşüm iletişimle iç içe (3. ev iletişim, öğrenme, yakın çevre). Derin bir zihin, araştırmacı bir dil, sırları görmek; kardeş ilişkileri yoğun. Gücün etkili bir ifade; gölgesi, sözle kontrol.",
+    "scene": "Bir cümlenle sohbetin yönü değişir; bunu bilir, dikkatli kullanırsın.",
+    "barnum": 0.5
+  },
+  "pluto_h4": {
+    "hook": "Kökün derinde, dönüşümün evde.",
+    "body": "Plüton 4. evde: dönüşüm ev ve kökle iç içe (4. ev ev, kök, iç dünya). Yoğun bir aile geçmişi, ev üzerinde güç, iç dünyada köklü değişimler. Gücün derin bir aidiyet; gölgesi, geçmişe tutunmak.",
+    "scene": "Aile hikâyesinde kimsenin konuşmadığı bir bölüm var; sen biliyorsun.",
+    "barnum": 0.5
+  },
+  "pluto_h5": {
+    "hook": "Yaratıcılığın yoğun, sevgin bütün.",
+    "body": "Plüton 5. evde: dönüşüm yaratıcılık ve oyunla iç içe (5. ev yaratıcılık, oyun, sahne). Tutkulu bir sanat, derin romantik bağlar, oyunu ciddiye almak. Gücün dönüştürücü bir yaratıcılık; gölgesi, eğlenceyi güç meselesine çevirmek.",
+    "scene": "Bir hobiye başlayınca herkesin bıraktığı yerde sen ustalaşırsın.",
+    "barnum": 0.5
+  },
+  "pluto_h6": {
+    "hook": "İşi kökten yaparsın ya da hiç.",
+    "body": "Plüton 6. evde: dönüşüm günlük iş ve düzenle iç içe (6. ev günlük iş, düzen, hizmet). Yoğun çalışma, düzeni baştan kurma, işte güç dinamikleri. Gücün ısrarlı bir iyileştirme; gölgesi, kontrolcü bir titizlik.",
+    "scene": "Bir düzeni bozuk görünce onu sıfırdan kurmadan rahat edemezsin.",
+    "barnum": 0.5
+  },
+  "pluto_h7": {
+    "hook": "İlişkilerin seni dönüştürür.",
+    "body": "Plüton 7. evde: dönüşüm ilişkiyle iç içe (7. ev bire bir ilişki, ortaklık). Yoğun ortaklıklar, güç dengesi meseleleri, ilişkiden yeniden doğmak. Gücün derin bir bağ; gölgesi, kontrol ya da kontrol edilme korkusu.",
+    "scene": "Hayatını değiştiren insanları tek tek sayabilirsin.",
+    "barnum": 0.5
+  },
+  "pluto_h8": {
+    "hook": "Krizden yeniden doğmak senin doğal yeteneğin.",
+    "body": "Plüton 8. evde: Plüton'un doğal evi (8. ev derinlik, dönüşüm, ortak kaynaklar). Derin konularda rahat, kayıptan sonra güçlenen, sır tutan bir yapı. Gücün olağanüstü bir dayanıklılık; gölgesi, yoğunluğu normal sanmak.",
+    "scene": "Zor dönemlerden çıkınca eski halinle tanışsan tanımazsın.",
+    "barnum": 0.5
+  },
+  "pluto_h9": {
+    "hook": "İnancın sorgulanarak kurulur.",
+    "body": "Plüton 9. evde: dönüşüm anlam arayışıyla iç içe (9. ev uzaklar, anlam, yüksek öğrenme). Dünya görüşünde köklü değişimler, derin bir hakikat arayışı, uzaklarda dönüşüm. Gücün cesur bir sorgulama; gölgesi, inancı dayatmak.",
+    "scene": "Yirmi yaşındaki doğrularınla bugünkü doğruların birbirine benzemez.",
+    "barnum": 0.5
+  },
+  "pluto_h10": {
+    "hook": "Kariyerinde güç ve dönüşüm iç içe.",
+    "body": "Plüton 10. evde: dönüşüm kamu önündeki rolle iç içe (10. ev kariyer, toplumsal rol). Etkili bir konum, köklü kariyer değişimleri, güç meseleleri. Gücün dönüştürücü bir liderlik; gölgesi, güç için görünürlük.",
+    "scene": "Kariyerinde en az bir kez her şeyi bırakıp baştan başlamışsındır.",
+    "barnum": 0.5
+  },
+  "pluto_h11": {
+    "hook": "Gruplarda dönüştüren güç sensin.",
+    "body": "Plüton 11. evde: dönüşüm topluluk ve arkadaşlıkla iç içe (11. ev gruplar, arkadaşlar, ağlar). Yoğun dostluklar, gruplarda güç dinamikleri, ortak amaç için köklü değişim. Gücün toplumsal bir etki; gölgesi, grupta kontrol.",
+    "scene": "Arkadaş grubunun bir dönüm noktasında belirleyici olan sensin.",
+    "barnum": 0.5
+  },
+  "pluto_h12": {
+    "hook": "Gücün görünmeyen yerde çalışır.",
+    "body": "Plüton 12. evde: dönüşüm geri çekilme ve iç dünyayla iç içe (12. ev geri çekilme, görünmeyen, dinlenme). Gizli bir irade, derin bir iç dönüşüm, yalnızlıkta güçlenmek. Gücün sessiz bir dayanıklılık; gölgesi, gücünden korkmak.",
+    "scene": "Kimsenin görmediği yerde geçirdiğin bir dönüşüm var ve dışarıdan fark edilmez.",
+    "barnum": 0.55
+  },
+  "trueNode_h1": {
+    "hook": "Büyüme yönün: kendin olmak.",
+    "body": "Kuzey Düğüm 1. evde: gelişme yönün benlikte (1. ev benlik ve görünüş); Güney Düğüm 7. evde, ilişkilerde rahatsın. Başkasına uyum sağlamak kolay, kendi adına durmak zor; ders orada. Gücün ilişki zekâsı; hedefin, kendi yolunu seçmek.",
+    "scene": "Herkes 'sen ne istersen' derken bir kez olsun ne istediğini söylemek.",
+    "barnum": 0.5
+  },
+  "trueNode_h2": {
+    "hook": "Büyüme yönün: kendi değerini kurmak.",
+    "body": "Kuzey Düğüm 2. evde: gelişme yönün değer ve kaynakta (2. ev); Güney Düğüm 8. evde, kriz ve başkasının kaynağı sana tanıdık. Yoğunluk kolay, sakin bir güvence zor; ders orada. Gücün derinlik; hedefin, kendi ayakları üzerinde durmak.",
+    "scene": "Kimseden bir şey beklemeden kendi düzenini kurmak.",
+    "barnum": 0.5
+  },
+  "trueNode_h3": {
+    "hook": "Büyüme yönün: sormak, dinlemek, yakınına bakmak.",
+    "body": "Kuzey Düğüm 3. evde: gelişme yönün iletişimde (3. ev); Güney Düğüm 9. evde, büyük doğrular sana tanıdık. Anlatmak kolay, dinlemek zor; ders orada. Gücün geniş bakış; hedefin, karşındakini merak etmek.",
+    "scene": "Bir sohbette bilmediğini söylemek ve sormak.",
+    "barnum": 0.5
+  },
+  "trueNode_h4": {
+    "hook": "Büyüme yönün: köke dönmek, ev kurmak.",
+    "body": "Kuzey Düğüm 4. evde: gelişme yönün ev ve iç dünyada (4. ev); Güney Düğüm 10. evde, başarı ve dışarıdaki rol sana tanıdık. Görünmek kolay, hissetmek zor; ders orada. Gücün sorumluluk; hedefin, evde olmayı öğrenmek.",
+    "scene": "Bir hafta sonunu hiçbir plan yapmadan evde geçirmek.",
+    "barnum": 0.5
+  },
+  "trueNode_h5": {
+    "hook": "Büyüme yönün: oynamak, yaratmak, görünmek.",
+    "body": "Kuzey Düğüm 5. evde: gelişme yönün yaratıcılık ve oyunda (5. ev); Güney Düğüm 11. evde, gruplar ve mesafe sana tanıdık. Kalabalıkta kalmak kolay, sahneye çıkmak zor; ders orada. Gücün dostluk; hedefin, kendi neşeni ortaya koymak.",
+    "scene": "Bir kutlamada köşede durmak yerine ortaya çıkıp bir şey yapmak.",
+    "barnum": 0.5
+  },
+  "trueNode_h6": {
+    "hook": "Büyüme yönün: küçük adım, günlük düzen.",
+    "body": "Kuzey Düğüm 6. evde: gelişme yönün günlük iş ve düzende (6. ev); Güney Düğüm 12. evde, hayal ve geri çekilme sana tanıdık. Akışa bırakmak kolay, düzen kurmak zor; ders orada. Gücün sezgi; hedefin, bugün bir şeyi tamamlamak.",
+    "scene": "Büyük hayalin ilk adımını takvime yazmak.",
+    "barnum": 0.5
+  },
+  "trueNode_h7": {
+    "hook": "Büyüme yönün: birlikte olmayı öğrenmek.",
+    "body": "Kuzey Düğüm 7. evde: gelişme yönün ilişkide (7. ev); Güney Düğüm 1. evde, tek başına hareket sana tanıdık. Kendi başına karar vermek kolay, birlikte karar vermek zor; ders orada. Gücün bağımsızlık; hedefin, ortaklığın seni küçültmediğini görmek.",
+    "scene": "Bir planı yapmadan önce 'sen ne dersin' diye sormak.",
+    "barnum": 0.5
+  },
+  "trueNode_h8": {
+    "hook": "Büyüme yönün: bırakmak ve derinleşmek.",
+    "body": "Kuzey Düğüm 8. evde: gelişme yönün dönüşümde (8. ev); Güney Düğüm 2. evde, güvence ve sahiplenme sana tanıdık. Tutmak kolay, bırakmak zor; ders orada. Gücün istikrar; hedefin, değişimi yenilenme saymak.",
+    "scene": "Yıllardır sakladığın bir şeyi vermek ve hafiflemek.",
+    "barnum": 0.5
+  },
+  "trueNode_h9": {
+    "hook": "Büyüme yönün: bütüne bakmak, inanmak.",
+    "body": "Kuzey Düğüm 9. evde: gelişme yönün anlam arayışında (9. ev); Güney Düğüm 3. evde, bilgi toplamak ve konuşmak sana tanıdık. Ayrıntı kolay, inanç zor; ders orada. Gücün çok yönlülük; hedefin, kendi doğrunu seçip yürümek.",
+    "scene": "Yüz seçenek arasından birini seçip diğerlerine bakmayı bırakmak.",
+    "barnum": 0.5
+  },
+  "trueNode_h10": {
+    "hook": "Büyüme yönün: sorumluluk almak, görünür olmak.",
+    "body": "Kuzey Düğüm 10. evde: gelişme yönün kamu önündeki rolde (10. ev); Güney Düğüm 4. evde, ev ve aile sana tanıdık. Korunmak kolay, sahneye çıkmak zor; ders orada. Gücün şefkat; hedefin, kendi yolunu çizmek.",
+    "scene": "Bir kararı ailene sormadan almak ve arkasında durmak.",
+    "barnum": 0.5
+  },
+  "trueNode_h11": {
+    "hook": "Büyüme yönün: birlikte kurmak, alkışsız katkı.",
+    "body": "Kuzey Düğüm 11. evde: gelişme yönün topluluk ve arkadaşlıkta (11. ev); Güney Düğüm 5. evde, sahne ve takdir sana tanıdık. Parlamak kolay, paylaşmak zor; ders orada. Gücün yaratıcılık; hedefin, adın geçmeden de anlamlı olmak.",
+    "scene": "Bir grup işinde fikri vermek ve kimin fikri olduğunu söylememek.",
+    "barnum": 0.5
+  },
+  "trueNode_h12": {
+    "hook": "Büyüme yönün: kontrolü bırakıp sezgiye güvenmek.",
+    "body": "Kuzey Düğüm 12. evde: gelişme yönün geri çekilme ve iç dünyada (12. ev); Güney Düğüm 6. evde, düzen ve hizmet sana tanıdık. Planlamak kolay, belirsizliğe dayanmak zor; ders orada. Gücün özen; hedefin, kendine merhamet.",
+    "scene": "Listeyi bırakıp planlanmamış bir öğleden sonrayı yaşamak.",
+    "barnum": 0.5
+  },
+  "chiron_h1": {
+    "hook": "Yaran kimliğinde, ustalığın başkasına cesaret vermekte.",
+    "body": "Chiron 1. evde: yara benlik ve görünüşte (1. ev). Var olmaya hakkın olup olmadığı eski bir soru; başkasının kendisi olmasına yardım etmek ise ustalığın. Yara iyileşince kendine güvenen bir şefkate dönüşür.",
+    "scene": "Arkadaşını cesaretlendirirsin; kendin için aynı cümleyi kurmak zordur.",
+    "barnum": 0.55
+  },
+  "chiron_h2": {
+    "hook": "Yaran yeterlilikte, ustalığın başkasına güvence vermekte.",
+    "body": "Chiron 2. evde: yara değer ve kaynakta (2. ev). Yeterli olup olmadığın eski bir soru; başkasına 'yetersin' demek ise ustalığın. Yara iyileşince sağlam bir öz değere dönüşür.",
+    "scene": "Herkese 'sen halledersin' dersin; kendine söylemek zaman alır.",
+    "barnum": 0.55
+  },
+  "chiron_h3": {
+    "hook": "Yaran anlaşılmakta, ustalığın başkasının derdini kelimeye dökmekte.",
+    "body": "Chiron 3. evde: yara iletişimde (3. ev). Sesinin duyulmaması eski bir yara; başkasının anlatamadığını anlatmak ise ustalığın. Yara iyileşince berrak bir dile dönüşür.",
+    "scene": "Arkadaşının derdini ondan iyi anlatırsın; sıra sana gelmez.",
+    "barnum": 0.55
+  },
+  "chiron_h4": {
+    "hook": "Yaran ait olmakta, ustalığın başkasına yuva olmakta.",
+    "body": "Chiron 4. evde: yara ev ve kökte (4. ev). Bir yere tam ait hissetmemek eski bir yara; herkesin kendini evinde hissettiği kişi olmak ise ustalığın. Yara iyileşince derin bir şefkate dönüşür.",
+    "scene": "Evine gelen herkes rahat eder; sen bazen misafir gibi hissedersin.",
+    "barnum": 0.55
+  },
+  "chiron_h5": {
+    "hook": "Yaran görülmekte, ustalığın başkasını parlatmakta.",
+    "body": "Chiron 5. evde: yara yaratıcılık ve sahnede (5. ev). Yeterince görülmediğin duygusu eski bir yara; başkasının yeteneğini öne çıkarmak ise ustalığın. Yara iyileşince sahneyi paylaşan bir cömertliğe dönüşür.",
+    "scene": "Arkadaşının yeteneğini herkese anlatırsın; kendininki sorulunca konuyu değiştirirsin.",
+    "barnum": 0.55
+  },
+  "chiron_h6": {
+    "hook": "Yaran kusursuzlukta, ustalığın onarmakta.",
+    "body": "Chiron 6. evde: yara günlük iş ve düzende (6. ev). Hiç yeterince iyi yapmadığın hissi eski bir yara; başkasının hatasını yargılamadan düzeltmek ise ustalığın. Yara iyileşince şefkatli bir titizliğe dönüşür.",
+    "scene": "Herkesin işini toparlarsın; kendi işine 'daha iyi olabilirdi' dersin.",
+    "barnum": 0.55
+  },
+  "chiron_h7": {
+    "hook": "Yaran ilişkide, ustalığın barıştırmakta.",
+    "body": "Chiron 7. evde: yara bire bir ilişkide (7. ev). İlişkide kendini geri planda bırakmak eski bir yara; iki tarafı da anlayıp uzlaştırmak ise ustalığın. Yara iyileşince kendi payını isteyebilen bir adalete dönüşür.",
+    "scene": "İki arkadaşını barıştırırsın; kendi kırgınlığına sıra gelmez.",
+    "barnum": 0.55
+  },
+  "chiron_h8": {
+    "hook": "Yaran güvenmekte, ustalığın krizde eşlik etmekte.",
+    "body": "Chiron 8. evde: yara dönüşüm ve derinlikte (8. ev). Bir kayıp ya da ihanet eski bir yara; başkasının en karanlık anında yanında durmak ise ustalığın. Yara iyileşince korkusuz bir derinliğe dönüşür.",
+    "scene": "Zor günde herkes seni arar; sen kimseyi aramazsın.",
+    "barnum": 0.55
+  },
+  "chiron_h9": {
+    "hook": "Yaran inançta, ustalığın başkasına anlam bulmasında yardım etmekte.",
+    "body": "Chiron 9. evde: yara anlam arayışında (9. ev). Bir inancın ya da öğretmenin hayal kırıklığı eski bir yara; başkasının yolunu bulmasına eşlik etmek ise ustalığın. Yara iyileşince kendi felsefene dönüşür.",
+    "scene": "Arkadaşına hayatın anlamını anlatırsın; kendi cevabın hâlâ açık.",
+    "barnum": 0.55
+  },
+  "chiron_h10": {
+    "hook": "Yaran tanınmakta, ustalığın başkasının başarısını kurmakta.",
+    "body": "Chiron 10. evde: yara kamu önündeki rolde (10. ev). Emeğinin karşılığını görememek eski bir yara; başkasının yolunu planlamak ise ustalığın. Yara iyileşince kendi otoriteni sahiplenmeye dönüşür.",
+    "scene": "Herkesin planını yaparsın; kendininkini 'sonra' dersin.",
+    "barnum": 0.55
+  },
+  "chiron_h11": {
+    "hook": "Yaran dışarıda kalmakta, ustalığın dışarıda kalanı içeri almakta.",
+    "body": "Chiron 11. evde: yara topluluk ve arkadaşlıkta (11. ev). Gruba uymadığın duygusu eski bir yara; farklı olanı fark edip kapıyı açmak ise ustalığın. Yara iyileşince farklılığı armağan olarak taşımaya dönüşür.",
+    "scene": "Yeni gelen, köşede duran kişiye ilk konuşan sensin.",
+    "barnum": 0.55
+  },
+  "chiron_h12": {
+    "hook": "Yaran görünmeyende, ustalığın sessiz şefkatte.",
+    "body": "Chiron 12. evde: yara geri çekilme ve iç dünyada (12. ev). Dünyanın acısını taşımak eski bir yara; kimsenin fark etmediği acıyı görmek ise ustalığın. Yara iyileşince sınırı olan bir merhamete dönüşür.",
+    "scene": "Yolda ağlayan birini görünce günün geri kalanı değişir.",
+    "barnum": 0.6
+  }
+}

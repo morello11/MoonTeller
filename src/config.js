@@ -85,3 +85,23 @@ export const WHEEL = {
 };
 
 export const TAP_TARGET_PX = 44;
+
+// --- Metin bankası (docs/TEXTBANK.md) ---
+export const SIGN_KEYS = [
+  'aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
+  'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces',
+];
+// MOON_PHASES_TR ile aynı sırada.
+export const MOON_PHASE_IDS = ['new', 'crescent', 'first_quarter', 'gibbous', 'full', 'disseminating', 'last_quarter', 'balsamic'];
+export const BANK = {
+  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'ui-copy'],
+  limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140 },
+  barnumMax: 0.9,
+  // Klişe yasağı (docs/TEXTBANK.md). ui-copy.json hariç, küçük harfe indirilmiş metinde aranır.
+  bannedWords: ['evren sana', 'enerjini', 'yıldızlar diyor ki', 'kozmik', 'ruhun', 'titreşim', 'manifest'],
+};
+
+// --- Arketip ve kompozisyon (docs/ENGINE.md 10, docs/TEXTBANK.md) ---
+export const ARCHETYPE_WEIGHTS = { sun: 3, moon: 2, asc: 2, mercury: 1, mars: 1 }; // saat yoksa asc oy vermez
+export const COMPOSE = { topAspects: 6 };
+export const BANK_URL = 'data/tr/';
