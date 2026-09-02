@@ -1,0 +1,497 @@
+{
+  "t_sun_conjunction_n_sun": {
+    "v": [
+      "Doğum günü haftası: Güneş kendi yerine döndü, yıl sıfırlanıyor. Bugün kendine bir şey al, küçük olsun.",
+      "Güneş doğum noktanda: enerji yüksek, dikkat sende. Yeni yılın ilk kararı bugün verilir.",
+      "Solar dönüş: yılın en 'sen' günü. Bugün istediğin şey, yılın konusu olur."
+    ],
+    "advice": "Doğum gününü kutlamayı unutan olursa affet, ama not al.",
+    "barnum": 0.5
+  },
+  "t_sun_sextile_n_sun": {
+    "v": [
+      "Güneş kendi Güneş'ine altmışlık: sakin bir özgüven günü, büyük olay yok, küçük iyi şeyler var.",
+      "Hafif bir rüzgâr arkandan: bugün işler kendiliğinden yürür gibi.",
+      "Kimliğinle barışık bir gün; kararlar kolay, sohbet rahat."
+    ],
+    "advice": "Ertelediğin küçük bir işi bugün bitir; rüzgâr arkanda.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_sun": {
+    "v": [
+      "Güneş natal Güneş'ine kare: yılın çeyrek dönüşü. Kimliğin sınanıyor, biraz sürtünme normal.",
+      "Bugün 'ben kimim' sorusu gündelik bir şekilde geliyor: birinin yorumu, bir eleştiri.",
+      "Kimliğinle dış dünya arasında küçük bir çekişme; savunmaya geçme, dinle."
+    ],
+    "advice": "Eleştiriye bugün cevap verme; yarın hâlâ haklıysan ver.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_sun": {
+    "v": [
+      "Güneş natal Güneş'ine üçgen: yılın en rahat günlerinden biri. Kendini iyi hissetmek için sebep aramana gerek yok.",
+      "Kimliğin ve gün aynı yönde akıyor; bugün 'evet' demek kolay.",
+      "Bugün en doğal halin en iyi halin; rol yapmana gerek yok."
+    ],
+    "advice": "Bugün iyi geçen sohbeti yarına taşımak için bir not düş.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_sun": {
+    "v": [
+      "Güneş natal Güneş'inin karşısında: yılın yarısı. Kendini başkalarının gözünden görmek için iyi gün.",
+      "Doğum gününe altı ay var: yılın kontrol noktası. Nereden geldin, nereye gidiyorsun?",
+      "Bugün insanlar sana ayna tutar; bazıları kırık ayna, bazıları doğru."
+    ],
+    "advice": "Altı ay önce verdiğin kararı bugün gözden geçir; değiştirme, gözden geçir.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_moon": {
+    "v": [
+      "Güneş natal Ay'ının üstünde: duygular gün ışığında. Bugün ne hissettiğin herkese görünür.",
+      "İhtiyaçların bugün ışıkta; söylemen kolay, saklaman zor.",
+      "Güneş Ay'ını aydınlatıyor: iç dünyan bugün konuşmak istiyor."
+    ],
+    "advice": "Bugün 'iyiyim' deme, gerçekten nasılsan onu söyle.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_moon": {
+    "v": [
+      "Güneş natal Ay'ına altmışlık: duyguyla akıl bugün anlaşıyor. Sakin, üretken bir gün.",
+      "Hafif bir huzur; dert varsa küçülüyor, sevinç varsa büyüyor.",
+      "Bugün kendine iyi bakmak için çaba gerekmiyor; kendiliğinden oluyor."
+    ],
+    "advice": "Bugün bir arkadaşını ara; konuşmak iyi gelecek.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_moon": {
+    "v": [
+      "Güneş natal Ay'ına kare: istediğin şeyle ihtiyaç duyduğun şey bugün farklı. Küçük bir huzursuzluk.",
+      "Bugün içinde iki ses var: biri 'yap', öteki 'dur'. İkisini de dinle, sonra karar ver.",
+      "Duyguların bugün gün ışığına biraz gergin çıkıyor; kırılganlık normal."
+    ],
+    "advice": "Bugün büyük duygusal konuşma yapma; yarın daha sakin.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_moon": {
+    "v": [
+      "Güneş natal Ay'ına üçgen: iç dünyanla dış dünya bugün aynı dilde. Rahat, sıcak bir gün.",
+      "Bugün kendini evinde hissedersin, nerede olursan ol.",
+      "Duyguların akıyor, kimseyi yormuyor; iyi bir gün."
+    ],
+    "advice": "Bugün sevdiğin bir şeyi sevdiğin biriyle yap.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_moon": {
+    "v": [
+      "Güneş natal Ay'ının karşısında: biri senin ihtiyacını, sen onun isteğini görmüyorsun. Konuş.",
+      "Bugün ilişkilerde 'ben' ve 'sen' biraz ayrı düşüyor; köprü kurmak sana kalıyor.",
+      "Duyguların bugün başkasının aynasında; ne gördüğün seninle ilgili."
+    ],
+    "advice": "Bugün bir kırgınlığı büyütme; yarın küçük görünecek.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_mercury": {
+    "v": [
+      "Güneş natal Merkür'ünün üstünde: zihin açık, dil hazır. Bugün söylediğin duyulur.",
+      "Fikirlerin bugün ışıkta; konuş, yaz, anlat.",
+      "Güneş Merkür'ünü aydınlatıyor: ertelediğin mesajı bugün yaz."
+    ],
+    "advice": "Bugün o zor maili yaz; ton doğru çıkacak.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_mercury": {
+    "v": [
+      "Güneş natal Merkür'üne altmışlık: sohbetler kolay, kararlar net. Küçük bir zihinsel rüzgâr.",
+      "Bugün düşünmek yormuyor; liste yap, plan kur.",
+      "İletişim bugün pürüzsüz; yanlış anlaşılma olasılığı düşük."
+    ],
+    "advice": "Bugün bir şey öğren; on dakikalık bir video yeter.",
+    "barnum": 0.75
+  },
+  "t_sun_square_n_mercury": {
+    "v": [
+      "Güneş natal Merkür'üne kare: söylediğin ile kastettiğin bugün ayrışabilir. Yavaş konuş.",
+      "Bugün fikrin ile egon karışıyor; haklı çıkmak mı, anlaşmak mı, seç.",
+      "Zihin hızlı, sabır az; bugün yazdığını göndermeden önce oku."
+    ],
+    "advice": "Bugün tartışmayı grupta değil, birebir yap.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_mercury": {
+    "v": [
+      "Güneş natal Merkür'üne üçgen: düşünce akıyor, kelime bulunuyor. Anlatma günü.",
+      "Bugün açıklamak kolay; birine bir şey öğretmek için iyi zaman.",
+      "Zihnin ve kimliğin bugün aynı yönde; fikirlerin sana benziyor."
+    ],
+    "advice": "Bugün bir sunum, bir mektup, bir açıklama: hangisi bekliyorsa yap.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_mercury": {
+    "v": [
+      "Güneş natal Merkür'ünün karşısında: biri fikrine karşı çıkıyor. Kişisel alma, tartışma.",
+      "Bugün karşı görüş sana ayna tutuyor; dinlersen fikrin güçlenir.",
+      "Söylediklerin bugün başkasında yankılanıyor, bazen ters yankı."
+    ],
+    "advice": "Bugün karşı fikri bir cümleyle özetle; anladığını göster.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_venus": {
+    "v": [
+      "Güneş natal Venüs'ünün üstünde: sevimliliğin bugün ışıkta. İnsanlar sana daha sıcak.",
+      "Bugün beğenilmek kolay; bir sohbet, bir gülümseme yeter.",
+      "Güneş Venüs'ünü aydınlatıyor: güzel bir şey al, güzel bir şey söyle."
+    ],
+    "advice": "Bugün birine iltifat et; karşılığı yarın gelir.",
+    "barnum": 0.65
+  },
+  "t_sun_sextile_n_venus": {
+    "v": [
+      "Güneş natal Venüs'üne altmışlık: hoş bir gün, hafif bir keyif. Küçük zevkler için iyi.",
+      "Bugün ilişkiler yumuşak; kırgınlık varsa çözülmeye açık.",
+      "Zevk ve kimlik aynı yönde; bugün kendine güzel bir şey yakıştır."
+    ],
+    "advice": "Bugün kahveni sevdiğin yerden al; küçük şeyler bugün büyük.",
+    "barnum": 0.75
+  },
+  "t_sun_square_n_venus": {
+    "v": [
+      "Güneş natal Venüs'üne kare: istediğin ilgi ile aldığın ilgi bugün tutmayabilir. Beklentiyi düşür.",
+      "Bugün beğenilme isteği biraz fazla; farkında ol, yeter.",
+      "Zevkinle egon bugün çekişiyor; fazla harcama, fazla bekleme."
+    ],
+    "advice": "Bugün alışveriş sepetini yarına bırak.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_venus": {
+    "v": [
+      "Güneş natal Venüs'üne üçgen: bugün sevilmek ve sevmek kolay. Keyifli bir gün.",
+      "İlişkiler bugün akıyor; kimse kimseyi yormuyor.",
+      "Bugün güzellik seni buluyor; aramana gerek yok."
+    ],
+    "advice": "Bugün bir buluşma ayarla; ton iyi.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_venus": {
+    "v": [
+      "Güneş natal Venüs'ünün karşısında: bir ilişkide denge bugün konuşuluyor. Nazik ol, net ol.",
+      "Bugün karşındaki senin zevkini, sen onunkini sorguluyorsun; ikisi de geçerli.",
+      "Sevgi bugün aynada; ne beklediğin ne aldığından görünüyor."
+    ],
+    "advice": "Bugün 'sen ne istersen' deme; ne istediğini söyle.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_mars": {
+    "v": [
+      "Güneş natal Mars'ının üstünde: enerji yüksek, sabır düşük. Bugün bir şey yap, tartışma.",
+      "Mars'ın bugün ışıkta: cesaretin görünür, öfken de.",
+      "Bugün harekete geçmek kolay; nereye geçtiğine dikkat."
+    ],
+    "advice": "Bugün spor yap ya da bir işi bitir; enerji boşa gitmesin.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_mars": {
+    "v": [
+      "Güneş natal Mars'ına altmışlık: sağlıklı bir enerji, ölçülü bir cesaret. Verimli gün.",
+      "Bugün başladığın iş yürür; tembellik yapmazsan.",
+      "Enerji ve kimlik aynı yönde; bugün 'ben yaparım' demek kolay."
+    ],
+    "advice": "Bugün ertelediğin fiziksel işi yap: taşı, tamir et, yürü.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_mars": {
+    "v": [
+      "Güneş natal Mars'ına kare: sinir kısa, tepki hızlı. Bugün kavga çıkabilir; çıkmasın.",
+      "Bugün enerji fazla, yön yok; bir spor, bir yürüyüş, bir temizlik.",
+      "Egon ile öfken bugün aynı arabada; direksiyonu sen tut."
+    ],
+    "advice": "Bugün trafikte korna çalma; yarın da kırmızı olacak.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_mars": {
+    "v": [
+      "Güneş natal Mars'ına üçgen: cesaret doğal, hareket akıcı. İş bitirme günü.",
+      "Bugün enerjin kimliğinle uyumlu; istediğini yapmak kolay.",
+      "Hareket bugün yormuyor, canlandırıyor."
+    ],
+    "advice": "Bugün başlamaya korktuğun şeye başla; ivme var.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_mars": {
+    "v": [
+      "Güneş natal Mars'ının karşısında: biri seni kışkırtıyor. Yem alma.",
+      "Bugün rekabet havada; kazanmak yerine anlaşmayı dene.",
+      "Öfken bugün başkasının yüzünde; senin de olabilir."
+    ],
+    "advice": "Bugün sert cevabı taslağa yaz, gönderme.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_jupiter": {
+    "v": [
+      "Güneş natal Jüpiter'inin üstünde: şans ve iyimserlik günü. Bugün 'evet' de.",
+      "Jüpiter'in bugün ışıkta: büyük düşün, kapı açık.",
+      "Bugün cömertlik sana döner; ver, gelir."
+    ],
+    "advice": "Bugün bir şey iste; cevap iyi gelme ihtimali yüksek.",
+    "barnum": 0.65
+  },
+  "t_sun_sextile_n_jupiter": {
+    "v": [
+      "Güneş natal Jüpiter'ine altmışlık: hafif bir şans, sıcak bir moral. İyi gün.",
+      "Bugün kapılar hafif aralık; itersen açılır.",
+      "İyimserlik bugün gerçekçi; plan yap."
+    ],
+    "advice": "Bugün bir teklif gelirse ciddiye al.",
+    "barnum": 0.75
+  },
+  "t_sun_square_n_jupiter": {
+    "v": [
+      "Güneş natal Jüpiter'ine kare: bugün abartı eğilimi. Söz verirken iki kez düşün.",
+      "Kendine güven bugün fazla; ölçü koy.",
+      "Bugün büyük konuşmak kolay, tutmak zor."
+    ],
+    "advice": "Bugün 'kesinlikle' deme; 'muhtemelen' de.",
+    "barnum": 0.6
+  },
+  "t_sun_trine_n_jupiter": {
+    "v": [
+      "Güneş natal Jüpiter'ine üçgen: yılın şanslı günlerinden. Genişle, gül, iste.",
+      "Bugün insanlar sana iyi davranıyor; sen de onlara.",
+      "İyimserlik ve kimlik aynı yönde; bugün büyük resim net."
+    ],
+    "advice": "Bugün ertelenen seyahat planını yap.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_jupiter": {
+    "v": [
+      "Güneş natal Jüpiter'inin karşısında: biri sana büyük vaat ediyor ya da sen ona. Ölçü.",
+      "Bugün abartı başkasının ağzında; sen de kapılma.",
+      "Genişleme isteği bugün dışarıdan geliyor; iyi de olabilir, fazla da."
+    ],
+    "advice": "Bugün imza atma; yarın hâlâ iyi görünüyorsa at.",
+    "barnum": 0.6
+  },
+  "t_sun_conjunction_n_saturn": {
+    "v": [
+      "Güneş natal Satürn'ünün üstünde: sorumluluk günü. Ağır ama verimli.",
+      "Bugün ciddiyet ışıkta; iş biter, eğlence bekler.",
+      "Satürn'ün aydınlanıyor: yapı kur, disiplin koy."
+    ],
+    "advice": "Bugün bir şeyi bitir; yarın hafif olacak.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_saturn": {
+    "v": [
+      "Güneş natal Satürn'üne altmışlık: sakin, planlı, güvenilir bir gün.",
+      "Bugün sabır kolay; uzun vadeli işe bak.",
+      "Disiplin ve kimlik aynı yönde; bugün söz ver, tutarsın."
+    ],
+    "advice": "Bugün takvimini düzenle; bir ay sonrasına bak.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_saturn": {
+    "v": [
+      "Güneş natal Satürn'üne kare: engel, gecikme, 'yetmiyor' hissi. Geçici.",
+      "Bugün kendini kanıtlama isteği yüksek; kimseye kanıtlama, yap.",
+      "Otoriteyle sürtünme günü; sakin kal, kayıt tut."
+    ],
+    "advice": "Bugün kendine sert olma; iş listesi yarın da orada.",
+    "barnum": 0.55
+  },
+  "t_sun_trine_n_saturn": {
+    "v": [
+      "Güneş natal Satürn'üne üçgen: sağlam, sakin, olgun bir gün. Büyük karar için iyi.",
+      "Bugün disiplin yormuyor; işler yerine oturuyor.",
+      "Kimliğin bugün sağlam zeminde; söylediğin ağır basar."
+    ],
+    "advice": "Bugün uzun süredir ertelediğin ciddi konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_sun_opposition_n_saturn": {
+    "v": [
+      "Güneş natal Satürn'ünün karşısında: biri fren yapıyor, sen gaz. Ya da tersi.",
+      "Bugün otorite figürüyle çekişme; kim haklı değil, ne gerekli, ona bak.",
+      "Sınırlar bugün dışarıdan geliyor; kabul et ya da nazikçe tartış."
+    ],
+    "advice": "Bugün istifa mektubu yazma; yarın oku, yırt.",
+    "barnum": 0.55
+  },
+  "t_sun_conjunction_n_uranus": {
+    "v": [
+      "Güneş natal Uranüs'ünün üstünde: sürpriz günü. Plan bozulur, daha iyisi çıkar.",
+      "Bugün özgünlüğün ışıkta; sıra dışı ol, sorun değil.",
+      "Uranüs'ün aydınlanıyor: ani bir fikir, ani bir değişim."
+    ],
+    "advice": "Bugün rutini boz; başka yoldan git.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_uranus": {
+    "v": [
+      "Güneş natal Uranüs'üne altmışlık: taze bir fikir, hafif bir heyecan.",
+      "Bugün yeni bir şey denemek kolay; küçük olsun.",
+      "Özgünlük bugün rahat; farklı olmak için çaba gerekmiyor."
+    ],
+    "advice": "Bugün hiç gitmediğin bir yerde öğle yemeği ye.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_uranus": {
+    "v": [
+      "Güneş natal Uranüs'üne kare: huzursuzluk, ani karar isteği. Bekle.",
+      "Bugün her şeyi değiştirme isteği güçlü; yarın hâlâ istiyorsan değiştir.",
+      "Sinirler gergin, sabır kısa; teknoloji de bugün huysuz olabilir."
+    ],
+    "advice": "Bugün ani istifa, ani ayrılık, ani alışveriş yok.",
+    "barnum": 0.55
+  },
+  "t_sun_trine_n_uranus": {
+    "v": [
+      "Güneş natal Uranüs'üne üçgen: yaratıcı, özgür, hafif bir gün. Yenilik akıyor.",
+      "Bugün farklı fikirler kolay geliyor; not al.",
+      "Özgürlük bugün huzur veriyor, huzursuzluk değil."
+    ],
+    "advice": "Bugün bir şeyi farklı yap; sonucu beğeneceksin.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_uranus": {
+    "v": [
+      "Güneş natal Uranüs'ünün karşısında: biri seni şaşırtıyor, belki sarsıyor.",
+      "Bugün beklenmedik bir mesaj, beklenmedik bir iptal; esnek ol.",
+      "Değişim bugün dışarıdan geliyor; direnmek yorar."
+    ],
+    "advice": "Bugün plana değil, plana B'ye güven.",
+    "barnum": 0.55
+  },
+  "t_sun_conjunction_n_neptune": {
+    "v": [
+      "Güneş natal Neptün'ünün üstünde: hayal günü. Sisli ama ilhamlı.",
+      "Bugün sezgi güçlü, ayrıntı zayıf; sanat için iyi, sözleşme için değil.",
+      "Neptün'ün aydınlanıyor: rüya gibi bir gün, uyanık kal."
+    ],
+    "advice": "Bugün müzik dinle; karar verme.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_neptune": {
+    "v": [
+      "Güneş natal Neptün'üne altmışlık: yumuşak, şefkatli, hafif hayalci bir gün.",
+      "Bugün empati kolay; birini dinle.",
+      "İlham yakın; kullanmak sana kalmış."
+    ],
+    "advice": "Bugün bir film, bir şarkı, bir sessizlik; birini seç.",
+    "barnum": 0.75
+  },
+  "t_sun_square_n_neptune": {
+    "v": [
+      "Güneş natal Neptün'üne kare: sis günü. Ne istediğin bulanık, kolay etkilenirsin.",
+      "Bugün kandırılmaya açık bir gün; büyük vaatlere dikkat.",
+      "Enerji düşük, hayal yüksek; dinlen."
+    ],
+    "advice": "Bugün önemli karar yok; yarın sis dağılır.",
+    "barnum": 0.55
+  },
+  "t_sun_trine_n_neptune": {
+    "v": [
+      "Güneş natal Neptün'üne üçgen: ilham, şefkat, hafif bir büyü. Sanat günü.",
+      "Bugün sezgin haklı; dinle.",
+      "Hayal gücü ve kimlik aynı yönde; bugün yaratıcı ol."
+    ],
+    "advice": "Bugün bir şey yarat; tarif, çizim, şarkı listesi.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_neptune": {
+    "v": [
+      "Güneş natal Neptün'ünün karşısında: biri seni olduğundan farklı görüyor, ya da sen onu.",
+      "Bugün yanılsama başkasında; net sor, net söyle.",
+      "İdealize etme günü; gerçek insanı gör."
+    ],
+    "advice": "Bugün birinin sözünü değil, davranışını izle.",
+    "barnum": 0.55
+  },
+  "t_sun_conjunction_n_pluto": {
+    "v": [
+      "Güneş natal Plüton'unun üstünde: yoğun, derin, dönüştürücü bir gün.",
+      "Bugün gücün ışıkta; nasıl kullandığın görünür.",
+      "Plüton'un aydınlanıyor: bir şey bitiyor, bir şey başlıyor."
+    ],
+    "advice": "Bugün bir şeyi bırak; hafiflersin.",
+    "barnum": 0.55
+  },
+  "t_sun_sextile_n_pluto": {
+    "v": [
+      "Güneş natal Plüton'una altmışlık: sessiz bir güç, derin bir sakinlik.",
+      "Bugün krizde soğukkanlısın; insanlar bunu fark eder.",
+      "Derinlik bugün rahat; yüzeysel sohbet sıkabilir."
+    ],
+    "advice": "Bugün ertelediğin derin konuşmayı yap.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_pluto": {
+    "v": [
+      "Güneş natal Plüton'una kare: güç mücadelesi günü. Kontrolü bırak, kaybetmezsin.",
+      "Bugün biri seni değiştirmek istiyor ya da sen onu; ikisi de yormuyor mu?",
+      "Yoğunluk yüksek; her şeyi kriz sanma."
+    ],
+    "advice": "Bugün güç savaşına girme; masadan kalk.",
+    "barnum": 0.55
+  },
+  "t_sun_trine_n_pluto": {
+    "v": [
+      "Güneş natal Plüton'una üçgen: derin, sağlam, etkili bir gün. Dönüşüm kolay.",
+      "Bugün iraden akıyor; zor işe iyi gün.",
+      "Güç ve kimlik aynı yönde; bugün etkilersin, zorlamadan."
+    ],
+    "advice": "Bugün uzun süredir kaçtığın işi bitir.",
+    "barnum": 0.65
+  },
+  "t_sun_opposition_n_pluto": {
+    "v": [
+      "Güneş natal Plüton'unun karşısında: biri kontrol etmek istiyor. Sen de olabilirsin.",
+      "Bugün güç dengesi başkasıyla sınanıyor; dürüstlük kazanır.",
+      "Yoğun bir karşılaşma; derin ama yorucu."
+    ],
+    "advice": "Bugün ültimatom verme; yarın da geçerli olacak.",
+    "barnum": 0.55
+  },
+  "t_sun_conjunction_n_asc": {
+    "v": [
+      "Güneş Yükselen'inin üstünde: bugün görünürsün. Odaya girince ışık sende.",
+      "Kimliğin dış görünüşünle bugün örtüşüyor; kendin ol, yeter.",
+      "Yeni bir yıl başlar gibi: bugün ilk izlenimler önemli."
+    ],
+    "advice": "Bugün fotoğraf çektir; iyi çıkarsın.",
+    "barnum": 0.6
+  },
+  "t_sun_sextile_n_asc": {
+    "v": [
+      "Güneş Yükselen'ine altmışlık: rahat bir görünüş, iyi bir ilk izlenim.",
+      "Bugün insanlar seni hoş buluyor; sebebini bilmene gerek yok.",
+      "Kimliğin ve görünüşün aynı yönde; sakin bir gün."
+    ],
+    "advice": "Bugün tanışma, görüşme, ilk buluşma için iyi.",
+    "barnum": 0.7
+  },
+  "t_sun_square_n_asc": {
+    "v": [
+      "Güneş Yükselen'ine kare: bugün göründüğün gibi hissetmiyorsun. Küçük bir uyumsuzluk.",
+      "Kimlik ile imaj bugün çekişiyor; rol yapma, yorulursun.",
+      "Bugün insanlar seni yanlış okuyabilir; açıkla."
+    ],
+    "advice": "Bugün önemli görüşmeyi ertele ya da kısa tut.",
+    "barnum": 0.55
+  },
+  "t_sun_trine_n_asc": {
+    "v": [
+      "Güneş Yükselen'ine üçgen: doğal, rahat, kendine güvenli bir gün.",
+      "Bugün göründüğün gibi hissediyorsun; nadir bir uyum.",
+      "Kimliğin ve görünüşün aynı dilde; bugün kolay sevilirsin."
+    ],
+    "advice": "Bugün kendini tanıt; anlatman gereken yerde anlat.",
+    "barnum": 0.7
+  },
+  "t_sun_opposition_n_asc": {
+    "v": [
+      "Güneş Yükselen'inin karşısında: bugün ilişkiler ön planda. Biri seni tanımlıyor.",
+      "Güneş 7. ev noktanda: ortaklık, karşılaşma, karşı taraf.",
+      "Bugün kendini başkasında görüyorsun; iyi bir ayna seç."
+    ],
+    "advice": "Bugün bir karşılaşma önemli; dinle, sonra konuş.",
+    "barnum": 0.6
+  }
+}

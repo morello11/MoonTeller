@@ -94,8 +94,8 @@ export const SIGN_KEYS = [
 // MOON_PHASES_TR ile aynı sırada.
 export const MOON_PHASE_IDS = ['new', 'crescent', 'first_quarter', 'gibbous', 'full', 'disseminating', 'last_quarter', 'balsamic'];
 export const BANK = {
-  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'ui-copy'],
-  limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140 },
+  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'ui-copy'],
+  limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140, transit: 200, advice: 120 },
   barnumMax: 0.9,
   // Klişe yasağı (docs/TEXTBANK.md). ui-copy.json hariç, küçük harfe indirilmiş metinde aranır.
   bannedWords: ['evren sana', 'enerjini', 'yıldızlar diyor ki', 'kozmik', 'ruhun', 'titreşim', 'manifest'],
@@ -105,3 +105,56 @@ export const BANK = {
 export const ARCHETYPE_WEIGHTS = { sun: 3, moon: 2, asc: 2, mercury: 1, mars: 1 }; // saat yoksa asc oy vermez
 export const COMPOSE = { topAspects: 6 };
 export const BANK_URL = 'data/tr/';
+
+// --- Transitler ve Bugün (docs/ENGINE.md 5–9) ---
+export const TRANSIT_WEIGHTS = {
+  transit: { sun: 1.0, moon: 0.6, mercury: 0.7, venus: 0.8, mars: 0.9, jupiter: 0.8, saturn: 1.0, uranus: 0.7, neptune: 0.6, pluto: 0.7 },
+  natal: { sun: 1.0, moon: 1.0, asc: 1.0, mc: 0.8, mercury: 0.8, venus: 0.8, mars: 0.8, jupiter: 0.5, saturn: 0.5, uranus: 0.5, neptune: 0.5, pluto: 0.5, trueNode: 0.4, chiron: 0.4 },
+  aspect: { conjunction: 1.0, opposition: 0.9, square: 0.9, trine: 0.7, sextile: 0.5 },
+};
+export const TRANSIT = {
+  transitingBodies: ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'],
+  // Metin bankasında (transits.json) hedefi olan natal noktalar; diğerleri puanlanır ama "günün üç şeyi"ne seçilmez.
+  textTargets: ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto', 'asc'],
+  topCount: 3,
+  localHour: 12, // "Bugün" hesap anı: hedef günün yerel öğlesi
+};
+// Plan Saati Skoru (docs/ENGINE.md 9; şaka dozunda). 0–100.
+export const PLAN_SCORE = {
+  base: 75,
+  voidOfCourse: -40,
+  mercuryRetro: -25,
+  moonSaturnHard: -15,
+  moonJupiterSoft: 15,
+  marsMercuryHard: -10,
+  elementFit: 10,
+  verdicts: [[60, 'yap'], [40, 'olur'], [0, 'ertele']],
+  // Plan türü → Ay burcunun elementi: uyan +elementFit, uymayan −elementFit.
+  types: {
+    toplanti: { label: 'Toplantı', good: 'air', bad: 'water' },
+    bulusma: { label: 'Buluşma', good: 'fire', bad: 'earth' },
+    yolculuk: { label: 'Yolculuk', good: 'fire', bad: 'water' },
+    imza: { label: 'İmza / sözleşme', good: 'earth', bad: 'fire' },
+    sunum: { label: 'Sunum', good: 'fire', bad: 'water' },
+    deploy: { label: 'Deploy', good: 'earth', bad: 'air' },
+  },
+  footer: 'Gerçek işi yine de yap.',
+};
+export const ELEMENTS = ['fire', 'earth', 'air', 'water']; // burç index % 4
+// Retro taraması (docs/REVIEW.md 13): yılda bir hesaplanır, cache'te tutulur.
+export const RETRO = {
+  bodies: ['mercury', 'venus', 'mars'],
+  scanDaysBefore: 400,
+  scanDaysAfter: 400,
+  stepDays: 1,
+  bisectPrecisionDays: 1 / 24,
+  cacheNamespace: 'retro',
+};
+// Canlı Gökyüzü: çıplak gözle görülebilirlik yaklaşımı (doğuş/batış v2).
+export const SKY = {
+  nakedEye: ['mercury', 'venus', 'mars', 'jupiter', 'saturn'],
+  minAltitudeDeg: 5,
+  minSunElongationDeg: 15,
+  nightSunAltitudeDeg: -6, // sivil alacakaranlık
+};
+export const DAILY_REPEAT_DAYS = 7;

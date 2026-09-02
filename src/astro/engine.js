@@ -66,6 +66,13 @@ export function computeHouses(jdUT, latitude, longitude, system = HOUSE_SYSTEM) 
   };
 }
 
+// Ekliptik konum → ufuk koordinatları (azimut, yükseklik). Ay/gezegen ufkun üstünde mi sorusu için.
+export function computeHorizontal(jdUT, latitude, longitude, position) {
+  const swe = requireEngine();
+  const r = swe.azalt(jdUT, swe.SE_ECL2HOR, [longitude, latitude, 0], 0, 0, [position.lon, position.lat ?? 0, position.dist ?? 1]);
+  return { azimuth: r.azimuth, altitude: r.trueAltitude };
+}
+
 export function engineVersion() {
   return requireEngine().version();
 }

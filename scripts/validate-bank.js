@@ -4,7 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK } from '../src/config.js';
+import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK, TRANSIT, RETRO } from '../src/config.js';
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'tr');
 const strict = process.argv.includes('--strict');
@@ -29,12 +29,18 @@ function aspectKeys() {
   return keys;
 }
 const text = (max) => ({ type: 'string', max });
+const RETRO_TEXT_KEYS = ['start', 'mid', 'end', 'shadow_pre', 'shadow_post', 'countdown'];
+function transitKeys() {
+  return TRANSIT.transitingBodies.flatMap((t) => ASPECT_NAMES.flatMap((a) => TRANSIT.textTargets.map((n) => `t_${t}_${a}_n_${n}`)));
+}
 const SPECS = {
   'planets-signs': { keys: cross([...BODIES, 'asc'], SIGN_KEYS), fields: { title: text(L.title), hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
   'planets-houses': { keys: cross(BODIES, HOUSES), fields: { hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
   aspects: { keys: aspectKeys(), fields: { natal: text(L.natal), synastry: text(L.synastry), barnum: { type: 'barnum' } } },
   archetypes: { keys: SIGN_KEYS, fields: { title: text(L.title), emblem: text(L.title), lines: { type: 'lines', count: 3, max: L.archetypeLine }, meeting: text(L.scene), mail: text(L.scene), crisis: text(L.scene), barnum: { type: 'barnum' } } },
   moon: { keys: cross(MOON_PHASE_IDS.map((p) => `phase_${p}`), SIGN_KEYS), fields: { line: text(L.line), barnum: { type: 'barnum' } } },
+  transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit }, advice: text(L.advice), barnum: { type: 'barnum' } } },
+  retro: { keys: RETRO.bodies.flatMap((b) => RETRO_TEXT_KEYS.map((k) => `${b}_${k}`)), fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };
 
