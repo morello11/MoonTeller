@@ -1273,5 +1273,380 @@
     "natal": "Jüpiter ile Chiron karşıt açıda (180°, gerilim): büyüme ile yara iki uçta. Yaranı başkasının inancında görürsün; sana öğretmen ya da öğrenci gibi gelen insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi kurtarırken kendini görmemek. Öğrenilen şey, şifanın önce kendine ait olduğu.",
     "synastry": "Birinin Jüpiter'i diğerinin Chiron'una karşıt: biri öğretmen, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu.",
     "barnum": 0.5
+  },
+  "saturn_conjunction_uranus": {
+    "natal": "Satürn (yapı) ile Uranüs (kopuş) aynı yerde: eski ile yeni aynı noktada buluşur; bu birkaç yılda bir olan bir kuşak açısıdır. Düzeni sever ama değiştirmek istersin; en iyi işin, kuralı bozmadan yenilemek. Gücün yapıcı yenilik; gölgesi, iki ses arasında gerilmek.",
+    "synastry": "Birinin Satürn'ü diğerinin Uranüs'ünün üstünde: biri düzen, öteki değişim ister. Sürtünme ama üretken; birlikte yeni bir düzen kurabilirsiniz.",
+    "barnum": 0.65
+  },
+  "saturn_sextile_uranus": {
+    "natal": "Satürn ile Uranüs altmışlık açıda (60°, fırsat): düzen ile yenilik birbirini destekler; kuşak açısı. Değişimi planlı yapabilirsin; kullanmak sana kalır. Gücün dengeli bir yenilikçilik; gölgesi, bu dengeyi kullanmamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Uranüs'üne altmışlık: yapı ile fikir uyum içinde. Sakin ve yenilikçi bir ortaklık.",
+    "barnum": 0.7
+  },
+  "saturn_square_uranus": {
+    "natal": "Satürn ile Uranüs kare açıda (90°, sürtünme): düzen ile kopuş birbirine sürter; kuşak açısı. Kurala isyan, sonra kendi kuralını kurmak; huzursuz ama yaratıcı. Gücün yapıyı yenileme kapasitesi; gölgesi, ya katılık ya kaos. Öğrenilen şey, değişimi sabırla yapmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Uranüs'üne kare: biri fren, öteki gaz. Gerilim sık; saygı kurulursa birbirinizi dengelersiniz.",
+    "barnum": 0.6
+  },
+  "saturn_trine_uranus": {
+    "natal": "Satürn ile Uranüs üçgen açıda (120°, akış): düzen ile yenilik aynı dili konuşur; kuşak açısı. Yeniyi sağlam kurmak sana doğal gelir. Gücün olgun bir yenilikçilik; gölgesi, güvenli olanı seçip büyük sıçrama yapmamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Uranüs'üne üçgen: yapı ile özgürlük uyum içinde. Uzun vadeli, yenilikçi bir ortaklık.",
+    "barnum": 0.7
+  },
+  "saturn_opposition_uranus": {
+    "natal": "Satürn ile Uranüs karşıt açıda (180°, gerilim): düzen ile kopuş iki uçta; kuşak açısı. Otorite ile özgürlük ilişkilerde sahnelenir; ya kuralcı ya isyankâr görünürsün. Gücün iki tarafı da görmek; gölgesi, kutuplaşmak. Öğrenilen şey, özgürlüğün düzenin içinde de olabildiği.",
+    "synastry": "Birinin Satürn'ü diğerinin Uranüs'üne karşıt: biri sınır, öteki alan ister. Açık konuşulursa dengeleyici, konuşulmazsa kopuş.",
+    "barnum": 0.6
+  },
+  "saturn_conjunction_neptune": {
+    "natal": "Satürn (yapı) ile Neptün (hayal) aynı yerde: hayali somutlaştırma kapasitesi; kuşak açısı. Sanatı disiplinle, inancı sabırla kurarsın. Gücün gerçekleşen hayaller; gölgesi, hayal kırıklığından sonra inancını kaybetmek.",
+    "synastry": "Birinin Satürn'ü diğerinin Neptün'ünün üstünde: biri hayale yapı verir, öteki yapıya ruh. Sakin, derin, bazen ağır bir bağ.",
+    "barnum": 0.65
+  },
+  "saturn_sextile_neptune": {
+    "natal": "Satürn ile Neptün altmışlık açıda (60°, fırsat): disiplin ile hayal birbirini destekler; kuşak açısı. İlhamı işe dönüştürebilirsin; kullanmak sana kalır. Gücün pratik bir idealizm; gölgesi, bu kapasiteyi kullanmamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Neptün'üne altmışlık: gerçekçi bir hayal ortaklığı. Birlikte yaratıcı iş kurmak kolay.",
+    "barnum": 0.7
+  },
+  "saturn_square_neptune": {
+    "natal": "Satürn ile Neptün kare açıda (90°, sürtünme): yapı ile hayal birbirine sürter; kuşak açısı. Belirsizlik kaygısı, güvensizlik, sonra sınırları olan bir şefkat. Gücün hayali gerçeğe bağlama kapasitesi; gölgesi, ya katı gerçekçilik ya kaçış. Öğrenilen şey, belirsizliğe dayanmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Neptün'üne kare: biri gerçek ister, öteki hayal. Anlaşmazlık sık; sabırla dengelenir.",
+    "barnum": 0.6
+  },
+  "saturn_trine_neptune": {
+    "natal": "Satürn ile Neptün üçgen açıda (120°, akış): disiplin ile hayal aynı dili konuşur; kuşak açısı. Sanatı sabırla, inancı sessizce kurarsın. Gücün olgun bir idealizm; gölgesi, güvenli hayallerle yetinmek.",
+    "synastry": "Birinin Satürn'ü diğerinin Neptün'üne üçgen: hayal ile yapı uyum içinde. Sakin, yaratıcı, güvenilir bir bağ.",
+    "barnum": 0.7
+  },
+  "saturn_opposition_neptune": {
+    "natal": "Satürn ile Neptün karşıt açıda (180°, gerilim): yapı ile hayal iki uçta; kuşak açısı. Başkalarında gördüğün katılık ya da kaçış kendi dengenin aynası. Gücün gerçek ile hayali birlikte görmek; gölgesi, kutuplaşmak. Öğrenilen şey, hayali gerçeğe bağlamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Neptün'üne karşıt: biri sınır, öteki sis. Netlik bağı yaşatır.",
+    "barnum": 0.6
+  },
+  "saturn_conjunction_pluto": {
+    "natal": "Satürn (yapı) ile Plüton (dönüşüm) aynı yerde: eski yapıların çöküşü ve yenisinin kuruluşu; kuşak açısı. Dayanıklısın, gerektiğinde her şeyi baştan kurarsın. Gücün olağanüstü bir sabır ve irade; gölgesi, ağırlık ve kontrol.",
+    "synastry": "Birinin Satürn'ü diğerinin Plüton'unun üstünde: ağır, derin, sınayan bir bağ. Güç dengesi konuşulmazsa boğucu olabilir.",
+    "barnum": 0.6
+  },
+  "saturn_sextile_pluto": {
+    "natal": "Satürn ile Plüton altmışlık açıda (60°, fırsat): disiplin ile derinlik birbirini destekler; kuşak açısı. Krizde düzen kurabilirsin; kullanmak sana kalır. Gücün sessiz bir dayanıklılık; gölgesi, bu gücü fark etmemek.",
+    "synastry": "Birinin Satürn'ü diğerinin Plüton'una altmışlık: güvene dayalı, dayanıklı bir ortaklık.",
+    "barnum": 0.7
+  },
+  "saturn_square_pluto": {
+    "natal": "Satürn ile Plüton kare açıda (90°, sürtünme): yapı ile güç birbirine sürter; kuşak açısı. Baskı altında sertleşmek, kontrolü bırakamamak; sonra köklü bir dönüşüm. Gücün yeniden kurma kapasitesi; gölgesi, katılık. Öğrenilen şey, bırakmanın da güç olduğu.",
+    "synastry": "Birinin Satürn'ü diğerinin Plüton'una kare: güç ve sınır çarpışır. Zor ama saygı kurulursa çok sağlam.",
+    "barnum": 0.6
+  },
+  "saturn_trine_pluto": {
+    "natal": "Satürn ile Plüton üçgen açıda (120°, akış): disiplin ile derinlik aynı dili konuşur; kuşak açısı. Zor işte yılmaz, sessizce yeniden kurarsın. Gücün sarsılmaz bir dayanıklılık; gölgesi, gücünü fark etmeyip kullanmamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Plüton'una üçgen: derin, sağlam, uzun ömürlü bir bağ.",
+    "barnum": 0.7
+  },
+  "saturn_opposition_pluto": {
+    "natal": "Satürn ile Plüton karşıt açıda (180°, gerilim): yapı ile güç iki uçta; kuşak açısı. Otorite ile güç mücadelesi ilişkilerde sahnelenir. Gücün krizde düzen kurmak; gölgesi, kontrol savaşı. Öğrenilen şey, kendi otoritesini güç göstermeden kurmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Plüton'una karşıt: güç mücadelesi, sınav. Dürüstlük ve sınır bağı yaşatır.",
+    "barnum": 0.6
+  },
+  "saturn_conjunction_trueNode": {
+    "natal": "Satürn ile Kuzey Düğüm aynı yerde: büyüme yönün disiplinden geçer. Sorumluluk aldıkça doğru yolda hissedersin; kolay yol sana verilmez, sağlam yol verilir. Gücün olgun bir yön duygusu; gölgesi, yükü büyüme sanmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Kuzey Düğümü'nün üstünde: biri diğerine sorumluluk öğretir. Ağır ama öğretici, uzun ömürlü bir bağ.",
+    "barnum": 0.55
+  },
+  "saturn_sextile_trueNode": {
+    "natal": "Satürn ile Kuzey Düğüm altmışlık açıda (60°, fırsat): büyüme yönün disiplinle desteklenir. Sabırla ilerlersen yol açılır; kullanmak sana kalır. Gücün güvenilir bir ilerleme; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Satürn'ü diğerinin Kuzey Düğümü'ne altmışlık: biri diğerinin yolunu sağlamlaştırır. Sakin, işe yarar bir bağ.",
+    "barnum": 0.6
+  },
+  "saturn_square_trueNode": {
+    "natal": "Satürn ile Kuzey Düğüm kare açıda (90°, sürtünme): büyüme yönün ile sınırların arasında sürtünme. Eski sorumluluklar seni geri çeker; korkular yolu kapatır. Gücün bu gerilimden çıkan farkındalık; gölgesi, güvenli olana dönmek. Öğrenilen şey, korkuya rağmen ilerlemek.",
+    "synastry": "Birinin Satürn'ü diğerinin Kuzey Düğümü'ne kare: biri diğerinin yolunu sınar. Rahatsız edici ama öğretici.",
+    "barnum": 0.55
+  },
+  "saturn_trine_trueNode": {
+    "natal": "Satürn ile Kuzey Düğüm üçgen açıda (120°, akış): büyüme yönün disiplinle uyumlu. Sorumluluk aldıkça ilerlersin; direnç az. Gücün doğal bir olgunluk; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Satürn'ü diğerinin Kuzey Düğümü'ne üçgen: birbirinizi sabırla ilerletirsiniz.",
+    "barnum": 0.6
+  },
+  "saturn_opposition_trueNode": {
+    "natal": "Satürn ile Kuzey Düğüm karşıt açıda (180°, gerilim): Satürn'ün Güney Düğüm'le birleşmesi demek. Disiplinin alışık olduğun tarafta rahat; büyüme yönü ise tam karşıda. Gücün derin bir sorumluluk; gölgesi, eski yükleri taşımaya devam etmek. Öğrenilen şey, yükü bırakıp ilerlemek.",
+    "synastry": "Birinin Satürn'ü diğerinin Güney Düğümü'nün üstünde: tanıdık, ağır, eski bir bağ gibi. İlerlemek çaba ister.",
+    "barnum": 0.55
+  },
+  "saturn_conjunction_chiron": {
+    "natal": "Satürn ile Chiron aynı yerde: sınırların yaralı şifacının yanında. Yetersizlik ya da otorite konusunda eski bir yara; bu yaradan başkasına yapı veren bir ustalık çıkar. Gücün olgun bir şefkat; gölgesi, kendini hiç yeterli bulmamak.",
+    "synastry": "Birinin Satürn'ü diğerinin Chiron'unun üstünde: biri diğerinin yarasına sınır koyar ya da iyileştirir. Şefkat belirleyici.",
+    "barnum": 0.5
+  },
+  "saturn_sextile_chiron": {
+    "natal": "Satürn ile Chiron altmışlık açıda (60°, fırsat): disiplinin yaradan öğrenmeyi destekler. Zor deneyimlerin başkasına yapı veren bir bilgeliğe dönüşür; kullanmak sana kalır. Gücün olgun bir dayanıklılık; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Satürn'ü diğerinin Chiron'una altmışlık: biri diğerine sağlam bir zemin verir. Hafif ama derin.",
+    "barnum": 0.6
+  },
+  "saturn_square_chiron": {
+    "natal": "Satürn ile Chiron kare açıda (90°, sürtünme): sınırlar ile yara birbirine sürter. Otoriteyle zor ilişki, kendini kanıtlama, sonra derin bir anlayış. Gücün empati; gölgesi, yarayı katılıkla örtmek. Öğrenilen şey, yeterliliğin kanıt gerektirmediği.",
+    "synastry": "Birinin Satürn'ü diğerinin Chiron'una kare: biri diğerinin hassas noktasına kural koyar. Konuşulursa büyüme.",
+    "barnum": 0.5
+  },
+  "saturn_trine_chiron": {
+    "natal": "Satürn ile Chiron üçgen açıda (120°, akış): yaradan disiplin çıkarmak sana doğal gelir. Zor deneyimini başkasına yapı veren bir olgunluğa çevirirsin, çabasız. Gücün şefkatli bir dayanıklılık; gölgesi, herkese destek olurken kendini unutmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Chiron'una üçgen: şifa veren bir güven. Biri diğerinin yanında sağlamlaşır.",
+    "barnum": 0.55
+  },
+  "saturn_opposition_chiron": {
+    "natal": "Satürn ile Chiron karşıt açıda (180°, gerilim): sınırlar ile yara iki uçta. Yaranı otorite figürlerinde görürsün; sana öğretmen ya da yargıç gibi gelen insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi taşırken kendini görmemek. Öğrenilen şey, kendi otoritesini şefkatle kurmak.",
+    "synastry": "Birinin Satürn'ü diğerinin Chiron'una karşıt: biri yargıç, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu.",
+    "barnum": 0.5
+  },
+  "uranus_conjunction_neptune": {
+    "natal": "Uranüs ile Neptün aynı yerde: yenilik ile hayal el ele; yaklaşık iki yüzyılda bir olan bir kuşak açısı (son kez 1990'lar). Kuşağınla birlikte teknolojiyi ve hayali birleştirdin. Gücün ilhamlı yenilik; gölgesi, gerçekle bağın gevşemesi.",
+    "synastry": "Birinin Uranüs'ü diğerinin Neptün'ünün üstünde: kuşak açısı; kişisel etkisi az. Aynı kuşaktansanız ortak bir hayal dili taşırsınız.",
+    "barnum": 0.8
+  },
+  "uranus_sextile_neptune": {
+    "natal": "Uranüs ile Neptün altmışlık açıda (60°, fırsat): yenilik ile hayal birbirini destekler; kuşak açısı. Yaratıcı bir sezgi kapasiten var; kullanmak sana kalır. Gücün ilhamlı fikirler; gölgesi, bunları uygulamamak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Neptün'üne altmışlık: kuşak açısı; kişisel etkisi az. Ortak idealler için hafif bir zemin.",
+    "barnum": 0.8
+  },
+  "uranus_square_neptune": {
+    "natal": "Uranüs ile Neptün kare açıda (90°, sürtünme): yenilik ile hayal birbirine sürter; kuşak açısı. Huzursuz bir idealizm, yeniyi ararken sise düşmek. Gücün yaratıcı bir arayış; gölgesi, yönsüzlük. Öğrenilen şey, hayali yeniye bağlamak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Neptün'üne kare: kuşak açısı; kişisel etkisi az. Farklı kuşakların ideal farkı hissedilebilir.",
+    "barnum": 0.8
+  },
+  "uranus_trine_neptune": {
+    "natal": "Uranüs ile Neptün üçgen açıda (120°, akış): yenilik ile hayal aynı dili konuşur; kuşak açısı. Kuşağınla birlikte sanat ve teknolojiyi kolay birleştirirsin. Gücün akıcı bir yaratıcılık; gölgesi, kolay geleni derinleştirmemek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Neptün'üne üçgen: kuşak açısı; kişisel etkisi az. Ortak bir hayal dili için zemin.",
+    "barnum": 0.8
+  },
+  "uranus_opposition_neptune": {
+    "natal": "Uranüs ile Neptün karşıt açıda (180°, gerilim): yenilik ile hayal iki uçta; kuşak açısı. Kuşağınla birlikte gerçek ile hayal arasında gerildin. Gücün iki tarafı da görmek; gölgesi, kutuplaşmak. Öğrenilen şey, ikisini birlikte tutmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Neptün'üne karşıt: kuşak açısı; kişisel etkisi az. Farklı kuşakların bakış farkı.",
+    "barnum": 0.8
+  },
+  "uranus_conjunction_pluto": {
+    "natal": "Uranüs ile Plüton aynı yerde: yenilik ile dönüşüm el ele; nadir bir kuşak açısı (son kez 1960'lar). Kuşağınla birlikte köklü değişimlerin içinde doğdun. Gücün devrimci bir dönüşüm; gölgesi, sarsmayı amaç yapmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Plüton'unun üstünde: kuşak açısı; kişisel etkisi az. Aynı kuşaktansanız ortak bir dönüşüm dili.",
+    "barnum": 0.8
+  },
+  "uranus_sextile_pluto": {
+    "natal": "Uranüs ile Plüton altmışlık açıda (60°, fırsat): yenilik ile dönüşüm birbirini destekler; kuşak açısı. Değişimi derinden yapabilirsin; kullanmak sana kalır. Gücün köklü yenilik; gölgesi, bu kapasiteyi kullanmamak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Plüton'una altmışlık: kuşak açısı; kişisel etkisi az.",
+    "barnum": 0.8
+  },
+  "uranus_square_pluto": {
+    "natal": "Uranüs ile Plüton kare açıda (90°, sürtünme): yenilik ile dönüşüm birbirine sürter; kuşak açısı (son kez 2010'lar). Kuşağınla birlikte sarsıntılı bir değişim dönemi yaşadın. Gücün dayanıklı bir yenilik; gölgesi, huzursuzluk. Öğrenilen şey, değişimi yıkmadan yapmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Plüton'una kare: kuşak açısı; kişisel etkisi az. Kuşak farkı hissedilebilir.",
+    "barnum": 0.8
+  },
+  "uranus_trine_pluto": {
+    "natal": "Uranüs ile Plüton üçgen açıda (120°, akış): yenilik ile dönüşüm aynı dili konuşur; kuşak açısı. Kuşağınla birlikte değişimi kolay kucaklarsın. Gücün akıcı bir dönüşüm; gölgesi, kolay geleni derinleştirmemek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Plüton'una üçgen: kuşak açısı; kişisel etkisi az.",
+    "barnum": 0.8
+  },
+  "uranus_opposition_pluto": {
+    "natal": "Uranüs ile Plüton karşıt açıda (180°, gerilim): yenilik ile dönüşüm iki uçta; kuşak açısı. Kuşağınla birlikte özgürlük ile güç arasında gerildin. Gücün iki tarafı da görmek; gölgesi, kutuplaşmak. Öğrenilen şey, değişimi güçle değil ilkeyle yapmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Plüton'una karşıt: kuşak açısı; kişisel etkisi az.",
+    "barnum": 0.8
+  },
+  "uranus_conjunction_trueNode": {
+    "natal": "Uranüs ile Kuzey Düğüm aynı yerde: büyüme yönün yenilikten geçer. Beklenmedik dönüşler seni doğru yola götürür; alışılmışı bırakmak senin dersin. Gücün özgün bir yön duygusu; gölgesi, kopuşu ilerleme sanmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Kuzey Düğümü'nün üstünde: biri diğerinin yolunu bir anda değiştirir. Uyandıran, sürprizli bir bağ.",
+    "barnum": 0.55
+  },
+  "uranus_sextile_trueNode": {
+    "natal": "Uranüs ile Kuzey Düğüm altmışlık açıda (60°, fırsat): büyüme yönün yenilikle desteklenir. Beklenmedik fırsatlar yolunu açar; kullanmak sana kalır. Gücün esnek bir ilerleme; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Kuzey Düğümü'ne altmışlık: biri diğerine yeni kapılar gösterir. Hafif, canlı bir bağ.",
+    "barnum": 0.6
+  },
+  "uranus_square_trueNode": {
+    "natal": "Uranüs ile Kuzey Düğüm kare açıda (90°, sürtünme): büyüme yönün ile özgürlük isteğin arasında sürtünme. Ani kopuşlar yolu bozar ya da açar. Gücün bu gerilimden çıkan farkındalık; gölgesi, kaçmayı ilerleme sanmak. Öğrenilen şey, özgürlüğü yolda kalarak bulmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Kuzey Düğümü'ne kare: biri diğerinin yolunu sarsar. Rahatsız edici ama öğretici.",
+    "barnum": 0.55
+  },
+  "uranus_trine_trueNode": {
+    "natal": "Uranüs ile Kuzey Düğüm üçgen açıda (120°, akış): büyüme yönün yenilikle uyumlu. Değişim seni ilerletir; direnç az. Gücün doğal bir uyum; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Uranüs'ü diğerinin Kuzey Düğümü'ne üçgen: birbirinizi özgürce ilerletirsiniz.",
+    "barnum": 0.6
+  },
+  "uranus_opposition_trueNode": {
+    "natal": "Uranüs ile Kuzey Düğüm karşıt açıda (180°, gerilim): Uranüs'ün Güney Düğüm'le birleşmesi demek. Özgürlük ve kopuş alışık olduğun taraf; büyüme yönü ise bağ kurmakta. Gücün özgün bir bağımsızlık; gölgesi, her şeyi bırakıp gitmek. Öğrenilen şey, kalmayı seçmek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Güney Düğümü'nün üstünde: tanıdık bir özgürlük hissi. Bağ hafif; derinleşmek çaba ister.",
+    "barnum": 0.55
+  },
+  "uranus_conjunction_chiron": {
+    "natal": "Uranüs ile Chiron aynı yerde: özgürlük yaralı şifacının yanında. Farklı olmak ya da dışlanmak eski bir yara; bu yaradan farklı olanı kucaklayan bir ustalık çıkar. Gücün özgün bir şefkat; gölgesi, farklılığı yara olarak taşımak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Chiron'unun üstünde: biri diğerinin yarasını aniden açar ya da özgürleştirir. Şefkat belirleyici.",
+    "barnum": 0.55
+  },
+  "uranus_sextile_chiron": {
+    "natal": "Uranüs ile Chiron altmışlık açıda (60°, fırsat): özgürlüğün yaradan öğrenmeyi destekler. Farklılığını başkasına cesaret veren bir örneğe çevirebilirsin; kullanmak sana kalır. Gücün özgün bir olgunluk; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Chiron'una altmışlık: biri diğerine yeni bir bakış verir. Hafif ama iyileştirici.",
+    "barnum": 0.6
+  },
+  "uranus_square_chiron": {
+    "natal": "Uranüs ile Chiron kare açıda (90°, sürtünme): özgürlük ile yara birbirine sürter. Dışlanma korkusu, isyan, sonra farklı olanı anlama. Gücün empati; gölgesi, yarayı kopuşla örtmek. Öğrenilen şey, farklı olmanın yara olmadığı.",
+    "synastry": "Birinin Uranüs'ü diğerinin Chiron'una kare: biri diğerinin yarasını sarsar. Konuşulursa büyüme.",
+    "barnum": 0.55
+  },
+  "uranus_trine_chiron": {
+    "natal": "Uranüs ile Chiron üçgen açıda (120°, akış): yaradan özgünlük çıkarmak sana doğal gelir. Farklılığını başkasına yol açan bir örneğe çevirirsin, çabasız. Gücün özgün bir şefkat; gölgesi, herkesi özgürleştirirken kendini unutmak.",
+    "synastry": "Birinin Uranüs'ü diğerinin Chiron'una üçgen: özgürleştiren bir bağ. Biri diğerinin yanında kendi olur.",
+    "barnum": 0.6
+  },
+  "uranus_opposition_chiron": {
+    "natal": "Uranüs ile Chiron karşıt açıda (180°, gerilim): özgürlük ile yara iki uçta. Yaranı farklı olanlarda görürsün; sana uyum sağlamayan insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi kabul ederken kendini dışarıda tutmak. Öğrenilen şey, kendi farklılığını kabul etmek.",
+    "synastry": "Birinin Uranüs'ü diğerinin Chiron'una karşıt: biri özgürleştiren, öteki yaralı rolüne girebilir. Roller esnerse derin.",
+    "barnum": 0.55
+  },
+  "neptune_conjunction_pluto": {
+    "natal": "Neptün ile Plüton aynı yerde: hayal ile dönüşüm el ele; yüzyıllar sürede bir olan bir kuşak açısı. Kişisel etkisi çok azdır; çağın ortak rüyasını taşırsın. Gücün derin bir sezgi; gölgesi, gerçekle bağın gevşemesi.",
+    "synastry": "Birinin Neptün'ü diğerinin Plüton'unun üstünde: kuşak açısı; kişisel etkisi çok az.",
+    "barnum": 0.85
+  },
+  "neptune_sextile_pluto": {
+    "natal": "Neptün ile Plüton altmışlık açıda (60°, fırsat): hayal ile dönüşüm birbirini destekler; yirminci yüzyılın büyük bölümünde süren bir kuşak açısı. Kişisel etkisi azdır; kuşağınla birlikte derin bir sezgi kapasitesi taşırsın. Gücün sessiz bir dönüşüm; gölgesi, bunu fark etmemek.",
+    "synastry": "Birinin Neptün'ü diğerinin Plüton'una altmışlık: kuşak açısı; kişisel etkisi çok az. Neredeyse herkes bu açıyı paylaşır.",
+    "barnum": 0.9
+  },
+  "neptune_square_pluto": {
+    "natal": "Neptün ile Plüton kare açıda (90°, sürtünme): hayal ile dönüşüm birbirine sürter; nadir bir kuşak açısı. Kişisel etkisi azdır; çağın gerçek ile hayal arasındaki gerilimini taşırsın. Gücün derin bir arayış; gölgesi, yönsüzlük.",
+    "synastry": "Birinin Neptün'ü diğerinin Plüton'una kare: kuşak açısı; kişisel etkisi çok az.",
+    "barnum": 0.85
+  },
+  "neptune_trine_pluto": {
+    "natal": "Neptün ile Plüton üçgen açıda (120°, akış): hayal ile dönüşüm aynı dili konuşur; kuşak açısı. Kişisel etkisi azdır; kuşağınla birlikte sezgi ve derinliği kolay birleştirirsin. Gücün akıcı bir sezgi; gölgesi, kolay geleni derinleştirmemek.",
+    "synastry": "Birinin Neptün'ü diğerinin Plüton'una üçgen: kuşak açısı; kişisel etkisi çok az.",
+    "barnum": 0.85
+  },
+  "neptune_opposition_pluto": {
+    "natal": "Neptün ile Plüton karşıt açıda (180°, gerilim): hayal ile dönüşüm iki uçta; çok nadir bir kuşak açısı. Kişisel etkisi azdır; çağın büyük gerilimini taşırsın. Gücün iki tarafı da görmek; gölgesi, kutuplaşmak.",
+    "synastry": "Birinin Neptün'ü diğerinin Plüton'una karşıt: kuşak açısı; kişisel etkisi çok az.",
+    "barnum": 0.85
+  },
+  "neptune_conjunction_trueNode": {
+    "natal": "Neptün ile Kuzey Düğüm aynı yerde: büyüme yönün hayal ve şefkatten geçer. Sezgine güvenmek seni doğru yola götürür; kontrolü bırakmak senin dersin. Gücün ilhamlı bir yön duygusu; gölgesi, sisi ilerleme sanmak.",
+    "synastry": "Birinin Neptün'ü diğerinin Kuzey Düğümü'nün üstünde: biri diğerinin yoluna hayal katar. İlham veren, biraz bulanık bir bağ.",
+    "barnum": 0.55
+  },
+  "neptune_sextile_trueNode": {
+    "natal": "Neptün ile Kuzey Düğüm altmışlık açıda (60°, fırsat): büyüme yönün sezgiyle desteklenir. Şefkat ve hayal yolunu açar; kullanmak sana kalır. Gücün yumuşak bir ilerleme; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Neptün'ü diğerinin Kuzey Düğümü'ne altmışlık: biri diğerine ilham verir. Hafif, şefkatli bir bağ.",
+    "barnum": 0.6
+  },
+  "neptune_square_trueNode": {
+    "natal": "Neptün ile Kuzey Düğüm kare açıda (90°, sürtünme): büyüme yönün ile hayallerin arasında sürtünme. Kaçış, belirsizlik, yanlış idealler yolu bulandırır. Gücün bu gerilimden çıkan farkındalık; gölgesi, sise sığınmak. Öğrenilen şey, hayali yola bağlamak.",
+    "synastry": "Birinin Neptün'ü diğerinin Kuzey Düğümü'ne kare: biri diğerinin yolunu bulandırır. Netlik gerekir.",
+    "barnum": 0.55
+  },
+  "neptune_trine_trueNode": {
+    "natal": "Neptün ile Kuzey Düğüm üçgen açıda (120°, akış): büyüme yönün sezgiyle uyumlu. Akışa bıraktıkça ilerlersin; direnç az. Gücün doğal bir sezgi; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Neptün'ü diğerinin Kuzey Düğümü'ne üçgen: birbirinizi sezgiyle ilerletirsiniz.",
+    "barnum": 0.6
+  },
+  "neptune_opposition_trueNode": {
+    "natal": "Neptün ile Kuzey Düğüm karşıt açıda (180°, gerilim): Neptün'ün Güney Düğüm'le birleşmesi demek. Hayal ve kaçış alışık olduğun taraf; büyüme yönü ise somut adımlarda. Gücün derin bir sezgi; gölgesi, sise geri dönmek. Öğrenilen şey, ayakları yere basmak.",
+    "synastry": "Birinin Neptün'ü diğerinin Güney Düğümü'nün üstünde: tanıdık, rüya gibi bir bağ. Somutlaşmak çaba ister.",
+    "barnum": 0.55
+  },
+  "neptune_conjunction_chiron": {
+    "natal": "Neptün ile Chiron aynı yerde: hayal yaralı şifacının yanında. Sınır ya da kaçış konusunda eski bir yara; bu yaradan sessiz bir şefkat ustalığı çıkar. Gücün derin bir merhamet; gölgesi, dünyanın acısını kendi yaran gibi taşımak.",
+    "synastry": "Birinin Neptün'ü diğerinin Chiron'unun üstünde: biri diğerinin yarasına sisli bir şefkatle dokunur. Netlik ve şefkat belirleyici.",
+    "barnum": 0.55
+  },
+  "neptune_sextile_chiron": {
+    "natal": "Neptün ile Chiron altmışlık açıda (60°, fırsat): hayalin yaradan öğrenmeyi destekler. Zor deneyimlerin başkasını anlayan bir sezgiye dönüşür; kullanmak sana kalır. Gücün şefkatli bir sezgi; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Neptün'ü diğerinin Chiron'una altmışlık: biri diğerine sessiz bir şefkat verir.",
+    "barnum": 0.6
+  },
+  "neptune_square_chiron": {
+    "natal": "Neptün ile Chiron kare açıda (90°, sürtünme): hayal ile yara birbirine sürter. Kaçış, kurban hissi, sonra derin bir merhamet. Gücün empati; gölgesi, yarayı sisle örtmek. Öğrenilen şey, yarayı görerek iyileşmek.",
+    "synastry": "Birinin Neptün'ü diğerinin Chiron'una kare: biri diğerinin yarasını bulandırır. Netlik gerekir.",
+    "barnum": 0.55
+  },
+  "neptune_trine_chiron": {
+    "natal": "Neptün ile Chiron üçgen açıda (120°, akış): yaradan şefkat çıkarmak sana doğal gelir. Zor deneyimini başkasına iyi gelen bir merhamete çevirirsin, çabasız. Gücün sessiz bir şifa; gölgesi, herkesi iyileştirirken kendini unutmak.",
+    "synastry": "Birinin Neptün'ü diğerinin Chiron'una üçgen: şifa veren bir sezgi. Biri diğerinin yanında rahatlar.",
+    "barnum": 0.6
+  },
+  "neptune_opposition_chiron": {
+    "natal": "Neptün ile Chiron karşıt açıda (180°, gerilim): hayal ile yara iki uçta. Yaranı başkasının acısında görürsün; sana kurtarılması gereken insanlar çeker. Gücün derin bir merhamet; gölgesi, kurtarıcı rolüne girmek. Öğrenilen şey, şefkatin sınırı.",
+    "synastry": "Birinin Neptün'ü diğerinin Chiron'una karşıt: biri kurtarıcı, öteki yaralı rolüne girebilir. Roller esnerse derin.",
+    "barnum": 0.55
+  },
+  "pluto_conjunction_trueNode": {
+    "natal": "Plüton ile Kuzey Düğüm aynı yerde: büyüme yönün dönüşümden geçer. Krizler seni doğru yola götürür; bırakmak ve yeniden doğmak senin dersin. Gücün köklü bir yön duygusu; gölgesi, yıkımı ilerleme sanmak.",
+    "synastry": "Birinin Plüton'u diğerinin Kuzey Düğümü'nün üstünde: biri diğerinin yolunu kökten değiştirir. Yoğun, dönüştürücü bir bağ.",
+    "barnum": 0.55
+  },
+  "pluto_sextile_trueNode": {
+    "natal": "Plüton ile Kuzey Düğüm altmışlık açıda (60°, fırsat): büyüme yönün derinlikle desteklenir. Krizden güçlenerek çıkarsın; kullanmak sana kalır. Gücün sessiz bir dönüşüm; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Plüton'u diğerinin Kuzey Düğümü'ne altmışlık: biri diğerini derinden ilerletir.",
+    "barnum": 0.6
+  },
+  "pluto_square_trueNode": {
+    "natal": "Plüton ile Kuzey Düğüm kare açıda (90°, sürtünme): büyüme yönün ile güç arasında sürtünme. Kontrol isteği yolu tıkar; bırakmak yolu açar. Gücün bu gerilimden çıkan farkındalık; gölgesi, güce tutunmak. Öğrenilen şey, kontrolü bırakarak ilerlemek.",
+    "synastry": "Birinin Plüton'u diğerinin Kuzey Düğümü'ne kare: biri diğerinin yolunu zorlar. Yoğun ama öğretici.",
+    "barnum": 0.55
+  },
+  "pluto_trine_trueNode": {
+    "natal": "Plüton ile Kuzey Düğüm üçgen açıda (120°, akış): büyüme yönün dönüşümle uyumlu. Değişim seni ilerletir; direnç az. Gücün doğal bir dayanıklılık; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Plüton'u diğerinin Kuzey Düğümü'ne üçgen: birbirinizi derinden ilerletirsiniz.",
+    "barnum": 0.6
+  },
+  "pluto_opposition_trueNode": {
+    "natal": "Plüton ile Kuzey Düğüm karşıt açıda (180°, gerilim): Plüton'un Güney Düğüm'le birleşmesi demek. Güç ve kontrol alışık olduğun taraf; büyüme yönü ise bırakmakta. Gücün derin bir irade; gölgesi, eski güç oyunlarına dönmek. Öğrenilen şey, gücü paylaşmak.",
+    "synastry": "Birinin Plüton'u diğerinin Güney Düğümü'nün üstünde: tanıdık, yoğun, eski bir bağ gibi. İlerlemek bırakmayı ister.",
+    "barnum": 0.55
+  },
+  "pluto_conjunction_chiron": {
+    "natal": "Plüton ile Chiron aynı yerde: dönüşüm yaralı şifacının yanında. Güç ya da kayıp konusunda eski bir yara; bu yaradan krizdeki insana eşlik eden bir ustalık çıkar. Gücün derin bir şifa kapasitesi; gölgesi, yarayı güçle örtmek.",
+    "synastry": "Birinin Plüton'u diğerinin Chiron'unun üstünde: biri diğerinin yarasını derinden açar ya da iyileştirir. Yoğun; şefkat belirleyici.",
+    "barnum": 0.55
+  },
+  "pluto_sextile_chiron": {
+    "natal": "Plüton ile Chiron altmışlık açıda (60°, fırsat): dönüşümün yaradan öğrenmeyi destekler. Zor deneyimlerin başkasını güçlendiren bir bilgeliğe dönüşür; kullanmak sana kalır. Gücün sessiz bir şifa; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Plüton'u diğerinin Chiron'una altmışlık: biri diğerine derin bir güç verir.",
+    "barnum": 0.6
+  },
+  "pluto_square_chiron": {
+    "natal": "Plüton ile Chiron kare açıda (90°, sürtünme): dönüşüm ile yara birbirine sürter. Güçsüzlük korkusu, kontrol, sonra köklü bir iyileşme. Gücün derin bir dayanıklılık; gölgesi, yarayı güç mücadelesine çevirmek. Öğrenilen şey, kırılganlığın da güç olduğu.",
+    "synastry": "Birinin Plüton'u diğerinin Chiron'una kare: biri diğerinin yarasını zorlar. Yoğun; konuşulursa dönüştürücü.",
+    "barnum": 0.55
+  },
+  "pluto_trine_chiron": {
+    "natal": "Plüton ile Chiron üçgen açıda (120°, akış): yaradan güç çıkarmak sana doğal gelir. Zor deneyimini başkasını dönüştüren bir bilgeliğe çevirirsin, çabasız. Gücün derin bir şifa; gölgesi, herkesi dönüştürürken kendini unutmak.",
+    "synastry": "Birinin Plüton'u diğerinin Chiron'una üçgen: derin bir şifa bağı. Biri diğerinin yanında yeniden doğar.",
+    "barnum": 0.6
+  },
+  "pluto_opposition_chiron": {
+    "natal": "Plüton ile Chiron karşıt açıda (180°, gerilim): dönüşüm ile yara iki uçta. Yaranı başkasının gücünde görürsün; sana krizdeki insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi dönüştürürken kendini görmemek. Öğrenilen şey, kendi yarasını sahiplenmek.",
+    "synastry": "Birinin Plüton'u diğerinin Chiron'una karşıt: biri dönüştüren, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu.",
+    "barnum": 0.55
+  },
+  "trueNode_conjunction_chiron": {
+    "natal": "Kuzey Düğüm ile Chiron aynı yerde: büyüme yönün yaradan geçer. Seni en çok inciten şey, en çok öğreten şey; bu yolda ilerledikçe hem iyileşir hem iyileştirirsin. Gücün anlamlı bir şifa; gölgesi, yarayı kimlik yapmak.",
+    "synastry": "Birinin Kuzey Düğümü diğerinin Chiron'unun üstünde: 'bu insan beni iyileştirmek için geldi' hissi. Derin, öğretici bir bağ.",
+    "barnum": 0.55
+  },
+  "trueNode_sextile_chiron": {
+    "natal": "Kuzey Düğüm ile Chiron altmışlık açıda (60°, fırsat): büyüme yönün yaradan öğrenmeyle desteklenir. Zor deneyimler yolunu açar; kullanmak sana kalır. Gücün şefkatli bir ilerleme; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Kuzey Düğümü diğerinin Chiron'una altmışlık: biri diğerinin yarasını yola çevirir. Hafif ama iyileştirici.",
+    "barnum": 0.6
+  },
+  "trueNode_square_chiron": {
+    "natal": "Kuzey Düğüm ile Chiron kare açıda (90°, sürtünme): büyüme yönün ile yaran arasında sürtünme. Eski yara yolu tıkar; onu görmeden ilerleyemezsin. Gücün bu gerilimden çıkan farkındalık; gölgesi, yaraya takılı kalmak. Öğrenilen şey, yarayla birlikte yürümek.",
+    "synastry": "Birinin Kuzey Düğümü diğerinin Chiron'una kare: biri diğerinin yarasını yolun üstüne çıkarır. Rahatsız edici ama öğretici.",
+    "barnum": 0.55
+  },
+  "trueNode_trine_chiron": {
+    "natal": "Kuzey Düğüm ile Chiron üçgen açıda (120°, akış): büyüme yönün yaradan öğrenmeyle uyumlu. İyileştikçe ilerlersin; direnç az. Gücün doğal bir şifa; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Kuzey Düğümü diğerinin Chiron'una üçgen: birbirinizi iyileştirerek ilerletirsiniz.",
+    "barnum": 0.6
+  },
+  "trueNode_opposition_chiron": {
+    "natal": "Kuzey Düğüm ile Chiron karşıt açıda (180°, gerilim): Chiron'un Güney Düğüm'le birleşmesi demek. Yaran alışık olduğun tarafta; büyüme yönü ise yarayı geride bırakmakta. Gücün derin bir tanıdıklık; gölgesi, eski yaraya dönmek. Öğrenilen şey, iyileşmiş olarak ilerlemek.",
+    "synastry": "Birinin Kuzey Düğümü diğerinin Güney Düğümü ve Chiron'uyla karşıt: tanıdık bir yara, tanıdık bir şifa. Derin, eski bir bağ gibi.",
+    "barnum": 0.55
   }
 }
