@@ -96,6 +96,8 @@ export const MOON_PHASE_IDS = ['new', 'crescent', 'first_quarter', 'gibbous', 'f
 export const BANK = {
   files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'ui-copy'],
   limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140, transit: 200, advice: 120 },
+  // Transit varyantları tek başına günün metni olur: en az bu kadar karakter, tam cümle.
+  transitMin: 60,
   barnumMax: 0.9,
   // Klişe yasağı (docs/TEXTBANK.md). ui-copy.json hariç, küçük harfe indirilmiş metinde aranır.
   bannedWords: ['evren sana', 'enerjini', 'yıldızlar diyor ki', 'kozmik', 'ruhun', 'titreşim', 'manifest'],

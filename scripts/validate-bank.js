@@ -39,7 +39,7 @@ const SPECS = {
   aspects: { keys: aspectKeys(), fields: { natal: text(L.natal), synastry: text(L.synastry), barnum: { type: 'barnum' } } },
   archetypes: { keys: SIGN_KEYS, fields: { title: text(L.title), emblem: text(L.title), lines: { type: 'lines', count: 3, max: L.archetypeLine }, meeting: text(L.scene), mail: text(L.scene), crisis: text(L.scene), barnum: { type: 'barnum' } } },
   moon: { keys: cross(MOON_PHASE_IDS.map((p) => `phase_${p}`), SIGN_KEYS), fields: { line: text(L.line), barnum: { type: 'barnum' } } },
-  transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit }, advice: text(L.advice), barnum: { type: 'barnum' } } },
+  transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit, min: BANK.transitMin }, advice: text(L.advice), barnum: { type: 'barnum' } } },
   retro: { keys: RETRO.bodies.flatMap((b) => RETRO_TEXT_KEYS.map((k) => `${b}_${k}`)), fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };
@@ -48,8 +48,8 @@ function checkField(value, spec) {
   if (spec.type === 'barnum') return typeof value === 'number' && value >= 0 && value <= BANK.barnumMax ? null : `barnum 0–${BANK.barnumMax} arası sayı olmalı`;
   if (spec.type === 'lines') {
     if (!Array.isArray(value) || value.length !== spec.count) return `${spec.count} satırlık dizi olmalı`;
-    const bad = value.find((v) => typeof v !== 'string' || !v.trim() || v.length > spec.max);
-    return bad === undefined ? null : `satır boş ya da ${spec.max} karakteri aşıyor`;
+    const bad = value.find((v) => typeof v !== 'string' || !v.trim() || v.length > spec.max || (spec.min && v.length < spec.min));
+    return bad === undefined ? null : `satır boş, ${spec.max} karakteri aşıyor${spec.min ? ` ya da ${spec.min} karakterden kısa` : ''}`;
   }
   if (typeof value !== 'string' || !value.trim()) return 'boş';
   if (value.length > spec.max) return `${value.length} karakter > ${spec.max}`;

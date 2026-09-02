@@ -35,6 +35,39 @@ function moonSeparations(jd) {
   return { moonLon: moon.lon, seps: others.map((o) => signedSeparation(moon.lon, o.lon)) };
 }
 
+// Ay'ın bulunduğu burca giriş anı (geriye tarama).
+function signEntry(jdUT, sign, step, maxSteps) {
+  let jd = jdUT;
+  for (let i = 1; i <= maxSteps; i += 1) {
+    const prev = jd - step;
+    if (signIndex(moonSeparations(prev).moonLon) !== sign) return jd;
+    jd = prev;
+  }
+  return jd;
+}
+
+// Günlük görünüm için: Ay'ın bu burçtaki son tam aspekti (boşluğun başı) ve burçtan çıkışı (sonu).
+// Dönüş: { start, end, isVoidNow, sign }. start === null → bu burçta hiç tam aspekt yok (burç girişinden itibaren boşlukta).
+export function voidWindow(jdUT) {
+  const step = VOID_OF_COURSE.stepMinutes / MINUTES_PER_DAY;
+  const maxSteps = (MAX_SCAN_DAYS * MINUTES_PER_DAY) / VOID_OF_COURSE.stepMinutes;
+  const sign = signIndex(moonSeparations(jdUT).moonLon);
+  const entry = signEntry(jdUT, sign, step, maxSteps);
+  let { seps: prevSeps } = moonSeparations(entry);
+  let lastExact = null;
+  for (let i = 1; i <= maxSteps; i += 1) {
+    const jd = entry + i * step;
+    const { moonLon, seps } = moonSeparations(jd);
+    if (signIndex(moonLon) !== sign) {
+      const start = lastExact ?? entry;
+      return { start, end: jd, isVoidNow: jdUT >= start, sign, hasExact: lastExact !== null };
+    }
+    if (seps.some((s, k) => crossedExact(prevSeps[k], s))) lastExact = jd;
+    prevSeps = seps;
+  }
+  throw new Error('Ay burç değiştirmedi: tarama sınırı aşıldı');
+}
+
 // Ay bulunduğu burcu terk edene kadar hiçbir majör aspekt tam olmuyorsa boşlukta.
 // Dönüş: { isVoid, signExitJd, nextExactJd | null }
 export function voidOfCourse(jdUT) {
