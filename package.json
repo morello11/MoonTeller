@@ -1,0 +1,10 @@
+{
+  "name": "yildizname",
+  "private": true,
+  "type": "module",
+  "description": "Tarayıcıda çalışan, eğlenceli ama dürüst astroloji uygulaması. Build adımı yok.",
+  "license": "GPL-3.0",
+  "scripts": {
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,66 @@
+/* Yıldızname — tek stil dosyası. Değişkenler docs/DESIGN.md ile dolacak; şimdilik iskelet. */
+:root {
+  --bg: #0f1020;
+  --surface: #1a1b2e;
+  --text: #ececf4;
+  --muted: #9a9bb3;
+  --accent: #f2c14e;
+  --border: #2c2d45;
+  --radius: 10px;
+  --space: 1rem;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --max-width: 52rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand { color: var(--accent); font-weight: 700; text-decoration: none; }
+
+.tabs { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+.tabs a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius);
+}
+.tabs a.active { color: var(--text); background: var(--surface); }
+
+.page, .engine-test {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+.engine-test { border-top: 1px solid var(--border); }
+
+button {
+  font: inherit;
+  color: var(--bg);
+  background: var(--accent);
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.muted { color: var(--muted); }
