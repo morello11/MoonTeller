@@ -3,5 +3,280 @@
     "natal": "Mars hızlanmak ister, Satürn fren yapar; kare açı (90°, sürtünme) ikisini aynı arabaya koyar. Gaza ve frene aynı anda basmak gibi: başlamak zor, başlayınca durmak zor. Öğrettiği şey disiplin; sabırla kurulan hız kalıcı olur. Kendini erken yargılama, bu açı geç olgunlaşır.",
     "synastry": "Birinin Mars'ı diğerinin Satürn'üne kare: biri hemen yola çıkmak, öteki önce haritaya bakmak ister. Aynı projede sürtünme çıkar; iyi yönetilirse en sağlam ikili bu olur, cesaret artı düzen.",
     "barnum": 0.3
+  },
+  "sun_conjunction_moon": {
+    "natal": "Güneş (kimlik) ile Ay (ihtiyaç) aynı yerde: istediğin şeyle ihtiyaç duyduğun şey çoğu zaman aynı. Bu, yeni ay doğumu; içinde bir bütünlük var, ikilem az. Gücün kararlılık ve içtenlik; gölgesi, kendi bakış açının dışına çıkmakta zorlanmak, çünkü içeride itiraz eden ses yok.",
+    "synastry": "Birinin Güneş'i diğerinin Ay'ının üstünde: biri diğerini görülmüş, öteki anlaşılmış hisseder. Klasik 'birbirini tamamlama' göstergesi; birlikte iş yaparken aynı yöne bakmak kolay, farklı fikir üretmek zor.",
+    "barnum": 0.35
+  },
+  "sun_sextile_moon": {
+    "natal": "Güneş ile Ay altmışlık açıda (60°, fırsat): kim olduğunla ne hissettiğin birbirini destekler, ama otomatik değil; biraz çaba ister. İçindeki yönetici ile çocuk genellikle anlaşır. Gücün dengeli bir iç dünya; gölgesi, bu rahatlığı kullanmayıp kıymetini bilmemek.",
+    "synastry": "Birinin Güneş'i diğerinin Ay'ına altmışlık: doğal bir uyum, gürültüsüz. Yan yana çalışırken birbirinizi yormazsınız; heyecan az, güven çok.",
+    "barnum": 0.55
+  },
+  "sun_square_moon": {
+    "natal": "Güneş ile Ay kare açıda (90°, sürtünme): istediğin şeyle ihtiyaç duyduğun şey birbirini çeker. Bu, ilk dördün ya da son dördün doğumu; içinde iki ayrı ses var ve ikisi de haklı. Gücün bu gerilimden çıkan hareket; gölgesi, kararsızlığı huzursuzluğa çevirmek. Öğrenilen şey, iki tarafı da dinlemek.",
+    "synastry": "Birinin Güneş'i diğerinin Ay'ına kare: biri ilerlemek, öteki güvende kalmak ister. Sürtünme kaçınılmaz; iyi tarafı, ikiniz de öteki tarafı görmeyi öğrenirsiniz.",
+    "barnum": 0.4
+  },
+  "sun_trine_moon": {
+    "natal": "Güneş ile Ay üçgen açıda (120°, akış): kim olduğunla ne hissettiğin aynı elementten, aynı dilden konuşur. İçinde çelişki az, kendine güven doğal. Gücün rahat bir bütünlük; gölgesi, her şeyin kolay gelmesinin seni tembelleştirmesi.",
+    "synastry": "Birinin Güneş'i diğerinin Ay'ına üçgen: kolay anlaşma, çabasız yakınlık. Aynı ortamda bulunmak ikinize de iyi gelir; birbirinizi anlatmaya gerek kalmaz.",
+    "barnum": 0.5
+  },
+  "sun_opposition_moon": {
+    "natal": "Güneş ile Ay karşıt açıda (180°, gerilim): dolunay doğumu. İstediğin şeyle ihtiyaç duyduğun şey iki uçta durur; kendini başkaları üzerinden tanırsın. Gücün farkındalık ve nesnel bakış; gölgesi, iç çatışmayı ilişkilerde sahnelemek. Öğrenilen şey, iki ucu da kendi parçan saymak.",
+    "synastry": "Birinin Güneş'i diğerinin Ay'ına karşıt: güçlü çekim, belirgin fark. Biri yön verir, öteki ihtiyacı hatırlatır; dengeyi bulunca birbirinizin eksiğini tamamlarsınız.",
+    "barnum": 0.4
+  },
+  "sun_conjunction_mercury": {
+    "natal": "Güneş ile Merkür aynı yerde; bu en sık görülen açı, çünkü Merkür Güneş'ten hiç uzaklaşmaz. Düşüncen ile kimliğin iç içe: fikrini savunmak seni savunmak gibi gelir. Gücün net ve kendinden emin bir anlatım; gölgesi, itiraza kişisel saldırı gibi tepki vermek.",
+    "synastry": "Birinin Güneş'i diğerinin Merkür'ünün üstünde: biri diğerinin düşüncesini anlar, öteki kendini anlatılmış hisseder. Sohbet kolay akar; tartışma bile keyifli olur.",
+    "barnum": 0.55
+  },
+  "sun_sextile_mercury": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Merkür'üne altmışlık: fikir alışverişi rahat, sohbet üretken. Biri konuşur, öteki dinler; sonra roller değişir.",
+    "barnum": 0.6
+  },
+  "sun_square_mercury": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Merkür'üne kare: aynı şeyi farklı dille söylersiniz ve bazen anlaşamazsınız. İyi tarafı, açıklamak zorunda kalınca fikir netleşir.",
+    "barnum": 0.5
+  },
+  "sun_trine_mercury": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Merkür'üne üçgen: birbirinizi yarım cümleden anlarsınız. Birlikte plan yapmak, yazışmak, tartışmak kolaydır.",
+    "barnum": 0.6
+  },
+  "sun_opposition_mercury": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Merkür'üne karşıt: biri karar verir, öteki soru sorar. Tartışma çok, kırgınlık az; ikiniz de öteki tarafı duymayı öğrenirsiniz.",
+    "barnum": 0.5
+  },
+  "sun_conjunction_venus": {
+    "natal": "Güneş ile Venüs aynı yerde: neyi sevdiğinle kim olduğun birbirine karışmış. İnsanlarla ilişkin sıcak, zevkin belirgin, kendini sevdirmek doğal. Gücün cazibe ve iyi niyet; gölgesi, beğenilmek isteğinin karar vermeni etkilemesi.",
+    "synastry": "Birinin Güneş'i diğerinin Venüs'ünün üstünde: klasik hoşlanma göstergesi. Biri diğerini olduğu gibi beğenir, öteki kendini değerli hisseder; birlikte olmak ikinize de iyi gelir.",
+    "barnum": 0.45
+  },
+  "sun_sextile_venus": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Venüs'üne altmışlık: yumuşak bir sempati. Birlikte vakit geçirmek kolay, gerginlik nadir.",
+    "barnum": 0.6
+  },
+  "sun_square_venus": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Venüs'üne kare: hoşlanma var, zevkler tutmuyor. Biri diğerinin tarzını fazla, öteki eksik bulur; kabul edince renk katar.",
+    "barnum": 0.5
+  },
+  "sun_trine_venus": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Venüs'üne üçgen: rahat bir hoşlanma, aynı şeylerden zevk alma. Uzun süreli arkadaşlıkların sessiz göstergesi.",
+    "barnum": 0.6
+  },
+  "sun_opposition_venus": {
+    "natal": null,
+    "synastry": "Birinin Güneş'i diğerinin Venüs'üne karşıt: çekim güçlü, farklar belirgin. Biri liderlik, öteki uyum ister; birbirinizi dengelemeyi öğrenirseniz iyi bir ikili.",
+    "barnum": 0.5
+  },
+  "sun_conjunction_mars": {
+    "natal": "Güneş ile Mars aynı yerde: kimliğin eylemle iç içe. Enerjin yüksek, cesaretin belirgin, beklemek sana zor gelir. Gücün girişkenlik ve dayanıklılık; gölgesi, öfkenin ve rekabetin kimliğinin bir parçası olması. Bu açı bir sporcu ya da girişimci ateşi taşır; nereye harcandığı belirleyici.",
+    "synastry": "Birinin Güneş'i diğerinin Mars'ının üstünde: güçlü enerji, hem işbirliği hem rekabet. Birlikte çok iş çıkarırsınız; kimin lider olduğu tartışması bitmez.",
+    "barnum": 0.4
+  },
+  "sun_sextile_mars": {
+    "natal": "Güneş ile Mars altmışlık açıda (60°, fırsat): irade ile eylem birbirini destekler. Karar verince harekete geçebilirsin, ama otomatik değil; biraz çaba gerekir. Gücün sağlıklı bir enerji ve cesaret; gölgesi, bu kolaylığı hafife alıp hedef koymamak.",
+    "synastry": "Birinin Güneş'i diğerinin Mars'ına altmışlık: birlikte iş yapmak enerji verir. Biri yönü gösterir, öteki adımı atar; rekabet dostça kalır.",
+    "barnum": 0.55
+  },
+  "sun_square_mars": {
+    "natal": "Güneş ile Mars kare açıda (90°, sürtünme): istediğin şeyle yaptığın şey birbirine sürter. Enerjin fazla ve bazen yönsüz; sabırsızlık, çabuk parlama, sonra pişmanlık. Gücün olağanüstü bir çalışma kapasitesi; gölgesi, öfkeyi kendine ya da yakınlarına çevirmek. Öğrenilen şey, gücü hedefe bağlamak.",
+    "synastry": "Birinin Güneş'i diğerinin Mars'ına kare: kıvılcım ve çatışma bir arada. Rekabet güçlü, tartışma sık; enerjiyi ortak bir hedefe çevirince iyi bir ikili.",
+    "barnum": 0.4
+  },
+  "sun_trine_mars": {
+    "natal": "Güneş ile Mars üçgen açıda (120°, akış): irade ile eylem aynı dili konuşur. Cesaretin doğal, enerjin sürekli, işe başlamak sana zor gelmez. Gücün kendine güvenen bir hareket; gölgesi, her şeyin kolay gelmesinin sabrı köreltmesi.",
+    "synastry": "Birinin Güneş'i diğerinin Mars'ına üçgen: birlikte hareket etmek kolay ve keyifli. Spor, yolculuk, ortak proje; ikiniz de yorulmadan ilerlersiniz.",
+    "barnum": 0.5
+  },
+  "sun_opposition_mars": {
+    "natal": "Güneş ile Mars karşıt açıda (180°, gerilim): irade ile öfke birbirine karşı durur. Çatışmayı başkalarında görürsün; sana meydan okuyan insanlar çeker. Gücün mücadele kapasitesi; gölgesi, kavgayı ilişkilerde sahnelemek. Öğrenilen şey, öfkenin de senin bir parçan olduğu.",
+    "synastry": "Birinin Güneş'i diğerinin Mars'ına karşıt: çekim ve gerginlik yan yana. Biri diğerini kışkırtır; iyi yönetilirse birbirinizi harekete geçiren bir ikili olursunuz.",
+    "barnum": 0.4
+  },
+  "sun_conjunction_jupiter": {
+    "natal": "Güneş ile Jüpiter aynı yerde: kimliğin genişleme, iyimserlik ve güvenle iç içe. Büyük düşünür, büyük söyler, çoğu zaman şanslı çıkarsın. Gücün cömertlik ve umut; gölgesi, abartı ve kendi sınırını görmemek. Bu açı bir 'talih' göstergesidir; nasıl kullanıldığı belirler.",
+    "synastry": "Birinin Güneş'i diğerinin Jüpiter'inin üstünde: biri diğerini büyütür, ufkunu açar. Birlikteyken her şey mümkün görünür; gerçekçi olan tarafı ihmal etmemek gerekir.",
+    "barnum": 0.45
+  },
+  "sun_sextile_jupiter": {
+    "natal": "Güneş ile Jüpiter altmışlık açıda (60°, fırsat): kimliğin iyimserlikten beslenir. Fırsatlar sana gelir, ama tutman gerekir; yürümediğin yolda şans da yürümez. Gücün sağlıklı bir özgüven; gölgesi, kolay geleni yeterli sanmak.",
+    "synastry": "Birinin Güneş'i diğerinin Jüpiter'ine altmışlık: karşılıklı iyi niyet ve neşe. Birbirinize iyi gelirsiniz; büyük bir çekimden çok sıcak bir dostluk.",
+    "barnum": 0.6
+  },
+  "sun_square_jupiter": {
+    "natal": "Güneş ile Jüpiter kare açıda (90°, sürtünme): kimliğin ile büyüme isteğin birbirini zorlar. Fazla söz vermek, fazla başlamak, fazla güvenmek; sonra toparlamak. Gücün büyük düşünme kapasitesi; gölgesi, ölçüyü kaçırmak. Öğrenilen şey, iyimserliğin de bir bütçesi olduğu.",
+    "synastry": "Birinin Güneş'i diğerinin Jüpiter'ine kare: biri diğerini abartıya iter. Birlikte eğlence çok, hesap az; iyi tarafı, ikiniz de cesaret bulursunuz.",
+    "barnum": 0.5
+  },
+  "sun_trine_jupiter": {
+    "natal": "Güneş ile Jüpiter üçgen açıda (120°, akış): iyimserlik doğal, güven kolay, insanlar seni sever. Kapılar sana genellikle açılır ve bunu fark etmezsin. Gücün cömert bir özgüven; gölgesi, işleri şansa bırakmak.",
+    "synastry": "Birinin Güneş'i diğerinin Jüpiter'ine üçgen: klasik 'birbirine iyi gelen ikili'. Biri diğerine inanır, öteki büyür; birlikte gülmek kolaydır.",
+    "barnum": 0.55
+  },
+  "sun_opposition_jupiter": {
+    "natal": "Güneş ile Jüpiter karşıt açıda (180°, gerilim): kimliğin ile büyüme isteğin iki uçta. Başkalarında bulduğun cömertlik ya da kibir, senin dengelemen gereken şeydir. Gücün geniş bakış ve alicenaplık; gölgesi, abartıyı başkasına yansıtmak. Öğrenilen şey, ölçüyü içeride bulmak.",
+    "synastry": "Birinin Güneş'i diğerinin Jüpiter'ine karşıt: biri diğerini büyütür, bazen fazla. Birlikte plan büyür, uygulama küçülür; dengeyi bulan iyi bir ikili.",
+    "barnum": 0.5
+  },
+  "sun_conjunction_saturn": {
+    "natal": "Güneş ile Satürn aynı yerde: kimliğin sorumluluk, disiplin ve ciddiyetle iç içe. Küçük yaşta olgun, ilerleyen yaşta hafifleyen bir yol. Gücün dayanıklılık ve güvenilirlik; gölgesi, kendini hiç yeterli bulmayan bir iç ses. Bu açı geç ama sağlam meyve verir.",
+    "synastry": "Birinin Güneş'i diğerinin Satürn'ünün üstünde: biri diğerine yapı ve güven verir, bazen fazla ciddiyet. Uzun süreli, sorumlu bir bağ; hafiflik için çaba gerekir.",
+    "barnum": 0.4
+  },
+  "sun_sextile_saturn": {
+    "natal": "Güneş ile Satürn altmışlık açıda (60°, fırsat): kimliğin disiplinle desteklenir. Sabır ve düzen sana zor gelmez; kullanırsan sağlam bir yapı kurarsın. Gücün güvenilir bir olgunluk; gölgesi, bu kapasiteyi harekete geçirmemek.",
+    "synastry": "Birinin Güneş'i diğerinin Satürn'üne altmışlık: sakin ve güvenilir bir bağ. Biri diğerine sınır hatırlatır, öteki bunu baskı değil destek olarak duyar.",
+    "barnum": 0.55
+  },
+  "sun_square_saturn": {
+    "natal": "Güneş ile Satürn kare açıda (90°, sürtünme): kimliğin ile sınırların birbirine sürter. Kendini kanıtlama isteği, yetersizlik korkusu, sonra sıkı çalışma. Gücün olağanüstü bir dayanıklılık; gölgesi, kendi kendinin en sert eleştirmeni olmak. Öğrenilen şey, otoriteyi dışarıda değil içeride kurmak.",
+    "synastry": "Birinin Güneş'i diğerinin Satürn'üne kare: biri diğerini eleştiriyor gibi hisseder, öteki sorumlu hisseder. Zorlayıcı ama öğretici; saygı kurulunca kalıcı.",
+    "barnum": 0.4
+  },
+  "sun_trine_saturn": {
+    "natal": "Güneş ile Satürn üçgen açıda (120°, akış): kimliğin ile disiplin aynı dili konuşur. Sabır sana doğal gelir; verdiğin sözü tutarsın, insanlar sana güvenir. Gücün sessiz bir olgunluk; gölgesi, hep sağlam olanı seçip riskten uzak durmak.",
+    "synastry": "Birinin Güneş'i diğerinin Satürn'üne üçgen: güven ve süreklilik. Biri diğerinin yanında dinlenir, öteki sorumluluk almaktan hoşlanır; uzun ömürlü bir bağ.",
+    "barnum": 0.5
+  },
+  "sun_opposition_saturn": {
+    "natal": "Güneş ile Satürn karşıt açıda (180°, gerilim): kimliğin ile sınırların iki uçta. Otorite figürleriyle ilişkin karmaşık; başkasında gördüğün katılık, senin kendine koyduğun sınırın aynası. Gücün ciddiyet ve sorumluluk; gölgesi, onayı dışarıda aramak. Öğrenilen şey, kendi otoriten olmak.",
+    "synastry": "Birinin Güneş'i diğerinin Satürn'üne karşıt: biri öğretmen, öteki öğrenci gibi hisseder ve roller ağırlaşabilir. Sınırlar açık konuşulursa sağlam, konuşulmazsa soğuk.",
+    "barnum": 0.4
+  },
+  "sun_conjunction_uranus": {
+    "natal": "Güneş ile Uranüs aynı yerde: kimliğin özgünlük, bağımsızlık ve ani dönüşlerle iç içe. Kalıba sığmazsın, sıkılınca her şeyi değiştirebilirsin. Gücün yaratıcı özgürlük ve cesaret; gölgesi, istikrarı sıkıcılık sanmak. Bu açı 'farklı olmayı' seçmez, yaşar.",
+    "synastry": "Birinin Güneş'i diğerinin Uranüs'ünün üstünde: elektrik, sürpriz, uyanış. Birbirinizi değiştirirsiniz; ilişki heyecanlı ama öngörülemez.",
+    "barnum": 0.45
+  },
+  "sun_sextile_uranus": {
+    "natal": "Güneş ile Uranüs altmışlık açıda (60°, fırsat): kimliğin özgün fikirlerle beslenir. Yeni olana açıksın, ama devrimci değilsin; değişimi kullanışlı bulduğunda seçersin. Gücün açık fikirli bir esneklik; gölgesi, ilginç olanı gerekli olana yeğlemek.",
+    "synastry": "Birinin Güneş'i diğerinin Uranüs'üne altmışlık: taze bir arkadaşlık, sıkılmadan sohbet. Birbirinize yeni fikirler taşırsınız; bağ hafif ve canlıdır.",
+    "barnum": 0.6
+  },
+  "sun_square_uranus": {
+    "natal": "Güneş ile Uranüs kare açıda (90°, sürtünme): kimliğin ile özgürlük isteğin birbirine sürter. İsyan, ani kararlar, sonra 'neden yaptım'. Gücün sıra dışı bir yaratıcılık; gölgesi, her yapıyı baskı sanmak. Öğrenilen şey, özgürlüğün istikrarsızlık gerektirmediği.",
+    "synastry": "Birinin Güneş'i diğerinin Uranüs'üne kare: biri diğerini sarsar. Heyecan çok, öngörü az; birbirinizi tahmin edemezsiniz ve bu bazen yorucu olur.",
+    "barnum": 0.45
+  },
+  "sun_trine_uranus": {
+    "natal": "Güneş ile Uranüs üçgen açıda (120°, akış): özgünlük sana doğal gelir; farklı düşünür, farklı yaşarsın ve bunu zorlamadan yaparsın. Gücün rahat bir yaratıcılık ve bağımsızlık; gölgesi, sıradan olanı küçümsemek.",
+    "synastry": "Birinin Güneş'i diğerinin Uranüs'üne üçgen: özgür ve eğlenceli bir bağ. Birbirinizi kısıtlamazsınız; arkadaşlık ilişkinin temeli olur.",
+    "barnum": 0.55
+  },
+  "sun_opposition_uranus": {
+    "natal": "Güneş ile Uranüs karşıt açıda (180°, gerilim): kimliğin ile özgürlüğün iki uçta. Seni sarsan, uyandıran insanlar çeker; ilişkiler aniden değişir. Gücün uyanıklık ve özgünlük; gölgesi, yakınlığı kaçarak korumak. Öğrenilen şey, özgürlüğü ilişkinin içinde bulmak.",
+    "synastry": "Birinin Güneş'i diğerinin Uranüs'üne karşıt: çekim ani, ayrılık da ani olabilir. Birbirinize mesafe tanırsanız canlı; tanımazsanız kopuş.",
+    "barnum": 0.45
+  },
+  "sun_conjunction_neptune": {
+    "natal": "Güneş ile Neptün aynı yerde: kimliğin hayal, sezgi ve şefkatle iç içe. Sınırların geçirgen; başkasının halini kendin gibi yaşarsın, ilham kolay gelir. Gücün sanat ve empati; gölgesi, kendi yönünü kaybedip başkasının yansımasında yaşamak. Bu açı bir sanatçı ya da şifacı duyarlılığı taşır.",
+    "synastry": "Birinin Güneş'i diğerinin Neptün'ünün üstünde: büyülü ama bulanık. Biri diğerini idealize eder, öteki büyülenir; gerçek insanı görmek çaba ister.",
+    "barnum": 0.5
+  },
+  "sun_sextile_neptune": {
+    "natal": "Güneş ile Neptün altmışlık açıda (60°, fırsat): kimliğin hayal gücüyle desteklenir. Sezgin iyi, yaratıcılığın erişilebilir; kullanmak için oturup üretmek gerekir. Gücün ilham ve şefkat; gölgesi, hayal etmeyi yapmakla karıştırmak.",
+    "synastry": "Birinin Güneş'i diğerinin Neptün'üne altmışlık: yumuşak bir anlayış, sözsüz sempati. Birlikte müzik, film, sessizlik; bağ hafif ve şefkatli.",
+    "barnum": 0.6
+  },
+  "sun_square_neptune": {
+    "natal": "Güneş ile Neptün kare açıda (90°, sürtünme): kimliğin ile hayalin birbirine sürter. Kim olduğun konusunda sis, kolay etkilenme, sonra hayal kırıklığı. Gücün derin bir sanat ve merhamet kapasitesi; gölgesi, kaçış ve kendini kandırma. Öğrenilen şey, hayali gerçeğe bağlamak.",
+    "synastry": "Birinin Güneş'i diğerinin Neptün'üne kare: biri diğerini olduğundan farklı görür. Hayal kırıklığı riski var; açık konuşma bağı kurtarır.",
+    "barnum": 0.5
+  },
+  "sun_trine_neptune": {
+    "natal": "Güneş ile Neptün üçgen açıda (120°, akış): hayal gücü ve şefkat sana doğal gelir. Sanat, müzik, insan hallerine duyarlılık; ilham aramadan gelir. Gücün zarif bir sezgi; gölgesi, gerçeğin sert tarafından uzak durmak.",
+    "synastry": "Birinin Güneş'i diğerinin Neptün'üne üçgen: sözsüz anlaşma, sanatsal ortaklık. Birbirinize ilham verirsiniz; bağ yumuşak ve şefkatlidir.",
+    "barnum": 0.55
+  },
+  "sun_opposition_neptune": {
+    "natal": "Güneş ile Neptün karşıt açıda (180°, gerilim): kimliğin ile hayalin iki uçta. Başkalarını idealize etmek, sonra düş kırıklığı; ya da başkalarının seni yanlış görmesi. Gücün derin empati; gölgesi, kendini başkasının hayalinde kaybetmek. Öğrenilen şey, sisin içinde kendi çizgini korumak.",
+    "synastry": "Birinin Güneş'i diğerinin Neptün'üne karşıt: büyü ve yanılsama bir arada. Biri diğerini kurtarıcı ya da kurban gibi görebilir; netlik ister.",
+    "barnum": 0.5
+  },
+  "sun_conjunction_pluto": {
+    "natal": "Güneş ile Plüton aynı yerde: kimliğin güç, derinlik ve dönüşümle iç içe. Yüzeyle yetinmezsin; hayatında kaç kez baştan başladığını sayabilirsin. Gücün olağanüstü bir dayanıklılık ve etki; gölgesi, kontrol ihtiyacı. Bu açı yoğun bir varlık taşır; insanlar seni ya çok sever ya çekinir.",
+    "synastry": "Birinin Güneş'i diğerinin Plüton'unun üstünde: yoğun, dönüştürücü, biraz ürkütücü. Birbirinizi değiştirirsiniz; güç dengesi konuşulmazsa yorucu olur.",
+    "barnum": 0.4
+  },
+  "sun_sextile_pluto": {
+    "natal": "Güneş ile Plüton altmışlık açıda (60°, fırsat): kimliğin derinlikle desteklenir. Krizden güçlenerek çıkma kapasiten var; kullanmak için krize girmek gerekmez, derine bakmak yeter. Gücün sessiz bir etki; gölgesi, bu gücü fark etmemek.",
+    "synastry": "Birinin Güneş'i diğerinin Plüton'una altmışlık: derin bir güven, sessiz bir etki. Birbirinize sırlarınızı anlatırsınız ve bu bağı sağlamlaştırır.",
+    "barnum": 0.55
+  },
+  "sun_square_pluto": {
+    "natal": "Güneş ile Plüton kare açıda (90°, sürtünme): kimliğin ile güç arasında sürtünme. Kontrol etme ya da edilme korkusu, güç mücadeleleri, sonra derin bir dönüşüm. Gücün yeniden doğma kapasitesi; gölgesi, her ilişkiyi güç savaşına çevirmek. Öğrenilen şey, gücü bırakmanın da güç olduğu.",
+    "synastry": "Birinin Güneş'i diğerinin Plüton'una kare: güçlü çekim, güç mücadelesi. Biri diğerini değiştirmek ister; kabul edilince dönüştürücü, edilmezse yorucu.",
+    "barnum": 0.4
+  },
+  "sun_trine_pluto": {
+    "natal": "Güneş ile Plüton üçgen açıda (120°, akış): derinlik ve dayanıklılık sana doğal gelir. Zor durumda sakin kalır, gerektiğinde baştan başlarsın. Gücün sessiz ama güçlü bir irade; gölgesi, gücünü fark etmeyip kullanmamak.",
+    "synastry": "Birinin Güneş'i diğerinin Plüton'una üçgen: derin ve sağlam bir bağ. Birbirinizi güçlendirirsiniz; kriz anında yan yana durursunuz.",
+    "barnum": 0.5
+  },
+  "sun_opposition_pluto": {
+    "natal": "Güneş ile Plüton karşıt açıda (180°, gerilim): kimliğin ile güç iki uçta. Güçlü, kontrolcü ya da dönüştürücü insanlar çeker; onlarla sınanırsın. Gücün krizde büyüme kapasitesi; gölgesi, güç mücadelesini dışarıda sahnelemek. Öğrenilen şey, kendi gücünü sahiplenmek.",
+    "synastry": "Birinin Güneş'i diğerinin Plüton'una karşıt: yoğun çekim, yoğun çatışma. Biri diğerini kontrol etmek isteyebilir; dürüstlük ve sınır bağı yaşatır.",
+    "barnum": 0.4
+  },
+  "sun_conjunction_trueNode": {
+    "natal": "Güneş ile Kuzey Düğüm aynı yerde: kimliğin, büyüme yönünle örtüşür. Kim olduğunu ortaya koydukça doğru yolda hissedersin; hayatın 'kader' gibi hissettiren bir hattı var. Gücün amaç duygusu; gölgesi, kendi yolunu herkesin yolu sanmak.",
+    "synastry": "Birinin Güneş'i diğerinin Kuzey Düğümü'nün üstünde: 'bu insan hayatıma bir sebeple girdi' hissi. Biri diğerine yön gösterir; bağ öğretici ve anlamlıdır.",
+    "barnum": 0.5
+  },
+  "sun_sextile_trueNode": {
+    "natal": "Güneş ile Kuzey Düğüm altmışlık açıda (60°, fırsat): kimliğin büyüme yönünü destekler. Doğru insanlar ve fırsatlar yolunun üstüne gelir; adım atmak sana kalır. Gücün rahat bir yön duygusu; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Güneş'i diğerinin Kuzey Düğümü'ne altmışlık: birbirinizin yolunu kolaylaştırırsınız. Hafif ama işe yarar bir bağ.",
+    "barnum": 0.6
+  },
+  "sun_square_trueNode": {
+    "natal": "Güneş ile Kuzey Düğüm kare açıda (90°, sürtünme): kimliğin ile büyüme yönün arasında sürtünme. Alışık olduğun yol ile gitmen gereken yol farklı; iki arada kalırsın. Gücün bu gerilimden çıkan farkındalık; gölgesi, rahat olana geri dönmek. Öğrenilen şey, kimliğini yeni yöne taşımak.",
+    "synastry": "Birinin Güneş'i diğerinin Kuzey Düğümü'ne kare: biri diğerinin yolunu sorgular. Rahatsız edici ama öğretici; kabul edilince büyüme.",
+    "barnum": 0.5
+  },
+  "sun_trine_trueNode": {
+    "natal": "Güneş ile Kuzey Düğüm üçgen açıda (120°, akış): kimliğin büyüme yönünle uyumlu. Yolunda ilerlerken kendini olduğun gibi hissedersin; direnç az. Gücün doğal bir amaç duygusu; gölgesi, sınanmadığı için derinleşmeyen bir güven.",
+    "synastry": "Birinin Güneş'i diğerinin Kuzey Düğümü'ne üçgen: birbirinizi doğal olarak ilerletirsiniz. Tanışır tanışmaz 'eskiden tanışıyormuşuz' hissi.",
+    "barnum": 0.55
+  },
+  "sun_opposition_trueNode": {
+    "natal": "Güneş ile Kuzey Düğüm karşıt açıda (180°, gerilim): Güneş'in Güney Düğüm'le birleşmesi demek. Kimliğin alışık olduğun tarafta rahat; büyüme yönü ise kimliğinin tam karşısında durur. Gücün derin bir yetenek ve tanıdıklık; gölgesi, aynı yerde kalmak. Öğrenilen şey, bilmediğin yöne yürümek.",
+    "synastry": "Birinin Güneş'i diğerinin Güney Düğümü'nün üstünde: tanıdık, rahat, eski bir bağ gibi. Güven kolay; ileri gitmek çaba ister.",
+    "barnum": 0.5
+  },
+  "sun_conjunction_chiron": {
+    "natal": "Güneş ile Chiron aynı yerde: kimliğin yaralı şifacının yanında. Kim olduğun konusunda eski bir yara var; bu yaradan başkalarına yardım eden bir ustalık çıkar. Gücün derin bir anlayış; gölgesi, kendini hiç tam hissetmemek. Bu açı, yaranın kendisini armağana çevirir.",
+    "synastry": "Birinin Güneş'i diğerinin Chiron'unun üstünde: biri diğerinin yarasına dokunur, çoğu zaman istemeden. Şifa da kırgınlık da mümkün; şefkat belirleyici.",
+    "barnum": 0.5
+  },
+  "sun_sextile_chiron": {
+    "natal": "Güneş ile Chiron altmışlık açıda (60°, fırsat): kimliğin yaradan öğrenmeyi destekler. Zor deneyimlerin başkasına yardım etme kapasitene dönüşür; kullanmak sana kalır. Gücün olgun bir şefkat; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Güneş'i diğerinin Chiron'una altmışlık: biri diğerine iyi gelir. Konuşarak iyileşen bir bağ; hafif ama derin.",
+    "barnum": 0.6
+  },
+  "sun_square_chiron": {
+    "natal": "Güneş ile Chiron kare açıda (90°, sürtünme): kimliğin ile yaran birbirine sürter. Kendini yeterince iyi bulmama, kanıtlama çabası, sonra başkalarına karşı şaşırtıcı bir anlayış. Gücün empati; gölgesi, yarayı kimlik yapmak. Öğrenilen şey, yaranın seni tanımlamadığı.",
+    "synastry": "Birinin Güneş'i diğerinin Chiron'una kare: biri diğerinin hassas noktasına basar. Kırgınlık kolay; konuşulursa ikiniz de büyürsünüz.",
+    "barnum": 0.5
+  },
+  "sun_trine_chiron": {
+    "natal": "Güneş ile Chiron üçgen açıda (120°, akış): yaradan öğrenmek sana doğal gelir. Zorluklarını başkasına yardım eden bir bilgeliğe çevirirsin, çabasız. Gücün şefkatli bir olgunluk; gölgesi, herkesi iyileştirirken kendi ihtiyacını unutmak.",
+    "synastry": "Birinin Güneş'i diğerinin Chiron'una üçgen: şifa veren bir bağ. Biri diğerinin yanında iyileşir; birlikte olmak rahatlatır.",
+    "barnum": 0.55
+  },
+  "sun_opposition_chiron": {
+    "natal": "Güneş ile Chiron karşıt açıda (180°, gerilim): kimliğin ile yaran iki uçta. Yaranı başkalarında görürsün; sana iyileşmesi gereken insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi kurtarırken kendini görmemek. Öğrenilen şey, şifanın önce kendine ait olduğu.",
+    "synastry": "Birinin Güneş'i diğerinin Chiron'una karşıt: biri iyileştirici, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
+    "barnum": 0.5
   }
 }
