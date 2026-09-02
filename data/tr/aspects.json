@@ -278,5 +278,255 @@
     "natal": "Güneş ile Chiron karşıt açıda (180°, gerilim): kimliğin ile yaran iki uçta. Yaranı başkalarında görürsün; sana iyileşmesi gereken insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi kurtarırken kendini görmemek. Öğrenilen şey, şifanın önce kendine ait olduğu.",
     "synastry": "Birinin Güneş'i diğerinin Chiron'una karşıt: biri iyileştirici, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
     "barnum": 0.5
+  },
+  "moon_conjunction_mercury": {
+    "natal": "Ay (duygu) ile Merkür (düşünce) aynı yerde: hissettiğini düşünür, düşündüğünü hissedersin. Konuşarak rahatlarsın; içini dökmek senin için doğal bir iyileşme yolu. Gücün duygusal zekâ ve anlatım; gölgesi, her duyguyu hemen sözle dışarı çıkarmak.",
+    "synastry": "Birinin Ay'ı diğerinin Merkür'ünün üstünde: biri hissettiğini anlatır, öteki anlar. Sohbetin bittiği yerde yakınlık başlar; klasik 'dert ortağı' göstergesi.",
+    "barnum": 0.5
+  },
+  "moon_sextile_mercury": {
+    "natal": "Ay ile Merkür altmışlık açıda (60°, fırsat): duygun ile düşüncen birbirini destekler, ama otomatik değil. Hissettiğini adlandırabilirsin; adlandırınca da rahatlarsın. Gücün dengeli bir iç konuşma; gölgesi, bu yeteneği kullanmayıp içine atmak.",
+    "synastry": "Birinin Ay'ı diğerinin Merkür'üne altmışlık: rahat konuşma, kolay anlayış. Birbirinizi dinlemek zor gelmez; sessizlik de rahatsız etmez.",
+    "barnum": 0.6
+  },
+  "moon_square_mercury": {
+    "natal": "Ay ile Merkür kare açıda (90°, sürtünme): hissettiğinle düşündüğün birbirine sürter. Mantığın 'sorun yok' derken için 'var' der; ya da tam tersi. Gücün bu ikilikten çıkan derinlik; gölgesi, duyguyu mantıkla susturmak ya da mantığı duyguyla boğmak. Öğrenilen şey, iki sesi de dinlemek.",
+    "synastry": "Birinin Ay'ı diğerinin Merkür'üne kare: biri hisseder, öteki açıklar; aynı şeyi konuşmuyormuş gibi olursunuz. Yanlış anlama sık, çözülmesi kolay.",
+    "barnum": 0.45
+  },
+  "moon_trine_mercury": {
+    "natal": "Ay ile Merkür üçgen açıda (120°, akış): duygu ile düşünce aynı dili konuşur. Hissettiğini kolay anlatır, başkasının hissettiğini kolay anlarsın. Gücün doğal bir duygusal zekâ; gölgesi, kolay anlaşıldığın için derinleşmeyi ihmal etmek.",
+    "synastry": "Birinin Ay'ı diğerinin Merkür'üne üçgen: çabasız anlayış, uzun sohbetler. Birbirinize anlatmakla yetmeyecek şeyler bile anlatılır.",
+    "barnum": 0.55
+  },
+  "moon_opposition_mercury": {
+    "natal": "Ay ile Merkür karşıt açıda (180°, gerilim): duygu ile düşünce iki uçta. Başkalarıyla tartışırken kendi iç çatışmanı yaşarsın; ya fazla mantıklı ya fazla duygusal görünürsün. Gücün iki tarafı da görmek; gölgesi, aynı konuda iki farklı şey söylemek. Öğrenilen şey, hissettiğini düşünerek söylemek.",
+    "synastry": "Birinin Ay'ı diğerinin Merkür'üne karşıt: biri 'nasıl hissettiğimi anlamıyorsun', öteki 'ne dediğimi dinlemiyorsun' der. Sabırla dinlenirse iki dili de öğrenirsiniz.",
+    "barnum": 0.45
+  },
+  "moon_conjunction_venus": {
+    "natal": "Ay ile Venüs aynı yerde: ihtiyaç duyduğun şeyle sevdiğin şey aynı. Sıcak, sevecen, ilgi gösteren ve ilgi bekleyen bir iç dünya. Gücün şefkat ve çekicilik; gölgesi, sevilmek için kendi ihtiyacını geriye atmak.",
+    "synastry": "Birinin Ay'ı diğerinin Venüs'ünün üstünde: biri diğerini besler, öteki güzelleştirir. Klasik yakınlık göstergesi; birbirinize iyi bakarsınız.",
+    "barnum": 0.5
+  },
+  "moon_sextile_venus": {
+    "natal": "Ay ile Venüs altmışlık açıda (60°, fırsat): duyguların sevgiyle desteklenir. Yakınlık kurmak sana zor gelmez; insanlar yanında rahat eder. Gücün yumuşak bir sıcaklık; gölgesi, bu rahatlığı kolay çalışmaya çevirmemek.",
+    "synastry": "Birinin Ay'ı diğerinin Venüs'üne altmışlık: sevimli bir uyum. Birlikte yemek, film, sohbet; gerginlik nadir, keyif çok.",
+    "barnum": 0.6
+  },
+  "moon_square_venus": {
+    "natal": "Ay ile Venüs kare açıda (90°, sürtünme): ihtiyaç duyduğun şeyle sevdiğin şey birbirine sürter. Güvende hissettiğin şey ile hoşlandığın şey farklı olabilir; içeride hafif bir huzursuzluk. Gücün duygusal zenginlik; gölgesi, sevilmek için kendini değiştirmek. Öğrenilen şey, iki ihtiyacı da meşru saymak.",
+    "synastry": "Birinin Ay'ı diğerinin Venüs'üne kare: hoşlanma var, rahat etme zor. Biri daha çok ilgi ister, öteki daha çok alan; konuşulursa çözülür.",
+    "barnum": 0.5
+  },
+  "moon_trine_venus": {
+    "natal": "Ay ile Venüs üçgen açıda (120°, akış): duygu ile sevgi aynı dili konuşur. Sıcak, hoş, kolay sevilen bir iç dünya; insanlara iyi gelirsin. Gücün doğal bir zarafet ve şefkat; gölgesi, gerilimden kaçarak sorunu ertelemek.",
+    "synastry": "Birinin Ay'ı diğerinin Venüs'üne üçgen: rahat, sevecen, uzun ömürlü. Birbirinizin yanında dinlenirsiniz; klasik dostluk göstergesi.",
+    "barnum": 0.6
+  },
+  "moon_opposition_venus": {
+    "natal": "Ay ile Venüs karşıt açıda (180°, gerilim): ihtiyaç ile sevgi iki uçta. Yakınlıkta ya fazla verirsin ya fazla beklersin; dengeyi başkasıyla bulursun. Gücün ilişkilere duyarlılık; gölgesi, sevilmek için ihtiyaçlarından vazgeçmek. Öğrenilen şey, sevmek ile beslenmenin aynı şey olması.",
+    "synastry": "Birinin Ay'ı diğerinin Venüs'üne karşıt: çekim var, ihtiyaçlar farklı. Biri sıcaklık, öteki zarafet ister; ikisini de vermeyi öğrenirseniz iyi bir ikili.",
+    "barnum": 0.5
+  },
+  "moon_conjunction_mars": {
+    "natal": "Ay ile Mars aynı yerde: duygun eyleme, eylemin duyguya dönüşür. Çabuk parlar, çabuk toparlanırsın; incinince savunmaya geçmen bir saniye sürer. Gücün canlı ve cesur bir iç dünya; gölgesi, öfkeyi sevdiklerine yöneltmek. Bu açı bir koruyucu ateşi taşır.",
+    "synastry": "Birinin Ay'ı diğerinin Mars'ının üstünde: güçlü tutku, güçlü tartışma. Biri diğerini kızdırır ve harekete geçirir; sıkıcı olmayan ama yorucu olabilen bir bağ.",
+    "barnum": 0.45
+  },
+  "moon_sextile_mars": {
+    "natal": "Ay ile Mars altmışlık açıda (60°, fırsat): duyguların eylemle desteklenir. Hissettiğin şeyi yapabilirsin; bir şey seni rahatsız edince harekete geçmek sana zor gelmez. Gücün sağlıklı bir cesaret; gölgesi, bu enerjiyi yönsüz bırakmak.",
+    "synastry": "Birinin Ay'ı diğerinin Mars'ına altmışlık: canlı, destekleyici bir bağ. Biri diğerini cesaretlendirir; birlikte bir şey yapmak keyif verir.",
+    "barnum": 0.6
+  },
+  "moon_square_mars": {
+    "natal": "Ay ile Mars kare açıda (90°, sürtünme): duygu ile öfke birbirine sürter. Küçük şeye büyük tepki, sonra pişmanlık; ya da öfkeyi bastırıp huzursuzluk. Gücün olağanüstü bir duygusal enerji; gölgesi, incinince saldırmak. Öğrenilen şey, öfkenin altındaki ihtiyacı görmek.",
+    "synastry": "Birinin Ay'ı diğerinin Mars'ına kare: kıvılcım ve kavga bir arada. Biri diğerini kolayca kızdırır; enerji güçlü, sabır az; kurallar konuşulursa dayanır.",
+    "barnum": 0.45
+  },
+  "moon_trine_mars": {
+    "natal": "Ay ile Mars üçgen açıda (120°, akış): duygu ile eylem aynı dili konuşur. Cesaretin sıcak, tepkin dürüst; hissettiğini söyler ve gereğini yaparsın. Gücün rahat bir canlılık; gölgesi, kolaylığın sabırsızlığa dönmesi.",
+    "synastry": "Birinin Ay'ı diğerinin Mars'ına üçgen: canlı ve rahat bir çekim. Birlikte hareket etmek, gezmek, iş yapmak keyifli; tartışma bile eğlenceli.",
+    "barnum": 0.55
+  },
+  "moon_opposition_mars": {
+    "natal": "Ay ile Mars karşıt açıda (180°, gerilim): duygu ile öfke iki uçta. Kavgayı başkalarında görürsün; seni kızdıran insanlar çeker. Gücün mücadele ve koruma; gölgesi, incinmeyi öfkeyle örtmek. Öğrenilen şey, öfkenin kendi ihtiyacın olduğunu kabul etmek.",
+    "synastry": "Birinin Ay'ı diğerinin Mars'ına karşıt: güçlü çekim, sık çatışma. Biri incinir, öteki saldırdığını fark etmez; farkındalık bağı yaşatır.",
+    "barnum": 0.45
+  },
+  "moon_conjunction_jupiter": {
+    "natal": "Ay ile Jüpiter aynı yerde: duyguların geniş, cömert ve iyimser. Kolay güvenir, kolay affeder, kolay verirsin; insanlar yanında rahatlar. Gücün sıcak bir bolluk duygusu; gölgesi, ölçüyü kaçırmak, hem duyguda hem yemekte hem sözde.",
+    "synastry": "Birinin Ay'ı diğerinin Jüpiter'inin üstünde: biri diğerini rahatlatır ve büyütür. Birlikteyken her şey daha iyi görünür; klasik 'iyi gelen insan' göstergesi.",
+    "barnum": 0.55
+  },
+  "moon_sextile_jupiter": {
+    "natal": "Ay ile Jüpiter altmışlık açıda (60°, fırsat): duyguların iyimserlikle desteklenir. Moralin çabuk düzelir, umut sana uzak değildir; kullanmak için biraz niyet yeter. Gücün sağlıklı bir neşe; gölgesi, kolay geleni derinleştirmemek.",
+    "synastry": "Birinin Ay'ı diğerinin Jüpiter'ine altmışlık: sıcak ve neşeli bir uyum. Birbirinizin moralini düzeltirsiniz; sohbet gülerek biter.",
+    "barnum": 0.6
+  },
+  "moon_square_jupiter": {
+    "natal": "Ay ile Jüpiter kare açıda (90°, sürtünme): duygu ile genişleme birbirine sürter. Fazla umut, fazla söz, fazla yemek; sonra 'neden yaptım'. Gücün büyük bir yürek; gölgesi, duygusal ölçüyü kaçırmak. Öğrenilen şey, iyimserliğin de bir sınırı olduğu.",
+    "synastry": "Birinin Ay'ı diğerinin Jüpiter'ine kare: biri diğerini şımartır, aşırıya kaçar. Keyif çok, ölçü az; iyi tarafı, birbirinize cömertsiniz.",
+    "barnum": 0.5
+  },
+  "moon_trine_jupiter": {
+    "natal": "Ay ile Jüpiter üçgen açıda (120°, akış): iyimserlik ve cömertlik sana doğal gelir. Zor günde bile bir çıkış görürsün; insanlar bu yüzden seni arar. Gücün sıcak bir güven; gölgesi, her şeyin yoluna gireceğine fazla inanmak.",
+    "synastry": "Birinin Ay'ı diğerinin Jüpiter'ine üçgen: bol, sıcak, kolay bir bağ. Birbirinizin yanında güvende ve neşeli hissedersiniz.",
+    "barnum": 0.6
+  },
+  "moon_opposition_jupiter": {
+    "natal": "Ay ile Jüpiter karşıt açıda (180°, gerilim): duygu ile genişleme iki uçta. Başkalarında cömertliği ya da abartıyı görürsün; kendi ölçünü onlar üzerinden bulursun. Gücün geniş bir yürek; gölgesi, duygusal abartıyı ilişkilerde sahnelemek. Öğrenilen şey, bolluğu içeride hissetmek.",
+    "synastry": "Birinin Ay'ı diğerinin Jüpiter'ine karşıt: biri diğerini büyütür, bazen fazla. Birlikte söz büyük, uygulama küçük; ölçüyü bulan iyi bir ikili.",
+    "barnum": 0.5
+  },
+  "moon_conjunction_saturn": {
+    "natal": "Ay ile Satürn aynı yerde: duyguların disiplin ve mesafeyle iç içe. Küçükken erken büyümüş olabilirsin; duyguyu göstermek yerine sorumluluk alırsın. Gücün güvenilirlik ve dayanıklılık; gölgesi, ihtiyaç duymayı zayıflık saymak. Bu açı geç ısınır ama ısındı mı sönmez.",
+    "synastry": "Birinin Ay'ı diğerinin Satürn'ünün üstünde: biri güven verir, öteki bazen soğukluk hisseder. Uzun ömürlü, sorumlu, ciddi bir bağ; sıcaklık için çaba gerekir.",
+    "barnum": 0.45
+  },
+  "moon_sextile_saturn": {
+    "natal": "Ay ile Satürn altmışlık açıda (60°, fırsat): duyguların düzenle desteklenir. Kriz anında sakin kalabilirsin; sabır sana zor gelmez. Gücün olgun bir duygusal denge; gölgesi, bu sağlamlığı soğukluğa çevirmek.",
+    "synastry": "Birinin Ay'ı diğerinin Satürn'üne altmışlık: sakin, güvenilir, gürültüsüz. Biri diğerine sınır verir, öteki bunu güvenlik olarak duyar.",
+    "barnum": 0.55
+  },
+  "moon_square_saturn": {
+    "natal": "Ay ile Satürn kare açıda (90°, sürtünme): duygu ile sınır birbirine sürter. Sevgiyi hak etmek gerektiği hissi, ihtiyacı söyleyememek, sonra sağlam bir iç yapı. Gücün dayanıklılık; gölgesi, kendine karşı sert bir iç ses. Öğrenilen şey, ihtiyaç duymanın da olgunluk olduğu.",
+    "synastry": "Birinin Ay'ı diğerinin Satürn'üne kare: biri kendini yargılanmış hisseder, öteki sorumlu. Zor ama öğretici; şefkat kurulursa çok sağlam.",
+    "barnum": 0.45
+  },
+  "moon_trine_saturn": {
+    "natal": "Ay ile Satürn üçgen açıda (120°, akış): duygu ile disiplin aynı dili konuşur. Sakin, güvenilir, sözünde duran bir iç dünya; insanlar zor günde seni arar. Gücün sessiz bir olgunluk; gölgesi, duyguyu hep kontrol altında tutmak.",
+    "synastry": "Birinin Ay'ı diğerinin Satürn'üne üçgen: güven ve süreklilik. Biri diğerinin yanında dinlenir; uzun ömürlü bir dostluk göstergesi.",
+    "barnum": 0.55
+  },
+  "moon_opposition_saturn": {
+    "natal": "Ay ile Satürn karşıt açıda (180°, gerilim): duygu ile sınır iki uçta. Yakınlıkta mesafe, mesafede yakınlık ararsın; başkalarında gördüğün soğukluk kendi savunmanın aynası. Gücün olgun bir sorumluluk; gölgesi, sevgiyi sınavdan geçirmek. Öğrenilen şey, güvenin verilerek kurulduğu.",
+    "synastry": "Birinin Ay'ı diğerinin Satürn'üne karşıt: biri sıcaklık ister, öteki sorumlulukla cevap verir. Sınırlar açık konuşulursa sağlam, konuşulmazsa mesafeli.",
+    "barnum": 0.45
+  },
+  "moon_conjunction_uranus": {
+    "natal": "Ay ile Uranüs aynı yerde: duyguların ani, özgün ve öngörülemez. Bir anda dolar, bir anda boşalırsın; rutin sana boğucu gelir. Gücün özgür ve yaratıcı bir iç dünya; gölgesi, yakınlığı kaçarak korumak. Bu açı bir yenilik ve huzursuzluk ateşi taşır.",
+    "synastry": "Birinin Ay'ı diğerinin Uranüs'ünün üstünde: elektrik ve sürpriz. Biri diğerini uyandırır, bazen sarsar; heyecanlı ama istikrarsız olabilen bir bağ.",
+    "barnum": 0.5
+  },
+  "moon_sextile_uranus": {
+    "natal": "Ay ile Uranüs altmışlık açıda (60°, fırsat): duyguların özgünlükle desteklenir. Değişime açıksın ama sarsılmazsın; yeni bir ortama uyum sağlamak sana zor gelmez. Gücün esnek bir bağımsızlık; gölgesi, sıkılınca bağı gevşetmek.",
+    "synastry": "Birinin Ay'ı diğerinin Uranüs'üne altmışlık: taze, hafif, sıkılmayan bir bağ. Birbirinize alan tanırsınız; arkadaşlık temeli sağlam.",
+    "barnum": 0.6
+  },
+  "moon_square_uranus": {
+    "natal": "Ay ile Uranüs kare açıda (90°, sürtünme): duygu ile özgürlük birbirine sürter. Yakınlık isteği ile kaçma isteği aynı anda; ani ruh hali değişimleri. Gücün sıra dışı bir duygusal yaratıcılık; gölgesi, istikrarı hapis sanmak. Öğrenilen şey, özgürlüğün yakınlıkla birlikte olabildiği.",
+    "synastry": "Birinin Ay'ı diğerinin Uranüs'üne kare: biri güven ister, öteki alan. Sürprizler yorucu olabilir; kurallar esnek tutulursa canlı bir bağ.",
+    "barnum": 0.5
+  },
+  "moon_trine_uranus": {
+    "natal": "Ay ile Uranüs üçgen açıda (120°, akış): özgün bir iç dünya sana doğal gelir. Değişim seni korkutmaz, sıra dışı insanlar seni rahatlatır. Gücün rahat bir bağımsızlık ve sezgi; gölgesi, sıradan huzuru küçümsemek.",
+    "synastry": "Birinin Ay'ı diğerinin Uranüs'üne üçgen: özgür, eğlenceli, sıkılmayan bir bağ. Birbirinizi kısıtlamazsınız ve bu ikinize de iyi gelir.",
+    "barnum": 0.55
+  },
+  "moon_opposition_uranus": {
+    "natal": "Ay ile Uranüs karşıt açıda (180°, gerilim): duygu ile özgürlük iki uçta. Seni sarsan, uyandıran insanlar çeker; yakınlık aniden değişir. Gücün uyanıklık ve özgünlük; gölgesi, güvenliği kaçarak aramak. Öğrenilen şey, kalırken de özgür olabilmek.",
+    "synastry": "Birinin Ay'ı diğerinin Uranüs'üne karşıt: çekim ani, uzaklaşma da ani. Biri güven ister, öteki bağımsızlık; alan tanınırsa sürer.",
+    "barnum": 0.5
+  },
+  "moon_conjunction_neptune": {
+    "natal": "Ay ile Neptün aynı yerde: duyguların sınırsız, geçirgen ve şefkatli. Başkasının halini kendi halin gibi yaşarsın; müzik, film, bir bakış seni bir anda başka yere götürür. Gücün empati ve hayal gücü; gölgesi, kendi ihtiyacını sisin içinde kaybetmek. Bu açı bir sanatçı ya da şifacı duyarlılığı taşır.",
+    "synastry": "Birinin Ay'ı diğerinin Neptün'ünün üstünde: sözsüz anlayış, büyülü bir yakınlık. Biri diğerini idealize edebilir; gerçek insanı görmek çaba ister.",
+    "barnum": 0.55
+  },
+  "moon_sextile_neptune": {
+    "natal": "Ay ile Neptün altmışlık açıda (60°, fırsat): duyguların sezgiyle desteklenir. Başkasının halini kolay hissedersin; yaratıcılık için bir kapı açık. Gücün şefkat ve ilham; gölgesi, hayal etmeyi yaşamakla karıştırmak.",
+    "synastry": "Birinin Ay'ı diğerinin Neptün'üne altmışlık: yumuşak, şefkatli, sessiz bir anlayış. Birlikte susmak bile iyi gelir.",
+    "barnum": 0.6
+  },
+  "moon_square_neptune": {
+    "natal": "Ay ile Neptün kare açıda (90°, sürtünme): duygu ile hayal birbirine sürter. Ne hissettiğin konusunda sis, kolay incinme, kaçış isteği. Gücün derin bir merhamet ve sanat duyarlılığı; gölgesi, kendini kandırmak ya da başkasına kandırılmak. Öğrenilen şey, duyguyu gerçeğe bağlamak.",
+    "synastry": "Birinin Ay'ı diğerinin Neptün'üne kare: biri diğerini olduğundan farklı görür, sonra kırılır. Açık konuşma bağı kurtarır; sis dağılınca şefkat kalır.",
+    "barnum": 0.5
+  },
+  "moon_trine_neptune": {
+    "natal": "Ay ile Neptün üçgen açıda (120°, akış): şefkat ve hayal gücü sana doğal gelir. İnsanlara iyi gelirsin, sanat sana iyi gelir; sezgin çoğu zaman haklı çıkar. Gücün zarif bir duyarlılık; gölgesi, gerçeğin sert tarafından uzak durmak.",
+    "synastry": "Birinin Ay'ı diğerinin Neptün'üne üçgen: sözsüz, yumuşak, romantik bir anlayış. Birbirinize ilham verirsiniz; bağ şefkatli ve sakindir.",
+    "barnum": 0.6
+  },
+  "moon_opposition_neptune": {
+    "natal": "Ay ile Neptün karşıt açıda (180°, gerilim): duygu ile hayal iki uçta. Başkalarını idealize edersin, sonra düş kırıklığı; ya da başkaları seni yanlış okur. Gücün derin empati; gölgesi, kurtarıcı ya da kurban rolüne girmek. Öğrenilen şey, sisin içinde kendi ihtiyacını görmek.",
+    "synastry": "Birinin Ay'ı diğerinin Neptün'üne karşıt: büyü ve yanılsama bir arada. Biri diğerini kurtarmak isteyebilir; netlik ve sınır bağı yaşatır.",
+    "barnum": 0.5
+  },
+  "moon_conjunction_pluto": {
+    "natal": "Ay ile Plüton aynı yerde: duyguların yoğun, derin ve dönüştürücü. Yarım his tanımazsın; bağ kurunca kökten kurarsın, kaybedince yeniden doğarsın. Gücün olağanüstü bir duygusal dayanıklılık; gölgesi, kontrol ihtiyacı ve kıskançlık. Bu açı yoğun bir iç dünya taşır.",
+    "synastry": "Birinin Ay'ı diğerinin Plüton'unun üstünde: derin, yoğun, dönüştürücü. Biri diğerini içten etkiler; güç dengesi konuşulmazsa boğucu olabilir.",
+    "barnum": 0.45
+  },
+  "moon_sextile_pluto": {
+    "natal": "Ay ile Plüton altmışlık açıda (60°, fırsat): duyguların derinlikle desteklenir. Krizden güçlenerek çıkabilirsin; başkasının derinliğine dokunmak sana zor gelmez. Gücün sessiz bir güç; gölgesi, bu derinliği gizli tutmak.",
+    "synastry": "Birinin Ay'ı diğerinin Plüton'una altmışlık: güvene dayalı, derin bir bağ. Birbirinize sırlarınızı anlatırsınız ve bu bağı sağlamlaştırır.",
+    "barnum": 0.55
+  },
+  "moon_square_pluto": {
+    "natal": "Ay ile Plüton kare açıda (90°, sürtünme): duygu ile güç birbirine sürter. Terk edilme korkusu, kontrol isteği, yoğun bağlar, sonra köklü dönüşüm. Gücün yeniden doğma kapasitesi; gölgesi, sevgiyi güç mücadelesine çevirmek. Öğrenilen şey, bırakmanın da sevgi olduğu.",
+    "synastry": "Birinin Ay'ı diğerinin Plüton'una kare: yoğun çekim, yoğun kıskançlık. Biri diğerini değiştirmek ister; güven kurulursa dönüştürücü, kurulmazsa yorucu.",
+    "barnum": 0.45
+  },
+  "moon_trine_pluto": {
+    "natal": "Ay ile Plüton üçgen açıda (120°, akış): derinlik ve dayanıklılık sana doğal gelir. İnsanların içini okur, zor anda sakin kalırsın. Gücün sessiz ama güçlü bir duygusal irade; gölgesi, gücünün farkında olmayıp kullanmamak.",
+    "synastry": "Birinin Ay'ı diğerinin Plüton'una üçgen: derin, sağlam, güvenli bir bağ. Birbirinizi zor günde ayakta tutarsınız.",
+    "barnum": 0.5
+  },
+  "moon_opposition_pluto": {
+    "natal": "Ay ile Plüton karşıt açıda (180°, gerilim): duygu ile güç iki uçta. Yoğun, kontrolcü ya da dönüştürücü insanlar çeker; onlarla sınanırsın. Gücün krizde büyüme kapasitesi; gölgesi, güç mücadelesini ilişkilerde sahnelemek. Öğrenilen şey, kendi derinliğini sahiplenmek.",
+    "synastry": "Birinin Ay'ı diğerinin Plüton'una karşıt: yoğun çekim, yoğun çatışma. Biri diğerini kontrol etmek isteyebilir; dürüstlük ve sınır bağı yaşatır.",
+    "barnum": 0.45
+  },
+  "moon_conjunction_trueNode": {
+    "natal": "Ay ile Kuzey Düğüm aynı yerde: duyguların büyüme yönünle örtüşür. Hissettiğine güvenmek seni doğru yola götürür; ihtiyaçların pusula gibi çalışır. Gücün sezgisel bir yön duygusu; gölgesi, konforu ilerleme sanmak.",
+    "synastry": "Birinin Ay'ı diğerinin Kuzey Düğümü'nün üstünde: 'bu insanla büyüyorum' hissi. Biri diğerini duygusal olarak ilerletir; anlamlı, öğretici bir bağ.",
+    "barnum": 0.5
+  },
+  "moon_sextile_trueNode": {
+    "natal": "Ay ile Kuzey Düğüm altmışlık açıda (60°, fırsat): duyguların büyüme yönünü destekler. Doğru insanlar sana iyi gelir ve yolunu açar; adım atmak sana kalır. Gücün rahat bir sezgi; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Ay'ı diğerinin Kuzey Düğümü'ne altmışlık: birbirinizin yolunu yumuşatırsınız. Hafif, sıcak, işe yarar bir bağ.",
+    "barnum": 0.6
+  },
+  "moon_square_trueNode": {
+    "natal": "Ay ile Kuzey Düğüm kare açıda (90°, sürtünme): duyguların ile büyüme yönün arasında sürtünme. Güvende hissettiğin yer ile gitmen gereken yer farklı; alışkanlıklar seni geri çeker. Gücün bu gerilimden çıkan farkındalık; gölgesi, rahat olana geri dönmek. Öğrenilen şey, ihtiyacı yeni yöne taşımak.",
+    "synastry": "Birinin Ay'ı diğerinin Kuzey Düğümü'ne kare: biri diğerinin alışkanlıklarını sarsar. Rahatsız edici ama öğretici; kabul edilince büyüme.",
+    "barnum": 0.5
+  },
+  "moon_trine_trueNode": {
+    "natal": "Ay ile Kuzey Düğüm üçgen açıda (120°, akış): duyguların büyüme yönünle uyumlu. Yolunda ilerlerken evinde hissedersin; direnç az. Gücün doğal bir sezgi; gölgesi, sınanmadığı için derinleşmeyen bir rahatlık.",
+    "synastry": "Birinin Ay'ı diğerinin Kuzey Düğümü'ne üçgen: birbirinizi doğal olarak ilerletirsiniz. Tanışır tanışmaz 'evimde gibiyim' hissi.",
+    "barnum": 0.55
+  },
+  "moon_opposition_trueNode": {
+    "natal": "Ay ile Kuzey Düğüm karşıt açıda (180°, gerilim): Ay'ın Güney Düğüm'le birleşmesi demek. Duyguların alışık olduğun tarafta çok rahat; büyüme yönü ise tam karşıda. Gücün derin bir sezgi ve tanıdıklık; gölgesi, geçmişe bağlı kalmak. Öğrenilen şey, konfor alanının dışına adım atmak.",
+    "synastry": "Birinin Ay'ı diğerinin Güney Düğümü'nün üstünde: tanıdık, rahat, eski bir bağ gibi. Güven kolay; ileri gitmek çaba ister.",
+    "barnum": 0.5
+  },
+  "moon_conjunction_chiron": {
+    "natal": "Ay ile Chiron aynı yerde: duyguların yaralı şifacının yanında. İhtiyaçların konusunda eski bir yara var; bu yaradan başkalarını anlayan bir şefkat çıkar. Gücün derin bir empati; gölgesi, kendi ihtiyacını hiç meşru görmemek. Bu açı, yarayı bakıma çevirir.",
+    "synastry": "Birinin Ay'ı diğerinin Chiron'unun üstünde: biri diğerinin yarasına dokunur, çoğu zaman istemeden. Şifa da kırgınlık da mümkün; şefkat belirleyici.",
+    "barnum": 0.5
+  },
+  "moon_sextile_chiron": {
+    "natal": "Ay ile Chiron altmışlık açıda (60°, fırsat): duyguların yaradan öğrenmeyi destekler. Zor deneyimlerin başkasını anlama kapasitene dönüşür; kullanmak sana kalır. Gücün olgun bir şefkat; gölgesi, kendi yaranı ihmal etmek.",
+    "synastry": "Birinin Ay'ı diğerinin Chiron'una altmışlık: biri diğerine iyi gelir. Dinleyerek iyileşen bir bağ; hafif ama derin.",
+    "barnum": 0.6
+  },
+  "moon_square_chiron": {
+    "natal": "Ay ile Chiron kare açıda (90°, sürtünme): duyguların ile yaran birbirine sürter. İhtiyacını söylemek zor, incinmek kolay; sonra başkalarına karşı şaşırtıcı bir anlayış. Gücün empati; gölgesi, yarayı kimlik yapmak. Öğrenilen şey, ihtiyacının utanılacak bir şey olmadığı.",
+    "synastry": "Birinin Ay'ı diğerinin Chiron'una kare: biri diğerinin hassas noktasına basar. Kırgınlık kolay; konuşulursa ikiniz de büyürsünüz.",
+    "barnum": 0.5
+  },
+  "moon_trine_chiron": {
+    "natal": "Ay ile Chiron üçgen açıda (120°, akış): yaradan öğrenmek sana doğal gelir. Zor duygularını başkasına yardım eden bir bilgeliğe çevirirsin, çabasız. Gücün şefkatli bir olgunluk; gölgesi, herkesi iyileştirirken kendi ihtiyacını unutmak.",
+    "synastry": "Birinin Ay'ı diğerinin Chiron'una üçgen: şifa veren bir bağ. Biri diğerinin yanında iyileşir; birlikte olmak rahatlatır.",
+    "barnum": 0.55
+  },
+  "moon_opposition_chiron": {
+    "natal": "Ay ile Chiron karşıt açıda (180°, gerilim): duyguların ile yaran iki uçta. Yaranı başkalarında görürsün; sana bakıma ihtiyacı olan insanlar çeker. Gücün derin bir anlayış; gölgesi, herkese bakarken kendine bakmamak. Öğrenilen şey, şifanın önce kendine ait olduğu.",
+    "synastry": "Birinin Ay'ı diğerinin Chiron'una karşıt: biri bakıcı, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
+    "barnum": 0.5
   }
 }
