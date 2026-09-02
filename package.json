@@ -5,7 +5,7 @@
   "description": "Tarayıcıda çalışan, eğlenceli ama dürüst astroloji uygulaması. Build adımı yok.",
   "license": "GPL-3.0",
   "scripts": {
-    "test": "node --test",
+    "test": "node --test && node scripts/validate-bank.js --strict",
     "validate": "node scripts/validate-bank.js",
     "validate:strict": "node scripts/validate-bank.js --strict"
   }

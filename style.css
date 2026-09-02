@@ -147,3 +147,26 @@ td.num, th.num { text-align: right; }
   .settling .wheel-planet { transform: translate(var(--x), var(--y)); }
   .settling .aspect { opacity: inherit !important; }
 }
+
+/* Yorum kartları (Adım 3) */
+.reading { padding: 8px 0; border-bottom: 1px solid rgba(239, 230, 210, .08); }
+.reading:last-child { border-bottom: 0; }
+.reading h3, .reading summary { font-family: var(--font-baslik); font-size: var(--fs-16); color: var(--pirinc); margin: 0 0 6px; font-weight: 600; }
+.reading summary { cursor: pointer; min-height: var(--tap); display: flex; align-items: center; gap: 6px; list-style: none; }
+.reading summary::-webkit-details-marker { display: none; }
+.reading summary::before { content: "›"; color: var(--sis); transition: transform .2s; }
+.reading[open] summary::before { transform: rotate(90deg); }
+.reading p { margin: 0 0 8px; }
+.hook { font-family: var(--font-baslik); font-size: var(--fs-20); line-height: 1.3; color: var(--fildisi); }
+.house-hook { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--cizgi); font-size: var(--fs-16); }
+.scene { color: var(--sis); font-style: italic; }
+.selected h3 { font-family: var(--font-baslik); font-size: var(--fs-16); color: var(--pirinc); margin: 0 0 6px; }
+.role-card { border-color: var(--pirinc); }
+.role-title { font-family: var(--font-baslik); font-size: var(--fs-28); color: var(--fildisi); margin: 0 0 8px; }
+.role-lines { margin: 0 0 10px; padding-left: 18px; }
+.role-lines li { margin-bottom: 4px; }
+.barnum { display: none; font-size: var(--fs-12); color: var(--sis); border: 1px solid var(--cizgi); border-radius: 999px; padding: 1px 8px; margin: 0 0 8px; }
+.serh-on .barnum { display: inline-block; }
+.info-mark { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--pirinc); font-size: var(--fs-12); font-family: var(--font-baslik); }
+.small { font-size: var(--fs-12); }
+@media (prefers-reduced-motion: reduce) { .reading summary::before { transition: none; } }

@@ -100,3 +100,8 @@ export const BANK = {
   // Klişe yasağı (docs/TEXTBANK.md). ui-copy.json hariç, küçük harfe indirilmiş metinde aranır.
   bannedWords: ['evren sana', 'enerjini', 'yıldızlar diyor ki', 'kozmik', 'ruhun', 'titreşim', 'manifest'],
 };
+
+// --- Arketip ve kompozisyon (docs/ENGINE.md 10, docs/TEXTBANK.md) ---
+export const ARCHETYPE_WEIGHTS = { sun: 3, moon: 2, asc: 2, mercury: 1, mars: 1 }; // saat yoksa asc oy vermez
+export const COMPOSE = { topAspects: 6 };
+export const BANK_URL = 'data/tr/';

@@ -1,5 +1,6 @@
 // Başlangıç, hash router, tek state. Sayfa modülleri render(state) + mount(root, state, actions) → unmount.
-import { SCHEMA_VERSION } from './config.js';
+import { SCHEMA_VERSION, BANK, BANK_URL } from './config.js';
+import { createBank } from './text/bank.js';
 import { createStore, profileHash } from './store.js';
 import { loadEngine, engineVersion } from './astro/engine.js';
 import { natalChart } from './astro/chart.js';
@@ -14,7 +15,7 @@ const CITIES_URL = 'data/cities-tr.json';
 const store = createStore();
 const state = {
   route: DEFAULT_ROUTE, profile: null, chart: null, settings: store.loadSettings(),
-  cities: [], engineVersion: '', wheelAnimated: false, editingProfile: null,
+  cities: [], engineVersion: '', wheelAnimated: false, editingProfile: null, bank: null, reading: null,
 };
 let unmount = () => {};
 
@@ -45,6 +46,18 @@ async function ensureChart(profile) {
   return chart;
 }
 
+// Metin bankası: ilk Haritam açılışında bir kez, paralel.
+async function ensureBank() {
+  if (state.bank) return state.bank;
+  const entries = await Promise.all(BANK.files.map(async (name) => {
+    const res = await fetch(`${BANK_URL}${name}.json`);
+    if (!res.ok) throw new Error(`Metin bankası yüklenemedi: ${name}`);
+    return [name, await res.json()];
+  }));
+  state.bank = createBank(Object.fromEntries(entries));
+  return state.bank;
+}
+
 function paint(html, page) {
   unmount();
   const root = document.getElementById('app');
@@ -63,7 +76,8 @@ async function renderRoute() {
     return;
   }
   if (state.route !== 'haritam') { paint(comingSoon(PAGES[state.route]), null); return; }
-  if (!state.chart) state.chart = await ensureChart(state.profile);
+  const [chart] = await Promise.all([state.chart ?? ensureChart(state.profile), ensureBank()]);
+  state.chart = chart;
   paint(haritam.render(state), haritam);
 }
 
