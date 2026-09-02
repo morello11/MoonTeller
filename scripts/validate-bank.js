@@ -11,6 +11,12 @@ const strict = process.argv.includes('--strict');
 const L = BANK.limits;
 const HOUSES = Array.from({ length: 12 }, (_, i) => `h${i + 1}`);
 const ASPECT_NAMES = ['conjunction', 'sextile', 'square', 'trine', 'opposition'];
+// Natal haritada oluşamayan açılar (Merkür Güneş'ten en çok 28°, Venüs 47° uzaklaşır): natal alanı null olmalı.
+export const IMPOSSIBLE_NATAL = new Set([
+  'sun_sextile_mercury', 'sun_square_mercury', 'sun_trine_mercury', 'sun_opposition_mercury',
+  'sun_sextile_venus', 'sun_square_venus', 'sun_trine_venus', 'sun_opposition_venus',
+  'mercury_square_venus', 'mercury_trine_venus', 'mercury_opposition_venus',
+]);
 
 function cross(bodies, suffixes) {
   return bodies.flatMap((b) => suffixes.map((s) => `${b}_${s}`));
@@ -58,6 +64,10 @@ function validateFile(name, spec) {
     if (spec.keys && !spec.keys.includes(key)) errors.push(`${name}:${key} beklenmeyen anahtar`);
     if (spec.fields) {
       for (const [field, fspec] of Object.entries(spec.fields)) {
+        if (name === 'aspects' && field === 'natal' && IMPOSSIBLE_NATAL.has(key)) {
+          if (entry?.natal !== null) errors.push(`${name}:${key}.natal natal haritada oluşamaz, null olmalı`);
+          continue;
+        }
         const problem = checkField(entry?.[field], fspec);
         if (problem) errors.push(`${name}:${key}.${field} ${problem}`);
       }

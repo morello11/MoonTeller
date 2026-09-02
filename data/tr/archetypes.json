@@ -11,5 +11,148 @@
     "mail": "Mesajda: kısa, kendinden emin, bir ünlem fazla.",
     "crisis": "Krizde: önce herkesi sakinleştirirsin, sonra kimse görmeden yorulursun.",
     "barnum": 0.4
+  },
+  "aries": {
+    "title": "Öncü Kaptan",
+    "emblem": "Kıvılcım",
+    "lines": [
+      "Plan yokken yola çıkan sensin; plan sonra gelir, genellikle senden.",
+      "Beklemek senin için eylemsizlik değil, kayıp.",
+      "Cesaretin bulaşıcı; sabırsızlığın da."
+    ],
+    "meeting": "Grup içinde: ilk fikri sen atarsın, ikinci fikri beklemeden.",
+    "mail": "Mesajda: kısa, büyük harf yok ama ton büyük harf gibi.",
+    "crisis": "Krizde: herkes düşünürken sen çoktan bir şey yapmışsındır; bazen yanlış, ama bir şey.",
+    "barnum": 0.4
+  },
+  "taurus": {
+    "title": "Kale Bekçisi",
+    "emblem": "Çapa",
+    "lines": [
+      "Fırtınada sarılınacak direk sensin; yerinden oynamazsın.",
+      "Karar vermen yavaş, karardan dönmen daha yavaş.",
+      "Rahatı sever, rahatı kurar, rahatı paylaşırsın."
+    ],
+    "meeting": "Grup içinde: az konuşursun, konuştuğunda konu kapanır.",
+    "mail": "Mesajda: geç ama tam; cevap gelmişse düşünülmüştür.",
+    "crisis": "Krizde: panik senin lügatinde yok; önce çay, sonra çözüm.",
+    "barnum": 0.45
+  },
+  "gemini": {
+    "title": "Haberci",
+    "emblem": "Kanatlı sandalet",
+    "lines": [
+      "Herkesin haberini herkese ilk sen ulaştırırsın, bazen fazlasıyla.",
+      "Bir konuda uzman değilsin; her konuda ilginç bilgin var.",
+      "Sıkıldığın an gruptaki en tehlikeli ansın."
+    ],
+    "meeting": "Grup içinde: konuyu dağıtırsın, sonra kimsenin görmediği bağlantıyı kurarsın.",
+    "mail": "Mesajda: beş mesaj üst üste, üçü emoji, biri asıl konu.",
+    "crisis": "Krizde: herkesle konuşur, herkesi birbirine bağlarsın; çözüm o ağdan çıkar.",
+    "barnum": 0.45
+  },
+  "cancer": {
+    "title": "Ocak Bekçisi",
+    "emblem": "Kandil",
+    "lines": [
+      "Grubun ruh halini ilk sen hissedersin, sen düzeltirsin.",
+      "Kim yorgun, kim aç, kim kırgın: gözünden kaçmaz.",
+      "Kırıldığında geri çekilirsin; nedenini soran olursa iyi."
+    ],
+    "meeting": "Grup içinde: az konuşur, herkesin konuşabildiğinden emin olursun.",
+    "mail": "Mesajda: 'nasılsın' ile başlar, 'kendine iyi bak' ile biter, ikisi de içtendir.",
+    "crisis": "Krizde: önce insanları toplarsın, sonra sorunu; sıralama hiç değişmez.",
+    "barnum": 0.5
+  },
+  "virgo": {
+    "title": "Kalite Kontrol",
+    "emblem": "Cetvel",
+    "lines": [
+      "Kimse fark etmeden düzelttiğin şeylerin listesi, herkesin bildiği işlerden uzun.",
+      "Kusur senin için eleştiri değil, iş tanımı.",
+      "Teşekkür beklemezsin; ama edilince için ısınır."
+    ],
+    "meeting": "Grup içinde: herkes 'tamam' derken sen 'bir şey daha' dersin ve haklısındır.",
+    "mail": "Mesajda: madde madde, yazım hatasız, gerekirse düzeltme mesajı.",
+    "crisis": "Krizde: liste yaparsın; liste bitince kriz bitmiş olur.",
+    "barnum": 0.45
+  },
+  "libra": {
+    "title": "Arabulucu",
+    "emblem": "Terazi kefesi",
+    "lines": [
+      "İki tarafı da anlarsın; bu yüzden ikisi de sana kızar, sonra ikisi de sana gelir.",
+      "Kabalık seni gerçekten yaralar; nezaket seni gerçekten kazanır.",
+      "Karar senin için son adım değil, en zor adım."
+    ],
+    "meeting": "Grup içinde: gerilimi hisseder, hissettirmeden dağıtırsın.",
+    "mail": "Mesajda: 'bence de' ile başlayıp nazikçe tam tersini söylersin.",
+    "crisis": "Krizde: kimin haklı olduğunu değil, herkesin nasıl konuşacağını bulursun.",
+    "barnum": 0.5
+  },
+  "scorpio": {
+    "title": "Strateji Ustası",
+    "emblem": "Anahtar",
+    "lines": [
+      "Az konuşursun; söylediğinde herkes not alır.",
+      "Güvenini kazanmak yıllar, kaybetmek bir cümle sürer.",
+      "Sır sende kalır; senin sırrın ise kimsede."
+    ],
+    "meeting": "Grup içinde: sessizce dinler, en sonda tek cümleyle konuyu çözersin.",
+    "mail": "Mesajda: kısa, net, okuyanın iki kez okuduğu türden.",
+    "crisis": "Krizde: soğukkanlısındır; ama olan biteni unutmazsın.",
+    "barnum": 0.4
+  },
+  "sagittarius": {
+    "title": "Kâşif",
+    "emblem": "Pusula",
+    "lines": [
+      "Her plana 'neden olmasın' diyen sensin; sonra birinin hatırlatması gerekir.",
+      "Dürüstlüğün bazen eğitim, bazen kaza gibi gelir.",
+      "Moral senin sorumluluğun değil, ama sen gelince yükselir."
+    ],
+    "meeting": "Grup içinde: büyük resmi çizersin; ayrıntıyı başkası tamamlasın.",
+    "mail": "Mesajda: uzun, coşkulu, sonunda bir link.",
+    "crisis": "Krizde: 'bundan da bir şey öğreniriz' dersin ve gerçekten öğrenirsin.",
+    "barnum": 0.45
+  },
+  "capricorn": {
+    "title": "Zirve Mimarı",
+    "emblem": "Dağ",
+    "lines": [
+      "Kimse bakmazken çalışırsın; sonuç konuşur, sen susarsın.",
+      "Planın var, yedek planın var, yedek planın yedeği var.",
+      "Şakaların kuru; kaçıranlar bir gün fark eder."
+    ],
+    "meeting": "Grup içinde: gündemi sen kurarsın, süreye sen uyarsın.",
+    "mail": "Mesajda: konu başlığı bile bir plan gibidir.",
+    "crisis": "Krizde: sakinsindir, çünkü bu krizi aylar önce düşünmüşsündür.",
+    "barnum": 0.45
+  },
+  "aquarius": {
+    "title": "Sistem Mühendisi",
+    "emblem": "Yıldız haritası",
+    "lines": [
+      "Herkesin kabul ettiği şeyi sorgularsın; çoğu zaman sonradan haklı çıkarsın.",
+      "Dostluğun geniş, yakınlığın seçicidir.",
+      "Kural sevmezsin; iyi bir sistemi ise herkesten çok seversin."
+    ],
+    "meeting": "Grup içinde: kimsenin sormadığı soruyu sorar, sohbeti baştan başlatırsın.",
+    "mail": "Mesajda: bir fikir, bir şema, bazen bir bildiri.",
+    "crisis": "Krizde: duygudan uzaklaşır, sisteme bakarsın; çözüm oradadır.",
+    "barnum": 0.45
+  },
+  "pisces": {
+    "title": "Deniz Feneri",
+    "emblem": "Dalga",
+    "lines": [
+      "Odadaki herkesin halini hissedersin; kendi halini en son.",
+      "Hayal gücün grubun en değerli, en az anlaşılan kaynağı.",
+      "Sınır koymak senin için en zor iş; öğrendiğinde en büyük gücün."
+    ],
+    "meeting": "Grup içinde: az konuşursun, konuştuğunda herkesin hissettiğini söylersin.",
+    "mail": "Mesajda: geç, yumuşak, arada bir şarkı linki.",
+    "crisis": "Krizde: herkesi teselli edersin; sonra bir köşede sen teselliye ihtiyaç duyarsın.",
+    "barnum": 0.5
   }
 }
