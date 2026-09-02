@@ -1,5 +1,5 @@
 // Başlangıç ve hash router. Adım 0: sayfalar boş, sadece motor testi çalışır.
-import { loadEngine, computePositions, engineVersion } from './astro/engine.js';
+import { loadEngine, julianDayUT, computePositions, engineVersion } from './astro/engine.js';
 
 const PAGES = {
   haritam: 'Haritam', bugun: 'Bugün', ofis: 'Ofis',
@@ -21,21 +21,27 @@ function render() {
   }
 }
 
-// Şu anın Julian Day'i (UT). Yerel saat → UT dönüşümü Adım 1'de src/astro/time.js'e taşınır.
-function julianDayNow(swe) {
+// Şu anın UT parçaları. Yerel doğum saati → UT dönüşümü Adım 1'de src/astro/time.js'e gelir.
+function utNow() {
   const now = new Date();
-  const utHours = now.getUTCHours() + now.getUTCMinutes() / MINUTES_PER_HOUR;
-  return swe.julday(now.getUTCFullYear(), now.getUTCMonth() + 1, now.getUTCDate(), utHours);
+  return {
+    year: now.getUTCFullYear(), month: now.getUTCMonth() + 1, day: now.getUTCDate(),
+    utHours: now.getUTCHours() + now.getUTCMinutes() / MINUTES_PER_HOUR,
+  };
+}
+
+function formatDegrees(value) {
+  return `${value.toFixed(2).replace('.', ',')}°`;
 }
 
 async function runEngineTest(out) {
   out.textContent = 'Motor yükleniyor…';
   const started = performance.now();
-  const swe = await loadEngine();
-  const [sun] = computePositions(swe, julianDayNow(swe), ['sun']);
+  await loadEngine();
+  const [sun, moon] = computePositions(julianDayUT(utNow()), ['sun', 'moon']);
   const elapsed = Math.round(performance.now() - started);
-  out.textContent = `Güneş boylamı: ${sun.lon.toFixed(2).replace('.', ',')}°`
-    + ` · Swiss Ephemeris ${engineVersion(swe)} · ${elapsed} ms`;
+  out.textContent = `Güneş ${formatDegrees(sun.lon)} · Ay ${formatDegrees(moon.lon)}`
+    + ` · Swiss Ephemeris ${engineVersion()} · ${elapsed} ms`;
 }
 
 function initEngineTest() {
