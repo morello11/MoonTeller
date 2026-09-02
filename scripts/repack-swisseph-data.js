@@ -5,7 +5,9 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const DROP = ['/sweph/seasnam.txt'];
+// seasnam.txt: asteroit isim listesi (9,9 MB). sepl_18/semo_18: gezegen ve Ay efemerisi; Moshier hesabı (SEFLG_MOSEPH)
+// bunlar olmadan da < 0,001° hassasiyet verir. seas_18 kalır: Chiron için gerekli.
+const DROP = ['/sweph/seasnam.txt', '/sweph/sepl_18.se1', '/sweph/semo_18.se1'];
 
 const wsamDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'vendor', 'swisseph', 'wsam');
 const jsPath = join(wsamDir, 'swisseph.js');

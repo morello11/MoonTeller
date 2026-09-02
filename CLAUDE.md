@@ -45,7 +45,7 @@
 | Test | `node --test` (kök `package.json` sadece `type: module` ve `test` scripti için; Node 22 dizin argümanını kabul etmiyor) | Ek test kütüphanesi yok. |
 | Yayın | GitHub Pages, `main` dalı, kök dizin | Özel alan adı v2. |
 
-Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB; WASM tembel (lazy) yüklenir, tarayıcı cache'ler; natal hesap bir kez yapılıp saklanır.
+Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: gezegen/Ay efemeris dosyaları atıldı, Moshier kullanılıyor); WASM tembel (lazy) yüklenir, tarayıcı cache'ler; natal hesap bir kez yapılıp saklanır.
 
 ## 3. Repo yapısı
 
@@ -101,7 +101,7 @@ klasör adı olduğu gibi korunur.
 
 ---
 
-## Şu an: Adım 0 bitti, Mehmet kontrol edecek
+## Şu an: Adım 0 bitti; bitti şartı Mehmet'te (GitHub Pages linki telefonda açılıyor)
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 

@@ -1,8 +1,9 @@
 // Tüm ayarlanabilir sayılar ve seçimler burada. Kodun geri kalanında sihirli sayı yok.
 
 export const EPHEMERIS = {
-  // true: gömülü efemeris dosyaları yerine Moshier hesabı (dosya gerekmez; fark bizim için önemsiz).
-  useMoshier: false,
+  // true: Moshier hesabı (SEFLG_MOSEPH). Gezegen/Ay efemeris dosyaları vendor paketinden çıkarıldı
+  // (bkz. scripts/repack-swisseph-data.js); fark < 0,001°, bizim için önemsiz. false: SEFLG_SWIEPH, dosya ister.
+  useMoshier: true,
   // Swiss Ephemeris ev sistemi harfi: 'P' Placidus, 'W' Whole Sign, 'K' Koch, 'E' Eşit.
   houseSystem: 'P',
 };
@@ -12,9 +13,3 @@ export const BODIES = [
   'sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn',
   'uranus', 'neptune', 'pluto', 'trueNode', 'chiron',
 ];
-
-export const TIME = {
-  defaultTimeZone: 'Europe/Istanbul',
-  // Doğum saati bilinmiyorsa hesapta varsayılan yerel saat.
-  unknownTimeHour: 12,
-};
