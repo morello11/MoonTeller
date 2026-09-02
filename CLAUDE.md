@@ -107,7 +107,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 0 bitti; bitti şartı Mehmet'te (GitHub Pages linki telefonda açılıyor)
+## Şu an: Adım 1 — Motor ve doğrulama (Adım 0 kapısı geçti: https://morello11.github.io/MoonTeller/ telefonda Motor testi çalıştı)
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 
