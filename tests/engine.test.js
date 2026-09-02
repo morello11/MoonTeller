@@ -39,6 +39,14 @@ test('ASC ve MC (regresyon)', () => {
   assert.ok(Math.abs(h.cusps[9] - h.mc) < TOL_PLANET);
 });
 
+test('retro bayrağı Güneş/Ay/Düğüm için hesaplanmaz', () => {
+  const [sun, moon, node] = computePositions(jd, ['sun', 'moon', 'trueNode']);
+  assert.equal(sun.retrograde, false);
+  assert.equal(moon.retrograde, false);
+  assert.equal(node.retrograde, false);
+  assert.ok(node.speed < 0);
+});
+
 test('tüm cisimler sonlu boylam döner', () => {
   const list = computePositions(jd);
   assert.equal(list.length, BODIES.length);
