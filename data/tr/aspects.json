@@ -528,5 +528,430 @@
     "natal": "Ay ile Chiron karşıt açıda (180°, gerilim): duyguların ile yaran iki uçta. Yaranı başkalarında görürsün; sana bakıma ihtiyacı olan insanlar çeker. Gücün derin bir anlayış; gölgesi, herkese bakarken kendine bakmamak. Öğrenilen şey, şifanın önce kendine ait olduğu.",
     "synastry": "Birinin Ay'ı diğerinin Chiron'una karşıt: biri bakıcı, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
     "barnum": 0.5
+  },
+  "mercury_conjunction_venus": {
+    "natal": "Merkür (düşünce) ile Venüs (zevk) aynı yerde: güzel konuşur, güzel yazar, güzel düşünürsün. Kelimelerle sevmek ve sevilmek sana doğal gelir; diplomasi öğrenilmiş değil, doğuştan. Gücün zarif bir ifade; gölgesi, sert gerçeği hep yumuşatarak söylemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Venüs'ünün üstünde: sohbet flört gibi, flört sohbet gibi. Biri diğerinin konuşmasını sever; yazışmak bile keyiflidir.",
+    "barnum": 0.55
+  },
+  "mercury_sextile_venus": {
+    "natal": "Merkür ile Venüs altmışlık açıda (60°, fırsat): düşünce ile zevk birbirini destekler. Nazik anlatım, hoş bir üslup; kullanırsan insanları kolay ikna edersin. Gücün uyumlu iletişim; gölgesi, bu kolaylığı derin bir tartışmadan kaçmak için kullanmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Venüs'üne altmışlık: hoş sohbet, ortak zevkler. Birlikte film seçmek, mekân seçmek kolaydır.",
+    "barnum": 0.6
+  },
+  "mercury_square_venus": {
+    "natal": null,
+    "synastry": "Birinin Merkür'ü diğerinin Venüs'üne kare: biri konuşur, öteki hisseder; zevkler ve dil tutmaz. Küçük sürtünmeler; birbirinizin üslubunu öğrenince renk katar.",
+    "barnum": 0.55
+  },
+  "mercury_trine_venus": {
+    "natal": null,
+    "synastry": "Birinin Merkür'ü diğerinin Venüs'üne üçgen: rahat sohbet, aynı zevkler. Birlikte vakit geçirmek kolay, sessizlik bile keyifli.",
+    "barnum": 0.6
+  },
+  "mercury_opposition_venus": {
+    "natal": null,
+    "synastry": "Birinin Merkür'ü diğerinin Venüs'üne karşıt: biri analiz eder, öteki beğenir; aynı şeye farklı yerden bakarsınız. Tartışma nazik kalır; ikiniz de öteki tarafı öğrenirsiniz.",
+    "barnum": 0.55
+  },
+  "mercury_conjunction_mars": {
+    "natal": "Merkür ile Mars aynı yerde: düşüncen keskin, dilin hızlı, tartışman sert. Kararı çabuk verir, çabuk söylersin; kelimeler senin için araç değil, silah ya da alet. Gücün zihinsel cesaret ve netlik; gölgesi, söylediğin şeyin gücünü ölçememek.",
+    "synastry": "Birinin Merkür'ü diğerinin Mars'ının üstünde: canlı tartışmalar, keskin espriler. Biri diğerini kışkırtır; sıkılmayan ama bazen yorulan bir ikili.",
+    "barnum": 0.45
+  },
+  "mercury_sextile_mars": {
+    "natal": "Merkür ile Mars altmışlık açıda (60°, fırsat): düşünce ile eylem birbirini destekler. Kararı verip uygulamak sana zor gelmez; enerjin zihinden gelir. Gücün çevik bir zekâ; gölgesi, bu hızı sabırsızlığa çevirmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Mars'ına altmışlık: birlikte plan yapmak ve uygulamak kolay. Biri düşünür, öteki yapar; iyi bir çalışma ikilisi.",
+    "barnum": 0.6
+  },
+  "mercury_square_mars": {
+    "natal": "Merkür ile Mars kare açıda (90°, sürtünme): düşünce ile öfke birbirine sürter. Söylediğin şey niyet ettiğinden sert çıkar; tartışmada kazanırsın, sonra pişman olursun. Gücün keskin bir zekâ ve cesaret; gölgesi, kelimeyi yara açmak için kullanmak. Öğrenilen şey, söylemeden önce bir nefes.",
+    "synastry": "Birinin Merkür'ü diğerinin Mars'ına kare: tartışma sık, ton sert. Biri söylediğinden fazlasını duyar; kurallar konuşulursa enerjik bir ikili.",
+    "barnum": 0.45
+  },
+  "mercury_trine_mars": {
+    "natal": "Merkür ile Mars üçgen açıda (120°, akış): düşünce ile eylem aynı dili konuşur. Hızlı karar verir, açık konuşur, işi başlatırsın; zihnin ve elin birlikte çalışır. Gücün pratik bir zekâ; gölgesi, kolay gelen kararı sorgulamamak.",
+    "synastry": "Birinin Merkür'ü diğerinin Mars'ına üçgen: birlikte iş çıkarmak kolay ve keyifli. Fikir ile eylem birbirini bulur; tartışma bile üretken.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_mars": {
+    "natal": "Merkür ile Mars karşıt açıda (180°, gerilim): düşünce ile öfke iki uçta. Tartışmayı başkalarında yaşarsın; seni kışkırtan insanlar çeker. Gücün savunma ve ikna kapasitesi; gölgesi, her sohbeti müsabakaya çevirmek. Öğrenilen şey, haklı olmakla anlaşılmanın farkı.",
+    "synastry": "Birinin Merkür'ü diğerinin Mars'ına karşıt: biri söyler, öteki savaşır. Kıvılcım çok, uzlaşma az; dinlemeyi öğrenirseniz güçlü bir ikili.",
+    "barnum": 0.45
+  },
+  "mercury_conjunction_jupiter": {
+    "natal": "Merkür ile Jüpiter aynı yerde: düşüncen geniş, dilin cömert, ufkun uzak. Büyük resmi anlatmayı seversin; öğretmek ve öğrenmek senin için doğal. Gücün iyimser ve kapsayıcı bir zihin; gölgesi, ayrıntıyı atlamak ve abartmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Jüpiter'inin üstünde: biri diğerinin fikrini büyütür. Sohbet gece yarısına kadar sürer; birbirinizden öğrenirsiniz.",
+    "barnum": 0.5
+  },
+  "mercury_sextile_jupiter": {
+    "natal": "Merkür ile Jüpiter altmışlık açıda (60°, fırsat): düşüncen iyimserlikle desteklenir. Öğrenmek sana kolay gelir; fırsatları görürsün, kullanmak sana kalır. Gücün açık ve umutlu bir zihin; gölgesi, kolay anlaşılanı derinleştirmemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Jüpiter'ine altmışlık: neşeli, öğretici sohbetler. Birbirinize kitap, yer, fikir önerirsiniz.",
+    "barnum": 0.6
+  },
+  "mercury_square_jupiter": {
+    "natal": "Merkür ile Jüpiter kare açıda (90°, sürtünme): düşünce ile genişleme birbirine sürter. Fazla söz, fazla vaat, fazla fikir; sonra toparlama. Gücün büyük düşünme kapasitesi; gölgesi, söylediğin şeyin doğruluğunu abartıya feda etmek. Öğrenilen şey, az ama doğru söylemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Jüpiter'ine kare: sohbet büyük, sonuç küçük. Biri abartır, öteki inanır; eğlenceli ama hesap gerektiren bir ikili.",
+    "barnum": 0.5
+  },
+  "mercury_trine_jupiter": {
+    "natal": "Merkür ile Jüpiter üçgen açıda (120°, akış): düşünce ile anlam aynı dili konuşur. Öğrenmek, öğretmek, anlatmak sana doğal gelir; insanlar seni dinlemeyi sever. Gücün geniş ve akıcı bir zihin; gölgesi, ayrıntıyı önemsizleştirmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Jüpiter'ine üçgen: fikirler kolay akar, ikiniz de büyürsünüz. Birlikte öğrenmek, gezmek, tartışmak keyiflidir.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_jupiter": {
+    "natal": "Merkür ile Jüpiter karşıt açıda (180°, gerilim): düşünce ile inanç iki uçta. Başkalarının büyük fikirlerine ya kapılır ya karşı çıkarsın; kendi ölçünü onlar üzerinden bulursun. Gücün geniş ve eleştirel bir bakış; gölgesi, ayrıntı ile bütün arasında sıkışmak. Öğrenilen şey, ikisini de kullanmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Jüpiter'ine karşıt: biri ayrıntıya, öteki bütüne bakar. Tartışma verimli; kim haklı sorusu bitmez.",
+    "barnum": 0.5
+  },
+  "mercury_conjunction_saturn": {
+    "natal": "Merkür ile Satürn aynı yerde: düşüncen derin, dilin ölçülü, sözün ağır. Konuşmadan önce düşünür, yazdığını üç kez okursun; boş laf seni yorar. Gücün ciddi ve güvenilir bir zihin; gölgesi, kendi fikrine bile güvenmekte zorlanmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Satürn'ünün üstünde: biri diğerini düşünmeye zorlar, bazen susturur. Ciddi, öğretici, ağır bir iletişim; sabır ister.",
+    "barnum": 0.45
+  },
+  "mercury_sextile_saturn": {
+    "natal": "Merkür ile Satürn altmışlık açıda (60°, fırsat): düşüncen düzenle desteklenir. Planlamak, sıralamak, bitirmek sana zor gelmez; kullanırsan sağlam bir zihin kurarsın. Gücün güvenilir bir yargı; gölgesi, bu kapasiteyi kullanmamak.",
+    "synastry": "Birinin Merkür'ü diğerinin Satürn'üne altmışlık: sakin, güvenilir bir iletişim. Biri fikri verir, öteki yapıya oturtur.",
+    "barnum": 0.6
+  },
+  "mercury_square_saturn": {
+    "natal": "Merkür ile Satürn kare açıda (90°, sürtünme): düşünce ile sınır birbirine sürter. Söylediğinin yanlış anlaşılacağı korkusu, konuşurken kendini frenlemek, sonra sağlam bir düşünce yapısı. Gücün titiz bir zihin; gölgesi, kendi fikrini hiç yeterli bulmamak. Öğrenilen şey, söz söyleme hakkı.",
+    "synastry": "Birinin Merkür'ü diğerinin Satürn'üne kare: biri kendini yargılanmış, öteki dinlenmemiş hisseder. Zorlayıcı ama saygı kurulursa öğretici.",
+    "barnum": 0.45
+  },
+  "mercury_trine_saturn": {
+    "natal": "Merkür ile Satürn üçgen açıda (120°, akış): düşünce ile disiplin aynı dili konuşur. Derin öğrenir, düzenli anlatır, verdiğin bilgiye güvenilir. Gücün sağlam bir yargı; gölgesi, hep sağlam olanı seçip yeniyi geç kabul etmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Satürn'üne üçgen: güvenilir, kalıcı bir iletişim. Birlikte plan yapmak ve tutmak kolaydır.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_saturn": {
+    "natal": "Merkür ile Satürn karşıt açıda (180°, gerilim): düşünce ile otorite iki uçta. Başkalarında gördüğün eleştiri, kendi iç eleştirmeninin aynası; fikrini savunmak sana ağır gelir. Gücün ciddi ve derin bir düşünce; gölgesi, onayı dışarıda aramak. Öğrenilen şey, kendi fikrinin otoritesi.",
+    "synastry": "Birinin Merkür'ü diğerinin Satürn'üne karşıt: biri konuşur, öteki eleştirir gibi hisseder. Sınırlar açık konuşulursa öğretici, konuşulmazsa soğuk.",
+    "barnum": 0.45
+  },
+  "mercury_conjunction_uranus": {
+    "natal": "Merkür ile Uranüs aynı yerde: düşüncen hızlı, özgün ve beklenmedik. Fikir bir anda gelir, bağlantıları kimse görmeden kurarsın; sıradan sohbet seni sıkar. Gücün yaratıcı ve keskin bir zekâ; gölgesi, sabırsızlık ve dağınıklık.",
+    "synastry": "Birinin Merkür'ü diğerinin Uranüs'ünün üstünde: elektrikli sohbetler, ani fikirler. Biri diğerini uyandırır; sıkılmayan bir zihinsel bağ.",
+    "barnum": 0.5
+  },
+  "mercury_sextile_uranus": {
+    "natal": "Merkür ile Uranüs altmışlık açıda (60°, fırsat): düşüncen özgünlükle desteklenir. Yeni fikirlere açıksın, farklı açıdan bakabilirsin; kullanmak sana kalır. Gücün esnek bir zekâ; gölgesi, ilginç olanı gerekli olana yeğlemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Uranüs'üne altmışlık: taze sohbetler, yeni fikirler. Birbirinize farklı bakış açıları taşırsınız.",
+    "barnum": 0.6
+  },
+  "mercury_square_uranus": {
+    "natal": "Merkür ile Uranüs kare açıda (90°, sürtünme): düşünce ile özgünlük birbirine sürter. Ani kararlar, sinirli bir zihin, herkesin aksine bir fikir. Gücün sıra dışı bir yaratıcılık; gölgesi, farklı olmak için farklı düşünmek. Öğrenilen şey, özgünlüğü ispat gerektirmeden taşımak.",
+    "synastry": "Birinin Merkür'ü diğerinin Uranüs'üne kare: fikirler çarpışır, sohbet dağılır. Sıkılmazsınız ama bazen birbirinizi yorarsınız.",
+    "barnum": 0.5
+  },
+  "mercury_trine_uranus": {
+    "natal": "Merkür ile Uranüs üçgen açıda (120°, akış): özgün düşünmek sana doğal gelir. Hızlı kavrar, farklı bağlar kurar, yeni olana kolay uyum sağlarsın. Gücün parlak ve rahat bir zekâ; gölgesi, sıradan düşünceyi küçümsemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Uranüs'üne üçgen: özgür, eğlenceli, ilham veren sohbetler. Birlikte fikir üretmek kolaydır.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_uranus": {
+    "natal": "Merkür ile Uranüs karşıt açıda (180°, gerilim): düşünce ile özgünlük iki uçta. Seni şaşırtan, sarsan fikirler ve insanlar çeker; tartışma aniden yön değiştirir. Gücün uyanık ve esnek bir zihin; gölgesi, tutarsız görünmek. Öğrenilen şey, yeniyi eski ile birleştirmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Uranüs'üne karşıt: sohbet öngörülemez, fikirler zıt. Heyecan var, istikrar az; birbirinize alan tanırsanız verimli.",
+    "barnum": 0.5
+  },
+  "mercury_conjunction_neptune": {
+    "natal": "Merkür ile Neptün aynı yerde: düşüncen resim gibi, sezgisel ve şiirsel. Söylenmeyeni duyar, sembolleri okursun; kesin mantık sana biraz yabancı. Gücün hayal gücü ve empati; gölgesi, gerçeği kendi hayalinle karıştırmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Neptün'ünün üstünde: sözsüz anlaşma, bulanık iletişim. Biri diğerini anladığını sanır; bazen doğrudur, bazen değil.",
+    "barnum": 0.55
+  },
+  "mercury_sextile_neptune": {
+    "natal": "Merkür ile Neptün altmışlık açıda (60°, fırsat): düşüncen sezgiyle desteklenir. Hikâye anlatmak, hayal kurmak, insanı okumak sana kolay gelir; kullanmak sana kalır. Gücün yaratıcı bir dil; gölgesi, hayali gerçek sanmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Neptün'üne altmışlık: yumuşak, anlayışlı sohbetler. Sanat, müzik, hayal üzerine konuşmak ikinize de iyi gelir.",
+    "barnum": 0.6
+  },
+  "mercury_square_neptune": {
+    "natal": "Merkür ile Neptün kare açıda (90°, sürtünme): düşünce ile hayal birbirine sürter. Dikkat dağılır, ayrıntı kaçar, ne dediğin bazen bulanıklaşır; ama sezgin şaşırtıcı derecede doğru. Gücün hayal gücü; gölgesi, kendini ya da başkasını yanıltmak. Öğrenilen şey, sezgiyi kanıtla bağlamak.",
+    "synastry": "Birinin Merkür'ü diğerinin Neptün'üne kare: yanlış anlama sık, niyet iyi. Biri net konuşmak ister, öteki hissederek dinler; sabır gerekir.",
+    "barnum": 0.5
+  },
+  "mercury_trine_neptune": {
+    "natal": "Merkür ile Neptün üçgen açıda (120°, akış): sezgi ile düşünce aynı dili konuşur. Hikâye, şiir, müzik, insan halleri sana kolay gelir; söylenmeyeni doğal olarak duyarsın. Gücün zarif ve şiirsel bir zihin; gölgesi, sert gerçeği yumuşatmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Neptün'üne üçgen: sözsüz, sezgisel bir anlaşma. Birbirinizi yarım cümleden anlar, birlikte hayal kurarsınız.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_neptune": {
+    "natal": "Merkür ile Neptün karşıt açıda (180°, gerilim): düşünce ile hayal iki uçta. Başkalarını olduğundan farklı okur ya da onlar seni yanlış anlar; iletişimde sis. Gücün derin bir sezgi; gölgesi, gerçekle hayali başkası üzerinden karıştırmak. Öğrenilen şey, net sormak ve net söylemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Neptün'üne karşıt: büyüleyici ama bulanık sohbetler. Biri diğerini idealize eder ya da yanlış okur; açık konuşma bağı kurtarır.",
+    "barnum": 0.5
+  },
+  "mercury_conjunction_pluto": {
+    "natal": "Merkür ile Plüton aynı yerde: düşüncen derin, keskin ve nüfuz edici. Yüzeysel cevap seni durdurmaz; bir konunun dibine inmeden bırakmazsın. Gücün araştırmacı ve etkili bir zihin; gölgesi, kelimeyi güç aracı yapmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Plüton'unun üstünde: derin, yoğun, dönüştürücü sohbetler. Biri diğerinin zihnini kurcalar; sırlar çabuk açılır.",
+    "barnum": 0.45
+  },
+  "mercury_sextile_pluto": {
+    "natal": "Merkür ile Plüton altmışlık açıda (60°, fırsat): düşüncen derinlikle desteklenir. Gizli olanı görmek, araştırmak, insanı çözmek sana kolay gelir; kullanmak sana kalır. Gücün sezgisel bir zekâ; gölgesi, bu derinliği gizli tutmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Plüton'una altmışlık: güvene dayalı, derin sohbetler. Birbirinize başkasına anlatmadığınız şeyleri anlatırsınız.",
+    "barnum": 0.55
+  },
+  "mercury_square_pluto": {
+    "natal": "Merkür ile Plüton kare açıda (90°, sürtünme): düşünce ile güç birbirine sürter. Şüphe, takıntılı düşünce, haklı çıkma ihtiyacı; sonra olağanüstü bir araştırma kapasitesi. Gücün nüfuz eden bir zekâ; gölgesi, kelimeyle kontrol etmek. Öğrenilen şey, her sohbetin bir savaş olmadığı.",
+    "synastry": "Birinin Merkür'ü diğerinin Plüton'una kare: sohbet sorguya dönebilir. Biri diğerini çözmek ister, öteki kapanır; güven kurulursa derinleşir.",
+    "barnum": 0.45
+  },
+  "mercury_trine_pluto": {
+    "natal": "Merkür ile Plüton üçgen açıda (120°, akış): derin düşünmek sana doğal gelir. İnsanı ve konuyu çözer, anlattığında ikna edersin; sırrı iyi tutarsın. Gücün sessiz ama güçlü bir zihin; gölgesi, gücünün farkında olmayıp kullanmamak.",
+    "synastry": "Birinin Merkür'ü diğerinin Plüton'una üçgen: derin, dürüst, dönüştürücü sohbetler. Birbirinizin zihnine güvenirsiniz.",
+    "barnum": 0.5
+  },
+  "mercury_opposition_pluto": {
+    "natal": "Merkür ile Plüton karşıt açıda (180°, gerilim): düşünce ile güç iki uçta. Zihin savaşları başkalarında yaşanır; seni sorgulayan, ikna etmeye çalışan insanlar çeker. Gücün savunma ve çözümleme; gölgesi, tartışmayı güç mücadelesine çevirmek. Öğrenilen şey, kendi düşüncenin gücünü sahiplenmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Plüton'una karşıt: sohbet yoğun, bazen sorgu gibi. Biri diğerini kontrol etmek isteyebilir; dürüstlük bağı yaşatır.",
+    "barnum": 0.45
+  },
+  "mercury_conjunction_trueNode": {
+    "natal": "Merkür ile Kuzey Düğüm aynı yerde: düşüncen büyüme yönünle örtüşür. Öğrenmek, anlatmak, bağlantı kurmak seni doğru yola götürür; sözün yol açar. Gücün amaçlı bir zihin; gölgesi, konuşmayı yapmakla karıştırmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Kuzey Düğümü'nün üstünde: biri diğerine yolunu anlatır. 'Bu sohbet hayatımı değiştirdi' türünden bir bağ.",
+    "barnum": 0.5
+  },
+  "mercury_sextile_trueNode": {
+    "natal": "Merkür ile Kuzey Düğüm altmışlık açıda (60°, fırsat): düşüncen büyüme yönünü destekler. Doğru bilgi ve doğru insanlar yolunun üstüne gelir; kullanmak sana kalır. Gücün rahat bir öğrenme; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Kuzey Düğümü'ne altmışlık: sohbetler yol açar. Hafif ama işe yarar bir bağ.",
+    "barnum": 0.6
+  },
+  "mercury_square_trueNode": {
+    "natal": "Merkür ile Kuzey Düğüm kare açıda (90°, sürtünme): düşüncen ile büyüme yönün arasında sürtünme. Bildiğin şey ile öğrenmen gereken şey farklı; eski fikirler seni geri çeker. Gücün bu gerilimden çıkan farkındalık; gölgesi, tanıdık düşünceye geri dönmek. Öğrenilen şey, fikrini yeni yöne taşımak.",
+    "synastry": "Birinin Merkür'ü diğerinin Kuzey Düğümü'ne kare: biri diğerinin düşüncesini sorgular. Rahatsız edici ama öğretici.",
+    "barnum": 0.5
+  },
+  "mercury_trine_trueNode": {
+    "natal": "Merkür ile Kuzey Düğüm üçgen açıda (120°, akış): düşüncen büyüme yönünle uyumlu. Öğrendikçe kendini bulursun; anlatmak sana yol açar. Gücün doğal bir öğrenme; gölgesi, sınanmadığı için derinleşmeyen bir bilgi.",
+    "synastry": "Birinin Merkür'ü diğerinin Kuzey Düğümü'ne üçgen: sohbetler ikinizi de ilerletir. Tanışır tanışmaz konuşacak şey biter mi diye düşünmezsiniz.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_trueNode": {
+    "natal": "Merkür ile Kuzey Düğüm karşıt açıda (180°, gerilim): Merkür'ün Güney Düğüm'le birleşmesi demek. Düşünce tarzın alışık olduğun tarafta çok rahat; büyüme yönü ise tam karşıda. Gücün derin ve tanıdık bir bilgi; gölgesi, aynı fikirde kalmak. Öğrenilen şey, bilmediğini merak etmek.",
+    "synastry": "Birinin Merkür'ü diğerinin Güney Düğümü'nün üstünde: tanıdık, rahat sohbetler. Anlaşmak kolay; yeni bir şey öğrenmek çaba ister.",
+    "barnum": 0.5
+  },
+  "mercury_conjunction_chiron": {
+    "natal": "Merkür ile Chiron aynı yerde: düşüncen ve dilin yaralı şifacının yanında. Anlaşılmamak ya da sesini duyuramamak eski bir yara; bu yaradan başkasının derdini kelimeye döken bir ustalık çıkar. Gücün anlayışlı bir dil; gölgesi, kendi sözüne güvenmemek.",
+    "synastry": "Birinin Merkür'ü diğerinin Chiron'unun üstünde: biri diğerinin yarasına sözle dokunur, çoğu zaman istemeden. Şifa da kırgınlık da mümkün; nezaket belirleyici.",
+    "barnum": 0.5
+  },
+  "mercury_sextile_chiron": {
+    "natal": "Merkür ile Chiron altmışlık açıda (60°, fırsat): düşüncen yaradan öğrenmeyi destekler. Zor deneyimlerini anlatabilir, başkasının anlatamadığını söyleyebilirsin; kullanmak sana kalır. Gücün şefkatli bir dil; gölgesi, kendi derdini anlatmamak.",
+    "synastry": "Birinin Merkür'ü diğerinin Chiron'una altmışlık: konuşarak iyileşen bir bağ. Biri anlatır, öteki anlar; hafif ama derin.",
+    "barnum": 0.6
+  },
+  "mercury_square_chiron": {
+    "natal": "Merkür ile Chiron kare açıda (90°, sürtünme): düşüncen ile yaran birbirine sürter. Söylediğinin yanlış anlaşılması, sesinin duyulmaması korkusu; sonra başkalarına karşı şaşırtıcı bir anlayış. Gücün empati; gölgesi, sözünü geri çekmek. Öğrenilen şey, konuşma hakkının sana da ait olduğu.",
+    "synastry": "Birinin Merkür'ü diğerinin Chiron'una kare: biri diğerinin hassas noktasına sözle basar. Kırgınlık kolay; konuşulursa ikiniz de büyürsünüz.",
+    "barnum": 0.5
+  },
+  "mercury_trine_chiron": {
+    "natal": "Merkür ile Chiron üçgen açıda (120°, akış): yaradan öğrenmek ve anlatmak sana doğal gelir. Zor deneyimini başkasına yardım eden bir dile çevirirsin, çabasız. Gücün şefkatli bir bilgelik; gölgesi, herkesi dinlerken kendi sesini unutmak.",
+    "synastry": "Birinin Merkür'ü diğerinin Chiron'una üçgen: şifa veren sohbetler. Biri diğerinin yanında kendini anlatabilir; birlikte olmak rahatlatır.",
+    "barnum": 0.55
+  },
+  "mercury_opposition_chiron": {
+    "natal": "Merkür ile Chiron karşıt açıda (180°, gerilim): düşüncen ile yaran iki uçta. Yaranı başkasının sözünde görürsün; sana anlaşılmaya ihtiyacı olan insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi anlarken kendini anlatmamak. Öğrenilen şey, kendi sözünün de şifa olduğu.",
+    "synastry": "Birinin Merkür'ü diğerinin Chiron'una karşıt: biri dinleyen, öteki anlatan rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
+    "barnum": 0.5
+  },
+  "venus_conjunction_mars": {
+    "natal": "Venüs (sevgi) ile Mars (istek) aynı yerde: sevdiğin şeyi ister, istediğin şeyi seversin. Çekiciliğin belirgin, tutkun sıcak, ilgin doğrudan. Gücün canlı bir sevgi ve yaratıcılık; gölgesi, ilgiyi sabırsızlıkla göstermek.",
+    "synastry": "Birinin Venüs'ü diğerinin Mars'ının üstünde: klasik çekim göstergesi. Kıvılcım belirgin, ilgi karşılıklı; birlikte olmak ikinize de canlılık verir.",
+    "barnum": 0.45
+  },
+  "venus_sextile_mars": {
+    "natal": "Venüs ile Mars altmışlık açıda (60°, fırsat): sevgi ile istek birbirini destekler. Yakınlık kurmak sana zor gelmez; ilgi gösterirsin, karşılığını alırsın. Gücün sıcak ve rahat bir çekicilik; gölgesi, bu kolaylığı kıymetsiz bulmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Mars'ına altmışlık: hoş bir çekim, rahat bir uyum. Birlikte eğlenmek kolay, gerginlik nadir.",
+    "barnum": 0.6
+  },
+  "venus_square_mars": {
+    "natal": "Venüs ile Mars kare açıda (90°, sürtünme): sevgi ile istek birbirine sürter. Hoşlandığın kişiyle tartışmak, istediğin şeyi sevmemek, sevdiğin şeyi istememek. Gücün yoğun bir tutku; gölgesi, ilgiyi çatışmayla göstermek. Öğrenilen şey, sevgi ile isteğin uzlaşması.",
+    "synastry": "Birinin Venüs'ü diğerinin Mars'ına kare: güçlü çekim, güçlü sürtünme. Biri incelik, öteki hız ister; kıvılcım çok, huzur az; kurallar konuşulursa canlı bir bağ.",
+    "barnum": 0.45
+  },
+  "venus_trine_mars": {
+    "natal": "Venüs ile Mars üçgen açıda (120°, akış): sevgi ile istek aynı dili konuşur. Çekiciliğin doğal, ilgin dengeli, yakınlık kurmak kolay. Gücün sıcak ve zarif bir canlılık; gölgesi, kolay gelenin kıymetini bilmemek.",
+    "synastry": "Birinin Venüs'ü diğerinin Mars'ına üçgen: rahat ve canlı bir çekim. Birlikte olmak keyifli, uyum doğal; uzun ömürlü ilişkilerin göstergesi.",
+    "barnum": 0.55
+  },
+  "venus_opposition_mars": {
+    "natal": "Venüs ile Mars karşıt açıda (180°, gerilim): sevgi ile istek iki uçta. Çekim ile çatışma aynı ilişkide; seni hem çeken hem kızdıran insanlar. Gücün tutku ve farkındalık; gölgesi, sevgiyi kavgayla test etmek. Öğrenilen şey, iki ucu da kendi içinde barındırmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Mars'ına karşıt: çekim güçlü, gerginlik de. Biri yumuşaklık, öteki hareket ister; dengeyi bulan tutkulu bir ikili.",
+    "barnum": 0.45
+  },
+  "venus_conjunction_jupiter": {
+    "natal": "Venüs ile Jüpiter aynı yerde: sevgin cömert, zevkin geniş, kalbin büyük. Kolay sever, kolay verir, kolay affedersin; güzel şeyler sana çekilir. Gücün sıcak bir bolluk; gölgesi, ölçüyü kaçırmak, hem sevgide hem harcamada.",
+    "synastry": "Birinin Venüs'ü diğerinin Jüpiter'inin üstünde: biri diğerini şımartır, öteki büyütür. Klasik 'birlikte iyi vakit' göstergesi; cömertlik karşılıklı.",
+    "barnum": 0.55
+  },
+  "venus_sextile_jupiter": {
+    "natal": "Venüs ile Jüpiter altmışlık açıda (60°, fırsat): sevgin iyimserlikle desteklenir. İnsanlar sana iyi davranır, güzel şeyler yolunun üstüne gelir; kabul etmek sana kalır. Gücün sıcak bir neşe; gölgesi, kolay geleni derinleştirmemek.",
+    "synastry": "Birinin Venüs'ü diğerinin Jüpiter'ine altmışlık: neşeli, cömert bir uyum. Birbirinize hediye, yemek, güzel sözler; keyif çok.",
+    "barnum": 0.6
+  },
+  "venus_square_jupiter": {
+    "natal": "Venüs ile Jüpiter kare açıda (90°, sürtünme): sevgi ile genişleme birbirine sürter. Fazla söz, fazla hediye, fazla beklenti; sonra toparlama. Gücün cömert bir yürek; gölgesi, sevgiyi abartıyla ölçmek. Öğrenilen şey, azın da sevgi olabildiği.",
+    "synastry": "Birinin Venüs'ü diğerinin Jüpiter'ine kare: keyif çok, ölçü az. Biri diğerini şımartır, hesap sonra gelir; eğlenceli ama dikkat gerektiren bir ikili.",
+    "barnum": 0.5
+  },
+  "venus_trine_jupiter": {
+    "natal": "Venüs ile Jüpiter üçgen açıda (120°, akış): sevgi ile bolluk aynı dili konuşur. Sevilirsin, sevmek sana kolay gelir, güzel şeyler seni bulur. Gücün doğal bir cömertlik ve çekicilik; gölgesi, çabasız gelenin kıymetini bilmemek.",
+    "synastry": "Birinin Venüs'ü diğerinin Jüpiter'ine üçgen: bol, sıcak, neşeli bir bağ. Birbirinize iyi gelirsiniz; birlikte gülmek kolaydır.",
+    "barnum": 0.6
+  },
+  "venus_opposition_jupiter": {
+    "natal": "Venüs ile Jüpiter karşıt açıda (180°, gerilim): sevgi ile genişleme iki uçta. Başkalarında cömertliği ya da abartıyı görürsün; kendi ölçünü onlar üzerinden bulursun. Gücün büyük bir yürek; gölgesi, sevgide ölçüyü başkasına bırakmak. Öğrenilen şey, bolluğu içeride hissetmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Jüpiter'ine karşıt: biri diğerini büyütür, bazen fazla. Söz büyük, uygulama küçük; ölçüyü bulan keyifli bir ikili.",
+    "barnum": 0.5
+  },
+  "venus_conjunction_saturn": {
+    "natal": "Venüs ile Satürn aynı yerde: sevgin ciddi, ölçülü ve sadık. Kolay bağlanmazsın, bağlanınca da kolay bırakmazsın; sevgiyi sorumlulukla gösterirsin. Gücün güvenilir ve kalıcı bir bağ; gölgesi, sevilmeyi hak etmek gerektiğini sanmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Satürn'ünün üstünde: ciddi, sorumlu, uzun ömürlü bir bağ. Biri güven verir, öteki bazen soğukluk hisseder; sıcaklık için çaba gerekir.",
+    "barnum": 0.45
+  },
+  "venus_sextile_saturn": {
+    "natal": "Venüs ile Satürn altmışlık açıda (60°, fırsat): sevgin sadakatle desteklenir. Uzun süreli bağlar kurmak sana zor gelmez; kullanırsan sağlam ilişkiler kurarsın. Gücün olgun bir sevgi; gölgesi, bu sağlamlığı soğukluk sanmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Satürn'üne altmışlık: sakin, güvenilir, kalıcı. Biri diğerine sınır verir, öteki bunu güven olarak duyar.",
+    "barnum": 0.55
+  },
+  "venus_square_saturn": {
+    "natal": "Venüs ile Satürn kare açıda (90°, sürtünme): sevgi ile sınır birbirine sürter. Sevilmeyi hak etmek gerektiği hissi, yakınlıkta mesafe, sonra sağlam bir sadakat. Gücün dayanıklı bir sevgi; gölgesi, sevgiyi sınavdan geçirmek. Öğrenilen şey, sevginin kazanılmadan da verilebildiği.",
+    "synastry": "Birinin Venüs'ü diğerinin Satürn'üne kare: biri kendini yargılanmış, öteki sorumlu hisseder. Zor ama öğretici; şefkat kurulursa çok sağlam.",
+    "barnum": 0.45
+  },
+  "venus_trine_saturn": {
+    "natal": "Venüs ile Satürn üçgen açıda (120°, akış): sevgi ile sadakat aynı dili konuşur. Bağların uzun sürer, sözün tutulur, insanlar sana güvenir. Gücün sessiz ve kalıcı bir sevgi; gölgesi, heyecanı hep kontrol altında tutmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Satürn'üne üçgen: güven ve süreklilik. Uzun ömürlü ilişkilerin ve dostlukların göstergesi.",
+    "barnum": 0.55
+  },
+  "venus_opposition_saturn": {
+    "natal": "Venüs ile Satürn karşıt açıda (180°, gerilim): sevgi ile sınır iki uçta. Yakınlıkta mesafe, mesafede yakınlık ararsın; başkalarında gördüğün soğukluk kendi savunmanın aynası. Gücün olgun bir sadakat; gölgesi, sevgiyi kural ile ölçmek. Öğrenilen şey, güvenin verilerek kurulduğu.",
+    "synastry": "Birinin Venüs'ü diğerinin Satürn'üne karşıt: biri sıcaklık ister, öteki sorumlulukla cevap verir. Sınırlar açık konuşulursa sağlam, konuşulmazsa mesafeli.",
+    "barnum": 0.45
+  },
+  "venus_conjunction_uranus": {
+    "natal": "Venüs ile Uranüs aynı yerde: sevgin özgür, ani ve sıra dışı. Sıradan ilişki seni sıkar; farklı insanlar, beklenmedik başlangıçlar, ani bitişler. Gücün özgün bir çekicilik; gölgesi, yakınlığı kaçarak korumak.",
+    "synastry": "Birinin Venüs'ü diğerinin Uranüs'ünün üstünde: yıldırım çekimi. Heyecanlı, sürprizli, öngörülemez; alan tanınırsa sürer.",
+    "barnum": 0.5
+  },
+  "venus_sextile_uranus": {
+    "natal": "Venüs ile Uranüs altmışlık açıda (60°, fırsat): sevgin özgünlükle desteklenir. Farklı insanlarla kolay bağ kurarsın; ilişkide özgürlük sana doğal gelir. Gücün açık fikirli bir sevgi; gölgesi, sıkılınca bağı gevşetmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Uranüs'üne altmışlık: taze, eğlenceli, sıkılmayan bir bağ. Birbirinize alan tanırsınız.",
+    "barnum": 0.6
+  },
+  "venus_square_uranus": {
+    "natal": "Venüs ile Uranüs kare açıda (90°, sürtünme): sevgi ile özgürlük birbirine sürter. Yakınlık isteği ile kaçma isteği aynı anda; ilişkiler ani başlar, ani biter. Gücün sıra dışı bir çekicilik; gölgesi, istikrarı hapis sanmak. Öğrenilen şey, özgürlüğün yakınlıkla birlikte olabildiği.",
+    "synastry": "Birinin Venüs'ü diğerinin Uranüs'üne kare: çekim ani, kararsızlık da. Biri bağ ister, öteki alan; kurallar esnek tutulursa canlı bir bağ.",
+    "barnum": 0.5
+  },
+  "venus_trine_uranus": {
+    "natal": "Venüs ile Uranüs üçgen açıda (120°, akış): özgün bir sevgi sana doğal gelir. Farklı insanlar seni çeker, ilişkide özgürlük seni rahatlatır. Gücün rahat ve yaratıcı bir çekicilik; gölgesi, sıradan huzuru küçümsemek.",
+    "synastry": "Birinin Venüs'ü diğerinin Uranüs'üne üçgen: özgür, eğlenceli, arkadaşça bir çekim. Birbirinizi kısıtlamazsınız ve bu ikinize de iyi gelir.",
+    "barnum": 0.55
+  },
+  "venus_opposition_uranus": {
+    "natal": "Venüs ile Uranüs karşıt açıda (180°, gerilim): sevgi ile özgürlük iki uçta. Seni sarsan, uyandıran insanlar çeker; ilişkiler aniden değişir. Gücün uyanık bir sevgi; gölgesi, güvenliği kaçarak aramak. Öğrenilen şey, kalırken de özgür olabilmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Uranüs'üne karşıt: çekim ani, uzaklaşma da ani. Biri bağ ister, öteki bağımsızlık; alan tanınırsa sürer.",
+    "barnum": 0.5
+  },
+  "venus_conjunction_neptune": {
+    "natal": "Venüs ile Neptün aynı yerde: sevgin sınırsız, romantik ve şefkatli. İdeal bir sevgi hayal edersin; güzellik seni bir anda alıp götürür. Gücün derin bir romantizm ve sanat; gölgesi, gerçek insanı hayaldeki ile karıştırmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Neptün'ünün üstünde: büyülü, romantik, biraz bulanık. Biri diğerini idealize eder; gerçek insanı görmek çaba ister.",
+    "barnum": 0.55
+  },
+  "venus_sextile_neptune": {
+    "natal": "Venüs ile Neptün altmışlık açıda (60°, fırsat): sevgin sezgiyle desteklenir. Şefkat, sanat, romantizm sana kolay gelir; kullanmak sana kalır. Gücün zarif bir duyarlılık; gölgesi, hayal etmeyi yaşamakla karıştırmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Neptün'üne altmışlık: yumuşak, romantik, şefkatli bir uyum. Birlikte müzik, film, sessizlik.",
+    "barnum": 0.6
+  },
+  "venus_square_neptune": {
+    "natal": "Venüs ile Neptün kare açıda (90°, sürtünme): sevgi ile hayal birbirine sürter. İdealize etmek, hayal kırıklığı, kurtarma isteği; sonra derin bir merhamet. Gücün romantik bir sanat duyarlılığı; gölgesi, sevgide kendini kandırmak. Öğrenilen şey, gerçek insanı sevmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Neptün'üne kare: biri diğerini olduğundan farklı görür, sonra kırılır. Açık konuşma bağı kurtarır; sis dağılınca şefkat kalır.",
+    "barnum": 0.5
+  },
+  "venus_trine_neptune": {
+    "natal": "Venüs ile Neptün üçgen açıda (120°, akış): romantizm ve şefkat sana doğal gelir. Güzellik, sanat, insan halleri; sevgin yumuşak ve cömert. Gücün zarif bir duyarlılık; gölgesi, gerçeğin sert tarafından uzak durmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Neptün'üne üçgen: sözsüz, romantik, şefkatli bir bağ. Birbirinize ilham verirsiniz.",
+    "barnum": 0.6
+  },
+  "venus_opposition_neptune": {
+    "natal": "Venüs ile Neptün karşıt açıda (180°, gerilim): sevgi ile hayal iki uçta. Başkalarını idealize edersin, sonra düş kırıklığı; ya da başkaları seni yanlış görür. Gücün derin bir romantizm; gölgesi, kurtarıcı ya da kurban rolüne girmek. Öğrenilen şey, sisin içinde gerçek insanı görmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Neptün'üne karşıt: büyü ve yanılsama bir arada. Biri diğerini kurtarmak isteyebilir; netlik ve sınır bağı yaşatır.",
+    "barnum": 0.5
+  },
+  "venus_conjunction_pluto": {
+    "natal": "Venüs ile Plüton aynı yerde: sevgin yoğun, derin ve dönüştürücü. Yarım bağ tanımazsın; sevince kökten sever, kaybedince yeniden doğarsın. Gücün tutkulu bir sadakat; gölgesi, kıskançlık ve kontrol.",
+    "synastry": "Birinin Venüs'ü diğerinin Plüton'unun üstünde: yoğun, tutkulu, dönüştürücü bir çekim. Güç dengesi konuşulmazsa boğucu olabilir.",
+    "barnum": 0.45
+  },
+  "venus_sextile_pluto": {
+    "natal": "Venüs ile Plüton altmışlık açıda (60°, fırsat): sevgin derinlikle desteklenir. Yüzeysel bağ seni tatmin etmez; derin bağ kurmak sana zor gelmez. Gücün sessiz bir tutku; gölgesi, bu derinliği gizli tutmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Plüton'una altmışlık: güvene dayalı, derin bir çekim. Sırlar paylaşılır, bağ sağlamlaşır.",
+    "barnum": 0.55
+  },
+  "venus_square_pluto": {
+    "natal": "Venüs ile Plüton kare açıda (90°, sürtünme): sevgi ile güç birbirine sürter. Kıskançlık, kontrol isteği, yoğun bağlar, sonra köklü dönüşüm. Gücün tutkulu bir sadakat; gölgesi, sevgiyi güç mücadelesine çevirmek. Öğrenilen şey, bırakmanın da sevgi olduğu.",
+    "synastry": "Birinin Venüs'ü diğerinin Plüton'una kare: yoğun çekim, yoğun kıskançlık. Güven kurulursa dönüştürücü, kurulmazsa yorucu.",
+    "barnum": 0.45
+  },
+  "venus_trine_pluto": {
+    "natal": "Venüs ile Plüton üçgen açıda (120°, akış): derin sevgi sana doğal gelir. Bağların yoğun ama sağlam; zor günde sevdiğinin yanında durursun. Gücün sessiz ama güçlü bir sadakat; gölgesi, gücünün farkında olmayıp kullanmamak.",
+    "synastry": "Birinin Venüs'ü diğerinin Plüton'una üçgen: derin, tutkulu, güvenli bir bağ. Birbirinizi dönüştürürsünüz, yumuşakça.",
+    "barnum": 0.5
+  },
+  "venus_opposition_pluto": {
+    "natal": "Venüs ile Plüton karşıt açıda (180°, gerilim): sevgi ile güç iki uçta. Yoğun, kontrolcü ya da dönüştürücü insanlar çeker; onlarla sınanırsın. Gücün krizde büyüyen bir sevgi; gölgesi, güç mücadelesini ilişkide sahnelemek. Öğrenilen şey, kendi tutkunu sahiplenmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Plüton'una karşıt: yoğun çekim, yoğun çatışma. Biri diğerini kontrol etmek isteyebilir; dürüstlük ve sınır bağı yaşatır.",
+    "barnum": 0.45
+  },
+  "venus_conjunction_trueNode": {
+    "natal": "Venüs ile Kuzey Düğüm aynı yerde: sevgin büyüme yönünle örtüşür. Sevdiğin insanlar ve şeyler seni doğru yola götürür; ilişkiler senin öğretmenin. Gücün sezgisel bir çekim; gölgesi, konforu ilerleme sanmak.",
+    "synastry": "Birinin Venüs'ü diğerinin Kuzey Düğümü'nün üstünde: 'bu insanla büyüyorum' hissi. Biri diğerini sevgiyle ilerletir; anlamlı bir bağ.",
+    "barnum": 0.5
+  },
+  "venus_sextile_trueNode": {
+    "natal": "Venüs ile Kuzey Düğüm altmışlık açıda (60°, fırsat): sevgin büyüme yönünü destekler. Doğru insanlar sana iyi gelir ve yolunu açar; kabul etmek sana kalır. Gücün rahat bir çekim; gölgesi, kolay geleni yeterli görmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Kuzey Düğümü'ne altmışlık: birbirinizin yolunu güzelleştirirsiniz. Hafif, sıcak bir bağ.",
+    "barnum": 0.6
+  },
+  "venus_square_trueNode": {
+    "natal": "Venüs ile Kuzey Düğüm kare açıda (90°, sürtünme): sevgin ile büyüme yönün arasında sürtünme. Hoşlandığın şey ile gitmen gereken yer farklı; eski zevkler seni geri çeker. Gücün bu gerilimden çıkan farkındalık; gölgesi, tanıdık olana geri dönmek. Öğrenilen şey, sevgiyi yeni yöne taşımak.",
+    "synastry": "Birinin Venüs'ü diğerinin Kuzey Düğümü'ne kare: biri diğerinin zevklerini sarsar. Rahatsız edici ama öğretici.",
+    "barnum": 0.5
+  },
+  "venus_trine_trueNode": {
+    "natal": "Venüs ile Kuzey Düğüm üçgen açıda (120°, akış): sevgin büyüme yönünle uyumlu. Sevdikçe kendini bulursun; ilişkiler sana yol açar. Gücün doğal bir çekim; gölgesi, sınanmadığı için derinleşmeyen bir rahatlık.",
+    "synastry": "Birinin Venüs'ü diğerinin Kuzey Düğümü'ne üçgen: birbirinizi doğal olarak ilerletirsiniz. Tanışır tanışmaz 'seni tanıyorum' hissi.",
+    "barnum": 0.55
+  },
+  "venus_opposition_trueNode": {
+    "natal": "Venüs ile Kuzey Düğüm karşıt açıda (180°, gerilim): Venüs'ün Güney Düğüm'le birleşmesi demek. Sevgin alışık olduğun tarafta çok rahat; büyüme yönü ise tam karşıda. Gücün derin ve tanıdık bir çekim; gölgesi, aynı tür ilişkiyi tekrarlamak. Öğrenilen şey, yeni bir sevme biçimi.",
+    "synastry": "Birinin Venüs'ü diğerinin Güney Düğümü'nün üstünde: tanıdık, rahat, eski bir sevgi gibi. Güven kolay; ileri gitmek çaba ister.",
+    "barnum": 0.5
+  },
+  "venus_conjunction_chiron": {
+    "natal": "Venüs ile Chiron aynı yerde: sevgin yaralı şifacının yanında. Sevilmeye değer olup olmadığın eski bir soru; bu yaradan başkasını sevgiyle iyileştiren bir ustalık çıkar. Gücün derin bir şefkat; gölgesi, kendini sevgiye layık görmemek.",
+    "synastry": "Birinin Venüs'ü diğerinin Chiron'unun üstünde: biri diğerinin yarasına sevgiyle dokunur. Şifa da kırgınlık da mümkün; şefkat belirleyici.",
+    "barnum": 0.5
+  },
+  "venus_sextile_chiron": {
+    "natal": "Venüs ile Chiron altmışlık açıda (60°, fırsat): sevgin yaradan öğrenmeyi destekler. Zor ilişkilerin başkasını anlama kapasitene dönüşür; kullanmak sana kalır. Gücün olgun bir şefkat; gölgesi, kendi ihtiyacını ihmal etmek.",
+    "synastry": "Birinin Venüs'ü diğerinin Chiron'una altmışlık: biri diğerine iyi gelir. Sevgiyle iyileşen bir bağ; hafif ama derin.",
+    "barnum": 0.6
+  },
+  "venus_square_chiron": {
+    "natal": "Venüs ile Chiron kare açıda (90°, sürtünme): sevgin ile yaran birbirine sürter. Sevilmeyi hak etmediğin hissi, ilişkide kendini geri çekmek; sonra başkalarına karşı şaşırtıcı bir anlayış. Gücün empati; gölgesi, yarayı ilişki biçimi yapmak. Öğrenilen şey, sevilmenin kazanılmadığı.",
+    "synastry": "Birinin Venüs'ü diğerinin Chiron'una kare: biri diğerinin hassas noktasına basar. Kırgınlık kolay; konuşulursa ikiniz de büyürsünüz.",
+    "barnum": 0.5
+  },
+  "venus_trine_chiron": {
+    "natal": "Venüs ile Chiron üçgen açıda (120°, akış): yaradan öğrenmek ve sevmek sana doğal gelir. Zor deneyimini başkasına iyi gelen bir şefkate çevirirsin, çabasız. Gücün şefkatli bir olgunluk; gölgesi, herkese bakarken kendine bakmamak.",
+    "synastry": "Birinin Venüs'ü diğerinin Chiron'una üçgen: şifa veren bir sevgi. Biri diğerinin yanında iyileşir; birlikte olmak rahatlatır.",
+    "barnum": 0.55
+  },
+  "venus_opposition_chiron": {
+    "natal": "Venüs ile Chiron karşıt açıda (180°, gerilim): sevgin ile yaran iki uçta. Yaranı sevdiklerinde görürsün; sana iyileşmesi gereken insanlar çeker. Gücün derin bir anlayış; gölgesi, herkesi kurtarırken kendini görmemek. Öğrenilen şey, şifanın önce kendine ait olduğu.",
+    "synastry": "Birinin Venüs'ü diğerinin Chiron'una karşıt: biri iyileştirici, öteki yaralı rolüne girebilir. Roller esnerse derin, donarsa yorucu bir bağ.",
+    "barnum": 0.5
   }
 }
