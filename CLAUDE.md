@@ -42,7 +42,7 @@
 | Grafik | Harita çarkı elle çizilmiş SVG; paylaşım kartı Canvas → PNG | Grafik kütüphanesi yok. |
 | Depolama | `localStorage`: `yn:profiles`, `yn:settings`, `yn:cache` | Repo'da veri yok. |
 | Sunucu | Yok. Tek istisna: Cloudflare Worker (LLM proxy + cache), Adım 6 | Ücretsiz plan yeter. |
-| Test | `node --test tests/` | Ek test kütüphanesi yok. |
+| Test | `node --test` (kök `package.json` sadece `type: module` ve `test` scripti için; Node 22 dizin argümanını kabul etmiyor) | Ek test kütüphanesi yok. |
 | Yayın | GitHub Pages, `main` dalı, kök dizin | Özel alan adı v2. |
 
 Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB; WASM tembel (lazy) yüklenir, tarayıcı cache'ler; natal hesap bir kez yapılıp saklanır.
@@ -55,6 +55,7 @@ yildizname/
   style.css             tek dosya, CSS değişkenleri docs/DESIGN.md'den
   CLAUDE.md
   README.md             kısa: ne, nasıl açılır, lisans
+  package.json          sadece type: module + test scripti; bağımlılık yok, build yok
   LICENSE               GPL-3.0 (Swiss Ephemeris uyumu için zorunlu)
   docs/                 VISION, DESIGN, ENGINE, TEXTBANK, LLM, ROADMAP, REVIEW
   src/
@@ -100,7 +101,7 @@ klasör adı olduğu gibi korunur.
 
 ---
 
-## Şu an: Adım 0
+## Şu an: Adım 0 bitti, Mehmet kontrol edecek
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 
