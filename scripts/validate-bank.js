@@ -24,10 +24,10 @@ function aspectKeys() {
 }
 const text = (max) => ({ type: 'string', max });
 const SPECS = {
-  'planets-signs': { keys: cross([...BODIES, 'asc'], SIGN_KEYS), fields: { title: text(L.title), hook: text(L.hook), body: text(L.body), office: text(L.office), barnum: { type: 'barnum' } } },
-  'planets-houses': { keys: cross(BODIES, HOUSES), fields: { hook: text(L.hook), body: text(L.body), office: text(L.office), barnum: { type: 'barnum' } } },
+  'planets-signs': { keys: cross([...BODIES, 'asc'], SIGN_KEYS), fields: { title: text(L.title), hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
+  'planets-houses': { keys: cross(BODIES, HOUSES), fields: { hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
   aspects: { keys: aspectKeys(), fields: { natal: text(L.natal), synastry: text(L.synastry), barnum: { type: 'barnum' } } },
-  archetypes: { keys: SIGN_KEYS, fields: { title: text(L.title), emblem: text(L.title), lines: { type: 'lines', count: 3, max: L.archetypeLine }, meeting: text(L.office), mail: text(L.office), crisis: text(L.office), barnum: { type: 'barnum' } } },
+  archetypes: { keys: SIGN_KEYS, fields: { title: text(L.title), emblem: text(L.title), lines: { type: 'lines', count: 3, max: L.archetypeLine }, meeting: text(L.scene), mail: text(L.scene), crisis: text(L.scene), barnum: { type: 'barnum' } } },
   moon: { keys: cross(MOON_PHASE_IDS.map((p) => `phase_${p}`), SIGN_KEYS), fields: { line: text(L.line), barnum: { type: 'barnum' } } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };

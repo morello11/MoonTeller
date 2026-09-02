@@ -83,3 +83,11 @@ Yasak: 2. ve 8. evde para tavsiyesi, 4. evde aile tavsiyesi, 5. ve 7. evde iliş
 **Aspektler**
 kavuşum 0° birleşme ve yoğunluk · altmışlık 60° fırsat, çaba ister · kare 90° sürtünme ve büyüme · üçgen 120° akış, yetenek, tembelliğe açık ·
 karşıt 180° gerilim, başkası üzerinden farkındalık. Kare ve karşıt "kötü" değil "çalıştıran"; üçgen "iyi" değil "kolay".
+
+### Karar (Adım 3, Mehmet): "Ofis" çerçevesi orta yol
+- Metinlerde iş sahnesi **azınlık** (en fazla üçte bir), gündelik hayat çoğunluk: mutfak, trafik, grup sohbeti, tatil planı,
+  arkadaş masası, sabah alarmı, market kuyruğu. Bir dosyada aynı sahne tekrarlanmaz.
+- Şema alanı `office` → **`scene`** (1 cümle, "günlük hayatta nasıl görünür"). Arketip alanları `meeting/mail/crisis` kalır ama
+  "toplantı" yerine "grup içinde", "mail" yerine "mesajda" diye okunur; metinler ona göre yazılır.
+- Ürün dilinde "Ofis" → **"Ekip"** (sekme adı, başlıklar). Kod ve rota adları (`ofis`, `ofis.js`) Adım 5'te yeniden adlandırılır.
+- Özellikler değişmez: Ekip Sinastri Matrisi, Bugün Kime Bulaşma, Plan Saati Skoru (eski adı Toplantı Saati), Kozmik Ekip Rolü.

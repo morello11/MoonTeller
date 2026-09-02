@@ -7,7 +7,7 @@ import * as onboarding from './ui/pages/onboarding.js';
 import * as haritam from './ui/pages/haritam.js';
 import { tabBar, errorBox, comingSoon } from './ui/components.js';
 
-const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ofis: 'Ofis', kiyasla: 'Kıyasla', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
+const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ofis: 'Ekip', kiyasla: 'Kıyasla', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
 const DEFAULT_ROUTE = 'haritam';
 const CITIES_URL = 'data/cities-tr.json';
 

@@ -5,7 +5,7 @@ export function esc(value) {
 }
 
 const TABS = [
-  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ofis', 'Ofis'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
+  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ofis', 'Ekip'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
 ];
 
 export function tabBar(active) {
