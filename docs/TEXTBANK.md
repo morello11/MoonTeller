@@ -37,3 +37,49 @@ Uygulamanın asıl sermayesi. Hesap "çözülmüş problem"; Co-Star'ı Co-Star 
    uzunluk sınırı (hook ≤ 140, body ≤ 420 karakter), yasak kelime, çift anahtar. Geçince commit.
 3. Sıra: planets-signs → archetypes → aspects → moon → (Adım 4'te) transits, retro.
 4. Çeşitlilik: `bank.js` varyantı seed ile seçer ve son 7 günde gösterilenleri (`yn:cache`) tekrar etmez.
+
+---
+
+## Ek (Adım 3, Mehmet'in üç ölçütü)
+
+1. **Uluslararası düzeyde doğruluk.** Gezegen, burç, ev ve aspekt anlamları Batı astrolojisinin yerleşik geleneğiyle
+   uyumlu olacak; aşağıdaki tablolar kaynak. Uydurma iddia, "bilimsel" kılıf, kesin gelecek yok. Dış gezegenlerin
+   (Uranüs, Neptün, Plüton) asalet tabloları modern ve tartışmalı; metinde asalet yalnızca yedi klasik gezegen için anılır.
+2. **Basitlik ve anlaşılırlık.** Cümle başına tek fikir. Jargon ilk geçişte parantez içinde bir cümleyle açıklanır
+   ("Ay burada düşüşte sayılır (gelenekte en zor çalıştığı yer)"). Okuyan astroloji bilmiyor sayılır.
+3. **Kalite ve zenginlik.** Her kayıtta neden-sonuç var (burç + element + nitelik → davranış → ofis sahnesi). İki kayıt aynı
+   sahneyi kullanmaz. Güçlü ve zor yanı birlikte söylenir; övgü ya da suçlama tek başına yok.
+
+### Doğruluk kaynakları
+
+**Element ve nitelik**
+| | Öncü (başlatır) | Sabit (sürdürür) | Değişken (uyarlar) |
+|---|---|---|---|
+| Ateş (eylem, cesaret) | Koç | Aslan | Yay |
+| Toprak (madde, düzen) | Oğlak | Boğa | Başak |
+| Hava (fikir, ilişki) | Terazi | Kova | İkizler |
+| Su (duygu, sezgi) | Yengeç | Akrep | Balık |
+
+**Yöneticilik ve asalet (klasik yedi gezegen)**
+| Gezegen | Anlattığı | Yönettiği (evi) | Yücelme | Zararı | Düşüş |
+|---|---|---|---|---|---|
+| Güneş | kimlik, canlılık, amaç | Aslan | Koç | Kova | Terazi |
+| Ay | duygu, ihtiyaç, alışkanlık | Yengeç | Boğa | Oğlak | Akrep |
+| Merkür | düşünce, dil, öğrenme | İkizler, Başak | Başak | Yay, Balık | Balık |
+| Venüs | değer, zevk, yakınlaşma | Boğa, Terazi | Balık | Koç, Akrep | Başak |
+| Mars | eylem, istek, öfke | Koç, Akrep | Oğlak | Terazi, Boğa | Yengeç |
+| Jüpiter | genişleme, anlam, şans | Yay, Balık | Yengeç | İkizler, Başak | Oğlak |
+| Satürn | sınır, disiplin, zaman | Oğlak, Kova | Terazi | Yengeç, Aslan | Koç |
+Modern yöneticilikler: Uranüs → Kova (yenilik, kopuş), Neptün → Balık (hayal, çözülme), Plüton → Akrep (dönüşüm, güç).
+Kuzey Düğüm: gelişme yönü (burç anlatılır, asalet yok). Chiron: yara ve ustalık (burç anlatılır, asalet yok).
+Yükselen: dış görünüş, ilk izlenim, hayata giriş biçimi; burcun yöneticisi haritanın "sahibi"dir.
+
+**Evler (ofis diliyle, yasak konulara girmeden)**
+1 benlik ve görünüş · 2 kaynaklar ve değer verdiği şeyler · 3 iletişim, öğrenme, yakın çevre · 4 kök, ev, iç dünya ·
+5 yaratıcılık, oyun, sahne · 6 günlük iş, düzen, hizmet · 7 bire bir ilişki, ortaklık · 8 derinlik, dönüşüm, ortak kaynaklar ·
+9 uzaklar, anlam, yüksek öğrenme · 10 kariyer, kamu önündeki rol · 11 gruplar, arkadaşlar, ağlar · 12 geri çekilme, görünmeyen, dinlenme.
+Yasak: 2. ve 8. evde para tavsiyesi, 4. evde aile tavsiyesi, 5. ve 7. evde ilişki krizi tavsiyesi, 6. evde sağlık. Mizaç anlatılır, akıl verilmez.
+
+**Aspektler**
+kavuşum 0° birleşme ve yoğunluk · altmışlık 60° fırsat, çaba ister · kare 90° sürtünme ve büyüme · üçgen 120° akış, yetenek, tembelliğe açık ·
+karşıt 180° gerilim, başkası üzerinden farkındalık. Kare ve karşıt "kötü" değil "çalıştıran"; üçgen "iyi" değil "kolay".

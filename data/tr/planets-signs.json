@@ -1,0 +1,30 @@
+{
+  "sun_aries": {
+    "title": "Koç Güneşi",
+    "hook": "Toplantıda ilk konuşan sensin; bazen soru daha bitmeden.",
+    "body": "Güneş, haritada kim olduğunu ve neyle parladığını anlatır. Koç zodyağın ilk burcu, ateş elementinden ve öncü nitelikte: başlatmak, öne çıkmak, beklememek. Güneş burada yücelmede sayılır (gelenekte gücünü en rahat gösterdiği yerlerden biri). Sabrın kısa ama cesaretin uzun; yarım kalan iş senin değil, arkandan gelenin derdi.",
+    "office": "Yeni proje açılışında ilk el kalkan sensin; ikinci haftayı ekipteki Boğa toparlar.",
+    "barnum": 0.35
+  },
+  "moon_scorpio": {
+    "title": "Akrep Ayı",
+    "hook": "Duyguların yüzeyde değil, derinde; ama orada hepsi kayıtlı.",
+    "body": "Ay, iç dünyanı ve kendini nerede güvende hissettiğini anlatır. Akrep su elementinin en yoğun burcu, sabit nitelikte: yarım his tanımaz, ya hep ya hiç. Gelenekte Ay burada düşüşte sayılır (en zor çalıştığı yer); bu kötü değil, yoğun demek. Güvenmen zaman alır, güvenince de kolay bırakmazsın.",
+    "office": "Ofiste kimin kime kırgın olduğunu ilk sen fark edersin ve kimseye söylemezsin.",
+    "barnum": 0.4
+  },
+  "venus_virgo": {
+    "title": "Başak Venüsü",
+    "hook": "Sevgini iltifatla değil, düzelttiğin sunumla gösterirsin.",
+    "body": "Venüs neyi güzel bulduğunu ve insanlara nasıl yaklaştığını anlatır. Başak toprak elementinden, değişken nitelikte ve ayrıntının burcu: işe yarayan şey güzeldir. Venüs burada düşüşte sayılır (gelenekte en zor çalıştığı yer); büyük jest yerine küçük ve doğru dokunuş. Kusuru görürsün, ama yardım etmek için.",
+    "office": "Doğum günü pastasını sen almazsın, pastanın üstündeki yazım hatasını sen bulursun.",
+    "barnum": 0.3
+  },
+  "asc_leo": {
+    "title": "Aslan Yükselen",
+    "hook": "Odaya girince fark edilirsin; istemesen de.",
+    "body": "Yükselen, dışarıdan görünen yüzünü ve ilk izlenimi anlatır: insanların seni tanımadan önce gördüğü kapı. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcak, kararlı, sahneye alışkın. Bu burç vitrinin olunca güven verirsin; bazen kendine güvendiğinden fazla.",
+    "office": "Sunumu kim yapsın sorusu sorulmaz, herkes sana bakar.",
+    "barnum": 0.45
+  }
+}
