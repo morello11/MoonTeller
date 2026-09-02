@@ -1978,5 +1978,995 @@
     ],
     "advice": "Bugün bir karşılaşmaya açık ol.",
     "barnum": 0.7
+  },
+  "t_mars_conjunction_n_sun": {
+    "v": [
+      "Mars natal Güneş'inin üstünde: enerji yüksek, sabır düşük. Bu hafta bir şey yap, tartışma.",
+      "Cesaretin görünür, öfken de; yönünü seç.",
+      "Mars kimliğini ateşliyor: başlat, bitir, dinlen."
+    ],
+    "advice": "Bu hafta spor yap; enerji boşa gitmesin.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_sun": {
+    "v": [
+      "Mars natal Güneş'ine altmışlık: sağlıklı enerji, ölçülü cesaret.",
+      "Bu günlerde başladığın iş yürür.",
+      "'Ben yaparım' demek kolay."
+    ],
+    "advice": "Ertelediğin fiziksel işi bu hafta yap.",
+    "barnum": 0.7
+  },
+  "t_mars_square_n_sun": {
+    "v": [
+      "Mars natal Güneş'ine kare: sinir kısa, tepki hızlı; kavga çıkabilir, çıkmasın.",
+      "Enerji fazla, yön yok; spor, yürüyüş, temizlik.",
+      "Egon ile öfken aynı arabada; direksiyon sende."
+    ],
+    "advice": "Bu hafta trafikte korna çalma.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_sun": {
+    "v": [
+      "Mars natal Güneş'ine üçgen: cesaret doğal, hareket akıcı. İş bitirme haftası.",
+      "Enerjin kimliğinle uyumlu.",
+      "Hareket yormuyor, canlandırıyor."
+    ],
+    "advice": "Korktuğun şeye bu hafta başla.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_sun": {
+    "v": [
+      "Mars natal Güneş'inin karşısında: biri seni kışkırtıyor. Yem alma.",
+      "Rekabet havada; anlaşmayı dene.",
+      "Öfken başkasının yüzünde."
+    ],
+    "advice": "Sert cevabı taslakta bırak.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_moon": {
+    "v": [
+      "Mars natal Ay'ının üstünde: duygular çabuk parlıyor; koruyucu öfke günleri.",
+      "İhtiyaç ile öfke aynı yerde; spor iyi gelir.",
+      "Tepki hızlı, pişmanlık da."
+    ],
+    "advice": "İlk tepkini on saniye beklet.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_moon": {
+    "v": [
+      "Mars natal Ay'ına altmışlık: canlı, cesur, üretken günler.",
+      "Hissettiğini yapabilirsin.",
+      "Enerji sıcak ve ölçülü."
+    ],
+    "advice": "Bu hafta bir şeyi elinle yap.",
+    "barnum": 0.7
+  },
+  "t_mars_square_n_moon": {
+    "v": [
+      "Mars natal Ay'ına kare: sinir kısa, kırılganlık yüksek; küçük şeye büyük tepki.",
+      "Kavga çıkarmak kolay; çıkarma.",
+      "Öfke ile duygu sürtüyor; yürüyüşe çık."
+    ],
+    "advice": "Kimseye mesajla kızma.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_moon": {
+    "v": [
+      "Mars natal Ay'ına üçgen: cesaret sıcak, tepki dürüst.",
+      "Hissettiğini söyler, gereğini yaparsın.",
+      "Enerji canlandırıyor."
+    ],
+    "advice": "Bu hafta başla.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_moon": {
+    "v": [
+      "Mars natal Ay'ının karşısında: biri seni kızdırıyor; incinme öfkeyle örtülmesin.",
+      "Çatışma dışarıdan; sakin kalan kazanır.",
+      "Öfkenin altındaki ihtiyacı gör."
+    ],
+    "advice": "Bu hafta 'sen hep' cümlesi yok.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_mercury": {
+    "v": [
+      "Mars natal Merkür'ünün üstünde: dil keskin, karar hızlı; tartışma spor gibi.",
+      "Zihin ve eylem aynı yerde; iş bitirme günleri.",
+      "Kelime silah olmasın."
+    ],
+    "advice": "Yazdığını göndermeden bir nefes.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_mercury": {
+    "v": [
+      "Mars natal Merkür'üne altmışlık: karar ve uygulama kolay.",
+      "Plan yürür.",
+      "Zihin çevik."
+    ],
+    "advice": "Bu hafta bir işi başlat ve bitir.",
+    "barnum": 0.7
+  },
+  "t_mars_square_n_mercury": {
+    "v": [
+      "Mars natal Merkür'üne kare: söylediğin sert çıkıyor; kavga kelimeyle başlar.",
+      "Zihin hızlı, öfke hazır.",
+      "Söylemeden önce bir nefes."
+    ],
+    "advice": "Tartışmayı kazanmaya çalışma.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_mercury": {
+    "v": [
+      "Mars natal Merkür'üne üçgen: net kararlar, hızlı iş.",
+      "Düşünce ve el birlikte.",
+      "Pratik zekâ günleri."
+    ],
+    "advice": "Karar verilecekse ver.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_mercury": {
+    "v": [
+      "Mars natal Merkür'ünün karşısında: biri söylüyor, sen savaşıyorsun.",
+      "Tartışma dışarıdan; yem alma.",
+      "Haklı olmak ile anlaşmak arasında seç."
+    ],
+    "advice": "Sert cevabı taslakta bırak.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_venus": {
+    "v": [
+      "Mars natal Venüs'ünün üstünde: çekim günleri; tutku sıcak, ilgi doğrudan.",
+      "Sevgi ile istek aynı yerde.",
+      "Yakınlık cesaret istiyor; var."
+    ],
+    "advice": "İlgini göster.",
+    "barnum": 0.65
+  },
+  "t_mars_sextile_n_venus": {
+    "v": [
+      "Mars natal Venüs'üne altmışlık: hoş çekim, rahat uyum.",
+      "Eğlenmek kolay.",
+      "Enerji sevimli."
+    ],
+    "advice": "Buluşma, dans, spor: birini seç.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_venus": {
+    "v": [
+      "Mars natal Venüs'üne kare: hoşlandığınla tartışıyorsun; kıvılcım çok, huzur az.",
+      "Sevgi ile istek sürtüyor.",
+      "Kavgayı ilgi sanma."
+    ],
+    "advice": "Küs kalma, konuş.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_venus": {
+    "v": [
+      "Mars natal Venüs'üne üçgen: canlı, sıcak çekim.",
+      "Yakınlık kolay.",
+      "İlgi dengeli."
+    ],
+    "advice": "İlk adımı at.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_venus": {
+    "v": [
+      "Mars natal Venüs'ünün karşısında: çekim ve çatışma aynı anda.",
+      "Seni hem çeken hem kızdıran biri.",
+      "Sevgiyi kavgayla test etme."
+    ],
+    "advice": "Tartışmayı yarına bırak.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_mars": {
+    "v": [
+      "Mars kendi yerine döndü: iki yıllık enerji sıfırlaması. Yeni bir başlangıç için güç var.",
+      "Mars dönüşü: cesaret yüksek, sabır düşük; yön seç.",
+      "Bu haftalar 'ne için savaşıyorum' sorusunun cevabı."
+    ],
+    "advice": "Büyük bir işe bu hafta başla.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_mars": {
+    "v": [
+      "Mars natal Mars'ına altmışlık: enerji dengeli, iş akıyor.",
+      "Cesaret ölçülü.",
+      "Verimli günler."
+    ],
+    "advice": "Ertelediğin işi bitir.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_mars": {
+    "v": [
+      "Mars natal Mars'ına kare: sabırsızlık, sürtünme, kaza riski; yavaşla.",
+      "Enerji yönsüz; yönlendir.",
+      "Öfke çabuk; nefes."
+    ],
+    "advice": "Bu hafta acele etme.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_mars": {
+    "v": [
+      "Mars natal Mars'ına üçgen: enerji akıcı, cesaret doğal.",
+      "İş bitirme haftası.",
+      "Hareket kolay."
+    ],
+    "advice": "Spor ya da büyük iş: şimdi.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_mars": {
+    "v": [
+      "Mars natal Mars'ının karşısında: rekabet, çatışma, meydan okuma dışarıdan.",
+      "Biri seninle yarışıyor; yarışma.",
+      "Öfkeyi dışarıda sahneleme."
+    ],
+    "advice": "Bu hafta kavga yok.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_jupiter": {
+    "v": [
+      "Mars natal Jüpiter'inin üstünde: büyük enerji, büyük cesaret, büyük iştah.",
+      "Şans cesaretten yana; abartma.",
+      "Girişim günleri."
+    ],
+    "advice": "Bir şeye başla, ama ölçülü.",
+    "barnum": 0.65
+  },
+  "t_mars_sextile_n_jupiter": {
+    "v": [
+      "Mars natal Jüpiter'ine altmışlık: eylem iyimserlikle destekli.",
+      "Başladığın iş büyür.",
+      "Fırsat görünür."
+    ],
+    "advice": "Adımı at.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_jupiter": {
+    "v": [
+      "Mars natal Jüpiter'ine kare: fazla başlamak, fazla risk, fazla güven.",
+      "Ölçüsüzlüğü cesaret sanma.",
+      "Gücün bütçesi var."
+    ],
+    "advice": "Bu hafta bir işi bitirmeden yenisine başlama.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_jupiter": {
+    "v": [
+      "Mars natal Jüpiter'ine üçgen: girişimler yürüyor, enerji bol.",
+      "İnsanlar seni takip ediyor.",
+      "Cömert cesaret."
+    ],
+    "advice": "Büyük plan için iyi hafta.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_jupiter": {
+    "v": [
+      "Mars natal Jüpiter'inin karşısında: biri seni abartıya itiyor.",
+      "Plan büyük, sabır az.",
+      "Ölçüyü içeride bul."
+    ],
+    "advice": "'Kesinlikle' deme.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_saturn": {
+    "v": [
+      "Mars natal Satürn'ünün üstünde: gaz ve fren aynı anda; başlamak zor, bırakmak zor.",
+      "Disiplinli enerji; sabırla kurulan hız kalıcı.",
+      "Engel var, güç de var."
+    ],
+    "advice": "Bu hafta yavaş ama sürekli çalış.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_saturn": {
+    "v": [
+      "Mars natal Satürn'üne altmışlık: planlı çalışma kolay.",
+      "Sağlam sonuçlar.",
+      "Ölçülü cesaret."
+    ],
+    "advice": "Uzun işe bugün başla.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_saturn": {
+    "v": [
+      "Mars natal Satürn'üne kare: engel, gecikme, öfke; duvar sanma, kapı.",
+      "Sabırsızlık ile sınır çatışıyor.",
+      "Kendini erken yargılama."
+    ],
+    "advice": "Bu hafta kimseyle güç savaşı yok.",
+    "barnum": 0.55
+  },
+  "t_mars_trine_n_saturn": {
+    "v": [
+      "Mars natal Satürn'üne üçgen: dayanıklı, düzenli, verimli.",
+      "Başladığını bitirirsin.",
+      "Sessiz azim."
+    ],
+    "advice": "Zor işe iyi hafta.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_saturn": {
+    "v": [
+      "Mars natal Satürn'ünün karşısında: biri fren yapıyor, sen gaz.",
+      "Otoriteyle çatışma; kayıt tut.",
+      "Engel dışarıda görünüyor; içeride de bak."
+    ],
+    "advice": "İstifa mektubu yazma.",
+    "barnum": 0.55
+  },
+  "t_mars_conjunction_n_uranus": {
+    "v": [
+      "Mars natal Uranüs'ünün üstünde: ani karar, ani kopuş, elektrik.",
+      "Rutin hapis gibi; küçük bir şey boz.",
+      "Kaza riski; dikkat."
+    ],
+    "advice": "Ani karar yok, ani hareket yok.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_uranus": {
+    "v": [
+      "Mars natal Uranüs'üne altmışlık: yeni yöntem, taze enerji.",
+      "Farklı dene.",
+      "Çevik yaratıcılık."
+    ],
+    "advice": "Bir işi farklı yoldan yap.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_uranus": {
+    "v": [
+      "Mars natal Uranüs'üne kare: isyan, sabırsızlık, sinir; kopuş çözüm değil.",
+      "Enerji elektrikli; dikkat dağınık.",
+      "Yavaşla."
+    ],
+    "advice": "Bu hafta araba, bıçak, mesaj: hepsine dikkat.",
+    "barnum": 0.55
+  },
+  "t_mars_trine_n_uranus": {
+    "v": [
+      "Mars natal Uranüs'üne üçgen: özgün hareket, hızlı uyum.",
+      "Yenilik korkutmuyor.",
+      "Cesur ve rahat."
+    ],
+    "advice": "Yeni bir şey dene.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_uranus": {
+    "v": [
+      "Mars natal Uranüs'ünün karşısında: biri seni sarsıyor, çatışma ani.",
+      "Beklenmedik iptal ya da kavga; esnek ol.",
+      "Kopuşu çözüm sanma."
+    ],
+    "advice": "Plan B hazır olsun.",
+    "barnum": 0.55
+  },
+  "t_mars_conjunction_n_neptune": {
+    "v": [
+      "Mars natal Neptün'ünün üstünde: enerji dalgalı, yön sisli.",
+      "İlham varsa yorulmazsın, yoksa ertelersin.",
+      "Dolanarak varılan hedef."
+    ],
+    "advice": "Bu hafta net hedef koy.",
+    "barnum": 0.6
+  },
+  "t_mars_sextile_n_neptune": {
+    "v": [
+      "Mars natal Neptün'üne altmışlık: ilhamlı çaba, yaratıcı iş.",
+      "Yardım etmek kolay.",
+      "Sanat için iyi."
+    ],
+    "advice": "Yaratıcı bir işe zaman ayır.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_neptune": {
+    "v": [
+      "Mars natal Neptün'üne kare: yönsüz enerji, erteleme, kaçış.",
+      "Kendini kandırarak erteleme.",
+      "Hayali adıma bağla."
+    ],
+    "advice": "Bu hafta bir şeyi 'yarın' demeden yap.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_neptune": {
+    "v": [
+      "Mars natal Neptün'üne üçgen: sezgi adımı yönlendiriyor.",
+      "Yaratıcı hareket.",
+      "İlham akıyor."
+    ],
+    "advice": "Sanat, yardım, hayal: birine enerji ver.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_neptune": {
+    "v": [
+      "Mars natal Neptün'ünün karşısında: birinin niyetini yanlış okuyorsun.",
+      "Sis dışarıda; net sor.",
+      "Kurtarıcı olma."
+    ],
+    "advice": "Söze değil, davranışa bak.",
+    "barnum": 0.6
+  },
+  "t_mars_conjunction_n_pluto": {
+    "v": [
+      "Mars natal Plüton'unun üstünde: yoğun irade, güç mücadelesi.",
+      "İstediğin şey için sonuna kadar gidersin; ölçü.",
+      "Dönüştürücü enerji."
+    ],
+    "advice": "Bu hafta güç oyunu yok.",
+    "barnum": 0.55
+  },
+  "t_mars_sextile_n_pluto": {
+    "v": [
+      "Mars natal Plüton'una altmışlık: kararlı, derin enerji.",
+      "Zor işte yılmazsın.",
+      "Sessiz irade."
+    ],
+    "advice": "Zor işe girişmek için iyi.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_pluto": {
+    "v": [
+      "Mars natal Plüton'una kare: öfke derinden, kontrol isteği güçlü.",
+      "Her mücadeleyi savaşa çevirme.",
+      "Gücü bırakmak da güç."
+    ],
+    "advice": "Bu hafta masadan kalkmayı öğren.",
+    "barnum": 0.55
+  },
+  "t_mars_trine_n_pluto": {
+    "v": [
+      "Mars natal Plüton'una üçgen: derin irade, sessiz güç.",
+      "Zor durumda sakin.",
+      "Baştan başlama gücü."
+    ],
+    "advice": "Kaçtığın işi bitir.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_pluto": {
+    "v": [
+      "Mars natal Plüton'unun karşısında: güçlü, kontrolcü biriyle sınanıyorsun.",
+      "Yoğun çatışma; dürüstlük.",
+      "Kendi gücünü sahiplen."
+    ],
+    "advice": "Ültimatom verme.",
+    "barnum": 0.55
+  },
+  "t_mars_conjunction_n_asc": {
+    "v": [
+      "Mars Yükselen'inin üstünde: bu günlerde enerjik, sabırsız görünüyorsun.",
+      "Hareket vitrinde.",
+      "Öfke de görünür; dikkat."
+    ],
+    "advice": "Bu hafta ilk adımı at.",
+    "barnum": 0.65
+  },
+  "t_mars_sextile_n_asc": {
+    "v": [
+      "Mars Yükselen'ine altmışlık: canlı görünüş, girişken izlenim.",
+      "Enerji dengeli.",
+      "Cesur ama nazik."
+    ],
+    "advice": "Tanışma, görüşme: iyi.",
+    "barnum": 0.75
+  },
+  "t_mars_square_n_asc": {
+    "v": [
+      "Mars Yükselen'ine kare: sinirli görünüyorsun; belki de öylesin.",
+      "Sabırsızlık kabalık gibi durur.",
+      "Yavaşla."
+    ],
+    "advice": "Önemli görüşmeyi ertele.",
+    "barnum": 0.6
+  },
+  "t_mars_trine_n_asc": {
+    "v": [
+      "Mars Yükselen'ine üçgen: canlı, cesur, doğal.",
+      "Hareket sana yakışıyor.",
+      "Kendine güven."
+    ],
+    "advice": "Kendini göster.",
+    "barnum": 0.7
+  },
+  "t_mars_opposition_n_asc": {
+    "v": [
+      "Mars Yükselen'inin karşısında: ilişkilerde çatışma, ortaklıkta gerilim.",
+      "Mars 7. evinde: biri seni kışkırtıyor.",
+      "Yem alma."
+    ],
+    "advice": "Bu hafta ortağınla kavga etme.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_sun": {
+    "v": [
+      "Jüpiter natal Güneş'inin üstünde: on iki yılda bir gelen genişleme dönemi. Büyük düşün, kapı açık.",
+      "Bu aylar şans ve iyimserlik; 'evet' de, ölçüyle.",
+      "Kimliğin büyüyor; abartıya dikkat."
+    ],
+    "advice": "Bu dönemde bir şey iste.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_sun": {
+    "v": [
+      "Jüpiter natal Güneş'ine altmışlık: hafif bir şans dönemi; kapılar aralık.",
+      "İyimserlik gerçekçi; plan yap.",
+      "Sıcak bir moral."
+    ],
+    "advice": "Bir teklif gelirse ciddiye al.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_sun": {
+    "v": [
+      "Jüpiter natal Güneş'ine kare: abartı dönemi; fazla söz, fazla başlangıç.",
+      "Kendine güven fazla; ölçü koy.",
+      "Büyük konuşmak kolay, tutmak zor."
+    ],
+    "advice": "'Kesinlikle' yerine 'muhtemelen'.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_sun": {
+    "v": [
+      "Jüpiter natal Güneş'ine üçgen: yılın şanslı dönemi. Genişle, gül, iste.",
+      "İnsanlar sana iyi davranıyor.",
+      "Büyük resim net."
+    ],
+    "advice": "Ertelenen büyük planı bu dönem yap.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_sun": {
+    "v": [
+      "Jüpiter natal Güneş'inin karşısında: biri büyük vaat ediyor; ölçü sende.",
+      "Genişleme dışarıdan; iyi de fazla da olabilir.",
+      "Abartıya kapılma."
+    ],
+    "advice": "İmzayı bir hafta beklet.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_moon": {
+    "v": [
+      "Jüpiter natal Ay'ının üstünde: moral yüksek, kalp geniş; aylarca sürer.",
+      "Cömertlik kolay; ölçü de gerek.",
+      "Duygusal bolluk dönemi."
+    ],
+    "advice": "Bu dönemde birine iyi gel.",
+    "barnum": 0.65
+  },
+  "t_jupiter_sextile_n_moon": {
+    "v": [
+      "Jüpiter natal Ay'ına altmışlık: hafif neşe, sıcak umut.",
+      "Moral çabuk düzeliyor.",
+      "Küçük şanslar."
+    ],
+    "advice": "'Olur' de.",
+    "barnum": 0.75
+  },
+  "t_jupiter_square_n_moon": {
+    "v": [
+      "Jüpiter natal Ay'ına kare: duygusal abartı; fazla umut, fazla yemek, fazla söz.",
+      "Ölçüyü kaçırma.",
+      "İyimserliğin bütçesi var."
+    ],
+    "advice": "Bu dönem üç değil, iki.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_moon": {
+    "v": [
+      "Jüpiter natal Ay'ına üçgen: bol, sıcak, kolay bir dönem.",
+      "Güvende ve neşeli.",
+      "İyilik dönüyor."
+    ],
+    "advice": "Arkadaşları topla.",
+    "barnum": 0.7
+  },
+  "t_jupiter_opposition_n_moon": {
+    "v": [
+      "Jüpiter natal Ay'ının karşısında: biri seni şımartıyor, bazen fazla.",
+      "Duygusal ölçü başkasında; içeride bul.",
+      "Söz büyük, uygulama küçük."
+    ],
+    "advice": "Büyük plana 'düşüneyim' de.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_mercury": {
+    "v": [
+      "Jüpiter natal Merkür'ünün üstünde: büyük fikirler, öğrenme dönemi.",
+      "Öğret, öğren, anlat.",
+      "Ufuk açık, ayrıntı zayıf."
+    ],
+    "advice": "Bu dönem bir kurs al.",
+    "barnum": 0.65
+  },
+  "t_jupiter_sextile_n_mercury": {
+    "v": [
+      "Jüpiter natal Merkür'üne altmışlık: iyimser düşünce, verimli sohbet.",
+      "Fırsatı görürsün.",
+      "Zihin umutlu."
+    ],
+    "advice": "Bir şey öğren.",
+    "barnum": 0.75
+  },
+  "t_jupiter_square_n_mercury": {
+    "v": [
+      "Jüpiter natal Merkür'üne kare: fazla söz, fazla vaat, atlanan ayrıntı.",
+      "Az ama doğru söyle.",
+      "Abartı dikkat."
+    ],
+    "advice": "Sözleşmeyi iki kez oku.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_mercury": {
+    "v": [
+      "Jüpiter natal Merkür'üne üçgen: fikirler akıyor, anlatmak keyifli.",
+      "Öğrenme dönemi.",
+      "Büyük resim net."
+    ],
+    "advice": "Yeni bir konuya gir.",
+    "barnum": 0.7
+  },
+  "t_jupiter_opposition_n_mercury": {
+    "v": [
+      "Jüpiter natal Merkür'ünün karşısında: biri bütüne, sen ayrıntıya bakıyorsun.",
+      "Tartışma verimli.",
+      "Büyük vaat karşıdan."
+    ],
+    "advice": "Büyük plana 'düşüneyim'.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_venus": {
+    "v": [
+      "Jüpiter natal Venüs'ünün üstünde: keyif ve cömertlik dönemi; sevilirsin.",
+      "Bolluk hissi; ölçü de.",
+      "Güzel şeyler seni buluyor."
+    ],
+    "advice": "Bu dönem şımar ve şımart.",
+    "barnum": 0.65
+  },
+  "t_jupiter_sextile_n_venus": {
+    "v": [
+      "Jüpiter natal Venüs'üne altmışlık: neşeli uyum, hoş sürprizler.",
+      "İnsanlar cömert.",
+      "Keyif çok."
+    ],
+    "advice": "Buluşmaya git.",
+    "barnum": 0.75
+  },
+  "t_jupiter_square_n_venus": {
+    "v": [
+      "Jüpiter natal Venüs'üne kare: fazla keyif, fazla harcama, fazla beklenti.",
+      "Ölçü koy.",
+      "Hesap sonra gelir."
+    ],
+    "advice": "Büyük alışverişi beklet.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_venus": {
+    "v": [
+      "Jüpiter natal Venüs'üne üçgen: bol, sıcak, sevimli bir dönem.",
+      "Gülmek kolay.",
+      "İyilik döner."
+    ],
+    "advice": "Sevdiklerinle vakit geçir.",
+    "barnum": 0.7
+  },
+  "t_jupiter_opposition_n_venus": {
+    "v": [
+      "Jüpiter natal Venüs'ünün karşısında: biri fazla vaat ediyor, cömertlik karşıdan.",
+      "Ölçü sende.",
+      "Büyük hediye, büyük soru."
+    ],
+    "advice": "Büyük hediyeye 'düşüneyim'.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_mars": {
+    "v": [
+      "Jüpiter natal Mars'ının üstünde: büyük enerji, büyük cesaret; girişim dönemi.",
+      "Şans cesaretten yana.",
+      "Abartma."
+    ],
+    "advice": "Bir şeye başla, ölçülü.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_mars": {
+    "v": [
+      "Jüpiter natal Mars'ına altmışlık: eylem iyimserlikle destekli.",
+      "Başladığın büyür.",
+      "Fırsat görünür."
+    ],
+    "advice": "Adımı at.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_mars": {
+    "v": [
+      "Jüpiter natal Mars'ına kare: fazla başlamak, fazla risk.",
+      "Ölçüsüzlüğü cesaret sanma.",
+      "Gücün bütçesi var."
+    ],
+    "advice": "Bir işi bitirmeden yenisine başlama.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_mars": {
+    "v": [
+      "Jüpiter natal Mars'ına üçgen: girişimler yürüyor, enerji bol.",
+      "İnsanlar takip ediyor.",
+      "Cömert cesaret."
+    ],
+    "advice": "Büyük plan için iyi dönem.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_mars": {
+    "v": [
+      "Jüpiter natal Mars'ının karşısında: biri seni abartıya itiyor.",
+      "Plan büyük, sabır az.",
+      "Ölçüyü içeride bul."
+    ],
+    "advice": "'Kesinlikle' deme.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_jupiter": {
+    "v": [
+      "Jüpiter kendi yerine döndü: on iki yıllık döngü kapanıyor, yenisi açılıyor. Büyüme yılı.",
+      "Jüpiter dönüşü: geçen on iki yıla bak, sonrakini hayal et.",
+      "Şans ve genişleme dönemi; ölçüyle."
+    ],
+    "advice": "Bu yıl için bir hedef yaz.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_jupiter": {
+    "v": [
+      "Jüpiter natal Jüpiter'ine altmışlık: hafif şans, sıcak umut.",
+      "Kapılar aralık.",
+      "İyimserlik gerçekçi."
+    ],
+    "advice": "Fırsata 'evet' de.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_jupiter": {
+    "v": [
+      "Jüpiter natal Jüpiter'ine kare: büyüme sancısı; fazla, fazla, fazla.",
+      "Ölçü koy.",
+      "Abartıyı fark et."
+    ],
+    "advice": "Bir şeyi küçült.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_jupiter": {
+    "v": [
+      "Jüpiter natal Jüpiter'ine üçgen: şanslı, geniş, rahat dönem.",
+      "Büyüme kolay.",
+      "İyilik döner."
+    ],
+    "advice": "Büyük plan yap.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_jupiter": {
+    "v": [
+      "Jüpiter natal Jüpiter'inin karşısında: altı yıllık kontrol noktası; büyüdün mü, şiştin mi?",
+      "Ölçü sorusu.",
+      "Dengeyi bul."
+    ],
+    "advice": "Altı yıl önceki hedefe bak.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_saturn": {
+    "v": [
+      "Jüpiter natal Satürn'ünün üstünde: büyüme ile disiplin buluşuyor; sağlam genişleme.",
+      "Sabırla kurulan büyür.",
+      "Yapıcı dönem."
+    ],
+    "advice": "Uzun vadeli bir şey kur.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_saturn": {
+    "v": [
+      "Jüpiter natal Satürn'üne altmışlık: planlı büyüme kolay.",
+      "Kalıcı sonuçlar.",
+      "Sağduyulu umut."
+    ],
+    "advice": "Plan yap, uygula.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_saturn": {
+    "v": [
+      "Jüpiter natal Satürn'üne kare: bir adım ileri, bir geri; umut ile kaygı.",
+      "Zamanlama zor.",
+      "Sabırla büyü."
+    ],
+    "advice": "Bu dönem acele etme.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_saturn": {
+    "v": [
+      "Jüpiter natal Satürn'üne üçgen: sağlam, verimli büyüme.",
+      "Kurduğun kalır.",
+      "Olgun yapıcılık."
+    ],
+    "advice": "Uzun projeye iyi dönem.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_saturn": {
+    "v": [
+      "Jüpiter natal Satürn'ünün karşısında: genişlemek ile korumak çekişiyor.",
+      "Biri büyütmek, öteki tutmak istiyor.",
+      "Dengeyi bul."
+    ],
+    "advice": "Büyük kararı iki kez düşün.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_uranus": {
+    "v": [
+      "Jüpiter natal Uranüs'ünün üstünde: beklenmedik fırsat, ani şans.",
+      "Ufuk bir anda açılıyor.",
+      "Yeni yolu dene."
+    ],
+    "advice": "Beklenmedik teklife açık ol.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_uranus": {
+    "v": [
+      "Jüpiter natal Uranüs'üne altmışlık: taze fikir, yeni kapı.",
+      "Yeniye açıksın.",
+      "Fırsat görünür."
+    ],
+    "advice": "Bir kapıyı çal.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_uranus": {
+    "v": [
+      "Jüpiter natal Uranüs'üne kare: ani karar, fazla risk, huzursuz ufuk.",
+      "İstikrarı sıkıcılık sanma.",
+      "Yeniyi sabırla büyüt."
+    ],
+    "advice": "Ani büyük değişiklik yok.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_uranus": {
+    "v": [
+      "Jüpiter natal Uranüs'üne üçgen: yenilikçi ufuk, kolay değişim.",
+      "Fırsatı farklı yerden görürsün.",
+      "Özgün iyimserlik."
+    ],
+    "advice": "Farklı bir yol dene.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_uranus": {
+    "v": [
+      "Jüpiter natal Uranüs'ünün karşısında: seni sarsan fikirler ve insanlar.",
+      "Ufuk aniden değişiyor.",
+      "Yeniyi eskiyle birleştir."
+    ],
+    "advice": "Sarsıntıya esnek ol.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_neptune": {
+    "v": [
+      "Jüpiter natal Neptün'ünün üstünde: idealizm, büyük hayaller, derin inanç.",
+      "Gerçeği hayale feda etme.",
+      "İlhamlı dönem."
+    ],
+    "advice": "Hayali bir adıma bağla.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_neptune": {
+    "v": [
+      "Jüpiter natal Neptün'üne altmışlık: şefkatli umut, sanat, yardım.",
+      "İnanç yumuşak.",
+      "İlham yakın."
+    ],
+    "advice": "Yaratıcı bir şeye başla.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_neptune": {
+    "v": [
+      "Jüpiter natal Neptün'üne kare: fazla iyimserlik, fazla güven, düş kırıklığı riski.",
+      "Kendini kandırma.",
+      "İnancı gerçeğe bağla."
+    ],
+    "advice": "Büyük vaade inanma.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_neptune": {
+    "v": [
+      "Jüpiter natal Neptün'üne üçgen: şefkat, sanat, sezgi akıyor.",
+      "İyilik döner.",
+      "İlhamlı cömertlik."
+    ],
+    "advice": "Birine karşılıksız iyilik yap.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_neptune": {
+    "v": [
+      "Jüpiter natal Neptün'ünün karşısında: başkasının vaadine kapılma.",
+      "Kurtarıcı rolü yok.",
+      "İnanç içeride, gerçek dışarıda."
+    ],
+    "advice": "Söze değil, kanıta bak.",
+    "barnum": 0.6
+  },
+  "t_jupiter_conjunction_n_pluto": {
+    "v": [
+      "Jüpiter natal Plüton'unun üstünde: büyük hedef, derin irade, etkili dönem.",
+      "Güç için büyüme değil, büyüme için güç.",
+      "Köklü dönüşüm."
+    ],
+    "advice": "Büyük ama dürüst bir hedef koy.",
+    "barnum": 0.55
+  },
+  "t_jupiter_sextile_n_pluto": {
+    "v": [
+      "Jüpiter natal Plüton'una altmışlık: krizden büyüme, sessiz etki.",
+      "Derinlik verimli.",
+      "Güç fark edilmez ama var."
+    ],
+    "advice": "Zor konuda ilerle.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_pluto": {
+    "v": [
+      "Jüpiter natal Plüton'una kare: hırs, aşırı güven, güç mücadelesi.",
+      "Ölçü.",
+      "Büyümeyi güce feda etme."
+    ],
+    "advice": "Bu dönem güç oyunu yok.",
+    "barnum": 0.55
+  },
+  "t_jupiter_trine_n_pluto": {
+    "v": [
+      "Jüpiter natal Plüton'una üçgen: derin büyüme, sağlam etki.",
+      "Hedefe sessizce varırsın.",
+      "Güçlenme dönemi."
+    ],
+    "advice": "Büyük işe girişmek için iyi.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_pluto": {
+    "v": [
+      "Jüpiter natal Plüton'unun karşısında: güçlü biriyle sınanıyorsun.",
+      "Güç mücadelesi dışarıda.",
+      "Kendi gücünü sahiplen."
+    ],
+    "advice": "Dürüst kal.",
+    "barnum": 0.55
+  },
+  "t_jupiter_conjunction_n_asc": {
+    "v": [
+      "Jüpiter Yükselen'inin üstünde: on iki yılda bir; görünüşün ve özgüvenin büyüyor.",
+      "İnsanlar seni daha sıcak görüyor.",
+      "Yeni bir döngü başlıyor."
+    ],
+    "advice": "Bu yıl kendini tanıt.",
+    "barnum": 0.6
+  },
+  "t_jupiter_sextile_n_asc": {
+    "v": [
+      "Jüpiter Yükselen'ine altmışlık: hoş izlenim, kolay tanışma.",
+      "İyimser görünüyorsun.",
+      "Kapılar aralık."
+    ],
+    "advice": "Görüşmeye git.",
+    "barnum": 0.7
+  },
+  "t_jupiter_square_n_asc": {
+    "v": [
+      "Jüpiter Yükselen'ine kare: fazla güven, fazla söz; imaj şişiyor.",
+      "Ölçü koy.",
+      "Abartıyı fark et."
+    ],
+    "advice": "'Kesinlikle' deme.",
+    "barnum": 0.6
+  },
+  "t_jupiter_trine_n_asc": {
+    "v": [
+      "Jüpiter Yükselen'ine üçgen: doğal özgüven, sıcak izlenim.",
+      "Kolay sevilirsin.",
+      "Şanslı dönem."
+    ],
+    "advice": "Kendini göster.",
+    "barnum": 0.65
+  },
+  "t_jupiter_opposition_n_asc": {
+    "v": [
+      "Jüpiter Yükselen'inin karşısında: ilişkilerde genişleme; cömert ortaklar.",
+      "Jüpiter 7. evinde: biri seni büyütüyor.",
+      "Ortaklık dönemi."
+    ],
+    "advice": "Bir ortaklığa açık ol.",
+    "barnum": 0.6
   }
 }
