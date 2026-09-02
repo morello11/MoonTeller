@@ -26,5 +26,159 @@
     "body": "Yükselen, dışarıdan görünen yüzünü ve ilk izlenimi anlatır: insanların seni tanımadan önce gördüğü kapı. Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcak, kararlı, sahneye alışkın. Bu burç vitrinin olunca güven verirsin; bazen kendine güvendiğinden fazla.",
     "scene": "Fotoğraf çekilirken ortaya kimin geçeceği tartışılmaz.",
     "barnum": 0.45
+  },
+  "sun_taurus": {
+    "title": "Boğa Güneşi",
+    "hook": "Acele etmezsin; vardığın yerde de uzun süre kalırsın.",
+    "body": "Güneş kimliğini ve neyle canlandığını anlatır. Boğa toprak elementinden, sabit nitelikte ve Venüs'ün yönettiği burç: somut, sakin, kalıcı olanı sever. Beş duyu senin için soyut fikirden daha inandırıcıdır. Gücün istikrar; gölgesi, değişmesi gereken şeyi de tutmaya devam etmek.",
+    "scene": "Yıllardır aynı kahvaltıcıya gidersin ve menüye bakmadan sipariş verirsin.",
+    "barnum": 0.4
+  },
+  "sun_gemini": {
+    "title": "İkizler Güneşi",
+    "hook": "Bir konuyu bitirmeden ikincisini açarsın; ikisini de takip edebilirsin.",
+    "body": "Güneş kim olduğunu anlatır; İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: merak, dil, hareket. Bilgi senin için oksijendir, sohbet nefes almaktır. Gücün çabuk kavramak ve anlatmak; gölgesi, derine inmeden bir sonraki ilginç şeye geçmek.",
+    "scene": "Tek bir soru için aradığın arkadaşla kırk dakika konuşup asıl soruyu kapatırken hatırlarsın.",
+    "barnum": 0.45
+  },
+  "sun_cancer": {
+    "title": "Yengeç Güneşi",
+    "hook": "Yakınlarını korumak senin için karakter değil, refleks.",
+    "body": "Güneş kimliğini anlatır; Yengeç su elementinden, öncü nitelikte ve Ay'ın yönettiği burç: duygu, bellek, ait olma. Sevdiklerinin çevresine görünmez bir duvar örersin ve içerisini sıcak tutarsın. Gücün sadakat ve sezgi; gölgesi, incinince kabuğa çekilip haber vermemek.",
+    "scene": "Eve gelen misafir iki saat sonra elinde bir kap yemekle çıkar, sen ısrar ettin diye.",
+    "barnum": 0.5
+  },
+  "sun_leo": {
+    "title": "Aslan Güneşi",
+    "hook": "Işık senden yana düşünce şaşırmazsın; zaten oradaydın.",
+    "body": "Güneş kimliğini anlatır ve Aslan onun kendi evi: burada en rahat, en parlak halindedir. Ateş elementi, sabit nitelik: sıcak, cömert, kararlı. Görülmek istersin ama karşılığında da verirsin; övgü sana yakıt, ilgisizlik ceza gibi gelir. Gücün cesaret ve cömertlik; gölgesi, sahneyi paylaşmakta zorlanmak.",
+    "scene": "Grup fotoğrafında herkes yerini arar, sen zaten ortadasındır.",
+    "barnum": 0.4
+  },
+  "sun_virgo": {
+    "title": "Başak Güneşi",
+    "hook": "Kusuru görürsün, çünkü doğrusunu biliyorsun.",
+    "body": "Güneş kimliğini anlatır; Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: çözümleme, düzen, hizmet. İşe yarayan şey senin için güzeldir, iyi yapılmış iş de bir tür sevgi dilidir. Gücün titizlik ve fayda; gölgesi, kendine de aynı sertlikle bakıp hiç yeterli bulmamak.",
+    "scene": "Valizi sen toplarsın ve dönüşte kimsenin bir şeyi eksik çıkmaz.",
+    "barnum": 0.4
+  },
+  "sun_libra": {
+    "title": "Terazi Güneşi",
+    "hook": "Karşındakinin fikrini o söylemeden önce sen hesaba katmışsındır.",
+    "body": "Güneş kimliğini anlatır; Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: denge, adalet, ilişki. Gelenekte Güneş burada düşüşte sayılır (en zor parladığı yer): kendini başkasının aynasında görmeye eğilimlisin. Gücün diplomasi ve zevk; gölgesi, herkesi memnun ederken kendi tarafını unutmak.",
+    "scene": "Restoranda menüyü herkes seçsin diye bekler, en son sen karar verirsin.",
+    "barnum": 0.5
+  },
+  "sun_scorpio": {
+    "title": "Akrep Güneşi",
+    "hook": "Yüzeyle yetinmezsin; bir şeyin altında ne var, onu merak edersin.",
+    "body": "Güneş kimliğini anlatır; Akrep su elementinden, sabit nitelikte, geleneksel yöneticisi Mars, modern yöneticisi Plüton: yoğunluk, sır, dönüşüm. Yarım bağ kurmazsın; ya tamamen içindesindir ya da hiç. Gücün dayanıklılık ve sezgi; gölgesi, kontrolü bırakmakta ve affetmekte zorlanmak.",
+    "scene": "Bir arkadaşın telefonunu kapatıp iki gün ortadan kaybolursa sebebini sen tahmin edersin.",
+    "barnum": 0.4
+  },
+  "sun_sagittarius": {
+    "title": "Yay Güneşi",
+    "hook": "Ufuk senin için manzara değil, gidilecek yer.",
+    "body": "Güneş kimliğini anlatır; Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: anlam, uzaklar, iyimserlik. Bir soru sana bir yol demektir; yolda öğrenmek en sevdiğin öğrenme biçimidir. Gücün cesaret ve geniş bakış; gölgesi, ayrıntıyı ve verdiğin sözü küçümsemek.",
+    "scene": "Hafta sonu için plan yoktu; pazartesi başka bir şehirden mesaj atarsın.",
+    "barnum": 0.4
+  },
+  "sun_capricorn": {
+    "title": "Oğlak Güneşi",
+    "hook": "Uzun yolu seçersin, çünkü kısa yolun nereye çıktığını biliyorsun.",
+    "body": "Güneş kimliğini anlatır; Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç: hedef, disiplin, zaman. Küçük yaşta büyük gibi, ilerleyen yaşta hafifleyen bir yapın var. Gücün sabır ve sorumluluk; gölgesi, dinlenmeyi hak edilmesi gereken bir ödül sanmak.",
+    "scene": "Yılbaşı gecesi herkes dilek tutarken sen on iki aylık plan yaparsın.",
+    "barnum": 0.45
+  },
+  "sun_aquarius": {
+    "title": "Kova Güneşi",
+    "hook": "Kalabalığın içinde ayrı durursun; dışarıda değil, bir adım yanda.",
+    "body": "Güneş kimliğini anlatır; Kova hava elementinden, sabit nitelikte, geleneksel yöneticisi Satürn, modern yöneticisi Uranüs: fikir, topluluk, bağımsızlık. Gelenekte Güneş burada zararda sayılır (rahat çalışmadığı yer): kendini kişisel ışıkla değil, ortak bir amaçla tanımlarsın. Gücün özgünlük; gölgesi, yakınlığı fikirle yönetmeye çalışmak.",
+    "scene": "Herkesin izlediği diziyi üç yıl sonra izlersin ve o zaman bile kendi yorumunla.",
+    "barnum": 0.45
+  },
+  "sun_pisces": {
+    "title": "Balık Güneşi",
+    "hook": "Sınırlar senin için duvar değil, sis: geçilir, ama nerede olduğu belli olmaz.",
+    "body": "Güneş kimliğini anlatır; Balık su elementinden, değişken nitelikte, geleneksel yöneticisi Jüpiter, modern yöneticisi Neptün: hayal, şefkat, çözülme. Başkasının halini kendi halin gibi hissedersin. Gücün empati ve yaratıcılık; gölgesi, sınır koymadığın için başkasının yükünü taşırken kendininkini unutmak.",
+    "scene": "Filmde ağlayan sen değilsin, ama yanındaki ağlarken senin gözün doluyor.",
+    "barnum": 0.55
+  },
+  "moon_aries": {
+    "title": "Koç Ayı",
+    "hook": "Duygun geldiği gibi çıkar; on dakika sonra da geçmiştir.",
+    "body": "Ay iç dünyanı ve nasıl rahatladığını anlatır. Koç ateş elementinden, öncü nitelikte ve Mars'ın yönettiği burç: hızlı, dolaysız, sabırsız. Sinirlenince söylersin, söyleyince biter; kin tutacak kadar bekleyemezsin. Gücün dürüstlük ve toparlanma hızı; gölgesi, ilk tepkinin bazen fazla sert gelmesi.",
+    "scene": "Kavga ettiğin kişiye yarım saat sonra 'akşam ne yiyoruz' diye yazabilirsin.",
+    "barnum": 0.4
+  },
+  "moon_taurus": {
+    "title": "Boğa Ayı",
+    "hook": "Huzur senin için bir fikir değil, bir koltuk, bir yemek, bir alışkanlık.",
+    "body": "Ay iç dünyanı ve nasıl güvende hissettiğini anlatır. Boğa toprak elementinden, sabit nitelikte; Ay burada yücelmede sayılır (gelenekte en rahat çalıştığı yer). Duyguların yavaş değişir ve bu sana istikrar verir. Gücün sükûnet ve sadakat; gölgesi, rahatını bozan her değişikliğe önce hayır demek.",
+    "scene": "Yeni açılan yeri herkes denerken sen bildiğin yerdeki bildiğin masaya oturursun.",
+    "barnum": 0.45
+  },
+  "moon_gemini": {
+    "title": "İkizler Ayı",
+    "hook": "Ne hissettiğini anlamak için önce birine anlatman gerekir.",
+    "body": "Ay iç dünyanı anlatır; İkizler hava elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: duygu senin için konuşulan, adlandırılan bir şeydir. Ruh halin gün içinde birkaç kez değişir ve bunu sorun etmezsin. Gücün esneklik ve mizah; gölgesi, ağır bir duyguyu espriyle geçiştirmek.",
+    "scene": "Canın sıkılınca kimseyi aramazsın, üç kişiye aynı anda yazarsın.",
+    "barnum": 0.45
+  },
+  "moon_cancer": {
+    "title": "Yengeç Ayı",
+    "hook": "Bir ortama girince önce oranın havasını, sonra kim aç kim yorgun, onu okursun.",
+    "body": "Ay iç dünyanı anlatır ve Yengeç onun kendi evi: duyguları en doğal haliyle yaşadığı yer. Su elementi, öncü nitelik: bakmak, korumak, hatırlamak. Belleğin duygularla çalışır; bir koku on yıl öncesini geri getirir. Gücün şefkat ve sezgi; gölgesi, incinince geri çekilip bunu belli etmemek.",
+    "scene": "Evine gelen herkes 'aç değilim' der, yine de tabak önüne gelir.",
+    "barnum": 0.5
+  },
+  "moon_leo": {
+    "title": "Aslan Ayı",
+    "hook": "Sevildiğini hissetmen için söylenmesi yetmez, gösterilmesi gerekir.",
+    "body": "Ay iç dünyanı anlatır; Aslan ateş elementinden, sabit nitelikte ve Güneş'in yönettiği burç: sıcaklık, gurur, cömertlik. Duyguların büyük ve görünür; sevincin de kırgınlığın da odayı doldurur. Gücün yürek ve sadakat; gölgesi, takdir gelmeyince onu istemek yerine küsmek.",
+    "scene": "Doğum gününü unutan arkadaşı affedersin, ama bir yıl sonra hâlâ hatırlatırsın.",
+    "barnum": 0.45
+  },
+  "moon_virgo": {
+    "title": "Başak Ayı",
+    "hook": "Kaygını ortadan kaldırmanın yolu bir liste yapmaktır.",
+    "body": "Ay iç dünyanı anlatır; Başak toprak elementinden, değişken nitelikte ve Merkür'ün yönettiği burç: düzen, fayda, çözümleme. Sevdiğin insana 'seni seviyorum' demek yerine işini kolaylaştırırsın. Gücün ilgi ve pratiklik; gölgesi, huzursuzken herkesin küçük hatasını görmeye başlamak.",
+    "scene": "Mutfağı toplamadan uyuyamazsın; toplayınca gün bitmiş sayılır.",
+    "barnum": 0.45
+  },
+  "moon_libra": {
+    "title": "Terazi Ayı",
+    "hook": "Ortam gerginse sen rahat edemezsin; huzur senin için havadaki denge demektir.",
+    "body": "Ay iç dünyanı anlatır; Terazi hava elementinden, öncü nitelikte ve Venüs'ün yönettiği burç: uyum, estetik, karşılıklılık. Duygularını başkasıyla paylaşarak anlarsın; yalnızlık sana dinlenme değil eksiklik gibi gelir. Gücün nezaket ve adalet; gölgesi, kavga çıkmasın diye kendi rahatsızlığını yutmak.",
+    "scene": "İki arkadaşın tartışırken sen ikisine de hak verirsin ve ikisi de sana kızar.",
+    "barnum": 0.5
+  },
+  "moon_sagittarius": {
+    "title": "Yay Ayı",
+    "hook": "Daralınca çözümün her zaman aynıdır: dışarı çık, uzağa bak.",
+    "body": "Ay iç dünyanı anlatır; Yay ateş elementinden, değişken nitelikte ve Jüpiter'in yönettiği burç: iyimserlik, hareket, anlam arayışı. Duyguların büyük ve neşeli; kötü günü bile bir hikâyeye çevirirsin. Gücün umut ve içtenlik; gölgesi, zor duyguyla oturmak yerine başka bir plana kaçmak.",
+    "scene": "Moralin bozukken telefondan uçak bileti bakarsın; almasan bile iyi gelir.",
+    "barnum": 0.45
+  },
+  "moon_capricorn": {
+    "title": "Oğlak Ayı",
+    "hook": "Duyguların var; onları göstermeyi ise gereksiz bir masraf gibi görürsün.",
+    "body": "Ay iç dünyanı anlatır; Oğlak toprak elementinden, öncü nitelikte ve Satürn'ün yönettiği burç. Gelenekte Ay burada zararda sayılır (rahat çalışmadığı yer): ihtiyaç duymayı zayıflık gibi yaşarsın. Sevgini sorumluluk alarak, iş görerek gösterirsin. Gücün dayanıklılık ve güvenilirlik; gölgesi, yardım istemeyi en son çare saymak.",
+    "scene": "Hasta olunca kimseye söylemezsin; ortaya çıkınca 'önemli değil' dersin.",
+    "barnum": 0.4
+  },
+  "moon_aquarius": {
+    "title": "Kova Ayı",
+    "hook": "Bir duyguyu hissetmeden önce ona biraz uzaktan bakmayı seversin.",
+    "body": "Ay iç dünyanı anlatır; Kova hava elementinden, sabit nitelikte, yöneticileri Satürn ve Uranüs: mesafe, özgürlük, topluluk. Duyguyu düşünceye çevirince rahatlarsın; 'neden böyle hissettim' sorusu sana iyi gelir. Gücün soğukkanlılık ve dostluk; gölgesi, yakınlık isteyen birine analiz sunmak.",
+    "scene": "Arkadaşın dertleşmek için arar, sen ona üç madde halinde çözüm yazarsın.",
+    "barnum": 0.45
+  },
+  "moon_pisces": {
+    "title": "Balık Ayı",
+    "hook": "Odadaki herkesin duygusunu taşırsın; hangisi senin, sonra ayırırsın.",
+    "body": "Ay iç dünyanı anlatır; Balık su elementinden, değişken nitelikte, yöneticileri Jüpiter ve Neptün: şefkat, hayal, geçirgenlik. Duyguların sınırsız ve bulaşıcı; müzik, film, bir bakış seni bir anda başka yere götürür. Gücün merhamet ve sezgi; gölgesi, kendi ihtiyacını herkesinkinden sonraya bırakmak.",
+    "scene": "Sokakta bir kediye bakmak için beş dakika geç kalırsın ve pişman olmazsın.",
+    "barnum": 0.55
   }
 }
