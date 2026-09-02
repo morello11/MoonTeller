@@ -1,0 +1,42 @@
+[
+  {
+    "name": "B (uydurma: 2003-07-20 06:05 Antalya)",
+    "date": "2003-07-20",
+    "time": "06:05",
+    "tz": "Europe/Istanbul",
+    "lat": 36.8833,
+    "lon": 30.7,
+    "houseSystem": "P",
+    "source": "astro.com Extended Chart Selection, Placidus, true node, 2026-09-02",
+    "expected": {
+      "sun": 117.0175,
+      "moon": 14.17278,
+      "mercury": 132.67139,
+      "venus": 108.86472,
+      "mars": 339.57389,
+      "jupiter": 141.76889,
+      "saturn": 95.92028,
+      "uranus": 332.13111,
+      "neptune": 312.20167,
+      "pluto": 257.63639,
+      "trueNode": 57.55472,
+      "chiron": 284.465,
+      "asc": 118.56722,
+      "mc": 15.6775,
+      "cusps": [
+        118.56722,
+        139.7075,
+        164.74306,
+        195.6775,
+        231.61472,
+        267.32083,
+        298.56722,
+        319.7075,
+        344.74306,
+        15.6775,
+        51.61472,
+        87.32083
+      ]
+    }
+  }
+]
