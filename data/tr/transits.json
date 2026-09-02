@@ -493,5 +493,500 @@
     ],
     "advice": "Bugün bir karşılaşma önemli; dinle, sonra konuş.",
     "barnum": 0.6
+  },
+  "t_moon_conjunction_n_sun": {
+    "v": [
+      "Ay natal Güneş'inin üstünde: bugün kendini olduğun gibi hissediyorsun. Aylık 'ben' günü.",
+      "Duygular kimliğinle buluştu; bugün ne istediğin belli.",
+      "Ay Güneş'ini ziyaret ediyor: birkaç saatlik bir bütünlük, tadını çıkar."
+    ],
+    "advice": "Bugün kendine bir şey ısmarla.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_sun": {
+    "v": [
+      "Ay natal Güneş'ine altmışlık: hafif, sakin, uyumlu birkaç saat.",
+      "Bugün ruh halin kimliğinle barışık; küçük işler akar.",
+      "Duygu ile irade bugün aynı tarafta."
+    ],
+    "advice": "Bugün bir arkadaşa iyi bir haber ver.",
+    "barnum": 0.75
+  },
+  "t_moon_square_n_sun": {
+    "v": [
+      "Ay natal Güneş'ine kare: küçük bir huzursuzluk, sebepsiz gibi. Sebep Ay.",
+      "Bugün istediğinle hissettiğin birkaç saat ayrı düşüyor; sabah geçer.",
+      "Ruh halin kimliğine sürtünüyor; kimseyle kavga etme, geçici."
+    ],
+    "advice": "Bugün alınganlığı yarına bırakma, yarın zaten olmayacak.",
+    "barnum": 0.65
+  },
+  "t_moon_trine_n_sun": {
+    "v": [
+      "Ay natal Güneş'ine üçgen: rahat, sıcak, akıcı bir gün. Kendini iyi hissetmek kolay.",
+      "Bugün duyguların kimliğini destekliyor; karar vermek hafif.",
+      "Ay iyi bir yerden bakıyor; gün yumuşak."
+    ],
+    "advice": "Bugün bir planı 'evet' ile kapat.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_sun": {
+    "v": [
+      "Ay natal Güneş'inin karşısında: bugün biriyle aynı fikirde olmak zor; ihtiyaç ve istek ayrı.",
+      "Aylık dolunay hissi: duygular yüksek, netlik düşük.",
+      "Bugün kendini başkasında görüyorsun; gördüğün her şey doğru değil."
+    ],
+    "advice": "Bugün büyük konuşma yok; yarın daha net.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_moon": {
+    "v": [
+      "Ay natal Ay'ının üstünde: aylık duygusal sıfırlanma. Bugün ihtiyaçların net.",
+      "Ay evine döndü: ne hissettiğini bugün rahat söylersin.",
+      "Duygusal ay dönümü: içeriye bak, dışarıyı bekletebilirsin."
+    ],
+    "advice": "Bugün sana iyi gelen şeyi yap, gerekçe arama.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_moon": {
+    "v": [
+      "Ay natal Ay'ına altmışlık: yumuşak bir gün, ruh hali dengede.",
+      "Bugün kendine bakmak kolay; alışkanlıklar iyi çalışıyor.",
+      "Duygular hafif akıyor; kimse yorulmuyor."
+    ],
+    "advice": "Bugün erken yat; yarın teşekkür edersin.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_moon": {
+    "v": [
+      "Ay natal Ay'ına kare: aylık gerginlik noktası. Duygular biraz ters.",
+      "Bugün alışkanlıkların bozuluyor gibi; küçük şeyler büyük geliyor.",
+      "Ruh hali dalgalı; birkaç saatlik mesele."
+    ],
+    "advice": "Bugün kimseyi 'seni anlamıyorum' diye suçlama; Ay anlamıyor.",
+    "barnum": 0.65
+  },
+  "t_moon_trine_n_moon": {
+    "v": [
+      "Ay natal Ay'ına üçgen: aylık huzur günü. İçin rahat, dışın sakin.",
+      "Bugün kendini evinde hissediyorsun, nerede olursan ol.",
+      "Duygular akıyor, ihtiyaçlar karşılanıyor; iyi gün."
+    ],
+    "advice": "Bugün eski bir arkadaşı ara.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_moon": {
+    "v": [
+      "Ay natal Ay'ının karşısında: biri senin ihtiyacını görmüyor, ya da sen onunkini.",
+      "Bugün duygular karşıdan yansıyor; ayna çarpık olabilir.",
+      "Aylık duygusal dolunay: kırılganlık normal, dramatize etme."
+    ],
+    "advice": "Bugün 'sen hep' cümlesini kurma.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_mercury": {
+    "v": [
+      "Ay natal Merkür'ünün üstünde: hissettiğini anlatmak bugün kolay. Konuş.",
+      "Duygu ve dil bugün aynı yerde; içini dökmek iyi gelir.",
+      "Ay Merkür'ünü ziyaret ediyor: mesajların bugün sıcak çıkar."
+    ],
+    "advice": "Bugün ertelediğin 'nasılsın' mesajını at.",
+    "barnum": 0.7
+  },
+  "t_moon_sextile_n_mercury": {
+    "v": [
+      "Ay natal Merkür'üne altmışlık: sohbet akıyor, anlaşmak kolay.",
+      "Bugün düşünmek ve hissetmek birbirini yormuyor.",
+      "Zihin sakin, dil yumuşak; küçük planlar için iyi."
+    ],
+    "advice": "Bugün bir şeyi yazarak netleştir.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_mercury": {
+    "v": [
+      "Ay natal Merkür'üne kare: yanlış anlaşılma saati. Kısa mesaj, uzun sabır.",
+      "Bugün hissettiğinle söylediğin tutmuyor; yazmadan önce oku.",
+      "Zihin ile duygu birkaç saat çekişiyor; kararı sonraya bırak."
+    ],
+    "advice": "Bugün grup sohbetinde tartışmaya girme.",
+    "barnum": 0.65
+  },
+  "t_moon_trine_n_mercury": {
+    "v": [
+      "Ay natal Merkür'üne üçgen: anlatmak ve anlaşılmak bugün kolay.",
+      "Bugün doğru kelime ağzına geliyor; kullan.",
+      "Duygusal zekâ yüksek; birini dinlemek için iyi gün."
+    ],
+    "advice": "Bugün zor bir konuşmayı yumuşak açabilirsin.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_mercury": {
+    "v": [
+      "Ay natal Merkür'ünün karşısında: biri 'anlamıyorsun' diyor; belki haklı.",
+      "Bugün mantığın ile karşındakinin duygusu ayrı düşüyor; köprü kur.",
+      "Konuşmalar bugün iki dilde; çevirmen ol."
+    ],
+    "advice": "Bugün karşı tarafın cümlesini tekrar et, sonra cevap ver.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_venus": {
+    "v": [
+      "Ay natal Venüs'ünün üstünde: sevecen bir gün. İlgi göster, ilgi gör.",
+      "Duygular ve sevgi bugün aynı yerde; yumuşak, hoş.",
+      "Ay Venüs'ünü ziyaret ediyor: güzel bir şey yemek, güzel biriyle konuşmak."
+    ],
+    "advice": "Bugün birine küçük bir hediye ver.",
+    "barnum": 0.7
+  },
+  "t_moon_sextile_n_venus": {
+    "v": [
+      "Ay natal Venüs'üne altmışlık: hafif keyif, hoş sohbet.",
+      "Bugün insanlar sana yumuşak; sen de onlara.",
+      "Küçük zevkler bugün iyi geliyor."
+    ],
+    "advice": "Bugün akşam planını iptal etme.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_venus": {
+    "v": [
+      "Ay natal Venüs'üne kare: ilgi bekliyorsun, gelmiyor gibi. Geçici.",
+      "Bugün beğenilme isteği biraz fazla; kendine iyi davran.",
+      "Zevk ve ihtiyaç bugün ayrı; fazla yeme, fazla alma."
+    ],
+    "advice": "Bugün sepeti yarına bırak.",
+    "barnum": 0.65
+  },
+  "t_moon_trine_n_venus": {
+    "v": [
+      "Ay natal Venüs'üne üçgen: sıcak, hoş, sevimli bir gün.",
+      "Bugün sevmek ve sevilmek kolay; tadını çıkar.",
+      "İlişkiler yumuşak; kırgınlık çözülmeye açık."
+    ],
+    "advice": "Bugün bir buluşma ayarla.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_venus": {
+    "v": [
+      "Ay natal Venüs'ünün karşısında: bir ilişkide ihtiyaç ile zevk bugün tartışılıyor.",
+      "Bugün karşındaki senin tarzını sorguluyor gibi; sorgulamıyor, Ay öyle gösteriyor.",
+      "Sevgi bugün karşıdan bakıyor; nazik ol."
+    ],
+    "advice": "Bugün 'sen ne istersen' deme, ne istediğini söyle.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_mars": {
+    "v": [
+      "Ay natal Mars'ının üstünde: duygular çabuk parlıyor. Enerji var, sabır yok.",
+      "Bugün öfke ve ihtiyaç aynı yerde; spor iyi gelir.",
+      "Ay Mars'ını ziyaret ediyor: tepki hızlı, pişmanlık da."
+    ],
+    "advice": "Bugün ilk tepkini on saniye beklet.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_mars": {
+    "v": [
+      "Ay natal Mars'ına altmışlık: canlı, cesur, üretken birkaç saat.",
+      "Bugün harekete geçmek kolay; bir işi bitir.",
+      "Enerji sıcak ve ölçülü; iyi gün."
+    ],
+    "advice": "Bugün ertelediğin fiziksel işi yap.",
+    "barnum": 0.75
+  },
+  "t_moon_square_n_mars": {
+    "v": [
+      "Ay natal Mars'ına kare: sinir kısa. Küçük şeye büyük tepki riski.",
+      "Bugün kavga çıkarmak kolay; çıkarma.",
+      "Öfke ve duygu birbirine sürtüyor; yürüyüşe çık."
+    ],
+    "advice": "Bugün kimseye mesajla kızma.",
+    "barnum": 0.65
+  },
+  "t_moon_trine_n_mars": {
+    "v": [
+      "Ay natal Mars'ına üçgen: cesaret sıcak, hareket akıcı.",
+      "Bugün hissettiğini söyler ve gereğini yaparsın; iyi.",
+      "Enerji yormuyor, canlandırıyor."
+    ],
+    "advice": "Bugün başlamaktan korktuğun şeye başla.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_mars": {
+    "v": [
+      "Ay natal Mars'ının karşısında: biri seni kızdırıyor. Yem alma.",
+      "Bugün çatışma dışarıdan geliyor; sakin kalan kazanır.",
+      "Öfke başkasının yüzünde; senin de olabilir."
+    ],
+    "advice": "Bugün sert cevabı taslakta bırak.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_jupiter": {
+    "v": [
+      "Ay natal Jüpiter'inin üstünde: moral yüksek, kalp geniş. İyi gün.",
+      "Bugün cömertlik kolay; ver, gelir.",
+      "Ay Jüpiter'ini ziyaret ediyor: iyimserlik havada."
+    ],
+    "advice": "Bugün bir şey iste; ton iyi.",
+    "barnum": 0.7
+  },
+  "t_moon_sextile_n_jupiter": {
+    "v": [
+      "Ay natal Jüpiter'ine altmışlık: hafif bir neşe, sıcak bir umut.",
+      "Bugün moralin çabuk düzeliyor.",
+      "Küçük şanslar günü."
+    ],
+    "advice": "Bugün 'olur' de.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_jupiter": {
+    "v": [
+      "Ay natal Jüpiter'ine kare: bugün abartı eğilimi. Fazla yemek, fazla söz.",
+      "Duygular büyük, ölçü küçük; dikkat.",
+      "Bugün 'hepsini yaparım' deme."
+    ],
+    "advice": "Bugün üç porsiyon değil, iki.",
+    "barnum": 0.7
+  },
+  "t_moon_trine_n_jupiter": {
+    "v": [
+      "Ay natal Jüpiter'ine üçgen: bol, sıcak, neşeli bir gün.",
+      "Bugün insanlar sana iyi geliyor, sen de onlara.",
+      "Moral yüksek, sebep aramana gerek yok."
+    ],
+    "advice": "Bugün bir arkadaşı yemeğe çağır.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_jupiter": {
+    "v": [
+      "Ay natal Jüpiter'inin karşısında: biri abartıyor, ya da sen. Ölçü.",
+      "Bugün büyük vaat karşıdan geliyor; güzel ama bekle.",
+      "Cömertlik bugün başkasında; kabul et, hesabı sonra."
+    ],
+    "advice": "Bugün büyük plana 'düşüneyim' de.",
+    "barnum": 0.65
+  },
+  "t_moon_conjunction_n_saturn": {
+    "v": [
+      "Ay natal Satürn'ünün üstünde: ağır bir gün. Sorumluluk hissi, biraz yalnızlık.",
+      "Bugün duygular ciddi; kendine sert olma.",
+      "Ay Satürn'ünü ziyaret ediyor: iş biter, keyif bekler."
+    ],
+    "advice": "Bugün bir işi bitir; yarın hafifler.",
+    "barnum": 0.6
+  },
+  "t_moon_sextile_n_saturn": {
+    "v": [
+      "Ay natal Satürn'üne altmışlık: sakin, düzenli, güvenilir bir gün.",
+      "Bugün sabır kolay; plan yap.",
+      "Duygular dengede, ayaklar yerde."
+    ],
+    "advice": "Bugün takvimi düzenle.",
+    "barnum": 0.75
+  },
+  "t_moon_square_n_saturn": {
+    "v": [
+      "Ay natal Satürn'üne kare: 'yetmiyorum' hissi. Yalan, Ay söylüyor.",
+      "Bugün moral düşük, öz eleştiri yüksek; geçici.",
+      "Duygular kısıtlı hissediyor; birkaç saat."
+    ],
+    "advice": "Bugün kendine puan verme.",
+    "barnum": 0.6
+  },
+  "t_moon_trine_n_saturn": {
+    "v": [
+      "Ay natal Satürn'üne üçgen: sağlam, olgun, sakin bir gün.",
+      "Bugün ciddi konu için iyi zaman; sakin kalırsın.",
+      "Duygular yerinde, düzen rahat."
+    ],
+    "advice": "Bugün ertelediğin ciddi konuşmayı yap.",
+    "barnum": 0.7
+  },
+  "t_moon_opposition_n_saturn": {
+    "v": [
+      "Ay natal Satürn'ünün karşısında: biri fren yapıyor, sen sıcaklık istiyorsun.",
+      "Bugün mesafe dışarıdan geliyor; kişisel alma.",
+      "Otorite figürü bugün soğuk görünüyor; gerçekten soğuk olmayabilir."
+    ],
+    "advice": "Bugün istifa mektubu yazma.",
+    "barnum": 0.6
+  },
+  "t_moon_conjunction_n_uranus": {
+    "v": [
+      "Ay natal Uranüs'ünün üstünde: ruh hali ani değişiyor. Sürpriz günü.",
+      "Bugün özgürlük isteği yüksek; rutini boz, küçük olsun.",
+      "Ay Uranüs'ünü ziyaret ediyor: beklenmedik bir mesaj."
+    ],
+    "advice": "Bugün başka yoldan eve dön.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_uranus": {
+    "v": [
+      "Ay natal Uranüs'üne altmışlık: taze bir fikir, hafif bir heyecan.",
+      "Bugün yeni bir şey denemek kolay.",
+      "Sıkılmadan geçen bir gün."
+    ],
+    "advice": "Bugün hiç gitmediğin yerde yemek ye.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_uranus": {
+    "v": [
+      "Ay natal Uranüs'üne kare: huzursuzluk, sinirlilik, ani karar isteği.",
+      "Bugün her şeyi değiştirmek istersin; bekle.",
+      "Duygular elektrikli; teknoloji de huysuz olabilir."
+    ],
+    "advice": "Bugün ani karar yok.",
+    "barnum": 0.6
+  },
+  "t_moon_trine_n_uranus": {
+    "v": [
+      "Ay natal Uranüs'üne üçgen: özgür, hafif, yaratıcı bir gün.",
+      "Bugün farklı olmak rahat.",
+      "Yenilik huzur veriyor."
+    ],
+    "advice": "Bugün bir şeyi farklı yap.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_uranus": {
+    "v": [
+      "Ay natal Uranüs'ünün karşısında: biri planı bozuyor. Esnek ol.",
+      "Bugün beklenmedik bir iptal ya da beklenmedik bir davet.",
+      "Değişim dışarıdan geliyor; direnme."
+    ],
+    "advice": "Bugün plan B'yi hazır tut.",
+    "barnum": 0.6
+  },
+  "t_moon_conjunction_n_neptune": {
+    "v": [
+      "Ay natal Neptün'ünün üstünde: hassas, hayalci, biraz sisli bir gün.",
+      "Bugün sezgi güçlü, sınır zayıf; dinlen.",
+      "Ay Neptün'ünü ziyaret ediyor: müzik, film, sessizlik."
+    ],
+    "advice": "Bugün karar verme, hisset.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_neptune": {
+    "v": [
+      "Ay natal Neptün'üne altmışlık: yumuşak, şefkatli bir gün.",
+      "Bugün empati kolay; birini dinle.",
+      "İlham yakın."
+    ],
+    "advice": "Bugün bir şarkı dinle, iki kere.",
+    "barnum": 0.8
+  },
+  "t_moon_square_n_neptune": {
+    "v": [
+      "Ay natal Neptün'üne kare: sis günü. Ne hissettiğin bulanık.",
+      "Bugün kolay incinirsin, kolay kanarsın; yavaş.",
+      "Enerji düşük, hayal yüksek; dinlen."
+    ],
+    "advice": "Bugün önemli karar yok.",
+    "barnum": 0.6
+  },
+  "t_moon_trine_n_neptune": {
+    "v": [
+      "Ay natal Neptün'üne üçgen: şefkat, ilham, hafif bir büyü.",
+      "Bugün sezgin haklı; dinle.",
+      "Hayal gücü açık; yaratıcı ol."
+    ],
+    "advice": "Bugün bir şey yarat, küçük olsun.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_neptune": {
+    "v": [
+      "Ay natal Neptün'ünün karşısında: biri seni olduğundan farklı görüyor.",
+      "Bugün yanılsama başkasında; net sor.",
+      "İdealize etme günü; gerçek insanı gör."
+    ],
+    "advice": "Bugün sözü değil, davranışı izle.",
+    "barnum": 0.6
+  },
+  "t_moon_conjunction_n_pluto": {
+    "v": [
+      "Ay natal Plüton'unun üstünde: yoğun bir duygu günü. Derin, sessiz.",
+      "Bugün bir şey bitiyor gibi; bırak, hafifle.",
+      "Ay Plüton'unu ziyaret ediyor: kontrolü bırakmak bugün ders."
+    ],
+    "advice": "Bugün eski bir şeyi at.",
+    "barnum": 0.6
+  },
+  "t_moon_sextile_n_pluto": {
+    "v": [
+      "Ay natal Plüton'una altmışlık: sessiz bir güç, derin bir sakinlik.",
+      "Bugün krizde sakinsin.",
+      "Derinlik rahat; yüzeysel sohbet sıkabilir."
+    ],
+    "advice": "Bugün derin bir konuşma yap.",
+    "barnum": 0.75
+  },
+  "t_moon_square_n_pluto": {
+    "v": [
+      "Ay natal Plüton'una kare: kıskançlık, kontrol isteği, yoğun duygu. Geçici.",
+      "Bugün her şeyi kriz sanma.",
+      "Duygular derinden geliyor; nefes al."
+    ],
+    "advice": "Bugün güç savaşına girme.",
+    "barnum": 0.6
+  },
+  "t_moon_trine_n_pluto": {
+    "v": [
+      "Ay natal Plüton'una üçgen: derin, sağlam, sakin bir gün.",
+      "Bugün iraden akıyor.",
+      "Duygular güçlü ama dengede."
+    ],
+    "advice": "Bugün kaçtığın işi bitir.",
+    "barnum": 0.7
+  },
+  "t_moon_opposition_n_pluto": {
+    "v": [
+      "Ay natal Plüton'unun karşısında: biri kontrol etmek istiyor. Sen de olabilirsin.",
+      "Bugün güç dengesi sınanıyor; dürüstlük kazanır.",
+      "Yoğun bir karşılaşma; derin ama yorucu."
+    ],
+    "advice": "Bugün ültimatom verme.",
+    "barnum": 0.6
+  },
+  "t_moon_conjunction_n_asc": {
+    "v": [
+      "Ay Yükselen'inin üstünde: bugün duyguların yüzünden okunuyor.",
+      "Ruh halin görünür; saklamaya çalışma.",
+      "Ay 1. evinde: kendine bak, dünya bekler."
+    ],
+    "advice": "Bugün 'iyiyim' yerine gerçeği söyle.",
+    "barnum": 0.65
+  },
+  "t_moon_sextile_n_asc": {
+    "v": [
+      "Ay Yükselen'ine altmışlık: rahat bir görünüş, hoş bir ilk izlenim.",
+      "Bugün insanlar seni yumuşak buluyor.",
+      "Duygular ve görünüş uyumlu."
+    ],
+    "advice": "Bugün tanışma için iyi.",
+    "barnum": 0.75
+  },
+  "t_moon_square_n_asc": {
+    "v": [
+      "Ay Yükselen'ine kare: bugün göründüğün gibi hissetmiyorsun.",
+      "Duygular imajınla çekişiyor; rol yapma.",
+      "Bugün yanlış okunabilirsin; açıkla."
+    ],
+    "advice": "Bugün önemli görüşmeyi kısa tut.",
+    "barnum": 0.6
+  },
+  "t_moon_trine_n_asc": {
+    "v": [
+      "Ay Yükselen'ine üçgen: doğal, rahat bir gün.",
+      "Bugün göründüğün gibi hissediyorsun.",
+      "Duygular ve görünüş aynı dilde."
+    ],
+    "advice": "Bugün kendini tanıt.",
+    "barnum": 0.75
+  },
+  "t_moon_opposition_n_asc": {
+    "v": [
+      "Ay Yükselen'inin karşısında: bugün ilişkiler ön planda, duygular karşıdan.",
+      "Ay 7. evinde: biri senin aynan.",
+      "Bugün kendini başkasında görüyorsun."
+    ],
+    "advice": "Bugün bir karşılaşmayı dinle.",
+    "barnum": 0.65
   }
 }

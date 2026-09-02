@@ -1,20 +1,146 @@
 {
-  "mercury_start": { "v": ["Merkür bugün geri dönüyor: mesajları iki kez oku, bir kez gönder.", "Merkür retrosu başladı; yanlış anlaşılmalar sezonu açıldı, sakin ol.", "Bugünden itibaren Merkür geri gidiyor: yedek al, sonra yedek aldığını kontrol et."], "barnum": 0.7 },
-  "mercury_mid": { "v": ["Retronun ortasındayız: eski bir mesaj, eski bir arkadaş, eski bir dosya geri gelebilir.", "Merkür hâlâ geri gidiyor; bugün gözden geçirme günü, başlatma günü değil.", "Retro tam ortada: unuttuğun bir şeyi hatırlarsın, ya da hatırlatılırsın."], "barnum": 0.75 },
-  "mercury_end": { "v": ["Merkür bugün ileri dönüyor: ertelediğin cevabı artık verebilirsin.", "Retro bitti; iletişim yavaş yavaş normale döner, hemen değil.", "Merkür düz gidiyor: kaybolan mesajlar bulunur, planlar yeniden yürür."], "barnum": 0.7 },
-  "mercury_shadow_pre": { "v": ["Merkür gölgeye girdi: retro henüz başlamadı ama konusu belli oldu; bugün konuşulan, sonra tekrar konuşulur.", "Gölge dönemi: retro yakın, şimdiden yavaşla, önemli şeyi yazılı yap.", "Merkür ön gölgede: yeni bir şeye başlayacaksan bu hafta başla, sonrası tekrar."], "barnum": 0.75 },
-  "mercury_shadow_post": { "v": ["Merkür gölgeden çıkıyor: retroda açılan konular bugünlerde kapanır.", "Son gölge: retroda öğrenilen ders artık uygulanabilir.", "Merkür başladığı noktayı geçti; döngü kapandı, ileri bak."], "barnum": 0.75 },
-  "mercury_countdown": { "v": ["Merkür retrosuna {days} gün var: büyük mesajı, büyük deploy'u bugün at.", "{days} gün sonra Merkür geri dönüyor; ertelenenler listesini şimdi bitir.", "Retroya {days} gün: sözleşme, bilet, önemli konuşma; hepsi şimdi daha rahat."], "barnum": 0.7 },
-  "venus_start": { "v": ["Venüs geri dönüyor: eski bir hoşlantı, eski bir zevk, eski bir kırgınlık geri gelebilir.", "Venüs retrosu başladı; yeni bir bağ kurmak için değil, eskisini anlamak için iyi zaman.", "Bugünden itibaren Venüs geri gidiyor: alışverişte ve gönül işinde acele etme."], "barnum": 0.7 },
-  "venus_mid": { "v": ["Venüs retrosunun ortası: sevdiğin şeyleri yeniden değerlendiriyorsun.", "Venüs hâlâ geri gidiyor; eski bir ilişki ya da eski bir tarz gündemde.", "Retro ortada: neyi gerçekten sevdiğin sorusu bugün daha net."], "barnum": 0.75 },
-  "venus_end": { "v": ["Venüs ileri dönüyor: değer verdiğin şeyler yeniden yerine oturuyor.", "Venüs retrosu bitti; ertelenen buluşma artık olabilir.", "Venüs düz gidiyor: zevkler netleşti, gönül işleri hafifledi."], "barnum": 0.7 },
-  "venus_shadow_pre": { "v": ["Venüs gölgeye girdi: ilişkilerde ve zevklerde retro konusu şimdiden beliriyor.", "Ön gölge: büyük bir alışverişi ya da büyük bir itirafı erteleyebilirsin.", "Venüs ön gölgede: bugün beğendiğin şeyi retro sonrası tekrar tartacaksın."], "barnum": 0.75 },
-  "venus_shadow_post": { "v": ["Venüs gölgeden çıkıyor: retroda sorgulanan bağ ya sağlamlaştı ya bitti.", "Son gölge: değer sorusu cevabını buldu, artık uygula.", "Venüs başladığı noktayı geçti; gönül döngüsü kapandı."], "barnum": 0.75 },
-  "venus_countdown": { "v": ["Venüs retrosuna {days} gün var: yeni bir başlangıç yapacaksan şimdi.", "{days} gün sonra Venüs geri dönüyor; büyük alışverişi öne al.", "Venüs retrosuna {days} gün: itiraf, teklif, buluşma; şimdi daha rahat."], "barnum": 0.7 },
-  "mars_start": { "v": ["Mars geri dönüyor: enerji içe döner, sabırsızlık dışa; ikisine de dikkat.", "Mars retrosu başladı; başlanan iş yavaşlar, bitmemiş kavga geri gelir.", "Bugünden itibaren Mars geri gidiyor: hız değil, yön zamanı."], "barnum": 0.7 },
-  "mars_mid": { "v": ["Mars retrosunun ortası: motivasyon düşük, öfke birikik; spor iyi gelir.", "Mars hâlâ geri gidiyor; bir projeyi yeniden planlamak için doğru zaman.", "Retro ortada: 'neden bunu yapıyorum' sorusu bugün cevap ister."], "barnum": 0.75 },
-  "mars_end": { "v": ["Mars ileri dönüyor: enerji geri geliyor, önce yavaş, sonra hızlı.", "Mars retrosu bitti; ertelenen hamle artık yapılabilir.", "Mars düz gidiyor: yön belli, gaz serbest."], "barnum": 0.7 },
-  "mars_shadow_pre": { "v": ["Mars gölgeye girdi: bugün başlattığın mücadele retroda tekrar açılır.", "Ön gölge: büyük bir girişimi retro sonrasına bırakmak akıllıca.", "Mars ön gölgede: enerjini biriktir, harcama."], "barnum": 0.75 },
-  "mars_shadow_post": { "v": ["Mars gölgeden çıkıyor: retroda yeniden planlanan iş şimdi yürür.", "Son gölge: öfke konusu kapanıyor, enerji temizleniyor.", "Mars başladığı noktayı geçti; hareket döngüsü tamam."], "barnum": 0.75 },
-  "mars_countdown": { "v": ["Mars retrosuna {days} gün var: büyük başlangıcı şimdi yap.", "{days} gün sonra Mars geri dönüyor; yarım kalan işi bitir.", "Mars retrosuna {days} gün: spor, taşınma, yeni proje; şimdi daha kolay."], "barnum": 0.7 }
+  "mercury_start": {
+    "v": [
+      "Merkür bugün geri dönüyor: mesajları iki kez oku, bir kez gönder.",
+      "Merkür retrosu başladı; yanlış anlaşılmalar sezonu açıldı, sakin ol.",
+      "Bugünden itibaren Merkür geri gidiyor: yedek al, sonra yedek aldığını kontrol et."
+    ],
+    "barnum": 0.7
+  },
+  "mercury_mid": {
+    "v": [
+      "Retronun ortasındayız: eski bir mesaj, eski bir arkadaş, eski bir dosya geri gelebilir.",
+      "Merkür hâlâ geri gidiyor; bugün gözden geçirme günü, başlatma günü değil.",
+      "Retro tam ortada: unuttuğun bir şeyi hatırlarsın, ya da hatırlatılırsın."
+    ],
+    "barnum": 0.75
+  },
+  "mercury_end": {
+    "v": [
+      "Merkür bugün ileri dönüyor: ertelediğin cevabı artık verebilirsin.",
+      "Retro bitti; iletişim yavaş yavaş normale döner, hemen değil.",
+      "Merkür düz gidiyor: kaybolan mesajlar bulunur, planlar yeniden yürür."
+    ],
+    "barnum": 0.7
+  },
+  "mercury_shadow_pre": {
+    "v": [
+      "Merkür gölgeye girdi: retro henüz başlamadı ama konusu belli oldu; bugün konuşulan, sonra tekrar konuşulur.",
+      "Gölge dönemi: retro yakın, şimdiden yavaşla, önemli şeyi yazılı yap.",
+      "Merkür ön gölgede: yeni bir şeye başlayacaksan bu hafta başla, sonrası tekrar."
+    ],
+    "barnum": 0.75
+  },
+  "mercury_shadow_post": {
+    "v": [
+      "Merkür gölgeden çıkıyor: retroda açılan konular bugünlerde kapanır.",
+      "Son gölge: retroda öğrenilen ders artık uygulanabilir.",
+      "Merkür başladığı noktayı geçti; döngü kapandı, ileri bak."
+    ],
+    "barnum": 0.75
+  },
+  "mercury_countdown": {
+    "v": [
+      "Merkür retrosuna {days} gün var: büyük mesajı, büyük deploy'u bugün at.",
+      "{days} gün sonra Merkür geri dönüyor; ertelenenler listesini şimdi bitir.",
+      "Retroya {days} gün: sözleşme, bilet, önemli konuşma; hepsi şimdi daha rahat."
+    ],
+    "barnum": 0.7
+  },
+  "venus_start": {
+    "v": [
+      "Venüs geri dönüyor: eski bir hoşlantı, eski bir zevk, eski bir kırgınlık geri gelebilir.",
+      "Venüs retrosu başladı; yeni bir bağ kurmak için değil, eskisini anlamak için iyi zaman.",
+      "Bugünden itibaren Venüs geri gidiyor: alışverişte ve gönül işinde acele etme."
+    ],
+    "barnum": 0.7
+  },
+  "venus_mid": {
+    "v": [
+      "Venüs retrosunun ortası: sevdiğin şeyleri yeniden değerlendiriyorsun.",
+      "Venüs hâlâ geri gidiyor; eski bir ilişki ya da eski bir tarz gündemde.",
+      "Retro ortada: neyi gerçekten sevdiğin sorusu bugün daha net."
+    ],
+    "barnum": 0.75
+  },
+  "venus_end": {
+    "v": [
+      "Venüs ileri dönüyor: değer verdiğin şeyler yeniden yerine oturuyor.",
+      "Venüs retrosu bitti; ertelenen buluşma artık olabilir.",
+      "Venüs düz gidiyor: zevkler netleşti, gönül işleri hafifledi."
+    ],
+    "barnum": 0.7
+  },
+  "venus_shadow_pre": {
+    "v": [
+      "Venüs gölgeye girdi: ilişkilerde ve zevklerde retro konusu şimdiden beliriyor.",
+      "Ön gölge: büyük bir alışverişi ya da büyük bir itirafı erteleyebilirsin.",
+      "Venüs ön gölgede: bugün beğendiğin şeyi retro sonrası tekrar tartacaksın."
+    ],
+    "barnum": 0.75
+  },
+  "venus_shadow_post": {
+    "v": [
+      "Venüs gölgeden çıkıyor: retroda sorgulanan bağ ya sağlamlaştı ya bitti.",
+      "Son gölge: değer sorusu cevabını buldu, artık uygula.",
+      "Venüs başladığı noktayı geçti; gönül döngüsü kapandı."
+    ],
+    "barnum": 0.75
+  },
+  "venus_countdown": {
+    "v": [
+      "Venüs retrosuna {days} gün var: yeni bir başlangıç yapacaksan şimdi.",
+      "{days} gün sonra Venüs geri dönüyor; büyük alışverişi öne al.",
+      "Venüs retrosuna {days} gün: itiraf, teklif, buluşma; şimdi daha rahat."
+    ],
+    "barnum": 0.7
+  },
+  "mars_start": {
+    "v": [
+      "Mars geri dönüyor: enerji içe döner, sabırsızlık dışa; ikisine de dikkat.",
+      "Mars retrosu başladı; başlanan iş yavaşlar, bitmemiş kavga geri gelir.",
+      "Bugünden itibaren Mars geri gidiyor: hız değil, yön zamanı."
+    ],
+    "barnum": 0.7
+  },
+  "mars_mid": {
+    "v": [
+      "Mars retrosunun ortası: motivasyon düşük, öfke birikik; spor iyi gelir.",
+      "Mars hâlâ geri gidiyor; bir projeyi yeniden planlamak için doğru zaman.",
+      "Retro ortada: 'neden bunu yapıyorum' sorusu bugün cevap ister."
+    ],
+    "barnum": 0.75
+  },
+  "mars_end": {
+    "v": [
+      "Mars ileri dönüyor: enerji geri geliyor, önce yavaş, sonra hızlı.",
+      "Mars retrosu bitti; ertelenen hamle artık yapılabilir.",
+      "Mars düz gidiyor: yön belli, gaz serbest."
+    ],
+    "barnum": 0.7
+  },
+  "mars_shadow_pre": {
+    "v": [
+      "Mars gölgeye girdi: bugün başlattığın mücadele retroda tekrar açılır.",
+      "Ön gölge: büyük bir girişimi retro sonrasına bırakmak akıllıca.",
+      "Mars ön gölgede: gücünü biriktir, harcama."
+    ],
+    "barnum": 0.75
+  },
+  "mars_shadow_post": {
+    "v": [
+      "Mars gölgeden çıkıyor: retroda yeniden planlanan iş şimdi yürür.",
+      "Son gölge: öfke konusu kapanıyor, enerji temizleniyor.",
+      "Mars başladığı noktayı geçti; hareket döngüsü tamam."
+    ],
+    "barnum": 0.75
+  },
+  "mars_countdown": {
+    "v": [
+      "Mars retrosuna {days} gün var: büyük başlangıcı şimdi yap.",
+      "{days} gün sonra Mars geri dönüyor; yarım kalan işi bitir.",
+      "Mars retrosuna {days} gün: spor, taşınma, yeni proje; şimdi daha kolay."
+    ],
+    "barnum": 0.7
+  }
 }
