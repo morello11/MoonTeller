@@ -8,12 +8,12 @@
 
 ## 0. Claude Code — her oturumda
 
-1. Bu dosyanın tamamını oku. Sonra "Şu an" satırındaki adımın ilgili `docs/` dosyasını oku.
+1. Bu dosyanın tamamını oku. Sonra "Şu an" satırındaki adımın ilgili `docs/` dosyasını oku (ROADMAP her adımda okunur).
 2. Her adımın planını plan modunda çıkar (dosya listesi, komutlar, Mehmet'ten istediklerin). Onay almadan kod yazma.
 3. Her adım bitince dur: "Adım N bitti, kontrol et" de. Mehmet adım adım ilerlemek istiyor; sonraki adımın işini öne yığma,
    "bu arada şunu da yaptım" yok.
 4. Emin olmadığın API imzasını tahmin etme; `vendor/swisseph/QUICK_REFERENCE.md` ve `DOCUMENTATION.md`'ye bak.
-5. Adım bitince buradaki "Şu an" satırını güncelle.
+5. Adım bitince buradaki "Şu an" satırını güncelle. `docs/` içeriğini yeniden tartışma; bölüm 11 "uyulacak kararlar"dır.
 
 ## 1. Değişmez kurallar
 
@@ -35,17 +35,18 @@
 
 | Katman | Seçim | Not |
 |---|---|---|
-| Efemeris | Swiss Ephemeris WASM — `prolaxu/swisseph-wasm` | GPL; açık kaynak hobi projesinde serbest. `/vendor/swisseph/` altına kopyalanır, sürüm sabitlenir (v0.0.4). CDN `@main` import'u yasak (kırılır). |
-| Motor API | `new SwissEph()` → `await swe.initSwissEph()` → `swe.julday(y,m,d,utHours)` → `swe.calc_ut(jd, swe.SE_MOON, swe.SEFLG_SWIEPH \| swe.SEFLG_SPEED)` | Dönüş `Float64Array[lon, lat, dist, lonSpeed, latSpeed, distSpeed]`. Evler: `swe.houses(jd, lat, lon, 'P')` → `{ cusps: Float64Array(13) (1..12 kullanılır), ascmc: Float64Array(10) (0=ASC, 1=MC) }`. Efemeris dosyası gömülü değilse `SEFLG_MOSEPH` (Moshier) kullan; fark bizim için önemsiz. |
+| Efemeris | Swiss Ephemeris WASM — `prolaxu/swisseph-wasm` v0.0.4 (Swiss Ephemeris 2.10.03) | GPL; açık kaynak hobi projesinde serbest. npm tarball'ından `/vendor/swisseph/` altına kopyalanır: `src/swisseph.js` + `wsam/{swisseph.js, swisseph.wasm, swisseph.data}` (klasör adı upstream'de `wsam`, öyle kalır; sarmalayıcı `../wsam/` yolunu sabit kullanır). CDN `@main` import'u yasak. |
+| .data paketi | Upstream 12 MB: içindeki `seasnam.txt` (9,9 MB asteroit isim listesi) gereksiz | `scripts/repack-swisseph-data.js` ile `seasnam.txt` atılır, `wsam/swisseph.js` içindeki `files:[{filename,start,end}]` offset tablosu güncellenir (tek seferlik, sonuç commit'lenir, script repoda kalır). Ek deney: `seas_18.se1` (Chiron) hariç `.se1`'ler de atılıp gezegenler Moshier'e düşürülebilirse toplam ≈ 0,9 MB; olmazsa ≈ 2,8 MB ile devam. Loader `.data`'yı koşulsuz yükler; tamamen atılamaz. |
+| Motor API (doğrulandı) | `const swe = new SwissEph(); await swe.initSwissEph();` `swe.julday(y,m,d,utHours)`; `swe.calc_ut(jd, swe.SE_MOON, swe.SEFLG_SWIEPH \| swe.SEFLG_SPEED)` → `Float64Array[lon, lat, dist, lonSpeed, ...]`; `swe.houses(jd, lat, lon, 'P')` → `{cusps: Float64Array(13), ascmc: Float64Array(10)}` (`ascmc[0]` ASC, `ascmc[1]` MC); `swe.version()` | Init ≈ 190 ms. Chiron `seas_18.se1` sayesinde çalışır. MOSEPH ile SWIEPH farkı Ay'da 0,00002° — bizim için sıfır. `swe.` çağrıları yalnızca `src/astro/engine.js` içinde yaşar. |
 | Zaman | Tarayıcı `Intl` API, IANA `Europe/Istanbul` | 2016 öncesi yaz saati dahil tarihsel kurallar. Kütüphane ekleme. Yurt dışı doğum için IANA seçici. |
 | Yerler | `data/cities-tr.json` (81 il, enlem/boylam) | Elle enlem/boylam girişi de var. İlçe v2. |
 | Grafik | Harita çarkı elle çizilmiş SVG; paylaşım kartı Canvas → PNG | Grafik kütüphanesi yok. |
 | Depolama | `localStorage`: `yn:profiles`, `yn:settings`, `yn:cache` | Repo'da veri yok. |
 | Sunucu | Yok. Tek istisna: Cloudflare Worker (LLM proxy + cache), Adım 6 | Ücretsiz plan yeter. |
-| Test | `node --test` (kök `package.json` sadece `type: module` ve `test` scripti için; Node 22 dizin argümanını kabul etmiyor) | Ek test kütüphanesi yok. |
+| Test | `node --test` (kök `package.json` yalnızca `type: module` + `test` scripti; Node 22 dizin argümanı kabul etmiyor, `tests/*.test.js` otomatik bulunur) | Ek test kütüphanesi yok. |
 | Yayın | GitHub Pages, `main` dalı, kök dizin | Özel alan adı v2. |
 
-Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: gezegen/Ay efemeris dosyaları atıldı, Moshier kullanılıyor); WASM tembel (lazy) yüklenir, tarayıcı cache'ler; natal hesap bir kez yapılıp saklanır.
+Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: `sepl_18`/`semo_18` atıldı, Moshier kullanılıyor); WASM tembel (lazy) yüklenir, tarayıcı cache'ler; natal hesap bir kez yapılıp saklanır.
 
 ## 3. Repo yapısı
 
@@ -54,8 +55,8 @@ yildizname/
   index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ofis, #/kiyasla, #/sor, #/ayarlar)
   style.css             tek dosya, CSS değişkenleri docs/DESIGN.md'den
   CLAUDE.md
-  README.md             kısa: ne, nasıl açılır, lisans
   package.json          sadece type: module + test scripti; bağımlılık yok, build yok
+  README.md             kısa: ne, nasıl açılır, lisans
   LICENSE               GPL-3.0 (Swiss Ephemeris uyumu için zorunlu)
   docs/                 VISION, DESIGN, ENGINE, TEXTBANK, LLM, ROADMAP, REVIEW
   src/
@@ -85,19 +86,24 @@ yildizname/
                         moon.json archetypes.json retro.json ui-copy.json
     cities-tr.json
   vendor/
-    swisseph/           sabitlenmiş kopya (src/, wsam/, QUICK_REFERENCE.md, DOCUMENTATION.md, LICENSE)
+    swisseph/           sabitlenmiş kopya: src/swisseph.js, wsam/{swisseph.js, swisseph.wasm, swisseph.data},
+                        QUICK_REFERENCE.md, DOCUMENTATION.md, LICENSE, package.json (sürüm kanıtı),
+                        VENDOR.md (kaynak, sürüm, ne değiştirildi — 5 satır). examples/ ve types/ alınmaz.
   scripts/
-    validate-bank.js    metin bankası bütünlük kontrolü
+    repack-swisseph-data.js   .data'yı gereksiz dosyalar olmadan yeniden paketler (tek seferlik)
+    validate-bank.js          metin bankası bütünlük kontrolü
   tests/
-    time.test.js  engine.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
+    engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
+    private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
     src/index.js  wrangler.toml  README.md   (Adım 6'da oluşturulur)
   assets/
     icons/  manifest.json
+  .gitattributes        *.wasm *.data *.se1 binary
+  .nojekyll             GitHub Pages dosyaları Jekyll'den geçirmesin
+  .gitignore            tests/private.local.json, node_modules/, .DS_Store
 ```
-
-Not: paketin WASM klasörünün adı upstream'de `wsam/` (yazım hatası ama sarmalayıcı `../wsam/` yolunu sabit kodluyor);
-klasör adı olduğu gibi korunur.
+Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yaratılır.
 
 ---
 
@@ -109,8 +115,8 @@ Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini 
 |---|---|---|
 | `docs/VISION.md` | ürün vizyonu, sayfalar, ton | 4 |
 | `docs/DESIGN.md` | görsel dil, CSS değişkenleri, çark | 5 |
-| `docs/ENGINE.md` | astroloji motoru, hesap kuralları | 6 |
-| `docs/TEXTBANK.md` | metin bankası şeması ve kuralları | 7 |
+| `docs/ENGINE.md` | astroloji motoru, hesap kuralları, regresyon değerleri | 6 |
+| `docs/TEXTBANK.md` | metin bankası şeması ve ton rehberi | 7 |
 | `docs/LLM.md` | Worker, prompt'lar, güvenlik | 8 |
-| `docs/ROADMAP.md` | adımlar ve tanımı-bitti ölçütleri | 9 |
-| `docs/REVIEW.md` | gözden geçirme ve kalite listesi | 10–11 |
+| `docs/ROADMAP.md` | adımlar, bitti şartları, verilmiş kararlar | 9 |
+| `docs/REVIEW.md` | girişimci dokunuşları + mimar düzeltmeleri (uyulacak kararlar) | 10–11 |
