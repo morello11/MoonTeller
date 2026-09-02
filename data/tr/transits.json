@@ -988,5 +988,995 @@
     ],
     "advice": "Bugün bir karşılaşmayı dinle.",
     "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_sun": {
+    "v": [
+      "Merkür natal Güneş'inin üstünde: fikirlerin bugün ışıkta, konuş.",
+      "Bugün kendini anlatmak kolay; birine planını aç.",
+      "Zihin ve kimlik aynı yerde: bugün net cümleler günü."
+    ],
+    "advice": "Bugün önemli maili yaz.",
+    "barnum": 0.65
+  },
+  "t_mercury_sextile_n_sun": {
+    "v": [
+      "Merkür natal Güneş'ine altmışlık: sohbet akıyor, düşünce berrak.",
+      "Bugün öğrenmek ve anlatmak hafif.",
+      "Kelimeler bugün seni iyi temsil ediyor."
+    ],
+    "advice": "Bugün bir şey öğren.",
+    "barnum": 0.75
+  },
+  "t_mercury_square_n_sun": {
+    "v": [
+      "Merkür natal Güneş'ine kare: fikrin ile egon karışıyor; haklı çıkma isteğine dikkat.",
+      "Bugün yanlış anlaşılma kolay; yavaş konuş.",
+      "Zihin hızlı, sabır az; yazdığını iki kez oku."
+    ],
+    "advice": "Bugün tartışmayı birebir yap.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_sun": {
+    "v": [
+      "Merkür natal Güneş'ine üçgen: anlatmak, ikna etmek, öğretmek bugün kolay.",
+      "Fikirlerin bugün sana benziyor; sun.",
+      "Zihin akıyor; sunum ve görüşme için iyi."
+    ],
+    "advice": "Bugün açıklaman gereken şeyi açıkla.",
+    "barnum": 0.7
+  },
+  "t_mercury_opposition_n_sun": {
+    "v": [
+      "Merkür natal Güneş'inin karşısında: biri fikrine karşı çıkıyor; kişisel alma.",
+      "Bugün karşı görüş ayna; dinle.",
+      "Söylediğin ters yankılanabilir; sakin."
+    ],
+    "advice": "Bugün karşı fikri özetle, sonra cevap ver.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_moon": {
+    "v": [
+      "Merkür natal Ay'ının üstünde: hissettiğini anlatmak kolay.",
+      "Duygu bugün kelime buluyor; içini dök.",
+      "Zihin ve iç dünya aynı yerde; dert ortağı günü."
+    ],
+    "advice": "Bugün 'nasılsın' mesajını at.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_moon": {
+    "v": [
+      "Merkür natal Ay'ına altmışlık: anlaşmak kolay, sohbet yumuşak.",
+      "Bugün hislerini adlandırabilirsin.",
+      "Dinlemek ve anlatmak dengede."
+    ],
+    "advice": "Bugün bir şeyi yazarak netleştir.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_moon": {
+    "v": [
+      "Merkür natal Ay'ına kare: hissettiğinle söylediğin ayrışıyor.",
+      "Bugün yanlış anlaşılma saati; kısa mesaj.",
+      "Mantık 'sorun yok' diyor, için 'var'; ikisini de dinle."
+    ],
+    "advice": "Bugün duygusal mesajı yarın gönder.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_moon": {
+    "v": [
+      "Merkür natal Ay'ına üçgen: duygusal zekâ yüksek; dinle, anlat.",
+      "Bugün doğru kelime kolay geliyor.",
+      "Sohbetler bugün iyileştirici."
+    ],
+    "advice": "Bugün zor konuşmayı yumuşak aç.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_moon": {
+    "v": [
+      "Merkür natal Ay'ının karşısında: 'anlamıyorsun' günü; belki haklı.",
+      "Mantık ile duygu iki dilde; çevirmen ol.",
+      "Bugün dinlemek konuşmaktan değerli."
+    ],
+    "advice": "Bugün karşı tarafın cümlesini tekrar et.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_mercury": {
+    "v": [
+      "Merkür kendi yerine döndü: zihin bugün en keskin halinde.",
+      "Fikir bugün sana ait; düşünce günü.",
+      "Aylık zihin sıfırlaması: liste, plan, karar."
+    ],
+    "advice": "Bugün karar ver.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_mercury": {
+    "v": [
+      "Merkür natal Merkür'üne altmışlık: düşünce akıcı, iletişim rahat.",
+      "Bugün öğrenmek yormuyor.",
+      "Zihin dengede; küçük planlar için iyi."
+    ],
+    "advice": "Bugün on dakika bir şey oku.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_mercury": {
+    "v": [
+      "Merkür natal Merkür'üne kare: zihin dağınık, mesaj karışık.",
+      "Bugün detay kaçırırsın; iki kez kontrol.",
+      "Aylık zihinsel sürtünme; yavaşla."
+    ],
+    "advice": "Bugün önemli şeyi yazılı yap.",
+    "barnum": 0.7
+  },
+  "t_mercury_trine_n_mercury": {
+    "v": [
+      "Merkür natal Merkür'üne üçgen: düşünce ve dil aynı dilde.",
+      "Bugün anlatmak kolay, anlaşılmak da.",
+      "Zihin akıcı; yazı günü."
+    ],
+    "advice": "Bugün ertelediğin yazıyı yaz.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_mercury": {
+    "v": [
+      "Merkür natal Merkür'ünün karşısında: fikirler çarpışıyor; verimli olabilir.",
+      "Bugün karşı görüş seni netleştiriyor.",
+      "Tartışma günü; nazik tut."
+    ],
+    "advice": "Bugün bir fikri savunmadan önce karşıtını düşün.",
+    "barnum": 0.7
+  },
+  "t_mercury_conjunction_n_venus": {
+    "v": [
+      "Merkür natal Venüs'ünün üstünde: tatlı dil günü; iltifat, mesaj, flört.",
+      "Bugün güzel konuşmak kolay.",
+      "Sohbet bugün sevimli; kullan."
+    ],
+    "advice": "Bugün birine güzel bir şey yaz.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_venus": {
+    "v": [
+      "Merkür natal Venüs'üne altmışlık: nazik sohbet, hoş üslup.",
+      "Bugün insanları ikna etmek kolay.",
+      "Kelimeler bugün yumuşak."
+    ],
+    "advice": "Bugün bir buluşma ayarla.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_venus": {
+    "v": [
+      "Merkür natal Venüs'üne kare: söylediğin nazik değil gibi geliyor; gelmiyor.",
+      "Bugün zevk ile dil tutmuyor; kısa kes.",
+      "Küçük bir üslup sürtünmesi."
+    ],
+    "advice": "Bugün eleştiriyi yumuşat.",
+    "barnum": 0.7
+  },
+  "t_mercury_trine_n_venus": {
+    "v": [
+      "Merkür natal Venüs'üne üçgen: zarif dil, kolay sevgi.",
+      "Bugün sohbet flört gibi.",
+      "Kelimelerle sevmek kolay."
+    ],
+    "advice": "Bugün bir iltifat et.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_venus": {
+    "v": [
+      "Merkür natal Venüs'ünün karşısında: biri analiz ediyor, sen beğeniyorsun; tartışma nazik.",
+      "Bugün zevk farkı konuşuluyor.",
+      "Üslup karşıdan geliyor; dinle."
+    ],
+    "advice": "Bugün 'sen ne istersin' sorusunu ciddiye al.",
+    "barnum": 0.7
+  },
+  "t_mercury_conjunction_n_mars": {
+    "v": [
+      "Merkür natal Mars'ının üstünde: dil keskin, karar hızlı.",
+      "Bugün tartışma spor gibi; abartma.",
+      "Zihin ve eylem aynı yerde; iş bitirme günü."
+    ],
+    "advice": "Bugün yazdığını göndermeden bir nefes.",
+    "barnum": 0.65
+  },
+  "t_mercury_sextile_n_mars": {
+    "v": [
+      "Merkür natal Mars'ına altmışlık: karar ve uygulama kolay.",
+      "Bugün plan yürür.",
+      "Zihin çevik, sabır yeterli."
+    ],
+    "advice": "Bugün bir işi başlat ve bitir.",
+    "barnum": 0.75
+  },
+  "t_mercury_square_n_mars": {
+    "v": [
+      "Merkür natal Mars'ına kare: söylediğin sert çıkıyor.",
+      "Bugün kavga kelimeyle başlar; başlatma.",
+      "Zihin hızlı, öfke hazır; nefes."
+    ],
+    "advice": "Bugün tartışmayı kazanmaya çalışma.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_mars": {
+    "v": [
+      "Merkür natal Mars'ına üçgen: net kararlar, hızlı iş.",
+      "Bugün düşünce ve el birlikte.",
+      "Pratik zekâ günü."
+    ],
+    "advice": "Bugün karar verilecekse ver.",
+    "barnum": 0.7
+  },
+  "t_mercury_opposition_n_mars": {
+    "v": [
+      "Merkür natal Mars'ının karşısında: biri söylüyor, sen savaşıyorsun.",
+      "Bugün tartışma dışarıdan; yem alma.",
+      "Haklı olmak ile anlaşmak arasında seç."
+    ],
+    "advice": "Bugün sert cevabı taslakta bırak.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_jupiter": {
+    "v": [
+      "Merkür natal Jüpiter'inin üstünde: büyük fikirler, geniş sohbet.",
+      "Bugün öğretmek ve öğrenmek kolay.",
+      "Ufuk açık; abartıya dikkat."
+    ],
+    "advice": "Bugün bir şeyi birine öğret.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_jupiter": {
+    "v": [
+      "Merkür natal Jüpiter'ine altmışlık: iyimser düşünce, verimli sohbet.",
+      "Bugün fırsatı görürsün.",
+      "Zihin umutlu."
+    ],
+    "advice": "Bugün bir teklifi ciddiye al.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_jupiter": {
+    "v": [
+      "Merkür natal Jüpiter'ine kare: fazla söz, fazla vaat.",
+      "Bugün 'kesinlikle' deme.",
+      "Ayrıntı kaçıyor; kontrol et."
+    ],
+    "advice": "Bugün az ama doğru söyle.",
+    "barnum": 0.7
+  },
+  "t_mercury_trine_n_jupiter": {
+    "v": [
+      "Merkür natal Jüpiter'ine üçgen: fikirler akıyor, büyük resim net.",
+      "Bugün anlatmak keyifli.",
+      "Öğrenme günü."
+    ],
+    "advice": "Bugün yeni bir konuya gir.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_jupiter": {
+    "v": [
+      "Merkür natal Jüpiter'inin karşısında: biri bütüne, sen ayrıntıya bakıyorsun.",
+      "Tartışma verimli, kim haklı bitmez.",
+      "Bugün büyük vaat karşıdan."
+    ],
+    "advice": "Bugün büyük plana 'düşüneyim' de.",
+    "barnum": 0.7
+  },
+  "t_mercury_conjunction_n_saturn": {
+    "v": [
+      "Merkür natal Satürn'ünün üstünde: ciddi düşünce, ağır söz.",
+      "Bugün az konuş, derin düşün.",
+      "Zihin disiplinli; plan günü."
+    ],
+    "advice": "Bugün bir şeyi planla, üç ay ilerisine.",
+    "barnum": 0.65
+  },
+  "t_mercury_sextile_n_saturn": {
+    "v": [
+      "Merkür natal Satürn'üne altmışlık: düzenli düşünce, güvenilir karar.",
+      "Bugün sıralamak kolay.",
+      "Sabırlı zihin."
+    ],
+    "advice": "Bugün listeni tamamla.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_saturn": {
+    "v": [
+      "Merkür natal Satürn'üne kare: 'yanlış anlaşılırım' korkusu; kendini frenleme.",
+      "Bugün zihin ağır; iletişim gecikebilir.",
+      "Öz eleştiri yüksek; söz söyle."
+    ],
+    "advice": "Bugün kendi fikrine güven.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_saturn": {
+    "v": [
+      "Merkür natal Satürn'üne üçgen: derin öğrenme, düzenli anlatım.",
+      "Bugün ciddi konu için iyi.",
+      "Söylediğin ağır basıyor."
+    ],
+    "advice": "Bugün ciddi konuşmayı yap.",
+    "barnum": 0.7
+  },
+  "t_mercury_opposition_n_saturn": {
+    "v": [
+      "Merkür natal Satürn'ünün karşısında: biri eleştiriyor gibi; fikrini savun.",
+      "Bugün otorite ile fikir çatışması.",
+      "Onayı dışarıda arama."
+    ],
+    "advice": "Bugün istifa maili yazma.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_uranus": {
+    "v": [
+      "Merkür natal Uranüs'ünün üstünde: ani fikir, parlak bağlantı.",
+      "Bugün zihin elektrikli; not al.",
+      "Sıra dışı düşünce günü."
+    ],
+    "advice": "Bugün fikri not al, yarın değerlendir.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_uranus": {
+    "v": [
+      "Merkür natal Uranüs'üne altmışlık: taze fikirler, farklı açı.",
+      "Bugün yeniye açıksın.",
+      "Zihin esnek."
+    ],
+    "advice": "Bugün yeni bir uygulama dene.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_uranus": {
+    "v": [
+      "Merkür natal Uranüs'üne kare: sinirli zihin, ani söz.",
+      "Bugün dağınık dikkat; teknoloji huysuz.",
+      "Farklı olmak için farklı düşünme."
+    ],
+    "advice": "Bugün yedek al.",
+    "barnum": 0.7
+  },
+  "t_mercury_trine_n_uranus": {
+    "v": [
+      "Merkür natal Uranüs'üne üçgen: özgün fikir, hızlı kavrama.",
+      "Bugün bağlantı kurmak kolay.",
+      "Yaratıcı zihin günü."
+    ],
+    "advice": "Bugün bir fikri paylaş.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_uranus": {
+    "v": [
+      "Merkür natal Uranüs'ünün karşısında: fikirler zıt, sohbet öngörülemez.",
+      "Bugün beklenmedik bir haber.",
+      "Esnek ol."
+    ],
+    "advice": "Bugün plan B hazır olsun.",
+    "barnum": 0.7
+  },
+  "t_mercury_conjunction_n_neptune": {
+    "v": [
+      "Merkür natal Neptün'ünün üstünde: şiirsel zihin, bulanık ayrıntı.",
+      "Bugün hayal gücü yüksek, hesap düşük.",
+      "Sezgi konuşuyor; not al, imzalama."
+    ],
+    "advice": "Bugün sözleşme yok.",
+    "barnum": 0.65
+  },
+  "t_mercury_sextile_n_neptune": {
+    "v": [
+      "Merkür natal Neptün'üne altmışlık: yumuşak sohbet, hikâye günü.",
+      "Bugün insan okumak kolay.",
+      "İlham yakın."
+    ],
+    "advice": "Bugün bir hikâye anlat.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_neptune": {
+    "v": [
+      "Merkür natal Neptün'üne kare: ne dediğin bulanık; yanlış anlaşılma.",
+      "Bugün detay kaçar; kontrol et.",
+      "Sezgi doğru, ifade zayıf."
+    ],
+    "advice": "Bugün önemli mesajı yarın gönder.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_neptune": {
+    "v": [
+      "Merkür natal Neptün'üne üçgen: sezgi ve düşünce aynı dilde.",
+      "Bugün şiir, müzik, hikâye kolay.",
+      "Söylenmeyeni duyuyorsun."
+    ],
+    "advice": "Bugün yaratıcı bir şey yaz.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_neptune": {
+    "v": [
+      "Merkür natal Neptün'ünün karşısında: biri seni yanlış okuyor.",
+      "Bugün iletişimde sis; net sor.",
+      "Vaat bulanık; bekle."
+    ],
+    "advice": "Bugün sözü değil, yazılıyı esas al.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_pluto": {
+    "v": [
+      "Merkür natal Plüton'unun üstünde: derin düşünce, keskin söz.",
+      "Bugün bir konunun dibine inersin.",
+      "Araştırma günü; sır açığa çıkabilir."
+    ],
+    "advice": "Bugün derin konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_mercury_sextile_n_pluto": {
+    "v": [
+      "Merkür natal Plüton'una altmışlık: gizli olanı görmek kolay.",
+      "Bugün insanı çözmek kolay.",
+      "Derin ama sakin zihin."
+    ],
+    "advice": "Bugün bir şeyi araştır.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_pluto": {
+    "v": [
+      "Merkür natal Plüton'una kare: şüphe, takıntı, haklı çıkma isteği.",
+      "Bugün sohbet sorguya dönebilir; dönmesin.",
+      "Kelime güç aracı olmasın."
+    ],
+    "advice": "Bugün tartışmayı bırak.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_pluto": {
+    "v": [
+      "Merkür natal Plüton'una üçgen: derin düşünce akıyor, ikna güçlü.",
+      "Bugün sır iyi tutulur.",
+      "Sessiz güçlü zihin."
+    ],
+    "advice": "Bugün etkili bir şey söyle.",
+    "barnum": 0.7
+  },
+  "t_mercury_opposition_n_pluto": {
+    "v": [
+      "Merkür natal Plüton'unun karşısında: biri seni sorguluyor.",
+      "Zihin savaşı dışarıdan; girme.",
+      "Dürüstlük kazanır."
+    ],
+    "advice": "Bugün ültimatom yazma.",
+    "barnum": 0.65
+  },
+  "t_mercury_conjunction_n_asc": {
+    "v": [
+      "Merkür Yükselen'inin üstünde: bugün konuşkan görünüyorsun; iyi.",
+      "Zihin vitrinde; tanışma günü.",
+      "Söylediğin bugün seni tanıtıyor."
+    ],
+    "advice": "Bugün kendini tanıt.",
+    "barnum": 0.7
+  },
+  "t_mercury_sextile_n_asc": {
+    "v": [
+      "Merkür Yükselen'ine altmışlık: iletişim rahat, izlenim iyi.",
+      "Bugün sohbet kolay.",
+      "Zeki görünüyorsun."
+    ],
+    "advice": "Bugün görüşme için iyi.",
+    "barnum": 0.8
+  },
+  "t_mercury_square_n_asc": {
+    "v": [
+      "Merkür Yükselen'ine kare: söylediğin göründüğünle tutmuyor.",
+      "Bugün yanlış okunabilirsin.",
+      "Kısa konuş."
+    ],
+    "advice": "Bugün önemli görüşmeyi kısa tut.",
+    "barnum": 0.65
+  },
+  "t_mercury_trine_n_asc": {
+    "v": [
+      "Merkür Yükselen'ine üçgen: doğal ve akıcı iletişim.",
+      "Bugün anlaşılıyorsun.",
+      "Kelime seni iyi temsil ediyor."
+    ],
+    "advice": "Bugün sunum yap.",
+    "barnum": 0.75
+  },
+  "t_mercury_opposition_n_asc": {
+    "v": [
+      "Merkür Yükselen'inin karşısında: karşı taraf konuşuyor; dinle.",
+      "Bugün ilişki iletişimle kuruluyor.",
+      "Biri sana ayna tutuyor."
+    ],
+    "advice": "Bugün önce dinle.",
+    "barnum": 0.7
+  },
+  "t_venus_conjunction_n_sun": {
+    "v": [
+      "Venüs natal Güneş'inin üstünde: sevimliliğin ışıkta; insanlar sana sıcak.",
+      "Bugün beğenilmek kolay.",
+      "Güzel bir şey al, güzel bir şey söyle."
+    ],
+    "advice": "Bugün birine iltifat et.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_sun": {
+    "v": [
+      "Venüs natal Güneş'ine altmışlık: hoş bir gün, hafif keyif.",
+      "İlişkiler yumuşak.",
+      "Kendine güzel bir şey yakıştır."
+    ],
+    "advice": "Bugün kahveyi sevdiğin yerden al.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_sun": {
+    "v": [
+      "Venüs natal Güneş'ine kare: istediğin ilgi ile aldığın ilgi tutmuyor.",
+      "Beğenilme isteği fazla; farkında ol.",
+      "Fazla harcama, fazla bekleme."
+    ],
+    "advice": "Bugün sepeti yarına bırak.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_sun": {
+    "v": [
+      "Venüs natal Güneş'ine üçgen: sevilmek ve sevmek kolay.",
+      "Keyifli bir gün; tadını çıkar.",
+      "Güzellik seni buluyor."
+    ],
+    "advice": "Bugün buluşma ayarla.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_sun": {
+    "v": [
+      "Venüs natal Güneş'inin karşısında: bir ilişkide denge konuşuluyor.",
+      "Karşındaki zevkini sorguluyor gibi; değil.",
+      "Nazik ol, net ol."
+    ],
+    "advice": "Bugün ne istediğini söyle.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_moon": {
+    "v": [
+      "Venüs natal Ay'ının üstünde: şefkat günü; bakılmak, bakmak.",
+      "Sevecen bir gün.",
+      "İhtiyaç ve sevgi aynı yerde."
+    ],
+    "advice": "Bugün sevdiğin biriyle yemek ye.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_moon": {
+    "v": [
+      "Venüs natal Ay'ına altmışlık: sıcak, yumuşak, hoş.",
+      "Bugün insanlar sana iyi.",
+      "Keyif kolay."
+    ],
+    "advice": "Bugün akşam planını bozma.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_moon": {
+    "v": [
+      "Venüs natal Ay'ına kare: ilgi bekliyorsun; gelmiyor gibi.",
+      "Zevk ile ihtiyaç ayrı; fazla yeme.",
+      "Küçük bir hassasiyet."
+    ],
+    "advice": "Bugün kendine iyi davran.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_moon": {
+    "v": [
+      "Venüs natal Ay'ına üçgen: sevimli, sakin, sevecen.",
+      "Bugün ilişkiler akıyor.",
+      "Kırgınlık çözülüyor."
+    ],
+    "advice": "Bugün eski bir arkadaşı ara.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_moon": {
+    "v": [
+      "Venüs natal Ay'ının karşısında: ihtiyaç ile zevk tartışılıyor.",
+      "Biri sıcaklık, öteki zarafet istiyor.",
+      "İkisini de ver."
+    ],
+    "advice": "Bugün 'sen ne istersen' deme.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_mercury": {
+    "v": [
+      "Venüs natal Merkür'ünün üstünde: tatlı dil, güzel mesaj.",
+      "Bugün sohbet flört gibi.",
+      "Kelimeler yumuşak."
+    ],
+    "advice": "Bugün birine güzel bir mesaj at.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_mercury": {
+    "v": [
+      "Venüs natal Merkür'üne altmışlık: nazik sohbet, hoş üslup.",
+      "Bugün ikna kolay.",
+      "İletişim keyifli."
+    ],
+    "advice": "Bugün zor konuyu nazikçe aç.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_mercury": {
+    "v": [
+      "Venüs natal Merkür'üne kare: söylediğin nazik gelmiyor gibi.",
+      "Zevk ile dil tutmuyor.",
+      "Kısa kes."
+    ],
+    "advice": "Bugün eleştiriyi yumuşat.",
+    "barnum": 0.7
+  },
+  "t_venus_trine_n_mercury": {
+    "v": [
+      "Venüs natal Merkür'üne üçgen: zarif dil, kolay sevgi.",
+      "Bugün kelimelerle sevmek kolay.",
+      "Sohbet sevimli."
+    ],
+    "advice": "Bugün iltifat yaz.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_mercury": {
+    "v": [
+      "Venüs natal Merkür'ünün karşısında: zevk farkı konuşuluyor.",
+      "Biri analiz, öteki beğeni.",
+      "Nazik tartış."
+    ],
+    "advice": "Bugün karşı tarafın zevkini sor.",
+    "barnum": 0.7
+  },
+  "t_venus_conjunction_n_venus": {
+    "v": [
+      "Venüs kendi yerine döndü: yıllık sevgi sıfırlaması. Neyi sevdiğin net.",
+      "Bugün zevkin sana ait; kendine bir şey al.",
+      "Venüs dönüşü: sevilme günü."
+    ],
+    "advice": "Bugün kendine hediye al.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_venus": {
+    "v": [
+      "Venüs natal Venüs'üne altmışlık: hafif keyif, hoş ilişkiler.",
+      "Bugün güzellik kolay.",
+      "Sevgi dengede."
+    ],
+    "advice": "Bugün güzel bir şey ye.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_venus": {
+    "v": [
+      "Venüs natal Venüs'üne kare: zevklerin sınanıyor; fazla harcama.",
+      "Bugün ilgi dengesiz.",
+      "Beklenti düşür."
+    ],
+    "advice": "Bugün büyük alışveriş yok.",
+    "barnum": 0.7
+  },
+  "t_venus_trine_n_venus": {
+    "v": [
+      "Venüs natal Venüs'üne üçgen: sevgi akıyor, güzellik kolay.",
+      "Bugün ilişkiler rahat.",
+      "Keyif günü."
+    ],
+    "advice": "Bugün sevdiğin şeyi sevdiğinle yap.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_venus": {
+    "v": [
+      "Venüs natal Venüs'ünün karşısında: zevk farkı, denge sorusu.",
+      "Bugün karşındaki başka şey istiyor.",
+      "Uzlaş."
+    ],
+    "advice": "Bugün ortasını bul.",
+    "barnum": 0.7
+  },
+  "t_venus_conjunction_n_mars": {
+    "v": [
+      "Venüs natal Mars'ının üstünde: çekim günü; tutku sıcak.",
+      "Sevgi ve istek aynı yerde.",
+      "İlgi doğrudan."
+    ],
+    "advice": "Bugün ilgini göster.",
+    "barnum": 0.65
+  },
+  "t_venus_sextile_n_mars": {
+    "v": [
+      "Venüs natal Mars'ına altmışlık: hoş çekim, rahat uyum.",
+      "Bugün eğlenmek kolay.",
+      "Enerji sevimli."
+    ],
+    "advice": "Bugün dansa, spora, buluşmaya.",
+    "barnum": 0.75
+  },
+  "t_venus_square_n_mars": {
+    "v": [
+      "Venüs natal Mars'ına kare: hoşlandığınla tartışıyorsun.",
+      "Sevgi ile istek sürtüyor.",
+      "Kıvılcım çok, huzur az."
+    ],
+    "advice": "Bugün küs kalma, konuş.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_mars": {
+    "v": [
+      "Venüs natal Mars'ına üçgen: canlı, sıcak çekim.",
+      "Bugün yakınlık kolay.",
+      "İlgi dengeli."
+    ],
+    "advice": "Bugün ilk adımı at.",
+    "barnum": 0.7
+  },
+  "t_venus_opposition_n_mars": {
+    "v": [
+      "Venüs natal Mars'ının karşısında: çekim ve çatışma aynı anda.",
+      "Biri seni hem çekiyor hem kızdırıyor.",
+      "Sevgiyi kavgayla test etme."
+    ],
+    "advice": "Bugün tartışmayı yarına bırak.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_jupiter": {
+    "v": [
+      "Venüs natal Jüpiter'inin üstünde: cömertlik ve keyif günü.",
+      "Bugün şımar, şımart.",
+      "Bolluk hissi."
+    ],
+    "advice": "Bugün bir şey ısmarla.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_jupiter": {
+    "v": [
+      "Venüs natal Jüpiter'ine altmışlık: neşeli uyum, hoş sürpriz.",
+      "Bugün insanlar cömert.",
+      "Keyif çok."
+    ],
+    "advice": "Bugün 'olur' de.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_jupiter": {
+    "v": [
+      "Venüs natal Jüpiter'ine kare: fazla keyif, fazla harcama.",
+      "Ölçü koy.",
+      "Söz büyük, hesap sonra."
+    ],
+    "advice": "Bugün üç değil, iki.",
+    "barnum": 0.7
+  },
+  "t_venus_trine_n_jupiter": {
+    "v": [
+      "Venüs natal Jüpiter'ine üçgen: bol, sıcak, neşeli.",
+      "Bugün gülmek kolay.",
+      "İyilik döner."
+    ],
+    "advice": "Bugün arkadaşları topla.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_jupiter": {
+    "v": [
+      "Venüs natal Jüpiter'inin karşısında: biri fazla vaat ediyor.",
+      "Cömertlik karşıdan; ölçü sende.",
+      "Büyük plan, küçük uygulama."
+    ],
+    "advice": "Bugün büyük hediyeye 'düşüneyim' de.",
+    "barnum": 0.7
+  },
+  "t_venus_conjunction_n_saturn": {
+    "v": [
+      "Venüs natal Satürn'ünün üstünde: sevgi ciddi; sadakat günü.",
+      "Bugün yakınlık ağır ama gerçek.",
+      "Sevilmeyi hak etmek gerekmez; hatırla."
+    ],
+    "advice": "Bugün eski bir bağı sağlamlaştır.",
+    "barnum": 0.65
+  },
+  "t_venus_sextile_n_saturn": {
+    "v": [
+      "Venüs natal Satürn'üne altmışlık: sakin, güvenilir ilişki günü.",
+      "Bugün sadakat kolay.",
+      "Sevgi dengede."
+    ],
+    "advice": "Bugün uzun süreli bir plan yap.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_saturn": {
+    "v": [
+      "Venüs natal Satürn'üne kare: sevgi soğuk görünüyor; değil, mesafeli.",
+      "Bugün ilgi az gibi; sabır.",
+      "Kendini sevilmez sanma."
+    ],
+    "advice": "Bugün ilişkiyi sınama.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_saturn": {
+    "v": [
+      "Venüs natal Satürn'üne üçgen: olgun sevgi, sağlam bağ.",
+      "Bugün güven kolay.",
+      "Sözler tutulur."
+    ],
+    "advice": "Bugün söz ver, tutarsın.",
+    "barnum": 0.7
+  },
+  "t_venus_opposition_n_saturn": {
+    "v": [
+      "Venüs natal Satürn'ünün karşısında: biri mesafe koyuyor.",
+      "Sıcaklık ile sınır karşı karşıya.",
+      "Açık konuş."
+    ],
+    "advice": "Bugün mesafeyi kişisel alma.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_uranus": {
+    "v": [
+      "Venüs natal Uranüs'ünün üstünde: ani çekim, beklenmedik tanışma.",
+      "Bugün ilişkide sürpriz.",
+      "Özgür sevgi günü."
+    ],
+    "advice": "Bugün yeni biriyle konuş.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_uranus": {
+    "v": [
+      "Venüs natal Uranüs'üne altmışlık: taze, eğlenceli ilişkiler.",
+      "Bugün sıkılmazsın.",
+      "Farklı insanlar çekici."
+    ],
+    "advice": "Bugün rutini bozan bir buluşma.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_uranus": {
+    "v": [
+      "Venüs natal Uranüs'üne kare: ilişkide huzursuzluk, kaçma isteği.",
+      "Bugün ani kararlar; bekle.",
+      "Özgürlük ile yakınlık çekişiyor."
+    ],
+    "advice": "Bugün ayrılık kararı yok.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_uranus": {
+    "v": [
+      "Venüs natal Uranüs'üne üçgen: özgür, eğlenceli çekim.",
+      "Bugün arkadaşlık aşk gibi.",
+      "Yenilik keyifli."
+    ],
+    "advice": "Bugün farklı bir şey yapın.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_uranus": {
+    "v": [
+      "Venüs natal Uranüs'ünün karşısında: biri planı bozuyor, ilişkide sürpriz.",
+      "Bugün ani uzaklaşma ya da yakınlaşma.",
+      "Alan tanı."
+    ],
+    "advice": "Bugün plan B'ye güven.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_neptune": {
+    "v": [
+      "Venüs natal Neptün'ünün üstünde: romantik sis; büyülü, bulanık.",
+      "Bugün ideal aşk hayali.",
+      "Gerçek insanı gör."
+    ],
+    "advice": "Bugün büyük itiraf yok.",
+    "barnum": 0.65
+  },
+  "t_venus_sextile_n_neptune": {
+    "v": [
+      "Venüs natal Neptün'üne altmışlık: yumuşak, romantik, şefkatli.",
+      "Bugün sanat iyi geliyor.",
+      "Sevgi hafif."
+    ],
+    "advice": "Bugün müzik dinle.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_neptune": {
+    "v": [
+      "Venüs natal Neptün'üne kare: idealize etme günü; hayal kırıklığı riski.",
+      "Bugün kandırılmaya açık.",
+      "Sisi bekle."
+    ],
+    "advice": "Bugün söze değil, davranışa bak.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_neptune": {
+    "v": [
+      "Venüs natal Neptün'üne üçgen: romantizm, şefkat, ilham.",
+      "Bugün güzellik seni buluyor.",
+      "Sevgi yumuşak."
+    ],
+    "advice": "Bugün bir film izle, birlikte.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_neptune": {
+    "v": [
+      "Venüs natal Neptün'ünün karşısında: biri seni olduğundan güzel görüyor.",
+      "Yanılsama karşıda; net ol.",
+      "Kurtarıcı olma."
+    ],
+    "advice": "Bugün gerçekçi kal.",
+    "barnum": 0.65
+  },
+  "t_venus_conjunction_n_pluto": {
+    "v": [
+      "Venüs natal Plüton'unun üstünde: yoğun çekim, derin sevgi.",
+      "Bugün bağ kökten.",
+      "Kıskançlığa dikkat."
+    ],
+    "advice": "Bugün kontrolü bırak.",
+    "barnum": 0.6
+  },
+  "t_venus_sextile_n_pluto": {
+    "v": [
+      "Venüs natal Plüton'una altmışlık: derin ve sessiz bir yakınlık.",
+      "Bugün sır paylaşılır.",
+      "Güven güçlü."
+    ],
+    "advice": "Bugün derin bir konuşma.",
+    "barnum": 0.75
+  },
+  "t_venus_square_n_pluto": {
+    "v": [
+      "Venüs natal Plüton'una kare: kıskançlık, kontrol, yoğun duygu.",
+      "Bugün sevgi güç savaşına dönmesin.",
+      "Nefes al."
+    ],
+    "advice": "Bugün ültimatom yok.",
+    "barnum": 0.6
+  },
+  "t_venus_trine_n_pluto": {
+    "v": [
+      "Venüs natal Plüton'una üçgen: derin, sağlam, tutkulu.",
+      "Bugün bağ güçleniyor.",
+      "Sevgi dönüştürüyor."
+    ],
+    "advice": "Bugün derin bir bağa zaman ayır.",
+    "barnum": 0.7
+  },
+  "t_venus_opposition_n_pluto": {
+    "v": [
+      "Venüs natal Plüton'unun karşısında: biri kontrol istiyor.",
+      "Yoğun karşılaşma; dürüst ol.",
+      "Sınır koy."
+    ],
+    "advice": "Bugün güç oyununa girme.",
+    "barnum": 0.6
+  },
+  "t_venus_conjunction_n_asc": {
+    "v": [
+      "Venüs Yükselen'inin üstünde: bugün çekici görünüyorsun.",
+      "İlk izlenim sevimli.",
+      "Güzellik vitrinde."
+    ],
+    "advice": "Bugün fotoğraf çektir.",
+    "barnum": 0.7
+  },
+  "t_venus_sextile_n_asc": {
+    "v": [
+      "Venüs Yükselen'ine altmışlık: hoş görünüş, iyi izlenim.",
+      "Bugün sevilirsin.",
+      "Zarafet kolay."
+    ],
+    "advice": "Bugün tanışma günü.",
+    "barnum": 0.8
+  },
+  "t_venus_square_n_asc": {
+    "v": [
+      "Venüs Yükselen'ine kare: beğenilme isteği imajını zorluyor.",
+      "Bugün fazla süs.",
+      "Kendin ol."
+    ],
+    "advice": "Bugün rol yapma.",
+    "barnum": 0.65
+  },
+  "t_venus_trine_n_asc": {
+    "v": [
+      "Venüs Yükselen'ine üçgen: doğal çekicilik günü.",
+      "Bugün kolay sevilirsin.",
+      "Görünüş ve sevgi aynı dilde."
+    ],
+    "advice": "Bugün görüşmeye git.",
+    "barnum": 0.75
+  },
+  "t_venus_opposition_n_asc": {
+    "v": [
+      "Venüs Yükselen'inin karşısında: ilişki ön planda; karşı taraf çekici.",
+      "Venüs 7. evinde: ortaklık günü.",
+      "Biri seni tamamlıyor."
+    ],
+    "advice": "Bugün bir karşılaşmaya açık ol.",
+    "barnum": 0.7
   }
 }
