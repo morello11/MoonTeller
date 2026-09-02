@@ -2968,5 +2968,995 @@
     ],
     "advice": "Bir ortaklığa açık ol.",
     "barnum": 0.6
+  },
+  "t_saturn_conjunction_n_sun": {
+    "v": [
+      "Satürn natal Güneş'inin üstünde: yirmi dokuz yılda bir gelen olgunlaşma dönemi. Ağır ama kalıcı.",
+      "Bu aylar sorumluluk, sınav, sadeleşme; yük gibi gelir, temel olur.",
+      "Kimliğin sınanıyor; ne kaldıysa gerçek."
+    ],
+    "advice": "Bu dönem bir şeyi bitir, bir şeyi bırak.",
+    "barnum": 0.55
+  },
+  "t_saturn_sextile_n_sun": {
+    "v": [
+      "Satürn natal Güneş'ine altmışlık: sakin, planlı, güvenilir bir dönem.",
+      "Sabır kolay; uzun vadeye bak.",
+      "Söz ver, tutarsın."
+    ],
+    "advice": "Uzun bir plan yap.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_sun": {
+    "v": [
+      "Satürn natal Güneş'ine kare: engel, gecikme, 'yetmiyorum' hissi; geçici ama uzun.",
+      "Kendini kanıtlama isteği yüksek; kanıtlama, yap.",
+      "Otoriteyle sürtünme; kayıt tut."
+    ],
+    "advice": "Kendine sert olma; iş listesi yarın da orada.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_sun": {
+    "v": [
+      "Satürn natal Güneş'ine üçgen: sağlam, sakin, olgun bir dönem; büyük karar için iyi.",
+      "Disiplin yormuyor; işler yerine oturuyor.",
+      "Söylediğin ağır basıyor."
+    ],
+    "advice": "Ertelediğin ciddi konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_sun": {
+    "v": [
+      "Satürn natal Güneş'inin karşısında: biri fren yapıyor, sen gaz; ya da tersi.",
+      "Otorite figürüyle çekişme; ne gerekli, ona bak.",
+      "Sınırlar dışarıdan geliyor."
+    ],
+    "advice": "İstifa mektubu yazma; yarın oku, yırt.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_moon": {
+    "v": [
+      "Satürn natal Ay'ının üstünde: ağır bir dönem; sorumluluk hissi, biraz yalnızlık.",
+      "Duygular ciddi; kendine sert olma.",
+      "İhtiyaç duymak zayıflık değil; hatırla."
+    ],
+    "advice": "Bu dönem yardım iste.",
+    "barnum": 0.55
+  },
+  "t_saturn_sextile_n_moon": {
+    "v": [
+      "Satürn natal Ay'ına altmışlık: sakin, düzenli, dengeli.",
+      "Sabır kolay.",
+      "Duygular yerde."
+    ],
+    "advice": "Takvimi düzenle.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_moon": {
+    "v": [
+      "Satürn natal Ay'ına kare: 'yetmiyorum' hissi, moral düşük, öz eleştiri yüksek; geçici.",
+      "Sevgiyi hak etmek gerektiği hissi; yalan.",
+      "Duygular kısıtlı; sabır."
+    ],
+    "advice": "Kendine puan verme.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_moon": {
+    "v": [
+      "Satürn natal Ay'ına üçgen: sağlam, olgun, sakin.",
+      "Ciddi konu için iyi dönem.",
+      "Düzen rahat."
+    ],
+    "advice": "Ciddi konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_moon": {
+    "v": [
+      "Satürn natal Ay'ının karşısında: biri mesafe koyuyor, sen sıcaklık istiyorsun.",
+      "Mesafe dışarıdan; kişisel alma.",
+      "Sınırlar açık konuşulsun."
+    ],
+    "advice": "Mesafeyi kişisel alma.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_mercury": {
+    "v": [
+      "Satürn natal Merkür'ünün üstünde: ciddi düşünce, ağır söz; az konuş, derin düşün.",
+      "Zihin disiplinli; plan dönemi.",
+      "Kendi fikrine güvenmek ders."
+    ],
+    "advice": "Üç ay ilerisini planla.",
+    "barnum": 0.6
+  },
+  "t_saturn_sextile_n_mercury": {
+    "v": [
+      "Satürn natal Merkür'üne altmışlık: düzenli düşünce, güvenilir karar.",
+      "Sıralamak kolay.",
+      "Sabırlı zihin."
+    ],
+    "advice": "Listeni tamamla.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_mercury": {
+    "v": [
+      "Satürn natal Merkür'üne kare: 'yanlış anlaşılırım' korkusu; kendini frenleme.",
+      "Zihin ağır; iletişim gecikebilir.",
+      "Söz söyle."
+    ],
+    "advice": "Kendi fikrine güven.",
+    "barnum": 0.6
+  },
+  "t_saturn_trine_n_mercury": {
+    "v": [
+      "Satürn natal Merkür'üne üçgen: derin öğrenme, düzenli anlatım.",
+      "Ciddi konu için iyi.",
+      "Söylediğin ağır basıyor."
+    ],
+    "advice": "Ciddi konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_mercury": {
+    "v": [
+      "Satürn natal Merkür'ünün karşısında: biri eleştiriyor gibi; fikrini savun.",
+      "Otorite ile fikir çatışması.",
+      "Onayı dışarıda arama."
+    ],
+    "advice": "İstifa maili yazma.",
+    "barnum": 0.6
+  },
+  "t_saturn_conjunction_n_venus": {
+    "v": [
+      "Satürn natal Venüs'ünün üstünde: sevgi ciddi; sadakat sınavı, bazen yalnızlık.",
+      "Yakınlık ağır ama gerçek.",
+      "Sevilmeyi hak etmek gerekmez."
+    ],
+    "advice": "Eski bir bağı sağlamlaştır.",
+    "barnum": 0.55
+  },
+  "t_saturn_sextile_n_venus": {
+    "v": [
+      "Satürn natal Venüs'üne altmışlık: sakin, güvenilir ilişki dönemi.",
+      "Sadakat kolay.",
+      "Sevgi dengede."
+    ],
+    "advice": "Uzun süreli plan yap.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_venus": {
+    "v": [
+      "Satürn natal Venüs'üne kare: sevgi soğuk görünüyor; mesafeli.",
+      "İlgi az gibi; sabır.",
+      "Kendini sevilmez sanma."
+    ],
+    "advice": "İlişkiyi sınama.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_venus": {
+    "v": [
+      "Satürn natal Venüs'üne üçgen: olgun sevgi, sağlam bağ.",
+      "Güven kolay.",
+      "Sözler tutulur."
+    ],
+    "advice": "Söz ver, tutarsın.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_venus": {
+    "v": [
+      "Satürn natal Venüs'ünün karşısında: biri mesafe koyuyor.",
+      "Sıcaklık ile sınır karşı karşıya.",
+      "Açık konuş."
+    ],
+    "advice": "Mesafeyi kişisel alma.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_mars": {
+    "v": [
+      "Satürn natal Mars'ının üstünde: gaz ve fren; başlamak zor, bırakmak zor.",
+      "Disiplinli enerji; sabırla kurulan kalıcı.",
+      "Engel var, güç de var."
+    ],
+    "advice": "Yavaş ama sürekli çalış.",
+    "barnum": 0.55
+  },
+  "t_saturn_sextile_n_mars": {
+    "v": [
+      "Satürn natal Mars'ına altmışlık: planlı çalışma kolay.",
+      "Sağlam sonuçlar.",
+      "Ölçülü cesaret."
+    ],
+    "advice": "Uzun işe başla.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_mars": {
+    "v": [
+      "Satürn natal Mars'ına kare: engel, gecikme, öfke; duvar değil, kapı.",
+      "Sabırsızlık ile sınır çatışıyor.",
+      "Kendini erken yargılama."
+    ],
+    "advice": "Güç savaşı yok.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_mars": {
+    "v": [
+      "Satürn natal Mars'ına üçgen: dayanıklı, düzenli, verimli.",
+      "Başladığını bitirirsin.",
+      "Sessiz azim."
+    ],
+    "advice": "Zor işe iyi dönem.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_mars": {
+    "v": [
+      "Satürn natal Mars'ının karşısında: biri fren yapıyor, sen gaz.",
+      "Otoriteyle çatışma.",
+      "Engel dışarıda görünüyor; içeride de bak."
+    ],
+    "advice": "İstifa etme.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_jupiter": {
+    "v": [
+      "Satürn natal Jüpiter'inin üstünde: büyüme ile disiplin buluşuyor; sağlam genişleme.",
+      "Umut ölçülü, plan sağlam.",
+      "Yapıcı dönem."
+    ],
+    "advice": "Uzun vadeli bir şey kur.",
+    "barnum": 0.6
+  },
+  "t_saturn_sextile_n_jupiter": {
+    "v": [
+      "Satürn natal Jüpiter'ine altmışlık: planlı büyüme.",
+      "Kalıcı sonuç.",
+      "Sağduyulu umut."
+    ],
+    "advice": "Plan yap, uygula.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_jupiter": {
+    "v": [
+      "Satürn natal Jüpiter'ine kare: bir adım ileri, bir geri.",
+      "Umut ile kaygı.",
+      "Sabırla büyü."
+    ],
+    "advice": "Acele etme.",
+    "barnum": 0.6
+  },
+  "t_saturn_trine_n_jupiter": {
+    "v": [
+      "Satürn natal Jüpiter'ine üçgen: sağlam, verimli büyüme.",
+      "Kurduğun kalır.",
+      "Olgun yapıcılık."
+    ],
+    "advice": "Uzun projeye iyi.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_jupiter": {
+    "v": [
+      "Satürn natal Jüpiter'inin karşısında: genişlemek ile korumak çekişiyor.",
+      "Denge sorusu.",
+      "İki ucu tut."
+    ],
+    "advice": "Büyük kararı iki kez düşün.",
+    "barnum": 0.6
+  },
+  "t_saturn_conjunction_n_saturn": {
+    "v": [
+      "Satürn dönüşü: yirmi dokuz yılda bir; hayatın büyük sınavı ve olgunlaşma kapısı.",
+      "Bu dönemde neyin gerçek olduğunu öğreniyorsun; yorucu ama kurucu.",
+      "Satürn evine döndü: yapı kur, yükü seç, gerisini bırak."
+    ],
+    "advice": "Bu yıl hayatının temelini gözden geçir.",
+    "barnum": 0.5
+  },
+  "t_saturn_sextile_n_saturn": {
+    "v": [
+      "Satürn natal Satürn'üne altmışlık: sağlam, sakin dönem.",
+      "Disiplin kolay.",
+      "Yapı oturuyor."
+    ],
+    "advice": "Uzun vadeli adım at.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_saturn": {
+    "v": [
+      "Satürn natal Satürn'üne kare: yedi yıllık sınav noktası; yapı sarsılıyor, sağlamlaşıyor.",
+      "Engel var; kalıcı değil.",
+      "Sabır."
+    ],
+    "advice": "Bu dönem sabırlı ol.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_saturn": {
+    "v": [
+      "Satürn natal Satürn'üne üçgen: olgun, sağlam, verimli.",
+      "Yapı çalışıyor.",
+      "Disiplin rahat."
+    ],
+    "advice": "Büyük karar için iyi.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_saturn": {
+    "v": [
+      "Satürn natal Satürn'ünün karşısında: on dört yıllık kontrol noktası; kurduğun yapı sınanıyor.",
+      "Otorite ile çekişme.",
+      "Ne kaldıysa gerçek."
+    ],
+    "advice": "Yapını gözden geçir.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_uranus": {
+    "v": [
+      "Satürn natal Uranüs'ünün üstünde: düzen ile özgürlük buluşuyor; yapıyı yenile.",
+      "Kuralı bozmadan değiştir.",
+      "Yapıcı yenilik."
+    ],
+    "advice": "Eski bir düzeni yenile.",
+    "barnum": 0.6
+  },
+  "t_saturn_sextile_n_uranus": {
+    "v": [
+      "Satürn natal Uranüs'üne altmışlık: planlı değişim.",
+      "Yeni sağlam kurulur.",
+      "Dengeli yenilik."
+    ],
+    "advice": "Bir yeniliği planla.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_uranus": {
+    "v": [
+      "Satürn natal Uranüs'üne kare: kurala isyan, sonra kendi kuralın; huzursuz.",
+      "Ya katılık ya kaos; ortasını bul.",
+      "Sabırla değiştir."
+    ],
+    "advice": "Ani kopuş yok.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_uranus": {
+    "v": [
+      "Satürn natal Uranüs'üne üçgen: yeniyi sağlam kur.",
+      "Olgun yenilik.",
+      "Değişim rahat."
+    ],
+    "advice": "Yeni bir yapı kur.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_uranus": {
+    "v": [
+      "Satürn natal Uranüs'ünün karşısında: otorite ile özgürlük çekişiyor.",
+      "Kuralcı ya da isyankâr görünürsün.",
+      "Özgürlüğü düzende bul."
+    ],
+    "advice": "Kutuplaşma.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_neptune": {
+    "v": [
+      "Satürn natal Neptün'ünün üstünde: hayale yapı; sanatı disiplinle kur.",
+      "Hayal kırıklığı riski; inancı koru.",
+      "Somutlaştırma dönemi."
+    ],
+    "advice": "Bir hayali plana çevir.",
+    "barnum": 0.6
+  },
+  "t_saturn_sextile_n_neptune": {
+    "v": [
+      "Satürn natal Neptün'üne altmışlık: ilhamı işe çevir.",
+      "Pratik idealizm.",
+      "Sakin yaratıcılık."
+    ],
+    "advice": "Yaratıcı iş kur.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_neptune": {
+    "v": [
+      "Satürn natal Neptün'üne kare: belirsizlik kaygısı, güvensizlik.",
+      "Ya katı gerçek ya kaçış; ikisi de değil.",
+      "Belirsizliğe dayan."
+    ],
+    "advice": "Sisin dağılmasını bekle.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_neptune": {
+    "v": [
+      "Satürn natal Neptün'üne üçgen: sanatı sabırla, inancı sessizce kur.",
+      "Olgun idealizm.",
+      "Hayal somutlaşıyor."
+    ],
+    "advice": "Uzun bir yaratıcı projeye başla.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_neptune": {
+    "v": [
+      "Satürn natal Neptün'ünün karşısında: gerçek ile hayal iki uçta.",
+      "Katılık ya da kaçış dışarıda.",
+      "Hayali gerçeğe bağla."
+    ],
+    "advice": "Netlik iste.",
+    "barnum": 0.55
+  },
+  "t_saturn_conjunction_n_pluto": {
+    "v": [
+      "Satürn natal Plüton'unun üstünde: eski yapı çöküyor, yenisi kuruluyor; ağır dönem.",
+      "Dayanıklısın; baştan kur.",
+      "Sabır ve irade."
+    ],
+    "advice": "Bırakılacak şeyi bırak.",
+    "barnum": 0.5
+  },
+  "t_saturn_sextile_n_pluto": {
+    "v": [
+      "Satürn natal Plüton'una altmışlık: krizde düzen.",
+      "Sessiz dayanıklılık.",
+      "Yapı derinleşiyor."
+    ],
+    "advice": "Zor işi düzene bağla.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_pluto": {
+    "v": [
+      "Satürn natal Plüton'una kare: baskı altında sertleşme, kontrolü bırakamama.",
+      "Köklü dönüşüm geliyor.",
+      "Bırakmak da güç."
+    ],
+    "advice": "Kontrolü bırak.",
+    "barnum": 0.5
+  },
+  "t_saturn_trine_n_pluto": {
+    "v": [
+      "Satürn natal Plüton'una üçgen: zor işte yılmadan yeniden kurmak.",
+      "Sarsılmaz dayanıklılık.",
+      "Sessiz güç."
+    ],
+    "advice": "Büyük yeniden yapılanma için iyi.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_pluto": {
+    "v": [
+      "Satürn natal Plüton'unun karşısında: otorite ile güç mücadelesi dışarıda.",
+      "Kontrol savaşı; girme.",
+      "Kendi otoriten güç göstermeden."
+    ],
+    "advice": "Güç savaşına girme.",
+    "barnum": 0.5
+  },
+  "t_saturn_conjunction_n_asc": {
+    "v": [
+      "Satürn Yükselen'inin üstünde: yirmi dokuz yılda bir; ciddi, ölçülü, olgun görünüyorsun.",
+      "Yeni bir yaşam döngüsü; yük ve yapı.",
+      "İlk izlenim ağırbaşlı."
+    ],
+    "advice": "Bu yıl kendini yeniden tanımla.",
+    "barnum": 0.55
+  },
+  "t_saturn_sextile_n_asc": {
+    "v": [
+      "Satürn Yükselen'ine altmışlık: güvenilir izlenim, sağlam duruş.",
+      "Ciddi ama sıcak.",
+      "Saygı görürsün."
+    ],
+    "advice": "Ciddi görüşmeye iyi.",
+    "barnum": 0.7
+  },
+  "t_saturn_square_n_asc": {
+    "v": [
+      "Satürn Yükselen'ine kare: kendini frenliyorsun; soğuk görünme riski.",
+      "İmaj ağır.",
+      "Gülümse, sorun değil."
+    ],
+    "advice": "Kendini fazla frenleme.",
+    "barnum": 0.55
+  },
+  "t_saturn_trine_n_asc": {
+    "v": [
+      "Satürn Yükselen'ine üçgen: olgun, güvenilir, sakin duruş.",
+      "Saygı doğal.",
+      "Söz geçer."
+    ],
+    "advice": "Otorite gereken yerde konuş.",
+    "barnum": 0.65
+  },
+  "t_saturn_opposition_n_asc": {
+    "v": [
+      "Satürn Yükselen'inin karşısında: ilişkilerde sorumluluk, ortaklıkta sınav.",
+      "Satürn 7. evinde: biri sınır koyuyor.",
+      "Ciddi ortaklık dönemi."
+    ],
+    "advice": "Ortaklığı açık konuş.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_sun": {
+    "v": [
+      "Uranüs natal Güneş'inin üstünde: ömürde bir kez; kimliğin kabuk değiştiriyor. Sürpriz yılı.",
+      "Eski 'ben' dar geliyor; kopuşlar normal.",
+      "Özgürlük ihtiyacı yüksek; yıkma, yenile."
+    ],
+    "advice": "Bu yıl bir şeyi kökten değiştir, ama bir şeyi.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_sun": {
+    "v": [
+      "Uranüs natal Güneş'ine altmışlık: taze fikir, hafif heyecan dönemi.",
+      "Yeni denemek kolay.",
+      "Özgünlük rahat."
+    ],
+    "advice": "Yeni bir şey dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_sun": {
+    "v": [
+      "Uranüs natal Güneş'ine kare: huzursuzluk, ani karar isteği, isyan.",
+      "Her şeyi değiştirme isteği; bekle.",
+      "Sinirler gergin."
+    ],
+    "advice": "Ani istifa, ani ayrılık yok.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_sun": {
+    "v": [
+      "Uranüs natal Güneş'ine üçgen: yaratıcı, özgür, hafif dönem.",
+      "Farklı fikirler kolay.",
+      "Özgürlük huzur veriyor."
+    ],
+    "advice": "Bir şeyi farklı yap.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_sun": {
+    "v": [
+      "Uranüs natal Güneş'inin karşısında: biri seni sarsıyor; ilişkiler aniden değişiyor.",
+      "Beklenmedik iptal, beklenmedik davet.",
+      "Direnmek yorar."
+    ],
+    "advice": "Plan B'ye güven.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_moon": {
+    "v": [
+      "Uranüs natal Ay'ının üstünde: duygular ani, ev değişebilir, alışkanlıklar kırılıyor.",
+      "Özgürlük isteği yüksek.",
+      "Yakınlığı kaçarak koruma."
+    ],
+    "advice": "Rutini boz ama bağı koparma.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_moon": {
+    "v": [
+      "Uranüs natal Ay'ına altmışlık: taze, hafif, sıkılmayan dönem.",
+      "Değişim korkutmuyor.",
+      "Esnek duygular."
+    ],
+    "advice": "Yeni bir ortam dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_moon": {
+    "v": [
+      "Uranüs natal Ay'ına kare: ruh hali dalgalı, ani kararlar, huzursuzluk.",
+      "İstikrarı hapis sanma.",
+      "Nefes al."
+    ],
+    "advice": "Ani taşınma, ani ayrılık yok.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_moon": {
+    "v": [
+      "Uranüs natal Ay'ına üçgen: özgür, yaratıcı iç dünya.",
+      "Değişim rahat.",
+      "Sıra dışı huzur."
+    ],
+    "advice": "Farklı bir şey dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_moon": {
+    "v": [
+      "Uranüs natal Ay'ının karşısında: biri seni sarsıyor, yakınlık aniden değişiyor.",
+      "Güven ister, alan ver.",
+      "Kalırken de özgür ol."
+    ],
+    "advice": "Alan tanı.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_mercury": {
+    "v": [
+      "Uranüs natal Merkür'ünün üstünde: zihin elektrikli; ani fikirler, yeni bağlantılar.",
+      "Sıra dışı düşünce dönemi.",
+      "Sabırsızlık."
+    ],
+    "advice": "Fikri not al, sonra değerlendir.",
+    "barnum": 0.6
+  },
+  "t_uranus_sextile_n_mercury": {
+    "v": [
+      "Uranüs natal Merkür'üne altmışlık: taze fikirler, farklı açı.",
+      "Yeniye açık zihin.",
+      "Esnek."
+    ],
+    "advice": "Yeni bir şey öğren.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_mercury": {
+    "v": [
+      "Uranüs natal Merkür'üne kare: sinirli zihin, ani söz, dağınık dikkat.",
+      "Teknoloji huysuz.",
+      "Yedek al."
+    ],
+    "advice": "Yedek al.",
+    "barnum": 0.6
+  },
+  "t_uranus_trine_n_mercury": {
+    "v": [
+      "Uranüs natal Merkür'üne üçgen: özgün fikir, hızlı kavrama.",
+      "Bağlantı kurmak kolay.",
+      "Yaratıcı zihin."
+    ],
+    "advice": "Fikri paylaş.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_mercury": {
+    "v": [
+      "Uranüs natal Merkür'ünün karşısında: fikirler zıt, haberler beklenmedik.",
+      "Esnek ol.",
+      "Yeni ile eskiyi birleştir."
+    ],
+    "advice": "Plan B.",
+    "barnum": 0.6
+  },
+  "t_uranus_conjunction_n_venus": {
+    "v": [
+      "Uranüs natal Venüs'ünün üstünde: ani çekim, beklenmedik tanışma, ilişkide sürpriz.",
+      "Özgür sevgi dönemi.",
+      "Kaçarak koruma."
+    ],
+    "advice": "Yeni biriyle konuş.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_venus": {
+    "v": [
+      "Uranüs natal Venüs'üne altmışlık: taze, eğlenceli ilişkiler.",
+      "Farklı insanlar çekici.",
+      "Sıkılmıyorsun."
+    ],
+    "advice": "Rutini bozan buluşma.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_venus": {
+    "v": [
+      "Uranüs natal Venüs'üne kare: ilişkide huzursuzluk, kaçma isteği, ani kararlar.",
+      "Bekle.",
+      "Özgürlük ile yakınlık çekişiyor."
+    ],
+    "advice": "Ayrılık kararı yok.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_venus": {
+    "v": [
+      "Uranüs natal Venüs'üne üçgen: özgür, eğlenceli çekim.",
+      "Arkadaşlık aşk gibi.",
+      "Yenilik keyifli."
+    ],
+    "advice": "Farklı bir şey yapın.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_venus": {
+    "v": [
+      "Uranüs natal Venüs'ünün karşısında: biri planı bozuyor; ani uzaklaşma ya da yakınlaşma.",
+      "Alan tanı.",
+      "Sürpriz."
+    ],
+    "advice": "Plan B.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_mars": {
+    "v": [
+      "Uranüs natal Mars'ının üstünde: ani karar, ani kopuş, elektrik; kaza riski.",
+      "Rutin hapis gibi.",
+      "Dikkat."
+    ],
+    "advice": "Ani hareket yok.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_mars": {
+    "v": [
+      "Uranüs natal Mars'ına altmışlık: yeni yöntem, taze enerji.",
+      "Farklı dene.",
+      "Çevik."
+    ],
+    "advice": "Farklı yoldan yap.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_mars": {
+    "v": [
+      "Uranüs natal Mars'ına kare: isyan, sabırsızlık, sinir.",
+      "Kopuş çözüm değil.",
+      "Yavaşla."
+    ],
+    "advice": "Araba, bıçak, mesaj: dikkat.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_mars": {
+    "v": [
+      "Uranüs natal Mars'ına üçgen: özgün hareket, hızlı uyum.",
+      "Yenilik korkutmuyor.",
+      "Cesur ve rahat."
+    ],
+    "advice": "Yeni bir şey dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_mars": {
+    "v": [
+      "Uranüs natal Mars'ının karşısında: biri seni sarsıyor, çatışma ani.",
+      "Esnek ol.",
+      "Kopuşu çözüm sanma."
+    ],
+    "advice": "Plan B.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_jupiter": {
+    "v": [
+      "Uranüs natal Jüpiter'inin üstünde: beklenmedik fırsat, ani şans, ufuk açılıyor.",
+      "Yeni yolu dene.",
+      "Her yeniyi iyi sanma."
+    ],
+    "advice": "Beklenmedik teklife açık ol.",
+    "barnum": 0.6
+  },
+  "t_uranus_sextile_n_jupiter": {
+    "v": [
+      "Uranüs natal Jüpiter'ine altmışlık: taze fikir, yeni kapı.",
+      "Fırsat görünür.",
+      "Yeniye açık."
+    ],
+    "advice": "Bir kapıyı çal.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_jupiter": {
+    "v": [
+      "Uranüs natal Jüpiter'ine kare: ani karar, fazla risk.",
+      "Yeniyi sabırla büyüt.",
+      "Huzursuz ufuk."
+    ],
+    "advice": "Ani büyük değişiklik yok.",
+    "barnum": 0.6
+  },
+  "t_uranus_trine_n_jupiter": {
+    "v": [
+      "Uranüs natal Jüpiter'ine üçgen: yenilikçi ufuk, kolay değişim.",
+      "Özgün iyimserlik.",
+      "Fırsat farklı yerden."
+    ],
+    "advice": "Farklı yol dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_jupiter": {
+    "v": [
+      "Uranüs natal Jüpiter'inin karşısında: seni sarsan fikirler.",
+      "Ufuk aniden değişiyor.",
+      "Yeniyi eskiyle birleştir."
+    ],
+    "advice": "Esnek ol.",
+    "barnum": 0.6
+  },
+  "t_uranus_conjunction_n_saturn": {
+    "v": [
+      "Uranüs natal Satürn'ünün üstünde: yapı sarsılıyor; eski düzen kırılıyor, yenisi kuruluyor.",
+      "Kuralı bozmadan yenile.",
+      "Yapıcı yenilik."
+    ],
+    "advice": "Eski düzeni yenile.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_saturn": {
+    "v": [
+      "Uranüs natal Satürn'üne altmışlık: planlı değişim.",
+      "Dengeli yenilik.",
+      "Yeni sağlam."
+    ],
+    "advice": "Bir yeniliği planla.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_saturn": {
+    "v": [
+      "Uranüs natal Satürn'üne kare: kurala isyan, sonra kendi kuralın; huzursuz.",
+      "Ya katılık ya kaos.",
+      "Sabırla değiştir."
+    ],
+    "advice": "Ani kopuş yok.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_saturn": {
+    "v": [
+      "Uranüs natal Satürn'üne üçgen: yeniyi sağlam kur.",
+      "Olgun yenilik.",
+      "Rahat değişim."
+    ],
+    "advice": "Yeni bir yapı kur.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_saturn": {
+    "v": [
+      "Uranüs natal Satürn'ünün karşısında: otorite ile özgürlük çekişiyor.",
+      "Kutuplaşma.",
+      "Özgürlüğü düzende bul."
+    ],
+    "advice": "Ortasını bul.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_uranus": {
+    "v": [
+      "Uranüs kendi yerine döndü: seksen dört yılda bir; hayatın büyük yenilenme kapısı.",
+      "Uranüs dönüşü: eski kabuk düşüyor.",
+      "Özgürleşme yılı."
+    ],
+    "advice": "Bu yıl kendine yeni bir alan aç.",
+    "barnum": 0.5
+  },
+  "t_uranus_sextile_n_uranus": {
+    "v": [
+      "Uranüs natal Uranüs'üne altmışlık: taze bir dönem, hafif yenilik.",
+      "Yeniye açık.",
+      "Esnek."
+    ],
+    "advice": "Yeni bir şey dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_uranus": {
+    "v": [
+      "Uranüs natal Uranüs'üne kare: yirmi bir yılda bir; hayat sarsılıyor, yenileniyor.",
+      "Huzursuzluk normal.",
+      "Yıkma, yenile."
+    ],
+    "advice": "Bir şeyi kökten değiştir, hepsini değil.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_uranus": {
+    "v": [
+      "Uranüs natal Uranüs'üne üçgen: özgür, yaratıcı dönem.",
+      "Değişim rahat.",
+      "Yenilik huzur."
+    ],
+    "advice": "Farklı bir şey dene.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_uranus": {
+    "v": [
+      "Uranüs natal Uranüs'ünün karşısında: kırk yaş civarı; orta yaş uyanışı, özgürlük sorusu.",
+      "Eski hayat dar.",
+      "Yıkma, yenile."
+    ],
+    "advice": "Bu dönem büyük ama ölçülü değişim.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_neptune": {
+    "v": [
+      "Uranüs natal Neptün'ünün üstünde: hayaller sarsılıyor, ilham geliyor.",
+      "Yeni bir hayal.",
+      "Uyanış."
+    ],
+    "advice": "Eski hayali gözden geçir.",
+    "barnum": 0.6
+  },
+  "t_uranus_sextile_n_neptune": {
+    "v": [
+      "Uranüs natal Neptün'üne altmışlık: yaratıcı sezgi.",
+      "İlhamlı fikirler.",
+      "Uygula."
+    ],
+    "advice": "Yaratıcı bir fikri uygula.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_neptune": {
+    "v": [
+      "Uranüs natal Neptün'üne kare: huzursuz idealizm, sis içinde arayış.",
+      "Yönsüzlük.",
+      "Hayali yeniye bağla."
+    ],
+    "advice": "Sisin dağılmasını bekle.",
+    "barnum": 0.6
+  },
+  "t_uranus_trine_n_neptune": {
+    "v": [
+      "Uranüs natal Neptün'üne üçgen: sanat ve yenilik akıyor.",
+      "Akıcı yaratıcılık.",
+      "İlham kolay."
+    ],
+    "advice": "Yaratıcı ol.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_neptune": {
+    "v": [
+      "Uranüs natal Neptün'ünün karşısında: gerçek ile hayal iki uçta.",
+      "Kutuplaşma.",
+      "İkisini tut."
+    ],
+    "advice": "Netlik iste.",
+    "barnum": 0.6
+  },
+  "t_uranus_conjunction_n_pluto": {
+    "v": [
+      "Uranüs natal Plüton'unun üstünde: köklü değişim; sarsıntı büyük.",
+      "Devrimci dönüşüm.",
+      "Sarsmayı amaç yapma."
+    ],
+    "advice": "Değişimi yönet.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_pluto": {
+    "v": [
+      "Uranüs natal Plüton'una altmışlık: değişimi derinden yap.",
+      "Köklü yenilik.",
+      "Kullan."
+    ],
+    "advice": "Derin bir değişikliğe başla.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_pluto": {
+    "v": [
+      "Uranüs natal Plüton'una kare: sarsıntılı değişim dönemi.",
+      "Huzursuzluk.",
+      "Yıkmadan değiştir."
+    ],
+    "advice": "Değişimi yıkmadan yap.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_pluto": {
+    "v": [
+      "Uranüs natal Plüton'una üçgen: değişimi kolay kucaklarsın.",
+      "Akıcı dönüşüm.",
+      "Derinleş."
+    ],
+    "advice": "Dönüşümü kabul et.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_pluto": {
+    "v": [
+      "Uranüs natal Plüton'unun karşısında: özgürlük ile güç arasında gerilim.",
+      "Kutuplaşma.",
+      "İlkeyle değiştir."
+    ],
+    "advice": "Güçle değil, ilkeyle.",
+    "barnum": 0.55
+  },
+  "t_uranus_conjunction_n_asc": {
+    "v": [
+      "Uranüs Yükselen'inin üstünde: ömürde bir kez; görünüşün ve hayata giriş biçimin değişiyor.",
+      "Farklı görünüyorsun; iyi.",
+      "Yeni kimlik dönemi."
+    ],
+    "advice": "Bu yıl imajını yenile.",
+    "barnum": 0.55
+  },
+  "t_uranus_sextile_n_asc": {
+    "v": [
+      "Uranüs Yükselen'ine altmışlık: özgün izlenim, taze görünüş.",
+      "İlginç görünüyorsun.",
+      "Farklı ama sıcak."
+    ],
+    "advice": "Yeni insanlarla tanış.",
+    "barnum": 0.65
+  },
+  "t_uranus_square_n_asc": {
+    "v": [
+      "Uranüs Yükselen'ine kare: huzursuz görünüş, ani imaj değişiklikleri.",
+      "Bekle.",
+      "Farklılığı ispat etme."
+    ],
+    "advice": "Ani saç, ani dövme, ani istifa: bekle.",
+    "barnum": 0.55
+  },
+  "t_uranus_trine_n_asc": {
+    "v": [
+      "Uranüs Yükselen'ine üçgen: özgün, rahat, ilginç.",
+      "Farklı olmak yakışıyor.",
+      "Kolay."
+    ],
+    "advice": "Kendin ol.",
+    "barnum": 0.65
+  },
+  "t_uranus_opposition_n_asc": {
+    "v": [
+      "Uranüs Yükselen'inin karşısında: ilişkilerde ani değişim; sıra dışı ortaklar.",
+      "Uranüs 7. evinde: alan ihtiyacı.",
+      "Özgür bağ."
+    ],
+    "advice": "İlişkide alan tanı.",
+    "barnum": 0.55
   }
 }
