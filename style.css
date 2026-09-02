@@ -170,3 +170,17 @@ td.num, th.num { text-align: right; }
 .info-mark { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--pirinc); font-size: var(--fs-12); font-family: var(--font-baslik); }
 .small { font-size: var(--fs-12); }
 @media (prefers-reduced-motion: reduce) { .reading summary::before { transition: none; } }
+
+/* Bugün (Adım 4) */
+.moon-head { font-family: var(--font-baslik); font-size: var(--fs-20); margin: 0 0 8px; }
+.band { border-left: 3px solid var(--pirinc); padding: 6px 12px; background: rgba(200, 162, 74, .08); border-radius: 0 var(--radius) var(--radius) 0; }
+.band-hot { border-color: var(--kizil); background: rgba(180, 69, 43, .12); }
+.retro-on { border-color: var(--kizil); }
+.plan-form select { width: 100%; min-height: var(--tap); padding: 8px 12px; font: inherit; color: var(--fildisi); background: var(--derin); border: 1px solid var(--cizgi); border-radius: var(--radius); }
+.plan-score { display: flex; align-items: baseline; gap: 12px; margin: 8px 0; }
+.score-num { font-family: var(--font-baslik); font-size: var(--fs-40); font-weight: 600; color: var(--pirinc); font-variant-numeric: tabular-nums; }
+.score-verdict { font-family: var(--font-baslik); font-size: var(--fs-20); }
+.score-ertele .score-num { color: var(--kizil); }
+.score-yap .score-num { color: var(--verdigris); }
+.reasons { padding-left: 18px; margin: 0 0 8px; font-size: var(--fs-14); }
+.reasons .hard { color: var(--kizil); } .reasons .soft { color: var(--verdigris); }

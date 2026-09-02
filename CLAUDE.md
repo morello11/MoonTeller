@@ -107,7 +107,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 3 bitti (738 kayıt, validator strict 0 hata, 64 test); kapı Mehmet'te: 10 rastgele metnin tonunu onaylayacak, sırada Adım 4
+## Şu an: Adım 4 — Bugün bitti, kapı kontrolü bekliyor (astro-seek Ay boşlukta çapraz kontrolü + telefon); sonra Adım 5 (Ekip) planı
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 
