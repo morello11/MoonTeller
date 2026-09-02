@@ -3958,5 +3958,995 @@
     ],
     "advice": "İlişkide alan tanı.",
     "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_sun": {
+    "v": [
+      "Neptün natal Güneş'inin üstünde: yıllarca süren bir sis ve ilham dönemi; kim olduğun yumuşuyor.",
+      "Sınırlar geçirgen, sezgi güçlü, yön belirsiz; sanat ve şefkat kazanır.",
+      "Kendini kaybetmeden erimek bu dönemin dersi."
+    ],
+    "advice": "Bu dönem büyük karar yerine küçük adım.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_sun": {
+    "v": [
+      "Neptün natal Güneş'ine altmışlık: ilham ve şefkat dönemi; hayal kurmak kolay.",
+      "Sezgi iyi, yaratıcılık yakın.",
+      "Yumuşak bir yıl."
+    ],
+    "advice": "Yaratıcı bir işe zaman ayır.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_sun": {
+    "v": [
+      "Neptün natal Güneş'ine kare: kimlik sisi; ne istediğin bulanık, kolay etkilenirsin.",
+      "Kandırılmaya açık dönem; büyük vaatlere dikkat.",
+      "Enerji düşük, hayal yüksek."
+    ],
+    "advice": "Bu dönem sözleşme imzalamadan iki kez oku.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_sun": {
+    "v": [
+      "Neptün natal Güneş'ine üçgen: ilham, sanat, hafif bir büyü; sezgi haklı.",
+      "Şefkat kolay, yaratıcılık akıyor.",
+      "Rüya gibi bir dönem; uyanık kal."
+    ],
+    "advice": "Bir şey yarat.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_sun": {
+    "v": [
+      "Neptün natal Güneş'inin karşısında: başkalarını idealize etme, sonra düş kırıklığı.",
+      "Biri seni olduğundan farklı görüyor; net ol.",
+      "Kurtarıcı ya da kurban rolüne girme."
+    ],
+    "advice": "Sözü değil, davranışı izle.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_moon": {
+    "v": [
+      "Neptün natal Ay'ının üstünde: duygular sınırsız, hassasiyet yüksek; müzik iyi gelir.",
+      "Başkasının halini kendi halin gibi yaşıyorsun.",
+      "İhtiyacını sisin içinde kaybetme."
+    ],
+    "advice": "Bu dönem kendine sınır koy.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_moon": {
+    "v": [
+      "Neptün natal Ay'ına altmışlık: şefkat ve sezgi dönemi.",
+      "Empati kolay.",
+      "Yaratıcılık yakın."
+    ],
+    "advice": "Birini dinle.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_moon": {
+    "v": [
+      "Neptün natal Ay'ına kare: ne hissettiğin bulanık, kolay incinme, kaçış isteği.",
+      "Kendini kandırma.",
+      "Dinlen."
+    ],
+    "advice": "Önemli duygusal karar yok.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_moon": {
+    "v": [
+      "Neptün natal Ay'ına üçgen: şefkat ve hayal gücü akıyor.",
+      "İnsanlara iyi geliyorsun.",
+      "Sezgi haklı."
+    ],
+    "advice": "Sanata zaman ayır.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_moon": {
+    "v": [
+      "Neptün natal Ay'ının karşısında: başkalarını idealize etme dönemi.",
+      "Sis karşıda; net sor.",
+      "Kurtarıcı olma."
+    ],
+    "advice": "Gerçek insanı gör.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_mercury": {
+    "v": [
+      "Neptün natal Merkür'ünün üstünde: zihin şiirsel, ayrıntı bulanık; sanat için iyi, sözleşme için değil.",
+      "Sezgi konuşuyor, mantık susuyor.",
+      "Not al, imzalama."
+    ],
+    "advice": "Bu dönem önemli şeyi yazılı yap.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_mercury": {
+    "v": [
+      "Neptün natal Merkür'üne altmışlık: hikâye, hayal, insan okuma.",
+      "İlham yakın.",
+      "Yumuşak zihin."
+    ],
+    "advice": "Bir hikâye yaz.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_mercury": {
+    "v": [
+      "Neptün natal Merkür'üne kare: dikkat dağınık, ifade bulanık; yanlış anlaşılma.",
+      "Detay kaçıyor.",
+      "Sezgi doğru, kelime zayıf."
+    ],
+    "advice": "Önemli mesajı iki kez oku.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_mercury": {
+    "v": [
+      "Neptün natal Merkür'üne üçgen: sezgi ve düşünce aynı dilde.",
+      "Şiir, müzik, hikâye kolay.",
+      "Söylenmeyeni duyuyorsun."
+    ],
+    "advice": "Yaratıcı yaz.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_mercury": {
+    "v": [
+      "Neptün natal Merkür'ünün karşısında: iletişimde sis; biri seni yanlış okuyor.",
+      "Net sor, net söyle.",
+      "Vaat bulanık."
+    ],
+    "advice": "Yazılıyı esas al.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_venus": {
+    "v": [
+      "Neptün natal Venüs'ünün üstünde: romantik sis; ideal aşk hayali, büyülü ama bulanık.",
+      "Gerçek insanı hayaldekiyle karıştırma.",
+      "Sanat ve sevgi dönemi."
+    ],
+    "advice": "Büyük itiraf için acele etme.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_venus": {
+    "v": [
+      "Neptün natal Venüs'üne altmışlık: yumuşak, romantik, şefkatli dönem.",
+      "Sanat iyi geliyor.",
+      "Sevgi hafif."
+    ],
+    "advice": "Güzel bir şey yarat.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_venus": {
+    "v": [
+      "Neptün natal Venüs'üne kare: idealize etme, hayal kırıklığı riski, kurtarma isteği.",
+      "Kandırılmaya açık.",
+      "Sisi bekle."
+    ],
+    "advice": "Söze değil, davranışa bak.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_venus": {
+    "v": [
+      "Neptün natal Venüs'üne üçgen: romantizm, şefkat, ilham.",
+      "Güzellik seni buluyor.",
+      "Sevgi yumuşak."
+    ],
+    "advice": "Sevdiğinle sanat.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_venus": {
+    "v": [
+      "Neptün natal Venüs'ünün karşısında: biri seni olduğundan güzel görüyor, ya da sen onu.",
+      "Yanılsama karşıda.",
+      "Kurtarıcı olma."
+    ],
+    "advice": "Gerçekçi kal.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_mars": {
+    "v": [
+      "Neptün natal Mars'ının üstünde: enerji dalgalı, yön sisli; ilham varsa yorulmazsın.",
+      "Dolanarak varılan hedef.",
+      "Yorgunluk normal."
+    ],
+    "advice": "Net bir hedef koy, küçük olsun.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_mars": {
+    "v": [
+      "Neptün natal Mars'ına altmışlık: ilhamlı çaba, yaratıcı iş, yardım.",
+      "Sanat için iyi.",
+      "Yumuşak enerji."
+    ],
+    "advice": "Yaratıcı işe enerji ver.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_mars": {
+    "v": [
+      "Neptün natal Mars'ına kare: yönsüz enerji, erteleme, kaçış; kendini kandırma.",
+      "Hayali adıma bağla.",
+      "Yorgunluk."
+    ],
+    "advice": "Bir şeyi 'yarın' demeden yap.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_mars": {
+    "v": [
+      "Neptün natal Mars'ına üçgen: sezgi adımı yönlendiriyor.",
+      "Yaratıcı hareket.",
+      "İlham akıyor."
+    ],
+    "advice": "Sanata, yardıma enerji ver.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_mars": {
+    "v": [
+      "Neptün natal Mars'ının karşısında: birinin niyetini yanlış okuyorsun.",
+      "Sis dışarıda; net sor.",
+      "Kurtarıcı olma."
+    ],
+    "advice": "Davranışa bak.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_jupiter": {
+    "v": [
+      "Neptün natal Jüpiter'inin üstünde: idealizm, büyük hayaller, derin inanç.",
+      "Gerçeği hayale feda etme.",
+      "İlhamlı dönem."
+    ],
+    "advice": "Hayali adıma bağla.",
+    "barnum": 0.6
+  },
+  "t_neptune_sextile_n_jupiter": {
+    "v": [
+      "Neptün natal Jüpiter'ine altmışlık: şefkatli umut, sanat, yardım.",
+      "İnanç yumuşak.",
+      "İlham yakın."
+    ],
+    "advice": "Yaratıcı bir şeye başla.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_jupiter": {
+    "v": [
+      "Neptün natal Jüpiter'ine kare: fazla iyimserlik, fazla güven, düş kırıklığı riski.",
+      "Kendini kandırma.",
+      "İnancı gerçeğe bağla."
+    ],
+    "advice": "Büyük vaade inanma.",
+    "barnum": 0.6
+  },
+  "t_neptune_trine_n_jupiter": {
+    "v": [
+      "Neptün natal Jüpiter'ine üçgen: şefkat, sanat, sezgi akıyor.",
+      "İyilik döner.",
+      "İlhamlı cömertlik."
+    ],
+    "advice": "Karşılıksız iyilik yap.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_jupiter": {
+    "v": [
+      "Neptün natal Jüpiter'inin karşısında: başkasının vaadine kapılma.",
+      "Kurtarıcı rolü yok.",
+      "İnanç içeride."
+    ],
+    "advice": "Kanıta bak.",
+    "barnum": 0.6
+  },
+  "t_neptune_conjunction_n_saturn": {
+    "v": [
+      "Neptün natal Satürn'ünün üstünde: yapı sise karışıyor; güvenceler yumuşuyor.",
+      "Hayal kırıklığı riski; sabırlı inanç.",
+      "Somutlaştırma dersi."
+    ],
+    "advice": "Bir hayali plana çevir.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_saturn": {
+    "v": [
+      "Neptün natal Satürn'üne altmışlık: ilhamı işe çevir.",
+      "Pratik idealizm.",
+      "Sakin yaratıcılık."
+    ],
+    "advice": "Yaratıcı iş kur.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_saturn": {
+    "v": [
+      "Neptün natal Satürn'üne kare: belirsizlik kaygısı, güvensizlik, yapının sisi.",
+      "Katılık ya da kaçış değil.",
+      "Belirsizliğe dayan."
+    ],
+    "advice": "Sisin dağılmasını bekle.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_saturn": {
+    "v": [
+      "Neptün natal Satürn'üne üçgen: sanatı sabırla kur.",
+      "Olgun idealizm.",
+      "Hayal somutlaşıyor."
+    ],
+    "advice": "Uzun yaratıcı projeye başla.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_saturn": {
+    "v": [
+      "Neptün natal Satürn'ünün karşısında: gerçek ile hayal iki uçta.",
+      "Katılık ya da kaçış dışarıda.",
+      "Hayali gerçeğe bağla."
+    ],
+    "advice": "Netlik iste.",
+    "barnum": 0.55
+  },
+  "t_neptune_conjunction_n_uranus": {
+    "v": [
+      "Neptün natal Uranüs'ünün üstünde: hayal ve yenilik el ele; ilhamlı bir uyanış.",
+      "Yeni bir hayal.",
+      "Gerçekle bağı koru."
+    ],
+    "advice": "Yeni bir hayali sına.",
+    "barnum": 0.6
+  },
+  "t_neptune_sextile_n_uranus": {
+    "v": [
+      "Neptün natal Uranüs'üne altmışlık: yaratıcı sezgi, ilhamlı fikirler.",
+      "Uygula.",
+      "Yumuşak yenilik."
+    ],
+    "advice": "Bir fikri uygula.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_uranus": {
+    "v": [
+      "Neptün natal Uranüs'üne kare: huzursuz idealizm, sis içinde arayış.",
+      "Yönsüzlük.",
+      "Hayali yeniye bağla."
+    ],
+    "advice": "Sisi bekle.",
+    "barnum": 0.6
+  },
+  "t_neptune_trine_n_uranus": {
+    "v": [
+      "Neptün natal Uranüs'üne üçgen: sanat ve yenilik akıyor.",
+      "Akıcı yaratıcılık.",
+      "İlham kolay."
+    ],
+    "advice": "Yaratıcı ol.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_uranus": {
+    "v": [
+      "Neptün natal Uranüs'ünün karşısında: gerçek ile hayal iki uçta.",
+      "Kutuplaşma.",
+      "İkisini tut."
+    ],
+    "advice": "Netlik iste.",
+    "barnum": 0.6
+  },
+  "t_neptune_conjunction_n_neptune": {
+    "v": [
+      "Neptün natal Neptün'ünün üstünde: ömürde bir kez, doğumda; kişisel etkisi yok.",
+      "Neptün evinde; çağın rüyası.",
+      "Kuşak tonu."
+    ],
+    "advice": "Bu açı kişisel değil.",
+    "barnum": 0.9
+  },
+  "t_neptune_sextile_n_neptune": {
+    "v": [
+      "Neptün natal Neptün'üne altmışlık: yirmili yaşların sonu; ilham ve şefkat dönemi.",
+      "Hayal gücü olgunlaşıyor.",
+      "Yumuşak."
+    ],
+    "advice": "Yaratıcı yönünü besle.",
+    "barnum": 0.7
+  },
+  "t_neptune_square_n_neptune": {
+    "v": [
+      "Neptün natal Neptün'üne kare: kırklı yaşlar; hayaller sorgulanıyor, inançlar sisleniyor.",
+      "Orta yaş sisi normal.",
+      "Yeni bir hayal kur."
+    ],
+    "advice": "Eski hayali gözden geçir.",
+    "barnum": 0.65
+  },
+  "t_neptune_trine_n_neptune": {
+    "v": [
+      "Neptün natal Neptün'üne üçgen: ellili yaşlar; olgun bir sezgi ve şefkat.",
+      "İlham dinginleşiyor.",
+      "Sanat iyi."
+    ],
+    "advice": "Şefkatli kal.",
+    "barnum": 0.7
+  },
+  "t_neptune_opposition_n_neptune": {
+    "v": [
+      "Neptün natal Neptün'ünün karşısında: seksenli yaşlar; hayat bir rüya gibi geriye bakıyor.",
+      "Bilgelik dönemi.",
+      "Hayal ve gerçek buluşuyor."
+    ],
+    "advice": "Anlat, dinlensin.",
+    "barnum": 0.7
+  },
+  "t_neptune_conjunction_n_pluto": {
+    "v": [
+      "Neptün natal Plüton'unun üstünde: hayal ile dönüşüm; derin bir sezgi dönemi.",
+      "Çağ etkisi ağır basar.",
+      "Gerçekle bağı koru."
+    ],
+    "advice": "Sezgine güven, kanıtla.",
+    "barnum": 0.75
+  },
+  "t_neptune_sextile_n_pluto": {
+    "v": [
+      "Neptün natal Plüton'una altmışlık: derin sezgi, sessiz dönüşüm.",
+      "Kuşak tonu.",
+      "Hafif."
+    ],
+    "advice": "Derinleş.",
+    "barnum": 0.8
+  },
+  "t_neptune_square_n_pluto": {
+    "v": [
+      "Neptün natal Plüton'una kare: sis içinde arayış, güç ile hayal çekişiyor.",
+      "Yönsüzlük.",
+      "Kuşak etkisi."
+    ],
+    "advice": "Sisi bekle.",
+    "barnum": 0.75
+  },
+  "t_neptune_trine_n_pluto": {
+    "v": [
+      "Neptün natal Plüton'una üçgen: sezgi ve derinlik akıyor.",
+      "Kuşak tonu.",
+      "Yumuşak."
+    ],
+    "advice": "Derinleş.",
+    "barnum": 0.8
+  },
+  "t_neptune_opposition_n_pluto": {
+    "v": [
+      "Neptün natal Plüton'unun karşısında: hayal ile güç iki uçta; nadir.",
+      "Kutuplaşma.",
+      "İkisini tut."
+    ],
+    "advice": "Netlik.",
+    "barnum": 0.75
+  },
+  "t_neptune_conjunction_n_asc": {
+    "v": [
+      "Neptün Yükselen'inin üstünde: görünüşün yumuşuyor, sınırların eriyor; insanlar seni kendine benzetiyor.",
+      "Cazibe artıyor, netlik azalıyor.",
+      "Sisli ama çekici dönem."
+    ],
+    "advice": "Kim olduğunu hatırla.",
+    "barnum": 0.55
+  },
+  "t_neptune_sextile_n_asc": {
+    "v": [
+      "Neptün Yükselen'ine altmışlık: yumuşak, şefkatli izlenim.",
+      "İnsanlar sana açılıyor.",
+      "Sanatçı havası."
+    ],
+    "advice": "Şefkatini göster.",
+    "barnum": 0.65
+  },
+  "t_neptune_square_n_asc": {
+    "v": [
+      "Neptün Yükselen'ine kare: silik görünme, yanlış okunma, imaj sisi.",
+      "Net ol.",
+      "Kendini kaybetme."
+    ],
+    "advice": "İmajını netleştir.",
+    "barnum": 0.55
+  },
+  "t_neptune_trine_n_asc": {
+    "v": [
+      "Neptün Yükselen'ine üçgen: sevecen, anlayışlı, çekici izlenim.",
+      "İnsanlar rahatlıyor.",
+      "Yumuşak cazibe."
+    ],
+    "advice": "İnsanlara iyi gel.",
+    "barnum": 0.6
+  },
+  "t_neptune_opposition_n_asc": {
+    "v": [
+      "Neptün Yükselen'inin karşısında: ilişkilerde yanılsama; ortağı idealize etme.",
+      "Neptün 7. evinde: kurtarma isteği.",
+      "Gerçek insanı gör."
+    ],
+    "advice": "İlişkide net ol.",
+    "barnum": 0.55
+  },
+  "t_pluto_conjunction_n_sun": {
+    "v": [
+      "Plüton natal Güneş'inin üstünde: hayatın büyük dönüşüm dönemi; kim olduğun yeniden kuruluyor.",
+      "Güç, kriz, yeniden doğuş; yıllar sürer.",
+      "Kontrolü bırak, kaybetmezsin."
+    ],
+    "advice": "Bu dönem bir şeyi köklü bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_sun": {
+    "v": [
+      "Plüton natal Güneş'ine altmışlık: sessiz bir güçlenme dönemi.",
+      "Krizde sakin.",
+      "Derinlik rahat."
+    ],
+    "advice": "Derin konuşmayı yap.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_sun": {
+    "v": [
+      "Plüton natal Güneş'ine kare: güç mücadelesi dönemi; kontrol et ya da edil.",
+      "Her şeyi kriz sanma.",
+      "Gücü bırakmak da güç."
+    ],
+    "advice": "Güç savaşına girme.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_sun": {
+    "v": [
+      "Plüton natal Güneş'ine üçgen: derin, sağlam, etkili bir dönem; dönüşüm kolay.",
+      "İrade akıyor.",
+      "Etkilersin, zorlamadan."
+    ],
+    "advice": "Uzun süredir kaçtığın işi bitir.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_sun": {
+    "v": [
+      "Plüton natal Güneş'inin karşısında: güçlü biriyle sınanıyorsun.",
+      "Güç dengesi; dürüstlük kazanır.",
+      "Yoğun karşılaşma."
+    ],
+    "advice": "Ültimatom verme.",
+    "barnum": 0.5
+  },
+  "t_pluto_conjunction_n_moon": {
+    "v": [
+      "Plüton natal Ay'ının üstünde: duygusal yeniden doğuş; eski ihtiyaçlar ölüyor.",
+      "Yoğun, derin, dönüştürücü yıllar.",
+      "Kontrol ihtiyacı; bırak."
+    ],
+    "advice": "Eski bir alışkanlığı bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_moon": {
+    "v": [
+      "Plüton natal Ay'ına altmışlık: sessiz duygusal güç.",
+      "Krizde sakin.",
+      "Derin bağ."
+    ],
+    "advice": "Sır paylaş.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_moon": {
+    "v": [
+      "Plüton natal Ay'ına kare: kıskançlık, kontrol, yoğun duygu; köklü dönüşüm.",
+      "Sevgiyi güç mücadelesine çevirme.",
+      "Bırakmak da sevgi."
+    ],
+    "advice": "Kontrolü bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_moon": {
+    "v": [
+      "Plüton natal Ay'ına üçgen: derin, sağlam, sakin dönem.",
+      "İrade akıyor.",
+      "Duygular güçlü, dengede."
+    ],
+    "advice": "Kaçtığın işi bitir.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_moon": {
+    "v": [
+      "Plüton natal Ay'ının karşısında: biri kontrol etmek istiyor; sen de olabilirsin.",
+      "Güç dengesi sınanıyor.",
+      "Sınır koy."
+    ],
+    "advice": "Dürüst kal.",
+    "barnum": 0.5
+  },
+  "t_pluto_conjunction_n_mercury": {
+    "v": [
+      "Plüton natal Merkür'ünün üstünde: düşünce derinleşiyor; araştırma, sır, keskin söz.",
+      "Zihin dönüşüyor.",
+      "Kelime güç aracı olmasın."
+    ],
+    "advice": "Derin bir konuya gir.",
+    "barnum": 0.55
+  },
+  "t_pluto_sextile_n_mercury": {
+    "v": [
+      "Plüton natal Merkür'üne altmışlık: gizli olanı görmek kolay.",
+      "Araştırma dönemi.",
+      "Sezgisel zekâ."
+    ],
+    "advice": "Bir şeyi araştır.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_mercury": {
+    "v": [
+      "Plüton natal Merkür'üne kare: şüphe, takıntı, haklı çıkma; zihin savaşı.",
+      "Sohbet sorguya dönmesin.",
+      "Kelimeyle kontrol etme."
+    ],
+    "advice": "Tartışmayı bırak.",
+    "barnum": 0.55
+  },
+  "t_pluto_trine_n_mercury": {
+    "v": [
+      "Plüton natal Merkür'üne üçgen: derin düşünce, ikna gücü.",
+      "Sır iyi tutulur.",
+      "Sessiz güçlü zihin."
+    ],
+    "advice": "Etkili bir şey söyle.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_mercury": {
+    "v": [
+      "Plüton natal Merkür'ünün karşısında: biri seni sorguluyor.",
+      "Zihin savaşı dışarıda; girme.",
+      "Dürüstlük kazanır."
+    ],
+    "advice": "Ültimatom yazma.",
+    "barnum": 0.55
+  },
+  "t_pluto_conjunction_n_venus": {
+    "v": [
+      "Plüton natal Venüs'ünün üstünde: sevgi dönüşüyor; yoğun, tutkulu, bazen yıkıcı.",
+      "Yarım bağ yok.",
+      "Kıskançlık ve kontrol dersi."
+    ],
+    "advice": "Kontrolü bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_venus": {
+    "v": [
+      "Plüton natal Venüs'üne altmışlık: derin, sessiz yakınlık.",
+      "Sır paylaşılır.",
+      "Güven güçlü."
+    ],
+    "advice": "Derin bir bağa zaman ayır.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_venus": {
+    "v": [
+      "Plüton natal Venüs'üne kare: kıskançlık, kontrol, yoğun ilişki; köklü dönüşüm.",
+      "Sevgi güç savaşı olmasın.",
+      "Bırakmak da sevgi."
+    ],
+    "advice": "Ültimatom yok.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_venus": {
+    "v": [
+      "Plüton natal Venüs'üne üçgen: derin, sağlam, tutkulu sevgi.",
+      "Bağ güçleniyor.",
+      "Sevgi dönüştürüyor."
+    ],
+    "advice": "Derin bağa yatırım yap.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_venus": {
+    "v": [
+      "Plüton natal Venüs'ünün karşısında: biri kontrol istiyor; yoğun karşılaşma.",
+      "Dürüst ol.",
+      "Sınır koy."
+    ],
+    "advice": "Güç oyununa girme.",
+    "barnum": 0.5
+  },
+  "t_pluto_conjunction_n_mars": {
+    "v": [
+      "Plüton natal Mars'ının üstünde: yoğun irade, güç mücadelesi, dönüştürücü enerji.",
+      "Sonuna kadar gidersin; ölçü.",
+      "Öfke derinden."
+    ],
+    "advice": "Güç oyunu yok.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_mars": {
+    "v": [
+      "Plüton natal Mars'ına altmışlık: kararlı, derin enerji.",
+      "Zor işte yılmazsın.",
+      "Sessiz irade."
+    ],
+    "advice": "Zor işe giriş.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_mars": {
+    "v": [
+      "Plüton natal Mars'ına kare: öfke derinden, kontrol isteği güçlü, rekabet sert.",
+      "Her mücadeleyi savaşa çevirme.",
+      "Gücü bırak."
+    ],
+    "advice": "Masadan kalk.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_mars": {
+    "v": [
+      "Plüton natal Mars'ına üçgen: derin irade, sessiz güç.",
+      "Zor durumda sakin.",
+      "Baştan başlama gücü."
+    ],
+    "advice": "Kaçtığın işi bitir.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_mars": {
+    "v": [
+      "Plüton natal Mars'ının karşısında: güçlü, kontrolcü biriyle sınanıyorsun.",
+      "Yoğun çatışma; dürüstlük.",
+      "Kendi gücünü sahiplen."
+    ],
+    "advice": "Ültimatom verme.",
+    "barnum": 0.5
+  },
+  "t_pluto_conjunction_n_jupiter": {
+    "v": [
+      "Plüton natal Jüpiter'inin üstünde: büyük hedef, derin irade; güç için değil büyüme için.",
+      "Köklü dönüşüm.",
+      "Etkili dönem."
+    ],
+    "advice": "Dürüst bir büyük hedef koy.",
+    "barnum": 0.55
+  },
+  "t_pluto_sextile_n_jupiter": {
+    "v": [
+      "Plüton natal Jüpiter'ine altmışlık: krizden büyüme, sessiz etki.",
+      "Derinlik verimli.",
+      "Güç var."
+    ],
+    "advice": "Zor konuda ilerle.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_jupiter": {
+    "v": [
+      "Plüton natal Jüpiter'ine kare: hırs, aşırı güven, güç mücadelesi.",
+      "Ölçü.",
+      "Büyümeyi güce feda etme."
+    ],
+    "advice": "Güç oyunu yok.",
+    "barnum": 0.55
+  },
+  "t_pluto_trine_n_jupiter": {
+    "v": [
+      "Plüton natal Jüpiter'ine üçgen: derin büyüme, sağlam etki.",
+      "Hedefe sessizce.",
+      "Güçlenme."
+    ],
+    "advice": "Büyük işe giriş.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_jupiter": {
+    "v": [
+      "Plüton natal Jüpiter'inin karşısında: güçlü biriyle sınanıyorsun.",
+      "Güç mücadelesi dışarıda.",
+      "Kendi gücünü sahiplen."
+    ],
+    "advice": "Dürüst kal.",
+    "barnum": 0.55
+  },
+  "t_pluto_conjunction_n_saturn": {
+    "v": [
+      "Plüton natal Satürn'ünün üstünde: eski yapılar çöküyor, yenisi kuruluyor; ağır dönem.",
+      "Dayanıklısın; baştan kur.",
+      "Sabır ve irade."
+    ],
+    "advice": "Bırakılacak şeyi bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_saturn": {
+    "v": [
+      "Plüton natal Satürn'üne altmışlık: krizde düzen.",
+      "Sessiz dayanıklılık.",
+      "Yapı derinleşiyor."
+    ],
+    "advice": "Zor işi düzene bağla.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_saturn": {
+    "v": [
+      "Plüton natal Satürn'üne kare: baskı altında sertleşme, kontrolü bırakamama.",
+      "Köklü dönüşüm.",
+      "Bırakmak da güç."
+    ],
+    "advice": "Kontrolü bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_saturn": {
+    "v": [
+      "Plüton natal Satürn'üne üçgen: zor işte yılmadan yeniden kurmak.",
+      "Sarsılmaz.",
+      "Sessiz güç."
+    ],
+    "advice": "Yeniden yapılanma için iyi.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_saturn": {
+    "v": [
+      "Plüton natal Satürn'ünün karşısında: otorite ile güç mücadelesi dışarıda.",
+      "Kontrol savaşı; girme.",
+      "Otoriteyi güç göstermeden kur."
+    ],
+    "advice": "Güç savaşına girme.",
+    "barnum": 0.5
+  },
+  "t_pluto_conjunction_n_uranus": {
+    "v": [
+      "Plüton natal Uranüs'ünün üstünde: köklü değişim, sarsıntı; devrimci dönüşüm.",
+      "Sarsmayı amaç yapma.",
+      "Yıkma, yenile."
+    ],
+    "advice": "Değişimi yönet.",
+    "barnum": 0.55
+  },
+  "t_pluto_sextile_n_uranus": {
+    "v": [
+      "Plüton natal Uranüs'üne altmışlık: değişimi derinden yap.",
+      "Köklü yenilik.",
+      "Kullan."
+    ],
+    "advice": "Derin bir değişikliğe başla.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_uranus": {
+    "v": [
+      "Plüton natal Uranüs'üne kare: sarsıntılı değişim.",
+      "Huzursuzluk.",
+      "Yıkmadan değiştir."
+    ],
+    "advice": "Yıkmadan değiştir.",
+    "barnum": 0.55
+  },
+  "t_pluto_trine_n_uranus": {
+    "v": [
+      "Plüton natal Uranüs'üne üçgen: değişimi kolay kucaklarsın.",
+      "Akıcı dönüşüm.",
+      "Derinleş."
+    ],
+    "advice": "Dönüşümü kabul et.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_uranus": {
+    "v": [
+      "Plüton natal Uranüs'ünün karşısında: özgürlük ile güç gerilimi.",
+      "Kutuplaşma.",
+      "İlkeyle değiştir."
+    ],
+    "advice": "İlkeyle.",
+    "barnum": 0.55
+  },
+  "t_pluto_conjunction_n_neptune": {
+    "v": [
+      "Plüton natal Neptün'ünün üstünde: hayal ile dönüşüm; çağ etkisi ağır basar.",
+      "Derin sezgi.",
+      "Gerçekle bağı koru."
+    ],
+    "advice": "Sezgine güven, kanıtla.",
+    "barnum": 0.75
+  },
+  "t_pluto_sextile_n_neptune": {
+    "v": [
+      "Plüton natal Neptün'üne altmışlık: derin sezgi, sessiz dönüşüm; kuşak tonu.",
+      "Hafif.",
+      "Derinleş."
+    ],
+    "advice": "Derinleş.",
+    "barnum": 0.8
+  },
+  "t_pluto_square_n_neptune": {
+    "v": [
+      "Plüton natal Neptün'üne kare: güç ile hayal çekişiyor; nadir, kuşak etkisi.",
+      "Yönsüzlük.",
+      "Sis."
+    ],
+    "advice": "Sisi bekle.",
+    "barnum": 0.75
+  },
+  "t_pluto_trine_n_neptune": {
+    "v": [
+      "Plüton natal Neptün'üne üçgen: sezgi ve derinlik akıyor; kuşak tonu.",
+      "Yumuşak.",
+      "Derinleş."
+    ],
+    "advice": "Derinleş.",
+    "barnum": 0.8
+  },
+  "t_pluto_opposition_n_neptune": {
+    "v": [
+      "Plüton natal Neptün'ünün karşısında: hayal ile güç iki uçta; çok nadir.",
+      "Kutuplaşma.",
+      "İkisini tut."
+    ],
+    "advice": "Netlik.",
+    "barnum": 0.75
+  },
+  "t_pluto_conjunction_n_pluto": {
+    "v": [
+      "Plüton natal Plüton'unun üstünde: yalnızca doğumda; kişisel etkisi yok.",
+      "Kuşak tonu.",
+      "Çağın gücü."
+    ],
+    "advice": "Bu açı kişisel değil.",
+    "barnum": 0.9
+  },
+  "t_pluto_sextile_n_pluto": {
+    "v": [
+      "Plüton natal Plüton'una altmışlık: yirmili-otuzlu yaşlar; sessiz bir güçlenme.",
+      "Derinlik olgunlaşıyor.",
+      "Kuşak tonu."
+    ],
+    "advice": "Gücünü fark et.",
+    "barnum": 0.7
+  },
+  "t_pluto_square_n_pluto": {
+    "v": [
+      "Plüton natal Plüton'una kare: otuzlu-kırklı yaşlar; güç sorusu, köklü dönüşüm.",
+      "Orta yaş dönüşümü.",
+      "Bırak, yeniden kur."
+    ],
+    "advice": "Bir şeyi köklü bırak.",
+    "barnum": 0.6
+  },
+  "t_pluto_trine_n_pluto": {
+    "v": [
+      "Plüton natal Plüton'una üçgen: ileri yaşlar; olgun bir derinlik.",
+      "Güç dinginleşiyor.",
+      "Bilgelik."
+    ],
+    "advice": "Deneyimini paylaş.",
+    "barnum": 0.7
+  },
+  "t_pluto_opposition_n_pluto": {
+    "v": [
+      "Plüton natal Plüton'unun karşısında: çok ileri yaş; ömrün büyük dönüşümüne geriye bakış.",
+      "Nadir.",
+      "Bilgelik."
+    ],
+    "advice": "Anlat.",
+    "barnum": 0.7
+  },
+  "t_pluto_conjunction_n_asc": {
+    "v": [
+      "Plüton Yükselen'inin üstünde: görünüşün ve hayata giriş biçimin köklü değişiyor; yoğun yıllar.",
+      "İnsanlar seni farklı görüyor: güçlü, biraz ürkütücü.",
+      "Yeniden doğuş."
+    ],
+    "advice": "Bu dönem kendini yeniden tanımla.",
+    "barnum": 0.5
+  },
+  "t_pluto_sextile_n_asc": {
+    "v": [
+      "Plüton Yükselen'ine altmışlık: karizma artıyor, sessiz güç.",
+      "Etkileyici izlenim.",
+      "Derin."
+    ],
+    "advice": "Etkini fark et.",
+    "barnum": 0.65
+  },
+  "t_pluto_square_n_asc": {
+    "v": [
+      "Plüton Yükselen'ine kare: imaj güç mücadelesine dönüyor; kontrol.",
+      "Sert görünme riski.",
+      "Yumuşa."
+    ],
+    "advice": "Kontrolü bırak.",
+    "barnum": 0.5
+  },
+  "t_pluto_trine_n_asc": {
+    "v": [
+      "Plüton Yükselen'ine üçgen: karizma doğal, etki sessiz.",
+      "Güçlü ama rahat.",
+      "Derin izlenim."
+    ],
+    "advice": "Etkini iyiye kullan.",
+    "barnum": 0.6
+  },
+  "t_pluto_opposition_n_asc": {
+    "v": [
+      "Plüton Yükselen'inin karşısında: ilişkilerde güç dengesi; yoğun ortaklıklar.",
+      "Plüton 7. evinde: biri seni dönüştürüyor.",
+      "Kontrol sorusu."
+    ],
+    "advice": "İlişkide sınır koy.",
+    "barnum": 0.5
   }
 }
