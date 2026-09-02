@@ -670,5 +670,257 @@
     "body": "Yükselen dış görünüşünü ve ilk izlenimi anlatır; haritanın sahibi Jüpiter ve Neptün'dür. Balık su elementinden, değişken nitelikte: yumuşak, duyarlı, akışkan. İnsanlar seni sevecen ve anlayışlı bulur; ne istediğini kolay okuyamazlar. Gücün şefkatli uyum; gölgesi, silik görünmek.",
     "scene": "Herkes seni kendi dünyasından sanır: sanatçıya sanatçı, sporcuya sporcu gelirsin.",
     "barnum": 0.55
+  },
+  "uranus_aries": {
+    "title": "Koç Uranüsü",
+    "hook": "Yeniyi beklemezsin; yeniyi sen başlatırsın, bazen bir gecede.",
+    "body": "Uranüs nerede kalıpları kırdığını ve neyle özgürleştiğini anlatır; bir burçta yedi yıl kalır, aynı yaş grubunun ortak tonudur. Koç ateş elementinden, öncü nitelikte: cesur, ani, öncü. Kuşağınla birlikte yeni yolları ilk deneyen sensin; eski usule sabrın azdır. Gücün girişimci yenilik; gölgesi, sabırsız kopuşlar.",
+    "scene": "Yeni bir uygulama çıktığı gün kurmuş, ertesi gün herkese anlatıyor olursun.",
+    "barnum": 0.6
+  },
+  "uranus_taurus": {
+    "title": "Boğa Uranüsü",
+    "hook": "Değerin ne olduğunu yeniden tanımlayan kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Boğa toprak elementinden, sabit nitelikte: madde, güvence, doğa. Kuşağınla birlikte para, yeme içme ve toprakla ilişkiyi baştan kuruyorsun; eski güvenceler sana yetmiyor. Gücün pratik yenilik; gölgesi, sarsıntıya direnmek.",
+    "scene": "Ev yapımı, elde tamir, ikinci el: bunlar senin için nostalji değil, yeni normal.",
+    "barnum": 0.65
+  },
+  "uranus_gemini": {
+    "title": "İkizler Uranüsü",
+    "hook": "Bilgiye ulaşmanın yolunu değiştiren kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. İkizler hava elementinden, değişken nitelikte: dil, iletişim, hız. Kuşağınla birlikte konuşma, öğrenme ve haberleşme biçimini yeniliyorsun. Gücün çevik ve özgün zihin; gölgesi, dağınık dikkat.",
+    "scene": "Bir konuyu öğrenmek için kitap değil, üç farklı kaynağı aynı anda açarsın.",
+    "barnum": 0.65
+  },
+  "uranus_cancer": {
+    "title": "Yengeç Uranüsü",
+    "hook": "Ev ve aidiyet kavramını kuşağınla birlikte yeniden yazdın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Yengeç su elementinden, öncü nitelikte: ev, kök, bakım. Kuşağın için 'ev' eski tanımına sığmadı; yakınlığı kendi kurallarınla kurarsın. Gücün duygusal özgürlük; gölgesi, köke bağlanmakta huzursuzluk.",
+    "scene": "Evin neresi olduğunu sorunca bir adres değil, bir insan ya da bir şehir söylersin.",
+    "barnum": 0.65
+  },
+  "uranus_leo": {
+    "title": "Aslan Uranüsü",
+    "hook": "Kendini ifade etmenin özgür olması gerektiğine kuşak olarak inanırsın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Aslan ateş elementinden, sabit nitelikte: yaratıcılık, sahne, birey. Kuşağınla birlikte kendini gösterme biçimlerini yeniledin; kalıp kimlik sana dar gelir. Gücün özgün yaratıcılık; gölgesi, dikkat çekmeyi amaç yapmak.",
+    "scene": "Bir hobiyi kimse anlamasa da sürdürürsün; on yıl sonra herkes o hobiyi edinir.",
+    "barnum": 0.65
+  },
+  "uranus_virgo": {
+    "title": "Başak Uranüsü",
+    "hook": "Çalışma ve düzen anlayışını yenileyen kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Başak toprak elementinden, değişken nitelikte: yöntem, hizmet, beden. Kuşağınla birlikte işin nasıl yapıldığını, günlük düzeni ve bedenle ilişkiyi yeniden kurdun. Gücün pratik icat; gölgesi, huzursuz bir titizlik.",
+    "scene": "Günlük düzenini üç ayda bir baştan kurar, hepsinde bir şey öğrenirsin.",
+    "barnum": 0.65
+  },
+  "uranus_libra": {
+    "title": "Terazi Uranüsü",
+    "hook": "İlişki kurallarını sorgulayan kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Terazi hava elementinden, öncü nitelikte: ilişki, eşitlik, estetik. Kuşağınla birlikte ortaklık ve adalet fikrini yeniledin; kalıp roller sana uymaz. Gücün eşitlikçi bakış; gölgesi, bağlanmayı kısıtlanma sanmak.",
+    "scene": "Arkadaşlıkta kuralı sen koymazsın, ama kural koyana ilk itiraz eden sensin.",
+    "barnum": 0.65
+  },
+  "uranus_scorpio": {
+    "title": "Akrep Uranüsü",
+    "hook": "Tabu senin için konuşulmayacak şey değil, konuşulması gereken şey.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Akrep su elementinden, sabit nitelikte: derinlik, güç, dönüşüm. Kuşağınla birlikte gizli olanı açığa çıkarma cesareti taşırsın; yüzeysel yenilik seni tatmin etmez. Gücün köklü dönüşüm; gölgesi, sarsmayı amaç haline getirmek.",
+    "scene": "Sofrada kimsenin açmadığı konuyu sen açarsın ve masa sessizleşir.",
+    "barnum": 0.6
+  },
+  "uranus_sagittarius": {
+    "title": "Yay Uranüsü",
+    "hook": "İnanç ve sınır fikrini kuşağınla birlikte esnettin.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Yay ateş elementinden, değişken nitelikte: uzaklar, felsefe, özgürlük. Kuşağın için dünya küçüldü, fikirler çoğaldı; tek bir doğruya bağlı kalmak sana yabancıdır. Gücün geniş ve özgür bakış; gölgesi, hiçbir yere kök salamamak.",
+    "scene": "Farklı ülkelerden arkadaşların olur ve her birinden bir alışkanlık kaparsın.",
+    "barnum": 0.65
+  },
+  "uranus_capricorn": {
+    "title": "Oğlak Uranüsü",
+    "hook": "Kurumları içeriden değiştiren kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, otorite, hedef. Kuşağınla birlikte otoriteyi sorgular ama sistemi yıkmak yerine yeniden kurarsın. Gücün yapıcı yenilik; gölgesi, eski ile yeni arasında sıkışmak.",
+    "scene": "Kuralı beğenmezsin ama çiğnemezsin; daha iyisini yazıp önerirsin.",
+    "barnum": 0.65
+  },
+  "uranus_aquarius": {
+    "title": "Kova Uranüsü",
+    "hook": "Bağlantı ve topluluk fikrini yeniden tanımlayan kuşağın parçasısın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır ve Kova onun modern evi: en özgün çalıştığı yer. Bir burçta yedi yıl kalır, kuşağın ortak tonudur. Hava elementi, sabit nitelik: ağ, teknoloji, eşitlik. Kuşağınla birlikte insanların nasıl bağlandığını değiştirdin. Gücün ileri görüş ve dayanışma; gölgesi, mesafeli bir idealizm.",
+    "scene": "Yüz yüze görüşmediğin ama her gün konuştuğun arkadaşların vardır.",
+    "barnum": 0.65
+  },
+  "uranus_pisces": {
+    "title": "Balık Uranüsü",
+    "hook": "Hayal gücünün de bir teknoloji olabileceğini gösteren kuşaktansın.",
+    "body": "Uranüs nerede kalıpları kırdığını anlatır; bir burçta yedi yıl kalır, kuşağın ortak tonudur. Balık su elementinden, değişken nitelikte: hayal, şefkat, çözülme. Kuşağınla birlikte sanat, inanç ve iç dünya konularına yeni bir dil getirdin. Gücün sezgisel yenilik; gölgesi, dağınık bir idealizm.",
+    "scene": "Bir sanat işini herkesten önce beğenirsin ve nedenini anlatamazsın.",
+    "barnum": 0.7
+  },
+  "neptune_aries": {
+    "title": "Koç Neptünü",
+    "hook": "Kahramanlık hayali senin kuşağının ortak rüyası.",
+    "body": "Neptün nerede hayal kurduğunu ve neyi idealleştirdiğini anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Koç ateş elementinden, öncü nitelikte: cesaret, birey, başlangıç. Kuşağınla birlikte bireysel cesaretin bir ideal olduğuna inanırsın. Gücün ilhamlı cesaret; gölgesi, gerçekçi olmayan kahramanlık beklentisi.",
+    "scene": "Bir filmde tek başına herkese karşı duran karakter senin karakterindir.",
+    "barnum": 0.7
+  },
+  "neptune_taurus": {
+    "title": "Boğa Neptünü",
+    "hook": "Doğayla ve toprakla ilişki senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Boğa toprak elementinden, sabit nitelikte: madde, doğa, değer. Kuşağınla birlikte sade yaşamı ve doğayı idealleştirirsin. Gücün huzur arayışı; gölgesi, güvenceyi hayal ile karıştırmak.",
+    "scene": "Şehirden kaçıp bahçeli bir eve yerleşme hayalini en az bir kez ciddiye almışsındır.",
+    "barnum": 0.7
+  },
+  "neptune_gemini": {
+    "title": "İkizler Neptünü",
+    "hook": "Kelimelerin büyüsü senin kuşağının ortak inancı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. İkizler hava elementinden, değişken nitelikte: dil, hikâye, bağlantı. Kuşağınla birlikte anlatının gücüne inanırsın; iyi bir hikâye seni gerçekten daha çok etkiler. Gücün hayal gücü ve dil; gölgesi, söz ile gerçeği karıştırmak.",
+    "scene": "Bir hikâyeyi anlatırken her seferinde küçük bir şey eklersin ve fark etmezsin.",
+    "barnum": 0.7
+  },
+  "neptune_cancer": {
+    "title": "Yengeç Neptünü",
+    "hook": "Ev ve geçmiş, senin kuşağının kutsal alanı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Yengeç su elementinden, öncü nitelikte: kök, bellek, koruma. Kuşağınla birlikte geçmişi ve aidiyeti idealleştirirsin. Gücün derin şefkat; gölgesi, geçmişi olduğundan güzel hatırlamak.",
+    "scene": "Çocukluğunun tadını hâlâ ararsın; bulduğunda da 'o değil' dersin.",
+    "barnum": 0.7
+  },
+  "neptune_leo": {
+    "title": "Aslan Neptünü",
+    "hook": "Yıldız olmak senin kuşağının ortak rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Aslan ateş elementinden, sabit nitelikte: sahne, ihtişam, yaratıcılık. Kuşağınla birlikte parlamayı ve büyük yaşamayı idealleştirirsin. Gücün ilham verici hayal; gölgesi, gösterişi anlamın önüne koymak.",
+    "scene": "Bir konser ya da sahne anısı senin için hayatın en gerçek parçalarından biridir.",
+    "barnum": 0.7
+  },
+  "neptune_virgo": {
+    "title": "Başak Neptünü",
+    "hook": "Hizmetin kutsal olabileceğine inanan kuşaktansın.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Başak toprak elementinden, değişken nitelikte: iş, düzen, fayda. Kuşağınla birlikte çalışmayı ve mükemmelliği idealleştirirsin. Gücün adanmış özen; gölgesi, ulaşılmaz bir kusursuzluk beklentisi.",
+    "scene": "Bir işi bitirince mutlu olursun; ama daha iyi olabilirdi düşüncesi gece uyandırır.",
+    "barnum": 0.7
+  },
+  "neptune_libra": {
+    "title": "Terazi Neptünü",
+    "hook": "İdeal aşk ve adil dünya senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Terazi hava elementinden, öncü nitelikte: ilişki, güzellik, denge. Kuşağınla birlikte ilişkiyi ve barışı idealleştirirsin. Gücün uyum hayali; gölgesi, gerçek insanı hayaldeki ile kıyaslamak.",
+    "scene": "Bir ilişkinin başında karşı tarafı olduğundan biraz güzel görürsün; herkes gibi ama daha çok.",
+    "barnum": 0.75
+  },
+  "neptune_scorpio": {
+    "title": "Akrep Neptünü",
+    "hook": "Derinliğin kendisi senin kuşağı için bir inanç biçimi.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Akrep su elementinden, sabit nitelikte: sır, dönüşüm, yoğunluk. Kuşağınla birlikte gizli olanı ve yoğun duyguyu idealleştirirsin. Gücün sezgisel derinlik; gölgesi, dramı derinlik sanmak.",
+    "scene": "Hafif bir şarkıyı sevmen zordur; seni sarsan şarkıyı yıllarca dinlersin.",
+    "barnum": 0.7
+  },
+  "neptune_sagittarius": {
+    "title": "Yay Neptünü",
+    "hook": "Uzak diyarlar ve büyük anlamlar senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Yay ateş elementinden, değişken nitelikte: yolculuk, inanç, felsefe. Kuşağınla birlikte özgürlüğü ve anlam arayışını idealleştirirsin. Gücün geniş bir umut; gölgesi, gerçek yolu hayal edilen yola feda etmek.",
+    "scene": "Gitmediğin bir ülkeyi özleyebilirsin ve bunu tuhaf bulmazsın.",
+    "barnum": 0.7
+  },
+  "neptune_capricorn": {
+    "title": "Oğlak Neptünü",
+    "hook": "Başarı hayalini gerçekçi kurabilen kuşaktansın.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, başarı, zaman. Kuşağınla birlikte sistemleri idealleştirdin ve onlardan hayal kırıklığına uğradın; sağlam olanı yeniden hayal ediyorsun. Gücün pratik idealizm; gölgesi, güvenceyi mutlak sanmak.",
+    "scene": "Bir planı yaparken en iyi senaryoya inanırsın, yedek planı da hazırlamış olursun.",
+    "barnum": 0.7
+  },
+  "neptune_aquarius": {
+    "title": "Kova Neptünü",
+    "hook": "Herkesin bağlı olduğu bir dünya senin kuşağının rüyası.",
+    "body": "Neptün nerede hayal kurduğunu anlatır; bir burçta on dört yıl kalır, kuşak tonudur. Kova hava elementinden, sabit nitelikte: topluluk, teknoloji, ideal. Kuşağınla birlikte ağları ve ortak amacı idealleştirirsin. Gücün kolektif hayal; gölgesi, ekrandaki dünyayı gerçek dünyayla karıştırmak.",
+    "scene": "Hiç görmediğin insanlarla bir amaç için bir araya gelmek sana doğal gelir.",
+    "barnum": 0.7
+  },
+  "neptune_pisces": {
+    "title": "Balık Neptünü",
+    "hook": "Sınırların eridiği bir dünya senin kuşağının rüyası ve sınavı.",
+    "body": "Neptün nerede hayal kurduğunu anlatır ve Balık onun modern evi: en güçlü çalıştığı yer. Bir burçta on dört yıl kalır, kuşak tonudur. Su elementi, değişken nitelik: şefkat, sanat, çözülme. Kuşağınla birlikte empatiyi ve hayali idealleştirirsin. Gücün derin merhamet; gölgesi, gerçekle bağın gevşemesi.",
+    "scene": "Sanal ve gerçek arasındaki çizgi senin için başkalarına göre daha incedir.",
+    "barnum": 0.75
+  },
+  "pluto_aries": {
+    "title": "Koç Plütonu",
+    "hook": "Bireysel iradenin gücünü sınayan kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü ve gücü nasıl kullandığını anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Koç ateş elementinden, öncü nitelikte: irade, başlangıç, cesaret. Kuşağınla birlikte kişisel cesaretin sınırlarını yeniden çizersin. Gücün köklü girişim; gölgesi, güç için çatışmaya çekilmek.",
+    "scene": "Yeni bir şeye başlamak sana büyüme gibi gelir; bitirmek başkasının işi olsa da.",
+    "barnum": 0.7
+  },
+  "pluto_taurus": {
+    "title": "Boğa Plütonu",
+    "hook": "Değer ve sahiplik fikrini kökten dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Boğa toprak elementinden, sabit nitelikte: madde, güvence, kaynak. Kuşağınla birlikte neyin gerçekten değerli olduğunu yeniden sorarsın. Gücün dayanıklı dönüşüm; gölgesi, sahip olmaya tutunmak.",
+    "scene": "Bir şeyi atmak ya da vermek sana küçük bir dönüşüm gibi gelir ve sonra hafiflersin.",
+    "barnum": 0.7
+  },
+  "pluto_gemini": {
+    "title": "İkizler Plütonu",
+    "hook": "Bilginin gücünü yeniden keşfeden kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. İkizler hava elementinden, değişken nitelikte: dil, bilgi, bağlantı. Kuşağınla birlikte bilginin nasıl yayıldığını ve gücünü dönüştürürsün. Gücün nüfuz eden zekâ; gölgesi, bilgiyi silah gibi kullanmak.",
+    "scene": "Bir konuyu öğrenince onu anlatmadan duramazsın; öğrenmek seni değiştirir.",
+    "barnum": 0.7
+  },
+  "pluto_cancer": {
+    "title": "Yengeç Plütonu",
+    "hook": "Aile ve vatan fikrini derinden dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Yengeç su elementinden, öncü nitelikte: kök, koruma, aidiyet. Kuşağınla birlikte ev ve aidiyet kavramlarını krizlerden geçirip yeniden kurdun. Gücün koruyucu dayanıklılık; gölgesi, geçmişe tutunmak.",
+    "scene": "Ev senin için bir bina değil, bir kale; içeri kimin gireceğine sen karar verirsin.",
+    "barnum": 0.7
+  },
+  "pluto_leo": {
+    "title": "Aslan Plütonu",
+    "hook": "Bireyin gücüne inanan, sahneyi dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Aslan ateş elementinden, sabit nitelikte: kimlik, yaratıcılık, güç. Kuşağınla birlikte kendini ifade etmeyi bir güç meselesine çevirdin. Gücün yaratıcı irade; gölgesi, sahneyi bırakamamak.",
+    "scene": "Kendi hikâyeni anlatmak senin için bir hak, biraz da bir görev.",
+    "barnum": 0.7
+  },
+  "pluto_virgo": {
+    "title": "Başak Plütonu",
+    "hook": "İşi, sağlığı ve düzeni kökten dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Başak toprak elementinden, değişken nitelikte: iş, yöntem, hizmet. Kuşağınla birlikte çalışma biçimini ve günlük düzeni derinden değiştirdin. Gücün ısrarlı iyileştirme; gölgesi, kusuru affetmemek.",
+    "scene": "Bir düzeni bozuk görünce onu tamir etmeden yanından geçemezsin.",
+    "barnum": 0.7
+  },
+  "pluto_libra": {
+    "title": "Terazi Plütonu",
+    "hook": "İlişki ve adalet kavramlarını dönüştüren kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Terazi hava elementinden, öncü nitelikte: ortaklık, denge, adalet. Kuşağınla birlikte ilişkilerdeki güç dengesini yeniden kurdun. Gücün derin adalet duygusu; gölgesi, ilişkide kontrol arayışı.",
+    "scene": "Bir arkadaşlıkta eşitlik bozulunca bunu ilk sen hissedersin ve konuşursun.",
+    "barnum": 0.7
+  },
+  "pluto_scorpio": {
+    "title": "Akrep Plütonu",
+    "hook": "Gerçeği örtbas etmeyen, derine bakmaktan korkmayan kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır ve Akrep onun modern evi: en yoğun çalıştığı yer. Bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Su elementi, sabit nitelik: sır, güç, yeniden doğuş. Kuşağınla birlikte tabuları açtın, kırılganlığı güce çevirdin. Gücün dönüşüm kapasitesi; gölgesi, her şeyi kriz gibi yaşamak.",
+    "scene": "Sıradan bir sohbet seninle beş dakikada derin bir konuya döner.",
+    "barnum": 0.65
+  },
+  "pluto_sagittarius": {
+    "title": "Yay Plütonu",
+    "hook": "İnancı ve sınırları sorgulayan, dünyayı küçülten kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Yay ateş elementinden, değişken nitelikte: inanç, uzaklar, gerçek arayışı. Kuşağınla birlikte doğru bildiklerin sarsıldı ve kendi hakikatini kurmayı öğrendin. Gücün cesur sorgulama; gölgesi, her otoriteye şüpheyle bakmak.",
+    "scene": "Sana 'böyle yapılır' denince önce 'neden' diye sorarsın, sonra kendin denersin.",
+    "barnum": 0.7
+  },
+  "pluto_capricorn": {
+    "title": "Oğlak Plütonu",
+    "hook": "Kurumların sarsıldığı bir dönemde büyüyen kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Oğlak toprak elementinden, öncü nitelikte: yapı, otorite, sistem. Kuşağınla birlikte eski yapıların çöküşünü ve yenisinin kuruluşunu izliyorsun. Gücün dayanıklı yeniden kurma; gölgesi, güvence arayışını kaygıya çevirmek.",
+    "scene": "Büyük planlara temkinli yaklaşırsın; yıkılanı görmüş bir kuşağın refleksi.",
+    "barnum": 0.7
+  },
+  "pluto_aquarius": {
+    "title": "Kova Plütonu",
+    "hook": "Teknolojinin ve topluluğun gücünü dönüştürecek kuşaktansın.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Kova hava elementinden, sabit nitelikte: ağ, eşitlik, gelecek. Kuşağınla birlikte bilginin ve gücün kimde toplandığını yeniden tartışacaksın. Gücün kolektif dönüşüm; gölgesi, insanı sisteme feda etmek.",
+    "scene": "Bir topluluğun kuralını değiştirmek sana imkânsız gelmez, yalnızca zaman alır.",
+    "barnum": 0.7
+  },
+  "pluto_pisces": {
+    "title": "Balık Plütonu",
+    "hook": "İnanç ve hayal gücünün yeniden doğduğu bir çağın kuşağı.",
+    "body": "Plüton nerede dönüştüğünü anlatır; bir burçta on iki ile otuz yıl kalır, kuşağın en derin tonudur. Balık su elementinden, değişken nitelikte: inanç, sanat, şefkat. Kuşağınla birlikte görünmeyenin gücünü yeniden keşfedeceksin. Gücün derin şefkat ve sezgi; gölgesi, gerçeği hayale bırakmak.",
+    "scene": "Bir hikâyeye, bir müziğe inanmak sana bir dünya görüşü kadar gerçek gelir.",
+    "barnum": 0.75
   }
 }
