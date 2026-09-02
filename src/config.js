@@ -58,3 +58,30 @@ export const VOID_OF_COURSE = {
   stepMinutes: 10,
   bodies: ['sun', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'],
 };
+
+// --- Depolama ---
+export const STORAGE_KEYS = { profiles: 'yn:profiles', settings: 'yn:settings', cache: 'yn:cache' };
+export const SCHEMA_VERSION = 1;
+
+// Saat bilinmiyorsa (12:00 varsayımı) Ay burç sınırına bu kadar yakınsa "X ya da Y olabilir" uyarısı.
+export const MOON_BOUNDARY_WARN_DEG = 6;
+
+// --- Harita çarkı (SVG, viewBox 0 0 size size) ---
+export const WHEEL = {
+  size: 360,
+  outerRadius: 176,        // burç halkası dış kenarı
+  signRingInner: 150,      // burç halkası iç kenarı (çentikler buradan dışa)
+  houseRingInner: 118,     // ev halkası iç kenarı
+  planetRadius: 102,       // gezegen glifleri (ilk halka)
+  planetRingStep: 15,      // çakışmada bir iç halkaya kayma
+  planetRings: 3,
+  planetMinSeparationDeg: 9,
+  aspectRadius: 58,        // aspekt çizgilerinin uç çemberi
+  tick: { minor: 3, five: 6, sign: 26 },
+  glyphSize: 15,
+  signGlyphSize: 14,
+  houseNumberSize: 9,
+  settleMs: 900,           // açılış animasyonu (docs/DESIGN.md: tek orkestre an)
+};
+
+export const TAP_TARGET_PX = 44;

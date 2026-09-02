@@ -1,0 +1,488 @@
+[
+{
+"code": 1,
+"name": "Adana",
+"lat": 37.0,
+"lon": 35.32
+},
+{
+"code": 2,
+"name": "Adıyaman",
+"lat": 37.76,
+"lon": 38.28
+},
+{
+"code": 3,
+"name": "Afyonkarahisar",
+"lat": 38.76,
+"lon": 30.54
+},
+{
+"code": 4,
+"name": "Ağrı",
+"lat": 39.72,
+"lon": 43.05
+},
+{
+"code": 5,
+"name": "Amasya",
+"lat": 40.65,
+"lon": 35.83
+},
+{
+"code": 6,
+"name": "Ankara",
+"lat": 39.93,
+"lon": 32.86
+},
+{
+"code": 7,
+"name": "Antalya",
+"lat": 36.9,
+"lon": 30.7
+},
+{
+"code": 8,
+"name": "Artvin",
+"lat": 41.18,
+"lon": 41.82
+},
+{
+"code": 9,
+"name": "Aydın",
+"lat": 37.85,
+"lon": 27.85
+},
+{
+"code": 10,
+"name": "Balıkesir",
+"lat": 39.65,
+"lon": 27.89
+},
+{
+"code": 11,
+"name": "Bilecik",
+"lat": 40.14,
+"lon": 29.98
+},
+{
+"code": 12,
+"name": "Bingöl",
+"lat": 38.88,
+"lon": 40.5
+},
+{
+"code": 13,
+"name": "Bitlis",
+"lat": 38.4,
+"lon": 42.11
+},
+{
+"code": 14,
+"name": "Bolu",
+"lat": 40.74,
+"lon": 31.61
+},
+{
+"code": 15,
+"name": "Burdur",
+"lat": 37.72,
+"lon": 30.29
+},
+{
+"code": 16,
+"name": "Bursa",
+"lat": 40.19,
+"lon": 29.06
+},
+{
+"code": 17,
+"name": "Çanakkale",
+"lat": 40.15,
+"lon": 26.41
+},
+{
+"code": 18,
+"name": "Çankırı",
+"lat": 40.6,
+"lon": 33.62
+},
+{
+"code": 19,
+"name": "Çorum",
+"lat": 40.55,
+"lon": 34.95
+},
+{
+"code": 20,
+"name": "Denizli",
+"lat": 37.78,
+"lon": 29.09
+},
+{
+"code": 21,
+"name": "Diyarbakır",
+"lat": 37.91,
+"lon": 40.24
+},
+{
+"code": 22,
+"name": "Edirne",
+"lat": 41.68,
+"lon": 26.56
+},
+{
+"code": 23,
+"name": "Elazığ",
+"lat": 38.68,
+"lon": 39.22
+},
+{
+"code": 24,
+"name": "Erzincan",
+"lat": 39.75,
+"lon": 39.49
+},
+{
+"code": 25,
+"name": "Erzurum",
+"lat": 39.9,
+"lon": 41.27
+},
+{
+"code": 26,
+"name": "Eskişehir",
+"lat": 39.78,
+"lon": 30.52
+},
+{
+"code": 27,
+"name": "Gaziantep",
+"lat": 37.07,
+"lon": 37.38
+},
+{
+"code": 28,
+"name": "Giresun",
+"lat": 40.91,
+"lon": 38.39
+},
+{
+"code": 29,
+"name": "Gümüşhane",
+"lat": 40.46,
+"lon": 39.48
+},
+{
+"code": 30,
+"name": "Hakkari",
+"lat": 37.58,
+"lon": 43.74
+},
+{
+"code": 31,
+"name": "Hatay",
+"lat": 36.2,
+"lon": 36.16
+},
+{
+"code": 32,
+"name": "Isparta",
+"lat": 37.76,
+"lon": 30.55
+},
+{
+"code": 33,
+"name": "Mersin",
+"lat": 36.8,
+"lon": 34.63
+},
+{
+"code": 34,
+"name": "İstanbul",
+"lat": 41.01,
+"lon": 28.98
+},
+{
+"code": 35,
+"name": "İzmir",
+"lat": 38.42,
+"lon": 27.14
+},
+{
+"code": 36,
+"name": "Kars",
+"lat": 40.6,
+"lon": 43.1
+},
+{
+"code": 37,
+"name": "Kastamonu",
+"lat": 41.38,
+"lon": 33.78
+},
+{
+"code": 38,
+"name": "Kayseri",
+"lat": 38.73,
+"lon": 35.48
+},
+{
+"code": 39,
+"name": "Kırklareli",
+"lat": 41.73,
+"lon": 27.22
+},
+{
+"code": 40,
+"name": "Kırşehir",
+"lat": 39.15,
+"lon": 34.16
+},
+{
+"code": 41,
+"name": "Kocaeli",
+"lat": 40.77,
+"lon": 29.92
+},
+{
+"code": 42,
+"name": "Konya",
+"lat": 37.87,
+"lon": 32.49
+},
+{
+"code": 43,
+"name": "Kütahya",
+"lat": 39.42,
+"lon": 29.98
+},
+{
+"code": 44,
+"name": "Malatya",
+"lat": 38.35,
+"lon": 38.31
+},
+{
+"code": 45,
+"name": "Manisa",
+"lat": 38.61,
+"lon": 27.43
+},
+{
+"code": 46,
+"name": "Kahramanmaraş",
+"lat": 37.58,
+"lon": 36.93
+},
+{
+"code": 47,
+"name": "Mardin",
+"lat": 37.31,
+"lon": 40.74
+},
+{
+"code": 48,
+"name": "Muğla",
+"lat": 37.22,
+"lon": 28.36
+},
+{
+"code": 49,
+"name": "Muş",
+"lat": 38.73,
+"lon": 41.49
+},
+{
+"code": 50,
+"name": "Nevşehir",
+"lat": 38.62,
+"lon": 34.71
+},
+{
+"code": 51,
+"name": "Niğde",
+"lat": 37.97,
+"lon": 34.68
+},
+{
+"code": 52,
+"name": "Ordu",
+"lat": 40.98,
+"lon": 37.88
+},
+{
+"code": 53,
+"name": "Rize",
+"lat": 41.02,
+"lon": 40.52
+},
+{
+"code": 54,
+"name": "Sakarya",
+"lat": 40.78,
+"lon": 30.4
+},
+{
+"code": 55,
+"name": "Samsun",
+"lat": 41.29,
+"lon": 36.33
+},
+{
+"code": 56,
+"name": "Siirt",
+"lat": 37.93,
+"lon": 41.94
+},
+{
+"code": 57,
+"name": "Sinop",
+"lat": 42.03,
+"lon": 35.15
+},
+{
+"code": 58,
+"name": "Sivas",
+"lat": 39.75,
+"lon": 37.02
+},
+{
+"code": 59,
+"name": "Tekirdağ",
+"lat": 40.98,
+"lon": 27.51
+},
+{
+"code": 60,
+"name": "Tokat",
+"lat": 40.31,
+"lon": 36.55
+},
+{
+"code": 61,
+"name": "Trabzon",
+"lat": 41.0,
+"lon": 39.72
+},
+{
+"code": 62,
+"name": "Tunceli",
+"lat": 39.11,
+"lon": 39.55
+},
+{
+"code": 63,
+"name": "Şanlıurfa",
+"lat": 37.16,
+"lon": 38.79
+},
+{
+"code": 64,
+"name": "Uşak",
+"lat": 38.68,
+"lon": 29.41
+},
+{
+"code": 65,
+"name": "Van",
+"lat": 38.49,
+"lon": 43.38
+},
+{
+"code": 66,
+"name": "Yozgat",
+"lat": 39.82,
+"lon": 34.81
+},
+{
+"code": 67,
+"name": "Zonguldak",
+"lat": 41.45,
+"lon": 31.79
+},
+{
+"code": 68,
+"name": "Aksaray",
+"lat": 38.37,
+"lon": 34.03
+},
+{
+"code": 69,
+"name": "Bayburt",
+"lat": 40.26,
+"lon": 40.23
+},
+{
+"code": 70,
+"name": "Karaman",
+"lat": 37.18,
+"lon": 33.22
+},
+{
+"code": 71,
+"name": "Kırıkkale",
+"lat": 39.85,
+"lon": 33.51
+},
+{
+"code": 72,
+"name": "Batman",
+"lat": 37.88,
+"lon": 41.13
+},
+{
+"code": 73,
+"name": "Şırnak",
+"lat": 37.52,
+"lon": 42.46
+},
+{
+"code": 74,
+"name": "Bartın",
+"lat": 41.63,
+"lon": 32.34
+},
+{
+"code": 75,
+"name": "Ardahan",
+"lat": 41.11,
+"lon": 42.7
+},
+{
+"code": 76,
+"name": "Iğdır",
+"lat": 39.92,
+"lon": 44.04
+},
+{
+"code": 77,
+"name": "Yalova",
+"lat": 40.66,
+"lon": 29.28
+},
+{
+"code": 78,
+"name": "Karabük",
+"lat": 41.2,
+"lon": 32.63
+},
+{
+"code": 79,
+"name": "Kilis",
+"lat": 36.72,
+"lon": 37.12
+},
+{
+"code": 80,
+"name": "Osmaniye",
+"lat": 37.07,
+"lon": 36.25
+},
+{
+"code": 81,
+"name": "Düzce",
+"lat": 40.84,
+"lon": 31.16
+}
+]
