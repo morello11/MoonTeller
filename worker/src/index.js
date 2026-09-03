@@ -1,5 +1,5 @@
 // Yıldızname LLM proxy: POST /v1/reading → OpenAI Chat Completions. Key yalnızca secret'ta, gövde loglanmaz.
-import { PATH, MODELS, UPSTREAM, CACHE_TTL_SEC } from './config.js';
+import { PATH, MODELS, UPSTREAM, CACHE_TTL_SEC, CACHE_ENABLED } from './config.js';
 import { systemPrompt, userMessage } from './prompts.js';
 import { HttpError, corsHeaders, allowedOrigin, checkPin, readBody, validate, rateLimit, sha256 } from './guard.js';
 
@@ -40,7 +40,8 @@ async function reading(request, env) {
   const payload = validate(await readBody(request));
   const day = new Date().toISOString().slice(0, 10);
   await rateLimit(env.CACHE, request.headers.get('CF-Connecting-IP') ?? 'yok', day);
-  const cacheKey = payload.kind === 'ask' ? null : `${payload.kind}:${payload.persona}:${await sha256(JSON.stringify(payload.chart))}:${payload.period}`;
+  const cacheable = CACHE_ENABLED && payload.kind !== 'ask';
+  const cacheKey = cacheable ? `${payload.kind}:${payload.persona}:${await sha256(JSON.stringify(payload.chart))}:${payload.period}` : null;
   if (cacheKey) {
     const hit = await env.CACHE.get(cacheKey);
     if (hit) return { text: hit, cached: true, kind: payload.kind };

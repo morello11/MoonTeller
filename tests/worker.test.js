@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import handler from '../worker/src/index.js';
 import { readFileSync } from 'node:fs';
 import { BANNED, VOICES, COMMON } from '../worker/src/prompts.js';
-import { LIMITS, PERSONAS, MODELS } from '../worker/src/config.js';
+import { LIMITS, PERSONAS, MODELS, CACHE_ENABLED } from '../worker/src/config.js';
 import { BANK, LLM } from '../src/config.js';
 
 const ORIGIN = 'https://ornek.github.io';
@@ -60,16 +60,17 @@ test('gövde sınırı → 413; bozuk gövde/kind/soru → 400', async () => {
   assert.equal((await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'gercek_kisi' } }), env)).status, 400);
 });
 
-test('daily cache: ikinci istek üst akışa gitmez; ask cache\'siz', async () => {
+test('daily cache (açıksa ikinci istek üst akışa gitmez; kapalıysa her istek gider); ask cache\'siz', async () => {
   await handler.fetch(req(), env);
   const second = await (await handler.fetch(req(), env)).json();
-  assert.equal(second.cached, true);
-  assert.equal(upstreamCalls, 1);
+  assert.equal(second.cached, CACHE_ENABLED);
+  assert.equal(upstreamCalls, CACHE_ENABLED ? 1 : 2);
+  const before = upstreamCalls;
   const ask = { kind: 'ask', chart: CHART, question: 'Bugün deploy yapayım mı?' };
   await handler.fetch(req({ body: ask }), env); await handler.fetch(req({ body: ask }), env);
-  assert.equal(upstreamCalls, 3);
-  assert.match(logged[1].messages[1].content, /Soru \(kullanıcı verisi\)/);
-  assert.equal(logged[1].model, MODELS.ask);
+  assert.equal(upstreamCalls, before + 2);
+  assert.match(logged[before].messages[1].content, /Soru \(kullanıcı verisi\)/);
+  assert.equal(logged[before].model, MODELS.ask);
   assert.equal(logged[0].model, MODELS.daily);
 });
 
@@ -113,7 +114,7 @@ test('sesler: Worker listesi uygulama ve voices.json ile aynı; her sesin kartı
   for (const p of PERSONAS) assert.match(VOICES[p], /^Sesin: /);
   await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'nurten' } }), env);
   await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'muneccim' } }), env);
-  assert.equal(upstreamCalls, 2); // nurten ve muneccim ayrı cache anahtarı
+  assert.equal(upstreamCalls, 2);
   assert.match(logged[0].messages[0].content, /Nurten Abla/);
   assert.match(logged[1].messages[0].content, /Müneccimbaşı/);
 });
