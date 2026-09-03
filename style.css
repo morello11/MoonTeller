@@ -226,16 +226,23 @@ td.num, th.num { text-align: right; }
   --ease: cubic-bezier(.2, .7, .2, 1); --yaprak-golge: 2px 2px 0 var(--cizgi);
 }
 [hidden] { display: none !important; }
-.muhur { display: inline-grid; place-items: center; flex: none; width: 22px; height: 22px; border: 1px solid currentColor; border-radius: 50%; color: var(--pirinc); font: 600 12px/1 var(--font-baslik); }
-.muhur.orta { width: 28px; height: 28px; font-size: 15px; }
-.muhur.buyuk { width: 36px; height: 36px; font-size: 19px; }
+/* Ses renkleri (docs/DESIGN.md): --ses gece zemininde, --ses-k kâğıt üstünde. data-ses hem mühürde hem seçim satırında. */
+[data-ses="polyanna"] { --ses: #E0B84A; --ses-k: #8A6A12; }
+[data-ses="ya_olmazsa"] { --ses: #8FA1C7; --ses-k: #4A5A7A; }
+[data-ses="sert"] { --ses: var(--pirinc); --ses-k: var(--kagit-murekkep); }
+[data-ses="nurten"] { --ses: #D0654A; --ses-k: #9A3A22; }
+[data-ses="muneccim"] { --ses: #6FB39D; --ses-k: #2F6B58; }
+.muhur { display: inline-grid; place-items: center; flex: none; width: 22px; height: 22px; border: 1px solid currentColor; border-radius: 50%; color: var(--ses, var(--pirinc)); font: 600 13px/1 var(--font-baslik); overflow: hidden; }
+.muhur.orta { width: 28px; height: 28px; font-size: 16px; }
+.muhur.buyuk { width: 36px; height: 36px; font-size: 20px; }
 .muhur.sert { border-radius: 2px; border-width: 2px; }
+.muhur img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; } /* portre: yüz merkezli kırpım */
 .zsatir { display: grid; grid-template-columns: 1fr auto; align-items: start; border-bottom: 1px solid var(--ayirici); }
 .zsatir > .reading { min-width: 0; border-bottom: 0; } /* ayırıcı satırın tamamında (mühür dahil), son satırda yok */
 .zsatir:has(+ .yuva:last-child) { border-bottom: 0; }
 .zsatir > .eylem { margin-top: 4px; } /* mühür, summary satırının ortasına */
 .eylem { display: flex; align-items: center; justify-content: flex-end; gap: 6px; min-width: var(--tap); min-height: var(--tap); padding: 0 4px 0 8px; background: none; border: 0; cursor: pointer; touch-action: manipulation; }
-.eylem[aria-expanded="true"] .muhur { background: var(--pirinc); color: var(--murekkep); }
+.eylem[aria-expanded="true"] .muhur { background: var(--ses, var(--pirinc)); color: var(--murekkep); }
 .eylem:focus-visible { outline: 2px solid var(--pirinc); outline-offset: 2px; border-radius: 4px; }
 .ipucu { font-size: var(--fs-12); color: var(--sis); }
 .yuva:empty { display: none; }
@@ -253,7 +260,7 @@ td.num, th.num { text-align: right; }
 .yaprak.gel { animation: yaprak-gel .26s var(--ease); }
 @keyframes yaprak-gel { from { opacity: 0; transform: translateY(-6px); } }
 .yaprak-bas { display: flex; align-items: center; gap: 8px; min-height: var(--tap); }
-.yaprak .muhur { color: var(--kagit-murekkep); transition: opacity .3s; }
+.yaprak .muhur { color: var(--ses-k, var(--kagit-murekkep)); transition: opacity .3s; }
 .yaprak[data-state="hata"] .muhur, .yaprak[data-state="limit"] .muhur { opacity: .35; }
 .imza { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); padding: 0; background: none; border: 0; font: 600 var(--fs-16)/1.2 var(--font-baslik); letter-spacing: .01em; color: inherit; cursor: pointer; touch-action: manipulation; }
 .imza::after { content: "⌄"; font: 400 var(--fs-12)/1 var(--font-govde); color: var(--m70); }
@@ -296,7 +303,6 @@ td.num, th.num { text-align: right; }
 .gordu div { display: flex; gap: 6px; } .gordu dt { flex: none; font-weight: 600; } .gordu dd { margin: 0; }
 /* Yorumcu sekmesi ve Ayarlar satırı */
 .sekme-bas { display: flex; align-items: center; gap: 10px; min-height: var(--tap); flex-wrap: wrap; }
-.sekme-bas .button { margin-left: auto; min-height: var(--tap); padding: 0 12px; font-size: var(--fs-14); }
 .durust { margin: 4px 0 0; font-size: var(--fs-14); color: var(--sis); }
 .tarih-satir { display: flex; align-items: baseline; gap: 8px; min-height: var(--tap); padding-top: 6px; }
 .tarih { font: 600 var(--fs-28)/1.1 var(--font-baslik); }
@@ -314,14 +320,15 @@ td.num, th.num { text-align: right; }
 .secim-bas h2 { margin: 0; }
 .vazgec { min-height: var(--tap); padding: 0 4px; background: none; border: 0; font: 600 var(--fs-14)/1 var(--font-govde); color: var(--sis); cursor: pointer; touch-action: manipulation; }
 .sahne-satir { margin: 0 0 12px; font-size: var(--fs-14); }
-.ses { display: block; width: 100%; padding: 12px 0; background: none; border: 0; border-bottom: 1px solid var(--ayirici); color: var(--fildisi); text-align: left; cursor: pointer; touch-action: manipulation; }
-.ses:active, .ses.suanki { background: var(--pirinc-08); }
+.ses { display: block; width: 100%; padding: 12px 8px; background: none; border: 0; border-bottom: 1px solid var(--ayirici); color: var(--fildisi); text-align: left; cursor: pointer; touch-action: manipulation; }
+.ses:active, .ses.suanki { background: var(--pirinc-08); box-shadow: inset 3px 0 0 var(--ses, var(--pirinc)); }
 .ses:focus-visible { outline: 2px solid var(--pirinc); outline-offset: -2px; }
-.alinti { display: block; margin: 0 0 6px 14px; text-indent: -14px; font: 400 var(--fs-20)/1.3 var(--font-baslik); text-wrap: pretty; }
-.alinti::before { content: "“"; margin-right: 2px; color: var(--pirinc); font-size: var(--fs-28); line-height: 0; }
-.kim { display: flex; align-items: center; gap: 8px; }
-.kim .ad { font: 600 var(--fs-16)/1.2 var(--font-baslik); }
-.rol, .suan { font-size: var(--fs-12); color: var(--sis); }
+.kim { display: flex; align-items: center; gap: 12px; }
+.kim-metin { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kim .ad { font: 600 var(--fs-20)/1.2 var(--font-baslik); color: var(--ses, var(--fildisi)); }
+.rol { font-size: var(--fs-12); color: var(--sis); }
+.alinti { display: block; margin: 6px 0 0 48px; font: italic 400 var(--fs-14)/1.4 var(--font-govde); color: var(--sis); text-wrap: pretty; }
+.alinti::before { content: "“"; margin-right: 1px; color: var(--ses, var(--pirinc)); }
 @media (prefers-reduced-motion: reduce) {
   .yaprak.gel, .yaprak[data-state="yaziyor"] .kalem, .ek.yaziyor .kalem, .yaprak-govde .metin { animation: none; }
   .yaprak[data-state="yaziyor"] .kalem, .ek.yaziyor .kalem { opacity: .5; }

@@ -45,7 +45,7 @@ const SPECS = {
   transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit, min: BANK.transitMin }, advice: text(L.advice), barnum: { type: 'barnum' } } },
   retro: { keys: RETRO.bodies.flatMap((b) => RETRO_TEXT_KEYS.map((k) => `${b}_${k}`)), fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
   team: { keys: TEAM_KEYS, fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
-  voices: { keys: LLM.voices, fields: { name: text(L.title), intro: text(L.intro), sample: text(L.sample), role: text(L.title), busy: text(L.title) } },
+  voices: { keys: LLM.voices, fields: { name: text(L.title), intro: text(L.intro), sample: text(L.sample), role: text(L.title), busy: text(L.title), emblem: text(L.emblem) } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };
 

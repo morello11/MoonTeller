@@ -2,7 +2,7 @@
 // Sayfalar mount içinde mountCommentary(root, state, actions) çağırır; dönüş temizleyici.
 import { LLM } from '../config.js';
 import { esc } from './components.js';
-import { leafShell, leafBody, followupButtons, pickerHtml, voiceEntry, voiceInitial, voiceKey } from './commentary-html.js';
+import { leafShell, leafBody, followupButtons, pickerHtml, voiceEntry, voiceKey, sealHtml } from './commentary-html.js';
 
 const REASON_COPY = { limited: 'yorumcu_limit', offline: 'yorumcu_mesgul', error: 'yorumcu_mesgul', no_url: 'yorumcu_kapali', too_big: 'yorumcu_mesgul' };
 const timers = new WeakMap();
@@ -136,7 +136,7 @@ function addFollowup(leaf, button, state, actions) {
 // Ses değişince: mühür harfleri, bar adları, tanıtım satırı, açık yapraklar yeniden yazılır.
 function applyVoice(root, state, actions) {
   const v = voiceEntry(state);
-  root.querySelectorAll('.muhur').forEach((m) => { m.textContent = voiceInitial(state); m.classList.toggle('sert', voiceKey(state) === LLM.squareVoice); });
+  root.querySelectorAll('.muhur').forEach((m) => { m.outerHTML = sealHtml(state, m.classList.contains('buyuk') ? 'buyuk' : m.classList.contains('orta') ? 'orta' : ''); });
   root.querySelectorAll('.bar-ad, .imza-ad, .yorumcu-ad').forEach((el) => { el.textContent = v.name; });
   root.querySelectorAll('.imza').forEach((el) => { el.setAttribute('aria-label', state.bank.copy('yorumcu_imza_label', { name: v.name })); });
   root.querySelectorAll('.imza-intro').forEach((el) => { el.textContent = v.intro; });

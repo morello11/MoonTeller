@@ -22,6 +22,10 @@ Cesaret tek yerde harcanır: **harita çarkı bir usturlap gibi çizilir**; geri
 Yorumcu yaprağı (Adım 6b, style.css sonundaki blok): --kagit #EFE6D2 kâğıt zemin, --kagit-murekkep #101B33 kâğıt üstü metin,
 --kizil-kagit #9A3A22 damga; --m70/--m50/--m35/--m15/--m12/--m05 mürekkebin kâğıt üstü tonları; --pirinc-08 seçili satır;
 --ayirici satır ayırıcı; --perde seçim perdesi; --ease ortak eğri; --yaprak-golge pirinç ofset gölge.
+
+Ses renkleri (mühür ve seçim satırı, `[data-ses]`): Polyanna ✶ #E0B84A / kâğıtta #8A6A12; Ya Olmazsa? ☂ #8FA1C7 / #4A5A7A;
+Sert Uygulama ▪ pirinç / mürekkep (kare mühür); Nurten Abla ❋ #D0654A / #9A3A22; Müneccimbaşı ☾ #6FB39D / #2F6B58.
+Amblemler `data/tr/voices.json` `emblem`; portre gelince (`portrait`) amblemin yerini alır, renk kalır.
 ```
 Kontrast kuralı: pirinç yalnızca çizgi/ikon/başlık (≥20px); gövde metni her zaman fildişi.
 

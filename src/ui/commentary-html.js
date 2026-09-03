@@ -11,14 +11,18 @@ export function voiceEntry(state, key = voiceKey(state)) {
   return state.bank.get('voices', key) ?? { name: key, intro: '', sample: '', role: '', busy: '' };
 }
 
-export function voiceInitial(state, key = voiceKey(state)) {
-  return voiceEntry(state, key).name.trim().charAt(0).toLocaleUpperCase('tr');
+// Mühür işareti: sesin amblemi (voices.json), yoksa adın baş harfi.
+export function voiceMark(state, key = voiceKey(state)) {
+  const v = voiceEntry(state, key);
+  return v.emblem || v.name.trim().charAt(0).toLocaleUpperCase('tr');
 }
 
-// size: '' | 'orta' | 'buyuk'
+// size: '' | 'orta' | 'buyuk'. data-ses rengi CSS'te verir; portre varsa (assets/voices) amblem yerine resim.
 export function sealHtml(state, size = '', key = voiceKey(state)) {
   const cls = ['muhur', size, key === LLM.squareVoice ? 'sert' : ''].filter(Boolean).join(' ');
-  return `<span class="${cls}" aria-hidden="true">${esc(voiceInitial(state, key))}</span>`;
+  const portrait = voiceEntry(state, key).portrait;
+  const inner = portrait ? `<img src="${esc(portrait)}" alt="" loading="lazy">` : esc(voiceMark(state, key));
+  return `<span class="${cls}" data-ses="${esc(key)}" aria-hidden="true">${inner}</span>`;
 }
 
 const attrs = (target, focus) => `data-target="${esc(target)}" data-focus="${esc(focus)}"`;
@@ -80,8 +84,10 @@ export function pickerHtml(state) {
   const rows = LLM.voices.map((key) => {
     const v = voiceEntry(state, key);
     const label = `${v.name}, ${v.role}${key === current ? `, ${bank.copy('yorumcu_suan')}` : ''}`;
-    return `<button type="button" class="ses${key === current ? ' suanki' : ''}" data-ses="${key}" aria-label="${esc(label)}"${key === current ? ' aria-current="true"' : ''}><span class="alinti">${esc(v.sample)}</span>`
-      + `<span class="kim">${sealHtml(state, 'orta', key)}<span class="ad">${esc(v.name)}</span><span class="rol">${esc(v.role)}</span>${key === current ? `<span class="suan">${esc(bank.copy('yorumcu_suan'))}</span>` : ''}</span></button>`;
+    const rol = `${v.role}${key === current ? ` · ${bank.copy('yorumcu_suan')}` : ''}`;
+    return `<button type="button" class="ses${key === current ? ' suanki' : ''}" data-ses="${key}" aria-label="${esc(label)}"${key === current ? ' aria-current="true"' : ''}>`
+      + `<span class="kim">${sealHtml(state, 'buyuk', key)}<span class="kim-metin"><span class="ad">${esc(v.name)}</span><span class="rol">${esc(rol)}</span></span></span>`
+      + `<span class="alinti">${esc(v.sample)}</span></button>`;
   }).join('');
   return `<div class="perde"></div><div class="secim" role="dialog" aria-modal="true" aria-label="${esc(bank.copy('yorumcu_secim_baslik'))}">`
     + `<div class="secim-bas"><h2>${esc(bank.copy('yorumcu_secim_baslik'))}</h2><button type="button" class="vazgec">${esc(bank.copy('yorumcu_vazgec'))}</button></div>`
