@@ -200,7 +200,7 @@ export const CARD = {
 // --- LLM ve Worker (Adım 6, docs/LLM.md) ---
 // workerUrl: deploy sonrası Mehmet yazar (örn. 'https://yildizname.<hesap>.workers.dev'). Boşsa Sor kapalı, sentez ve bülten yok.
 export const LLM = {
-  workerUrl: '',
+  workerUrl: 'https://aged-credit-c917.mehmetarar.workers.dev',
   path: '/v1/reading',
   timeoutMs: 20000,
   questionMax: 500,
