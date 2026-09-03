@@ -10,6 +10,8 @@ const MODELS = { daily: 'gpt-5.6-luna', weekly: 'gpt-5.6-luna', ask: 'gpt-5.6-te
 const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', maxTokens: 400, timeoutMs: 20000 };
 const LIMITS = { bodyBytes: 8192, questionChars: 500, perIpPerDay: 60, globalPerDay: 800, counterTtlSec: 2 * 86400 };
 const CACHE_TTL_SEC = { daily: 36 * 3600, weekly: 8 * 86400 }; // ask cache'siz
+// Test döneminde kapalı: her istek yeni cevap üretir. Ekip büyüyünce true yap (maliyet ve tekrar için).
+const CACHE_ENABLED = false;
 const PERIOD_RE = /^(\d{4}-\d{2}-\d{2}|\d{4}-W\d{2})$/;
 // Sesler: uygulamadaki data/tr/voices.json ile aynı anahtarlar (test eşitliği kontrol eder).
 const PERSONAS = ['polyanna', 'ya_olmazsa', 'sert', 'nurten', 'muneccim'];
@@ -204,7 +206,8 @@ async function reading(request, env) {
   const payload = validate(await readBody(request));
   const day = new Date().toISOString().slice(0, 10);
   await rateLimit(env.CACHE, request.headers.get('CF-Connecting-IP') ?? 'yok', day);
-  const cacheKey = payload.kind === 'ask' ? null : `${payload.kind}:${payload.persona}:${await sha256(JSON.stringify(payload.chart))}:${payload.period}`;
+  const cacheable = CACHE_ENABLED && payload.kind !== 'ask';
+  const cacheKey = cacheable ? `${payload.kind}:${payload.persona}:${await sha256(JSON.stringify(payload.chart))}:${payload.period}` : null;
   if (cacheKey) {
     const hit = await env.CACHE.get(cacheKey);
     if (hit) return { text: hit, cached: true, kind: payload.kind };

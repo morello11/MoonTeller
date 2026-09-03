@@ -209,6 +209,8 @@ export const LLM = {
   weeklyDays: 7,
   weeklyTransitsPerDay: 2,
   cacheNamespace: 'llm',
+  // Test döneminde kapalı: sentez ve bülten her açılışta yeniden istenir. Ekip büyüyünce true yap (worker/src/config.js CACHE_ENABLED ile birlikte).
+  cacheResults: false,
   // Sesler (persona): worker/src/config.js PERSONAS ile aynı; seçim Ayarlar'da, varsayılan 'sert' (metin bankasının tonu).
   voices: ['polyanna', 'ya_olmazsa', 'sert', 'nurten', 'muneccim'],
   defaultVoice: 'sert',
