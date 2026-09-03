@@ -3,7 +3,22 @@
 Küçük bir Cloudflare Worker: tarayıcı → Worker → OpenAI Chat Completions. Key yalnızca Worker secret'ında durur;
 tarayıcıya ve repoya hiç girmez. Gövde loglanmaz. Ayrıntı: `docs/LLM.md`.
 
-## Bir kez kurulum (Mehmet)
+## Kurulum yolu 1: tarayıcıdan, kurulumsuz (önerilen)
+
+1. https://dash.cloudflare.com → **Workers & Pages** → **Create** → **Create Worker** → ad `yildizname` → **Deploy** (örnek kodla).
+2. Açılan sayfada **Edit code**: editördeki her şeyi sil, `worker/dist/worker.js` dosyasının tamamını yapıştır → **Deploy**.
+3. **Settings → Variables and Secrets**:
+   - `ALLOWED_ORIGINS` (tür: Text) = `https://morello11.github.io,http://localhost:8080`
+   - `OPENAI_API_KEY` (tür: **Secret**) = yeni OpenAI key'i
+   - `APP_PIN` (tür: **Secret**) = ekibin ortak PIN'i
+4. **Storage & Databases → KV** → **Create** → ad `CACHE`. Sonra Worker'ın **Settings → Bindings → Add → KV namespace**:
+   Variable name `CACHE`, namespace `CACHE` → Deploy.
+5. Worker adresi Overview'da yazar: `https://yildizname.<hesap>.workers.dev`. Bunu `src/config.js` içindeki `LLM.workerUrl` alanına
+   yaz (Claude Code'a söylemen yeter).
+
+`worker/src/` değişince `node scripts/bundle-worker.js` ile `dist/worker.js` yeniden üretilir ve yapıştırma tekrarlanır.
+
+## Kurulum yolu 2: wrangler ile (PC'ye repo klonu gerekir)
 
 1. **Cloudflare hesabı** (ücretsiz plan yeter): https://dash.cloudflare.com/sign-up
 2. **OpenAI Platform hesabı**, küçük kredi (örn. 5 $), bir API key: https://platform.openai.com/api-keys — key'i kimseye,

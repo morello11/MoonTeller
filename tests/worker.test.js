@@ -117,3 +117,17 @@ test('sesler: Worker listesi uygulama ve voices.json ile aynı; her sesin kartı
   assert.match(logged[0].messages[0].content, /Nurten Abla/);
   assert.match(logged[1].messages[0].content, /Müneccimbaşı/);
 });
+
+test('tek dosya paketi (dist) güncel ve çalışıyor', async () => {
+  const dist = readFileSync(new URL('../worker/dist/worker.js', import.meta.url), 'utf8');
+  assert.ok(!/^import /m.test(dist), 'dist içinde import kalmış');
+  for (const p of PERSONAS) assert.ok(dist.includes(`'${p}'`), `dist'te ses yok: ${p}`);
+  for (const name of ['config', 'prompts', 'guard', 'index']) {
+    const src = readFileSync(new URL(`../worker/src/${name}.js`, import.meta.url), 'utf8');
+    const body = src.split('\n').filter((l) => !l.startsWith('import ')).join('\n').replace(/^export (const|function|class|async function) /gm, '$1 ').trim();
+    assert.ok(dist.includes(body), `dist eski: worker/src/${name}.js değişmiş, node scripts/bundle-worker.js çalıştır`);
+  }
+  const bundled = (await import('../worker/dist/worker.js')).default;
+  const res = await bundled.fetch(req({ pin: '' }), env);
+  assert.equal(res.status, 401);
+});
