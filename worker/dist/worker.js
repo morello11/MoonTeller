@@ -10,10 +10,13 @@ const TARGETS = ['chart', 'placement', 'aspect', 'today', 'transit', 'plan', 'pa
 const FOLLOWUPS = ['harder', 'example', 'howto'];
 // Sağlayıcı: OpenAI Chat Completions. Küçük model her iş için yeter; ID'yi platform.openai.com/docs/models'tan doğrula.
 const MODELS = { comment: 'gpt-5.6-luna', weekly: 'gpt-5.6-luna' };
-const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', timeoutMs: 20000 };
-// Çıktı tavanı hedefe göre: tek öğe kısa, gruplar orta, bülten uzun. Türkçe ≈ 2,5 karakter/token; kelime bütçesinin %30 üstü,
-// tavana takılırsa Worker son cümlede keser (index.js trimToSentence).
-const MAX_TOKENS = { placement: 320, aspect: 320, transit: 320, plan: 320, pairaspect: 320, chart: 520, today: 520, pair: 520, weekly: 640 };
+// reasoningEffort: düşünen modellerde (gpt-5.x) düşünme payını kısar; hız ve maliyet. Model parametreyi reddederse (400) Worker onsuz
+// bir kez daha dener. Düşünmeyen model kullanılırsa null yap.
+const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', timeoutMs: 20000, reasoningEffort: 'low' };
+// Çıktı tavanı hedefe göre. max_completion_tokens düşünme tokenlarını da kapsar: metin bütçesi (Türkçe ≈ 2,5 karakter/token,
+// 80 kelime ≈ 250 token) + düşünme payı. Tavan düşük kalırsa içerik boş gelir ("Cevap tavana takıldı."). Metin uzunluğunu prompt'taki
+// kelime bütçesi belirler; tavana takılırsa son cümlede kesilir (index.js trimToSentence).
+const MAX_TOKENS = { placement: 1200, aspect: 1200, transit: 1200, plan: 1200, pairaspect: 1200, chart: 1600, today: 1600, pair: 1600, weekly: 2000 };
 const LIMITS = { bodyBytes: 8192, focusBytes: 2048, perIpPerDay: 60, globalPerDay: 800, counterTtlSec: 2 * 86400 };
 const CACHE_TTL_SEC = { comment: 36 * 3600, weekly: 8 * 86400 };
 // Test döneminde kapalı: her istek yeni cevap üretir. Ekip büyüyünce true yap (maliyet ve tekrar için).
@@ -205,19 +208,23 @@ function trimToSentence(text) {
   return end > 0 ? text.slice(0, end + 1) : text;
 }
 
-// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content. Dönüş { text, cut }.
+// Tek üst akış isteği. reasoning_effort yalnızca withEffort ise gider (model reddederse çağıran onsuz tekrar dener).
+function upstreamRequest(env, kind, target, persona, content, signal, withEffort) {
+  const body = {
+    model: MODELS[kind], max_completion_tokens: MAX_TOKENS[target] ?? MAX_TOKENS.chart,
+    messages: [{ role: 'system', content: systemPrompt(persona) }, { role: 'user', content }],
+  };
+  if (withEffort && UPSTREAM.reasoningEffort) body.reasoning_effort = UPSTREAM.reasoningEffort;
+  return fetch(UPSTREAM.url, { method: 'POST', signal, headers: { Authorization: `Bearer ${env.OPENAI_API_KEY}`, 'content-type': 'application/json' }, body: JSON.stringify(body) });
+}
+
+// OpenAI Chat Completions; cevap choices[0].message.content. Dönüş { text, cut }. Boş içerik + length: tavan düşünmeye gitti.
 async function callUpstream(env, kind, target, persona, content) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), UPSTREAM.timeoutMs);
   try {
-    const res = await fetch(UPSTREAM.url, {
-      method: 'POST', signal: controller.signal,
-      headers: { Authorization: `Bearer ${env.OPENAI_API_KEY}`, 'content-type': 'application/json' },
-      body: JSON.stringify({
-        model: MODELS[kind], max_completion_tokens: MAX_TOKENS[target] ?? MAX_TOKENS.chart,
-        messages: [{ role: 'system', content: systemPrompt(persona) }, { role: 'user', content }],
-      }),
-    });
+    let res = await upstreamRequest(env, kind, target, persona, content, controller.signal, true);
+    if (res.status === 400 && UPSTREAM.reasoningEffort) res = await upstreamRequest(env, kind, target, persona, content, controller.signal, false);
     if (!res.ok) throw new HttpError(502, `Üst akış ${res.status}.`);
     const data = await res.json();
     const choice = data.choices?.[0] ?? {};
@@ -225,7 +232,7 @@ async function callUpstream(env, kind, target, persona, content) {
     if (message.refusal) throw new HttpError(502, 'Model bu isteği reddetti.');
     const cut = choice.finish_reason === 'length';
     const text = String(message.content ?? '').trim();
-    if (!text) throw new HttpError(502, 'Boş cevap.');
+    if (!text) throw new HttpError(502, cut ? 'Cevap tavana takıldı.' : 'Boş cevap.');
     return { text: cut ? trimToSentence(text) : text, cut };
   } catch (err) {
     if (err instanceof HttpError) throw err;
