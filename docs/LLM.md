@@ -48,3 +48,12 @@ Sonunda astrolojinin bilimsel bir yöntem olmadığını hatırlatan tek kısa c
 ### Maliyet (kaba)
 Haiku 4.5: 1 $/M giriş, 5 $/M çıkış. Günlük sentez ≈ 1.2k giriş + 250 çıkış ≈ 0.0025 $; 20 kişi × 30 gün ≈ 1.5 $/ay,
 cache ile daha az. Sor (Sonnet 5) ≈ soru başına ~0.01 $. Fiyatlar değişir: https://platform.claude.com/docs/en/about-claude/pricing
+
+### Ek (Adım 6, uygulanan sözleşme)
+- Cevap: `{ text, cached, kind }`. Hatalar JSON `{ error }` ile: 401 PIN, 403 origin, 400 gövde/kind/soru, 413 boyut,
+  429 limit (`Retry-After: 3600`), 502 üst akış (zaman aşımı, 5xx, ret), 503 key yok. İstemci (`src/llm/client.js`) hiçbir
+  durumda fırlatmaz; `{ ok:false, reason }` döner ve UI bankaya düşer.
+- Gövde: `{ kind, chart, question, date, lang }`; `date` günlük için `YYYY-MM-DD`, haftalık için `YYYY-Www` (cache dönemi).
+  `chart` = `src/llm/summary.js` çıktısı: Türkçe etiketli yerleşimler, en güçlü 8 natal aspekt, günlük/haftalık blok.
+- Cache anahtarı sunucuda: `{kind}:{sha256(chart)}:{date}`. İstemci de kişi + dönem başına yalnızca son sonucu tutar.
+- Yerel deneme: `node scripts/worker-local.js` (sahte üst akış, key gerekmez); `LLM.workerUrl` geçici `http://localhost:8787`.

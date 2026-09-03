@@ -81,9 +81,10 @@ yildizname/
       wheel.js          SVG harita çarkı (uygulamanın kahramanı)
       components.js     küçük ortak parçalar (sekme çubuğu, damga, şerh kutusu)
       card.js           Yıldızname Kartı: çark SVG + metin → Canvas → PNG, paylaş/indir (QR Adım 7'de)
-      pages/            onboarding.js haritam.js bugun.js ekip.js ekip-cards.js kiyasla.js sor.js ayarlar.js
+      pages/            onboarding.js haritam.js bugun.js bugun-cards.js ekip.js ekip-cards.js kiyasla.js sor.js ayarlar.js
     llm/
-      client.js         Worker'a istek, zaman aşımı, bank'a düşüş
+      client.js         Worker'a istek, zaman aşımı, bank'a düşüş (asla fırlatmaz)
+      summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
   data/
     tr/                 planets-signs.json planets-houses.json aspects.json transits.json
                         moon.json archetypes.json retro.json team.json ui-copy.json
@@ -95,11 +96,12 @@ yildizname/
   scripts/
     repack-swisseph-data.js   .data'yı gereksiz dosyalar olmadan yeniden paketler (tek seferlik)
     validate-bank.js          metin bankası bütünlük kontrolü
+    worker-local.js           Worker'ı Node'da sahte üst akışla koşturur (geliştirme, key'siz)
   tests/
     engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
     private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
-    src/index.js  wrangler.toml  README.md   (Adım 6'da oluşturulur)
+    src/{index,guard,prompts,config}.js  wrangler.toml  README.md   (Cloudflare Worker; key ve PIN yalnızca secret)
   assets/
     icons/  manifest.json
   .gitattributes        *.wasm *.data *.se1 binary
@@ -110,7 +112,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 5 — Ekip kodlandı, kontrol bekliyor (iki telefon arası link + PNG WhatsApp); Adım 4 kapısı (astro-seek) da açık
+## Şu an: Adım 6 — Worker ve LLM kodlandı, deploy ve kontrol Mehmet'te (docs/LLM.md 4 madde); Adım 4–5 kapıları da açık
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 

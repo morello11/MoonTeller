@@ -14,6 +14,8 @@ python3 -m http.server 8080
 
 Testler: `node --test` (Node 22+; `tests/*.test.js` otomatik bulunur).
 
+Sor sekmesi ve LLM sentezi isteğe bağlı bir Cloudflare Worker ister; kurulum `worker/README.md`. Worker yoksa uygulama metin bankasıyla tam çalışır.
+
 ## Yayın (GitHub Pages)
 
 Build yok; `main` dalı kök dizinden olduğu gibi yayınlanır. Bir kez ayarlanır:

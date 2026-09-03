@@ -196,3 +196,17 @@ export const CARD = {
   fontTitle: 64, fontBody: 40, fontSmall: 30, lineHeight: 1.3, maxLineChars: 42,
   fileName: 'yildizname-kart.png',
 };
+
+// --- LLM ve Worker (Adım 6, docs/LLM.md) ---
+// workerUrl: deploy sonrası Mehmet yazar (örn. 'https://yildizname.<hesap>.workers.dev'). Boşsa Sor kapalı, sentez ve bülten yok.
+export const LLM = {
+  workerUrl: '',
+  path: '/v1/reading',
+  timeoutMs: 20000,
+  questionMax: 500,
+  bodyMax: 8192,          // Worker'ın gövde sınırıyla aynı
+  summaryAspects: 8,      // özete giren en güçlü natal aspekt sayısı
+  weeklyDays: 7,
+  weeklyTransitsPerDay: 2,
+  cacheNamespace: 'llm',
+};
