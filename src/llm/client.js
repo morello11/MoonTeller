@@ -1,7 +1,8 @@
 // Worker istemcisi: zaman aşımı, hata → neden kodu. Asla fırlatmaz; UI bankaya düşer. PIN yok (Origin + günlük tavan Worker'da).
 import { LLM } from '../config.js';
 
-const fail = (reason) => ({ ok: false, reason });
+// detail: ekranda gri satır olarak gösterilen ham neden (durum kodu + Worker mesajı, ya da hata adı); UI metne çevirir.
+const fail = (reason, detail = null) => ({ ok: false, reason, detail });
 
 export function workerConfigured(url = LLM.workerUrl) {
   return typeof url === 'string' && /^https?:\/\//.test(url);
@@ -26,12 +27,12 @@ export async function askWorker(kind, chart, { target = '', focus = {}, followup
       method: 'POST', body, signal: controller.signal,
       headers: { 'Content-Type': 'application/json' },
     });
-    if (!res.ok) return fail(reasonFor(res.status));
+    if (!res.ok) return fail(reasonFor(res.status), { status: res.status, message: await res.json().then((d) => String(d?.error ?? ''), () => '') });
     const data = await res.json();
     if (typeof data.text !== 'string' || !data.text) return fail('error');
     return { ok: true, text: data.text, cached: Boolean(data.cached) };
-  } catch {
-    return fail('offline');
+  } catch (err) {
+    return fail('offline', { name: err?.name === 'AbortError' ? 'timeout' : String(err?.name ?? 'error'), timeoutMs });
   } finally {
     clearTimeout(timer);
   }

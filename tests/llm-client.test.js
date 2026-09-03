@@ -8,7 +8,7 @@ const respond = (status, body) => async () => new Response(JSON.stringify(body ?
 
 test('URL yoksa istek atmadan neden döner', async () => {
   assert.equal(workerConfigured(''), false);
-  assert.deepEqual(await askWorker('comment', chart, { url: '' }), { ok: false, reason: 'no_url' });
+  assert.deepEqual(await askWorker('comment', chart, { url: '' }), { ok: false, reason: 'no_url', detail: null });
 });
 
 test('200 → metin; 429/503/500 → nedenler; ağ hatası → offline; asla fırlatmaz', async () => {
