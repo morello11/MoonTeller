@@ -94,7 +94,7 @@ export const SIGN_KEYS = [
 // MOON_PHASES_TR ile aynı sırada.
 export const MOON_PHASE_IDS = ['new', 'crescent', 'first_quarter', 'gibbous', 'full', 'disseminating', 'last_quarter', 'balsamic'];
 export const BANK = {
-  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'ui-copy'],
+  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'team', 'ui-copy'],
   limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140, transit: 200, advice: 120 },
   // Transit varyantları tek başına günün metni olur: en az bu kadar karakter, tam cümle.
   transitMin: 60,
@@ -160,3 +160,35 @@ export const SKY = {
   nightSunAltitudeDeg: -6, // sivil alacakaranlık
 };
 export const DAILY_REPEAT_DAYS = 7;
+
+// --- Ekip (Adım 5): paylaşım linki, sinastri, bulaşma, haftanın çifti, kart ---
+// Link: #p=<base64url JSON>. Doğum bilgisi linkte taşınır, sunucuya gitmez (hash parçası istek dışında kalır).
+export const SHARE = { param: 'p', version: 1, nameMax: 40, coordDecimals: 4 };
+// Sinastri (docs/ENGINE.md 8): aspekt katkıları %70 + Büyük Üçlü element/nitelik uyumu %30.
+export const SYNASTRY = {
+  bodies: ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto', 'asc'],
+  wBody: { sun: 1.0, moon: 1.0, venus: 0.9, mars: 0.9, asc: 0.8, mercury: 0.7, jupiter: 0.6, saturn: 0.6, uranus: 0.4, neptune: 0.4, pluto: 0.4 },
+  // İşaretli katkı: uyumlu +, sert −. Kavuşum uyumlu sayılır; taraflardan biri conjunctionHard'daysa sert.
+  wAspect: { conjunction: 1.0, trine: 0.8, sextile: 0.5, square: -0.8, opposition: -0.6 },
+  conjunctionHard: { bodies: ['mars', 'saturn', 'pluto'], weight: -0.5 },
+  aspectDamping: 1,          // az sayıda zayıf aspekt skoru uçlara savurmasın
+  aspectShare: 0.7,
+  bigThreeShare: 0.3,
+  bigThree: ['sun', 'moon', 'asc'],
+  elementSame: 1, elementCompatible: 0.5, modalitySame: 0.5, // çift başına en çok 1.5
+  compatibleElements: { fire: 'air', air: 'fire', earth: 'water', water: 'earth' },
+  topCount: 3,
+  labels: [[60, 'high'], [45, 'mid'], [0, 'low']],
+};
+// Bugün kime bulaşma: hızlı cisimlerin (günden güne değişen) sert transit puan toplamı eşik üstünde olan üyeler.
+// Yavaş gezegenler (Jüpiter–Plüton) aylarca aynı açıda kalır, "bugün" listesine girmez; Ay saatlik değişir, o da girmez.
+export const CONTAGION = { hardAspects: ['square', 'opposition'], transitingBodies: ['sun', 'mercury', 'venus', 'mars'], threshold: 0.9, maxCount: 5 };
+// Haftanın çifti: en yüksek skorlu ilk `candidates` çiftten ISO hafta seed'iyle biri.
+export const WEEK_PAIR = { candidates: 3 };
+export const TEAM_MAX = 30;
+// Yıldızname Kartı (PNG, dikey; WhatsApp'ta tam görünür).
+export const CARD = {
+  width: 1080, height: 1350, margin: 72, wheelSize: 720,
+  fontTitle: 64, fontBody: 40, fontSmall: 30, lineHeight: 1.3, maxLineChars: 42,
+  fileName: 'yildizname-kart.png',
+};

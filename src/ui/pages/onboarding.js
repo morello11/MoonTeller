@@ -18,12 +18,23 @@ function tzOptions() {
   return zones.map((z) => `<option value="${esc(z)}"></option>`).join('');
 }
 
+function heading(state, p) {
+  if (state.forTeam) return `<h1>Ekibe birini ekle</h1><p class="muted">Bilgiler yalnızca bu telefonda kalır.</p>`;
+  const pending = state.pendingImport ? `<p class="notice">Önce kendi haritanı çıkar; sonra ${esc(state.pendingImport.name)} ekibe eklenir.</p>` : '';
+  return `<h1>${p.id ? 'Profili düzenle' : 'Haritanı çıkar'}</h1><p class="muted">Üç alan yeter. Bilgiler yalnızca bu telefonda kalır.</p>${pending}`;
+}
+
+function submitLabel(state, p) {
+  if (state.forTeam) return 'Ekibe ekle';
+  return p.id ? 'Kaydet' : 'Haritamı çıkar';
+}
+
 export function render(state) {
   const p = state.editingProfile ?? {};
   const abroad = Boolean(p.tz && p.tz !== DEFAULT_TZ);
   const today = new Date().toISOString().slice(0, 10);
-  return `<section class="page-head"><h1>${p.id ? 'Profili düzenle' : 'Haritanı çıkar'}</h1>`
-    + `<p class="muted">Üç alan yeter. Bilgiler yalnızca bu telefonda kalır.</p></section>`
+  const cancel = state.forTeam ? '#/ekip' : p.id ? '#/haritam' : null;
+  return `<section class="page-head">${heading(state, p)}</section>`
     + `<form id="onboarding" class="form" novalidate>`
     + field('Adın', `<input name="name" type="text" required maxlength="${NAME_MAX}" autocomplete="given-name" value="${esc(p.name ?? '')}">`)
     + field('Doğum tarihi', `<input name="date" type="date" required min="${MIN_DATE}" max="${today}" value="${esc(p.date ?? '')}">`)
@@ -39,8 +50,8 @@ export function render(state) {
     + field('Saat dilimi (IANA)', `<input name="tz" type="text" list="tzs" value="${esc(abroad ? p.tz : '')}"><datalist id="tzs">${tzOptions()}</datalist>`, 'Örn. Europe/Berlin')
     + `</div>`
     + `<p class="form-error" id="form-error" role="alert" hidden></p>`
-    + `<p class="actions"><button type="submit" class="button">${p.id ? 'Kaydet' : 'Haritamı çıkar'}</button>`
-    + `${p.id ? '<a class="button secondary" href="#/haritam">Vazgeç</a>' : ''}</p></form>`;
+    + `<p class="actions"><button type="submit" class="button">${submitLabel(state, p)}</button>`
+    + `${cancel ? `<a class="button secondary" href="${cancel}">Vazgeç</a>` : ''}</p></form>`;
 }
 
 function readForm(form, cities) {
@@ -77,9 +88,11 @@ export function mount(root, state, actions) {
     e.preventDefault();
     try {
       const fields = readForm(form, state.cities);
-      actions.saveProfile({ ...fields, id: state.editingProfile?.id, createdAt: state.editingProfile?.createdAt });
+      let target = '#/ekip';
+      if (state.forTeam) actions.saveTeamProfile(fields);
+      else target = actions.saveProfile({ ...fields, id: state.editingProfile?.id, createdAt: state.editingProfile?.createdAt });
       error.hidden = true;
-      location.hash = '#/haritam';
+      if (location.hash === target) actions.refresh(); else location.hash = target; // hash aynıysa hashchange gelmez
     } catch (err) {
       error.textContent = err.message;
       error.hidden = false;

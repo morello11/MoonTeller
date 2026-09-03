@@ -52,7 +52,7 @@ Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: `sepl_
 
 ```
 yildizname/
-  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ofis, #/kiyasla, #/sor, #/ayarlar)
+  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ekip, #/kiyasla/:a/:b, #/ekle, #/sor, #/ayarlar; #p=… paylaşım linki)
   style.css             tek dosya, CSS değişkenleri docs/DESIGN.md'den
   CLAUDE.md
   package.json          sadece type: module + test scripti; bağımlılık yok, build yok
@@ -63,6 +63,7 @@ yildizname/
     main.js             başlangıç, router, sayfa yükleme
     config.js           tüm ayarlanabilir sayılar
     store.js            localStorage okuma/yazma, profil şeması, migration
+    share.js            paylaşım linki: profil ↔ base64url (#p=…), doğrulama
     astro/              (saf mantık, DOM yok)
       engine.js         SwissEph sarmalayıcı: gezegenler, evler, açılar, retro bayrağı
       time.js           yerel → UTC (Intl), Julian Day yardımcıları
@@ -71,19 +72,21 @@ yildizname/
       moon.js           Ay evresi, Ay burcu, Ay boşlukta (void of course)
       retrograde.js     Merkür (ve diğer) retro aralıkları
       archetype.js      haritadan ofis arketipi seçimi
+      synastry.js       iki harita arası aspektler, 0–100 uyum skoru, matris
+      team.js           bugün kime bulaşma (hızlı cisimlerin sert transit yükü), haftanın çifti
     text/               (saf mantık)
       bank.js           JSON bankasını yükler, seed'li varyant seçer, tekrarları önler
       compose.js        yerleşim + aspekt listesinden okunur metin kurar
     ui/
       wheel.js          SVG harita çarkı (uygulamanın kahramanı)
       components.js     küçük ortak parçalar (sekme çubuğu, damga, şerh kutusu)
-      share.js          link üretimi (#p=...), QR, PNG kart
-      pages/            onboarding.js haritam.js bugun.js ofis.js kiyasla.js sor.js ayarlar.js
+      card.js           Yıldızname Kartı: çark SVG + metin → Canvas → PNG, paylaş/indir (QR Adım 7'de)
+      pages/            onboarding.js haritam.js bugun.js ekip.js ekip-cards.js kiyasla.js sor.js ayarlar.js
     llm/
       client.js         Worker'a istek, zaman aşımı, bank'a düşüş
   data/
     tr/                 planets-signs.json planets-houses.json aspects.json transits.json
-                        moon.json archetypes.json retro.json ui-copy.json
+                        moon.json archetypes.json retro.json team.json ui-copy.json
     cities-tr.json
   vendor/
     swisseph/           sabitlenmiş kopya: src/swisseph.js, wsam/{swisseph.js, swisseph.wasm, swisseph.data},
@@ -107,7 +110,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 4 — Bugün bitti, kapı kontrolü bekliyor (astro-seek Ay boşlukta çapraz kontrolü + telefon); sonra Adım 5 (Ekip) planı
+## Şu an: Adım 5 — Ekip kodlandı, kontrol bekliyor (iki telefon arası link + PNG WhatsApp); Adım 4 kapısı (astro-seek) da açık
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 

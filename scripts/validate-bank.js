@@ -4,7 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK, TRANSIT, RETRO } from '../src/config.js';
+import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK, TRANSIT, RETRO, CONTAGION } from '../src/config.js';
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'tr');
 const strict = process.argv.includes('--strict');
@@ -33,6 +33,9 @@ const RETRO_TEXT_KEYS = ['start', 'mid', 'end', 'shadow_pre', 'shadow_post', 'co
 function transitKeys() {
   return TRANSIT.transitingBodies.flatMap((t) => ASPECT_NAMES.flatMap((a) => TRANSIT.textTargets.map((n) => `t_${t}_${a}_n_${n}`)));
 }
+const CONTAGION_BODIES = TRANSIT.transitingBodies.filter((b) => b !== 'moon'); // banka geniş; config hangilerinin kullanılacağını seçer
+const TEAM_KEYS = ['synastry_label_high', 'synastry_label_mid', 'synastry_label_low', 'week_pair', 'same_point',
+  ...CONTAGION_BODIES.flatMap((b) => CONTAGION.hardAspects.map((a) => `contagion_${b}_${a}`))];
 const SPECS = {
   'planets-signs': { keys: cross([...BODIES, 'asc'], SIGN_KEYS), fields: { title: text(L.title), hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
   'planets-houses': { keys: cross(BODIES, HOUSES), fields: { hook: text(L.hook), body: text(L.body), scene: text(L.scene), barnum: { type: 'barnum' } } },
@@ -41,6 +44,7 @@ const SPECS = {
   moon: { keys: cross(MOON_PHASE_IDS.map((p) => `phase_${p}`), SIGN_KEYS), fields: { line: text(L.line), barnum: { type: 'barnum' } } },
   transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit, min: BANK.transitMin }, advice: text(L.advice), barnum: { type: 'barnum' } } },
   retro: { keys: RETRO.bodies.flatMap((b) => RETRO_TEXT_KEYS.map((k) => `${b}_${k}`)), fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
+  team: { keys: TEAM_KEYS, fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };
 

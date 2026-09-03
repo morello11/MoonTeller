@@ -30,8 +30,8 @@ Kontrast kuralı: pirinç yalnızca çizgi/ikon/başlık (≥20px); gövde metni
 - Font yüklenmezse: Georgia / system-ui geri düşüş; sayfa hiç beklemez (`font-display: swap`).
 
 ### Yerleşim
-Mobil önce, tek sütun, sola hizalı metin. Alt sekme çubuğu 5 sekme: **Haritam · Bugün · Ofis · Sor · Ayarlar**
-(Kıyasla, Ofis'in içinden açılır). Masaüstünde aynı düzen 480px genişlikte ortalanır; ayrı masaüstü tasarımı yok.
+Mobil önce, tek sütun, sola hizalı metin. Alt sekme çubuğu 5 sekme: **Haritam · Bugün · Ekip · Sor · Ayarlar**
+(Kıyasla, Ekip'in içinden açılır; sekme adı Adım 3 kararıyla "Ofis"ten "Ekip"e çevrildi). Masaüstünde aynı düzen 480px genişlikte ortalanır; ayrı masaüstü tasarımı yok.
 
 ```
 HARİTAM                          BUGÜN                            OFİS
