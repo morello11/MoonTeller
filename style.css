@@ -225,3 +225,5 @@ td.num, th.num { text-align: right; }
 .voice input { margin-top: 4px; width: 20px; height: 20px; accent-color: var(--pirinc); flex: none; }
 .voice-body { display: flex; flex-direction: column; gap: 2px; }
 .voice-sample { font-family: var(--font-baslik); font-size: var(--fs-16); margin-top: 4px; }
+.commentator { font-size: var(--fs-14); margin: -4px 0 10px; }
+.commentator a { color: var(--pirinc); }

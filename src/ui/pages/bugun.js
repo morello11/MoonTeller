@@ -6,7 +6,7 @@ import { localToUT } from '../../astro/time.js';
 import { evaluatePlan } from '../../astro/transits.js';
 import { liveSky } from '../../astro/sky.js';
 import { workerConfigured } from '../../llm/client.js';
-import { esc, card, serhBox } from '../components.js';
+import { esc, card, serhBox, commentatorName } from '../components.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_NAMES_TR, formatDeg } from '../glyphs.js';
 import { moonCard, threeCard, retroCard, formatLocalTime } from './bugun-cards.js';
 
@@ -56,7 +56,7 @@ function serhRows(daily, ctx) {
 // Ayardan açılır; Worker ayarlıysa sayfa boyandıktan sonra doldurulur (UI bekletilmez).
 function synthesisCard(state) {
   if (!state.settings.dailySynthesis || !workerConfigured()) return '';
-  return card(state.bank.copy('bugun_synthesis_title'), `<p id="synthesis" class="muted">${esc(state.bank.copy('bugun_synthesis_busy'))}</p>`);
+  return card(state.bank.copy('bugun_synthesis_title', { name: commentatorName(state) }), `<p id="synthesis" class="muted">${esc(state.bank.copy('bugun_synthesis_busy'))}</p>`);
 }
 
 function fillSynthesis(root, state, actions) {
