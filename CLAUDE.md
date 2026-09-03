@@ -87,7 +87,7 @@ yildizname/
       summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
   data/
     tr/                 planets-signs.json planets-houses.json aspects.json transits.json
-                        moon.json archetypes.json retro.json team.json ui-copy.json
+                        moon.json archetypes.json retro.json team.json voices.json ui-copy.json
     cities-tr.json
   vendor/
     swisseph/           sabitlenmiş kopya: src/swisseph.js, wsam/{swisseph.js, swisseph.wasm, swisseph.data},
@@ -97,11 +97,12 @@ yildizname/
     repack-swisseph-data.js   .data'yı gereksiz dosyalar olmadan yeniden paketler (tek seferlik)
     validate-bank.js          metin bankası bütünlük kontrolü
     worker-local.js           Worker'ı Node'da sahte üst akışla koşturur (geliştirme, key'siz)
+    bundle-worker.js          worker/src → worker/dist/worker.js (Cloudflare paneline yapıştırılan tek dosya)
   tests/
     engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
     private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
-    src/{index,guard,prompts,config}.js  wrangler.toml  README.md   (Cloudflare Worker; key ve PIN yalnızca secret)
+    src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key ve PIN yalnızca secret)
   assets/
     icons/  manifest.json
   .gitattributes        *.wasm *.data *.se1 binary

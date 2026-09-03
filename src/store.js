@@ -1,9 +1,9 @@
 // localStorage sarmalayıcı: profiller, ayarlar, cache. Repo'da veri yok; her şey tarayıcıda.
 // storage parametresi enjekte edilir (Node testinde bellek içi nesne).
-import { STORAGE_KEYS, SCHEMA_VERSION, HOUSE_SYSTEM, DEFAULT_TZ } from './config.js';
+import { STORAGE_KEYS, SCHEMA_VERSION, HOUSE_SYSTEM, DEFAULT_TZ, LLM } from './config.js';
 
 const EMPTY_PROFILES = () => ({ version: SCHEMA_VERSION, active: null, list: [] });
-const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, pin: '', dailySynthesis: false });
+const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, pin: '', dailySynthesis: false, voice: LLM.defaultVoice });
 
 function readJSON(storage, key, fallback) {
   try {

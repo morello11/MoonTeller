@@ -142,5 +142,8 @@
   "ekip_bulletin_copied": "Kopyalandı",
   "ekip_bulletin_busy": "Bülten yazılıyor…",
   "ekip_bulletin_closed": "Sor kapalıyken bülten de kapalı.",
-  "ekip_bulletin_no_pin": "Bülten için Ayarlar'dan PIN gir."
+  "ekip_bulletin_no_pin": "Bülten için Ayarlar'dan PIN gir.",
+  "ayarlar_voice_title": "Ses",
+  "ayarlar_voice_hint": "Sor, sentez ve bülten bu sesle konuşur. Kurallar her seste aynı; yalnızca üslup değişir.",
+  "ayarlar_voice_sample": "Örnek (Mars natal Merkür'e kare):"
 }

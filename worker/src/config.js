@@ -1,8 +1,13 @@
-// Worker ayarları (docs/LLM.md). Key ve PIN burada değil: wrangler secret (ANTHROPIC_API_KEY, APP_PIN).
+// Worker ayarları (docs/LLM.md). Key ve PIN burada değil: wrangler secret (OPENAI_API_KEY, APP_PIN).
 export const PATH = '/v1/reading';
 export const KINDS = ['daily', 'ask', 'weekly'];
-export const MODELS = { daily: 'claude-haiku-4-5', weekly: 'claude-haiku-4-5', ask: 'claude-sonnet-5' };
-export const UPSTREAM = { url: 'https://api.anthropic.com/v1/messages', version: '2023-06-01', maxTokens: 400, timeoutMs: 20000 };
+// Sağlayıcı: OpenAI Chat Completions (Mehmet'in mevcut hesabı). Küçük model (Luna) günlük sentez ve bülten için,
+// orta model (Terra) soru için. Kimlikleri platform.openai.com/docs/models sayfasındaki model ID ile doğrula; farklıysa burada değiştir.
+export const MODELS = { daily: 'gpt-5.6-luna', weekly: 'gpt-5.6-luna', ask: 'gpt-5.6-terra' };
+export const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', maxTokens: 400, timeoutMs: 20000 };
 export const LIMITS = { bodyBytes: 8192, questionChars: 500, perIpPerDay: 60, globalPerDay: 800, counterTtlSec: 2 * 86400 };
 export const CACHE_TTL_SEC = { daily: 36 * 3600, weekly: 8 * 86400 }; // ask cache'siz
 export const PERIOD_RE = /^(\d{4}-\d{2}-\d{2}|\d{4}-W\d{2})$/;
+// Sesler: uygulamadaki data/tr/voices.json ile aynı anahtarlar (test eşitliği kontrol eder).
+export const PERSONAS = ['polyanna', 'ya_olmazsa', 'sert', 'nurten', 'muneccim'];
+export const DEFAULT_PERSONA = 'sert';

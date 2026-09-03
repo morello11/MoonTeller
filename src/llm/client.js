@@ -15,10 +15,10 @@ function reasonFor(status) {
 }
 
 // kind: 'daily' | 'ask' | 'weekly'; summary: src/llm/summary.js çıktısı; date: gün ya da hafta anahtarı.
-export async function askWorker(kind, summary, { pin, question = '', date = '', fetchImpl = globalThis.fetch, timeoutMs = LLM.timeoutMs, url = LLM.workerUrl } = {}) {
+export async function askWorker(kind, summary, { pin, question = '', date = '', persona = LLM.defaultVoice, fetchImpl = globalThis.fetch, timeoutMs = LLM.timeoutMs, url = LLM.workerUrl } = {}) {
   if (!workerConfigured(url)) return fail('no_url');
   if (!pin) return fail('no_pin');
-  const body = JSON.stringify({ kind, chart: summary, question, date, lang: 'tr' });
+  const body = JSON.stringify({ kind, chart: summary, question, date, persona, lang: 'tr' });
   if (new TextEncoder().encode(body).length > LLM.bodyMax) return fail('too_big');
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);

@@ -4,7 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK, TRANSIT, RETRO, CONTAGION } from '../src/config.js';
+import { BODIES, SIGN_KEYS, MOON_PHASE_IDS, BANK, TRANSIT, RETRO, CONTAGION, LLM } from '../src/config.js';
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'tr');
 const strict = process.argv.includes('--strict');
@@ -45,6 +45,7 @@ const SPECS = {
   transits: { keys: transitKeys(), fields: { v: { type: 'lines', count: 3, max: L.transit, min: BANK.transitMin }, advice: text(L.advice), barnum: { type: 'barnum' } } },
   retro: { keys: RETRO.bodies.flatMap((b) => RETRO_TEXT_KEYS.map((k) => `${b}_${k}`)), fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
   team: { keys: TEAM_KEYS, fields: { v: { type: 'lines', count: 3, max: L.line }, barnum: { type: 'barnum' } } },
+  voices: { keys: LLM.voices, fields: { name: text(L.title), intro: text(L.intro), sample: text(L.sample) } },
   'ui-copy': { keys: null, fields: null, noBanned: true },
 };
 

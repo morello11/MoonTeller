@@ -12,17 +12,18 @@ const FAIL = args.includes('--upstream-fail');
 
 const store = new Map();
 const kv = { get: async (k) => store.get(k) ?? null, put: async (k, v) => { store.set(k, v); } };
-const env = { APP_PIN: PIN, ANTHROPIC_API_KEY: 'sahte', ALLOWED_ORIGINS: 'http://localhost:8080,http://127.0.0.1:8080', CACHE: kv };
+const env = { APP_PIN: PIN, OPENAI_API_KEY: 'sahte', ALLOWED_ORIGINS: 'http://localhost:8080,http://127.0.0.1:8080', CACHE: kv };
 
-// Sahte Anthropic: gelen kullanıcı mesajının ilk satırını yankılayan kısa bir "yorum".
+// Sahte OpenAI: gelen kullanıcı mesajının ilk satırını yankılayan kısa bir "yorum".
 const realFetch = globalThis.fetch;
 globalThis.fetch = async (url, init) => {
-  if (!String(url).includes('api.anthropic.com')) return realFetch(url, init);
+  if (!String(url).includes('api.openai.com')) return realFetch(url, init);
   if (FAIL) return new Response('{"error":"sahte hata"}', { status: 500 });
   const body = JSON.parse(init.body);
-  const head = body.messages[0].content.split('\n')[0].slice(0, 80);
-  const text = `[SAHTE ${body.model}] ${head} … Bu bir yerel deneme cevabıdır, gerçek model değil. Astroloji bilimsel bir yöntem değildir.`;
-  return new Response(JSON.stringify({ content: [{ type: 'text', text }], stop_reason: 'end_turn' }), { status: 200, headers: { 'content-type': 'application/json' } });
+  const voice = body.messages[0].content.match(/Sesin: ([^,.]+)/)?.[1] ?? '?';
+  const head = body.messages[1].content.split('\n')[0].slice(0, 80);
+  const text = `[SAHTE ${body.model} · ${voice}] ${head} … Bu bir yerel deneme cevabıdır, gerçek model değil. Astroloji bilimsel bir yöntem değildir.`;
+  return new Response(JSON.stringify({ choices: [{ message: { role: 'assistant', content: text }, finish_reason: 'stop' }] }), { status: 200, headers: { 'content-type': 'application/json' } });
 };
 
 createServer(async (req, res) => {

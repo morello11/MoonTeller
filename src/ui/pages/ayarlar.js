@@ -20,6 +20,19 @@ function llmForm(state, bank) {
     + check('dailySynthesis', bank.copy('ayarlar_synthesis'), Boolean(state.settings.dailySynthesis), bank.copy('ayarlar_synthesis_hint'));
 }
 
+// Ses kartları: isim, tanıtım, sabit örnek cümle (LLM'siz); radyo düğmesi.
+function voiceCards(state, bank) {
+  const current = state.settings.voice ?? LLM.defaultVoice;
+  const cards = LLM.voices.map((key) => {
+    const v = bank.get('voices', key);
+    if (!v) return '';
+    return `<label class="voice${key === current ? ' selected' : ''}"><input type="radio" name="voice" value="${key}"${key === current ? ' checked' : ''}>`
+      + `<span class="voice-body"><strong>${esc(v.name)}</strong><span class="muted small">${esc(v.intro)}</span>`
+      + `<span class="voice-sample"><span class="muted small">${esc(bank.copy('ayarlar_voice_sample'))}</span> ${esc(v.sample)}</span></span></label>`;
+  }).join('');
+  return `<p class="muted small">${esc(bank.copy('ayarlar_voice_hint'))}</p><div class="voices">${cards}</div>`;
+}
+
 function chartForm(state, bank) {
   const current = state.profile?.houseSystem ?? 'P';
   const options = HOUSE_SYSTEMS.map((h) => `<option value="${h}"${h === current ? ' selected' : ''}>${esc(HOUSE_LABELS[h])}</option>`).join('');
@@ -30,7 +43,7 @@ function chartForm(state, bank) {
 export function render(state) {
   const { bank } = state;
   return `<div id="ayarlar"><section class="page-head"><h1>${esc(bank.copy('ayarlar_title'))}</h1></section>`
-    + `<form id="ayarlar-form" class="form">${card('Sor ve sentez', llmForm(state, bank))}${card('Harita', chartForm(state, bank))}`
+    + `<form id="ayarlar-form" class="form">${card('Sor ve sentez', llmForm(state, bank))}${card(bank.copy('ayarlar_voice_title'), voiceCards(state, bank))}${card('Harita', chartForm(state, bank))}`
     + `<p class="actions"><button type="submit" class="button">${esc(bank.copy('ayarlar_save'))}</button><span id="ayarlar-status" class="muted" role="status"></span></p></form>`
     + card('Veriler', `<p class="actions"><button type="button" class="button secondary danger" data-action="clear">${esc(bank.copy('ayarlar_clear'))}</button></p>`)
     + `<p class="muted small">Yıldızname · motor ${esc(state.engineVersion || '')}</p></div>`;
@@ -41,7 +54,7 @@ export function mount(root, state, actions) {
   const bank = state.bank;
   const onSubmit = (e) => {
     e.preventDefault();
-    actions.saveSettings({ pin: form.elements.pin.value.trim(), dailySynthesis: form.elements.dailySynthesis.checked, showSerh: form.elements.showSerh.checked });
+    actions.saveSettings({ pin: form.elements.pin.value.trim(), dailySynthesis: form.elements.dailySynthesis.checked, showSerh: form.elements.showSerh.checked, voice: form.elements.voice.value });
     if (form.elements.houseSystem.value !== state.profile.houseSystem) actions.setHouseSystem(form.elements.houseSystem.value);
     root.querySelector('#ayarlar-status').textContent = bank.copy('ayarlar_saved');
   };
@@ -51,7 +64,9 @@ export function mount(root, state, actions) {
     location.hash = '#/haritam';
     actions.refresh();
   };
+  const onVoice = (e) => { if (e.target.name !== 'voice') return; root.querySelectorAll('.voice').forEach((el) => el.classList.toggle('selected', el.contains(e.target))); };
   form.addEventListener('submit', onSubmit);
+  form.addEventListener('change', onVoice);
   root.addEventListener('click', onClear);
-  return () => { form.removeEventListener('submit', onSubmit); root.removeEventListener('click', onClear); };
+  return () => { form.removeEventListener('submit', onSubmit); form.removeEventListener('change', onVoice); root.removeEventListener('click', onClear); };
 }

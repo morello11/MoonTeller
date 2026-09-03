@@ -1,5 +1,5 @@
 // Koruma katmanı: Origin, PIN, boyut, doğrulama, KV sayaçları, hash. Saf yardımcılar (KV nesnesi enjekte edilir).
-import { KINDS, LIMITS, PERIOD_RE } from './config.js';
+import { KINDS, LIMITS, PERIOD_RE, PERSONAS, DEFAULT_PERSONA } from './config.js';
 
 export class HttpError extends Error {
   constructor(status, message) { super(message); this.status = status; }
@@ -34,7 +34,7 @@ export async function readBody(request) {
 
 const isObject = (x) => x !== null && typeof x === 'object' && !Array.isArray(x);
 
-// Dönüş: { kind, chart, question, period }. Fazla alanlar atılır.
+// Dönüş: { kind, chart, question, period, persona }. Fazla alanlar atılır.
 export function validate(payload) {
   if (!isObject(payload) || !KINDS.includes(payload.kind)) throw new HttpError(400, 'kind geçersiz.');
   if (!isObject(payload.chart) || !Array.isArray(payload.chart.placements)) throw new HttpError(400, 'chart eksik.');
@@ -43,7 +43,9 @@ export function validate(payload) {
   if (question.length > LIMITS.questionChars) throw new HttpError(400, `Soru ${LIMITS.questionChars} karakteri aşıyor.`);
   const period = String(payload.date ?? '');
   if (payload.kind !== 'ask' && !PERIOD_RE.test(period)) throw new HttpError(400, 'date geçersiz.');
-  return { kind: payload.kind, chart: payload.chart, question, period };
+  const persona = payload.persona ?? DEFAULT_PERSONA;
+  if (!PERSONAS.includes(persona)) throw new HttpError(400, 'persona geçersiz.');
+  return { kind: payload.kind, chart: payload.chart, question, period, persona };
 }
 
 async function bump(kv, key) {
