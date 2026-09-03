@@ -1,44 +1,89 @@
 // Başlangıç, hash router, tek state. Sayfa modülleri render(state) + mount(root, state, actions) → unmount.
-import { SCHEMA_VERSION, BANK, BANK_URL, TRANSIT, RETRO, DAILY_REPEAT_DAYS } from './config.js';
+import { SCHEMA_VERSION, BANK, BANK_URL, RETRO, DAILY_REPEAT_DAYS, TEAM_MAX } from './config.js';
 import { localDateISO, localToUT, utParts } from './astro/time.js';
-import { julianDayUT } from './astro/engine.js';
+import { julianDayUT, loadEngine, engineVersion } from './astro/engine.js';
+import { natalChart } from './astro/chart.js';
 import { composeDaily } from './text/compose-daily.js';
 import { retroIntervals, retroStatus, shadowFor } from './astro/retrograde.js';
-import * as bugun from './ui/pages/bugun.js';
-import { createBank } from './text/bank.js';
+import { synastryMatrix } from './astro/synastry.js';
+import { contagionList, weekPair } from './astro/team.js';
+import { createBank, hashSeed } from './text/bank.js';
 import { createStore, profileHash } from './store.js';
-import { loadEngine, engineVersion } from './astro/engine.js';
-import { natalChart } from './astro/chart.js';
+import { decodeProfile, parseShareHash } from './share.js';
 import * as onboarding from './ui/pages/onboarding.js';
 import * as haritam from './ui/pages/haritam.js';
+import * as bugun from './ui/pages/bugun.js';
+import * as ekip from './ui/pages/ekip.js';
+import * as kiyasla from './ui/pages/kiyasla.js';
 import { tabBar, errorBox, comingSoon } from './ui/components.js';
 
-const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ofis: 'Ekip', kiyasla: 'Kıyasla', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
+const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ekip: 'Ekip', kiyasla: 'Kıyasla', ekle: 'Ekle', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
+const ROUTE_ALIASES = { ofis: 'ekip' };
+const FORM_ROUTES = ['onboarding', 'ekle'];
+const TEAM_ROUTES = ['ekip', 'kiyasla'];
 const DEFAULT_ROUTE = 'haritam';
 const CITIES_URL = 'data/cities-tr.json';
 
 const store = createStore();
 const state = {
-  route: DEFAULT_ROUTE, profile: null, chart: null, settings: store.loadSettings(),
-  cities: [], engineVersion: '', wheelAnimated: false, editingProfile: null, bank: null, reading: null,
-  daily: null, retro: null,
+  route: DEFAULT_ROUTE, params: [], profile: null, chart: null, settings: store.loadSettings(),
+  cities: [], engineVersion: '', wheelAnimated: false, editingProfile: null, forTeam: false, bank: null, reading: null,
+  daily: null, retro: null, team: null, pendingImport: null, importError: null,
 };
 let unmount = () => {};
 
+function saveTeamProfile(fields) {
+  if (store.loadProfiles().list.length >= TEAM_MAX) throw new Error(`Ekip en çok ${TEAM_MAX} kişi.`);
+  store.saveProfile(fields);
+  state.team = null;
+}
+
 const actions = {
+  // Kendi profili. Bekleyen içe aktarma varsa o da ekibe yazılır; dönüş: gidilecek rota.
   saveProfile(fields) {
     state.profile = store.saveProfile(fields);
     store.setActiveProfile(state.profile.id);
-    state.chart = null;
-    state.daily = null;
-    state.wheelAnimated = false;
+    state.chart = null; state.daily = null; state.team = null; state.wheelAnimated = false;
+    const pending = state.pendingImport;
+    state.pendingImport = null;
+    if (pending) saveTeamProfile(pending);
+    return pending ? '#/ekip' : '#/haritam';
   },
+  saveTeamProfile,
+  importPending() {
+    const pending = state.pendingImport;
+    state.pendingImport = null;
+    if (pending) saveTeamProfile(pending);
+  },
+  dismissImport() { state.pendingImport = null; state.importError = null; },
+  deleteProfile(id) { store.deleteProfile(id); state.team = null; },
   setSerh(open) { state.settings = store.saveSettings({ showSerh: open }); },
+  refresh: () => renderRoute(),
 };
 
-function currentRoute() {
-  const name = location.hash.replace(/^#\/?/, '').split('/')[0];
-  return PAGES[name] ? name : DEFAULT_ROUTE;
+function parseHash() {
+  const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  const name = ROUTE_ALIASES[parts[0]] ?? parts[0];
+  return { route: PAGES[name] ? name : DEFAULT_ROUTE, params: parts.slice(1) };
+}
+
+function isDuplicate(fields) {
+  return store.loadProfiles().list.some((p) => p.name === fields.name && p.date === fields.date && (p.time ?? null) === fields.time);
+}
+
+// "#p=..." linki: çözümle, beklemeye al, adres çubuğunu #/ekip yap (link yeniden işlenmesin).
+function takeShareHash() {
+  const encoded = parseShareHash(location.hash);
+  if (!encoded) return;
+  state.pendingImport = null; state.importError = null;
+  try {
+    const fields = decodeProfile(encoded);
+    if (isDuplicate(fields)) state.importError = { key: 'import_exists', name: fields.name };
+    else state.pendingImport = fields;
+  } catch {
+    state.importError = { key: 'import_error' };
+  }
+  history.replaceState(null, '', `${location.pathname}${location.search}#/ekip`);
 }
 
 // Natal hesap bir kez: profil alanları değişmediyse cache'ten.
@@ -53,7 +98,7 @@ async function ensureChart(profile) {
   return chart;
 }
 
-// Metin bankası: ilk Haritam açılışında bir kez, paralel.
+// Metin bankası: ilk açılışta bir kez, paralel.
 async function ensureBank() {
   if (state.bank) return state.bank;
   const entries = await Promise.all(BANK.files.map(async (name) => {
@@ -65,19 +110,22 @@ async function ensureBank() {
   return state.bank;
 }
 
+function dayContext(tz) {
+  const dateISO = localDateISO(new Date(), tz);
+  const dayStartJd = julianDayUT(localToUT(dateISO, '00:00', tz));
+  return { tz, dateISO, jdNoon: julianDayUT(localToUT(dateISO, '12:00', tz)), jdNow: julianDayUT(utParts(new Date())), dayStartJd, dayEndJd: dayStartJd + 1, seed: 0 };
+}
+
 // Bugün: yerel tarih başına bir kez hesaplanır ve cache'lenir (yenileyince değişmez, ertesi gün değişir).
 function ensureDaily(profile) {
-  const tz = profile.tz;
-  const dateISO = localDateISO(new Date(), tz);
-  const key = `${profile.id}:${dateISO}`;
-  const dayStartJd = julianDayUT(localToUT(dateISO, '00:00', tz));
-  const ctx = { tz, dateISO, jdNoon: julianDayUT(localToUT(dateISO, '12:00', tz)), jdNow: julianDayUT(utParts(new Date())), dayStartJd, dayEndJd: dayStartJd + 1, seed: 0 };
+  const ctx = dayContext(profile.tz);
+  const key = `${profile.id}:${ctx.dateISO}`;
   let daily = store.cacheGet('daily', key);
   if (!daily) {
-    const shown = (store.cacheGet('shown', profile.id) ?? []).filter((s) => daysBetween(s.date, dateISO) < DAILY_REPEAT_DAYS);
-    daily = composeDaily(state.chart, state.bank, { dateISO, jdNoon: ctx.jdNoon, profileId: profile.id, recent: shown.flatMap((s) => s.texts) });
+    const shown = (store.cacheGet('shown', profile.id) ?? []).filter((s) => daysBetween(s.date, ctx.dateISO) < DAILY_REPEAT_DAYS);
+    daily = composeDaily(state.chart, state.bank, { dateISO: ctx.dateISO, jdNoon: ctx.jdNoon, profileId: profile.id, recent: shown.flatMap((s) => s.texts) });
     store.cacheSet('daily', key, daily);
-    store.cacheSet('shown', profile.id, [...shown, { date: dateISO, texts: daily.topThree.map((t) => t.text) }]);
+    store.cacheSet('shown', profile.id, [...shown, { date: ctx.dateISO, texts: daily.topThree.map((t) => t.text) }]);
   }
   ctx.seed = daily.seed;
   return { ...daily, ctx };
@@ -101,6 +149,22 @@ function ensureRetro(jdNow) {
   return { status, shadow: target ? shadowFor(RETRO.bodies[0], target) : null, previousShadow: status.previous ? shadowFor(RETRO.bodies[0], status.previous) : null };
 }
 
+// Ekip: ben önce, sonra diğerleri; haritalar natal cache'ten; matris, bulaşma, haftanın çifti (n ≤ 30, ms düzeyi).
+async function ensureTeam() {
+  const ctx = dayContext(state.profile.tz);
+  if (state.team && state.team.dateISO === ctx.dateISO) return state.team;
+  const others = store.loadProfiles().list.filter((p) => p.id !== state.profile.id);
+  const members = [{ id: state.profile.id, profile: state.profile, chart: state.chart }];
+  for (const p of others) members.push({ id: p.id, profile: p, chart: await ensureChart(p) });
+  const matrix = synastryMatrix(members);
+  return {
+    members, matrix, dateISO: ctx.dateISO,
+    contagion: contagionList(members, ctx.jdNoon),
+    weekPair: weekPair(matrix, ctx.dateISO),
+    seed: hashSeed(`${state.profile.id}|${ctx.dateISO}`),
+  };
+}
+
 function paint(html, page) {
   unmount();
   const root = document.getElementById('app');
@@ -110,21 +174,31 @@ function paint(html, page) {
   window.scrollTo(0, 0);
 }
 
+function paintForm(route) {
+  state.forTeam = route === 'ekle' && Boolean(state.profile);
+  state.editingProfile = route === 'onboarding' ? state.profile : null;
+  paint(onboarding.render(state), onboarding);
+}
+
 async function renderRoute() {
-  state.route = currentRoute();
+  takeShareHash();
+  const { route, params } = parseHash();
+  state.route = route; state.params = params;
   state.profile = store.getActiveProfile();
-  if (state.route === 'onboarding' || (!state.profile && state.route === 'haritam')) {
-    state.editingProfile = state.route === 'onboarding' ? state.profile : null;
-    paint(onboarding.render(state), onboarding);
-    return;
-  }
-  if (!['haritam', 'bugun'].includes(state.route)) { paint(comingSoon(PAGES[state.route]), null); return; }
+  if (FORM_ROUTES.includes(route) || !state.profile) { paintForm(route); return; }
+  if (!['haritam', 'bugun', ...TEAM_ROUTES].includes(route)) { paint(comingSoon(PAGES[route]), null); return; }
   const [chart] = await Promise.all([state.chart ?? ensureChart(state.profile), ensureBank()]);
   state.chart = chart;
-  if (state.route === 'bugun') {
+  if (route === 'bugun') {
     state.daily = ensureDaily(state.profile);
     state.retro = ensureRetro(state.daily.ctx.jdNow);
     paint(bugun.render(state), bugun);
+    return;
+  }
+  if (TEAM_ROUTES.includes(route)) {
+    state.team = await ensureTeam();
+    if (route === 'ekip') state.daily = ensureDaily(state.profile); // kart için günün cümlesi
+    paint(route === 'ekip' ? ekip.render(state) : kiyasla.render(state), route === 'ekip' ? ekip : kiyasla);
     return;
   }
   paint(haritam.render(state), haritam);

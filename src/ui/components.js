@@ -5,12 +5,15 @@ export function esc(value) {
 }
 
 const TABS = [
-  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ofis', 'Ekip'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
+  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ekip', 'Ekip'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
 ];
 
+const TAB_ALIASES = { kiyasla: 'ekip', ekle: 'ekip', onboarding: 'haritam' };
+
 export function tabBar(active) {
+  const activeTab = TAB_ALIASES[active] ?? active;
   const items = TABS.map(([route, label]) => {
-    const current = route === active ? ' aria-current="page"' : '';
+    const current = route === activeTab ? ' aria-current="page"' : '';
     return `<a href="#/${route}"${current}>${label}</a>`;
   });
   return `<nav class="tabbar" aria-label="Sekmeler">${items.join('')}</nav>`;

@@ -1,0 +1,186 @@
+{
+  "synastry_label_high": {
+    "v": [
+      "Toplantıda birbirini tamamlayan ikili; biri başlatır, öteki bitirir, kimse fark etmez.",
+      "Aynı projede kıvılcım çıkar ama yangın çıkmaz; sürtünme değil, ivme.",
+      "Bu ikili aynı odada olunca iş kısalır; aynı mesaj grubunda olunca da uzar, o ayrı."
+    ],
+    "barnum": 0.5
+  },
+  "synastry_label_mid": {
+    "v": [
+      "İyi bir iş ikilisi; birbirini hızlandırmaz ama yavaşlatmaz da, çoğu ilişki bu kadar.",
+      "Mail'de dikkat, kahvede rahat; yazışırken yanlış anlaşılma, yüz yüze anlaşma kolay.",
+      "Farklı ritimler, uyumlu tempo; biri planlar, öteki uygular, ikisi de öyle sanıyor."
+    ],
+    "barnum": 0.7
+  },
+  "synastry_label_low": {
+    "v": [
+      "Sürtünme var; iyi yönetilirse en sağlam ikili, kötü yönetilirse en uzun toplantı.",
+      "Bu ikili birbirini gerer ama aynı zamanda bileyler; anlaşmazlık sonuç üretiyor.",
+      "Aynı projede zor, farklı projede iyi; yan yana değil karşı karşıya çalışın, işe yarıyor."
+    ],
+    "barnum": 0.5
+  },
+  "contagion_sun_square": {
+    "v": [
+      "{name} bugün her yorumu kişisel alabilir; eleştiriyi yarına, teşekkürü bugüne bırak.",
+      "Güneş bugün {name} için sert açıda: kimlik alınganlığı yüksek, övgüyle yaklaş, düzeltmeyle değil.",
+      "{name} bugün kendini sınavda hissediyor; patron sesiyle konuşma, meslektaş sesiyle konuş."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_sun_opposition": {
+    "v": [
+      "{name} bugün karşısında bir rakip görüyor gibi; o rakip sen olma, yanına geç.",
+      "Güneş bugün {name} için karşıt açıda: haklı çıkma isteği yüksek, tartışmayı yarına at.",
+      "{name} bugün 'ben' cümleleri kuruyor; sen 'biz' de, gerginlik iner."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_mercury_square": {
+    "v": [
+      "Merkür bugün {name} için ters köşe: mail atma, yüz yüze konuş, kısa tut.",
+      "{name} bugün yanlış anlamaya açık; mesajı iki kez oku, sonra da gönderme, ara.",
+      "{name} ile bugün detay tartışma; yarın aynı konu üç dakikada çözülür."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_mercury_opposition": {
+    "v": [
+      "{name} bugün karşı fikri duyunca sertleşiyor; fikri yazılı gönder, sözlü tartışma.",
+      "Merkür bugün {name} için karşıt açıda: her cümle iki anlama çekiliyor, net ve kısa yaz.",
+      "{name} ile bugün kararı konuşma, bilgiyi konuş; karar yarın."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_venus_square": {
+    "v": [
+      "Venüs bugün {name} için sıkışık: nezaket beklentisi yüksek, kahve ısmarla.",
+      "{name} bugün küçük kabalıkları büyütebilir; teşekkürü eksik etme.",
+      "{name} için bugün 'geçelim' deme; sohbete bir dakika ayır, karşılığı iyi gelir."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_venus_opposition": {
+    "v": [
+      "{name} bugün karşı taraftan ilgi bekliyor; soğuk mesaj atma, bir emoji kurtarır.",
+      "Venüs bugün {name} için karşıt açıda: küçük bir jest büyük, küçük bir ihmal daha büyük.",
+      "{name} ile bugün pazarlık yapma; bugün almak istediği şey nezaket, indirim değil."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_mars_square": {
+    "v": [
+      "Mars bugün {name} için kare: sinir kısa, tepki hızlı; uzak dur ya da nazik ol.",
+      "{name} bugün kavgaya hazır gibi; haklı olsan da bugün tartışma, yarın konuş.",
+      "{name} bugün acele ediyor; yavaşlatma, önünden çekil, akşama sakinleşir."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_mars_opposition": {
+    "v": [
+      "{name} bugün karşısında bir engel arıyor; o engel sen olma, kapıyı açık bırak.",
+      "Mars bugün {name} için karşıt açıda: gerginlik dışarıdan geliyor, senin üstüne gelirse geri çekil.",
+      "{name} ile bugün güç yarışına girme; bugün kazanan yarın özür diliyor."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_jupiter_square": {
+    "v": [
+      "Jüpiter bugün {name} için şişkin: büyük vaatler gelebilir, 'düşünelim' de.",
+      "{name} bugün her şeye evet diyebilir; takvime yazdırmadan söz alma.",
+      "{name} bugün büyük planlı, küçük hesaplı; sayıları sen kontrol et."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_jupiter_opposition": {
+    "v": [
+      "{name} bugün karşı taraftan büyük şeyler bekliyor; küçük ve somut ver, hayal kırıklığı çıkmaz.",
+      "Jüpiter bugün {name} için karşıt açıda: abartı karşılıklı, ölçüyü sen koy.",
+      "{name} ile bugün bütçe konuşma; iyimserlik bugün rakamları büyütüyor."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_saturn_square": {
+    "v": [
+      "Satürn bugün {name} için ağır: sessiz, biraz karamsar; şaka yapma, iş ver.",
+      "{name} bugün kendine sert; sen de sert olma, bir işi bitirmesine yardım et.",
+      "{name} bugün ek görev kaldırmaz; zaten taşıdığını taşıyor, gördüğünü söyle."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_saturn_opposition": {
+    "v": [
+      "{name} bugün karşısında bir otorite görüyor; sen o olma, yanında dur.",
+      "Satürn bugün {name} için karşıt açıda: kurallar dar geliyor, kuralı hatırlatma, yolu göster.",
+      "{name} ile bugün 'yapılmalı' cümlesi kurma; 'yapabiliriz' de, aynı iş."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_uranus_square": {
+    "v": [
+      "Uranüs bugün {name} için sarsıcı: ani karar, ani mesaj, ani istifa şakası; ciddiye alma.",
+      "{name} bugün öngörülemez; planı esnek tut, sürprize hazır ol.",
+      "{name} bugün her şeyi değiştirmek istiyor; birini değiştirsin, gerisini yarın konuşun."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_uranus_opposition": {
+    "v": [
+      "{name} bugün karşı taraftan sürpriz bekliyor ve seviyor; küçük bir yenilik iyi gelir.",
+      "Uranüs bugün {name} için karşıt açıda: başkasının ani hamlesi sinirlendirir, haber vererek hareket et.",
+      "{name} ile bugün planı sabit tutma; bir alternatif hazırla, kullanılacak."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_neptune_square": {
+    "v": [
+      "Neptün bugün {name} için sisli: söylediğini yazılı teyit al, varsayma.",
+      "{name} bugün dalgın; önemli bilgiyi mesajla da yaz, sözlü uçar.",
+      "{name} bugün iyi niyetli ama bulanık; sor, tahmin etme."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_neptune_opposition": {
+    "v": [
+      "{name} bugün karşı tarafı olduğundan farklı görüyor; net ol, kurtarıcı olma.",
+      "Neptün bugün {name} için karşıt açıda: yanlış anlama karşılıklı, yazılıya güven.",
+      "{name} ile bugün sözlü söz alma; bugün verilen söz yarın hatırlanmıyor."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_pluto_square": {
+    "v": [
+      "Plüton bugün {name} için zorlayıcı: kontrol isteği yüksek, güç oyununa girme.",
+      "{name} bugün her şeyin dibine iniyor; yüzeysel cevap verme, sabırlı ol.",
+      "{name} ile bugün otorite tartışması çıkabilir; kazanmaya çalışma, dinle."
+    ],
+    "barnum": 0.6
+  },
+  "contagion_pluto_opposition": {
+    "v": [
+      "{name} bugün karşısındakini sınıyor; sınavı geçmeye çalışma, sadece dürüst ol.",
+      "Plüton bugün {name} için karşıt açıda: güç dengesi konuşuluyor, kontrolü paylaş.",
+      "{name} ile bugün ültimatom alışverişi yapma; yarın ikisi de geçersiz."
+    ],
+    "barnum": 0.6
+  },
+  "week_pair": {
+    "v": [
+      "Bu hafta {a} ile {b}: aynı odada bırakın, iş kendiliğinden biter.",
+      "{a} ve {b} bu haftanın çifti; birinin fikri ötekinin eli, ikisi de kabul etmez.",
+      "Haftanın çifti {a} ve {b}: toplantıda yan yana oturtun, süre kısalır."
+    ],
+    "barnum": 0.6
+  },
+  "same_point": {
+    "v": [
+      "{body} ikinizde aynı burçta: aynı dil, aynı kör nokta; birbirinizi hem anlarsınız hem sinirlendirirsiniz.",
+      "{body} aynı yerde: bu konuda ikiniz de aynı hatayı yapıyorsunuz, o yüzden fark etmiyorsunuz.",
+      "İkinizin {body} yerleşimi aynı: refleksler ortak, bazen fazla ortak."
+    ],
+    "barnum": 0.7
+  }
+}
