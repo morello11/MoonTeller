@@ -2,7 +2,7 @@
 import { LLM } from '../../config.js';
 import { workerConfigured } from '../../llm/client.js';
 import { dailySummary } from '../../llm/summary.js';
-import { esc, card, serhBox, emptyState } from '../components.js';
+import { esc, card, serhBox, emptyState, commentatorName } from '../components.js';
 
 const REASON_COPY = { no_pin: 'sor_no_pin', unauthorized: 'sor_unauthorized', limited: 'sor_limited', offline: 'sor_offline', error: 'sor_error', too_big: 'sor_too_big', no_url: 'sor_closed_text' };
 
@@ -30,7 +30,8 @@ export function render(state) {
   const head = `<section class="page-head"><h1>${esc(bank.copy('sor_title'))}</h1></section>`;
   if (!workerConfigured()) return `<div id="sor">${head}${emptyState(bank.copy('sor_closed_title'), bank.copy('sor_closed_text'))}</div>`;
   const summary = dailySummary(state.chart, state.daily);
-  return `<div id="sor" class="${state.settings.showSerh ? 'serh-on' : ''}">${head}${card(bank.copy('sor_title'), form(bank))}`
+  const who = `<p class="muted commentator">${esc(bank.copy('sor_commentator', { name: commentatorName(state) }))} · <a href="#/ayarlar">${esc(bank.copy('sor_change_commentator'))}</a></p>`;
+  return `<div id="sor" class="${state.settings.showSerh ? 'serh-on' : ''}">${head}${card(bank.copy('sor_title'), who + form(bank))}`
     + serhBox(serhRows(summary, bank), state.settings.showSerh, bank.copy('sor_serh_title'), bank.copy('sor_serh_hint'))
     + `<p class="muted small">${esc(bank.copy('disclaimer'))}</p></div>`;
 }
@@ -56,7 +57,7 @@ async function submit(root, state, actions) {
     const result = await actions.llm('ask', { question });
     if (!result.ok) { showStatus(root, bank.copy(REASON_COPY[result.reason] ?? 'sor_error')); return; }
     showStatus(root, '');
-    answer.innerHTML = card('Cevap', `<p class="answer">${esc(result.text)}</p><p class="scene">${esc(bank.copy('sor_footer'))}</p>`);
+    answer.innerHTML = card(bank.copy('sor_answer_title', { name: commentatorName(state) }), `<p class="answer">${esc(result.text)}</p><p class="scene">${esc(bank.copy('sor_footer'))}</p>`);
     answer.hidden = false;
   } finally {
     button.disabled = false;

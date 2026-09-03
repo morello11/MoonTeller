@@ -132,7 +132,7 @@
   "ayarlar_clear_confirm": "Profilin, ekip ve önbellek silinecek. Emin misin?",
   "ayarlar_worker_on": "Worker ayarlı: {url}",
   "ayarlar_worker_off": "Worker ayarlı değil; Sor, sentez ve bülten kapalı.",
-  "bugun_synthesis_title": "Sentez",
+  "bugun_synthesis_title": "Sentez · {name}",
   "bugun_synthesis_busy": "Sentez hazırlanıyor…",
   "bugun_synthesis_none": "Bugün sentez yok; üç şey yukarıda.",
   "ekip_bulletin_title": "Pazartesi Bülteni",
@@ -143,7 +143,11 @@
   "ekip_bulletin_busy": "Bülten yazılıyor…",
   "ekip_bulletin_closed": "Sor kapalıyken bülten de kapalı.",
   "ekip_bulletin_no_pin": "Bülten için Ayarlar'dan PIN gir.",
-  "ayarlar_voice_title": "Ses",
-  "ayarlar_voice_hint": "Sor, sentez ve bülten bu sesle konuşur. Kurallar her seste aynı; yalnızca üslup değişir.",
-  "ayarlar_voice_sample": "Örnek (Mars natal Merkür'e kare):"
+  "ayarlar_voice_title": "Yorumcu",
+  "ayarlar_voice_hint": "Sor, sentez ve bülten seçtiğin yorumcunun ağzından yazılır. Kurallar herkeste aynı; yalnızca kişilik değişir.",
+  "ayarlar_voice_sample": "Örnek (Mars natal Merkür'e kare):",
+  "sor_commentator": "Yorumcun: {name}",
+  "sor_change_commentator": "değiştir",
+  "sor_answer_title": "{name} diyor ki",
+  "ekip_bulletin_by": "Yorumcu: {name}"
 }
