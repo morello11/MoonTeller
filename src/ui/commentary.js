@@ -51,13 +51,22 @@ function setReady(leaf, state, result) {
     .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
 }
 
-function setFailed(leaf, state, reason) {
+// Hata satırının altındaki gri neden: zaman aşımı / Worker durum kodu ve mesajı / ağ hatası (teşhis için, dürüstlük için).
+function failDetail(bank, detail) {
+  if (!detail) return '';
+  if (detail.name === 'timeout') return bank.copy('yorumcu_neden_zaman', { s: Math.round(detail.timeoutMs / 1000) });
+  if (detail.status) return bank.copy('yorumcu_neden_http', { status: detail.status, message: detail.message || '—' });
+  return bank.copy('yorumcu_neden_ag', { name: detail.name });
+}
+
+function setFailed(leaf, state, reason, detail = null) {
   const bank = state.bank;
   clearTimers(leaf);
   leaf.dataset.state = reason === 'limited' ? 'limit' : 'hata';
   $('.yaprak-govde', leaf).removeAttribute('aria-busy');
   $('.durum', leaf).textContent = reason === 'limited' ? bank.copy('yorumcu_sinir') : bank.copy('yorumcu_mesgul_kisa');
-  $('.yaprak-govde', leaf).innerHTML = `<p class="sahne">(${esc(bank.copy(REASON_COPY[reason] ?? 'yorumcu_mesgul'))})</p>`;
+  const why = failDetail(bank, detail);
+  $('.yaprak-govde', leaf).innerHTML = `<p class="sahne">(${esc(bank.copy(REASON_COPY[reason] ?? 'yorumcu_mesgul'))})</p>${why ? `<p class="gitti">${esc(why)}</p>` : ''}`;
   $('.kenar', leaf).innerHTML = reason === 'limited' || reason === 'no_url' ? '' : `<button type="button" data-tekrar>${esc(bank.copy('yorumcu_tekrar'))}</button>`;
   setStamp(leaf, bank.copy('yorumcu_damga_yazmadi'), true);
 }
@@ -72,7 +81,7 @@ async function write(leaf, state, actions, followup = '') {
   const result = await actions.comment(target, focus, { followup, data: payload });
   if (!leaf.isConnected || Number(leaf.dataset.seq) !== seq) return;
   if (result.sent) leaf.dataset.sent = result.sent;
-  if (result.ok) setReady(leaf, state, result); else setFailed(leaf, state, result.reason);
+  if (result.ok) setReady(leaf, state, result); else setFailed(leaf, state, result.reason, result.detail);
 }
 
 function triggerLabel(trigger) {
