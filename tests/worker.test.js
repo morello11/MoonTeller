@@ -1,9 +1,10 @@
 import { test, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 import handler from '../worker/src/index.js';
-import { BANNED } from '../worker/src/prompts.js';
-import { LIMITS } from '../worker/src/config.js';
-import { BANK } from '../src/config.js';
+import { readFileSync } from 'node:fs';
+import { BANNED, VOICES, COMMON } from '../worker/src/prompts.js';
+import { LIMITS, PERSONAS, MODELS } from '../worker/src/config.js';
+import { BANK, LLM } from '../src/config.js';
 
 const ORIGIN = 'https://ornek.github.io';
 let store; let kv; let env; let upstreamCalls; let upstreamStatus; let logged;
@@ -12,12 +13,12 @@ const CHART = { timeKnown: true, asc: 'Aslan', placements: [{ body: 'Güneş', s
 beforeEach(() => {
   store = new Map(); upstreamCalls = 0; upstreamStatus = 200; logged = [];
   kv = { get: async (k) => store.get(k) ?? null, put: async (k, v) => { store.set(k, v); } };
-  env = { APP_PIN: '1234', ANTHROPIC_API_KEY: 'k', ALLOWED_ORIGINS: `${ORIGIN},http://localhost:8080`, CACHE: kv };
+  env = { APP_PIN: '1234', OPENAI_API_KEY: 'k', ALLOWED_ORIGINS: `${ORIGIN},http://localhost:8080`, CACHE: kv };
   globalThis.fetch = async (url, init) => {
     upstreamCalls += 1;
     logged.push(JSON.parse(init.body));
     if (upstreamStatus !== 200) return new Response('{}', { status: upstreamStatus });
-    return new Response(JSON.stringify({ content: [{ type: 'text', text: 'Yorum metni.' }], stop_reason: 'end_turn' }), { status: 200 });
+    return new Response(JSON.stringify({ choices: [{ message: { role: 'assistant', content: 'Yorum metni.' }, finish_reason: 'stop' }] }), { status: 200 });
   };
 });
 
@@ -46,7 +47,7 @@ test('yanlış origin → 403; OPTIONS → 204; yanlış yol → 404; key yok �
   assert.equal((await handler.fetch(req({ origin: 'https://kotu.test' }), env)).status, 403);
   assert.equal((await handler.fetch(req({ method: 'OPTIONS' }), env)).status, 204);
   assert.equal((await handler.fetch(req({ path: '/baska' }), env)).status, 404);
-  assert.equal((await handler.fetch(req(), { ...env, ANTHROPIC_API_KEY: '' })).status, 503);
+  assert.equal((await handler.fetch(req(), { ...env, OPENAI_API_KEY: '' })).status, 503);
 });
 
 test('gövde sınırı → 413; bozuk gövde/kind/soru → 400', async () => {
@@ -56,6 +57,7 @@ test('gövde sınırı → 413; bozuk gövde/kind/soru → 400', async () => {
   assert.equal((await handler.fetch(req({ body: { kind: 'ask', chart: CHART, question: '' } }), env)).status, 400);
   assert.equal((await handler.fetch(req({ body: { kind: 'ask', chart: CHART, question: 's'.repeat(LIMITS.questionChars + 1) } }), env)).status, 400);
   assert.equal((await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: 'dün' } }), env)).status, 400);
+  assert.equal((await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'gercek_kisi' } }), env)).status, 400);
 });
 
 test('daily cache: ikinci istek üst akışa gitmez; ask cache\'siz', async () => {
@@ -66,9 +68,9 @@ test('daily cache: ikinci istek üst akışa gitmez; ask cache\'siz', async () =
   const ask = { kind: 'ask', chart: CHART, question: 'Bugün deploy yapayım mı?' };
   await handler.fetch(req({ body: ask }), env); await handler.fetch(req({ body: ask }), env);
   assert.equal(upstreamCalls, 3);
-  assert.match(logged[1].messages[0].content, /Soru \(kullanıcı verisi\)/);
-  assert.equal(logged[1].model, 'claude-sonnet-5');
-  assert.equal(logged[0].model, 'claude-haiku-4-5');
+  assert.match(logged[1].messages[1].content, /Soru \(kullanıcı verisi\)/);
+  assert.equal(logged[1].model, MODELS.ask);
+  assert.equal(logged[0].model, MODELS.daily);
 });
 
 test('IP limiti → 429 ve Retry-After; global tavan → 429', async () => {
@@ -92,9 +94,26 @@ test('üst akış 500 → 502, mesaj sızdırmaz; gövde konsola yazılmaz', asy
   assert.ok(!logs.some((l) => l.includes('gizli')));
 });
 
-test('klişe listesi uygulamayla aynı; system prompt talimatları taşıyor', async () => {
+test('klişe listesi uygulamayla aynı; system prompt ortak kuralları ve sesi taşıyor', async () => {
   assert.deepEqual(BANNED, BANK.bannedWords);
   await handler.fetch(req(), env);
-  assert.match(logged[0].system, /hesap yapma/);
-  assert.equal(logged[0].max_tokens, 400);
+  const system = logged[0].messages[0];
+  assert.equal(system.role, 'system');
+  assert.match(system.content, /hesap yapma/);
+  assert.match(system.content, /Sesin: Sert Uygulama/);
+  assert.ok(system.content.includes(COMMON));
+  assert.equal(logged[0].max_completion_tokens, 400);
+});
+
+test('sesler: Worker listesi uygulama ve voices.json ile aynı; her sesin kartı var; persona cache anahtarına giriyor', async () => {
+  const voices = JSON.parse(readFileSync(new URL('../data/tr/voices.json', import.meta.url), 'utf8'));
+  assert.deepEqual(PERSONAS, LLM.voices);
+  assert.deepEqual(Object.keys(voices), PERSONAS);
+  assert.deepEqual(Object.keys(VOICES), PERSONAS);
+  for (const p of PERSONAS) assert.match(VOICES[p], /^Sesin: /);
+  await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'nurten' } }), env);
+  await handler.fetch(req({ body: { kind: 'daily', chart: CHART, date: '2026-09-02', persona: 'muneccim' } }), env);
+  assert.equal(upstreamCalls, 2); // nurten ve muneccim ayrı cache anahtarı
+  assert.match(logged[0].messages[0].content, /Nurten Abla/);
+  assert.match(logged[1].messages[0].content, /Müneccimbaşı/);
 });

@@ -87,7 +87,7 @@ yildizname/
       summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
   data/
     tr/                 planets-signs.json planets-houses.json aspects.json transits.json
-                        moon.json archetypes.json retro.json team.json ui-copy.json
+                        moon.json archetypes.json retro.json team.json voices.json ui-copy.json
     cities-tr.json
   vendor/
     swisseph/           sabitlenmiş kopya: src/swisseph.js, wsam/{swisseph.js, swisseph.wasm, swisseph.data},

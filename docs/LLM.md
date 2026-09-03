@@ -57,3 +57,13 @@ cache ile daha az. Sor (Sonnet 5) ≈ soru başına ~0.01 $. Fiyatlar değişir:
   `chart` = `src/llm/summary.js` çıktısı: Türkçe etiketli yerleşimler, en güçlü 8 natal aspekt, günlük/haftalık blok.
 - Cache anahtarı sunucuda: `{kind}:{sha256(chart)}:{date}`. İstemci de kişi + dönem başına yalnızca son sonucu tutar.
 - Yerel deneme: `node scripts/worker-local.js` (sahte üst akış, key gerekmez); `LLM.workerUrl` geçici `http://localhost:8787`.
+
+### Karar (Adım 6, Mehmet): sağlayıcı OpenAI, beş ses
+- Mehmet'in mevcut hesabı OpenAI olduğu için üst akış OpenAI Chat Completions (`worker/src/config.js` `UPSTREAM`, `MODELS`).
+  Bölüm 8'deki Claude modelleri ve başlıkları geçersiz; secret adı `OPENAI_API_KEY`. Sağlayıcı değişimi tek fonksiyondur
+  (`worker/src/index.js` `callUpstream`). Bir key sohbete/dosyaya yapıştırıldıysa iptal edilip yenisi oluşturulur.
+- Beş ses (persona): Polyanna, Ya Olmazsa?, Sert Uygulama (varsayılan; metin bankasının tonu), Nurten Abla, Müneccimbaşı.
+  Hepsi kurgusal; gerçek kişi ya da dizi karakteri adı kullanılmaz. Ses yalnızca üslubu değiştirir; hesap yapmama, yasak
+  konular, klişe listesi, uzunluk ve dürüstlük cümlesi her seste aynıdır (`worker/src/prompts.js` `COMMON` + `VOICES`).
+- Seçim Ayarlar'da (`data/tr/voices.json`: isim, tanıtım, sabit örnek cümle), istek gövdesinde `persona`, cache anahtarında da.
+  Worker listede olmayan persona'yı 400 ile reddeder. İkinci dalga adayları: Stajyer, Emekli Öğretmen, Şüpheci Veri Bilimci.

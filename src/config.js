@@ -96,8 +96,8 @@ export const SIGN_KEYS = [
 // MOON_PHASES_TR ile aynı sırada.
 export const MOON_PHASE_IDS = ['new', 'crescent', 'first_quarter', 'gibbous', 'full', 'disseminating', 'last_quarter', 'balsamic'];
 export const BANK = {
-  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'team', 'ui-copy'],
-  limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140, transit: 200, advice: 120 },
+  files: ['planets-signs', 'planets-houses', 'aspects', 'archetypes', 'moon', 'transits', 'retro', 'team', 'voices', 'ui-copy'],
+  limits: { title: 40, hook: 140, body: 420, scene: 160, natal: 420, synastry: 420, line: 160, archetypeLine: 140, transit: 200, advice: 120, intro: 120, sample: 240 },
   // Transit varyantları tek başına günün metni olur: en az bu kadar karakter, tam cümle.
   transitMin: 60,
   barnumMax: 0.9,
@@ -209,4 +209,7 @@ export const LLM = {
   weeklyDays: 7,
   weeklyTransitsPerDay: 2,
   cacheNamespace: 'llm',
+  // Sesler (persona): worker/src/config.js PERSONAS ile aynı; seçim Ayarlar'da, varsayılan 'sert' (metin bankasının tonu).
+  voices: ['polyanna', 'ya_olmazsa', 'sert', 'nurten', 'muneccim'],
+  defaultVoice: 'sert',
 };

@@ -83,11 +83,12 @@ async function llmRequest(kind, { question = '' } = {}) {
   const ctx = dayContext();
   const period = kind === 'weekly' ? isoWeekKey(ctx.dateISO) : ctx.dateISO;
   const namespace = `${LLM.cacheNamespace}-${kind}`;
-  const cacheKey = kind === 'ask' ? null : `${state.profile.id}:${period}`;
+  const voice = state.settings.voice ?? LLM.defaultVoice;
+  const cacheKey = kind === 'ask' ? null : `${state.profile.id}:${voice}:${period}`;
   const hit = cacheKey ? store.cacheGet(namespace, cacheKey) : null;
   if (hit) return { ok: true, text: hit, cached: true };
   const summary = kind === 'weekly' ? weeklySummary(state.chart, state.team, ctx.dateISO) : dailySummary(state.chart, state.daily ?? ensureDaily(state.profile));
-  const result = await askWorker(kind, summary, { pin: state.settings.pin, question, date: period });
+  const result = await askWorker(kind, summary, { pin: state.settings.pin, question, date: period, persona: voice });
   if (result.ok && cacheKey) store.cacheReplace(namespace, cacheKey, result.text);
   return result;
 }

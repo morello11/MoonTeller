@@ -30,5 +30,5 @@ test('zaman aşımı → offline; başlık ve gövde doğru', async () => {
   assert.equal(r.reason, 'offline');
   assert.equal(seen.input, `${URL_}/v1/reading`);
   assert.equal(seen.init.headers['X-App-Pin'], '4321');
-  assert.deepEqual(JSON.parse(seen.init.body), { kind: 'daily', chart: summary, question: '', date: '2026-09-02', lang: 'tr' });
+  assert.deepEqual(JSON.parse(seen.init.body), { kind: 'daily', chart: summary, question: '', date: '2026-09-02', persona: 'sert', lang: 'tr' });
 });

@@ -217,3 +217,11 @@ td.num, th.num { text-align: right; }
 .button.danger { border-color: var(--kizil); color: var(--kizil); }
 .button:disabled { opacity: .5; cursor: default; }
 #ayarlar-status { align-self: center; }
+
+/* Ses kartları */
+.voices { display: grid; gap: 8px; }
+.voice { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--cizgi); border-radius: var(--radius); cursor: pointer; }
+.voice.selected { border-color: var(--pirinc); background: rgba(200, 162, 74, .08); }
+.voice input { margin-top: 4px; width: 20px; height: 20px; accent-color: var(--pirinc); flex: none; }
+.voice-body { display: flex; flex-direction: column; gap: 2px; }
+.voice-sample { font-family: var(--font-baslik); font-size: var(--fs-16); margin-top: 4px; }
