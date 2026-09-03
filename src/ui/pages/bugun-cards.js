@@ -1,6 +1,6 @@
 // Bugün: Ay, günün üç şeyi, retro sayacı kartları (HTML üreten saf fonksiyonlar).
 import { SIGNS_TR } from '../../astro/chart.js';
-import { MOON_PHASES_TR } from '../../config.js';
+import { MOON_PHASES_TR, RETRO_PHASE_EDGE_DAYS } from '../../config.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_GLYPHS, ASPECT_NAMES_TR, HARD_ASPECTS, SIGN_GLYPHS } from '../glyphs.js';
 import { esc, card, stamp } from '../components.js';
 import { barnumBadge } from './haritam-text.js';
@@ -58,6 +58,13 @@ function retroLine(bank, key, seed, vars) {
   return `<p>${esc(text)}</p>${barnumBadge(entry.barnum)}`;
 }
 
+// Retroda: bitişe az kaldıysa 'end', yeni başladıysa 'start', arası 'mid'.
+function retroPhaseKey(status) {
+  const total = status.current.end - status.current.start;
+  if (status.daysLeft <= RETRO_PHASE_EDGE_DAYS) return 'mercury_end';
+  return status.daysLeft > total - RETRO_PHASE_EDGE_DAYS ? 'mercury_start' : 'mercury_mid';
+}
+
 // status: retroStatus çıktısı (+ shadow), body 'mercury'.
 export function retroCard(retro, ctx, bank) {
   const { status, shadow } = retro;
@@ -65,7 +72,7 @@ export function retroCard(retro, ctx, bank) {
   if (status.current) {
     const days = Math.ceil(status.daysLeft);
     body += `<p class="band band-hot">${esc(bank.copy('bugun_retro_now', { days }))} ${esc(bank.copy('bugun_retro_deploy'))}</p>`;
-    body += retroLine(bank, days <= 3 ? 'mercury_end' : status.daysLeft > (status.current.end - status.current.start) - 3 ? 'mercury_start' : 'mercury_mid', ctx.seed, {});
+    body += retroLine(bank, retroPhaseKey(status), ctx.seed, {});
   } else if (status.next) {
     const days = Math.ceil(status.daysUntil);
     const inPreShadow = shadow?.preStart && ctx.jdNow >= shadow.preStart;

@@ -1,9 +1,8 @@
 // Onboarding: 3 alan, 40 saniye. Ad, doğum tarihi, saat ("bilmiyorum"), il; yurt dışı için enlem/boylam + IANA.
-import { DEFAULT_TZ } from '../../config.js';
+import { DEFAULT_TZ, SHARE } from '../../config.js';
 import { esc } from '../components.js';
 
 const MIN_DATE = '1900-01-01';
-const NAME_MAX = 40;
 
 function field(label, inputHtml, hint = '') {
   return `<label class="field"><span>${esc(label)}</span>${inputHtml}${hint ? `<small class="muted">${esc(hint)}</small>` : ''}</label>`;
@@ -36,7 +35,7 @@ export function render(state) {
   const cancel = state.forTeam ? '#/ekip' : p.id ? '#/haritam' : null;
   return `<section class="page-head">${heading(state, p)}</section>`
     + `<form id="onboarding" class="form" novalidate>`
-    + field('Adın', `<input name="name" type="text" required maxlength="${NAME_MAX}" autocomplete="given-name" value="${esc(p.name ?? '')}">`)
+    + field('Adın', `<input name="name" type="text" required maxlength="${SHARE.nameMax}" autocomplete="given-name" value="${esc(p.name ?? '')}">`)
     + field('Doğum tarihi', `<input name="date" type="date" required min="${MIN_DATE}" max="${today}" value="${esc(p.date ?? '')}">`)
     + field('Doğum saati', `<input name="time" type="time" value="${esc(p.time ?? '')}"${p.id && !p.time ? ' disabled' : ''}>`, 'Nüfus cüzdanında ya da doğum belgesinde yazar.')
     + `<label class="check"><input name="unknownTime" type="checkbox"${p.id && !p.time ? ' checked' : ''}> Saatimi bilmiyorum</label>`

@@ -1,5 +1,5 @@
 // Bugün sayfası: Ay, günün üç şeyi, retro sayacı, plan skoru, canlı gökyüzü, şerh.
-import { PLAN_SCORE } from '../../config.js';
+import { PLAN_SCORE, TODAY } from '../../config.js';
 import { SIGNS_TR, degreeInSign } from '../../astro/chart.js';
 import { julianDayUT } from '../../astro/engine.js';
 import { localToUT } from '../../astro/time.js';
@@ -42,6 +42,7 @@ function skyCard(sky, bank) {
 function serhRows(daily, ctx) {
   const rows = [
     ['Hesap anı', `${daily.dateISO} 12:00 ${ctx.tz} → JD ${ctx.jdNoon.toFixed(4)}`],
+    ['Canlı gökyüzü konumu', `${TODAY.label} ${TODAY.lat}° K, ${TODAY.lon}° D`],
     ['Ay boşlukta (UT)', `${formatLocalTime(daily.voc.start, 'UTC')} – ${formatLocalTime(daily.voc.end, 'UTC')}${daily.voc.hasExact ? '' : ' (burçta tam aspekt yok)'}`],
     ['Seed', String(daily.seed)],
   ];
@@ -57,9 +58,9 @@ function localNowValue(tz) {
 }
 
 export function render(state) {
-  const { daily, bank, profile } = state;
+  const { daily, bank } = state;
   const ctx = daily.ctx;
-  const sky = liveSky(ctx.jdNow, profile.lat, profile.lon);
+  const sky = liveSky(ctx.jdNow, TODAY.lat, TODAY.lon);
   return `<div class="bugun ${state.settings.showSerh ? 'serh-on' : ''}" id="bugun">`
     + `<section class="page-head"><h1>${esc(dateHeading(daily.dateISO, ctx.tz))}</h1></section>`
     + moonCard(daily, ctx, bank)
@@ -74,10 +75,11 @@ export function render(state) {
 export function mount(root, state, actions) {
   const form = root.querySelector('#plan-form');
   const out = root.querySelector('#plan-result');
+  const ctx = state.daily.ctx;
   const onSubmit = (e) => {
     e.preventDefault();
     const [date, time] = form.elements.when.value.split('T');
-    const jd = julianDayUT(localToUT(date, time, state.profile.tz));
+    const jd = julianDayUT(localToUT(date, time, ctx.tz));
     out.innerHTML = planResult(evaluatePlan(jd, form.elements.type.value), state.bank);
   };
   form.addEventListener('submit', onSubmit);

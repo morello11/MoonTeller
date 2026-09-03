@@ -1,5 +1,5 @@
 // Sinastri: iki natal harita arasındaki aspektler ve 0–100 uyum skoru (docs/ENGINE.md 8). Saf mantık.
-import { SYNASTRY, ELEMENTS } from '../config.js';
+import { SYNASTRY } from '../config.js';
 import { findAspects, pairKey } from './aspects.js';
 import { signIndex } from './chart.js';
 import { elementOf } from './scoring.js';
@@ -96,4 +96,3 @@ export function synastryMatrix(members) {
   return { ids, cells };
 }
 
-export { ELEMENTS };

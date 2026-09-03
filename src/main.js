@@ -1,5 +1,5 @@
 // Başlangıç, hash router, tek state. Sayfa modülleri render(state) + mount(root, state, actions) → unmount.
-import { SCHEMA_VERSION, BANK, BANK_URL, RETRO, DAILY_REPEAT_DAYS, TEAM_MAX } from './config.js';
+import { SCHEMA_VERSION, BANK, BANK_URL, RETRO, DAILY_REPEAT_DAYS, TEAM_MAX, TODAY } from './config.js';
 import { localDateISO, localToUT, utParts } from './astro/time.js';
 import { julianDayUT, loadEngine, engineVersion } from './astro/engine.js';
 import { natalChart } from './astro/chart.js';
@@ -31,6 +31,7 @@ const state = {
   daily: null, retro: null, team: null, pendingImport: null, importError: null,
 };
 let unmount = () => {};
+let renderSeq = 0; // hızlı sekme değişiminde eski render'ın sonradan boyamasını engeller
 
 function saveTeamProfile(fields) {
   if (store.loadProfiles().list.length >= TEAM_MAX) throw new Error(`Ekip en çok ${TEAM_MAX} kişi.`);
@@ -110,7 +111,8 @@ async function ensureBank() {
   return state.bank;
 }
 
-function dayContext(tz) {
+// Günün bağlamı: İstanbul yerel tarihi (doğum yerinin saat dilimi değil).
+function dayContext(tz = TODAY.tz) {
   const dateISO = localDateISO(new Date(), tz);
   const dayStartJd = julianDayUT(localToUT(dateISO, '00:00', tz));
   return { tz, dateISO, jdNoon: julianDayUT(localToUT(dateISO, '12:00', tz)), jdNow: julianDayUT(utParts(new Date())), dayStartJd, dayEndJd: dayStartJd + 1, seed: 0 };
@@ -118,13 +120,13 @@ function dayContext(tz) {
 
 // Bugün: yerel tarih başına bir kez hesaplanır ve cache'lenir (yenileyince değişmez, ertesi gün değişir).
 function ensureDaily(profile) {
-  const ctx = dayContext(profile.tz);
-  const key = `${profile.id}:${ctx.dateISO}`;
+  const ctx = dayContext();
+  const key = `${SCHEMA_VERSION}:${profileHash(profile)}:${profile.id}:${ctx.dateISO}`;
   let daily = store.cacheGet('daily', key);
   if (!daily) {
     const shown = (store.cacheGet('shown', profile.id) ?? []).filter((s) => daysBetween(s.date, ctx.dateISO) < DAILY_REPEAT_DAYS);
     daily = composeDaily(state.chart, state.bank, { dateISO: ctx.dateISO, jdNoon: ctx.jdNoon, profileId: profile.id, recent: shown.flatMap((s) => s.texts) });
-    store.cacheSet('daily', key, daily);
+    store.cacheReplace('daily', key, daily); // eski günler atılır; cache şişmesin
     store.cacheSet('shown', profile.id, [...shown, { date: ctx.dateISO, texts: daily.topThree.map((t) => t.text) }]);
   }
   ctx.seed = daily.seed;
@@ -151,7 +153,7 @@ function ensureRetro(jdNow) {
 
 // Ekip: ben önce, sonra diğerleri; haritalar natal cache'ten; matris, bulaşma, haftanın çifti (n ≤ 30, ms düzeyi).
 async function ensureTeam() {
-  const ctx = dayContext(state.profile.tz);
+  const ctx = dayContext();
   if (state.team && state.team.dateISO === ctx.dateISO) return state.team;
   const others = store.loadProfiles().list.filter((p) => p.id !== state.profile.id);
   const members = [{ id: state.profile.id, profile: state.profile, chart: state.chart }];
@@ -181,6 +183,7 @@ function paintForm(route) {
 }
 
 async function renderRoute() {
+  const token = ++renderSeq;
   takeShareHash();
   const { route, params } = parseHash();
   state.route = route; state.params = params;
@@ -188,6 +191,7 @@ async function renderRoute() {
   if (FORM_ROUTES.includes(route) || !state.profile) { paintForm(route); return; }
   if (!['haritam', 'bugun', ...TEAM_ROUTES].includes(route)) { paint(comingSoon(PAGES[route]), null); return; }
   const [chart] = await Promise.all([state.chart ?? ensureChart(state.profile), ensureBank()]);
+  if (token !== renderSeq) return;
   state.chart = chart;
   if (route === 'bugun') {
     state.daily = ensureDaily(state.profile);
@@ -197,6 +201,7 @@ async function renderRoute() {
   }
   if (TEAM_ROUTES.includes(route)) {
     state.team = await ensureTeam();
+    if (token !== renderSeq) return;
     if (route === 'ekip') state.daily = ensureDaily(state.profile); // kart için günün cümlesi
     paint(route === 'ekip' ? ekip.render(state) : kiyasla.render(state), route === 'ekip' ? ekip : kiyasla);
     return;

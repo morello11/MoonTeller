@@ -9,6 +9,8 @@ export const EPHEMERIS_FLAGS = ['SEFLG_MOSEPH', 'SEFLG_SPEED'];
 export const HOUSE_SYSTEM = 'P';
 
 export const DEFAULT_TZ = 'Europe/Istanbul';
+// "Bugün" ve Canlı Gökyüzü: telefonun saati, İstanbul yerel tarihi ve İstanbul ufku (docs/REVIEW.md 4). Doğum yeri değil.
+export const TODAY = { tz: DEFAULT_TZ, lat: 41.01, lon: 28.98, label: 'İstanbul' };
 
 // Doğum saati bilinmiyorsa hesapta varsayılan yerel saat.
 export const UNKNOWN_TIME_HOUR = 12;
@@ -160,6 +162,8 @@ export const SKY = {
   nightSunAltitudeDeg: -6, // sivil alacakaranlık
 };
 export const DAILY_REPEAT_DAYS = 7;
+// Retro metin evreleri: başlangıç/bitişe bu kadar gün kala 'start'/'end', arası 'mid'.
+export const RETRO_PHASE_EDGE_DAYS = 3;
 
 // --- Ekip (Adım 5): paylaşım linki, sinastri, bulaşma, haftanın çifti, kart ---
 // Link: #p=<base64url JSON>. Doğum bilgisi linkte taşınır, sunucuya gitmez (hash parçası istek dışında kalır).

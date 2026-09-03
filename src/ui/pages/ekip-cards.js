@@ -106,4 +106,3 @@ export function membersCard(team, profile, bank) {
   return card(bank.copy('ekip_members_title'), `<ul class="members">${rows}</ul><p class="actions"><a class="button secondary" href="#/ekle">${esc(bank.copy('ekip_add'))}</a></p>`);
 }
 
-export { SIGN_GLYPHS };

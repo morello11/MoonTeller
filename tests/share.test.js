@@ -31,7 +31,9 @@ test('bozuk girdiler hata verir', () => {
   assert.throws(() => decodeProfile(bad({ v: 2 })), /sürüm/);
   assert.throws(() => decodeProfile(bad({ n: '' })), /ad/);
   assert.throws(() => decodeProfile(bad({ d: '05.11.1988' })), /tarih/);
-  assert.throws(() => decodeProfile(bad({ t: '25:99x' })), /saat/);
+  assert.throws(() => decodeProfile(bad({ t: '25:99' })), /saat/);
+  assert.throws(() => decodeProfile(bad({ t: '12:60' })), /saat/);
+  assert.throws(() => decodeProfile(bad({ d: '1988-02-30' })), /tarih/);
   assert.throws(() => decodeProfile(bad({ tz: 'Mars/Olympus' })), /dilimi/);
   assert.throws(() => decodeProfile(bad({ la: 95 })), /konum/);
 });
