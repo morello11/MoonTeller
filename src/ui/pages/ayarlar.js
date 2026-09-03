@@ -1,0 +1,57 @@
+// Ayarlar: ekip PIN'i, Bugün sentezi, ev sistemi, Şerh varsayılanı, verileri sil.
+import { HOUSE_SYSTEMS, LLM } from '../../config.js';
+import { workerConfigured } from '../../llm/client.js';
+import { esc, card } from '../components.js';
+
+const HOUSE_LABELS = { P: 'Placidus', W: 'Whole Sign', O: 'Porphyry' };
+
+function field(label, inputHtml, hint = '') {
+  return `<label class="field"><span>${esc(label)}</span>${inputHtml}${hint ? `<small class="muted">${esc(hint)}</small>` : ''}</label>`;
+}
+
+function check(name, label, checked, hint = '') {
+  return `<label class="check"><input name="${name}" type="checkbox"${checked ? ' checked' : ''}> ${esc(label)}</label>${hint ? `<small class="muted check-hint">${esc(hint)}</small>` : ''}`;
+}
+
+function llmForm(state, bank) {
+  const worker = workerConfigured() ? bank.copy('ayarlar_worker_on', { url: LLM.workerUrl }) : bank.copy('ayarlar_worker_off');
+  return `<p class="muted small">${esc(worker)}</p>`
+    + field(bank.copy('ayarlar_pin_label'), `<input name="pin" type="text" inputmode="numeric" autocomplete="off" maxlength="16" value="${esc(state.settings.pin ?? '')}">`, bank.copy('ayarlar_pin_hint'))
+    + check('dailySynthesis', bank.copy('ayarlar_synthesis'), Boolean(state.settings.dailySynthesis), bank.copy('ayarlar_synthesis_hint'));
+}
+
+function chartForm(state, bank) {
+  const current = state.profile?.houseSystem ?? 'P';
+  const options = HOUSE_SYSTEMS.map((h) => `<option value="${h}"${h === current ? ' selected' : ''}>${esc(HOUSE_LABELS[h])}</option>`).join('');
+  return field(bank.copy('ayarlar_house'), `<select name="houseSystem">${options}</select>`, bank.copy('ayarlar_house_hint'))
+    + check('showSerh', bank.copy('ayarlar_serh'), Boolean(state.settings.showSerh));
+}
+
+export function render(state) {
+  const { bank } = state;
+  return `<div id="ayarlar"><section class="page-head"><h1>${esc(bank.copy('ayarlar_title'))}</h1></section>`
+    + `<form id="ayarlar-form" class="form">${card('Sor ve sentez', llmForm(state, bank))}${card('Harita', chartForm(state, bank))}`
+    + `<p class="actions"><button type="submit" class="button">${esc(bank.copy('ayarlar_save'))}</button><span id="ayarlar-status" class="muted" role="status"></span></p></form>`
+    + card('Veriler', `<p class="actions"><button type="button" class="button secondary danger" data-action="clear">${esc(bank.copy('ayarlar_clear'))}</button></p>`)
+    + `<p class="muted small">Yıldızname · motor ${esc(state.engineVersion || '')}</p></div>`;
+}
+
+export function mount(root, state, actions) {
+  const form = root.querySelector('#ayarlar-form');
+  const bank = state.bank;
+  const onSubmit = (e) => {
+    e.preventDefault();
+    actions.saveSettings({ pin: form.elements.pin.value.trim(), dailySynthesis: form.elements.dailySynthesis.checked, showSerh: form.elements.showSerh.checked });
+    if (form.elements.houseSystem.value !== state.profile.houseSystem) actions.setHouseSystem(form.elements.houseSystem.value);
+    root.querySelector('#ayarlar-status').textContent = bank.copy('ayarlar_saved');
+  };
+  const onClear = (e) => {
+    if (!e.target.closest('[data-action=clear]') || !confirm(bank.copy('ayarlar_clear_confirm'))) return;
+    actions.clearAll();
+    location.hash = '#/haritam';
+    actions.refresh();
+  };
+  form.addEventListener('submit', onSubmit);
+  root.addEventListener('click', onClear);
+  return () => { form.removeEventListener('submit', onSubmit); root.removeEventListener('click', onClear); };
+}

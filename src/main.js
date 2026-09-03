@@ -1,12 +1,14 @@
 // Başlangıç, hash router, tek state. Sayfa modülleri render(state) + mount(root, state, actions) → unmount.
-import { SCHEMA_VERSION, BANK, BANK_URL, RETRO, DAILY_REPEAT_DAYS, TEAM_MAX, TODAY } from './config.js';
+import { SCHEMA_VERSION, BANK, BANK_URL, RETRO, DAILY_REPEAT_DAYS, TEAM_MAX, TODAY, LLM } from './config.js';
 import { localDateISO, localToUT, utParts } from './astro/time.js';
 import { julianDayUT, loadEngine, engineVersion } from './astro/engine.js';
 import { natalChart } from './astro/chart.js';
 import { composeDaily } from './text/compose-daily.js';
 import { retroIntervals, retroStatus, shadowFor } from './astro/retrograde.js';
 import { synastryMatrix } from './astro/synastry.js';
-import { contagionList, weekPair } from './astro/team.js';
+import { contagionList, weekPair, isoWeekKey } from './astro/team.js';
+import { askWorker } from './llm/client.js';
+import { dailySummary, weeklySummary } from './llm/summary.js';
 import { createBank, hashSeed } from './text/bank.js';
 import { createStore, profileHash } from './store.js';
 import { decodeProfile, parseShareHash } from './share.js';
@@ -15,12 +17,15 @@ import * as haritam from './ui/pages/haritam.js';
 import * as bugun from './ui/pages/bugun.js';
 import * as ekip from './ui/pages/ekip.js';
 import * as kiyasla from './ui/pages/kiyasla.js';
-import { tabBar, errorBox, comingSoon } from './ui/components.js';
+import * as sor from './ui/pages/sor.js';
+import * as ayarlar from './ui/pages/ayarlar.js';
+import { tabBar, errorBox } from './ui/components.js';
 
 const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ekip: 'Ekip', kiyasla: 'Kıyasla', ekle: 'Ekle', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
 const ROUTE_ALIASES = { ofis: 'ekip' };
 const FORM_ROUTES = ['onboarding', 'ekle'];
 const TEAM_ROUTES = ['ekip', 'kiyasla'];
+const PAGE_MODULES = { haritam, bugun, ekip, kiyasla, sor, ayarlar };
 const DEFAULT_ROUTE = 'haritam';
 const CITIES_URL = 'data/cities-tr.json';
 
@@ -59,8 +64,33 @@ const actions = {
   dismissImport() { state.pendingImport = null; state.importError = null; },
   deleteProfile(id) { store.deleteProfile(id); state.team = null; },
   setSerh(open) { state.settings = store.saveSettings({ showSerh: open }); },
+  saveSettings(patch) { state.settings = store.saveSettings(patch); },
+  // Ev sistemi profilde durur (natal cache anahtarına girer); değişince harita ve türevleri yeniden hesaplanır.
+  setHouseSystem(letter) {
+    state.profile = store.saveProfile({ ...state.profile, houseSystem: letter });
+    state.chart = null; state.daily = null; state.team = null;
+  },
+  clearAll() {
+    store.clearAll();
+    Object.assign(state, { profile: null, chart: null, daily: null, team: null, settings: store.loadSettings() });
+  },
+  llm: (kind, opts) => llmRequest(kind, opts),
   refresh: () => renderRoute(),
 };
+
+// Worker isteği: günlük/haftalık sonuç kişi + dönem başına bir kez (yalnızca son dönem tutulur); soru cache'siz.
+async function llmRequest(kind, { question = '' } = {}) {
+  const ctx = dayContext();
+  const period = kind === 'weekly' ? isoWeekKey(ctx.dateISO) : ctx.dateISO;
+  const namespace = `${LLM.cacheNamespace}-${kind}`;
+  const cacheKey = kind === 'ask' ? null : `${state.profile.id}:${period}`;
+  const hit = cacheKey ? store.cacheGet(namespace, cacheKey) : null;
+  if (hit) return { ok: true, text: hit, cached: true };
+  const summary = kind === 'weekly' ? weeklySummary(state.chart, state.team, ctx.dateISO) : dailySummary(state.chart, state.daily ?? ensureDaily(state.profile));
+  const result = await askWorker(kind, summary, { pin: state.settings.pin, question, date: period });
+  if (result.ok && cacheKey) store.cacheReplace(namespace, cacheKey, result.text);
+  return result;
+}
 
 function parseHash() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
@@ -189,10 +219,15 @@ async function renderRoute() {
   state.route = route; state.params = params;
   state.profile = store.getActiveProfile();
   if (FORM_ROUTES.includes(route) || !state.profile) { paintForm(route); return; }
-  if (!['haritam', 'bugun', ...TEAM_ROUTES].includes(route)) { paint(comingSoon(PAGES[route]), null); return; }
   const [chart] = await Promise.all([state.chart ?? ensureChart(state.profile), ensureBank()]);
   if (token !== renderSeq) return;
   state.chart = chart;
+  if (route === 'ayarlar') { paint(ayarlar.render(state), ayarlar); return; }
+  if (route === 'sor') {
+    state.daily = ensureDaily(state.profile);
+    paint(sor.render(state), sor);
+    return;
+  }
   if (route === 'bugun') {
     state.daily = ensureDaily(state.profile);
     state.retro = ensureRetro(state.daily.ctx.jdNow);
@@ -203,7 +238,7 @@ async function renderRoute() {
     state.team = await ensureTeam();
     if (token !== renderSeq) return;
     if (route === 'ekip') state.daily = ensureDaily(state.profile); // kart için günün cümlesi
-    paint(route === 'ekip' ? ekip.render(state) : kiyasla.render(state), route === 'ekip' ? ekip : kiyasla);
+    paint(PAGE_MODULES[route].render(state), PAGE_MODULES[route]);
     return;
   }
   paint(haritam.render(state), haritam);

@@ -208,3 +208,12 @@ td.num, th.num { text-align: right; }
 .big3-table { width: 100%; border-collapse: collapse; }
 .big3-table th, .big3-table td { padding: 6px 8px; text-align: left; border-bottom: 1px solid rgba(239, 230, 210, .08); }
 .big3-table thead th { color: var(--pirinc); }
+
+/* Sor ve Ayarlar (Adım 6) */
+.form textarea { width: 100%; min-height: 96px; padding: 10px 12px; font: inherit; color: var(--fildisi); background: var(--murekkep); border: 1px solid var(--cizgi); border-radius: var(--radius); resize: vertical; }
+.form select { width: 100%; min-height: var(--tap); padding: 8px 12px; font: inherit; color: var(--fildisi); background: var(--derin); border: 1px solid var(--cizgi); border-radius: var(--radius); }
+.answer { white-space: pre-wrap; font-family: var(--font-baslik); font-size: var(--fs-20); line-height: 1.4; }
+.check-hint { display: block; margin: -4px 0 12px 32px; font-size: var(--fs-12); }
+.button.danger { border-color: var(--kizil); color: var(--kizil); }
+.button:disabled { opacity: .5; cursor: default; }
+#ayarlar-status { align-self: center; }

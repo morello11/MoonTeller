@@ -5,6 +5,7 @@ import { julianDayUT } from '../../astro/engine.js';
 import { localToUT } from '../../astro/time.js';
 import { evaluatePlan } from '../../astro/transits.js';
 import { liveSky } from '../../astro/sky.js';
+import { workerConfigured } from '../../llm/client.js';
 import { esc, card, serhBox } from '../components.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_NAMES_TR, formatDeg } from '../glyphs.js';
 import { moonCard, threeCard, retroCard, formatLocalTime } from './bugun-cards.js';
@@ -52,6 +53,24 @@ function serhRows(daily, ctx) {
   return rows;
 }
 
+// Ayardan açılır; Worker ayarlıysa sayfa boyandıktan sonra doldurulur (UI bekletilmez).
+function synthesisCard(state) {
+  if (!state.settings.dailySynthesis || !workerConfigured()) return '';
+  return card(state.bank.copy('bugun_synthesis_title'), `<p id="synthesis" class="muted">${esc(state.bank.copy('bugun_synthesis_busy'))}</p>`);
+}
+
+function fillSynthesis(root, state, actions) {
+  const el = root.querySelector('#synthesis');
+  if (!el) return () => {};
+  let alive = true;
+  actions.llm('daily').then((r) => {
+    if (!alive) return;
+    el.textContent = r.ok ? r.text : state.bank.copy('bugun_synthesis_none');
+    el.classList.toggle('muted', !r.ok);
+  });
+  return () => { alive = false; };
+}
+
 function localNowValue(tz) {
   const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).formatToParts(new Date()).map((x) => [x.type, x.value]));
   return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}`;
@@ -65,6 +84,7 @@ export function render(state) {
     + `<section class="page-head"><h1>${esc(dateHeading(daily.dateISO, ctx.tz))}</h1></section>`
     + moonCard(daily, ctx, bank)
     + threeCard(daily, bank)
+    + synthesisCard(state)
     + retroCard(state.retro, ctx, bank)
     + card(bank.copy('bugun_plan_title'), planForm(bank, localNowValue(ctx.tz)))
     + skyCard(sky, bank)
@@ -83,9 +103,10 @@ export function mount(root, state, actions) {
     out.innerHTML = planResult(evaluatePlan(jd, form.elements.type.value), state.bank);
   };
   form.addEventListener('submit', onSubmit);
+  const stopSynthesis = fillSynthesis(root, state, actions);
   root.querySelector('.serh')?.addEventListener('toggle', (e) => {
     actions.setSerh(e.target.open);
     root.querySelector('#bugun').classList.toggle('serh-on', e.target.open);
   });
-  return () => form.removeEventListener('submit', onSubmit);
+  return () => { form.removeEventListener('submit', onSubmit); stopSynthesis(); };
 }

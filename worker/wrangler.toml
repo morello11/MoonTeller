@@ -1,0 +1,14 @@
+name = "yildizname"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+# Tarayıcıdan gelebilecek origin'ler (virgülle). GitHub Pages adresini kendi kullanıcı adınla değiştir.
+[vars]
+ALLOWED_ORIGINS = "https://morello11.github.io,http://localhost:8080"
+
+# `wrangler kv namespace create CACHE` çıktısındaki id'yi buraya yaz.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "KV_ID_BURAYA"
+
+# Secret'lar (repoya girmez):  wrangler secret put ANTHROPIC_API_KEY   ve   wrangler secret put APP_PIN

@@ -41,7 +41,3 @@ export function emptyState(title, text, actionHtml = '') {
 export function errorBox(message) {
   return `<section class="error" role="alert"><h2>Bir şey ters gitti</h2><p>${esc(message)}</p><p class="muted">Sayfayı yenile. Devam ederse profili silip yeniden gir.</p></section>`;
 }
-
-export function comingSoon(title) {
-  return `<section class="page-head"><h1>${esc(title)}</h1></section>${emptyState('Yakında', 'Bu sekme sonraki adımda dolacak.')}`;
-}
