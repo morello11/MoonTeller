@@ -41,7 +41,8 @@ Projenin son haline dışarıdan bakıldı; aşağıdaki düzeltmeler yukarıdak
 8. **Determinizm.** Varyant seçimi `hash(profileId + tarih)`; test edilebilir, "yenileyince değişti" şikâyeti olmaz.
 9. **Tekrar hissi.** 3 varyant + 7 gün tekrar etmeme; Ay satırı her gün değişir (evre × burç), bu da tazelik verir.
 10. **Barnum dürüstlüğü.** Her metnin `barnum` alanı zorunlu; validator 0.9 üstünü reddeder (o cümle herkese uyuyordur, yeniden yaz).
-11. **Worker kötüye kullanım.** Origin + PIN + IP limiti + global tavan + kill switch. Bunlardan biri olmadan deploy yok.
+11. **Worker kötüye kullanım.** Origin + IP limiti + global tavan + kill switch (`OPENAI_API_KEY` secret'ını silmek). Bunlardan biri
+    olmadan deploy yok. (Adım 6b, Mehmet: PIN kaldırıldı; ekip küçük, kötüye kullanımda key kapatılır. Bkz. docs/LLM.md son bölüm.)
 12. **LLM hesap yapmaz.** Prompt "listede olmayanı uydurma" der; çıktı düz metin, 400 token tavan; cevaptan sayı ayıklama yapılmaz.
 13. **Retro taraması pahalı olabilir.** Yılda bir hesap, cache; UI hiçbir zaman tarama beklemez (önce banka, sonra sayaç güncellenir).
 14. **Kontrast.** Pirinç küçük metinde AA'yı geçmez → yalnızca çizgi/ikon/başlık. Gövde daima fildişi. Hard/soft aspekt rengi

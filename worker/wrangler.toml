@@ -11,4 +11,4 @@ ALLOWED_ORIGINS = "https://morello11.github.io,http://localhost:8080"
 binding = "CACHE"
 id = "KV_ID_BURAYA"
 
-# Secret'lar (repoya girmez):  wrangler secret put OPENAI_API_KEY   ve   wrangler secret put APP_PIN
+# Secret (repoya girmez):  wrangler secret put OPENAI_API_KEY

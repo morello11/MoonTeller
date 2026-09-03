@@ -4,6 +4,7 @@ import { MOON_PHASES_TR, RETRO_PHASE_EDGE_DAYS } from '../../config.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_GLYPHS, ASPECT_NAMES_TR, HARD_ASPECTS, SIGN_GLYPHS } from '../glyphs.js';
 import { esc, card, stamp } from '../components.js';
 import { barnumBadge } from './haritam-text.js';
+import { sealedRow, commentBar } from '../commentary-html.js';
 
 const PERCENT = 100;
 const DAY_MS = 86400000;
@@ -45,10 +46,16 @@ function transitTitle(t) {
     + ` ${esc(BODY_NAMES_TR[t.a])} ${esc(ASPECT_NAMES_TR[t.aspect])} ${esc(BODY_NAMES_TR[t.b])} <span class="muted num">orb ${t.orb.toFixed(1)}°${t.applying ? ' · yaklaşan' : ''}</span>`;
 }
 
-export function threeCard(daily, bank) {
-  const items = daily.topThree.map((item, i) => `<section class="reading"><h3>${i + 1}. ${transitTitle(item.transit)}</h3>`
-    + `<p class="hook">${esc(item.text)}</p><p class="scene">${esc(item.advice)}</p>${barnumBadge(item.barnum)}</section>`).join('');
-  return card(bank.copy('bugun_three_title'), items || `<p class="muted">${esc(bank.copy('reading_missing'))}</p>`);
+export function threeCard(daily, state) {
+  const bank = state.bank;
+  const items = daily.topThree.map((item, i) => {
+    const t = item.transit;
+    const name = `${BODY_NAMES_TR[t.a]} ${ASPECT_NAMES_TR[t.aspect]} ${BODY_NAMES_TR[t.b]}`;
+    const row = `<section class="reading"><h3>${i + 1}. ${transitTitle(t)}</h3><p class="hook">${esc(item.text)}</p><p class="scene">${esc(item.advice)}</p>${barnumBadge(item.barnum)}</section>`;
+    return sealedRow(state, 'transit', String(i), `${bank.copy('yorumcu_yorumlat')}: ${name}`, row);
+  }).join('');
+  const bar = daily.topThree.length ? commentBar(state, 'today', daily.dateISO, bank.copy('yorumcu_bar_today')) : '';
+  return card(bank.copy('bugun_three_title'), (items || `<p class="muted">${esc(bank.copy('reading_missing'))}</p>`) + bar);
 }
 
 function retroLine(bank, key, seed, vars) {

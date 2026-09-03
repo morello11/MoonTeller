@@ -1,7 +1,9 @@
-// Ayarlar: ekip PIN'i, Bugün sentezi, ev sistemi, Şerh varsayılanı, verileri sil.
+// Ayarlar: yorumcu (ada dokun → seçim), ev sistemi, Şerh varsayılanı, verileri sil.
 import { HOUSE_SYSTEMS, LLM } from '../../config.js';
 import { workerConfigured } from '../../llm/client.js';
 import { esc, card } from '../components.js';
+import { sealHtml, voiceEntry } from '../commentary-html.js';
+import { mountCommentary } from '../commentary.js';
 
 const HOUSE_LABELS = { P: 'Placidus', W: 'Whole Sign', O: 'Porphyry' };
 
@@ -9,28 +11,15 @@ function field(label, inputHtml, hint = '') {
   return `<label class="field"><span>${esc(label)}</span>${inputHtml}${hint ? `<small class="muted">${esc(hint)}</small>` : ''}</label>`;
 }
 
-function check(name, label, checked, hint = '') {
-  return `<label class="check"><input name="${name}" type="checkbox"${checked ? ' checked' : ''}> ${esc(label)}</label>${hint ? `<small class="muted check-hint">${esc(hint)}</small>` : ''}`;
+function check(name, label, checked) {
+  return `<label class="check"><input name="${name}" type="checkbox"${checked ? ' checked' : ''}> ${esc(label)}</label>`;
 }
 
-function llmForm(state, bank) {
+function voiceCard(state, bank) {
   const worker = workerConfigured() ? bank.copy('ayarlar_worker_on', { url: LLM.workerUrl }) : bank.copy('ayarlar_worker_off');
-  return `<p class="muted small">${esc(worker)}</p>`
-    + field(bank.copy('ayarlar_pin_label'), `<input name="pin" type="text" inputmode="numeric" autocomplete="off" maxlength="16" value="${esc(state.settings.pin ?? '')}">`, bank.copy('ayarlar_pin_hint'))
-    + check('dailySynthesis', bank.copy('ayarlar_synthesis'), Boolean(state.settings.dailySynthesis), bank.copy('ayarlar_synthesis_hint'));
-}
-
-// Ses kartları: isim, tanıtım, sabit örnek cümle (LLM'siz); radyo düğmesi.
-function voiceCards(state, bank) {
-  const current = state.settings.voice ?? LLM.defaultVoice;
-  const cards = LLM.voices.map((key) => {
-    const v = bank.get('voices', key);
-    if (!v) return '';
-    return `<label class="voice${key === current ? ' selected' : ''}"><input type="radio" name="voice" value="${key}"${key === current ? ' checked' : ''}>`
-      + `<span class="voice-body"><strong>${esc(v.name)}</strong><span class="muted small">${esc(v.intro)}</span>`
-      + `<span class="voice-sample"><span class="muted small">${esc(bank.copy('ayarlar_voice_sample'))}</span> ${esc(v.sample)}</span></span></label>`;
-  }).join('');
-  return `<p class="muted small">${esc(bank.copy('ayarlar_voice_hint'))}</p><div class="voices">${cards}</div>`;
+  return `<div class="sekme-bas">${sealHtml(state, 'orta')}<span class="yorumcu-satir">${esc(bank.copy('ayarlar_voice_line'))} <strong class="yorumcu-ad">${esc(voiceEntry(state).name)}</strong></span>`
+    + `<button type="button" class="button secondary" data-action="voice-picker">${esc(bank.copy('yorumcu_degistir'))}</button></div>`
+    + `<p class="muted small">${esc(bank.copy('ayarlar_voice_hint'))}</p><p class="muted small">${esc(worker)}</p>`;
 }
 
 function chartForm(state, bank) {
@@ -43,7 +32,8 @@ function chartForm(state, bank) {
 export function render(state) {
   const { bank } = state;
   return `<div id="ayarlar"><section class="page-head"><h1>${esc(bank.copy('ayarlar_title'))}</h1></section>`
-    + `<form id="ayarlar-form" class="form">${card('Sor ve sentez', llmForm(state, bank))}${card(bank.copy('ayarlar_voice_title'), voiceCards(state, bank))}${card('Harita', chartForm(state, bank))}`
+    + card(bank.copy('ayarlar_voice_title'), voiceCard(state, bank))
+    + `<form id="ayarlar-form" class="form">${card('Harita', chartForm(state, bank))}`
     + `<p class="actions"><button type="submit" class="button">${esc(bank.copy('ayarlar_save'))}</button><span id="ayarlar-status" class="muted" role="status"></span></p></form>`
     + card('Veriler', `<p class="actions"><button type="button" class="button secondary danger" data-action="clear">${esc(bank.copy('ayarlar_clear'))}</button></p>`)
     + `<p class="muted small">Yıldızname · motor ${esc(state.engineVersion || '')}</p></div>`;
@@ -52,9 +42,10 @@ export function render(state) {
 export function mount(root, state, actions) {
   const form = root.querySelector('#ayarlar-form');
   const bank = state.bank;
+  const unmountCommentary = mountCommentary(root, state, actions);
   const onSubmit = (e) => {
     e.preventDefault();
-    actions.saveSettings({ pin: form.elements.pin.value.trim(), dailySynthesis: form.elements.dailySynthesis.checked, showSerh: form.elements.showSerh.checked, voice: form.elements.voice.value });
+    actions.saveSettings({ showSerh: form.elements.showSerh.checked });
     if (form.elements.houseSystem.value !== state.profile.houseSystem) actions.setHouseSystem(form.elements.houseSystem.value);
     root.querySelector('#ayarlar-status').textContent = bank.copy('ayarlar_saved');
   };
@@ -64,9 +55,7 @@ export function mount(root, state, actions) {
     location.hash = '#/haritam';
     actions.refresh();
   };
-  const onVoice = (e) => { if (e.target.name !== 'voice') return; root.querySelectorAll('.voice').forEach((el) => el.classList.toggle('selected', el.contains(e.target))); };
   form.addEventListener('submit', onSubmit);
-  form.addEventListener('change', onVoice);
   root.addEventListener('click', onClear);
-  return () => { form.removeEventListener('submit', onSubmit); form.removeEventListener('change', onVoice); root.removeEventListener('click', onClear); };
+  return () => { form.removeEventListener('submit', onSubmit); root.removeEventListener('click', onClear); unmountCommentary(); };
 }

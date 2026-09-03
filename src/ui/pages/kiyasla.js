@@ -6,6 +6,8 @@ import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_GLYPHS, ASPECT_NAMES_TR, HARD_ASPECT
 import { esc, card, serhBox, emptyState } from '../components.js';
 import { barnumBadge } from './haritam-text.js';
 import { teamLine } from './ekip-cards.js';
+import { commentBar, sealedRow } from '../commentary-html.js';
+import { mountCommentary } from '../commentary.js';
 
 const BIG_THREE = ['sun', 'moon', 'asc'];
 
@@ -20,13 +22,16 @@ function aspectText(x, a, b, bank) {
   return { text: bank.copy('synastry_generic', { a: `${a.profile.name} ${BODY_NAMES_TR[x.a]}`, b: `${b.profile.name} ${BODY_NAMES_TR[x.b]}`, aspect: ASPECT_NAMES_TR[x.aspect] }), barnum: null };
 }
 
-function topCard(top, a, b, bank) {
+function topCard(top, a, b, state) {
+  const bank = state.bank;
   const items = top.map((x, i) => {
     const cls = HARD_ASPECTS.includes(x.aspect) ? 'hard' : 'soft';
     const title = `${i + 1}. ${esc(a.profile.name)} · <span class="glyph">${BODY_GLYPHS[x.a]}</span> ${esc(BODY_NAMES_TR[x.a])} <span class="asp ${cls}">${ASPECT_GLYPHS[x.aspect]}</span> `
       + `${esc(b.profile.name)} · <span class="glyph">${BODY_GLYPHS[x.b]}</span> ${esc(BODY_NAMES_TR[x.b])} <span class="muted num">orb ${x.orb.toFixed(1)}°</span>`;
     const t = aspectText(x, a, b, bank);
-    return `<section class="reading"><h3>${title}</h3><p>${esc(t.text)}</p>${barnumBadge(t.barnum)}</section>`;
+    const focus = `${a.id}:${b.id}:${x.a}:${x.aspect}:${x.b}`;
+    return sealedRow(state, 'pairaspect', focus, `${bank.copy('yorumcu_yorumlat')}: ${BODY_NAMES_TR[x.a]} ${ASPECT_NAMES_TR[x.aspect]} ${BODY_NAMES_TR[x.b]}`,
+      `<section class="reading"><h3>${title}</h3><p>${esc(t.text)}</p>${barnumBadge(t.barnum)}</section>`);
   }).join('');
   return card(bank.copy('kiyasla_top_title'), items || `<p class="muted">${esc(bank.copy('reading_missing'))}</p>`);
 }
@@ -60,16 +65,17 @@ export function render(state) {
   const top = topAspects(r.aspects, (key) => Boolean(bank.get('aspects', key)?.synastry));
   const label = teamLine(bank, `synastry_label_${r.label}`, hashSeed(`${a.id}|${b.id}`));
   const score = `<div class="plan-score score-${r.label}"><span class="score-num">${r.score}</span><span class="score-verdict">${esc(a.profile.name)} &amp; ${esc(b.profile.name)}</span></div>`
-    + `<p class="hook">${esc(label.text)}</p>${barnumBadge(label.barnum)}`;
-  return `<div id="kiyasla" class="${state.settings.showSerh ? 'serh-on' : ''}">${head}${card('Uyum', score)}${topCard(top, a, b, bank)}${bigThreeCard(a, b, bank)}`
+    + `<p class="hook">${esc(label.text)}</p>${barnumBadge(label.barnum)}` + commentBar(state, 'pair', `${a.id}:${b.id}`, bank.copy('yorumcu_bar_pair'));
+  return `<div id="kiyasla" class="${state.settings.showSerh ? 'serh-on' : ''}">${head}${card('Uyum', score)}${topCard(top, a, b, state)}${bigThreeCard(a, b, bank)}`
     + serhBox(serhRows(r, a, b), state.settings.showSerh, bank.copy('kiyasla_serh_title'), bank.copy('serh_hint'))
     + `<p class="muted small">${esc(bank.copy('disclaimer'))}</p>${backLink(bank)}</div>`;
 }
 
 export function mount(root, state, actions) {
+  const unmountCommentary = mountCommentary(root, state, actions);
   root.querySelector('.serh')?.addEventListener('toggle', (e) => {
     actions.setSerh(e.target.open);
     root.querySelector('#kiyasla').classList.toggle('serh-on', e.target.open);
   });
-  return () => {};
+  return unmountCommentary;
 }

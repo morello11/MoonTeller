@@ -3,6 +3,7 @@ import { SIGNS_TR } from '../../astro/chart.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_GLYPHS, ASPECT_NAMES_TR, HARD_ASPECTS } from '../glyphs.js';
 import { esc, card } from '../components.js';
 import { barnumLabel } from '../../text/bank.js';
+import { sealedRow } from '../commentary-html.js';
 
 export function barnumBadge(score) {
   if (typeof score !== 'number') return '';
@@ -44,17 +45,20 @@ export function bigThreeReadings(items, bank) {
   return card(bank.copy('reading_big3_title'), blocks.join(''));
 }
 
-export function placementReadings(items, bank) {
-  const blocks = items.map((item) => `<details class="reading"><summary>${placementTitle(item)}</summary>${readingBody(item.entry, item.house, bank)}</details>`);
+export function placementReadings(items, state) {
+  const bank = state.bank;
+  const blocks = items.map((item) => sealedRow(state, 'placement', item.body, `${bank.copy('yorumcu_yorumlat')}: ${BODY_NAMES_TR[item.body]} ${SIGNS_TR[item.sign]}`,
+    `<details class="reading"><summary>${placementTitle(item)}</summary>${readingBody(item.entry, item.house, bank)}</details>`));
   return card(bank.copy('reading_placements_title'), blocks.join(''));
 }
 
-export function aspectReadings(items, bank) {
-  const blocks = items.map(({ aspect, entry }) => {
+export function aspectReadings(items, state) {
+  const bank = state.bank;
+  const blocks = items.map(({ aspect, key, entry }) => {
     const cls = HARD_ASPECTS.includes(aspect.aspect) ? 'hard' : 'soft';
-    const title = `<span class="asp ${cls}">${ASPECT_GLYPHS[aspect.aspect]}</span> ${esc(BODY_NAMES_TR[aspect.a])} ${esc(ASPECT_NAMES_TR[aspect.aspect])} ${esc(BODY_NAMES_TR[aspect.b])}`
-      + ` <span class="muted num">orb ${aspect.orb.toFixed(1)}°</span>`;
-    return `<details class="reading"><summary>${title}</summary><p>${esc(entry.natal)}</p>${barnumBadge(entry.barnum)}</details>`;
+    const name = `${BODY_NAMES_TR[aspect.a]} ${ASPECT_NAMES_TR[aspect.aspect]} ${BODY_NAMES_TR[aspect.b]}`;
+    const title = `<span class="asp ${cls}">${ASPECT_GLYPHS[aspect.aspect]}</span> ${esc(name)} <span class="muted num">orb ${aspect.orb.toFixed(1)}°</span>`;
+    return sealedRow(state, 'aspect', key, `${bank.copy('yorumcu_yorumlat')}: ${name}`, `<details class="reading"><summary>${title}</summary><p>${esc(entry.natal)}</p>${barnumBadge(entry.barnum)}</details>`);
   });
   return card(bank.copy('reading_aspects_title'), blocks.join(''));
 }

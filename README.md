@@ -14,7 +14,7 @@ python3 -m http.server 8080
 
 Testler: `node --test` (Node 22+; `tests/*.test.js` otomatik bulunur).
 
-Sor sekmesi ve LLM sentezi isteğe bağlı bir Cloudflare Worker ister; kurulum `worker/README.md`. Worker yoksa uygulama metin bankasıyla tam çalışır.
+Yorumcu (mühürlerdeki canlı yorumlar ve Pazartesi bülteni) isteğe bağlı bir Cloudflare Worker ister; kurulum `worker/README.md`. Worker yoksa mühürler çizilmez, uygulama metin bankasıyla tam çalışır.
 
 ## Yayın (GitHub Pages)
 

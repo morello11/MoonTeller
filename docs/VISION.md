@@ -18,7 +18,7 @@ Bir kişi (Mehmet) yönetir; diğerleri sadece linki açar.
 | Co-Star | Kısa, sert, arkadaş ağzı bildirimler; arkadaş haritalarını karşılaştırma; gerçek efemeris | Ton rehberi (docs/TEXTBANK.md), Ofis sekmesi, Swiss Ephemeris |
 | The Pattern | İlişki dinamiği metinleri, zaman çizelgesi hissi | Sinastri "iş arkadaşı" dilinde; transit zaman çizelgesi v2 |
 | Chani | Ay evresi merkezli günlük ritim | "Bugün" sekmesi Ay ile başlar |
-| Sanctuary | Canlı astrologa soru sorma | "Sor" sekmesi (LLM, Worker üzerinden) |
+| Sanctuary | Canlı astrologa soru sorma | Yorumcu mühürleri (LLM, Worker üzerinden; serbest soru yok, Adım 6b) |
 | astro.com / TimePassages | Şeffaf veri, ev sistemi seçimi, aspekt ızgarası | Ayarlar'da ev sistemi; Haritam'da yerleşim tablosu + aspekt ızgarası |
 
 Yapmadıklarımız: hesap/üyelik, sunucu veritabanı, bildirim altyapısı, ödeme, sosyal ağ. Bunlar projeyi öldürür.
@@ -33,7 +33,8 @@ Yapmadıklarımız: hesap/üyelik, sunucu veritabanı, bildirim altyapısı, öd
    ve bir satır bilim ("Merkür geri gitmiyor, yörünge perspektifi"). Sahibinin inancı bu; ürünün dürüstlük kası.
 7. **Yıldızname Kartı** — paylaşılabilir PNG: çark + Büyük Üçlü + arketip + günün cümlesi. WhatsApp gruba atılır.
 8. **Canlı Gökyüzü** — şu anki gezegen konumları, Ay evresi, bu gece çıplak gözle görülebilecek gezegenler (doğuş/batış).
-9. **Yıldızlara Sor** — soru sor, harita özetiyle LLM cevaplasın; Co-Star'ın ücretli özelliğinin bedava hali.
+9. **Yorumcu** — beş kurgusal ses; uygulamanın hesapladığı her parçanın (yerleşim, açı, bugün, skor, ikili) yanındaki mühre dokun,
+   o parçayı yerinde yorumlasın. Serbest soru yok (Adım 6b kararı); Co-Star'ın ücretli özelliğinin bedava ve karakterli hali.
 10. **Pazartesi Bülteni** — haftanın transitleri, Ay evreleri, "haftanın çifti", "haftanın dikkat edeni"; tek dokunuşla kopyala.
 
 ### v2 park yeri (şimdi yapılmaz)

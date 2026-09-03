@@ -53,3 +53,26 @@ test('haftalık özet: Pazartesi başlangıç, 7 gün, ekip yoksa da çalışır
   assert.equal(t.weekly.watch.transit, 'Mars kare Güneş');
   assert.ok(new TextEncoder().encode(JSON.stringify(t)).length < LLM.bodyMax);
 });
+
+test('yorum odakları: her hedef kuruluyor, doğum verisi yok, "Ne gördü?" satırı dolu', async () => {
+  const { commentPayload } = await import('../src/llm/summary.js');
+  const bankFiles = Object.fromEntries(['archetypes'].map((n) => [n, JSON.parse(readFileSync(new URL(`../data/tr/${n}.json`, import.meta.url), 'utf8'))]));
+  const bank = createBank(bankFiles);
+  const B = { name: 'Kerem', date: '2003-07-20', time: '06:05', tz: 'Europe/Istanbul', lat: 36.88, lon: 30.7, houseSystem: 'P' };
+  const team = { members: [{ id: 'a', profile: { name: 'Ayşe' }, chart }, { id: 'b', profile: { name: 'Kerem' }, chart: natalChart(B) }] };
+  const ctx = { chart, daily, bank, team, data: { type: 'Deploy', when: '2026-09-02 14:00', score: 45, verdict: 'olur', reasons: ['Ay boşlukta −40'] } };
+  const { synastryAspects } = await import('../src/astro/synastry.js');
+  const first = synastryAspects(team.members[0].chart, team.members[1].chart)[0];
+  const cases = [['chart', 'chart'], ['placement', 'sun'], ['placement', 'asc'], ['aspect', chart.aspects[0] && `${chart.aspects[0].a}_${chart.aspects[0].aspect}_${chart.aspects[0].b}`], ['today', 'today'], ['transit', '0'], ['plan', 'plan'], ['pair', 'a:b'], ['pairaspect', `a:b:${first.a}:${first.aspect}:${first.b}`]];
+  for (const [target, key] of cases) {
+    if (target === 'aspect' && !key) continue;
+    const p = commentPayload(target, key, ctx);
+    assert.ok(p.focus, `${target} odak yok`);
+    assert.ok(p.sent.length > 3, `${target} sent boş`);
+    assert.ok(new TextEncoder().encode(JSON.stringify({ chart: p.chart, focus: p.focus })).length < LLM.bodyMax);
+    assertNoBirthData({ ...p, focus: { ...p.focus, date: '' }, sent: '' });
+  }
+  assert.equal(commentPayload('placement', 'sun', ctx).focus.body, 'Güneş');
+  assert.equal(commentPayload('pair', 'a:b', ctx).focus.a, 'Ayşe');
+  assert.throws(() => commentPayload('placement', 'yok', ctx), /Odak/);
+});

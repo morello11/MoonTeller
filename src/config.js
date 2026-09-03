@@ -197,21 +197,32 @@ export const CARD = {
   fileName: 'yildizname-kart.png',
 };
 
-// --- LLM ve Worker (Adım 6, docs/LLM.md) ---
-// workerUrl: deploy sonrası Mehmet yazar (örn. 'https://yildizname.<hesap>.workers.dev'). Boşsa Sor kapalı, sentez ve bülten yok.
+// --- Yorumcu ve Worker (Adım 6/6b, docs/LLM.md) ---
+// workerUrl: deploy sonrası Mehmet yazar. Boşsa yorumcu düğmeleri "kapalı" der, uygulama bankayla tam çalışır. PIN yok.
 export const LLM = {
   workerUrl: 'https://aged-credit-c917.mehmetarar.workers.dev',
   path: '/v1/reading',
-  timeoutMs: 20000,
-  questionMax: 500,
+  timeoutMs: 30000,       // Worker'ın üst akış süresinden (20 s) uzun: sınırda gelen cevap yolda kaybolmasın
   bodyMax: 8192,          // Worker'ın gövde sınırıyla aynı
+  // Yorumlanabilir hedefler ve hazır devamlar: worker/src/config.js TARGETS/FOLLOWUPS ile aynı (test eşitliği kontrol eder).
+  targets: ['chart', 'placement', 'aspect', 'today', 'transit', 'plan', 'pair', 'pairaspect'],
+  followups: ['harder', 'example', 'howto'], // etiketler ui-copy: yorumcu_devam_<anahtar>
+  followupMax: 2,          // yaprak başına en çok bu kadar devam
+  chartAspects: 6,         // 'chart' odağına giren en güçlü aspekt sayısı
+  waitHintsMs: [4000, 10000], // bekleme ipuçları: ui-copy yorumcu_bekle_1, _2
+  sheetMs: 260,            // seçim sayfası kapanış süresi; style.css .secim transition ile aynı
+  leadSentence: { min: 12, max: 160 }, // yaprakta ilk cümle başlık gibi: bu uzunluk aralığındaysa
+  squareVoice: 'sert',     // tek kare mühür: uygulamanın kendi sesi
   summaryAspects: 8,      // özete giren en güçlü natal aspekt sayısı
   weeklyDays: 7,
   weeklyTransitsPerDay: 2,
   cacheNamespace: 'llm',
-  // Test döneminde kapalı: sentez ve bülten her açılışta yeniden istenir. Ekip büyüyünce true yap (worker/src/config.js CACHE_ENABLED ile birlikte).
+  // Test döneminde kapalı: bülten her açılışta yeniden istenir. Ekip büyüyünce true yap (worker/src/config.js CACHE_ENABLED ile birlikte).
   cacheResults: false,
   // Sesler (persona): worker/src/config.js PERSONAS ile aynı; seçim Ayarlar'da, varsayılan 'sert' (metin bankasının tonu).
   voices: ['polyanna', 'ya_olmazsa', 'sert', 'nurten', 'muneccim'],
   defaultVoice: 'sert',
 };
+
+// Yorumcu sekmesindeki ufuk çizgisi: bugünün gezegenleri tek çizgide (SVG viewBox ve nokta yarıçapları).
+export const HORIZON = { width: 360, height: 16, sunRadius: 2.5, dotRadius: 1.5 };

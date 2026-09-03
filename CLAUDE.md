@@ -52,7 +52,7 @@ Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: `sepl_
 
 ```
 yildizname/
-  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ekip, #/kiyasla/:a/:b, #/ekle, #/sor, #/ayarlar; #p=… paylaşım linki)
+  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ekip, #/kiyasla/:a/:b, #/ekle, #/yorumcu, #/ayarlar; #p=… paylaşım linki)
   style.css             tek dosya, CSS değişkenleri docs/DESIGN.md'den
   CLAUDE.md
   package.json          sadece type: module + test scripti; bağımlılık yok, build yok
@@ -66,6 +66,9 @@ yildizname/
     share.js            paylaşım linki: profil ↔ base64url (#p=…), doğrulama
     astro/              (saf mantık, DOM yok)
       engine.js         SwissEph sarmalayıcı: gezegenler, evler, açılar, retro bayrağı
+      chart.js          natal harita: konumlar, evler, aspektler, saat bilinmiyor bayrağı (natalChart)
+      transits.js       günün transit noktaları ve natal noktalara açıları
+      sky.js            Canlı Gökyüzü: doğuş/batış, bu gece görünen gezegenler
       time.js           yerel → UTC (Intl), Julian Day yardımcıları
       aspects.js        aspekt tespiti (natal / transit / sinastri orb tabloları)
       scoring.js        transit sıralaması, sinastri skoru, toplantı skoru
@@ -77,11 +80,17 @@ yildizname/
     text/               (saf mantık)
       bank.js           JSON bankasını yükler, seed'li varyant seçer, tekrarları önler
       compose.js        yerleşim + aspekt listesinden okunur metin kurar
+      compose-daily.js  Bugün metni: günün üç şeyi, Ay, retro (composeDaily)
     ui/
       wheel.js          SVG harita çarkı (uygulamanın kahramanı)
+      wheel-layout.js   çark yerleşimi: çakışan gezegenleri ayırma (saf, test edilir)
+      glyphs.js         gezegen ve burç glifleri
       components.js     küçük ortak parçalar (sekme çubuğu, damga, şerh kutusu)
+      commentary-html.js Yorumcu parçaları: mühür, birincil bar, satır+yuva, takvim yaprağı kabuğu, seçim sayfası HTML'i
+      commentary.js     Yorumcu davranışı: mühre dokun → yaprak, ada dokun → seçim, devamlar, hata/sınır (mountCommentary)
       card.js           Yıldızname Kartı: çark SVG + metin → Canvas → PNG, paylaş/indir (QR Adım 7'de)
-      pages/            onboarding.js haritam.js bugun.js bugun-cards.js ekip.js ekip-cards.js kiyasla.js sor.js ayarlar.js
+      pages/            onboarding.js haritam.js haritam-text.js haritam-tables.js bugun.js bugun-cards.js ekip.js ekip-cards.js
+                        kiyasla.js yorumcu.js ayarlar.js
     llm/
       client.js         Worker'a istek, zaman aşımı, bank'a düşüş (asla fırlatmaz)
       summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
@@ -99,10 +108,11 @@ yildizname/
     worker-local.js           Worker'ı Node'da sahte üst akışla koşturur (geliştirme, key'siz)
     bundle-worker.js          worker/src → worker/dist/worker.js (Cloudflare paneline yapıştırılan tek dosya)
   tests/
-    engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
+    engine time aspects moon chart transits sky retrograde scoring synastry team archetype bank compose compose-daily share store
+    wheel-layout llm-client llm-summary worker golden-charts (.test.js); golden-charts.json
     private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
-    src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key ve PIN yalnızca secret)
+    src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key yalnızca secret; PIN yok)
   assets/
     icons/  manifest.json
   .gitattributes        *.wasm *.data *.se1 binary
@@ -113,7 +123,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 6 — Worker ve LLM kodlandı, deploy ve kontrol Mehmet'te (docs/LLM.md 4 madde); Adım 4–5 kapıları da açık
+## Şu an: Adım 6b — Yorumcu kodlandı; Worker'ı yeniden yapıştırma ve telefon kontrolü Mehmet'te (docs/ROADMAP.md 6b); Adım 4–5 kapıları da açık
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 
