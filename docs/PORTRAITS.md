@@ -51,7 +51,11 @@ Yüz yok: bu ses uygulamanın kendisi. Portre yerine mühür.
 > verdigris green (#4E8C7A): the kaftan wash and the crescent. Historical costume, fictional person, not a specific
 > historical figure.
 
-## Repoya koyma
+## Repoda (Adım 7 hazırlık)
+Beş portre `assets/voices/<anahtar>.jpg` (512×512, JPEG 0.82; toplam ≈ 0,3 MB) olarak repoda; `data/tr/voices.json` `portrait` alanı yolu
+tutar, boş bırakılırsa amblem görünür. Kaynaklar sohbet kaydından kurtarıldı; Müneccimbaşı sıkı kadrajlı ilk sürüm.
+
+## Repoya koyma (yenisi gelirse)
 GitHub'da repo → `assets/voices/` (yoksa "Add file → Create new file" ile `assets/voices/.keep` açılır) → "Upload files" →
 beş PNG → dal `claude/yildizname-setup-8px7xs` (ya da `main`; Claude Code çeker). Sonra Claude Code görselleri küçültür,
 seçim sayfası ve yaprak başlığına bağlar (Adım 7).

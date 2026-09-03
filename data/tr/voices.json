@@ -6,7 +6,7 @@
     "role": "iyimser",
     "busy": "iyi tarafını arıyor",
     "emblem": "✶",
-    "portrait": ""
+    "portrait": "assets/voices/polyanna.jpg"
   },
   "ya_olmazsa": {
     "name": "Ya Olmazsa?",
@@ -15,7 +15,7 @@
     "role": "tedbirli",
     "busy": "riskleri sayıyor",
     "emblem": "☂",
-    "portrait": ""
+    "portrait": "assets/voices/ya_olmazsa.jpg"
   },
   "sert": {
     "name": "Sert Uygulama",
@@ -24,7 +24,7 @@
     "role": "kısa ve sert",
     "busy": "ölçüyor",
     "emblem": "▪",
-    "portrait": ""
+    "portrait": "assets/voices/sert.jpg"
   },
   "nurten": {
     "name": "Nurten Abla",
@@ -33,7 +33,7 @@
     "role": "mahalle ablası",
     "busy": "komşuya soruyor",
     "emblem": "❋",
-    "portrait": ""
+    "portrait": "assets/voices/nurten.jpg"
   },
   "muneccim": {
     "name": "Müneccimbaşı",
@@ -42,6 +42,6 @@
     "role": "saray müneccimi",
     "busy": "zîc'e bakıyor",
     "emblem": "☾",
-    "portrait": ""
+    "portrait": "assets/voices/muneccim.jpg"
   }
 }

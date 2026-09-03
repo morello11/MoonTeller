@@ -236,7 +236,9 @@ td.num, th.num { text-align: right; }
 .muhur.orta { width: 28px; height: 28px; font-size: 16px; }
 .muhur.buyuk { width: 36px; height: 36px; font-size: 20px; }
 .muhur.sert { border-radius: 2px; border-width: 2px; }
-.muhur img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; } /* portre: yüz merkezli kırpım */
+.muhur img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transform: scale(1.6); transform-origin: 50% 30%; } /* portre: yüz merkezli kırpım, büst değil yüz */
+.muhur.sert img { object-position: 50% 50%; transform: scale(2.1); transform-origin: 50% 50%; }
+.ses .muhur.buyuk { width: 56px; height: 56px; font-size: 28px; }
 .zsatir { display: grid; grid-template-columns: 1fr auto; align-items: start; border-bottom: 1px solid var(--ayirici); }
 .zsatir > .reading { min-width: 0; border-bottom: 0; } /* ayırıcı satırın tamamında (mühür dahil), son satırda yok */
 .zsatir:has(+ .yuva:last-child) { border-bottom: 0; }
@@ -265,7 +267,8 @@ td.num, th.num { text-align: right; }
 .imza { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); padding: 0; background: none; border: 0; font: 600 var(--fs-16)/1.2 var(--font-baslik); letter-spacing: .01em; color: inherit; cursor: pointer; touch-action: manipulation; }
 .imza::after { content: "⌄"; font: 400 var(--fs-12)/1 var(--font-govde); color: var(--m70); }
 .imza.buyuk { font-size: var(--fs-20); color: var(--fildisi); }
-.imza.buyuk::after { color: var(--sis); }
+.imza.buyuk::after, .sekme-bas .imza::after, .sekme-bas .imza-ipucu { color: var(--sis); } /* gece zemininde imza ve ipucu */
+.sekme-bas .imza { color: var(--fildisi); }
 .imza-ipucu { margin-left: 4px; font: 400 var(--fs-12)/1 var(--font-govde); color: var(--m70); text-decoration: underline dotted; }
 .durum { flex: 1; min-width: 0; font: 400 var(--fs-14)/1.3 var(--font-govde); color: var(--m70); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .durum:empty { display: none; }
