@@ -3,7 +3,7 @@
 import { STORAGE_KEYS, SCHEMA_VERSION, HOUSE_SYSTEM, DEFAULT_TZ, LLM } from './config.js';
 
 const EMPTY_PROFILES = () => ({ version: SCHEMA_VERSION, active: null, list: [] });
-const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, pin: '', dailySynthesis: false, voice: LLM.defaultVoice });
+const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, voice: LLM.defaultVoice });
 
 function readJSON(storage, key, fallback) {
   try {

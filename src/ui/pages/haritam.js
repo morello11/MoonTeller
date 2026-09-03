@@ -3,6 +3,8 @@ import { MOON_BOUNDARY_WARN_DEG, WHEEL } from '../../config.js';
 import { SIGNS_TR, degreeInSign, signIndex } from '../../astro/chart.js';
 import { renderWheel } from '../wheel.js';
 import { card, stamp, serhBox, esc } from '../components.js';
+import { commentBar } from '../commentary-html.js';
+import { mountCommentary } from '../commentary.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, formatDeg } from '../glyphs.js';
 import { placementsTable, aspectGrid, aspectList } from './haritam-tables.js';
 import { composeNatal } from '../../text/compose.js';
@@ -76,12 +78,13 @@ export function render(state) {
   return `<div class="${serhClass}" id="haritam">` + head
     + `<div class="${wheelClass}" id="wheel-wrap">${renderWheel(chart)}</div>`
     + `<div class="selected" id="selected">${selectedInfo(state, null)}</div>`
+    + commentBar(state, 'chart', 'chart', bank.copy('yorumcu_bar_chart'))
     + moonWarning(chart)
     + card('Büyük Üçlü', bigThree(chart))
     + archetypeCard(r.archetype, bank)
     + bigThreeReadings(r.bigThree, bank)
-    + placementReadings(r.placements, bank)
-    + aspectReadings(r.aspects, bank)
+    + placementReadings(r.placements, state)
+    + aspectReadings(r.aspects, state)
     + card('Yerleşimler', placementsTable(chart))
     + card('Aspektler', aspectGrid(chart) + aspectList(chart))
     + serhBox(serhRows(profile, chart, state.engineVersion), settings.showSerh, bank.copy('serh_summary'), bank.copy('serh_hint'))
@@ -109,13 +112,14 @@ export function mount(root, state, actions) {
     state.wheelAnimated = true;
   }
   const handler = onPlanetActivate(root, state);
+  const unmountCommentary = mountCommentary(root, state, actions);
   root.addEventListener('click', handler);
   root.addEventListener('keydown', handler);
   root.querySelector('.serh')?.addEventListener('toggle', (e) => {
     actions.setSerh(e.target.open);
     root.querySelector('#haritam').classList.toggle('serh-on', e.target.open);
   });
-  return () => { root.removeEventListener('click', handler); root.removeEventListener('keydown', handler); };
+  return () => { root.removeEventListener('click', handler); root.removeEventListener('keydown', handler); unmountCommentary(); };
 }
 
 export const settleMs = WHEEL.settleMs;

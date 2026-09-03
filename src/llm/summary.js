@@ -7,12 +7,79 @@ import { computePositions, julianDayUT } from '../astro/engine.js';
 import { localToUT } from '../astro/time.js';
 import { moonPhase } from '../astro/moon.js';
 import { isoWeekKey } from '../astro/team.js';
+import { pairKey } from '../astro/aspects.js';
+import { synastryScore, topAspects } from '../astro/synastry.js';
+import { archetypeSign } from '../astro/archetype.js';
+import { signKey } from '../text/bank.js';
 
 const ONE_DECIMAL = 10;
 const DAY_MS = 86400000;
 const WEEK_DAYS = 7;
 
 const label = (aspect) => ({ a: BODY_NAMES_TR[aspect.a], aspect: ASPECT_NAMES_TR[aspect.aspect], b: BODY_NAMES_TR[aspect.b], orb: Math.round(aspect.orb * ONE_DECIMAL) / ONE_DECIMAL });
+
+const bigThreeLabels = (chart) => {
+  const sign = (body) => SIGNS_TR[chart.positions.find((p) => p.body === body).sign];
+  const parts = [`Güneş ${sign('sun')}`, `Ay ${sign('moon')}`];
+  if (chart.houses) parts.push(`Yükselen ${SIGNS_TR[signIndex(chart.houses.asc)]}`);
+  return parts;
+};
+
+// Yorumlanacak parçanın odak verisi. ctx: { chart, daily, bank, team, data }; focusKey hedefe göre anahtar.
+// Dönüş: { chart: özet, focus, sent: "Ne gördü?" satırı }. Doğum verisi ve (pair dışında) ad yok.
+export function commentPayload(target, focusKey, ctx) {
+  const focus = FOCUS_BUILDERS[target]?.(focusKey, ctx);
+  if (!focus) throw new Error(`Odak kurulamadı: ${target}:${focusKey}`);
+  return { chart: chartSummary(ctx.chart), focus, sent: describeFocus(target, focus) };
+}
+
+const FOCUS_BUILDERS = {
+  chart: (_, { chart, bank }) => ({
+    bigThree: bigThreeLabels(chart),
+    aspects: [...chart.aspects].sort((x, y) => y.strength - x.strength).slice(0, LLM.chartAspects).map(label),
+    archetype: bank?.get('archetypes', signKey(archetypeSign(chart)))?.title ?? '',
+  }),
+  placement: (body, { chart }) => {
+    if (body === 'asc') return chart.houses ? { body: 'Yükselen', sign: SIGNS_TR[signIndex(chart.houses.asc)], house: null } : null;
+    const p = chart.positions.find((x) => x.body === body);
+    return p ? { body: BODY_NAMES_TR[p.body], sign: SIGNS_TR[p.sign], house: p.house ?? null } : null;
+  },
+  aspect: (key, { chart }) => { const a = chart.aspects.find((x) => pairKey(x) === key); return a ? label(a) : null; },
+  today: (_, { chart, daily }) => dailySummary(chart, daily).daily,
+  transit: (index, { daily }) => { const t = daily.topThree[Number(index)]; return t ? { ...label(t.transit), date: daily.dateISO } : null; },
+  plan: (_, { data }) => data ?? null,
+  pair: (key, { team }) => pairFocus(key, team),
+  pairaspect: (key, { team }) => {
+    const [idA, idB, aBody, aspectName, bBody] = key.split(':');
+    const a = team?.members.find((m) => m.id === idA); const b = team?.members.find((m) => m.id === idB);
+    if (!a || !b) return null;
+    const hit = synastryScore(a.chart, b.chart).aspects.find((x) => x.a === aBody && x.aspect === aspectName && x.b === bBody);
+    return hit ? { a: a.profile.name, b: b.profile.name, aspect: label(hit) } : null;
+  },
+};
+
+function pairFocus(key, team, n = 3) {
+  const [idA, idB] = key.split(':');
+  const a = team?.members.find((m) => m.id === idA); const b = team?.members.find((m) => m.id === idB);
+  if (!a || !b) return null;
+  const r = synastryScore(a.chart, b.chart);
+  return { a: a.profile.name, b: b.profile.name, score: r.score, aspects: topAspects(r.aspects, () => true, n).map(label) };
+}
+
+const asp = (x) => `${x.a} ${x.aspect} ${x.b}`;
+// "Ne gördü?" için tek satır: Worker'a giden odak.
+export function describeFocus(target, f) {
+  switch (target) {
+    case 'chart': return `${f.bigThree.join(' · ')} · ${f.aspects.length} açı · rol ${f.archetype}`;
+    case 'placement': return `${f.body} ${f.sign}${f.house ? ` ${f.house}. ev` : ''}`;
+    case 'aspect': case 'transit': return `${asp(f)} (orb ${f.orb}°)`;
+    case 'today': return `${f.date}: Ay ${f.moon.sign}, ${f.moon.phase} · ${f.transits.map(asp).join(' · ')}`;
+    case 'plan': return `${f.type}, ${f.when} · skor ${f.score} (${f.verdict})`;
+    case 'pair': return `${f.a} & ${f.b} · ${f.score} · ${f.aspects.map(asp).join(' · ')}`;
+    case 'pairaspect': return `${f.a} ${f.aspect.a} ${f.aspect.aspect} ${f.b} ${f.aspect.b}`;
+    default: return '';
+  }
+}
 
 export function chartSummary(chart) {
   const aspects = [...chart.aspects].sort((x, y) => y.strength - x.strength).slice(0, LLM.summaryAspects).map(label);

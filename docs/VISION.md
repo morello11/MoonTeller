@@ -33,7 +33,8 @@ Yapmadıklarımız: hesap/üyelik, sunucu veritabanı, bildirim altyapısı, öd
    ve bir satır bilim ("Merkür geri gitmiyor, yörünge perspektifi"). Sahibinin inancı bu; ürünün dürüstlük kası.
 7. **Yıldızname Kartı** — paylaşılabilir PNG: çark + Büyük Üçlü + arketip + günün cümlesi. WhatsApp gruba atılır.
 8. **Canlı Gökyüzü** — şu anki gezegen konumları, Ay evresi, bu gece çıplak gözle görülebilecek gezegenler (doğuş/batış).
-9. **Yıldızlara Sor** — soru sor, harita özetiyle LLM cevaplasın; Co-Star'ın ücretli özelliğinin bedava hali.
+9. **Yorumcu** — beş kurgusal ses; uygulamanın hesapladığı her parçanın (yerleşim, açı, bugün, skor, ikili) yanındaki mühre dokun,
+   o parçayı yerinde yorumlasın. Serbest soru yok (Adım 6b kararı); Co-Star'ın ücretli özelliğinin bedava ve karakterli hali.
 10. **Pazartesi Bülteni** — haftanın transitleri, Ay evreleri, "haftanın çifti", "haftanın dikkat edeni"; tek dokunuşla kopyala.
 
 ### v2 park yeri (şimdi yapılmaz)

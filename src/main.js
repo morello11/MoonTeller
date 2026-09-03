@@ -8,7 +8,7 @@ import { retroIntervals, retroStatus, shadowFor } from './astro/retrograde.js';
 import { synastryMatrix } from './astro/synastry.js';
 import { contagionList, weekPair, isoWeekKey } from './astro/team.js';
 import { askWorker } from './llm/client.js';
-import { dailySummary, weeklySummary } from './llm/summary.js';
+import { commentPayload, weeklySummary } from './llm/summary.js';
 import { createBank, hashSeed } from './text/bank.js';
 import { createStore, profileHash } from './store.js';
 import { decodeProfile, parseShareHash } from './share.js';
@@ -17,15 +17,15 @@ import * as haritam from './ui/pages/haritam.js';
 import * as bugun from './ui/pages/bugun.js';
 import * as ekip from './ui/pages/ekip.js';
 import * as kiyasla from './ui/pages/kiyasla.js';
-import * as sor from './ui/pages/sor.js';
+import * as yorumcu from './ui/pages/yorumcu.js';
 import * as ayarlar from './ui/pages/ayarlar.js';
 import { tabBar, errorBox } from './ui/components.js';
 
-const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ekip: 'Ekip', kiyasla: 'Kıyasla', ekle: 'Ekle', sor: 'Sor', ayarlar: 'Ayarlar', onboarding: 'Profil' };
-const ROUTE_ALIASES = { ofis: 'ekip' };
+const PAGES = { haritam: 'Haritam', bugun: 'Bugün', ekip: 'Ekip', kiyasla: 'Kıyasla', ekle: 'Ekle', yorumcu: 'Yorumcu', ayarlar: 'Ayarlar', onboarding: 'Profil' };
+const ROUTE_ALIASES = { ofis: 'ekip', sor: 'yorumcu' };
 const FORM_ROUTES = ['onboarding', 'ekle'];
 const TEAM_ROUTES = ['ekip', 'kiyasla'];
-const PAGE_MODULES = { haritam, bugun, ekip, kiyasla, sor, ayarlar };
+const PAGE_MODULES = { haritam, bugun, ekip, kiyasla, yorumcu, ayarlar };
 const DEFAULT_ROUTE = 'haritam';
 const CITIES_URL = 'data/cities-tr.json';
 
@@ -33,7 +33,7 @@ const store = createStore();
 const state = {
   route: DEFAULT_ROUTE, params: [], profile: null, chart: null, settings: store.loadSettings(),
   cities: [], engineVersion: '', wheelAnimated: false, editingProfile: null, forTeam: false, bank: null, reading: null,
-  daily: null, retro: null, team: null, pendingImport: null, importError: null,
+  daily: null, retro: null, team: null, pendingImport: null, importError: null, comments: new Map(),
 };
 let unmount = () => {};
 let renderSeq = 0; // hızlı sekme değişiminde eski render'ın sonradan boyamasını engeller
@@ -74,22 +74,38 @@ const actions = {
     store.clearAll();
     Object.assign(state, { profile: null, chart: null, daily: null, team: null, settings: store.loadSettings() });
   },
-  llm: (kind, opts) => llmRequest(kind, opts),
+  setVoice(key) { state.settings = store.saveSettings({ voice: key }); state.comments.clear(); },
+  comment: (target, focus, opts) => commentRequest(target, focus, opts),
+  bulletin: () => bulletinRequest(),
   refresh: () => renderRoute(),
 };
 
-// Worker isteği: günlük/haftalık sonuç kişi + dönem başına bir kez (yalnızca son dönem tutulur); soru cache'siz.
-async function llmRequest(kind, { question = '' } = {}) {
+// Yorum isteği: uygulama hesaplar (odak verisi), model anlatır. Oturum içi önbellek: ses + hedef + odak + devam + gün.
+async function commentRequest(target, focus, { followup = '', data = null } = {}) {
   const ctx = dayContext();
-  const period = kind === 'weekly' ? isoWeekKey(ctx.dateISO) : ctx.dateISO;
-  const namespace = `${LLM.cacheNamespace}-${kind}`;
   const voice = state.settings.voice ?? LLM.defaultVoice;
-  const cacheKey = LLM.cacheResults && kind !== 'ask' ? `${state.profile.id}:${voice}:${period}` : null;
-  const hit = cacheKey ? store.cacheGet(namespace, cacheKey) : null;
+  const key = `${voice}|${target}|${focus}|${followup}|${ctx.dateISO}`;
+  if (state.comments.has(key)) return { ...state.comments.get(key), cached: true };
+  let payload;
+  try {
+    payload = commentPayload(target, focus, { chart: state.chart, daily: state.daily ?? ensureDaily(state.profile), bank: state.bank, team: state.team, data });
+  } catch { return { ok: false, reason: 'error' }; }
+  const result = await askWorker('comment', payload.chart, { target, focus: payload.focus, followup, date: ctx.dateISO, persona: voice });
+  const out = { ...result, sent: payload.sent };
+  if (result.ok) state.comments.set(key, out);
+  return out;
+}
+
+// Pazartesi bülteni: kişi + hafta başına bir kez (LLM.cacheResults açıksa).
+async function bulletinRequest() {
+  const ctx = dayContext();
+  const voice = state.settings.voice ?? LLM.defaultVoice;
+  const period = isoWeekKey(ctx.dateISO);
+  const cacheKey = LLM.cacheResults ? `${state.profile.id}:${voice}:${period}` : null;
+  const hit = cacheKey ? store.cacheGet(`${LLM.cacheNamespace}-weekly`, cacheKey) : null;
   if (hit) return { ok: true, text: hit, cached: true };
-  const summary = kind === 'weekly' ? weeklySummary(state.chart, state.team, ctx.dateISO) : dailySummary(state.chart, state.daily ?? ensureDaily(state.profile));
-  const result = await askWorker(kind, summary, { pin: state.settings.pin, question, date: period, persona: voice });
-  if (result.ok && cacheKey) store.cacheReplace(namespace, cacheKey, result.text);
+  const result = await askWorker('weekly', weeklySummary(state.chart, state.team, ctx.dateISO), { date: period, persona: voice });
+  if (result.ok && cacheKey) store.cacheReplace(`${LLM.cacheNamespace}-weekly`, cacheKey, result.text);
   return result;
 }
 
@@ -224,9 +240,9 @@ async function renderRoute() {
   if (token !== renderSeq) return;
   state.chart = chart;
   if (route === 'ayarlar') { paint(ayarlar.render(state), ayarlar); return; }
-  if (route === 'sor') {
+  if (route === 'yorumcu') {
     state.daily = ensureDaily(state.profile);
-    paint(sor.render(state), sor);
+    paint(yorumcu.render(state), yorumcu);
     return;
   }
   if (route === 'bugun') {

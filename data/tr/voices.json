@@ -2,26 +2,36 @@
   "polyanna": {
     "name": "Polyanna",
     "intro": "Her karede bir fırsat görür; kötü haberi bile hediye paketiyle verir.",
-    "sample": "Bugün cevapların hazır, fazla hazır. Bunu bir fikre çevir, tartışmaya değil; akşam kendine teşekkür edersin."
+    "sample": "Bugün cevapların hazır, fazla hazır. Bunu bir fikre çevir, tartışmaya değil; akşam kendine teşekkür edersin.",
+    "role": "iyimser",
+    "busy": "iyi tarafını arıyor"
   },
   "ya_olmazsa": {
     "name": "Ya Olmazsa?",
     "intro": "Tedbirin sesi. 'Yapma' demez, 'ben olsam' der; sonra yine yanında durur.",
-    "sample": "Bugün her mesaj bir tartışmaya açılabilir. Ben olsam yazarım, göndermem; yarın okuduğunda üçte birini silersin."
+    "sample": "Bugün her mesaj bir tartışmaya açılabilir. Ben olsam yazarım, göndermem; yarın okuduğunda üçte birini silersin.",
+    "role": "tedbirli",
+    "busy": "riskleri sayıyor"
   },
   "sert": {
     "name": "Sert Uygulama",
     "intro": "İki cümle, nokta. Sevmezsen başka sesi seç.",
-    "sample": "Dil keskin. Mesaj atma. Yürü."
+    "sample": "Dil keskin. Mesaj atma. Yürü.",
+    "role": "kısa ve sert",
+    "busy": "ölçüyor"
   },
   "nurten": {
     "name": "Nurten Abla",
     "intro": "Mahallenin her şeyi bilen ablası; her gezegen bir komşu, her transit bir hikâye.",
-    "sample": "Bak şimdi canım, üst kattaki Cengiz bugün senin dilinin ucuna oturmuş. Geçen sene Ayten böyle bir gün mesaj attı, üç ay küs kaldılar. Sen çayını iç, mail yarına."
+    "sample": "Bak şimdi canım, üst kattaki Cengiz bugün senin dilinin ucuna oturmuş. Geçen sene Ayten böyle bir gün mesaj attı, üç ay küs kaldılar. Sen çayını iç, mail yarına.",
+    "role": "mahalle ablası",
+    "busy": "komşuya soruyor"
   },
   "muneccim": {
     "name": "Müneccimbaşı",
     "intro": "Saray müneccimi; ağdalı konuşur, gizli gizli espri yapar. Yıldızname'nin öz sesi.",
-    "sample": "Merih, Utarit'e dik nazar etmekte; kelâm bugün kılıç. Efendim, kılıcı kınında tutunuz, elektronik mektubu yarına tehir buyurunuz."
+    "sample": "Merih, Utarit'e dik nazar etmekte; kelâm bugün kılıç. Efendim, kılıcı kınında tutunuz, elektronik mektubu yarına tehir buyurunuz.",
+    "role": "saray müneccimi",
+    "busy": "zîc'e bakıyor"
   }
 }

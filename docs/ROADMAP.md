@@ -55,6 +55,12 @@ Bitti: iki telefon arasında link ile profil aktarımı çalışıyor; matris 5+
 Bitti: PIN'siz istek 401; limit aşımı 429 ve banka düşüş; Sor cevabı geliyor; Worker kapalıyken uygulama bozulmuyor.
 Mehmet: bölüm 8'deki 4 madde.
 
+**Adım 6b — Yorumcu** (Mehmet'in kararı: sohbet kutusu ve PIN kalktı; docs/LLM.md son bölüm)
+Mühürler ve birincil barlar (Haritam, Bugün, Plan, Kıyasla), takvim yaprağı, seçim sayfası, Yorumcu sekmesi, Ayarlar tek satır;
+Worker sözleşmesi `comment` + hedef + odak; `sor.js` kalkar.
+Bitti: her hedef yerel Worker'la yaprak açıyor; ses değişince açık yapraklar yeniden yazılıyor; 429 "sınır", Worker kapalı
+"meşgul" ve sayfalar bozulmuyor; Worker ayarsızken mühür yok; Mehmet telefonda Haritam ve Bugün'de yorumlatıp onaylıyor.
+
 **Adım 7 — Cila**
 PWA (manifest, ikon, ana ekrana ekle), performans (WASM önbellek, natal cache), erişilebilirlik turu, boş/hata durumları,
 README, sürüm etiketi v1.0.

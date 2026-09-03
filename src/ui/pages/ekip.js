@@ -32,10 +32,9 @@ async function makeBulletin(root, state, actions) {
   const bank = state.bank;
   const status = root.querySelector('#bulletin-status');
   const out = root.querySelector('#bulletin-out');
-  if (!state.settings.pin) { status.textContent = bank.copy('ekip_bulletin_no_pin'); status.hidden = false; return; }
   status.textContent = bank.copy('ekip_bulletin_busy'); status.hidden = false; out.hidden = true;
-  const r = await actions.llm('weekly');
-  if (!r.ok) { status.textContent = bank.copy(r.reason === 'unauthorized' ? 'sor_unauthorized' : r.reason === 'limited' ? 'sor_limited' : 'sor_offline'); return; }
+  const r = await actions.bulletin();
+  if (!r.ok) { status.textContent = bank.copy(r.reason === 'limited' ? 'yorumcu_limit' : 'yorumcu_mesgul'); return; }
   status.hidden = true;
   root.querySelector('#bulletin-text').textContent = r.text;
   out.hidden = false;

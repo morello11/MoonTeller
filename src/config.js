@@ -197,14 +197,19 @@ export const CARD = {
   fileName: 'yildizname-kart.png',
 };
 
-// --- LLM ve Worker (Adım 6, docs/LLM.md) ---
-// workerUrl: deploy sonrası Mehmet yazar (örn. 'https://yildizname.<hesap>.workers.dev'). Boşsa Sor kapalı, sentez ve bülten yok.
+// --- Yorumcu ve Worker (Adım 6/6b, docs/LLM.md) ---
+// workerUrl: deploy sonrası Mehmet yazar. Boşsa yorumcu düğmeleri "kapalı" der, uygulama bankayla tam çalışır. PIN yok.
 export const LLM = {
   workerUrl: 'https://aged-credit-c917.mehmetarar.workers.dev',
   path: '/v1/reading',
   timeoutMs: 20000,
-  questionMax: 500,
   bodyMax: 8192,          // Worker'ın gövde sınırıyla aynı
+  // Yorumlanabilir hedefler ve hazır devamlar: worker/src/config.js TARGETS/FOLLOWUPS ile aynı (test eşitliği kontrol eder).
+  targets: ['chart', 'placement', 'aspect', 'today', 'transit', 'plan', 'pair', 'pairaspect'],
+  followups: [['harder', 'Daha sert söyle'], ['example', 'Örnek ver'], ['howto', 'Nasıl kullanırım']],
+  followupMax: 2,          // yaprak başına en çok bu kadar devam
+  chartAspects: 6,         // 'chart' odağına giren en güçlü aspekt sayısı
+  waitHintsMs: [[4000, 'hâlâ yazıyor'], [10000, 'uzun sürdü, bekliyoruz']],
   summaryAspects: 8,      // özete giren en güçlü natal aspekt sayısı
   weeklyDays: 7,
   weeklyTransitsPerDay: 2,

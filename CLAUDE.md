@@ -52,7 +52,7 @@ Boyut hedefi: ilk yükleme (WASM dahil) < 3 MB (Adım 0 sonunda ≈ 1 MB: `sepl_
 
 ```
 yildizname/
-  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ekip, #/kiyasla/:a/:b, #/ekle, #/sor, #/ayarlar; #p=… paylaşım linki)
+  index.html            tek sayfa, hash router (#/haritam, #/bugun, #/ekip, #/kiyasla/:a/:b, #/ekle, #/yorumcu, #/ayarlar; #p=… paylaşım linki)
   style.css             tek dosya, CSS değişkenleri docs/DESIGN.md'den
   CLAUDE.md
   package.json          sadece type: module + test scripti; bağımlılık yok, build yok
@@ -80,8 +80,10 @@ yildizname/
     ui/
       wheel.js          SVG harita çarkı (uygulamanın kahramanı)
       components.js     küçük ortak parçalar (sekme çubuğu, damga, şerh kutusu)
+      commentary-html.js Yorumcu parçaları: mühür, birincil bar, satır+yuva, takvim yaprağı kabuğu, seçim sayfası HTML'i
+      commentary.js     Yorumcu davranışı: mühre dokun → yaprak, ada dokun → seçim, devamlar, hata/sınır (mountCommentary)
       card.js           Yıldızname Kartı: çark SVG + metin → Canvas → PNG, paylaş/indir (QR Adım 7'de)
-      pages/            onboarding.js haritam.js bugun.js bugun-cards.js ekip.js ekip-cards.js kiyasla.js sor.js ayarlar.js
+      pages/            onboarding.js haritam.js bugun.js bugun-cards.js ekip.js ekip-cards.js kiyasla.js yorumcu.js ayarlar.js
     llm/
       client.js         Worker'a istek, zaman aşımı, bank'a düşüş (asla fırlatmaz)
       summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
@@ -102,7 +104,7 @@ yildizname/
     engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
     private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
-    src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key ve PIN yalnızca secret)
+    src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key yalnızca secret; PIN yok)
   assets/
     icons/  manifest.json
   .gitattributes        *.wasm *.data *.se1 binary
@@ -113,7 +115,7 @@ Boş dosya ya da placeholder oluşturulmaz; bir dosya ancak işi geldiğinde yar
 
 ---
 
-## Şu an: Adım 6 — Worker ve LLM kodlandı, deploy ve kontrol Mehmet'te (docs/LLM.md 4 madde); Adım 4–5 kapıları da açık
+## Şu an: Adım 6b — Yorumcu kodlandı; Worker'ı yeniden yapıştırma ve telefon kontrolü Mehmet'te (docs/ROADMAP.md 6b); Adım 4–5 kapıları da açık
 
 Adımın tanımı `docs/ROADMAP.md`'de. Docs dosyaları (her adımda ilgilisini oku):
 

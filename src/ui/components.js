@@ -5,10 +5,10 @@ export function esc(value) {
 }
 
 const TABS = [
-  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ekip', 'Ekip'], ['sor', 'Sor'], ['ayarlar', 'Ayarlar'],
+  ['haritam', 'Haritam'], ['bugun', 'Bugün'], ['ekip', 'Ekip'], ['yorumcu', 'Yorumcu'], ['ayarlar', 'Ayarlar'],
 ];
 
-const TAB_ALIASES = { kiyasla: 'ekip', ekle: 'ekip', onboarding: 'haritam' };
+const TAB_ALIASES = { kiyasla: 'ekip', ekle: 'ekip', onboarding: 'haritam', sor: 'yorumcu' };
 
 export function tabBar(active) {
   const activeTab = TAB_ALIASES[active] ?? active;

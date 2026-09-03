@@ -67,3 +67,22 @@ cache ile daha az. Sor (Sonnet 5) ≈ soru başına ~0.01 $. Fiyatlar değişir:
   konular, klişe listesi, uzunluk ve dürüstlük cümlesi her seste aynıdır (`worker/src/prompts.js` `COMMON` + `VOICES`).
 - Seçim Ayarlar'da (`data/tr/voices.json`: isim, tanıtım, sabit örnek cümle), istek gövdesinde `persona`, cache anahtarında da.
   Worker listede olmayan persona'yı 400 ile reddeder. İkinci dalga adayları: Stajyer, Emekli Öğretmen, Şüpheci Veri Bilimci.
+
+### Karar (Adım 6b, Mehmet): Yorumcu — sohbet yok, PIN yok, yorum yerinde
+- Serbest soru (Sor sekmesi, `kind:"ask"`) kaldırıldı: "yazı kutusuna soru yaz" chatbot kopyasıydı. Uygulama zaten hesaplayıp
+  gösteriyor; LLM o gösterilen parçayı **yerinde** yorumlar. Kullanıcı yazmaz, dokunur; istek "hedef + odak verisi"dir.
+- PIN kaldırıldı (`X-App-Pin`, `APP_PIN`, Ayarlar'daki alan). Kalan kontroller: `Origin` allowlist, IP/gün 60, global/gün 800,
+  gövde ≤ 8 KB, odak ≤ 2 KB. Kötüye kullanımda kill switch: Cloudflare'da `OPENAI_API_KEY` secret'ını sil → Worker 503 döner,
+  uygulama bankayla çalışmaya devam eder.
+- Sözleşme: `POST /v1/reading` gövde `{ kind:"comment"|"weekly", target, followup?, chart, focus, date, persona, lang }`.
+  `target` ∈ chart · placement · aspect · today · transit · plan · pair · pairaspect; `followup` ∈ harder · example · howto
+  (yaprak başına en çok 2). `focus` = `src/llm/summary.js` `commentPayload` çıktısı; yalnızca o parçanın verisi, doğum verisi yok.
+  Hedef başına `max_completion_tokens` (`worker/src/config.js` `MAX_TOKENS`). Cevap `{ text, cached, kind, target }`.
+- Arayüz ("Muvakkithane — takvim yaprağı"): satır sonlarında yorumcunun baş harfli **mührü**, ekran başına en çok bir
+  **birincil bar** ("Haritamı / Bugünü / Skoru / İkimizi yorumlat"); dokununca aynı yerde kâğıt dokulu **yaprak** açılır
+  (yazıyor → hazır | meşgul | sınır). Yaprakta iki devam düğmesi, "Ne gördü?" (gönderilen/gönderilmeyen), "yapay zekâ yazdı" damgası.
+  İlk dokunuş varsayılan sesle (Sert Uygulama) sessizce yazar; **seçim sayfası** yalnızca yapraktaki ada dokununca açılır
+  (beş alıntı, dokun = seç). Ayarlar'da tek satır: "Yorumcu: X · değiştir". Sor sekmesi → **Yorumcu** sekmesi
+  (imza, dürüstlük cümlesi, bugünün ufuk çizgisi, "Bugünü yorumlat"). Worker ayarlı değilse mühür ve bar hiç çizilmez.
+- Kod: `src/ui/commentary-html.js` (HTML parçaları), `src/ui/commentary.js` (`mountCommentary`, olaylar), `src/ui/pages/yorumcu.js`;
+  `main.js` `actions.comment(target, focus, { followup, data })` oturum içi sonuç önbelleği (`ses|hedef|odak|devam|gün`).

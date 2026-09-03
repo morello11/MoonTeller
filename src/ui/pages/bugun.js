@@ -5,8 +5,9 @@ import { julianDayUT } from '../../astro/engine.js';
 import { localToUT } from '../../astro/time.js';
 import { evaluatePlan } from '../../astro/transits.js';
 import { liveSky } from '../../astro/sky.js';
-import { workerConfigured } from '../../llm/client.js';
-import { esc, card, serhBox, commentatorName } from '../components.js';
+import { esc, card, serhBox } from '../components.js';
+import { commentBar } from '../commentary-html.js';
+import { mountCommentary } from '../commentary.js';
 import { BODY_GLYPHS, BODY_NAMES_TR, ASPECT_NAMES_TR, formatDeg } from '../glyphs.js';
 import { moonCard, threeCard, retroCard, formatLocalTime } from './bugun-cards.js';
 
@@ -24,10 +25,14 @@ function planForm(bank, defaultValue) {
     + `<p class="actions"><button type="submit" class="button">${esc(bank.copy('bugun_plan_button'))}</button></p></form><div id="plan-result"></div>`;
 }
 
-function planResult(result, bank) {
+function planResult(result, state, type, when) {
+  const bank = state.bank;
   const reasons = result.reasons.map((r) => `<li>${esc(r.label)} <span class="num ${r.delta < 0 ? 'hard' : 'soft'}">${r.delta > 0 ? '+' : ''}${r.delta}</span></li>`).join('');
-  return `<div class="plan-score score-${result.verdict}"><span class="score-num">${result.score}</span><span class="score-verdict">${esc(bank.copy(`bugun_plan_verdict_${result.verdict}`))}</span></div>`
-    + `<ul class="reasons">${reasons || '<li class="muted">Gökyüzünde itiraz yok.</li>'}</ul><p class="scene">${esc(result.footer)}</p>`;
+  const verdict = bank.copy(`bugun_plan_verdict_${result.verdict}`);
+  const payload = { type: PLAN_SCORE.types[type]?.label ?? type, when, score: result.score, verdict, reasons: result.reasons.map((r) => `${r.label} ${r.delta > 0 ? '+' : ''}${r.delta}`) };
+  return `<div class="plan-score score-${result.verdict}"><span class="score-num">${result.score}</span><span class="score-verdict">${esc(verdict)}</span></div>`
+    + `<ul class="reasons">${reasons || '<li class="muted">Gökyüzünde itiraz yok.</li>'}</ul><p class="scene">${esc(result.footer)}</p>`
+    + commentBar(state, 'plan', `${type}:${when}`, bank.copy('yorumcu_bar_plan'), payload);
 }
 
 function skyCard(sky, bank) {
@@ -53,24 +58,6 @@ function serhRows(daily, ctx) {
   return rows;
 }
 
-// Ayardan açılır; Worker ayarlıysa sayfa boyandıktan sonra doldurulur (UI bekletilmez).
-function synthesisCard(state) {
-  if (!state.settings.dailySynthesis || !workerConfigured()) return '';
-  return card(state.bank.copy('bugun_synthesis_title', { name: commentatorName(state) }), `<p id="synthesis" class="muted">${esc(state.bank.copy('bugun_synthesis_busy'))}</p>`);
-}
-
-function fillSynthesis(root, state, actions) {
-  const el = root.querySelector('#synthesis');
-  if (!el) return () => {};
-  let alive = true;
-  actions.llm('daily').then((r) => {
-    if (!alive) return;
-    el.textContent = r.ok ? r.text : state.bank.copy('bugun_synthesis_none');
-    el.classList.toggle('muted', !r.ok);
-  });
-  return () => { alive = false; };
-}
-
 function localNowValue(tz) {
   const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).formatToParts(new Date()).map((x) => [x.type, x.value]));
   return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}`;
@@ -83,8 +70,7 @@ export function render(state) {
   return `<div class="bugun ${state.settings.showSerh ? 'serh-on' : ''}" id="bugun">`
     + `<section class="page-head"><h1>${esc(dateHeading(daily.dateISO, ctx.tz))}</h1></section>`
     + moonCard(daily, ctx, bank)
-    + threeCard(daily, bank)
-    + synthesisCard(state)
+    + threeCard(daily, state)
     + retroCard(state.retro, ctx, bank)
     + card(bank.copy('bugun_plan_title'), planForm(bank, localNowValue(ctx.tz)))
     + skyCard(sky, bank)
@@ -100,13 +86,13 @@ export function mount(root, state, actions) {
     e.preventDefault();
     const [date, time] = form.elements.when.value.split('T');
     const jd = julianDayUT(localToUT(date, time, ctx.tz));
-    out.innerHTML = planResult(evaluatePlan(jd, form.elements.type.value), state.bank);
+    out.innerHTML = planResult(evaluatePlan(jd, form.elements.type.value), state, form.elements.type.value, `${date} ${time}`);
   };
   form.addEventListener('submit', onSubmit);
-  const stopSynthesis = fillSynthesis(root, state, actions);
+  const unmountCommentary = mountCommentary(root, state, actions);
   root.querySelector('.serh')?.addEventListener('toggle', (e) => {
     actions.setSerh(e.target.open);
     root.querySelector('#bugun').classList.toggle('serh-on', e.target.open);
   });
-  return () => { form.removeEventListener('submit', onSubmit); stopSynthesis(); };
+  return () => { form.removeEventListener('submit', onSubmit); unmountCommentary(); };
 }
