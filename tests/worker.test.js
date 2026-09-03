@@ -154,3 +154,23 @@ test('finish_reason length: son cümlede kesilir', async () => {
   const res = await handler.fetch(req(), env);
   assert.equal((await res.json()).text, 'İlk cümle tam. İkinci cümle de tam!');
 });
+
+test('reasoning_effort gider; üst akış 400 derse onsuz bir kez daha denenir', async () => {
+  let calls = 0;
+  globalThis.fetch = async (url, init) => {
+    calls += 1; const body = JSON.parse(init.body);
+    if (body.reasoning_effort) return new Response('{"error":{"message":"Unsupported parameter"}}', { status: 400 });
+    return new Response(JSON.stringify({ choices: [{ message: { content: 'Onsuz oldu.' }, finish_reason: 'stop' }] }), { status: 200 });
+  };
+  const res = await handler.fetch(req(), env);
+  assert.equal(res.status, 200);
+  assert.equal((await res.json()).text, 'Onsuz oldu.');
+  assert.equal(calls, 2);
+});
+
+test('boş içerik + finish_reason length → 502 "Cevap tavana takıldı."', async () => {
+  globalThis.fetch = async () => new Response(JSON.stringify({ choices: [{ message: { content: '' }, finish_reason: 'length' }] }), { status: 200 });
+  const res = await handler.fetch(req(), env);
+  assert.equal(res.status, 502);
+  assert.equal((await res.json()).error, 'Cevap tavana takıldı.');
+});

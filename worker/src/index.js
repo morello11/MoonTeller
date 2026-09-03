@@ -14,19 +14,23 @@ function trimToSentence(text) {
   return end > 0 ? text.slice(0, end + 1) : text;
 }
 
-// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content. Dönüş { text, cut }.
+// Tek üst akış isteği. reasoning_effort yalnızca withEffort ise gider (model reddederse çağıran onsuz tekrar dener).
+function upstreamRequest(env, kind, target, persona, content, signal, withEffort) {
+  const body = {
+    model: MODELS[kind], max_completion_tokens: MAX_TOKENS[target] ?? MAX_TOKENS.chart,
+    messages: [{ role: 'system', content: systemPrompt(persona) }, { role: 'user', content }],
+  };
+  if (withEffort && UPSTREAM.reasoningEffort) body.reasoning_effort = UPSTREAM.reasoningEffort;
+  return fetch(UPSTREAM.url, { method: 'POST', signal, headers: { Authorization: `Bearer ${env.OPENAI_API_KEY}`, 'content-type': 'application/json' }, body: JSON.stringify(body) });
+}
+
+// OpenAI Chat Completions; cevap choices[0].message.content. Dönüş { text, cut }. Boş içerik + length: tavan düşünmeye gitti.
 async function callUpstream(env, kind, target, persona, content) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), UPSTREAM.timeoutMs);
   try {
-    const res = await fetch(UPSTREAM.url, {
-      method: 'POST', signal: controller.signal,
-      headers: { Authorization: `Bearer ${env.OPENAI_API_KEY}`, 'content-type': 'application/json' },
-      body: JSON.stringify({
-        model: MODELS[kind], max_completion_tokens: MAX_TOKENS[target] ?? MAX_TOKENS.chart,
-        messages: [{ role: 'system', content: systemPrompt(persona) }, { role: 'user', content }],
-      }),
-    });
+    let res = await upstreamRequest(env, kind, target, persona, content, controller.signal, true);
+    if (res.status === 400 && UPSTREAM.reasoningEffort) res = await upstreamRequest(env, kind, target, persona, content, controller.signal, false);
     if (!res.ok) throw new HttpError(502, `Üst akış ${res.status}.`);
     const data = await res.json();
     const choice = data.choices?.[0] ?? {};
@@ -34,7 +38,7 @@ async function callUpstream(env, kind, target, persona, content) {
     if (message.refusal) throw new HttpError(502, 'Model bu isteği reddetti.');
     const cut = choice.finish_reason === 'length';
     const text = String(message.content ?? '').trim();
-    if (!text) throw new HttpError(502, 'Boş cevap.');
+    if (!text) throw new HttpError(502, cut ? 'Cevap tavana takıldı.' : 'Boş cevap.');
     return { text: cut ? trimToSentence(text) : text, cut };
   } catch (err) {
     if (err instanceof HttpError) throw err;

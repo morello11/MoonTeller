@@ -81,6 +81,9 @@ cache ile daha az. Sor (Sonnet 5) ≈ soru başına ~0.01 $. Fiyatlar değişir:
   `target` ∈ chart · placement · aspect · today · transit · plan · pair · pairaspect; `followup` ∈ harder · example · howto
   (yaprak başına en çok 2). `focus` = `src/llm/summary.js` `commentPayload` çıktısı; yalnızca o parçanın verisi, doğum verisi yok.
   Hedef başına `max_completion_tokens` (`worker/src/config.js` `MAX_TOKENS`). Cevap `{ text, cached, kind, target }`.
+  Not (telefon testi): gpt-5.x düşünen model; `max_completion_tokens` düşünme tokenlarını da kapsar. 320'lik tavanda içerik boş
+  geldi ("Worker 502 · Boş cevap"). Tavanlar 1200/1600/2000'e çekildi, isteğe `reasoning_effort: low` eklendi; model parametreyi
+  reddederse Worker onsuz bir kez daha dener. Metin uzunluğunu tavan değil prompt'taki kelime bütçesi belirler.
 - Arayüz ("Muvakkithane — takvim yaprağı"): satır sonlarında yorumcunun baş harfli **mührü**, ekran başına en çok bir
   **birincil bar** ("Haritamı / Bugünü / Skoru / İkimizi yorumlat"); dokununca aynı yerde kâğıt dokulu **yaprak** açılır
   (yazıyor → hazır | meşgul | sınır). Yaprakta iki devam düğmesi, "Ne gördü?" (gönderilen/gönderilmeyen), "yapay zekâ yazdı" damgası.
