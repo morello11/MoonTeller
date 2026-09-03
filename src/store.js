@@ -3,7 +3,9 @@
 import { STORAGE_KEYS, SCHEMA_VERSION, HOUSE_SYSTEM, DEFAULT_TZ, LLM } from './config.js';
 
 const EMPTY_PROFILES = () => ({ version: SCHEMA_VERSION, active: null, list: [] });
-const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, voice: LLM.defaultVoice });
+const DEFAULT_SETTINGS = () => ({ version: SCHEMA_VERSION, houseSystem: HOUSE_SYSTEM, showSerh: false, voice: LLM.defaultVoice, commentHintSeen: false });
+// Yalnızca bilinen alanlar yüklenir: kaldırılan ayarlar (Adım 6 PIN'i gibi) bir sonraki kayıtta düşer.
+const knownSettings = (data) => Object.fromEntries(Object.entries(data).filter(([k]) => k in DEFAULT_SETTINGS()));
 
 function readJSON(storage, key, fallback) {
   try {
@@ -80,7 +82,7 @@ export function createStore(storage = globalThis.localStorage) {
       data.active = id;
       saveProfiles(data);
     },
-    loadSettings: () => ({ ...DEFAULT_SETTINGS(), ...migrate(readJSON(storage, STORAGE_KEYS.settings, DEFAULT_SETTINGS), DEFAULT_SETTINGS) }),
+    loadSettings: () => ({ ...DEFAULT_SETTINGS(), ...knownSettings(migrate(readJSON(storage, STORAGE_KEYS.settings, DEFAULT_SETTINGS), DEFAULT_SETTINGS)) }),
     saveSettings(patch) {
       const next = { ...this.loadSettings(), ...patch };
       writeJSON(storage, STORAGE_KEYS.settings, next);

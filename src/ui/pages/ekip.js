@@ -1,6 +1,7 @@
 // Ekip sayfası: link paylaşımı, içe aktarma, sinastri matrisi, bugün kime bulaşma, haftanın çifti, kart, üyeler.
 import { shareUrl } from '../../share.js';
-import { esc, card, emptyState, commentatorName } from '../components.js';
+import { esc, card, emptyState } from '../components.js';
+import { voiceEntry } from '../commentary-html.js';
 import { makeCardBlob, shareBlob } from '../card.js';
 import { workerConfigured } from '../../llm/client.js';
 import { importCard, shareCard, matrixCard, contagionCard, weekPairCard, membersCard } from './ekip-cards.js';
@@ -24,7 +25,7 @@ function bulletinCard(state) {
       + `<p id="bulletin-status" class="muted" role="status" hidden></p><div id="bulletin-out" hidden><p class="answer" id="bulletin-text"></p>`
       + `<p class="actions"><button type="button" class="button secondary" data-action="bulletin-copy">${esc(bank.copy('ekip_bulletin_copy'))}</button></p></div>`
     : `<p class="muted">${esc(bank.copy('ekip_bulletin_closed'))}</p>`;
-  const who = workerConfigured() ? `<p class="muted small">${esc(bank.copy('ekip_bulletin_by', { name: commentatorName(state) }))}</p>` : '';
+  const who = workerConfigured() ? `<p class="muted small">${esc(bank.copy('ekip_bulletin_by', { name: voiceEntry(state).name }))}</p>` : '';
   return card(bank.copy('ekip_bulletin_title'), `<p class="muted">${esc(bank.copy('ekip_bulletin_text'))}</p>${who}${body}`);
 }
 

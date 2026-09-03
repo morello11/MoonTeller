@@ -8,7 +8,13 @@ function json(body, status, headers) {
   return new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', ...headers } });
 }
 
-// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content.
+// Tavana takılan cevap (finish_reason length) son cümle sonunda kesilir; yarım cümle kullanıcıya gitmez.
+function trimToSentence(text) {
+  const end = Math.max(text.lastIndexOf('.'), text.lastIndexOf('!'), text.lastIndexOf('?'));
+  return end > 0 ? text.slice(0, end + 1) : text;
+}
+
+// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content. Dönüş { text, cut }.
 async function callUpstream(env, kind, target, persona, content) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), UPSTREAM.timeoutMs);
@@ -23,11 +29,13 @@ async function callUpstream(env, kind, target, persona, content) {
     });
     if (!res.ok) throw new HttpError(502, `Üst akış ${res.status}.`);
     const data = await res.json();
-    const message = data.choices?.[0]?.message ?? {};
+    const choice = data.choices?.[0] ?? {};
+    const message = choice.message ?? {};
     if (message.refusal) throw new HttpError(502, 'Model bu isteği reddetti.');
+    const cut = choice.finish_reason === 'length';
     const text = String(message.content ?? '').trim();
     if (!text) throw new HttpError(502, 'Boş cevap.');
-    return text;
+    return { text: cut ? trimToSentence(text) : text, cut };
   } catch (err) {
     if (err instanceof HttpError) throw err;
     throw new HttpError(502, err.name === 'AbortError' ? 'Üst akış zaman aşımı.' : 'Üst akışa ulaşılamadı.');
@@ -46,8 +54,8 @@ async function reading(request, env) {
     const hit = await env.CACHE.get(cacheKey);
     if (hit) return { text: hit, cached: true, kind: payload.kind, target: payload.target };
   }
-  const text = await callUpstream(env, payload.kind, payload.target, payload.persona, userMessage(payload));
-  if (cacheKey) await env.CACHE.put(cacheKey, text, { expirationTtl: CACHE_TTL_SEC[payload.kind] });
+  const { text, cut } = await callUpstream(env, payload.kind, payload.target, payload.persona, userMessage(payload));
+  if (cacheKey && !cut) await env.CACHE.put(cacheKey, text, { expirationTtl: CACHE_TTL_SEC[payload.kind] });
   return { text, cached: false, kind: payload.kind, target: payload.target };
 }
 
@@ -57,10 +65,11 @@ async function handle(request, env) {
   const cors = corsHeaders(origin);
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
   if (request.method !== 'POST' || new URL(request.url).pathname !== PATH) return json({ error: 'Yok.' }, 404, cors);
-  if (!env.OPENAI_API_KEY) return json({ error: 'Worker kapalı.' }, 503, cors);
+  if (!env.OPENAI_API_KEY || !env.CACHE) return json({ error: 'Worker kapalı.' }, 503, cors); // key ya da KV bağlaması eksik
   try {
     return json(await reading(request, env), 200, cors);
   } catch (err) {
+    if (!(err instanceof HttpError)) console.error('yorumcu:', err.name, err.message); // gövde asla loglanmaz
     const status = err instanceof HttpError ? err.status : 500;
     const extra = status === 429 ? { 'Retry-After': '3600' } : {};
     return json({ error: err instanceof HttpError ? err.message : 'Bir şey ters gitti.' }, status, { ...cors, ...extra });

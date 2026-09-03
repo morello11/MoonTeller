@@ -27,10 +27,12 @@ const bigThreeLabels = (chart) => {
 
 // Yorumlanacak parçanın odak verisi. ctx: { chart, daily, bank, team, data }; focusKey hedefe göre anahtar.
 // Dönüş: { chart: özet, focus, sent: "Ne gördü?" satırı }. Doğum verisi ve (pair dışında) ad yok.
+// sent, gidenin tamamını söyler: odak + her istekte giden harita özeti (yerleşim ve açı sayısı).
 export function commentPayload(target, focusKey, ctx) {
   const focus = FOCUS_BUILDERS[target]?.(focusKey, ctx);
   if (!focus) throw new Error(`Odak kurulamadı: ${target}:${focusKey}`);
-  return { chart: chartSummary(ctx.chart), focus, sent: describeFocus(target, focus) };
+  const chart = chartSummary(ctx.chart);
+  return { chart, focus, sent: `${describeFocus(target, focus)} · harita özeti (${chart.placements.length} yerleşim, ${chart.aspects.length} açı)` };
 }
 
 const FOCUS_BUILDERS = {

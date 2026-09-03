@@ -8,8 +8,9 @@ export const FOLLOWUPS = ['harder', 'example', 'howto'];
 // Sağlayıcı: OpenAI Chat Completions. Küçük model her iş için yeter; ID'yi platform.openai.com/docs/models'tan doğrula.
 export const MODELS = { comment: 'gpt-5.6-luna', weekly: 'gpt-5.6-luna' };
 export const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', timeoutMs: 20000 };
-// Çıktı tavanı hedefe göre: tek öğe kısa, gruplar orta, bülten uzun (yaklaşık 1 token ≈ 3 Türkçe karakter).
-export const MAX_TOKENS = { placement: 260, aspect: 260, transit: 260, plan: 260, pairaspect: 260, chart: 420, today: 420, pair: 420, weekly: 520 };
+// Çıktı tavanı hedefe göre: tek öğe kısa, gruplar orta, bülten uzun. Türkçe ≈ 2,5 karakter/token; kelime bütçesinin %30 üstü,
+// tavana takılırsa Worker son cümlede keser (index.js trimToSentence).
+export const MAX_TOKENS = { placement: 320, aspect: 320, transit: 320, plan: 320, pairaspect: 320, chart: 520, today: 520, pair: 520, weekly: 640 };
 export const LIMITS = { bodyBytes: 8192, focusBytes: 2048, perIpPerDay: 60, globalPerDay: 800, counterTtlSec: 2 * 86400 };
 export const CACHE_TTL_SEC = { comment: 36 * 3600, weekly: 8 * 86400 };
 // Test döneminde kapalı: her istek yeni cevap üretir. Ekip büyüyünce true yap (maliyet ve tekrar için).

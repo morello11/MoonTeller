@@ -18,7 +18,7 @@ Bir kişi (Mehmet) yönetir; diğerleri sadece linki açar.
 | Co-Star | Kısa, sert, arkadaş ağzı bildirimler; arkadaş haritalarını karşılaştırma; gerçek efemeris | Ton rehberi (docs/TEXTBANK.md), Ofis sekmesi, Swiss Ephemeris |
 | The Pattern | İlişki dinamiği metinleri, zaman çizelgesi hissi | Sinastri "iş arkadaşı" dilinde; transit zaman çizelgesi v2 |
 | Chani | Ay evresi merkezli günlük ritim | "Bugün" sekmesi Ay ile başlar |
-| Sanctuary | Canlı astrologa soru sorma | "Sor" sekmesi (LLM, Worker üzerinden) |
+| Sanctuary | Canlı astrologa soru sorma | Yorumcu mühürleri (LLM, Worker üzerinden; serbest soru yok, Adım 6b) |
 | astro.com / TimePassages | Şeffaf veri, ev sistemi seçimi, aspekt ızgarası | Ayarlar'da ev sistemi; Haritam'da yerleşim tablosu + aspekt ızgarası |
 
 Yapmadıklarımız: hesap/üyelik, sunucu veritabanı, bildirim altyapısı, ödeme, sosyal ağ. Bunlar projeyi öldürür.

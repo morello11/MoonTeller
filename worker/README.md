@@ -44,7 +44,8 @@ wrangler deploy                           # sonunda Worker URL'sini basar: https
 `target`: `chart` `placement` `aspect` `today` `transit` `plan` `pair` `pairaspect`; `followup`: `harder` `example` `howto`.
 `persona` beş sesten biri (`polyanna`, `ya_olmazsa`, `sert`, `nurten`, `muneccim`); yoksa `sert`.
 Cevap `{ text, cached, kind, target }`. Hatalar: 403 origin, 400 gövde/hedef, 413 boyut, 429 limit (IP/gün 60, global/gün 800),
-502 üst akış, 503 key yok. KV cache `src/config.js` `CACHE_ENABLED` ile açılır (test döneminde kapalı).
+502 üst akış, 503 key ya da KV bağlaması yok. KV cache `worker/src/config.js` `CACHE_ENABLED` ile açılır (test döneminde kapalı;
+uygulama tarafındaki `src/config.js` `LLM.cacheResults` ile birlikte açılır).
 
 ## İşletme
 

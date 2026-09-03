@@ -85,3 +85,16 @@ test('cacheReplace: ad alanında yalnızca son kayıt kalır, diğer ad alanlar�
   assert.deepEqual(store.cacheGet('daily', 'gün2'), { a: 2 });
   assert.equal(store.cacheGet('natal', 'n1'), 1);
 });
+
+test('ayarlar: bilinmeyen (kaldırılmış) alanlar yüklenmez ve kayıtta düşer', () => {
+  const storage = memoryStorage();
+  storage.setItem('yn:settings', JSON.stringify({ version: 1, houseSystem: 'W', pin: '1234', dailySynthesis: true }));
+  const store = createStore(storage);
+  const loaded = store.loadSettings();
+  assert.equal(loaded.houseSystem, 'W');
+  assert.equal('pin' in loaded, false);
+  assert.equal(loaded.commentHintSeen, false);
+  const saved = store.saveSettings({ voice: 'nurten' });
+  assert.equal('pin' in JSON.parse(storage.getItem('yn:settings')), false);
+  assert.equal(saved.voice, 'nurten');
+});

@@ -66,6 +66,9 @@ yildizname/
     share.js            paylaşım linki: profil ↔ base64url (#p=…), doğrulama
     astro/              (saf mantık, DOM yok)
       engine.js         SwissEph sarmalayıcı: gezegenler, evler, açılar, retro bayrağı
+      chart.js          natal harita: konumlar, evler, aspektler, saat bilinmiyor bayrağı (natalChart)
+      transits.js       günün transit noktaları ve natal noktalara açıları
+      sky.js            Canlı Gökyüzü: doğuş/batış, bu gece görünen gezegenler
       time.js           yerel → UTC (Intl), Julian Day yardımcıları
       aspects.js        aspekt tespiti (natal / transit / sinastri orb tabloları)
       scoring.js        transit sıralaması, sinastri skoru, toplantı skoru
@@ -77,13 +80,17 @@ yildizname/
     text/               (saf mantık)
       bank.js           JSON bankasını yükler, seed'li varyant seçer, tekrarları önler
       compose.js        yerleşim + aspekt listesinden okunur metin kurar
+      compose-daily.js  Bugün metni: günün üç şeyi, Ay, retro (composeDaily)
     ui/
       wheel.js          SVG harita çarkı (uygulamanın kahramanı)
+      wheel-layout.js   çark yerleşimi: çakışan gezegenleri ayırma (saf, test edilir)
+      glyphs.js         gezegen ve burç glifleri
       components.js     küçük ortak parçalar (sekme çubuğu, damga, şerh kutusu)
       commentary-html.js Yorumcu parçaları: mühür, birincil bar, satır+yuva, takvim yaprağı kabuğu, seçim sayfası HTML'i
       commentary.js     Yorumcu davranışı: mühre dokun → yaprak, ada dokun → seçim, devamlar, hata/sınır (mountCommentary)
       card.js           Yıldızname Kartı: çark SVG + metin → Canvas → PNG, paylaş/indir (QR Adım 7'de)
-      pages/            onboarding.js haritam.js bugun.js bugun-cards.js ekip.js ekip-cards.js kiyasla.js yorumcu.js ayarlar.js
+      pages/            onboarding.js haritam.js haritam-text.js haritam-tables.js bugun.js bugun-cards.js ekip.js ekip-cards.js
+                        kiyasla.js yorumcu.js ayarlar.js
     llm/
       client.js         Worker'a istek, zaman aşımı, bank'a düşüş (asla fırlatmaz)
       summary.js        Worker'a giden yerleşim özeti (doğum verisi ve ad yok)
@@ -101,7 +108,8 @@ yildizname/
     worker-local.js           Worker'ı Node'da sahte üst akışla koşturur (geliştirme, key'siz)
     bundle-worker.js          worker/src → worker/dist/worker.js (Cloudflare paneline yapıştırılan tek dosya)
   tests/
-    engine.test.js  time.test.js  aspects.test.js  moon.test.js  golden-charts.test.js
+    engine time aspects moon chart transits sky retrograde scoring synastry team archetype bank compose compose-daily share store
+    wheel-layout llm-client llm-summary worker golden-charts (.test.js); golden-charts.json
     private.local.json        Mehmet'in altın haritası — .gitignore'da, repoya girmez
   worker/
     src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key yalnızca secret; PIN yok)

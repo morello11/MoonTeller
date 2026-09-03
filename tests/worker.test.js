@@ -105,7 +105,7 @@ test('listeler uygulamayla aynı: klişe, sesler, hedefler, devamlar; system pro
   assert.deepEqual(BANNED, BANK.bannedWords);
   assert.deepEqual(PERSONAS, LLM.voices);
   assert.deepEqual(TARGETS, LLM.targets);
-  assert.deepEqual(FOLLOWUPS, LLM.followups.map(([k]) => k));
+  assert.deepEqual(FOLLOWUPS, LLM.followups);
   const voices = JSON.parse(readFileSync(new URL('../data/tr/voices.json', import.meta.url), 'utf8'));
   assert.deepEqual(Object.keys(voices), PERSONAS);
   assert.deepEqual(Object.keys(VOICES), PERSONAS);
@@ -127,4 +127,30 @@ test('tek dosya paketi (dist) güncel ve çalışıyor', async () => {
   }
   const bundled = (await import('../worker/dist/worker.js')).default;
   assert.equal((await bundled.fetch(req({ origin: 'https://kotu.test' }), env)).status, 403);
+});
+
+test('IP sınırını aşmış istek global sayacı artırmaz (önce IP, sonra global)', async () => {
+  const day = new Date().toISOString().slice(0, 10);
+  store.set(`ip:9.9.9.9:${day}`, String(LIMITS.perIpPerDay));
+  const res = await handler.fetch(req({ ip: '9.9.9.9' }), env);
+  assert.equal(res.status, 429);
+  assert.equal(store.get(`global:${day}`), undefined);
+  assert.equal(upstreamCalls, 0);
+});
+
+test('KV yazımı hata verse de istek düşmez (aynı anahtara saniyede bir yazım)', async () => {
+  kv.put = async () => { throw new Error('KV PUT failed: 429'); };
+  const res = await handler.fetch(req(), env);
+  assert.equal(res.status, 200);
+});
+
+test('CACHE bağlaması yoksa 503 (500 değil)', async () => {
+  const res = await handler.fetch(req(), { ...env, CACHE: undefined });
+  assert.equal(res.status, 503);
+});
+
+test('finish_reason length: son cümlede kesilir', async () => {
+  globalThis.fetch = async () => new Response(JSON.stringify({ choices: [{ message: { content: 'İlk cümle tam. İkinci cümle de tam! Üçüncü yarım kal' }, finish_reason: 'length' }] }), { status: 200 });
+  const res = await handler.fetch(req(), env);
+  assert.equal((await res.json()).text, 'İlk cümle tam. İkinci cümle de tam!');
 });

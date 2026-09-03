@@ -4,6 +4,9 @@
 
 ## 8. LLM ve Worker
 
+> **Güncel durum (Adım 6b):** aşağıdaki 8. bölüm ilk tasarımın tarihçesidir. PIN (`X-App-Pin`, `APP_PIN`), Sor sekmesi ve Claude
+> modelleri kalktı; sağlayıcı OpenAI, sözleşme `comment` + hedef + odak. Geçerli kurallar dosyanın sonundaki iki "Karar" bölümünde.
+
 ### İş bölümü
 Deterministik olan her şey tarayıcıda hesaplanır: yerleşimler, aspektler, skorlar, Ay, retro. LLM yalnızca dil üretir;
 **LLM'e sayı hesaplattırılmaz, gezegen konumu sorulmaz.** LLM'in üç işi:

@@ -34,12 +34,6 @@ export function serhBox(rows, open = false, summary = 'Şüpheci Şerhi — gök
   return `<details class="serh"${open ? ' open' : ''}><summary><span class="info-mark" aria-hidden="true">i</span> ${esc(summary)}</summary>${hintHtml}<dl>${items}</dl></details>`;
 }
 
-// Seçili yorumcunun adı (Ayarlar'daki 'voice'); banka yoksa anahtarın kendisi.
-export function commentatorName(state) {
-  const key = state.settings.voice;
-  return state.bank.get('voices', key)?.name ?? key ?? '';
-}
-
 export function emptyState(title, text, actionHtml = '') {
   return `<section class="empty"><h2>${esc(title)}</h2><p>${esc(text)}</p>${actionHtml}</section>`;
 }

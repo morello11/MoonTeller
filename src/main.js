@@ -49,7 +49,7 @@ const actions = {
   saveProfile(fields) {
     state.profile = store.saveProfile(fields);
     store.setActiveProfile(state.profile.id);
-    state.chart = null; state.daily = null; state.team = null; state.wheelAnimated = false;
+    state.chart = null; state.daily = null; state.team = null; state.wheelAnimated = false; state.comments.clear();
     const pending = state.pendingImport;
     state.pendingImport = null;
     if (pending) saveTeamProfile(pending);
@@ -62,16 +62,17 @@ const actions = {
     if (pending) saveTeamProfile(pending);
   },
   dismissImport() { state.pendingImport = null; state.importError = null; },
-  deleteProfile(id) { store.deleteProfile(id); state.team = null; },
+  deleteProfile(id) { store.deleteProfile(id); state.team = null; state.comments.clear(); },
   setSerh(open) { state.settings = store.saveSettings({ showSerh: open }); },
   saveSettings(patch) { state.settings = store.saveSettings(patch); },
   // Ev sistemi profilde durur (natal cache anahtarına girer); değişince harita ve türevleri yeniden hesaplanır.
   setHouseSystem(letter) {
     state.profile = store.saveProfile({ ...state.profile, houseSystem: letter });
-    state.chart = null; state.daily = null; state.team = null;
+    state.chart = null; state.daily = null; state.team = null; state.comments.clear();
   },
   clearAll() {
     store.clearAll();
+    state.comments.clear();
     Object.assign(state, { profile: null, chart: null, daily: null, team: null, settings: store.loadSettings() });
   },
   setVoice(key) { state.settings = store.saveSettings({ voice: key }); state.comments.clear(); },
@@ -80,15 +81,16 @@ const actions = {
   refresh: () => renderRoute(),
 };
 
-// Yorum isteği: uygulama hesaplar (odak verisi), model anlatır. Oturum içi önbellek: ses + hedef + odak + devam + gün.
+// Yorum isteği: uygulama hesaplar (odak verisi), model anlatır. Oturum içi önbellek: harita + ses + hedef + odak + devam + gün.
 async function commentRequest(target, focus, { followup = '', data = null } = {}) {
   const ctx = dayContext();
   const voice = state.settings.voice ?? LLM.defaultVoice;
-  const key = `${voice}|${target}|${focus}|${followup}|${ctx.dateISO}`;
+  const key = `${state.profile.id}|${profileHash(state.profile)}|${voice}|${target}|${focus}|${followup}|${ctx.dateISO}`;
   if (state.comments.has(key)) return { ...state.comments.get(key), cached: true };
+  const daily = state.daily?.dateISO === ctx.dateISO ? state.daily : ensureDaily(state.profile); // gece yarısı geçtiyse bugünü kur
   let payload;
   try {
-    payload = commentPayload(target, focus, { chart: state.chart, daily: state.daily ?? ensureDaily(state.profile), bank: state.bank, team: state.team, data });
+    payload = commentPayload(target, focus, { chart: state.chart, daily, bank: state.bank, team: state.team, data });
   } catch { return { ok: false, reason: 'error' }; }
   const result = await askWorker('comment', payload.chart, { target, focus: payload.focus, followup, date: ctx.dateISO, persona: voice });
   const out = { ...result, sent: payload.sent };

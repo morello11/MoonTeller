@@ -18,6 +18,10 @@ Cesaret tek yerde harcanır: **harita çarkı bir usturlap gibi çizilir**; geri
 --kizil:     #B4452B   sert aspekt (kare/karşıt), retro, uyarı
 --verdigris: #4E8C7A   uyumlu aspekt (üçgen/altmışlık), olumlu
 --sis:       rgba(239,230,210,.55)  ikincil metin
+
+Yorumcu yaprağı (Adım 6b, style.css sonundaki blok): --kagit #EFE6D2 kâğıt zemin, --kagit-murekkep #101B33 kâğıt üstü metin,
+--kizil-kagit #9A3A22 damga; --m70/--m50/--m35/--m15/--m12/--m05 mürekkebin kâğıt üstü tonları; --pirinc-08 seçili satır;
+--ayirici satır ayırıcı; --perde seçim perdesi; --ease ortak eğri; --yaprak-golge pirinç ofset gölge.
 ```
 Kontrast kuralı: pirinç yalnızca çizgi/ikon/başlık (≥20px); gövde metni her zaman fildişi.
 

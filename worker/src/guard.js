@@ -46,18 +46,19 @@ export function validate(payload) {
   return { kind: payload.kind, target, followup, chart: payload.chart, focus, period, persona };
 }
 
+// KV aynı anahtara saniyede bir yazım kabul eder; aynı anda gelen birkaç istekte yazım hatası isteği düşürmesin (sayaç kaba).
 async function bump(kv, key) {
   const count = Number(await kv.get(key)) + 1;
-  await kv.put(key, String(count), { expirationTtl: LIMITS.counterTtlSec });
+  try { await kv.put(key, String(count), { expirationTtl: LIMITS.counterTtlSec }); } catch { /* sayaç bu istekte artmaz */ }
   return count;
 }
 
-// IP başına ve global günlük sayaç; aşımda 429.
+// Önce IP, sonra global günlük sayaç; aşımda 429. Sıra önemli: sınırı aşmış tek bir IP global tavanı yiyemesin.
 export async function rateLimit(kv, ip, day) {
-  const global = await bump(kv, `global:${day}`);
-  if (global > LIMITS.globalPerDay) throw new HttpError(429, 'Günlük tavan doldu, yarın.');
   const perIp = await bump(kv, `ip:${ip}:${day}`);
   if (perIp > LIMITS.perIpPerDay) throw new HttpError(429, 'Bugünlük bu kadar; yarın devam.');
+  const global = await bump(kv, `global:${day}`);
+  if (global > LIMITS.globalPerDay) throw new HttpError(429, 'Günlük tavan doldu, yarın.');
 }
 
 export async function sha256(text) {

@@ -11,8 +11,9 @@ const FOLLOWUPS = ['harder', 'example', 'howto'];
 // Sağlayıcı: OpenAI Chat Completions. Küçük model her iş için yeter; ID'yi platform.openai.com/docs/models'tan doğrula.
 const MODELS = { comment: 'gpt-5.6-luna', weekly: 'gpt-5.6-luna' };
 const UPSTREAM = { url: 'https://api.openai.com/v1/chat/completions', timeoutMs: 20000 };
-// Çıktı tavanı hedefe göre: tek öğe kısa, gruplar orta, bülten uzun (yaklaşık 1 token ≈ 3 Türkçe karakter).
-const MAX_TOKENS = { placement: 260, aspect: 260, transit: 260, plan: 260, pairaspect: 260, chart: 420, today: 420, pair: 420, weekly: 520 };
+// Çıktı tavanı hedefe göre: tek öğe kısa, gruplar orta, bülten uzun. Türkçe ≈ 2,5 karakter/token; kelime bütçesinin %30 üstü,
+// tavana takılırsa Worker son cümlede keser (index.js trimToSentence).
+const MAX_TOKENS = { placement: 320, aspect: 320, transit: 320, plan: 320, pairaspect: 320, chart: 520, today: 520, pair: 520, weekly: 640 };
 const LIMITS = { bodyBytes: 8192, focusBytes: 2048, perIpPerDay: 60, globalPerDay: 800, counterTtlSec: 2 * 86400 };
 const CACHE_TTL_SEC = { comment: 36 * 3600, weekly: 8 * 86400 };
 // Test döneminde kapalı: her istek yeni cevap üretir. Ekip büyüyünce true yap (maliyet ve tekrar için).
@@ -170,18 +171,19 @@ function validate(payload) {
   return { kind: payload.kind, target, followup, chart: payload.chart, focus, period, persona };
 }
 
+// KV aynı anahtara saniyede bir yazım kabul eder; aynı anda gelen birkaç istekte yazım hatası isteği düşürmesin (sayaç kaba).
 async function bump(kv, key) {
   const count = Number(await kv.get(key)) + 1;
-  await kv.put(key, String(count), { expirationTtl: LIMITS.counterTtlSec });
+  try { await kv.put(key, String(count), { expirationTtl: LIMITS.counterTtlSec }); } catch { /* sayaç bu istekte artmaz */ }
   return count;
 }
 
-// IP başına ve global günlük sayaç; aşımda 429.
+// Önce IP, sonra global günlük sayaç; aşımda 429. Sıra önemli: sınırı aşmış tek bir IP global tavanı yiyemesin.
 async function rateLimit(kv, ip, day) {
-  const global = await bump(kv, `global:${day}`);
-  if (global > LIMITS.globalPerDay) throw new HttpError(429, 'Günlük tavan doldu, yarın.');
   const perIp = await bump(kv, `ip:${ip}:${day}`);
   if (perIp > LIMITS.perIpPerDay) throw new HttpError(429, 'Bugünlük bu kadar; yarın devam.');
+  const global = await bump(kv, `global:${day}`);
+  if (global > LIMITS.globalPerDay) throw new HttpError(429, 'Günlük tavan doldu, yarın.');
 }
 
 async function sha256(text) {
@@ -197,7 +199,13 @@ function json(body, status, headers) {
   return new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', ...headers } });
 }
 
-// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content.
+// Tavana takılan cevap (finish_reason length) son cümle sonunda kesilir; yarım cümle kullanıcıya gitmez.
+function trimToSentence(text) {
+  const end = Math.max(text.lastIndexOf('.'), text.lastIndexOf('!'), text.lastIndexOf('?'));
+  return end > 0 ? text.slice(0, end + 1) : text;
+}
+
+// OpenAI Chat Completions: system + user mesajı, max_completion_tokens; cevap choices[0].message.content. Dönüş { text, cut }.
 async function callUpstream(env, kind, target, persona, content) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), UPSTREAM.timeoutMs);
@@ -212,11 +220,13 @@ async function callUpstream(env, kind, target, persona, content) {
     });
     if (!res.ok) throw new HttpError(502, `Üst akış ${res.status}.`);
     const data = await res.json();
-    const message = data.choices?.[0]?.message ?? {};
+    const choice = data.choices?.[0] ?? {};
+    const message = choice.message ?? {};
     if (message.refusal) throw new HttpError(502, 'Model bu isteği reddetti.');
+    const cut = choice.finish_reason === 'length';
     const text = String(message.content ?? '').trim();
     if (!text) throw new HttpError(502, 'Boş cevap.');
-    return text;
+    return { text: cut ? trimToSentence(text) : text, cut };
   } catch (err) {
     if (err instanceof HttpError) throw err;
     throw new HttpError(502, err.name === 'AbortError' ? 'Üst akış zaman aşımı.' : 'Üst akışa ulaşılamadı.');
@@ -235,8 +245,8 @@ async function reading(request, env) {
     const hit = await env.CACHE.get(cacheKey);
     if (hit) return { text: hit, cached: true, kind: payload.kind, target: payload.target };
   }
-  const text = await callUpstream(env, payload.kind, payload.target, payload.persona, userMessage(payload));
-  if (cacheKey) await env.CACHE.put(cacheKey, text, { expirationTtl: CACHE_TTL_SEC[payload.kind] });
+  const { text, cut } = await callUpstream(env, payload.kind, payload.target, payload.persona, userMessage(payload));
+  if (cacheKey && !cut) await env.CACHE.put(cacheKey, text, { expirationTtl: CACHE_TTL_SEC[payload.kind] });
   return { text, cached: false, kind: payload.kind, target: payload.target };
 }
 
@@ -246,10 +256,11 @@ async function handle(request, env) {
   const cors = corsHeaders(origin);
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
   if (request.method !== 'POST' || new URL(request.url).pathname !== PATH) return json({ error: 'Yok.' }, 404, cors);
-  if (!env.OPENAI_API_KEY) return json({ error: 'Worker kapalı.' }, 503, cors);
+  if (!env.OPENAI_API_KEY || !env.CACHE) return json({ error: 'Worker kapalı.' }, 503, cors); // key ya da KV bağlaması eksik
   try {
     return json(await reading(request, env), 200, cors);
   } catch (err) {
+    if (!(err instanceof HttpError)) console.error('yorumcu:', err.name, err.message); // gövde asla loglanmaz
     const status = err instanceof HttpError ? err.status : 500;
     const extra = status === 429 ? { 'Retry-After': '3600' } : {};
     return json({ error: err instanceof HttpError ? err.message : 'Bir şey ters gitti.' }, status, { ...cors, ...extra });
