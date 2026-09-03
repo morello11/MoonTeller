@@ -115,6 +115,7 @@ yildizname/
     src/{index,guard,prompts,config}.js  dist/worker.js (üretilen tek dosya)  wrangler.toml  README.md   (key yalnızca secret; PIN yok)
   assets/
     icons/  manifest.json
+    voices/             beş yorumcu portresi, 512×512 JPEG (docs/PORTRAITS.md); yolu data/tr/voices.json `portrait` tutar
   .gitattributes        *.wasm *.data *.se1 binary
   .nojekyll             GitHub Pages dosyaları Jekyll'den geçirmesin
   .gitignore            tests/private.local.json, node_modules/, .DS_Store

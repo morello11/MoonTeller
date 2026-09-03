@@ -17,8 +17,9 @@ function check(name, label, checked) {
 
 function voiceCard(state, bank) {
   const worker = workerConfigured() ? bank.copy('ayarlar_worker_on', { url: LLM.workerUrl }) : bank.copy('ayarlar_worker_off');
-  return `<div class="sekme-bas">${sealHtml(state, 'orta')}<span class="yorumcu-satir">${esc(bank.copy('ayarlar_voice_line'))} <strong class="yorumcu-ad">${esc(voiceEntry(state).name)}</strong></span>`
-    + `<button type="button" class="button secondary" data-action="voice-picker">${esc(bank.copy('yorumcu_degistir'))}</button></div>`
+  const v = voiceEntry(state);
+  return `<div class="sekme-bas yorumcu-satir">${sealHtml(state, 'orta')}<button type="button" class="imza" data-action="voice-picker" aria-label="${esc(bank.copy('yorumcu_imza_label', { name: v.name }))}">`
+    + `<span class="imza-ad">${esc(v.name)}</span><span class="imza-ipucu">${esc(bank.copy('yorumcu_degistir'))}</span></button></div>`
     + `<p class="muted small">${esc(bank.copy('ayarlar_voice_hint'))}</p><p class="muted small">${esc(worker)}</p>`;
 }
 
