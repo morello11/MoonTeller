@@ -2,7 +2,14 @@
 import { SHARE, HOUSE_SYSTEMS, DEFAULT_TZ } from './config.js';
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-const TIME_RE = /^\d{2}:\d{2}$/;
+const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
+
+// Gerçek takvim günü mü (30 Şubat gibi kaymalar reddedilir).
+function validDate(text) {
+  if (!DATE_RE.test(text ?? '')) return false;
+  const d = new Date(`${text}T00:00:00Z`);
+  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === text;
+}
 
 function toBase64Url(text) {
   const bytes = new TextEncoder().encode(text);
@@ -36,7 +43,7 @@ function validate(p) {
   if (!p || typeof p !== 'object' || p.v !== SHARE.version) throw new Error('Link bozuk ya da eski sürüm.');
   const name = String(p.n ?? '').trim();
   if (!name || name.length > SHARE.nameMax) throw new Error('Linkteki ad eksik ya da çok uzun.');
-  if (!DATE_RE.test(p.d ?? '') || Number.isNaN(Date.parse(p.d))) throw new Error('Linkteki doğum tarihi geçersiz.');
+  if (!validDate(p.d)) throw new Error('Linkteki doğum tarihi geçersiz.');
   if (p.t !== null && p.t !== undefined && !TIME_RE.test(p.t)) throw new Error('Linkteki doğum saati geçersiz.');
   if (typeof p.tz !== 'string' || !validTz(p.tz)) throw new Error('Linkteki saat dilimi geçersiz.');
   const lat = Number(p.la); const lon = Number(p.lo);

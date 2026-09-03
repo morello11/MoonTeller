@@ -1,7 +1,7 @@
 // Günlük transitler: hedef günün öğlesindeki gök cisimleri × natal noktalar → puanlı aspekt listesi. Saf mantık (motor yüklü olmalı).
-import { TRANSIT, HOUSE_SYSTEM } from '../config.js';
+import { TRANSIT } from '../config.js';
 import { computePositions } from './engine.js';
-import { findAspects, angularDistance } from './aspects.js';
+import { findAspects } from './aspects.js';
 import { signIndex, degreeInSign } from './chart.js';
 import { voidOfCourse } from './moon.js';
 import { transitScore, planScore } from './scoring.js';
@@ -63,4 +63,3 @@ export function evaluatePlan(jdUT, type) {
   return planScore(planInputs(jdUT, type));
 }
 
-export { angularDistance, HOUSE_SYSTEM };

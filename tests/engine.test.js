@@ -68,3 +68,12 @@ test('bilinmeyen cisim hata verir', () => {
 test('motor sürümü', () => {
   assert.match(engineVersion(), /^2\.10/);
 });
+
+test('ev sistemi harfi motora ulaşıyor: Whole Sign burç sınırında, Porphyry Placidus\'tan farklı', () => {
+  const placidus = computeHouses(jd, ISTANBUL.lat, ISTANBUL.lon, 'P');
+  const whole = computeHouses(jd, ISTANBUL.lat, ISTANBUL.lon, 'W');
+  const porphyry = computeHouses(jd, ISTANBUL.lat, ISTANBUL.lon, 'O');
+  for (const cusp of whole.cusps) assert.ok(Math.abs(cusp % 30) < 1e-9, `Whole Sign cusp ${cusp}`);
+  assert.ok(Math.abs(whole.asc - placidus.asc) < TOL_ANGLE); // ASC sistemden bağımsız
+  assert.ok(Math.abs(porphyry.cusps[1] - placidus.cusps[1]) > 0.1, 'Porphyry 2. ev Placidus ile aynı çıktı');
+});

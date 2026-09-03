@@ -9,6 +9,7 @@ const BODY_CONSTANTS = {
 };
 
 const HOUSE_COUNT = 12;
+const TROPICAL_FLAG = 0;
 const ASC_INDEX = 0;
 const MC_INDEX = 1;
 
@@ -57,8 +58,10 @@ export function computePositions(jdUT, bodies = BODIES) {
 }
 
 // system: Swiss Ephemeris ev sistemi harfi. Dönüş: { cusps: 12 elemanlı dizi (1. ev index 0), asc, mc } — derece.
+// Not: sarmalayıcıda houses() iki kez tanımlı; sondaki tanım harfi 'string' (pointer) olarak geçirdiğinden her sistemde
+// Placidus döner. houses_ex tek tanımlı ve harfi char kodu olarak geçirir; iflag 0 = tropikal. (vendor/swisseph/VENDOR.md)
 export function computeHouses(jdUT, latitude, longitude, system = HOUSE_SYSTEM) {
-  const { cusps, ascmc } = requireEngine().houses(jdUT, latitude, longitude, system);
+  const { cusps, ascmc } = requireEngine().houses_ex(jdUT, TROPICAL_FLAG, latitude, longitude, system);
   return {
     cusps: Array.from(cusps.subarray(1, HOUSE_COUNT + 1)),
     asc: ascmc[ASC_INDEX],

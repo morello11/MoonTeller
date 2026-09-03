@@ -40,7 +40,8 @@ function signEntry(jdUT, sign, step, maxSteps) {
   let jd = jdUT;
   for (let i = 1; i <= maxSteps; i += 1) {
     const prev = jd - step;
-    if (signIndex(moonSeparations(prev).moonLon) !== sign) return jd;
+    const [moon] = computePositions(prev, ['moon']); // yalnızca Ay: gezegenler bu taramada gereksiz
+    if (signIndex(moon.lon) !== sign) return jd;
     jd = prev;
   }
   return jd;

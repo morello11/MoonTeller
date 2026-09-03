@@ -94,6 +94,12 @@ export function createStore(storage = globalThis.localStorage) {
       cache[namespace] = { ...(cache[namespace] ?? {}), [key]: value };
       writeJSON(storage, STORAGE_KEYS.cache, cache);
     },
+    // Ad alanında yalnızca bu kayıt kalır (günlük gibi eskisi işe yaramayan veriler için).
+    cacheReplace(namespace, key, value) {
+      const cache = readJSON(storage, STORAGE_KEYS.cache, () => ({}));
+      cache[namespace] = { [key]: value };
+      writeJSON(storage, STORAGE_KEYS.cache, cache);
+    },
     clearAll() {
       for (const key of Object.values(STORAGE_KEYS)) storage.removeItem(key);
     },

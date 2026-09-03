@@ -75,3 +75,13 @@ test('bozuk kayıt sıfırdan başlar, migrate sürümsüz veriyi atar', () => {
   store.clearAll();
   assert.equal(store.getActiveProfile(), null);
 });
+
+test('cacheReplace: ad alanında yalnızca son kayıt kalır, diğer ad alanları dokunulmaz', () => {
+  const store = createStore(memoryStorage());
+  store.cacheSet('natal', 'n1', 1);
+  store.cacheSet('daily', 'gün1', { a: 1 });
+  store.cacheReplace('daily', 'gün2', { a: 2 });
+  assert.equal(store.cacheGet('daily', 'gün1'), null);
+  assert.deepEqual(store.cacheGet('daily', 'gün2'), { a: 2 });
+  assert.equal(store.cacheGet('natal', 'n1'), 1);
+});

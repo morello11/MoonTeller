@@ -8,4 +8,7 @@
   `wsam/swisseph.js`'teki dosya tablosu buna göre güncellendi. Script: `scripts/repack-swisseph-data.js`. Başka değişiklik yok.
 - Sonuç: gezegen/Ay konumları Moshier hesabıyla (`SEFLG_MOSEPH`, `src/config.js`) gelir. 1960–2050 arasında 12 cisim için
   Swiss Ephemeris dosyalı hesaba göre en büyük fark 0,0035° (Gerçek Düğüm), gezegenlerde < 0,001°.
+- Bilinen hata (upstream 0.0.4): `src/swisseph.js` içinde `houses()` iki kez tanımlı; ikinci tanım ev sistemi harfini `'string'`
+  tipiyle (pointer) geçirdiğinden `swe_houses` her zaman Placidus döner. Dosyaya dokunulmadı; `src/astro/engine.js` bunun yerine
+  `houses_ex(jd, 0, lat, lon, harf)` çağırır (tek tanımlı, harfi char kodu olarak geçirir). Sürüm yükseltince yeniden kontrol et.
 - Sürüm yükseltirken: yeni tarball'dan aynı dosyaları kopyala, scripti tekrar çalıştır, `node --test` ile doğrula.
